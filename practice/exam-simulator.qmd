@@ -1,0 +1,733 @@
+---
+title: "Exam simulator"
+subtitle: "25 randomized questions with instant feedback and topic scoring"
+toc: false
+---
+
+Start a randomized attempt, answer each question, and read the one-line explanation before moving on. The timer is set to 25 minutes.
+
+```{=html}
+<style>
+  .exam-sim {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1.2rem 0 2rem;
+  }
+  .exam-sim .exam-kpis {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(140px, 1fr));
+    gap: 0.75rem;
+  }
+  .exam-sim .exam-card-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .exam-sim .exam-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+    margin-top: 0.8rem;
+  }
+  .exam-sim .exam-button,
+  .exam-sim .choice-button {
+    border: 1px solid #d8d2c0;
+    border-radius: 4px;
+    background: #ffffff;
+    color: #213547;
+    cursor: pointer;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 1.35;
+    text-align: left;
+  }
+  .exam-sim .exam-button {
+    background: #0e7c7b;
+    border-color: #0e7c7b;
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0.45rem 0.8rem;
+  }
+  .exam-sim .exam-button.secondary {
+    background: #ffffff;
+    color: #0e7c7b;
+  }
+  .exam-sim .exam-button:disabled,
+  .exam-sim .choice-button:disabled {
+    cursor: default;
+    opacity: 0.78;
+  }
+  .exam-sim .choice-list {
+    display: grid;
+    gap: 0.55rem;
+    margin-top: 0.85rem;
+  }
+  .exam-sim .choice-button {
+    padding: 0.65rem 0.8rem;
+    width: 100%;
+  }
+  .exam-sim .choice-button:hover:not(:disabled) {
+    border-color: #0e7c7b;
+    box-shadow: 0 2px 8px rgba(14, 124, 123, 0.08);
+  }
+  .exam-sim .choice-button.correct {
+    background: #edf7f0;
+    border-color: #4f8f65;
+  }
+  .exam-sim .choice-button.incorrect {
+    background: #fff1ed;
+    border-color: #b85c38;
+  }
+  .exam-sim .choice-letter {
+    display: inline-block;
+    min-width: 1.6rem;
+    font-family: "JetBrains Mono", "SF Mono", Menlo, Consolas, monospace;
+    font-weight: 700;
+    color: #b85c38;
+  }
+  .exam-sim .exam-meta {
+    color: #6c6a63;
+    font-family: "JetBrains Mono", "SF Mono", Menlo, Consolas, monospace;
+    font-size: 0.78rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+  .exam-sim .exam-prompt {
+    font-size: 1.03rem;
+    line-height: 1.55;
+    margin-top: 0.35rem;
+  }
+  .exam-sim .feedback {
+    border-top: 1px dashed #d8d2c0;
+    margin-top: 0.9rem;
+    padding-top: 0.8rem;
+  }
+  .exam-sim .feedback strong {
+    color: #213547;
+  }
+  .exam-sim .breakdown-table {
+    width: 100%;
+    margin-top: 0.75rem;
+  }
+  .exam-sim .breakdown-table td:last-child,
+  .exam-sim .breakdown-table th:last-child {
+    text-align: right;
+  }
+  .exam-sim .review-list {
+    display: grid;
+    gap: 0.65rem;
+    margin-top: 0.9rem;
+  }
+  .exam-sim .review-item {
+    border-left: 3px solid #d8d2c0;
+    padding-left: 0.75rem;
+  }
+  .exam-sim .review-item.missed {
+    border-left-color: #b85c38;
+  }
+  @media (max-width: 720px) {
+    .exam-sim .exam-kpis {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+```
+
+```{ojs}
+exam_questions = [
+  {
+    id: "cpi-base-basket",
+    topic: "CPI / inflation",
+    prompt: "A base-year basket has 10 meals and 4 data plans. In 2024, prices are 8 and 25. In 2026, prices are 10 and 20. With 2024 as the base year, what are [[\\text{CPI}_{2026}]] and inflation from 2024 to 2026?",
+    choices: [
+      "[[95.0]] and [[-5.0\\%]]",
+      "[[105.0]] and [[5.0\\%]]",
+      "[[111.1]] and [[11.1\\%]]",
+      "[[100.0]] and [[0.0\\%]]"
+    ],
+    correct: 3,
+    why: "The fixed base basket costs [[10(8)+4(25)=180]] in 2024 and [[10(10)+4(20)=180]] in 2026, so [[\\text{CPI}=180/180\\times100=100]] and inflation is zero."
+  },
+  {
+    id: "cpi-substitution-trap",
+    topic: "CPI / inflation",
+    prompt: "Consumers switch from beef to chicken after beef gets expensive, but the CPI still prices the old beef-heavy basket. What bias does this create?",
+    choices: [
+      "It understates inflation because the current basket is cheaper.",
+      "It overstates inflation because it ignores substitution toward cheaper goods.",
+      "It has no bias because quantities always update automatically.",
+      "It overstates real GDP but has no effect on measured inflation."
+    ],
+    correct: 1,
+    why: "CPI is Laspeyres, so fixed base-year quantities overstate the cost increase when consumers substitute away from goods whose relative prices rise."
+  },
+  {
+    id: "inflation-denominator",
+    topic: "CPI / inflation",
+    prompt: "CPI rises from 125 to 140. What is the inflation rate?",
+    choices: [
+      "[[10.7\\%]]",
+      "[[12.0\\%]]",
+      "[[15.0\\%]]",
+      "[[40.0\\%]]"
+    ],
+    correct: 1,
+    why: "Inflation uses the earlier CPI in the denominator: [[(140-125)/125=0.12]], not the new CPI or the base value 100."
+  },
+  {
+    id: "kc-equilibrium-basic",
+    topic: "Keynesian cross",
+    prompt: "In a closed economy, [[C=80+0.75Y]] and [[\\overline{I}=70]]. What is equilibrium [[Y^*]]?",
+    choices: [
+      "[[150]]",
+      "[[450]]",
+      "[[600]]",
+      "[[750]]"
+    ],
+    correct: 2,
+    why: "Set [[Y=80+0.75Y+70]], so [[0.25Y=150]] and [[Y^*=600]]."
+  },
+  {
+    id: "kc-inventory-adjustment",
+    topic: "Keynesian cross",
+    prompt: "At current output, planned aggregate expenditure is 920 while actual output is 1,000. What happens next in the Keynesian-cross adjustment story?",
+    choices: [
+      "Unplanned inventories fall, so firms raise output.",
+      "Unplanned inventories rise, so firms cut output.",
+      "Interest rates fall until money demand rises.",
+      "The price level falls immediately and output stays fixed."
+    ],
+    correct: 1,
+    why: "If [[AE^d<Y]], goods are left unsold, inventories rise unintentionally, and firms reduce production."
+  },
+  {
+    id: "kc-open-import-sign",
+    topic: "Keynesian cross",
+    prompt: "Open-economy planned expenditure is [[AE=C+I+G+X-M]]. Holding all else fixed, autonomous imports rise by 25 and [[c=0.80]]. What is [[\\Delta Y^*]]?",
+    choices: [
+      "[[+125]]",
+      "[[-125]]",
+      "[[+20]]",
+      "[[-20]]"
+    ],
+    correct: 1,
+    why: "Autonomous imports enter spending with a minus sign, so [[\\Delta Y^*=-(1/(1-c))\\Delta\\overline{M}=-5(25)=-125]]."
+  },
+  {
+    id: "mult-tax-cut-size",
+    topic: "Multipliers",
+    prompt: "MPC is [[0.80]] and there is a recessionary gap of 300. How large a lump-sum tax change closes the gap by itself?",
+    choices: [
+      "Raise taxes by 60.",
+      "Cut taxes by 60.",
+      "Raise taxes by 75.",
+      "Cut taxes by 75."
+    ],
+    correct: 3,
+    why: "The tax multiplier is [[-c/(1-c)=-4]], so [[\\Delta\\overline{T}=300/(-4)=-75]], a tax cut."
+  },
+  {
+    id: "mult-proportional-tax",
+    topic: "Multipliers",
+    prompt: "With proportional taxes, [[C=\\overline{C_0}+c(1-t)Y]]. If [[c=0.80]] and [[t=0.25]], what is the spending multiplier?",
+    choices: [
+      "[[2.5]]",
+      "[[3.0]]",
+      "[[4.0]]",
+      "[[5.0]]"
+    ],
+    correct: 0,
+    why: "The slope of expenditure is [[c(1-t)=0.80(0.75)=0.60]], so the multiplier is [[1/(1-0.60)=2.5]]."
+  },
+  {
+    id: "mult-balanced-budget",
+    topic: "Multipliers",
+    prompt: "MPC is [[0.75]]. Government spending and lump-sum taxes both rise by 120. What is the net change in equilibrium output?",
+    choices: [
+      "[[0]]",
+      "[[+120]]",
+      "[[+360]]",
+      "[[-120]]"
+    ],
+    correct: 1,
+    why: "The balanced-budget multiplier is [[1]], because [[K_G=4]] and [[K_T=-3]], so [[\\Delta Y=120]]."
+  },
+  {
+    id: "money-single-bank",
+    topic: "Money creation / rrr",
+    prompt: "A bank has total reserves of 90, demand deposits of 400, and [[rrr=0.20]]. What is the maximum new lending by this single bank?",
+    choices: [
+      "[[10]]",
+      "[[80]]",
+      "[[90]]",
+      "[[450]]"
+    ],
+    correct: 0,
+    why: "Required reserves are [[0.20(400)=80]], so excess reserves and maximum new loans for the single bank are [[90-80=10]]."
+  },
+  {
+    id: "money-omo-sale",
+    topic: "Money creation / rrr",
+    prompt: "The Fed sells 50 of bonds to the public and [[rrr=0.10]]. What is the maximum change in the money supply?",
+    choices: [
+      "[[+500]]",
+      "[[-500]]",
+      "[[+50]]",
+      "[[-50]]"
+    ],
+    correct: 1,
+    why: "An OMO sale drains reserves, so [[\\Delta M^S=(1/0.10)(-50)=-500]]."
+  },
+  {
+    id: "money-rrr-change",
+    topic: "Money creation / rrr",
+    prompt: "Banks have demand deposits of 1,000 and are fully loaned up when [[rrr=0.20]]. The required reserve ratio falls to [[0.10]]. How much additional money can the banking system create from the newly freed reserves?",
+    choices: [
+      "[[100]]",
+      "[[500]]",
+      "[[1{,}000]]",
+      "[[2{,}000]]"
+    ],
+    correct: 2,
+    why: "The cut frees [[100]] of reserves and the new multiplier is [[10]], so possible expansion is [[10(100)=1{,}000]]."
+  },
+  {
+    id: "mm-y-shift",
+    topic: "Money market equilibrium",
+    prompt: "Real income rises while nominal money supply and the price level are fixed. In the money market, what happens to money demand and [[r^*]]?",
+    choices: [
+      "Money demand shifts right and [[r^*]] rises.",
+      "Money demand shifts left and [[r^*]] falls.",
+      "Money supply shifts right and [[r^*]] falls.",
+      "Money demand is unchanged because only prices matter."
+    ],
+    correct: 0,
+    why: "Higher income raises transactions demand for money, shifting [[M^D]] right and pushing the equilibrium interest rate up."
+  },
+  {
+    id: "mm-excess-supply",
+    topic: "Money market equilibrium",
+    prompt: "At the current interest rate, money supplied is greater than money demanded. What adjustment moves the economy toward money-market equilibrium?",
+    choices: [
+      "People buy bonds, bond prices rise, and interest rates fall.",
+      "People sell bonds, bond prices fall, and interest rates rise.",
+      "Banks raise required reserves, so the multiplier falls.",
+      "The exchange rate appreciates until exports fall."
+    ],
+    correct: 0,
+    why: "Excess money balances are used to buy bonds, raising bond prices and lowering yields until money demanded rises to match supply."
+  },
+  {
+    id: "mm-real-balances",
+    topic: "Money market equilibrium",
+    prompt: "Nominal [[M^S]] is fixed, but the price level rises. What happens to real money supply and [[r^*]]?",
+    choices: [
+      "Real money supply rises and [[r^*]] falls.",
+      "Real money supply falls and [[r^*]] rises.",
+      "Both real money supply and [[r^*]] rise.",
+      "Neither changes because nominal [[M^S]] is fixed."
+    ],
+    correct: 1,
+    why: "Real balances are [[M^S/P]], so a higher [[P]] shifts real money supply left and raises the equilibrium interest rate."
+  },
+  {
+    id: "bond-price-rate",
+    topic: "Bond pricing",
+    prompt: "A discount bond pays 1,000 in five years. If the market interest rate rises from [[4\\%]] to [[6\\%]], what happens to the bond's current price?",
+    choices: [
+      "It rises because the bond now earns a higher rate.",
+      "It falls because the fixed future payment is discounted more heavily.",
+      "It stays at 1,000 because face value is fixed.",
+      "It rises only if the bond was issued before rates changed."
+    ],
+    correct: 1,
+    why: "For a fixed [[FV]], [[PV=FV/(1+r)^T]], so a higher discount rate lowers price."
+  },
+  {
+    id: "bond-implied-yield",
+    topic: "Bond pricing",
+    prompt: "A one-year discount bond with face value 1,000 sells for 952.38. What is its implied yield?",
+    choices: [
+      "[[4\\%]]",
+      "[[5\\%]]",
+      "[[47.62\\%]]",
+      "[[95.24\\%]]"
+    ],
+    correct: 1,
+    why: "The one-year yield is [[1000/952.38-1\\approx0.05]], so the discount is not the interest rate."
+  },
+  {
+    id: "asad-demand-shock",
+    topic: "AS-AD",
+    prompt: "A wave of pessimism reduces planned investment. In the short-run AS-AD model, what is the direct effect?",
+    choices: [
+      "AD shifts left, lowering both output and the price level in the short run.",
+      "AD shifts right, raising output and the price level.",
+      "SRAS shifts left, lowering output and raising the price level.",
+      "LRAS shifts left because investment is part of potential output immediately."
+    ],
+    correct: 0,
+    why: "Lower planned investment reduces aggregate demand, so short-run equilibrium moves to lower [[Y]] and lower [[P]]."
+  },
+  {
+    id: "asad-cost-push",
+    topic: "AS-AD",
+    prompt: "Oil prices jump sharply. In AS-AD terms, which outcome best describes the short run?",
+    choices: [
+      "AD shifts right: higher output and higher prices.",
+      "SRAS shifts right: higher output and lower prices.",
+      "SRAS shifts left: lower output and higher prices.",
+      "LRAS shifts right: higher potential output and lower prices."
+    ],
+    correct: 2,
+    why: "A negative supply shock raises production costs, shifting SRAS left and causing stagflation: lower output with higher prices."
+  },
+  {
+    id: "asad-policy-mix",
+    topic: "AS-AD",
+    prompt: "The economy is below full-employment output and the central bank expands [[M^S]]. Through the standard interest-rate channel, what happens in AS-AD?",
+    choices: [
+      "Lower [[r]] raises investment, AD shifts right, and [[Y]] rises.",
+      "Higher [[r]] lowers investment, AD shifts left, and [[Y]] falls.",
+      "Lower [[r]] shifts SRAS right, leaving AD unchanged.",
+      "Higher [[r]] raises net exports, AD shifts right, and [[Y]] rises."
+    ],
+    correct: 0,
+    why: "Expansionary monetary policy lowers [[r]], stimulates interest-sensitive spending, and shifts AD right."
+  },
+  {
+    id: "fx-ppp-quote",
+    topic: "Foreign exchange",
+    prompt: "A U.S. basket costs 480 dollars and the same U.K. basket costs 240 pounds. With the exchange rate quoted as [[E_{\\$/\\pounds}]], what is PPP?",
+    choices: [
+      "[[0.50\\ \\$/\\pounds]]",
+      "[[2.00\\ \\$/\\pounds]]",
+      "[[240\\ \\$/\\pounds]]",
+      "[[720\\ \\$/\\pounds]]"
+    ],
+    correct: 1,
+    why: "For a dollars-per-pound quote, PPP is [[P_{US}/P_{UK}=480/240=2.00\\ \\$/\\pounds]]."
+  },
+  {
+    id: "fx-capital-flow",
+    topic: "Foreign exchange",
+    prompt: "U.S. interest rates rise relative to U.K. rates, with exchange rates floating. Through the capital-flow channel, what happens to the dollar and to [[E_{\\$/\\pounds}]]?",
+    choices: [
+      "The dollar depreciates and [[E_{\\$/\\pounds}]] rises.",
+      "The dollar appreciates and [[E_{\\$/\\pounds}]] falls.",
+      "The dollar appreciates and [[E_{\\$/\\pounds}]] rises.",
+      "The dollar depreciates and [[E_{\\$/\\pounds}]] falls."
+    ],
+    correct: 1,
+    why: "Higher U.S. returns attract capital into dollar assets, so the dollar appreciates and fewer dollars are needed per pound."
+  },
+  {
+    id: "fx-ppp-vs-capital",
+    topic: "Foreign exchange",
+    prompt: "U.S. inflation exceeds U.K. inflation, but U.S. interest rates also rise above U.K. rates. Which distinction is correct?",
+    choices: [
+      "PPP and capital flows both predict dollar depreciation.",
+      "PPP predicts dollar appreciation, while capital flows predict dollar depreciation.",
+      "PPP predicts dollar depreciation, while capital flows predict dollar appreciation.",
+      "Neither channel predicts a directional change."
+    ],
+    correct: 2,
+    why: "Higher relative inflation weakens a currency in PPP, while higher relative interest rates attract capital and strengthen it in the short-run capital-flow channel."
+  },
+  {
+    id: "regime-floating-omo",
+    topic: "Monetary regimes",
+    prompt: "Under floating exchange rates with high capital mobility, the Fed buys bonds. Which chain is correct?",
+    choices: [
+      "[[M^S\\uparrow \\Rightarrow r\\downarrow \\Rightarrow I\\uparrow]] and dollar depreciation raises net exports.",
+      "[[M^S\\uparrow \\Rightarrow r\\uparrow \\Rightarrow I\\downarrow]] and dollar appreciation raises net exports.",
+      "[[M^S\\downarrow \\Rightarrow r\\uparrow \\Rightarrow I\\downarrow]] and the exchange rate is unchanged.",
+      "The Fed must reverse the purchase to defend a peg, so output is unchanged."
+    ],
+    correct: 0,
+    why: "With a float, expansionary monetary policy works through both lower interest-sensitive spending costs and depreciation-driven net exports."
+  },
+  {
+    id: "regime-trilemma",
+    topic: "Monetary regimes",
+    prompt: "A country wants free capital mobility and a fixed exchange rate. What must it give up according to the impossible trinity?",
+    choices: [
+      "Independent monetary policy.",
+      "Fiscal policy.",
+      "The ability to trade goods.",
+      "The accounting identity that the balance of payments sums to zero."
+    ],
+    correct: 0,
+    why: "With free capital flows and a peg, the central bank must adjust money supply to defend the exchange rate, so it cannot run independent monetary policy."
+  }
+]
+```
+
+```{ojs}
+{
+  const minutes = 25;
+  const totalSeconds = minutes * 60;
+  const letters = ["A", "B", "C", "D"];
+  const root = html`<div class="exam-sim"></div>`;
+  let order = [];
+  let current = 0;
+  let answers = new Map();
+  let started = false;
+  let finished = false;
+  let remaining = totalSeconds;
+  let timer = null;
+
+  const shuffle = (items) => {
+    const out = items.slice();
+    for (let i = out.length - 1; i > 0; i -= 1) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [out[i], out[j]] = [out[j], out[i]];
+    }
+    return out;
+  };
+
+  const escapeHtml = (value) => String(value)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+
+  const renderMath = (tex) => {
+    if (window.katex) {
+      return window.katex.renderToString(tex, {throwOnError: false});
+    }
+    return `<span class="math inline">${escapeHtml(tex)}</span>`;
+  };
+
+  const rich = (text) => escapeHtml(text).replace(/\[\[([\s\S]+?)\]\]/g, (_, tex) => renderMath(tex));
+
+  const formatTime = (seconds) => {
+    const m = Math.floor(seconds / 60);
+    const s = seconds % 60;
+    return `${m}:${String(s).padStart(2, "0")}`;
+  };
+
+  const score = () => order.reduce((sum, question) => {
+    const selected = answers.get(question.id);
+    return sum + (selected === question.correct ? 1 : 0);
+  }, 0);
+
+  const breakdown = () => {
+    const rows = new Map();
+    for (const question of order) {
+      if (!rows.has(question.topic)) rows.set(question.topic, {topic: question.topic, correct: 0, total: 0});
+      const row = rows.get(question.topic);
+      row.total += 1;
+      if (answers.get(question.id) === question.correct) row.correct += 1;
+    }
+    return Array.from(rows.values()).sort((a, b) => a.topic.localeCompare(b.topic));
+  };
+
+  const stopTimer = () => {
+    if (timer) clearInterval(timer);
+    timer = null;
+  };
+
+  const startTimer = () => {
+    stopTimer();
+    timer = setInterval(() => {
+      if (!started || finished) return;
+      remaining -= 1;
+      if (remaining <= 0) {
+        remaining = 0;
+        finished = true;
+        stopTimer();
+      }
+      render();
+    }, 1000);
+  };
+
+  const startAttempt = () => {
+    order = shuffle(exam_questions);
+    current = 0;
+    answers = new Map();
+    started = true;
+    finished = false;
+    remaining = totalSeconds;
+    startTimer();
+    render();
+  };
+
+  const finishAttempt = () => {
+    finished = true;
+    stopTimer();
+    render();
+  };
+
+  const choose = (choiceIndex) => {
+    if (finished) return;
+    const question = order[current];
+    if (answers.has(question.id)) return;
+    answers.set(question.id, choiceIndex);
+    render();
+  };
+
+  const nextQuestion = () => {
+    if (current < order.length - 1) {
+      current += 1;
+      render();
+    } else {
+      finishAttempt();
+    }
+  };
+
+  const renderKpis = () => {
+    const answered = answers.size;
+    const pct = order.length ? Math.round((score() / order.length) * 100) : 0;
+    return `
+      <div class="exam-kpis">
+        <div class="kpi-card">
+          <div class="kpi-label">Timer</div>
+          <div class="kpi-value">${formatTime(remaining)}</div>
+          <div class="kpi-sub">${minutes} minutes total</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Progress</div>
+          <div class="kpi-value">${answered}/${exam_questions.length}</div>
+          <div class="kpi-sub">answered</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Current score</div>
+          <div class="kpi-value">${started ? `${score()}/${exam_questions.length}` : "--"}</div>
+          <div class="kpi-sub">${started ? `${pct}% of full exam` : "starts after first attempt"}</div>
+        </div>
+      </div>`;
+  };
+
+  const renderStart = () => `
+    ${renderKpis()}
+    <div class="news-card">
+      <div class="news-meta">
+        <span class="news-source">25 questions</span>
+        <span class="news-date">random order</span>
+      </div>
+      <div class="news-title">Exam-mode drill</div>
+      <div class="news-summary">
+        Each attempt shuffles the question order. You get immediate feedback after choosing an answer, then a final topic-by-topic score table.
+      </div>
+      <div class="exam-controls">
+        <button class="exam-button" data-action="start">Start randomized attempt</button>
+      </div>
+    </div>`;
+
+  const renderQuestion = () => {
+    const question = order[current];
+    const selected = answers.get(question.id);
+    const answered = selected !== undefined;
+    const correct = answered && selected === question.correct;
+    const choiceHtml = question.choices.map((choice, index) => {
+      const state = !answered
+        ? ""
+        : index === question.correct
+          ? " correct"
+          : index === selected
+            ? " incorrect"
+            : "";
+      return `
+        <button class="choice-button${state}" data-choice="${index}" ${answered ? "disabled" : ""}>
+          <span class="choice-letter">${letters[index]}.</span>${rich(choice)}
+        </button>`;
+    }).join("");
+
+    return `
+      ${renderKpis()}
+      <div class="news-card">
+        <div class="news-meta">
+          <span class="news-source">Question ${current + 1} of ${order.length}</span>
+          <span class="news-date">${escapeHtml(question.topic)}</span>
+        </div>
+        <div class="question-block">
+          <div class="exam-meta">${answered ? (correct ? "Correct" : "Incorrect") : "Choose one answer"}</div>
+          <div class="exam-prompt">${rich(question.prompt)}</div>
+          <div class="choice-list">${choiceHtml}</div>
+          ${answered ? `
+            <div class="feedback">
+              <strong>${correct ? "Correct." : `Not quite. Correct answer: ${letters[question.correct]}.`}</strong>
+              ${rich(question.why)}
+            </div>` : ""}
+        </div>
+        <div class="exam-controls">
+          ${answered ? `<button class="exam-button" data-action="next">${current === order.length - 1 ? "Finish exam" : "Next question"}</button>` : ""}
+          <button class="exam-button secondary" data-action="finish">Finish now</button>
+          <button class="exam-button secondary" data-action="start">Restart shuffled</button>
+        </div>
+      </div>`;
+  };
+
+  const renderFinal = () => {
+    const rows = breakdown();
+    const finalScore = score();
+    const pct = Math.round((finalScore / exam_questions.length) * 100);
+    const missed = order.filter(question => answers.get(question.id) !== question.correct);
+    return `
+      ${renderKpis()}
+      <div class="news-card">
+        <div class="news-meta">
+          <span class="news-source">Final score</span>
+          <span class="news-date">${formatTime(totalSeconds - remaining)} elapsed</span>
+        </div>
+        <div class="news-title">${finalScore}/${exam_questions.length} (${pct}%)</div>
+        <div class="news-summary">
+          ${remaining === 0 ? "Time expired." : "Attempt complete."}
+          Unanswered questions count as missed.
+        </div>
+        <table class="breakdown-table">
+          <thead>
+            <tr><th>Topic</th><th>Score</th></tr>
+          </thead>
+          <tbody>
+            ${rows.map(row => `<tr><td>${escapeHtml(row.topic)}</td><td>${row.correct}/${row.total}</td></tr>`).join("")}
+          </tbody>
+        </table>
+        ${missed.length ? `
+          <div class="review-list">
+            ${missed.map((question, index) => {
+              const selected = answers.get(question.id);
+              return `
+                <div class="review-item missed">
+                  <div class="exam-meta">Missed ${index + 1} - ${escapeHtml(question.topic)}</div>
+                  <div>${rich(question.prompt)}</div>
+                  <div><strong>Your answer:</strong> ${selected === undefined ? "Unanswered" : `${letters[selected]}. ${rich(question.choices[selected])}`}</div>
+                  <div><strong>Correct:</strong> ${letters[question.correct]}. ${rich(question.choices[question.correct])}</div>
+                  <div>${rich(question.why)}</div>
+                </div>`;
+            }).join("")}
+          </div>` : ""}
+        <div class="exam-controls">
+          <button class="exam-button" data-action="start">Start new shuffled attempt</button>
+        </div>
+      </div>`;
+  };
+
+  const render = () => {
+    root.innerHTML = !started ? renderStart() : finished ? renderFinal() : renderQuestion();
+    if (window.Quarto?.typesetMath) window.Quarto.typesetMath(root);
+  };
+
+  root.addEventListener("click", (event) => {
+    const target = event.target instanceof Element ? event.target : event.target.parentElement;
+    const choiceButton = target?.closest("[data-choice]");
+    if (choiceButton && root.contains(choiceButton)) {
+      choose(Number(choiceButton.dataset.choice));
+      return;
+    }
+    const actionButton = target?.closest("[data-action]");
+    if (!actionButton || !root.contains(actionButton)) return;
+    const action = actionButton.dataset.action;
+    if (action === "start") startAttempt();
+    if (action === "next") nextQuestion();
+    if (action === "finish") finishAttempt();
+  });
+
+  if (typeof invalidation !== "undefined") invalidation.then(stopTimer);
+  render();
+  return root;
+}
+```

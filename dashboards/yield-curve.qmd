@@ -1,0 +1,154 @@
+---
+title: "Yield curve & recession"
+---
+
+```{ojs}
+//| output: false
+dgs2 = await (await fetch("../data/fred/DGS2.json")).json()
+dgs10 = await (await fetch("../data/fred/DGS10.json")).json()
+t10y2y = await (await fetch("../data/fred/T10Y2Y.json")).json()
+usrec = await (await fetch("../data/fred/USREC.json")).json()
+```
+
+```{ojs}
+viewof yc_window = Inputs.range([1, 40], {value: 10, step: 1, label: "Years to display"})
+```
+
+```{ojs}
+html`<div style="display: flex; gap: 0.8rem; flex-wrap: wrap; margin: 1rem 0;">
+  ${(() => {
+    const latest2y = dgs2.observations.filter(d => d.value !== null).at(-1)?.value;
+    const latest10y = dgs10.observations.filter(d => d.value !== null).at(-1)?.value;
+    const latestSpread = t10y2y.observations.filter(d => d.value !== null).at(-1)?.value;
+    
+    // Find last inversion date (t10y2y < 0)
+    const inversions = t10y2y.observations.filter(d => d.value !== null && d.value < 0);
+    const lastInversionDate = inversions.length > 0 ? new Date(inversions.at(-1).date) : null;
+    const today = new Date();
+    
+    let daysCount = "—";
+    let label = "Days Since Inversion";
+    
+    if (latestSpread < 0) {
+      label = "Days Inverted";
+      // Find start of current streak
+      let streakStart = null;
+      const obs = t10y2y.observations;
+      for (let i = obs.length - 1; i >= 0; i--) {
+        if (obs[i].value !== null && obs[i].value >= 0) {
+          streakStart = new Date(obs[i+1].date);
+          break;
+        }
+      }
+      if (streakStart) daysCount = Math.floor((today - streakStart) / (1000 * 60 * 60 * 24));
+    } else if (lastInversionDate) {
+      daysCount = Math.floor((today - lastInversionDate) / (1000 * 60 * 60 * 24));
+    }
+
+    return [
+      ["2-Year Yield", latest2y, "%"],
+      ["10-Year Yield", latest10y, "%"],
+      ["10Y-2Y Spread", latestSpread != null ? latestSpread * 100 : null, "bp"],
+      [label, daysCount, "days"]
+    ].map(([label, v, units]) => `
+      <div class="kpi-card">
+        <div class="kpi-label">${label}</div>
+        <div class="kpi-value">${v != null && v !== "—" ? (typeof v === 'number' ? v.toFixed(2) : v) : '—'}</div>
+        <div class="kpi-sub">${units}</div>
+      </div>
+    `).join('');
+  })()}
+</div>`
+```
+
+```{ojs}
+{
+  const cutoff = new Date()
+  cutoff.setFullYear(cutoff.getFullYear() - yc_window)
+  const filt = arr => arr.filter(d => d.value !== null && new Date(d.date) >= cutoff).map(d => ({...d, date: new Date(d.date)}))
+  
+  const d2 = filt(dgs2.observations).map(d => ({...d, series: "2-Year"}))
+  const d10 = filt(dgs10.observations).map(d => ({...d, series: "10-Year"}))
+  const combined = [...d2, ...d10]
+
+  return Plot.plot({
+    width: 800, height: 380, marginLeft: 50, marginBottom: 50,
+    x: {type: "utc"},
+    y: {label: "Yield (%)", grid: true},
+    color: {domain: ["2-Year", "10-Year"], range: ["#b85c38", "#0d3b66"]}, // rust, ink
+    marks: [
+      Plot.line(combined, {x: "date", y: "value", stroke: "series", strokeWidth: 2}),
+      Plot.tip(combined, Plot.pointerX({x: "date", y: "value", stroke: "series"}))
+    ]
+  })
+}
+```
+
+```{ojs}
+{
+  const cutoff = new Date()
+  cutoff.setFullYear(cutoff.getFullYear() - yc_window)
+  const filt = arr => arr.filter(d => d.value !== null && new Date(d.date) >= cutoff).map(d => ({...d, date: new Date(d.date)}))
+  
+  const spreadData = filt(t10y2y.observations)
+  const recs = filt(usrec.observations).filter(d => d.value === 1)
+
+  return Plot.plot({
+    width: 800, height: 320, marginLeft: 50, marginBottom: 50,
+    x: {type: "utc"},
+    y: {label: "10Y-2Y Spread (%)", grid: true},
+    marks: [
+      // Recession bars (NBER)
+      Plot.rect(recs, {
+        x1: "date", 
+        x2: d => {
+          const next = new Date(d.date);
+          next.setMonth(next.getMonth() + 1); // USREC is monthly
+          return next;
+        }, 
+        y1: -5, y2: 10, fill: "#cccccc", fillOpacity: 0.3
+      }),
+      
+      // Inversion highlight (where spread < 0)
+      Plot.rect(spreadData.filter(d => d.value < 0), {
+        x1: "date",
+        x2: d => {
+          const next = new Date(d.date);
+          next.setDate(next.getDate() + 1);
+          return next;
+        },
+        y1: -5, y2: 10, fill: "#b85c38", fillOpacity: 0.15
+      }),
+      
+      Plot.ruleY([0], {stroke: "#000", strokeWidth: 1}),
+      Plot.line(spreadData, {x: "date", y: "value", stroke: "#4f7942", strokeWidth: 2}), // sage
+      Plot.tip(spreadData, Plot.pointerX({x: "date", y: "value", stroke: "#4f7942"}))
+    ]
+  })
+}
+```
+
+## How to read
+
+The **yield curve** (specifically the 10Y-2Y spread) is one of the most reliable leading indicators of a recession. In a "normal" economy, long-term interest rates are higher than short-term rates to compensate for duration risk (the "term premium"). 
+
+### Why the 10Y-2Y spread?
+- **10-Year Yield:** Reflects long-run growth and inflation expectations.
+- **2-Year Yield:** Highly sensitive to current and near-term Fed policy.
+
+When the 2-year yield rises above the 10-year yield, the curve is **inverted**. This signals that investors expect growth to slow or inflation to fall significantly, often because the Fed has tightened policy to a level that may trigger a contraction.
+
+### Historical Track Record
+- **Recession Indicator:** 10 of the last 10 U.S. recessions were preceded by a 10Y-2Y inversion.
+- **Lead Time:** The lag between inversion and the onset of recession is typically **12 to 18 months**.
+- **The "Un-inversion":** Interestingly, recessions often begin just as the curve starts to "un-invert" (move back above zero) after a prolonged period of inversion.
+
+### Current Interpretation
+A deep or prolonged inversion suggests that the market believes monetary policy is restrictive. While "soft landings" are possible, an inversion is a signal to watch employment and retail data closely for signs of a broader slowdown.
+
+## Source
+[FRED](https://fred.stlouisfed.org/) — DGS2 (2-year Treasury), DGS10 (10-year Treasury), T10Y2Y (10Y-2Y Spread), USREC (Recession indicator).
+
+```{ojs}
+md`*Last data refresh: ${t10y2y.last_updated || 'unknown'}.*`
+```

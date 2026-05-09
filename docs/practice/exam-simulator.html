@@ -1,0 +1,1631 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>28&nbsp; Exam simulator – Macro Prep</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../reference/formulas.html" rel="next">
+<link href="../practice/question-bank.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-87f7908b905bb60864be3ee8ff803566.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-866e4227739350b9afa78780d085416f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+<script type="module" src="../site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
+<link href="../site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+
+<body class="nav-sidebar docked fullcontent quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../practice/decision-tree.html">Practice</a></li><li class="breadcrumb-item"><a href="../practice/exam-simulator.html"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Exam simulator</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Macro Prep</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/ihelfrich/macroprep" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <div id="quarto-search" class="quarto-navigation-tool px-1" title="Search"></div>
+</div>
+    </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Macro Prep</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
+ <span class="menu-text">Foundations</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/01-cpi-unemployment.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">CPI, inflation, unemployment</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/02-keynesian-cross.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">The Keynesian cross</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/03-multipliers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Multipliers</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/04-fiscal-policy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Fiscal policy</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+ <span class="menu-text">Money</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/05-money-banking.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Money and banking</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/06-money-market.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">The money market</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/07-bonds.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Bonds</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+ <span class="menu-text">Open economy &amp; synthesis</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/08-as-ad.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">AS / AD basics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/09-foreign-exchange.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Foreign exchange</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/10-monetary-regimes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Monetary policy under floating vs.&nbsp;fixed ER</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
+ <span class="menu-text">Interactive tools</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../interactive/keynesian-cross-tool.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Interactive: Keynesian cross</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../interactive/multiplier-dashboard.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Interactive: multiplier dashboard</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../interactive/money-creation-tool.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Interactive: money creation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../interactive/bond-pricer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Interactive: bond pricer</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../interactive/ppp-calculator.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Interactive: PPP exchange rate</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false">
+ <span class="menu-text">Live data dashboards</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../dashboards/inflation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Inflation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../dashboards/labor.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Labor markets</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../dashboards/money-rates.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Money supply &amp; interest rates</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../dashboards/output.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Output &amp; recessions</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../dashboards/exchange-rates.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Exchange rates</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../dashboards/yield-curve.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Yield curve &amp; recession</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../dashboards/news.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Recent releases</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">Practice</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../practice/decision-tree.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Decision tree: which technique?</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../practice/quick-quiz.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Quick quiz: 12 conceptual questions</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../practice/full-exam.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Full exam — 30 questions, timed</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../practice/question-bank.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Question bank</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../practice/exam-simulator.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Exam simulator</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false">
+ <span class="menu-text">Reference</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../reference/formulas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Formula sheet</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../reference/glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Glossary</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../reference/traps.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Common screw-ups</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../reference/sources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Sources &amp; data lineage</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../practice/decision-tree.html">Practice</a></li><li class="breadcrumb-item"><a href="../practice/exam-simulator.html"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Exam simulator</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Exam simulator</span></h1>
+<p class="subtitle lead">25 randomized questions with instant feedback and topic scoring</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Start a randomized attempt, answer each question, and read the one-line explanation before moving on. The timer is set to 25 minutes.</p>
+<style>
+  .exam-sim {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1.2rem 0 2rem;
+  }
+  .exam-sim .exam-kpis {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(140px, 1fr));
+    gap: 0.75rem;
+  }
+  .exam-sim .exam-card-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .exam-sim .exam-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+    margin-top: 0.8rem;
+  }
+  .exam-sim .exam-button,
+  .exam-sim .choice-button {
+    border: 1px solid #d8d2c0;
+    border-radius: 4px;
+    background: #ffffff;
+    color: #213547;
+    cursor: pointer;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 1.35;
+    text-align: left;
+  }
+  .exam-sim .exam-button {
+    background: #0e7c7b;
+    border-color: #0e7c7b;
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0.45rem 0.8rem;
+  }
+  .exam-sim .exam-button.secondary {
+    background: #ffffff;
+    color: #0e7c7b;
+  }
+  .exam-sim .exam-button:disabled,
+  .exam-sim .choice-button:disabled {
+    cursor: default;
+    opacity: 0.78;
+  }
+  .exam-sim .choice-list {
+    display: grid;
+    gap: 0.55rem;
+    margin-top: 0.85rem;
+  }
+  .exam-sim .choice-button {
+    padding: 0.65rem 0.8rem;
+    width: 100%;
+  }
+  .exam-sim .choice-button:hover:not(:disabled) {
+    border-color: #0e7c7b;
+    box-shadow: 0 2px 8px rgba(14, 124, 123, 0.08);
+  }
+  .exam-sim .choice-button.correct {
+    background: #edf7f0;
+    border-color: #4f8f65;
+  }
+  .exam-sim .choice-button.incorrect {
+    background: #fff1ed;
+    border-color: #b85c38;
+  }
+  .exam-sim .choice-letter {
+    display: inline-block;
+    min-width: 1.6rem;
+    font-family: "JetBrains Mono", "SF Mono", Menlo, Consolas, monospace;
+    font-weight: 700;
+    color: #b85c38;
+  }
+  .exam-sim .exam-meta {
+    color: #6c6a63;
+    font-family: "JetBrains Mono", "SF Mono", Menlo, Consolas, monospace;
+    font-size: 0.78rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+  .exam-sim .exam-prompt {
+    font-size: 1.03rem;
+    line-height: 1.55;
+    margin-top: 0.35rem;
+  }
+  .exam-sim .feedback {
+    border-top: 1px dashed #d8d2c0;
+    margin-top: 0.9rem;
+    padding-top: 0.8rem;
+  }
+  .exam-sim .feedback strong {
+    color: #213547;
+  }
+  .exam-sim .breakdown-table {
+    width: 100%;
+    margin-top: 0.75rem;
+  }
+  .exam-sim .breakdown-table td:last-child,
+  .exam-sim .breakdown-table th:last-child {
+    text-align: right;
+  }
+  .exam-sim .review-list {
+    display: grid;
+    gap: 0.65rem;
+    margin-top: 0.9rem;
+  }
+  .exam-sim .review-item {
+    border-left: 3px solid #d8d2c0;
+    padding-left: 0.75rem;
+  }
+  .exam-sim .review-item.missed {
+    border-left-color: #b85c38;
+  }
+  @media (max-width: 720px) {
+    .exam-sim .exam-kpis {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="137" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 136;"><span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a>exam_questions <span class="op">=</span> [</span>
+<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a>  {</span>
+<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a>    <span class="dt">id</span><span class="op">:</span> <span class="st">"cpi-base-basket"</span><span class="op">,</span></span>
+<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a>    <span class="dt">topic</span><span class="op">:</span> <span class="st">"CPI / inflation"</span><span class="op">,</span></span>
+<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a>    <span class="dt">prompt</span><span class="op">:</span> <span class="st">"A base-year basket has 10 meals and 4 data plans. In 2024, prices are 8 and 25. In 2026, prices are 10 and 20. With 2024 as the base year, what are [[</span><span class="sc">\\</span><span class="st">text{CPI}_{2026}]] and inflation from 2024 to 2026?"</span><span class="op">,</span></span>
+<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a>    <span class="dt">choices</span><span class="op">:</span> [</span>
+<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a>      <span class="st">"[[95.0]] and [[-5.0</span><span class="sc">\\</span><span class="st">%]]"</span><span class="op">,</span></span>
+<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a>      <span class="st">"[[105.0]] and [[5.0</span><span class="sc">\\</span><span class="st">%]]"</span><span class="op">,</span></span>
+<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a>      <span class="st">"[[111.1]] and [[11.1</span><span class="sc">\\</span><span class="st">%]]"</span><span class="op">,</span></span>
+<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a>      <span class="st">"[[100.0]] and [[0.0</span><span class="sc">\\</span><span class="st">%]]"</span></span>
+<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a>    ]<span class="op">,</span></span>
+<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a>    <span class="dt">correct</span><span class="op">:</span> <span class="dv">3</span><span class="op">,</span></span>
+<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a>    <span class="dt">why</span><span class="op">:</span> <span class="st">"The fixed base basket costs [[10(8)+4(25)=180]] in 2024 and [[10(10)+4(20)=180]] in 2026, so [[</span><span class="sc">\\</span><span class="st">text{CPI}=180/180</span><span class="sc">\\</span><span class="st">times100=100]] and inflation is zero."</span></span>
+<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a>  {</span>
+<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a>    <span class="dt">id</span><span class="op">:</span> <span class="st">"cpi-substitution-trap"</span><span class="op">,</span></span>
+<span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a>    <span class="dt">topic</span><span class="op">:</span> <span class="st">"CPI / inflation"</span><span class="op">,</span></span>
+<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a>    <span class="dt">prompt</span><span class="op">:</span> <span class="st">"Consumers switch from beef to chicken after beef gets expensive, but the CPI still prices the old beef-heavy basket. What bias does this create?"</span><span class="op">,</span></span>
+<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a>    <span class="dt">choices</span><span class="op">:</span> [</span>
+<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a>      <span class="st">"It understates inflation because the current basket is cheaper."</span><span class="op">,</span></span>
+<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a>      <span class="st">"It overstates inflation because it ignores substitution toward cheaper goods."</span><span class="op">,</span></span>
+<span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a>      <span class="st">"It has no bias because quantities always update automatically."</span><span class="op">,</span></span>
+<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a>      <span class="st">"It overstates real GDP but has no effect on measured inflation."</span></span>
+<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a>    ]<span class="op">,</span></span>
+<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a>    <span class="dt">correct</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span></span>
+<span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a>    <span class="dt">why</span><span class="op">:</span> <span class="st">"CPI is Laspeyres, so fixed base-year quantities overstate the cost increase when consumers substitute away from goods whose relative prices rise."</span></span>
+<span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb1-164"><a href="#cb1-164" aria-hidden="true" tabindex="-1"></a>  {</span>
+<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a>    <span class="dt">id</span><span class="op">:</span> <span class="st">"inflation-denominator"</span><span class="op">,</span></span>
+<span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a>    <span class="dt">topic</span><span class="op">:</span> <span class="st">"CPI / inflation"</span><span class="op">,</span></span>
+<span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a>    <span class="dt">prompt</span><span class="op">:</span> <span class="st">"CPI rises from 125 to 140. What is the inflation rate?"</span><span class="op">,</span></span>
+<span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a>    <span class="dt">choices</span><span class="op">:</span> [</span>
+<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a>      <span class="st">"[[10.7</span><span class="sc">\\</span><span class="st">%]]"</span><span class="op">,</span></span>
+<span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a>      <span class="st">"[[12.0</span><span class="sc">\\</span><span class="st">%]]"</span><span class="op">,</span></span>
+<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a>      <span class="st">"[[15.0</span><span class="sc">\\</span><span class="st">%]]"</span><span class="op">,</span></span>
+<span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a>      <span class="st">"[[40.0</span><span class="sc">\\</span><span class="st">%]]"</span></span>
+<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a>    ]<span class="op">,</span></span>
+<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a>    <span class="dt">correct</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span></span>
+<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a>    <span class="dt">why</span><span class="op">:</span> <span class="st">"Inflation uses the earlier CPI in the denominator: [[(140-125)/125=0.12]], not the new CPI or the base value 100."</span></span>
+<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a>  {</span>
+<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a>    <span class="dt">id</span><span class="op">:</span> <span class="st">"kc-equilibrium-basic"</span><span class="op">,</span></span>
+<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a>    <span class="dt">topic</span><span class="op">:</span> <span class="st">"Keynesian cross"</span><span class="op">,</span></span>
+<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a>    <span class="dt">prompt</span><span class="op">:</span> <span class="st">"In a closed economy, [[C=80+0.75Y]] and [[</span><span class="sc">\\</span><span class="st">overline{I}=70]]. What is equilibrium [[Y^*]]?"</span><span class="op">,</span></span>
+<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a>    <span class="dt">choices</span><span class="op">:</span> [</span>
+<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a>      <span class="st">"[[150]]"</span><span class="op">,</span></span>
+<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a>      <span class="st">"[[450]]"</span><span class="op">,</span></span>
+<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a>      <span class="st">"[[600]]"</span><span class="op">,</span></span>
+<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a>      <span class="st">"[[750]]"</span></span>
+<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a>    ]<span class="op">,</span></span>
+<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a>    <span class="dt">correct</span><span class="op">:</span> <span class="dv">2</span><span class="op">,</span></span>
+<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a>    <span class="dt">why</span><span class="op">:</span> <span class="st">"Set [[Y=80+0.75Y+70]], so [[0.25Y=150]] and [[Y^*=600]]."</span></span>
+<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a>  {</span>
+<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a>    <span class="dt">id</span><span class="op">:</span> <span class="st">"kc-inventory-adjustment"</span><span class="op">,</span></span>
+<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a>    <span class="dt">topic</span><span class="op">:</span> <span class="st">"Keynesian cross"</span><span class="op">,</span></span>
+<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a>    <span class="dt">prompt</span><span class="op">:</span> <span class="st">"At current output, planned aggregate expenditure is 920 while actual output is 1,000. What happens next in the Keynesian-cross adjustment story?"</span><span class="op">,</span></span>
+<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a>    <span class="dt">choices</span><span class="op">:</span> [</span>
+<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Unplanned inventories fall, so firms raise output."</span><span class="op">,</span></span>
+<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Unplanned inventories rise, so firms cut output."</span><span class="op">,</span></span>
+<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Interest rates fall until money demand rises."</span><span class="op">,</span></span>
+<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a>      <span class="st">"The price level falls immediately and output stays fixed."</span></span>
+<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a>    ]<span class="op">,</span></span>
+<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a>    <span class="dt">correct</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span></span>
+<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a>    <span class="dt">why</span><span class="op">:</span> <span class="st">"If [[AE^d&lt;Y]], goods are left unsold, inventories rise unintentionally, and firms reduce production."</span></span>
+<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a>  {</span>
+<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a>    <span class="dt">id</span><span class="op">:</span> <span class="st">"kc-open-import-sign"</span><span class="op">,</span></span>
+<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a>    <span class="dt">topic</span><span class="op">:</span> <span class="st">"Keynesian cross"</span><span class="op">,</span></span>
+<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a>    <span class="dt">prompt</span><span class="op">:</span> <span class="st">"Open-economy planned expenditure is [[AE=C+I+G+X-M]]. Holding all else fixed, autonomous imports rise by 25 and [[c=0.80]]. What is [[</span><span class="sc">\\</span><span class="st">Delta Y^*]]?"</span><span class="op">,</span></span>
+<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a>    <span class="dt">choices</span><span class="op">:</span> [</span>
+<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a>      <span class="st">"[[+125]]"</span><span class="op">,</span></span>
+<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a>      <span class="st">"[[-125]]"</span><span class="op">,</span></span>
+<span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a>      <span class="st">"[[+20]]"</span><span class="op">,</span></span>
+<span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a>      <span class="st">"[[-20]]"</span></span>
+<span id="cb1-212"><a href="#cb1-212" aria-hidden="true" tabindex="-1"></a>    ]<span class="op">,</span></span>
+<span id="cb1-213"><a href="#cb1-213" aria-hidden="true" tabindex="-1"></a>    <span class="dt">correct</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span></span>
+<span id="cb1-214"><a href="#cb1-214" aria-hidden="true" tabindex="-1"></a>    <span class="dt">why</span><span class="op">:</span> <span class="st">"Autonomous imports enter spending with a minus sign, so [[</span><span class="sc">\\</span><span class="st">Delta Y^*=-(1/(1-c))</span><span class="sc">\\</span><span class="st">Delta</span><span class="sc">\\</span><span class="st">overline{M}=-5(25)=-125]]."</span></span>
+<span id="cb1-215"><a href="#cb1-215" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb1-216"><a href="#cb1-216" aria-hidden="true" tabindex="-1"></a>  {</span>
+<span id="cb1-217"><a href="#cb1-217" aria-hidden="true" tabindex="-1"></a>    <span class="dt">id</span><span class="op">:</span> <span class="st">"mult-tax-cut-size"</span><span class="op">,</span></span>
+<span id="cb1-218"><a href="#cb1-218" aria-hidden="true" tabindex="-1"></a>    <span class="dt">topic</span><span class="op">:</span> <span class="st">"Multipliers"</span><span class="op">,</span></span>
+<span id="cb1-219"><a href="#cb1-219" aria-hidden="true" tabindex="-1"></a>    <span class="dt">prompt</span><span class="op">:</span> <span class="st">"MPC is [[0.80]] and there is a recessionary gap of 300. How large a lump-sum tax change closes the gap by itself?"</span><span class="op">,</span></span>
+<span id="cb1-220"><a href="#cb1-220" aria-hidden="true" tabindex="-1"></a>    <span class="dt">choices</span><span class="op">:</span> [</span>
+<span id="cb1-221"><a href="#cb1-221" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Raise taxes by 60."</span><span class="op">,</span></span>
+<span id="cb1-222"><a href="#cb1-222" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Cut taxes by 60."</span><span class="op">,</span></span>
+<span id="cb1-223"><a href="#cb1-223" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Raise taxes by 75."</span><span class="op">,</span></span>
+<span id="cb1-224"><a href="#cb1-224" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Cut taxes by 75."</span></span>
+<span id="cb1-225"><a href="#cb1-225" aria-hidden="true" tabindex="-1"></a>    ]<span class="op">,</span></span>
+<span id="cb1-226"><a href="#cb1-226" aria-hidden="true" tabindex="-1"></a>    <span class="dt">correct</span><span class="op">:</span> <span class="dv">3</span><span class="op">,</span></span>
+<span id="cb1-227"><a href="#cb1-227" aria-hidden="true" tabindex="-1"></a>    <span class="dt">why</span><span class="op">:</span> <span class="st">"The tax multiplier is [[-c/(1-c)=-4]], so [[</span><span class="sc">\\</span><span class="st">Delta</span><span class="sc">\\</span><span class="st">overline{T}=300/(-4)=-75]], a tax cut."</span></span>
+<span id="cb1-228"><a href="#cb1-228" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb1-229"><a href="#cb1-229" aria-hidden="true" tabindex="-1"></a>  {</span>
+<span id="cb1-230"><a href="#cb1-230" aria-hidden="true" tabindex="-1"></a>    <span class="dt">id</span><span class="op">:</span> <span class="st">"mult-proportional-tax"</span><span class="op">,</span></span>
+<span id="cb1-231"><a href="#cb1-231" aria-hidden="true" tabindex="-1"></a>    <span class="dt">topic</span><span class="op">:</span> <span class="st">"Multipliers"</span><span class="op">,</span></span>
+<span id="cb1-232"><a href="#cb1-232" aria-hidden="true" tabindex="-1"></a>    <span class="dt">prompt</span><span class="op">:</span> <span class="st">"With proportional taxes, [[C=</span><span class="sc">\\</span><span class="st">overline{C_0}+c(1-t)Y]]. If [[c=0.80]] and [[t=0.25]], what is the spending multiplier?"</span><span class="op">,</span></span>
+<span id="cb1-233"><a href="#cb1-233" aria-hidden="true" tabindex="-1"></a>    <span class="dt">choices</span><span class="op">:</span> [</span>
+<span id="cb1-234"><a href="#cb1-234" aria-hidden="true" tabindex="-1"></a>      <span class="st">"[[2.5]]"</span><span class="op">,</span></span>
+<span id="cb1-235"><a href="#cb1-235" aria-hidden="true" tabindex="-1"></a>      <span class="st">"[[3.0]]"</span><span class="op">,</span></span>
+<span id="cb1-236"><a href="#cb1-236" aria-hidden="true" tabindex="-1"></a>      <span class="st">"[[4.0]]"</span><span class="op">,</span></span>
+<span id="cb1-237"><a href="#cb1-237" aria-hidden="true" tabindex="-1"></a>      <span class="st">"[[5.0]]"</span></span>
+<span id="cb1-238"><a href="#cb1-238" aria-hidden="true" tabindex="-1"></a>    ]<span class="op">,</span></span>
+<span id="cb1-239"><a href="#cb1-239" aria-hidden="true" tabindex="-1"></a>    <span class="dt">correct</span><span class="op">:</span> <span class="dv">0</span><span class="op">,</span></span>
+<span id="cb1-240"><a href="#cb1-240" aria-hidden="true" tabindex="-1"></a>    <span class="dt">why</span><span class="op">:</span> <span class="st">"The slope of expenditure is [[c(1-t)=0.80(0.75)=0.60]], so the multiplier is [[1/(1-0.60)=2.5]]."</span></span>
+<span id="cb1-241"><a href="#cb1-241" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb1-242"><a href="#cb1-242" aria-hidden="true" tabindex="-1"></a>  {</span>
+<span id="cb1-243"><a href="#cb1-243" aria-hidden="true" tabindex="-1"></a>    <span class="dt">id</span><span class="op">:</span> <span class="st">"mult-balanced-budget"</span><span class="op">,</span></span>
+<span id="cb1-244"><a href="#cb1-244" aria-hidden="true" tabindex="-1"></a>    <span class="dt">topic</span><span class="op">:</span> <span class="st">"Multipliers"</span><span class="op">,</span></span>
+<span id="cb1-245"><a href="#cb1-245" aria-hidden="true" tabindex="-1"></a>    <span class="dt">prompt</span><span class="op">:</span> <span class="st">"MPC is [[0.75]]. Government spending and lump-sum taxes both rise by 120. What is the net change in equilibrium output?"</span><span class="op">,</span></span>
+<span id="cb1-246"><a href="#cb1-246" aria-hidden="true" tabindex="-1"></a>    <span class="dt">choices</span><span class="op">:</span> [</span>
+<span id="cb1-247"><a href="#cb1-247" aria-hidden="true" tabindex="-1"></a>      <span class="st">"[[0]]"</span><span class="op">,</span></span>
+<span id="cb1-248"><a href="#cb1-248" aria-hidden="true" tabindex="-1"></a>      <span class="st">"[[+120]]"</span><span class="op">,</span></span>
+<span id="cb1-249"><a href="#cb1-249" aria-hidden="true" tabindex="-1"></a>      <span class="st">"[[+360]]"</span><span class="op">,</span></span>
+<span id="cb1-250"><a href="#cb1-250" aria-hidden="true" tabindex="-1"></a>      <span class="st">"[[-120]]"</span></span>
+<span id="cb1-251"><a href="#cb1-251" aria-hidden="true" tabindex="-1"></a>    ]<span class="op">,</span></span>
+<span id="cb1-252"><a href="#cb1-252" aria-hidden="true" tabindex="-1"></a>    <span class="dt">correct</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span></span>
+<span id="cb1-253"><a href="#cb1-253" aria-hidden="true" tabindex="-1"></a>    <span class="dt">why</span><span class="op">:</span> <span class="st">"The balanced-budget multiplier is [[1]], because [[K_G=4]] and [[K_T=-3]], so [[</span><span class="sc">\\</span><span class="st">Delta Y=120]]."</span></span>
+<span id="cb1-254"><a href="#cb1-254" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb1-255"><a href="#cb1-255" aria-hidden="true" tabindex="-1"></a>  {</span>
+<span id="cb1-256"><a href="#cb1-256" aria-hidden="true" tabindex="-1"></a>    <span class="dt">id</span><span class="op">:</span> <span class="st">"money-single-bank"</span><span class="op">,</span></span>
+<span id="cb1-257"><a href="#cb1-257" aria-hidden="true" tabindex="-1"></a>    <span class="dt">topic</span><span class="op">:</span> <span class="st">"Money creation / rrr"</span><span class="op">,</span></span>
+<span id="cb1-258"><a href="#cb1-258" aria-hidden="true" tabindex="-1"></a>    <span class="dt">prompt</span><span class="op">:</span> <span class="st">"A bank has total reserves of 90, demand deposits of 400, and [[rrr=0.20]]. What is the maximum new lending by this single bank?"</span><span class="op">,</span></span>
+<span id="cb1-259"><a href="#cb1-259" aria-hidden="true" tabindex="-1"></a>    <span class="dt">choices</span><span class="op">:</span> [</span>
+<span id="cb1-260"><a href="#cb1-260" aria-hidden="true" tabindex="-1"></a>      <span class="st">"[[10]]"</span><span class="op">,</span></span>
+<span id="cb1-261"><a href="#cb1-261" aria-hidden="true" tabindex="-1"></a>      <span class="st">"[[80]]"</span><span class="op">,</span></span>
+<span id="cb1-262"><a href="#cb1-262" aria-hidden="true" tabindex="-1"></a>      <span class="st">"[[90]]"</span><span class="op">,</span></span>
+<span id="cb1-263"><a href="#cb1-263" aria-hidden="true" tabindex="-1"></a>      <span class="st">"[[450]]"</span></span>
+<span id="cb1-264"><a href="#cb1-264" aria-hidden="true" tabindex="-1"></a>    ]<span class="op">,</span></span>
+<span id="cb1-265"><a href="#cb1-265" aria-hidden="true" tabindex="-1"></a>    <span class="dt">correct</span><span class="op">:</span> <span class="dv">0</span><span class="op">,</span></span>
+<span id="cb1-266"><a href="#cb1-266" aria-hidden="true" tabindex="-1"></a>    <span class="dt">why</span><span class="op">:</span> <span class="st">"Required reserves are [[0.20(400)=80]], so excess reserves and maximum new loans for the single bank are [[90-80=10]]."</span></span>
+<span id="cb1-267"><a href="#cb1-267" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb1-268"><a href="#cb1-268" aria-hidden="true" tabindex="-1"></a>  {</span>
+<span id="cb1-269"><a href="#cb1-269" aria-hidden="true" tabindex="-1"></a>    <span class="dt">id</span><span class="op">:</span> <span class="st">"money-omo-sale"</span><span class="op">,</span></span>
+<span id="cb1-270"><a href="#cb1-270" aria-hidden="true" tabindex="-1"></a>    <span class="dt">topic</span><span class="op">:</span> <span class="st">"Money creation / rrr"</span><span class="op">,</span></span>
+<span id="cb1-271"><a href="#cb1-271" aria-hidden="true" tabindex="-1"></a>    <span class="dt">prompt</span><span class="op">:</span> <span class="st">"The Fed sells 50 of bonds to the public and [[rrr=0.10]]. What is the maximum change in the money supply?"</span><span class="op">,</span></span>
+<span id="cb1-272"><a href="#cb1-272" aria-hidden="true" tabindex="-1"></a>    <span class="dt">choices</span><span class="op">:</span> [</span>
+<span id="cb1-273"><a href="#cb1-273" aria-hidden="true" tabindex="-1"></a>      <span class="st">"[[+500]]"</span><span class="op">,</span></span>
+<span id="cb1-274"><a href="#cb1-274" aria-hidden="true" tabindex="-1"></a>      <span class="st">"[[-500]]"</span><span class="op">,</span></span>
+<span id="cb1-275"><a href="#cb1-275" aria-hidden="true" tabindex="-1"></a>      <span class="st">"[[+50]]"</span><span class="op">,</span></span>
+<span id="cb1-276"><a href="#cb1-276" aria-hidden="true" tabindex="-1"></a>      <span class="st">"[[-50]]"</span></span>
+<span id="cb1-277"><a href="#cb1-277" aria-hidden="true" tabindex="-1"></a>    ]<span class="op">,</span></span>
+<span id="cb1-278"><a href="#cb1-278" aria-hidden="true" tabindex="-1"></a>    <span class="dt">correct</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span></span>
+<span id="cb1-279"><a href="#cb1-279" aria-hidden="true" tabindex="-1"></a>    <span class="dt">why</span><span class="op">:</span> <span class="st">"An OMO sale drains reserves, so [[</span><span class="sc">\\</span><span class="st">Delta M^S=(1/0.10)(-50)=-500]]."</span></span>
+<span id="cb1-280"><a href="#cb1-280" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb1-281"><a href="#cb1-281" aria-hidden="true" tabindex="-1"></a>  {</span>
+<span id="cb1-282"><a href="#cb1-282" aria-hidden="true" tabindex="-1"></a>    <span class="dt">id</span><span class="op">:</span> <span class="st">"money-rrr-change"</span><span class="op">,</span></span>
+<span id="cb1-283"><a href="#cb1-283" aria-hidden="true" tabindex="-1"></a>    <span class="dt">topic</span><span class="op">:</span> <span class="st">"Money creation / rrr"</span><span class="op">,</span></span>
+<span id="cb1-284"><a href="#cb1-284" aria-hidden="true" tabindex="-1"></a>    <span class="dt">prompt</span><span class="op">:</span> <span class="st">"Banks have demand deposits of 1,000 and are fully loaned up when [[rrr=0.20]]. The required reserve ratio falls to [[0.10]]. How much additional money can the banking system create from the newly freed reserves?"</span><span class="op">,</span></span>
+<span id="cb1-285"><a href="#cb1-285" aria-hidden="true" tabindex="-1"></a>    <span class="dt">choices</span><span class="op">:</span> [</span>
+<span id="cb1-286"><a href="#cb1-286" aria-hidden="true" tabindex="-1"></a>      <span class="st">"[[100]]"</span><span class="op">,</span></span>
+<span id="cb1-287"><a href="#cb1-287" aria-hidden="true" tabindex="-1"></a>      <span class="st">"[[500]]"</span><span class="op">,</span></span>
+<span id="cb1-288"><a href="#cb1-288" aria-hidden="true" tabindex="-1"></a>      <span class="st">"[[1{,}000]]"</span><span class="op">,</span></span>
+<span id="cb1-289"><a href="#cb1-289" aria-hidden="true" tabindex="-1"></a>      <span class="st">"[[2{,}000]]"</span></span>
+<span id="cb1-290"><a href="#cb1-290" aria-hidden="true" tabindex="-1"></a>    ]<span class="op">,</span></span>
+<span id="cb1-291"><a href="#cb1-291" aria-hidden="true" tabindex="-1"></a>    <span class="dt">correct</span><span class="op">:</span> <span class="dv">2</span><span class="op">,</span></span>
+<span id="cb1-292"><a href="#cb1-292" aria-hidden="true" tabindex="-1"></a>    <span class="dt">why</span><span class="op">:</span> <span class="st">"The cut frees [[100]] of reserves and the new multiplier is [[10]], so possible expansion is [[10(100)=1{,}000]]."</span></span>
+<span id="cb1-293"><a href="#cb1-293" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb1-294"><a href="#cb1-294" aria-hidden="true" tabindex="-1"></a>  {</span>
+<span id="cb1-295"><a href="#cb1-295" aria-hidden="true" tabindex="-1"></a>    <span class="dt">id</span><span class="op">:</span> <span class="st">"mm-y-shift"</span><span class="op">,</span></span>
+<span id="cb1-296"><a href="#cb1-296" aria-hidden="true" tabindex="-1"></a>    <span class="dt">topic</span><span class="op">:</span> <span class="st">"Money market equilibrium"</span><span class="op">,</span></span>
+<span id="cb1-297"><a href="#cb1-297" aria-hidden="true" tabindex="-1"></a>    <span class="dt">prompt</span><span class="op">:</span> <span class="st">"Real income rises while nominal money supply and the price level are fixed. In the money market, what happens to money demand and [[r^*]]?"</span><span class="op">,</span></span>
+<span id="cb1-298"><a href="#cb1-298" aria-hidden="true" tabindex="-1"></a>    <span class="dt">choices</span><span class="op">:</span> [</span>
+<span id="cb1-299"><a href="#cb1-299" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Money demand shifts right and [[r^*]] rises."</span><span class="op">,</span></span>
+<span id="cb1-300"><a href="#cb1-300" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Money demand shifts left and [[r^*]] falls."</span><span class="op">,</span></span>
+<span id="cb1-301"><a href="#cb1-301" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Money supply shifts right and [[r^*]] falls."</span><span class="op">,</span></span>
+<span id="cb1-302"><a href="#cb1-302" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Money demand is unchanged because only prices matter."</span></span>
+<span id="cb1-303"><a href="#cb1-303" aria-hidden="true" tabindex="-1"></a>    ]<span class="op">,</span></span>
+<span id="cb1-304"><a href="#cb1-304" aria-hidden="true" tabindex="-1"></a>    <span class="dt">correct</span><span class="op">:</span> <span class="dv">0</span><span class="op">,</span></span>
+<span id="cb1-305"><a href="#cb1-305" aria-hidden="true" tabindex="-1"></a>    <span class="dt">why</span><span class="op">:</span> <span class="st">"Higher income raises transactions demand for money, shifting [[M^D]] right and pushing the equilibrium interest rate up."</span></span>
+<span id="cb1-306"><a href="#cb1-306" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb1-307"><a href="#cb1-307" aria-hidden="true" tabindex="-1"></a>  {</span>
+<span id="cb1-308"><a href="#cb1-308" aria-hidden="true" tabindex="-1"></a>    <span class="dt">id</span><span class="op">:</span> <span class="st">"mm-excess-supply"</span><span class="op">,</span></span>
+<span id="cb1-309"><a href="#cb1-309" aria-hidden="true" tabindex="-1"></a>    <span class="dt">topic</span><span class="op">:</span> <span class="st">"Money market equilibrium"</span><span class="op">,</span></span>
+<span id="cb1-310"><a href="#cb1-310" aria-hidden="true" tabindex="-1"></a>    <span class="dt">prompt</span><span class="op">:</span> <span class="st">"At the current interest rate, money supplied is greater than money demanded. What adjustment moves the economy toward money-market equilibrium?"</span><span class="op">,</span></span>
+<span id="cb1-311"><a href="#cb1-311" aria-hidden="true" tabindex="-1"></a>    <span class="dt">choices</span><span class="op">:</span> [</span>
+<span id="cb1-312"><a href="#cb1-312" aria-hidden="true" tabindex="-1"></a>      <span class="st">"People buy bonds, bond prices rise, and interest rates fall."</span><span class="op">,</span></span>
+<span id="cb1-313"><a href="#cb1-313" aria-hidden="true" tabindex="-1"></a>      <span class="st">"People sell bonds, bond prices fall, and interest rates rise."</span><span class="op">,</span></span>
+<span id="cb1-314"><a href="#cb1-314" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Banks raise required reserves, so the multiplier falls."</span><span class="op">,</span></span>
+<span id="cb1-315"><a href="#cb1-315" aria-hidden="true" tabindex="-1"></a>      <span class="st">"The exchange rate appreciates until exports fall."</span></span>
+<span id="cb1-316"><a href="#cb1-316" aria-hidden="true" tabindex="-1"></a>    ]<span class="op">,</span></span>
+<span id="cb1-317"><a href="#cb1-317" aria-hidden="true" tabindex="-1"></a>    <span class="dt">correct</span><span class="op">:</span> <span class="dv">0</span><span class="op">,</span></span>
+<span id="cb1-318"><a href="#cb1-318" aria-hidden="true" tabindex="-1"></a>    <span class="dt">why</span><span class="op">:</span> <span class="st">"Excess money balances are used to buy bonds, raising bond prices and lowering yields until money demanded rises to match supply."</span></span>
+<span id="cb1-319"><a href="#cb1-319" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb1-320"><a href="#cb1-320" aria-hidden="true" tabindex="-1"></a>  {</span>
+<span id="cb1-321"><a href="#cb1-321" aria-hidden="true" tabindex="-1"></a>    <span class="dt">id</span><span class="op">:</span> <span class="st">"mm-real-balances"</span><span class="op">,</span></span>
+<span id="cb1-322"><a href="#cb1-322" aria-hidden="true" tabindex="-1"></a>    <span class="dt">topic</span><span class="op">:</span> <span class="st">"Money market equilibrium"</span><span class="op">,</span></span>
+<span id="cb1-323"><a href="#cb1-323" aria-hidden="true" tabindex="-1"></a>    <span class="dt">prompt</span><span class="op">:</span> <span class="st">"Nominal [[M^S]] is fixed, but the price level rises. What happens to real money supply and [[r^*]]?"</span><span class="op">,</span></span>
+<span id="cb1-324"><a href="#cb1-324" aria-hidden="true" tabindex="-1"></a>    <span class="dt">choices</span><span class="op">:</span> [</span>
+<span id="cb1-325"><a href="#cb1-325" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Real money supply rises and [[r^*]] falls."</span><span class="op">,</span></span>
+<span id="cb1-326"><a href="#cb1-326" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Real money supply falls and [[r^*]] rises."</span><span class="op">,</span></span>
+<span id="cb1-327"><a href="#cb1-327" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Both real money supply and [[r^*]] rise."</span><span class="op">,</span></span>
+<span id="cb1-328"><a href="#cb1-328" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Neither changes because nominal [[M^S]] is fixed."</span></span>
+<span id="cb1-329"><a href="#cb1-329" aria-hidden="true" tabindex="-1"></a>    ]<span class="op">,</span></span>
+<span id="cb1-330"><a href="#cb1-330" aria-hidden="true" tabindex="-1"></a>    <span class="dt">correct</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span></span>
+<span id="cb1-331"><a href="#cb1-331" aria-hidden="true" tabindex="-1"></a>    <span class="dt">why</span><span class="op">:</span> <span class="st">"Real balances are [[M^S/P]], so a higher [[P]] shifts real money supply left and raises the equilibrium interest rate."</span></span>
+<span id="cb1-332"><a href="#cb1-332" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb1-333"><a href="#cb1-333" aria-hidden="true" tabindex="-1"></a>  {</span>
+<span id="cb1-334"><a href="#cb1-334" aria-hidden="true" tabindex="-1"></a>    <span class="dt">id</span><span class="op">:</span> <span class="st">"bond-price-rate"</span><span class="op">,</span></span>
+<span id="cb1-335"><a href="#cb1-335" aria-hidden="true" tabindex="-1"></a>    <span class="dt">topic</span><span class="op">:</span> <span class="st">"Bond pricing"</span><span class="op">,</span></span>
+<span id="cb1-336"><a href="#cb1-336" aria-hidden="true" tabindex="-1"></a>    <span class="dt">prompt</span><span class="op">:</span> <span class="st">"A discount bond pays 1,000 in five years. If the market interest rate rises from [[4</span><span class="sc">\\</span><span class="st">%]] to [[6</span><span class="sc">\\</span><span class="st">%]], what happens to the bond's current price?"</span><span class="op">,</span></span>
+<span id="cb1-337"><a href="#cb1-337" aria-hidden="true" tabindex="-1"></a>    <span class="dt">choices</span><span class="op">:</span> [</span>
+<span id="cb1-338"><a href="#cb1-338" aria-hidden="true" tabindex="-1"></a>      <span class="st">"It rises because the bond now earns a higher rate."</span><span class="op">,</span></span>
+<span id="cb1-339"><a href="#cb1-339" aria-hidden="true" tabindex="-1"></a>      <span class="st">"It falls because the fixed future payment is discounted more heavily."</span><span class="op">,</span></span>
+<span id="cb1-340"><a href="#cb1-340" aria-hidden="true" tabindex="-1"></a>      <span class="st">"It stays at 1,000 because face value is fixed."</span><span class="op">,</span></span>
+<span id="cb1-341"><a href="#cb1-341" aria-hidden="true" tabindex="-1"></a>      <span class="st">"It rises only if the bond was issued before rates changed."</span></span>
+<span id="cb1-342"><a href="#cb1-342" aria-hidden="true" tabindex="-1"></a>    ]<span class="op">,</span></span>
+<span id="cb1-343"><a href="#cb1-343" aria-hidden="true" tabindex="-1"></a>    <span class="dt">correct</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span></span>
+<span id="cb1-344"><a href="#cb1-344" aria-hidden="true" tabindex="-1"></a>    <span class="dt">why</span><span class="op">:</span> <span class="st">"For a fixed [[FV]], [[PV=FV/(1+r)^T]], so a higher discount rate lowers price."</span></span>
+<span id="cb1-345"><a href="#cb1-345" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb1-346"><a href="#cb1-346" aria-hidden="true" tabindex="-1"></a>  {</span>
+<span id="cb1-347"><a href="#cb1-347" aria-hidden="true" tabindex="-1"></a>    <span class="dt">id</span><span class="op">:</span> <span class="st">"bond-implied-yield"</span><span class="op">,</span></span>
+<span id="cb1-348"><a href="#cb1-348" aria-hidden="true" tabindex="-1"></a>    <span class="dt">topic</span><span class="op">:</span> <span class="st">"Bond pricing"</span><span class="op">,</span></span>
+<span id="cb1-349"><a href="#cb1-349" aria-hidden="true" tabindex="-1"></a>    <span class="dt">prompt</span><span class="op">:</span> <span class="st">"A one-year discount bond with face value 1,000 sells for 952.38. What is its implied yield?"</span><span class="op">,</span></span>
+<span id="cb1-350"><a href="#cb1-350" aria-hidden="true" tabindex="-1"></a>    <span class="dt">choices</span><span class="op">:</span> [</span>
+<span id="cb1-351"><a href="#cb1-351" aria-hidden="true" tabindex="-1"></a>      <span class="st">"[[4</span><span class="sc">\\</span><span class="st">%]]"</span><span class="op">,</span></span>
+<span id="cb1-352"><a href="#cb1-352" aria-hidden="true" tabindex="-1"></a>      <span class="st">"[[5</span><span class="sc">\\</span><span class="st">%]]"</span><span class="op">,</span></span>
+<span id="cb1-353"><a href="#cb1-353" aria-hidden="true" tabindex="-1"></a>      <span class="st">"[[47.62</span><span class="sc">\\</span><span class="st">%]]"</span><span class="op">,</span></span>
+<span id="cb1-354"><a href="#cb1-354" aria-hidden="true" tabindex="-1"></a>      <span class="st">"[[95.24</span><span class="sc">\\</span><span class="st">%]]"</span></span>
+<span id="cb1-355"><a href="#cb1-355" aria-hidden="true" tabindex="-1"></a>    ]<span class="op">,</span></span>
+<span id="cb1-356"><a href="#cb1-356" aria-hidden="true" tabindex="-1"></a>    <span class="dt">correct</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span></span>
+<span id="cb1-357"><a href="#cb1-357" aria-hidden="true" tabindex="-1"></a>    <span class="dt">why</span><span class="op">:</span> <span class="st">"The one-year yield is [[1000/952.38-1</span><span class="sc">\\</span><span class="st">approx0.05]], so the discount is not the interest rate."</span></span>
+<span id="cb1-358"><a href="#cb1-358" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb1-359"><a href="#cb1-359" aria-hidden="true" tabindex="-1"></a>  {</span>
+<span id="cb1-360"><a href="#cb1-360" aria-hidden="true" tabindex="-1"></a>    <span class="dt">id</span><span class="op">:</span> <span class="st">"asad-demand-shock"</span><span class="op">,</span></span>
+<span id="cb1-361"><a href="#cb1-361" aria-hidden="true" tabindex="-1"></a>    <span class="dt">topic</span><span class="op">:</span> <span class="st">"AS-AD"</span><span class="op">,</span></span>
+<span id="cb1-362"><a href="#cb1-362" aria-hidden="true" tabindex="-1"></a>    <span class="dt">prompt</span><span class="op">:</span> <span class="st">"A wave of pessimism reduces planned investment. In the short-run AS-AD model, what is the direct effect?"</span><span class="op">,</span></span>
+<span id="cb1-363"><a href="#cb1-363" aria-hidden="true" tabindex="-1"></a>    <span class="dt">choices</span><span class="op">:</span> [</span>
+<span id="cb1-364"><a href="#cb1-364" aria-hidden="true" tabindex="-1"></a>      <span class="st">"AD shifts left, lowering both output and the price level in the short run."</span><span class="op">,</span></span>
+<span id="cb1-365"><a href="#cb1-365" aria-hidden="true" tabindex="-1"></a>      <span class="st">"AD shifts right, raising output and the price level."</span><span class="op">,</span></span>
+<span id="cb1-366"><a href="#cb1-366" aria-hidden="true" tabindex="-1"></a>      <span class="st">"SRAS shifts left, lowering output and raising the price level."</span><span class="op">,</span></span>
+<span id="cb1-367"><a href="#cb1-367" aria-hidden="true" tabindex="-1"></a>      <span class="st">"LRAS shifts left because investment is part of potential output immediately."</span></span>
+<span id="cb1-368"><a href="#cb1-368" aria-hidden="true" tabindex="-1"></a>    ]<span class="op">,</span></span>
+<span id="cb1-369"><a href="#cb1-369" aria-hidden="true" tabindex="-1"></a>    <span class="dt">correct</span><span class="op">:</span> <span class="dv">0</span><span class="op">,</span></span>
+<span id="cb1-370"><a href="#cb1-370" aria-hidden="true" tabindex="-1"></a>    <span class="dt">why</span><span class="op">:</span> <span class="st">"Lower planned investment reduces aggregate demand, so short-run equilibrium moves to lower [[Y]] and lower [[P]]."</span></span>
+<span id="cb1-371"><a href="#cb1-371" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb1-372"><a href="#cb1-372" aria-hidden="true" tabindex="-1"></a>  {</span>
+<span id="cb1-373"><a href="#cb1-373" aria-hidden="true" tabindex="-1"></a>    <span class="dt">id</span><span class="op">:</span> <span class="st">"asad-cost-push"</span><span class="op">,</span></span>
+<span id="cb1-374"><a href="#cb1-374" aria-hidden="true" tabindex="-1"></a>    <span class="dt">topic</span><span class="op">:</span> <span class="st">"AS-AD"</span><span class="op">,</span></span>
+<span id="cb1-375"><a href="#cb1-375" aria-hidden="true" tabindex="-1"></a>    <span class="dt">prompt</span><span class="op">:</span> <span class="st">"Oil prices jump sharply. In AS-AD terms, which outcome best describes the short run?"</span><span class="op">,</span></span>
+<span id="cb1-376"><a href="#cb1-376" aria-hidden="true" tabindex="-1"></a>    <span class="dt">choices</span><span class="op">:</span> [</span>
+<span id="cb1-377"><a href="#cb1-377" aria-hidden="true" tabindex="-1"></a>      <span class="st">"AD shifts right: higher output and higher prices."</span><span class="op">,</span></span>
+<span id="cb1-378"><a href="#cb1-378" aria-hidden="true" tabindex="-1"></a>      <span class="st">"SRAS shifts right: higher output and lower prices."</span><span class="op">,</span></span>
+<span id="cb1-379"><a href="#cb1-379" aria-hidden="true" tabindex="-1"></a>      <span class="st">"SRAS shifts left: lower output and higher prices."</span><span class="op">,</span></span>
+<span id="cb1-380"><a href="#cb1-380" aria-hidden="true" tabindex="-1"></a>      <span class="st">"LRAS shifts right: higher potential output and lower prices."</span></span>
+<span id="cb1-381"><a href="#cb1-381" aria-hidden="true" tabindex="-1"></a>    ]<span class="op">,</span></span>
+<span id="cb1-382"><a href="#cb1-382" aria-hidden="true" tabindex="-1"></a>    <span class="dt">correct</span><span class="op">:</span> <span class="dv">2</span><span class="op">,</span></span>
+<span id="cb1-383"><a href="#cb1-383" aria-hidden="true" tabindex="-1"></a>    <span class="dt">why</span><span class="op">:</span> <span class="st">"A negative supply shock raises production costs, shifting SRAS left and causing stagflation: lower output with higher prices."</span></span>
+<span id="cb1-384"><a href="#cb1-384" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb1-385"><a href="#cb1-385" aria-hidden="true" tabindex="-1"></a>  {</span>
+<span id="cb1-386"><a href="#cb1-386" aria-hidden="true" tabindex="-1"></a>    <span class="dt">id</span><span class="op">:</span> <span class="st">"asad-policy-mix"</span><span class="op">,</span></span>
+<span id="cb1-387"><a href="#cb1-387" aria-hidden="true" tabindex="-1"></a>    <span class="dt">topic</span><span class="op">:</span> <span class="st">"AS-AD"</span><span class="op">,</span></span>
+<span id="cb1-388"><a href="#cb1-388" aria-hidden="true" tabindex="-1"></a>    <span class="dt">prompt</span><span class="op">:</span> <span class="st">"The economy is below full-employment output and the central bank expands [[M^S]]. Through the standard interest-rate channel, what happens in AS-AD?"</span><span class="op">,</span></span>
+<span id="cb1-389"><a href="#cb1-389" aria-hidden="true" tabindex="-1"></a>    <span class="dt">choices</span><span class="op">:</span> [</span>
+<span id="cb1-390"><a href="#cb1-390" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Lower [[r]] raises investment, AD shifts right, and [[Y]] rises."</span><span class="op">,</span></span>
+<span id="cb1-391"><a href="#cb1-391" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Higher [[r]] lowers investment, AD shifts left, and [[Y]] falls."</span><span class="op">,</span></span>
+<span id="cb1-392"><a href="#cb1-392" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Lower [[r]] shifts SRAS right, leaving AD unchanged."</span><span class="op">,</span></span>
+<span id="cb1-393"><a href="#cb1-393" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Higher [[r]] raises net exports, AD shifts right, and [[Y]] rises."</span></span>
+<span id="cb1-394"><a href="#cb1-394" aria-hidden="true" tabindex="-1"></a>    ]<span class="op">,</span></span>
+<span id="cb1-395"><a href="#cb1-395" aria-hidden="true" tabindex="-1"></a>    <span class="dt">correct</span><span class="op">:</span> <span class="dv">0</span><span class="op">,</span></span>
+<span id="cb1-396"><a href="#cb1-396" aria-hidden="true" tabindex="-1"></a>    <span class="dt">why</span><span class="op">:</span> <span class="st">"Expansionary monetary policy lowers [[r]], stimulates interest-sensitive spending, and shifts AD right."</span></span>
+<span id="cb1-397"><a href="#cb1-397" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb1-398"><a href="#cb1-398" aria-hidden="true" tabindex="-1"></a>  {</span>
+<span id="cb1-399"><a href="#cb1-399" aria-hidden="true" tabindex="-1"></a>    <span class="dt">id</span><span class="op">:</span> <span class="st">"fx-ppp-quote"</span><span class="op">,</span></span>
+<span id="cb1-400"><a href="#cb1-400" aria-hidden="true" tabindex="-1"></a>    <span class="dt">topic</span><span class="op">:</span> <span class="st">"Foreign exchange"</span><span class="op">,</span></span>
+<span id="cb1-401"><a href="#cb1-401" aria-hidden="true" tabindex="-1"></a>    <span class="dt">prompt</span><span class="op">:</span> <span class="st">"A U.S. basket costs 480 dollars and the same U.K. basket costs 240 pounds. With the exchange rate quoted as [[E_{</span><span class="sc">\\</span><span class="st">$/</span><span class="sc">\\</span><span class="st">pounds}]], what is PPP?"</span><span class="op">,</span></span>
+<span id="cb1-402"><a href="#cb1-402" aria-hidden="true" tabindex="-1"></a>    <span class="dt">choices</span><span class="op">:</span> [</span>
+<span id="cb1-403"><a href="#cb1-403" aria-hidden="true" tabindex="-1"></a>      <span class="st">"[[0.50</span><span class="sc">\\</span><span class="st"> </span><span class="sc">\\</span><span class="st">$/</span><span class="sc">\\</span><span class="st">pounds]]"</span><span class="op">,</span></span>
+<span id="cb1-404"><a href="#cb1-404" aria-hidden="true" tabindex="-1"></a>      <span class="st">"[[2.00</span><span class="sc">\\</span><span class="st"> </span><span class="sc">\\</span><span class="st">$/</span><span class="sc">\\</span><span class="st">pounds]]"</span><span class="op">,</span></span>
+<span id="cb1-405"><a href="#cb1-405" aria-hidden="true" tabindex="-1"></a>      <span class="st">"[[240</span><span class="sc">\\</span><span class="st"> </span><span class="sc">\\</span><span class="st">$/</span><span class="sc">\\</span><span class="st">pounds]]"</span><span class="op">,</span></span>
+<span id="cb1-406"><a href="#cb1-406" aria-hidden="true" tabindex="-1"></a>      <span class="st">"[[720</span><span class="sc">\\</span><span class="st"> </span><span class="sc">\\</span><span class="st">$/</span><span class="sc">\\</span><span class="st">pounds]]"</span></span>
+<span id="cb1-407"><a href="#cb1-407" aria-hidden="true" tabindex="-1"></a>    ]<span class="op">,</span></span>
+<span id="cb1-408"><a href="#cb1-408" aria-hidden="true" tabindex="-1"></a>    <span class="dt">correct</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span></span>
+<span id="cb1-409"><a href="#cb1-409" aria-hidden="true" tabindex="-1"></a>    <span class="dt">why</span><span class="op">:</span> <span class="st">"For a dollars-per-pound quote, PPP is [[P_{US}/P_{UK}=480/240=2.00</span><span class="sc">\\</span><span class="st"> </span><span class="sc">\\</span><span class="st">$/</span><span class="sc">\\</span><span class="st">pounds]]."</span></span>
+<span id="cb1-410"><a href="#cb1-410" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb1-411"><a href="#cb1-411" aria-hidden="true" tabindex="-1"></a>  {</span>
+<span id="cb1-412"><a href="#cb1-412" aria-hidden="true" tabindex="-1"></a>    <span class="dt">id</span><span class="op">:</span> <span class="st">"fx-capital-flow"</span><span class="op">,</span></span>
+<span id="cb1-413"><a href="#cb1-413" aria-hidden="true" tabindex="-1"></a>    <span class="dt">topic</span><span class="op">:</span> <span class="st">"Foreign exchange"</span><span class="op">,</span></span>
+<span id="cb1-414"><a href="#cb1-414" aria-hidden="true" tabindex="-1"></a>    <span class="dt">prompt</span><span class="op">:</span> <span class="st">"U.S. interest rates rise relative to U.K. rates, with exchange rates floating. Through the capital-flow channel, what happens to the dollar and to [[E_{</span><span class="sc">\\</span><span class="st">$/</span><span class="sc">\\</span><span class="st">pounds}]]?"</span><span class="op">,</span></span>
+<span id="cb1-415"><a href="#cb1-415" aria-hidden="true" tabindex="-1"></a>    <span class="dt">choices</span><span class="op">:</span> [</span>
+<span id="cb1-416"><a href="#cb1-416" aria-hidden="true" tabindex="-1"></a>      <span class="st">"The dollar depreciates and [[E_{</span><span class="sc">\\</span><span class="st">$/</span><span class="sc">\\</span><span class="st">pounds}]] rises."</span><span class="op">,</span></span>
+<span id="cb1-417"><a href="#cb1-417" aria-hidden="true" tabindex="-1"></a>      <span class="st">"The dollar appreciates and [[E_{</span><span class="sc">\\</span><span class="st">$/</span><span class="sc">\\</span><span class="st">pounds}]] falls."</span><span class="op">,</span></span>
+<span id="cb1-418"><a href="#cb1-418" aria-hidden="true" tabindex="-1"></a>      <span class="st">"The dollar appreciates and [[E_{</span><span class="sc">\\</span><span class="st">$/</span><span class="sc">\\</span><span class="st">pounds}]] rises."</span><span class="op">,</span></span>
+<span id="cb1-419"><a href="#cb1-419" aria-hidden="true" tabindex="-1"></a>      <span class="st">"The dollar depreciates and [[E_{</span><span class="sc">\\</span><span class="st">$/</span><span class="sc">\\</span><span class="st">pounds}]] falls."</span></span>
+<span id="cb1-420"><a href="#cb1-420" aria-hidden="true" tabindex="-1"></a>    ]<span class="op">,</span></span>
+<span id="cb1-421"><a href="#cb1-421" aria-hidden="true" tabindex="-1"></a>    <span class="dt">correct</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span></span>
+<span id="cb1-422"><a href="#cb1-422" aria-hidden="true" tabindex="-1"></a>    <span class="dt">why</span><span class="op">:</span> <span class="st">"Higher U.S. returns attract capital into dollar assets, so the dollar appreciates and fewer dollars are needed per pound."</span></span>
+<span id="cb1-423"><a href="#cb1-423" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb1-424"><a href="#cb1-424" aria-hidden="true" tabindex="-1"></a>  {</span>
+<span id="cb1-425"><a href="#cb1-425" aria-hidden="true" tabindex="-1"></a>    <span class="dt">id</span><span class="op">:</span> <span class="st">"fx-ppp-vs-capital"</span><span class="op">,</span></span>
+<span id="cb1-426"><a href="#cb1-426" aria-hidden="true" tabindex="-1"></a>    <span class="dt">topic</span><span class="op">:</span> <span class="st">"Foreign exchange"</span><span class="op">,</span></span>
+<span id="cb1-427"><a href="#cb1-427" aria-hidden="true" tabindex="-1"></a>    <span class="dt">prompt</span><span class="op">:</span> <span class="st">"U.S. inflation exceeds U.K. inflation, but U.S. interest rates also rise above U.K. rates. Which distinction is correct?"</span><span class="op">,</span></span>
+<span id="cb1-428"><a href="#cb1-428" aria-hidden="true" tabindex="-1"></a>    <span class="dt">choices</span><span class="op">:</span> [</span>
+<span id="cb1-429"><a href="#cb1-429" aria-hidden="true" tabindex="-1"></a>      <span class="st">"PPP and capital flows both predict dollar depreciation."</span><span class="op">,</span></span>
+<span id="cb1-430"><a href="#cb1-430" aria-hidden="true" tabindex="-1"></a>      <span class="st">"PPP predicts dollar appreciation, while capital flows predict dollar depreciation."</span><span class="op">,</span></span>
+<span id="cb1-431"><a href="#cb1-431" aria-hidden="true" tabindex="-1"></a>      <span class="st">"PPP predicts dollar depreciation, while capital flows predict dollar appreciation."</span><span class="op">,</span></span>
+<span id="cb1-432"><a href="#cb1-432" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Neither channel predicts a directional change."</span></span>
+<span id="cb1-433"><a href="#cb1-433" aria-hidden="true" tabindex="-1"></a>    ]<span class="op">,</span></span>
+<span id="cb1-434"><a href="#cb1-434" aria-hidden="true" tabindex="-1"></a>    <span class="dt">correct</span><span class="op">:</span> <span class="dv">2</span><span class="op">,</span></span>
+<span id="cb1-435"><a href="#cb1-435" aria-hidden="true" tabindex="-1"></a>    <span class="dt">why</span><span class="op">:</span> <span class="st">"Higher relative inflation weakens a currency in PPP, while higher relative interest rates attract capital and strengthen it in the short-run capital-flow channel."</span></span>
+<span id="cb1-436"><a href="#cb1-436" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb1-437"><a href="#cb1-437" aria-hidden="true" tabindex="-1"></a>  {</span>
+<span id="cb1-438"><a href="#cb1-438" aria-hidden="true" tabindex="-1"></a>    <span class="dt">id</span><span class="op">:</span> <span class="st">"regime-floating-omo"</span><span class="op">,</span></span>
+<span id="cb1-439"><a href="#cb1-439" aria-hidden="true" tabindex="-1"></a>    <span class="dt">topic</span><span class="op">:</span> <span class="st">"Monetary regimes"</span><span class="op">,</span></span>
+<span id="cb1-440"><a href="#cb1-440" aria-hidden="true" tabindex="-1"></a>    <span class="dt">prompt</span><span class="op">:</span> <span class="st">"Under floating exchange rates with high capital mobility, the Fed buys bonds. Which chain is correct?"</span><span class="op">,</span></span>
+<span id="cb1-441"><a href="#cb1-441" aria-hidden="true" tabindex="-1"></a>    <span class="dt">choices</span><span class="op">:</span> [</span>
+<span id="cb1-442"><a href="#cb1-442" aria-hidden="true" tabindex="-1"></a>      <span class="st">"[[M^S</span><span class="sc">\\</span><span class="st">uparrow </span><span class="sc">\\</span><span class="st">Rightarrow r</span><span class="sc">\\</span><span class="st">downarrow </span><span class="sc">\\</span><span class="st">Rightarrow I</span><span class="sc">\\</span><span class="st">uparrow]] and dollar depreciation raises net exports."</span><span class="op">,</span></span>
+<span id="cb1-443"><a href="#cb1-443" aria-hidden="true" tabindex="-1"></a>      <span class="st">"[[M^S</span><span class="sc">\\</span><span class="st">uparrow </span><span class="sc">\\</span><span class="st">Rightarrow r</span><span class="sc">\\</span><span class="st">uparrow </span><span class="sc">\\</span><span class="st">Rightarrow I</span><span class="sc">\\</span><span class="st">downarrow]] and dollar appreciation raises net exports."</span><span class="op">,</span></span>
+<span id="cb1-444"><a href="#cb1-444" aria-hidden="true" tabindex="-1"></a>      <span class="st">"[[M^S</span><span class="sc">\\</span><span class="st">downarrow </span><span class="sc">\\</span><span class="st">Rightarrow r</span><span class="sc">\\</span><span class="st">uparrow </span><span class="sc">\\</span><span class="st">Rightarrow I</span><span class="sc">\\</span><span class="st">downarrow]] and the exchange rate is unchanged."</span><span class="op">,</span></span>
+<span id="cb1-445"><a href="#cb1-445" aria-hidden="true" tabindex="-1"></a>      <span class="st">"The Fed must reverse the purchase to defend a peg, so output is unchanged."</span></span>
+<span id="cb1-446"><a href="#cb1-446" aria-hidden="true" tabindex="-1"></a>    ]<span class="op">,</span></span>
+<span id="cb1-447"><a href="#cb1-447" aria-hidden="true" tabindex="-1"></a>    <span class="dt">correct</span><span class="op">:</span> <span class="dv">0</span><span class="op">,</span></span>
+<span id="cb1-448"><a href="#cb1-448" aria-hidden="true" tabindex="-1"></a>    <span class="dt">why</span><span class="op">:</span> <span class="st">"With a float, expansionary monetary policy works through both lower interest-sensitive spending costs and depreciation-driven net exports."</span></span>
+<span id="cb1-449"><a href="#cb1-449" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb1-450"><a href="#cb1-450" aria-hidden="true" tabindex="-1"></a>  {</span>
+<span id="cb1-451"><a href="#cb1-451" aria-hidden="true" tabindex="-1"></a>    <span class="dt">id</span><span class="op">:</span> <span class="st">"regime-trilemma"</span><span class="op">,</span></span>
+<span id="cb1-452"><a href="#cb1-452" aria-hidden="true" tabindex="-1"></a>    <span class="dt">topic</span><span class="op">:</span> <span class="st">"Monetary regimes"</span><span class="op">,</span></span>
+<span id="cb1-453"><a href="#cb1-453" aria-hidden="true" tabindex="-1"></a>    <span class="dt">prompt</span><span class="op">:</span> <span class="st">"A country wants free capital mobility and a fixed exchange rate. What must it give up according to the impossible trinity?"</span><span class="op">,</span></span>
+<span id="cb1-454"><a href="#cb1-454" aria-hidden="true" tabindex="-1"></a>    <span class="dt">choices</span><span class="op">:</span> [</span>
+<span id="cb1-455"><a href="#cb1-455" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Independent monetary policy."</span><span class="op">,</span></span>
+<span id="cb1-456"><a href="#cb1-456" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Fiscal policy."</span><span class="op">,</span></span>
+<span id="cb1-457"><a href="#cb1-457" aria-hidden="true" tabindex="-1"></a>      <span class="st">"The ability to trade goods."</span><span class="op">,</span></span>
+<span id="cb1-458"><a href="#cb1-458" aria-hidden="true" tabindex="-1"></a>      <span class="st">"The accounting identity that the balance of payments sums to zero."</span></span>
+<span id="cb1-459"><a href="#cb1-459" aria-hidden="true" tabindex="-1"></a>    ]<span class="op">,</span></span>
+<span id="cb1-460"><a href="#cb1-460" aria-hidden="true" tabindex="-1"></a>    <span class="dt">correct</span><span class="op">:</span> <span class="dv">0</span><span class="op">,</span></span>
+<span id="cb1-461"><a href="#cb1-461" aria-hidden="true" tabindex="-1"></a>    <span class="dt">why</span><span class="op">:</span> <span class="st">"With free capital flows and a peg, the central bank must adjust money supply to defend the exchange rate, so it cannot run independent monetary policy."</span></span>
+<span id="cb1-462"><a href="#cb1-462" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb1-463"><a href="#cb1-463" aria-hidden="true" tabindex="-1"></a>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="467" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 466;"><span id="cb2-467"><a href="#cb2-467" aria-hidden="true" tabindex="-1"></a>{</span>
+<span id="cb2-468"><a href="#cb2-468" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> minutes <span class="op">=</span> <span class="dv">25</span><span class="op">;</span></span>
+<span id="cb2-469"><a href="#cb2-469" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> totalSeconds <span class="op">=</span> minutes <span class="op">*</span> <span class="dv">60</span><span class="op">;</span></span>
+<span id="cb2-470"><a href="#cb2-470" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> letters <span class="op">=</span> [<span class="st">"A"</span><span class="op">,</span> <span class="st">"B"</span><span class="op">,</span> <span class="st">"C"</span><span class="op">,</span> <span class="st">"D"</span>]<span class="op">;</span></span>
+<span id="cb2-471"><a href="#cb2-471" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> <span class="bu">root</span> <span class="op">=</span> <span class="fu">html</span><span class="vs">`&lt;div class="exam-sim"&gt;&lt;/div&gt;`</span><span class="op">;</span></span>
+<span id="cb2-472"><a href="#cb2-472" aria-hidden="true" tabindex="-1"></a>  <span class="kw">let</span> order <span class="op">=</span> []<span class="op">;</span></span>
+<span id="cb2-473"><a href="#cb2-473" aria-hidden="true" tabindex="-1"></a>  <span class="kw">let</span> current <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb2-474"><a href="#cb2-474" aria-hidden="true" tabindex="-1"></a>  <span class="kw">let</span> answers <span class="op">=</span> <span class="kw">new</span> <span class="bu">Map</span>()<span class="op">;</span></span>
+<span id="cb2-475"><a href="#cb2-475" aria-hidden="true" tabindex="-1"></a>  <span class="kw">let</span> started <span class="op">=</span> <span class="kw">false</span><span class="op">;</span></span>
+<span id="cb2-476"><a href="#cb2-476" aria-hidden="true" tabindex="-1"></a>  <span class="kw">let</span> finished <span class="op">=</span> <span class="kw">false</span><span class="op">;</span></span>
+<span id="cb2-477"><a href="#cb2-477" aria-hidden="true" tabindex="-1"></a>  <span class="kw">let</span> remaining <span class="op">=</span> totalSeconds<span class="op">;</span></span>
+<span id="cb2-478"><a href="#cb2-478" aria-hidden="true" tabindex="-1"></a>  <span class="kw">let</span> timer <span class="op">=</span> <span class="kw">null</span><span class="op">;</span></span>
+<span id="cb2-479"><a href="#cb2-479" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-480"><a href="#cb2-480" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> shuffle <span class="op">=</span> (items) <span class="kw">=&gt;</span> {</span>
+<span id="cb2-481"><a href="#cb2-481" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> out <span class="op">=</span> items<span class="op">.</span><span class="fu">slice</span>()<span class="op">;</span></span>
+<span id="cb2-482"><a href="#cb2-482" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> (<span class="kw">let</span> i <span class="op">=</span> out<span class="op">.</span><span class="at">length</span> <span class="op">-</span> <span class="dv">1</span><span class="op">;</span> i <span class="op">&gt;</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">-=</span> <span class="dv">1</span>) {</span>
+<span id="cb2-483"><a href="#cb2-483" aria-hidden="true" tabindex="-1"></a>      <span class="kw">const</span> j <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">floor</span>(<span class="bu">Math</span><span class="op">.</span><span class="fu">random</span>() <span class="op">*</span> (i <span class="op">+</span> <span class="dv">1</span>))<span class="op">;</span></span>
+<span id="cb2-484"><a href="#cb2-484" aria-hidden="true" tabindex="-1"></a>      [out[i]<span class="op">,</span> out[j]] <span class="op">=</span> [out[j]<span class="op">,</span> out[i]]<span class="op">;</span></span>
+<span id="cb2-485"><a href="#cb2-485" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb2-486"><a href="#cb2-486" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> out<span class="op">;</span></span>
+<span id="cb2-487"><a href="#cb2-487" aria-hidden="true" tabindex="-1"></a>  }<span class="op">;</span></span>
+<span id="cb2-488"><a href="#cb2-488" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-489"><a href="#cb2-489" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> escapeHtml <span class="op">=</span> (value) <span class="kw">=&gt;</span> <span class="bu">String</span>(value)</span>
+<span id="cb2-490"><a href="#cb2-490" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">replace</span>(<span class="ss">/&amp;/g</span><span class="op">,</span> <span class="st">"&amp;amp;"</span>)</span>
+<span id="cb2-491"><a href="#cb2-491" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">replace</span>(<span class="ss">/&lt;/g</span><span class="op">,</span> <span class="st">"&amp;lt;"</span>)</span>
+<span id="cb2-492"><a href="#cb2-492" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">replace</span>(<span class="op">/&gt;/</span>g<span class="op">,</span> <span class="st">"&amp;gt;"</span>)</span>
+<span id="cb2-493"><a href="#cb2-493" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">replace</span>(<span class="ss">/"/g</span><span class="op">,</span> <span class="st">"&amp;quot;"</span>)</span>
+<span id="cb2-494"><a href="#cb2-494" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">replace</span>(<span class="ss">/'/g</span><span class="op">,</span> <span class="st">"&amp;#39;"</span>)<span class="op">;</span></span>
+<span id="cb2-495"><a href="#cb2-495" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-496"><a href="#cb2-496" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> renderMath <span class="op">=</span> (tex) <span class="kw">=&gt;</span> {</span>
+<span id="cb2-497"><a href="#cb2-497" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="bu">window</span><span class="op">.</span><span class="at">katex</span>) {</span>
+<span id="cb2-498"><a href="#cb2-498" aria-hidden="true" tabindex="-1"></a>      <span class="cf">return</span> <span class="bu">window</span><span class="op">.</span><span class="at">katex</span><span class="op">.</span><span class="fu">renderToString</span>(tex<span class="op">,</span> {<span class="dt">throwOnError</span><span class="op">:</span> <span class="kw">false</span>})<span class="op">;</span></span>
+<span id="cb2-499"><a href="#cb2-499" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb2-500"><a href="#cb2-500" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="vs">`&lt;span class="math inline"&gt;</span><span class="sc">${</span><span class="fu">escapeHtml</span>(tex)<span class="sc">}</span><span class="vs">&lt;/span&gt;`</span><span class="op">;</span></span>
+<span id="cb2-501"><a href="#cb2-501" aria-hidden="true" tabindex="-1"></a>  }<span class="op">;</span></span>
+<span id="cb2-502"><a href="#cb2-502" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-503"><a href="#cb2-503" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> rich <span class="op">=</span> (text) <span class="kw">=&gt;</span> <span class="fu">escapeHtml</span>(text)<span class="op">.</span><span class="fu">replace</span>(<span class="ss">/</span><span class="sc">\[\[([\s\S]+?)\]\]</span><span class="ss">/g</span><span class="op">,</span> (_<span class="op">,</span> tex) <span class="kw">=&gt;</span> <span class="fu">renderMath</span>(tex))<span class="op">;</span></span>
+<span id="cb2-504"><a href="#cb2-504" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-505"><a href="#cb2-505" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> formatTime <span class="op">=</span> (seconds) <span class="kw">=&gt;</span> {</span>
+<span id="cb2-506"><a href="#cb2-506" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> m <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">floor</span>(seconds <span class="op">/</span> <span class="dv">60</span>)<span class="op">;</span></span>
+<span id="cb2-507"><a href="#cb2-507" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> s <span class="op">=</span> seconds <span class="op">%</span> <span class="dv">60</span><span class="op">;</span></span>
+<span id="cb2-508"><a href="#cb2-508" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="vs">`</span><span class="sc">${</span>m<span class="sc">}</span><span class="vs">:</span><span class="sc">${</span><span class="bu">String</span>(s)<span class="op">.</span><span class="fu">padStart</span>(<span class="dv">2</span><span class="op">,</span> <span class="st">"0"</span>)<span class="sc">}</span><span class="vs">`</span><span class="op">;</span></span>
+<span id="cb2-509"><a href="#cb2-509" aria-hidden="true" tabindex="-1"></a>  }<span class="op">;</span></span>
+<span id="cb2-510"><a href="#cb2-510" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-511"><a href="#cb2-511" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> score <span class="op">=</span> () <span class="kw">=&gt;</span> order<span class="op">.</span><span class="fu">reduce</span>((sum<span class="op">,</span> question) <span class="kw">=&gt;</span> {</span>
+<span id="cb2-512"><a href="#cb2-512" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> selected <span class="op">=</span> answers<span class="op">.</span><span class="fu">get</span>(question<span class="op">.</span><span class="at">id</span>)<span class="op">;</span></span>
+<span id="cb2-513"><a href="#cb2-513" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> sum <span class="op">+</span> (selected <span class="op">===</span> question<span class="op">.</span><span class="at">correct</span> <span class="op">?</span> <span class="dv">1</span> <span class="op">:</span> <span class="dv">0</span>)<span class="op">;</span></span>
+<span id="cb2-514"><a href="#cb2-514" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span> <span class="dv">0</span>)<span class="op">;</span></span>
+<span id="cb2-515"><a href="#cb2-515" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-516"><a href="#cb2-516" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> breakdown <span class="op">=</span> () <span class="kw">=&gt;</span> {</span>
+<span id="cb2-517"><a href="#cb2-517" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> rows <span class="op">=</span> <span class="kw">new</span> <span class="bu">Map</span>()<span class="op">;</span></span>
+<span id="cb2-518"><a href="#cb2-518" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> (<span class="kw">const</span> question <span class="kw">of</span> order) {</span>
+<span id="cb2-519"><a href="#cb2-519" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span> (<span class="op">!</span>rows<span class="op">.</span><span class="fu">has</span>(question<span class="op">.</span><span class="at">topic</span>)) rows<span class="op">.</span><span class="fu">set</span>(question<span class="op">.</span><span class="at">topic</span><span class="op">,</span> {<span class="dt">topic</span><span class="op">:</span> question<span class="op">.</span><span class="at">topic</span><span class="op">,</span> <span class="dt">correct</span><span class="op">:</span> <span class="dv">0</span><span class="op">,</span> <span class="dt">total</span><span class="op">:</span> <span class="dv">0</span>})<span class="op">;</span></span>
+<span id="cb2-520"><a href="#cb2-520" aria-hidden="true" tabindex="-1"></a>      <span class="kw">const</span> row <span class="op">=</span> rows<span class="op">.</span><span class="fu">get</span>(question<span class="op">.</span><span class="at">topic</span>)<span class="op">;</span></span>
+<span id="cb2-521"><a href="#cb2-521" aria-hidden="true" tabindex="-1"></a>      row<span class="op">.</span><span class="at">total</span> <span class="op">+=</span> <span class="dv">1</span><span class="op">;</span></span>
+<span id="cb2-522"><a href="#cb2-522" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span> (answers<span class="op">.</span><span class="fu">get</span>(question<span class="op">.</span><span class="at">id</span>) <span class="op">===</span> question<span class="op">.</span><span class="at">correct</span>) row<span class="op">.</span><span class="at">correct</span> <span class="op">+=</span> <span class="dv">1</span><span class="op">;</span></span>
+<span id="cb2-523"><a href="#cb2-523" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb2-524"><a href="#cb2-524" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="bu">Array</span><span class="op">.</span><span class="fu">from</span>(rows<span class="op">.</span><span class="fu">values</span>())<span class="op">.</span><span class="fu">sort</span>((a<span class="op">,</span> b) <span class="kw">=&gt;</span> a<span class="op">.</span><span class="at">topic</span><span class="op">.</span><span class="fu">localeCompare</span>(b<span class="op">.</span><span class="at">topic</span>))<span class="op">;</span></span>
+<span id="cb2-525"><a href="#cb2-525" aria-hidden="true" tabindex="-1"></a>  }<span class="op">;</span></span>
+<span id="cb2-526"><a href="#cb2-526" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-527"><a href="#cb2-527" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> stopTimer <span class="op">=</span> () <span class="kw">=&gt;</span> {</span>
+<span id="cb2-528"><a href="#cb2-528" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (timer) <span class="pp">clearInterval</span>(timer)<span class="op">;</span></span>
+<span id="cb2-529"><a href="#cb2-529" aria-hidden="true" tabindex="-1"></a>    timer <span class="op">=</span> <span class="kw">null</span><span class="op">;</span></span>
+<span id="cb2-530"><a href="#cb2-530" aria-hidden="true" tabindex="-1"></a>  }<span class="op">;</span></span>
+<span id="cb2-531"><a href="#cb2-531" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-532"><a href="#cb2-532" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> startTimer <span class="op">=</span> () <span class="kw">=&gt;</span> {</span>
+<span id="cb2-533"><a href="#cb2-533" aria-hidden="true" tabindex="-1"></a>    <span class="fu">stopTimer</span>()<span class="op">;</span></span>
+<span id="cb2-534"><a href="#cb2-534" aria-hidden="true" tabindex="-1"></a>    timer <span class="op">=</span> <span class="pp">setInterval</span>(() <span class="kw">=&gt;</span> {</span>
+<span id="cb2-535"><a href="#cb2-535" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span> (<span class="op">!</span>started <span class="op">||</span> finished) <span class="cf">return</span><span class="op">;</span></span>
+<span id="cb2-536"><a href="#cb2-536" aria-hidden="true" tabindex="-1"></a>      remaining <span class="op">-=</span> <span class="dv">1</span><span class="op">;</span></span>
+<span id="cb2-537"><a href="#cb2-537" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span> (remaining <span class="op">&lt;=</span> <span class="dv">0</span>) {</span>
+<span id="cb2-538"><a href="#cb2-538" aria-hidden="true" tabindex="-1"></a>        remaining <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb2-539"><a href="#cb2-539" aria-hidden="true" tabindex="-1"></a>        finished <span class="op">=</span> <span class="kw">true</span><span class="op">;</span></span>
+<span id="cb2-540"><a href="#cb2-540" aria-hidden="true" tabindex="-1"></a>        <span class="fu">stopTimer</span>()<span class="op">;</span></span>
+<span id="cb2-541"><a href="#cb2-541" aria-hidden="true" tabindex="-1"></a>      }</span>
+<span id="cb2-542"><a href="#cb2-542" aria-hidden="true" tabindex="-1"></a>      <span class="fu">render</span>()<span class="op">;</span></span>
+<span id="cb2-543"><a href="#cb2-543" aria-hidden="true" tabindex="-1"></a>    }<span class="op">,</span> <span class="dv">1000</span>)<span class="op">;</span></span>
+<span id="cb2-544"><a href="#cb2-544" aria-hidden="true" tabindex="-1"></a>  }<span class="op">;</span></span>
+<span id="cb2-545"><a href="#cb2-545" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-546"><a href="#cb2-546" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> startAttempt <span class="op">=</span> () <span class="kw">=&gt;</span> {</span>
+<span id="cb2-547"><a href="#cb2-547" aria-hidden="true" tabindex="-1"></a>    order <span class="op">=</span> <span class="fu">shuffle</span>(exam_questions)<span class="op">;</span></span>
+<span id="cb2-548"><a href="#cb2-548" aria-hidden="true" tabindex="-1"></a>    current <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb2-549"><a href="#cb2-549" aria-hidden="true" tabindex="-1"></a>    answers <span class="op">=</span> <span class="kw">new</span> <span class="bu">Map</span>()<span class="op">;</span></span>
+<span id="cb2-550"><a href="#cb2-550" aria-hidden="true" tabindex="-1"></a>    started <span class="op">=</span> <span class="kw">true</span><span class="op">;</span></span>
+<span id="cb2-551"><a href="#cb2-551" aria-hidden="true" tabindex="-1"></a>    finished <span class="op">=</span> <span class="kw">false</span><span class="op">;</span></span>
+<span id="cb2-552"><a href="#cb2-552" aria-hidden="true" tabindex="-1"></a>    remaining <span class="op">=</span> totalSeconds<span class="op">;</span></span>
+<span id="cb2-553"><a href="#cb2-553" aria-hidden="true" tabindex="-1"></a>    <span class="fu">startTimer</span>()<span class="op">;</span></span>
+<span id="cb2-554"><a href="#cb2-554" aria-hidden="true" tabindex="-1"></a>    <span class="fu">render</span>()<span class="op">;</span></span>
+<span id="cb2-555"><a href="#cb2-555" aria-hidden="true" tabindex="-1"></a>  }<span class="op">;</span></span>
+<span id="cb2-556"><a href="#cb2-556" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-557"><a href="#cb2-557" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> finishAttempt <span class="op">=</span> () <span class="kw">=&gt;</span> {</span>
+<span id="cb2-558"><a href="#cb2-558" aria-hidden="true" tabindex="-1"></a>    finished <span class="op">=</span> <span class="kw">true</span><span class="op">;</span></span>
+<span id="cb2-559"><a href="#cb2-559" aria-hidden="true" tabindex="-1"></a>    <span class="fu">stopTimer</span>()<span class="op">;</span></span>
+<span id="cb2-560"><a href="#cb2-560" aria-hidden="true" tabindex="-1"></a>    <span class="fu">render</span>()<span class="op">;</span></span>
+<span id="cb2-561"><a href="#cb2-561" aria-hidden="true" tabindex="-1"></a>  }<span class="op">;</span></span>
+<span id="cb2-562"><a href="#cb2-562" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-563"><a href="#cb2-563" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> choose <span class="op">=</span> (choiceIndex) <span class="kw">=&gt;</span> {</span>
+<span id="cb2-564"><a href="#cb2-564" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (finished) <span class="cf">return</span><span class="op">;</span></span>
+<span id="cb2-565"><a href="#cb2-565" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> question <span class="op">=</span> order[current]<span class="op">;</span></span>
+<span id="cb2-566"><a href="#cb2-566" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (answers<span class="op">.</span><span class="fu">has</span>(question<span class="op">.</span><span class="at">id</span>)) <span class="cf">return</span><span class="op">;</span></span>
+<span id="cb2-567"><a href="#cb2-567" aria-hidden="true" tabindex="-1"></a>    answers<span class="op">.</span><span class="fu">set</span>(question<span class="op">.</span><span class="at">id</span><span class="op">,</span> choiceIndex)<span class="op">;</span></span>
+<span id="cb2-568"><a href="#cb2-568" aria-hidden="true" tabindex="-1"></a>    <span class="fu">render</span>()<span class="op">;</span></span>
+<span id="cb2-569"><a href="#cb2-569" aria-hidden="true" tabindex="-1"></a>  }<span class="op">;</span></span>
+<span id="cb2-570"><a href="#cb2-570" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-571"><a href="#cb2-571" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> nextQuestion <span class="op">=</span> () <span class="kw">=&gt;</span> {</span>
+<span id="cb2-572"><a href="#cb2-572" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (current <span class="op">&lt;</span> order<span class="op">.</span><span class="at">length</span> <span class="op">-</span> <span class="dv">1</span>) {</span>
+<span id="cb2-573"><a href="#cb2-573" aria-hidden="true" tabindex="-1"></a>      current <span class="op">+=</span> <span class="dv">1</span><span class="op">;</span></span>
+<span id="cb2-574"><a href="#cb2-574" aria-hidden="true" tabindex="-1"></a>      <span class="fu">render</span>()<span class="op">;</span></span>
+<span id="cb2-575"><a href="#cb2-575" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> {</span>
+<span id="cb2-576"><a href="#cb2-576" aria-hidden="true" tabindex="-1"></a>      <span class="fu">finishAttempt</span>()<span class="op">;</span></span>
+<span id="cb2-577"><a href="#cb2-577" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb2-578"><a href="#cb2-578" aria-hidden="true" tabindex="-1"></a>  }<span class="op">;</span></span>
+<span id="cb2-579"><a href="#cb2-579" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-580"><a href="#cb2-580" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> renderKpis <span class="op">=</span> () <span class="kw">=&gt;</span> {</span>
+<span id="cb2-581"><a href="#cb2-581" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> answered <span class="op">=</span> answers<span class="op">.</span><span class="at">size</span><span class="op">;</span></span>
+<span id="cb2-582"><a href="#cb2-582" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> pct <span class="op">=</span> order<span class="op">.</span><span class="at">length</span> <span class="op">?</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">round</span>((<span class="fu">score</span>() <span class="op">/</span> order<span class="op">.</span><span class="at">length</span>) <span class="op">*</span> <span class="dv">100</span>) <span class="op">:</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb2-583"><a href="#cb2-583" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="vs">`</span></span>
+<span id="cb2-584"><a href="#cb2-584" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;div class="exam-kpis"&gt;</span></span>
+<span id="cb2-585"><a href="#cb2-585" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;div class="kpi-card"&gt;</span></span>
+<span id="cb2-586"><a href="#cb2-586" aria-hidden="true" tabindex="-1"></a><span class="vs">          &lt;div class="kpi-label"&gt;Timer&lt;/div&gt;</span></span>
+<span id="cb2-587"><a href="#cb2-587" aria-hidden="true" tabindex="-1"></a><span class="vs">          &lt;div class="kpi-value"&gt;</span><span class="sc">${</span><span class="fu">formatTime</span>(remaining)<span class="sc">}</span><span class="vs">&lt;/div&gt;</span></span>
+<span id="cb2-588"><a href="#cb2-588" aria-hidden="true" tabindex="-1"></a><span class="vs">          &lt;div class="kpi-sub"&gt;</span><span class="sc">${</span>minutes<span class="sc">}</span><span class="vs"> minutes total&lt;/div&gt;</span></span>
+<span id="cb2-589"><a href="#cb2-589" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;/div&gt;</span></span>
+<span id="cb2-590"><a href="#cb2-590" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;div class="kpi-card"&gt;</span></span>
+<span id="cb2-591"><a href="#cb2-591" aria-hidden="true" tabindex="-1"></a><span class="vs">          &lt;div class="kpi-label"&gt;Progress&lt;/div&gt;</span></span>
+<span id="cb2-592"><a href="#cb2-592" aria-hidden="true" tabindex="-1"></a><span class="vs">          &lt;div class="kpi-value"&gt;</span><span class="sc">${</span>answered<span class="sc">}</span><span class="vs">/</span><span class="sc">${</span>exam_questions<span class="op">.</span><span class="at">length</span><span class="sc">}</span><span class="vs">&lt;/div&gt;</span></span>
+<span id="cb2-593"><a href="#cb2-593" aria-hidden="true" tabindex="-1"></a><span class="vs">          &lt;div class="kpi-sub"&gt;answered&lt;/div&gt;</span></span>
+<span id="cb2-594"><a href="#cb2-594" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;/div&gt;</span></span>
+<span id="cb2-595"><a href="#cb2-595" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;div class="kpi-card"&gt;</span></span>
+<span id="cb2-596"><a href="#cb2-596" aria-hidden="true" tabindex="-1"></a><span class="vs">          &lt;div class="kpi-label"&gt;Current score&lt;/div&gt;</span></span>
+<span id="cb2-597"><a href="#cb2-597" aria-hidden="true" tabindex="-1"></a><span class="vs">          &lt;div class="kpi-value"&gt;</span><span class="sc">${</span>started <span class="op">?</span> <span class="vs">`</span><span class="sc">${</span><span class="fu">score</span>()<span class="sc">}</span><span class="vs">/</span><span class="sc">${</span>exam_questions<span class="op">.</span><span class="at">length</span><span class="sc">}</span><span class="vs">`</span> <span class="op">:</span> <span class="st">"--"</span><span class="sc">}</span><span class="vs">&lt;/div&gt;</span></span>
+<span id="cb2-598"><a href="#cb2-598" aria-hidden="true" tabindex="-1"></a><span class="vs">          &lt;div class="kpi-sub"&gt;</span><span class="sc">${</span>started <span class="op">?</span> <span class="vs">`</span><span class="sc">${</span>pct<span class="sc">}</span><span class="vs">% of full exam`</span> <span class="op">:</span> <span class="st">"starts after first attempt"</span><span class="sc">}</span><span class="vs">&lt;/div&gt;</span></span>
+<span id="cb2-599"><a href="#cb2-599" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;/div&gt;</span></span>
+<span id="cb2-600"><a href="#cb2-600" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;/div&gt;`</span><span class="op">;</span></span>
+<span id="cb2-601"><a href="#cb2-601" aria-hidden="true" tabindex="-1"></a>  }<span class="op">;</span></span>
+<span id="cb2-602"><a href="#cb2-602" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-603"><a href="#cb2-603" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> renderStart <span class="op">=</span> () <span class="kw">=&gt;</span> <span class="vs">`</span></span>
+<span id="cb2-604"><a href="#cb2-604" aria-hidden="true" tabindex="-1"></a><span class="vs">    </span><span class="sc">${</span><span class="fu">renderKpis</span>()<span class="sc">}</span></span>
+<span id="cb2-605"><a href="#cb2-605" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;div class="news-card"&gt;</span></span>
+<span id="cb2-606"><a href="#cb2-606" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;div class="news-meta"&gt;</span></span>
+<span id="cb2-607"><a href="#cb2-607" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;span class="news-source"&gt;25 questions&lt;/span&gt;</span></span>
+<span id="cb2-608"><a href="#cb2-608" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;span class="news-date"&gt;random order&lt;/span&gt;</span></span>
+<span id="cb2-609"><a href="#cb2-609" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;/div&gt;</span></span>
+<span id="cb2-610"><a href="#cb2-610" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;div class="news-title"&gt;Exam-mode drill&lt;/div&gt;</span></span>
+<span id="cb2-611"><a href="#cb2-611" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;div class="news-summary"&gt;</span></span>
+<span id="cb2-612"><a href="#cb2-612" aria-hidden="true" tabindex="-1"></a><span class="vs">        Each attempt shuffles the question order. You get immediate feedback after choosing an answer, then a final topic-by-topic score table.</span></span>
+<span id="cb2-613"><a href="#cb2-613" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;/div&gt;</span></span>
+<span id="cb2-614"><a href="#cb2-614" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;div class="exam-controls"&gt;</span></span>
+<span id="cb2-615"><a href="#cb2-615" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;button class="exam-button" data-action="start"&gt;Start randomized attempt&lt;/button&gt;</span></span>
+<span id="cb2-616"><a href="#cb2-616" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;/div&gt;</span></span>
+<span id="cb2-617"><a href="#cb2-617" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;/div&gt;`</span><span class="op">;</span></span>
+<span id="cb2-618"><a href="#cb2-618" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-619"><a href="#cb2-619" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> renderQuestion <span class="op">=</span> () <span class="kw">=&gt;</span> {</span>
+<span id="cb2-620"><a href="#cb2-620" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> question <span class="op">=</span> order[current]<span class="op">;</span></span>
+<span id="cb2-621"><a href="#cb2-621" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> selected <span class="op">=</span> answers<span class="op">.</span><span class="fu">get</span>(question<span class="op">.</span><span class="at">id</span>)<span class="op">;</span></span>
+<span id="cb2-622"><a href="#cb2-622" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> answered <span class="op">=</span> selected <span class="op">!==</span> <span class="kw">undefined</span><span class="op">;</span></span>
+<span id="cb2-623"><a href="#cb2-623" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> correct <span class="op">=</span> answered <span class="op">&amp;&amp;</span> selected <span class="op">===</span> question<span class="op">.</span><span class="at">correct</span><span class="op">;</span></span>
+<span id="cb2-624"><a href="#cb2-624" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> choiceHtml <span class="op">=</span> question<span class="op">.</span><span class="at">choices</span><span class="op">.</span><span class="fu">map</span>((choice<span class="op">,</span> index) <span class="kw">=&gt;</span> {</span>
+<span id="cb2-625"><a href="#cb2-625" aria-hidden="true" tabindex="-1"></a>      <span class="kw">const</span> state <span class="op">=</span> <span class="op">!</span>answered</span>
+<span id="cb2-626"><a href="#cb2-626" aria-hidden="true" tabindex="-1"></a>        <span class="op">?</span> <span class="st">""</span></span>
+<span id="cb2-627"><a href="#cb2-627" aria-hidden="true" tabindex="-1"></a>        <span class="op">:</span> index <span class="op">===</span> question<span class="op">.</span><span class="at">correct</span></span>
+<span id="cb2-628"><a href="#cb2-628" aria-hidden="true" tabindex="-1"></a>          <span class="op">?</span> <span class="st">" correct"</span></span>
+<span id="cb2-629"><a href="#cb2-629" aria-hidden="true" tabindex="-1"></a>          <span class="op">:</span> index <span class="op">===</span> selected</span>
+<span id="cb2-630"><a href="#cb2-630" aria-hidden="true" tabindex="-1"></a>            <span class="op">?</span> <span class="st">" incorrect"</span></span>
+<span id="cb2-631"><a href="#cb2-631" aria-hidden="true" tabindex="-1"></a>            <span class="op">:</span> <span class="st">""</span><span class="op">;</span></span>
+<span id="cb2-632"><a href="#cb2-632" aria-hidden="true" tabindex="-1"></a>      <span class="cf">return</span> <span class="vs">`</span></span>
+<span id="cb2-633"><a href="#cb2-633" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;button class="choice-button</span><span class="sc">${</span>state<span class="sc">}</span><span class="vs">" data-choice="</span><span class="sc">${</span>index<span class="sc">}</span><span class="vs">" </span><span class="sc">${</span>answered <span class="op">?</span> <span class="st">"disabled"</span> <span class="op">:</span> <span class="st">""</span><span class="sc">}</span><span class="vs">&gt;</span></span>
+<span id="cb2-634"><a href="#cb2-634" aria-hidden="true" tabindex="-1"></a><span class="vs">          &lt;span class="choice-letter"&gt;</span><span class="sc">${</span>letters[index]<span class="sc">}</span><span class="vs">.&lt;/span&gt;</span><span class="sc">${</span><span class="fu">rich</span>(choice)<span class="sc">}</span></span>
+<span id="cb2-635"><a href="#cb2-635" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;/button&gt;`</span><span class="op">;</span></span>
+<span id="cb2-636"><a href="#cb2-636" aria-hidden="true" tabindex="-1"></a>    })<span class="op">.</span><span class="fu">join</span>(<span class="st">""</span>)<span class="op">;</span></span>
+<span id="cb2-637"><a href="#cb2-637" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-638"><a href="#cb2-638" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="vs">`</span></span>
+<span id="cb2-639"><a href="#cb2-639" aria-hidden="true" tabindex="-1"></a><span class="vs">      </span><span class="sc">${</span><span class="fu">renderKpis</span>()<span class="sc">}</span></span>
+<span id="cb2-640"><a href="#cb2-640" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;div class="news-card"&gt;</span></span>
+<span id="cb2-641"><a href="#cb2-641" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;div class="news-meta"&gt;</span></span>
+<span id="cb2-642"><a href="#cb2-642" aria-hidden="true" tabindex="-1"></a><span class="vs">          &lt;span class="news-source"&gt;Question </span><span class="sc">${</span>current <span class="op">+</span> <span class="dv">1</span><span class="sc">}</span><span class="vs"> of </span><span class="sc">${</span>order<span class="op">.</span><span class="at">length</span><span class="sc">}</span><span class="vs">&lt;/span&gt;</span></span>
+<span id="cb2-643"><a href="#cb2-643" aria-hidden="true" tabindex="-1"></a><span class="vs">          &lt;span class="news-date"&gt;</span><span class="sc">${</span><span class="fu">escapeHtml</span>(question<span class="op">.</span><span class="at">topic</span>)<span class="sc">}</span><span class="vs">&lt;/span&gt;</span></span>
+<span id="cb2-644"><a href="#cb2-644" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;/div&gt;</span></span>
+<span id="cb2-645"><a href="#cb2-645" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;div class="question-block"&gt;</span></span>
+<span id="cb2-646"><a href="#cb2-646" aria-hidden="true" tabindex="-1"></a><span class="vs">          &lt;div class="exam-meta"&gt;</span><span class="sc">${</span>answered <span class="op">?</span> (correct <span class="op">?</span> <span class="st">"Correct"</span> <span class="op">:</span> <span class="st">"Incorrect"</span>) <span class="op">:</span> <span class="st">"Choose one answer"</span><span class="sc">}</span><span class="vs">&lt;/div&gt;</span></span>
+<span id="cb2-647"><a href="#cb2-647" aria-hidden="true" tabindex="-1"></a><span class="vs">          &lt;div class="exam-prompt"&gt;</span><span class="sc">${</span><span class="fu">rich</span>(question<span class="op">.</span><span class="at">prompt</span>)<span class="sc">}</span><span class="vs">&lt;/div&gt;</span></span>
+<span id="cb2-648"><a href="#cb2-648" aria-hidden="true" tabindex="-1"></a><span class="vs">          &lt;div class="choice-list"&gt;</span><span class="sc">${</span>choiceHtml<span class="sc">}</span><span class="vs">&lt;/div&gt;</span></span>
+<span id="cb2-649"><a href="#cb2-649" aria-hidden="true" tabindex="-1"></a><span class="vs">          </span><span class="sc">${</span>answered <span class="op">?</span> <span class="vs">`</span></span>
+<span id="cb2-650"><a href="#cb2-650" aria-hidden="true" tabindex="-1"></a><span class="vs">            &lt;div class="feedback"&gt;</span></span>
+<span id="cb2-651"><a href="#cb2-651" aria-hidden="true" tabindex="-1"></a><span class="vs">              &lt;strong&gt;</span><span class="sc">${</span>correct <span class="op">?</span> <span class="st">"Correct."</span> <span class="op">:</span> <span class="vs">`Not quite. Correct answer: </span><span class="sc">${</span>letters[question<span class="op">.</span><span class="at">correct</span>]<span class="sc">}</span><span class="vs">.`</span><span class="sc">}</span><span class="vs">&lt;/strong&gt;</span></span>
+<span id="cb2-652"><a href="#cb2-652" aria-hidden="true" tabindex="-1"></a><span class="vs">              </span><span class="sc">${</span><span class="fu">rich</span>(question<span class="op">.</span><span class="at">why</span>)<span class="sc">}</span></span>
+<span id="cb2-653"><a href="#cb2-653" aria-hidden="true" tabindex="-1"></a><span class="vs">            &lt;/div&gt;`</span> <span class="op">:</span> <span class="st">""</span><span class="sc">}</span></span>
+<span id="cb2-654"><a href="#cb2-654" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;/div&gt;</span></span>
+<span id="cb2-655"><a href="#cb2-655" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;div class="exam-controls"&gt;</span></span>
+<span id="cb2-656"><a href="#cb2-656" aria-hidden="true" tabindex="-1"></a><span class="vs">          </span><span class="sc">${</span>answered <span class="op">?</span> <span class="vs">`&lt;button class="exam-button" data-action="next"&gt;</span><span class="sc">${</span>current <span class="op">===</span> order<span class="op">.</span><span class="at">length</span> <span class="op">-</span> <span class="dv">1</span> <span class="op">?</span> <span class="st">"Finish exam"</span> <span class="op">:</span> <span class="st">"Next question"</span><span class="sc">}</span><span class="vs">&lt;/button&gt;`</span> <span class="op">:</span> <span class="st">""</span><span class="sc">}</span></span>
+<span id="cb2-657"><a href="#cb2-657" aria-hidden="true" tabindex="-1"></a><span class="vs">          &lt;button class="exam-button secondary" data-action="finish"&gt;Finish now&lt;/button&gt;</span></span>
+<span id="cb2-658"><a href="#cb2-658" aria-hidden="true" tabindex="-1"></a><span class="vs">          &lt;button class="exam-button secondary" data-action="start"&gt;Restart shuffled&lt;/button&gt;</span></span>
+<span id="cb2-659"><a href="#cb2-659" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;/div&gt;</span></span>
+<span id="cb2-660"><a href="#cb2-660" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;/div&gt;`</span><span class="op">;</span></span>
+<span id="cb2-661"><a href="#cb2-661" aria-hidden="true" tabindex="-1"></a>  }<span class="op">;</span></span>
+<span id="cb2-662"><a href="#cb2-662" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-663"><a href="#cb2-663" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> renderFinal <span class="op">=</span> () <span class="kw">=&gt;</span> {</span>
+<span id="cb2-664"><a href="#cb2-664" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> rows <span class="op">=</span> <span class="fu">breakdown</span>()<span class="op">;</span></span>
+<span id="cb2-665"><a href="#cb2-665" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> finalScore <span class="op">=</span> <span class="fu">score</span>()<span class="op">;</span></span>
+<span id="cb2-666"><a href="#cb2-666" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> pct <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">round</span>((finalScore <span class="op">/</span> exam_questions<span class="op">.</span><span class="at">length</span>) <span class="op">*</span> <span class="dv">100</span>)<span class="op">;</span></span>
+<span id="cb2-667"><a href="#cb2-667" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> missed <span class="op">=</span> order<span class="op">.</span><span class="fu">filter</span>(question <span class="kw">=&gt;</span> answers<span class="op">.</span><span class="fu">get</span>(question<span class="op">.</span><span class="at">id</span>) <span class="op">!==</span> question<span class="op">.</span><span class="at">correct</span>)<span class="op">;</span></span>
+<span id="cb2-668"><a href="#cb2-668" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="vs">`</span></span>
+<span id="cb2-669"><a href="#cb2-669" aria-hidden="true" tabindex="-1"></a><span class="vs">      </span><span class="sc">${</span><span class="fu">renderKpis</span>()<span class="sc">}</span></span>
+<span id="cb2-670"><a href="#cb2-670" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;div class="news-card"&gt;</span></span>
+<span id="cb2-671"><a href="#cb2-671" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;div class="news-meta"&gt;</span></span>
+<span id="cb2-672"><a href="#cb2-672" aria-hidden="true" tabindex="-1"></a><span class="vs">          &lt;span class="news-source"&gt;Final score&lt;/span&gt;</span></span>
+<span id="cb2-673"><a href="#cb2-673" aria-hidden="true" tabindex="-1"></a><span class="vs">          &lt;span class="news-date"&gt;</span><span class="sc">${</span><span class="fu">formatTime</span>(totalSeconds <span class="op">-</span> remaining)<span class="sc">}</span><span class="vs"> elapsed&lt;/span&gt;</span></span>
+<span id="cb2-674"><a href="#cb2-674" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;/div&gt;</span></span>
+<span id="cb2-675"><a href="#cb2-675" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;div class="news-title"&gt;</span><span class="sc">${</span>finalScore<span class="sc">}</span><span class="vs">/</span><span class="sc">${</span>exam_questions<span class="op">.</span><span class="at">length</span><span class="sc">}</span><span class="vs"> (</span><span class="sc">${</span>pct<span class="sc">}</span><span class="vs">%)&lt;/div&gt;</span></span>
+<span id="cb2-676"><a href="#cb2-676" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;div class="news-summary"&gt;</span></span>
+<span id="cb2-677"><a href="#cb2-677" aria-hidden="true" tabindex="-1"></a><span class="vs">          </span><span class="sc">${</span>remaining <span class="op">===</span> <span class="dv">0</span> <span class="op">?</span> <span class="st">"Time expired."</span> <span class="op">:</span> <span class="st">"Attempt complete."</span><span class="sc">}</span></span>
+<span id="cb2-678"><a href="#cb2-678" aria-hidden="true" tabindex="-1"></a><span class="vs">          Unanswered questions count as missed.</span></span>
+<span id="cb2-679"><a href="#cb2-679" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;/div&gt;</span></span>
+<span id="cb2-680"><a href="#cb2-680" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;table class="breakdown-table"&gt;</span></span>
+<span id="cb2-681"><a href="#cb2-681" aria-hidden="true" tabindex="-1"></a><span class="vs">          &lt;thead&gt;</span></span>
+<span id="cb2-682"><a href="#cb2-682" aria-hidden="true" tabindex="-1"></a><span class="vs">            &lt;tr&gt;&lt;th&gt;Topic&lt;/th&gt;&lt;th&gt;Score&lt;/th&gt;&lt;/tr&gt;</span></span>
+<span id="cb2-683"><a href="#cb2-683" aria-hidden="true" tabindex="-1"></a><span class="vs">          &lt;/thead&gt;</span></span>
+<span id="cb2-684"><a href="#cb2-684" aria-hidden="true" tabindex="-1"></a><span class="vs">          &lt;tbody&gt;</span></span>
+<span id="cb2-685"><a href="#cb2-685" aria-hidden="true" tabindex="-1"></a><span class="vs">            </span><span class="sc">${</span>rows<span class="op">.</span><span class="fu">map</span>(row <span class="kw">=&gt;</span> <span class="vs">`&lt;tr&gt;&lt;td&gt;</span><span class="sc">${</span><span class="fu">escapeHtml</span>(row<span class="op">.</span><span class="at">topic</span>)<span class="sc">}</span><span class="vs">&lt;/td&gt;&lt;td&gt;</span><span class="sc">${</span>row<span class="op">.</span><span class="at">correct</span><span class="sc">}</span><span class="vs">/</span><span class="sc">${</span>row<span class="op">.</span><span class="at">total</span><span class="sc">}</span><span class="vs">&lt;/td&gt;&lt;/tr&gt;`</span>)<span class="op">.</span><span class="fu">join</span>(<span class="st">""</span>)<span class="sc">}</span></span>
+<span id="cb2-686"><a href="#cb2-686" aria-hidden="true" tabindex="-1"></a><span class="vs">          &lt;/tbody&gt;</span></span>
+<span id="cb2-687"><a href="#cb2-687" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;/table&gt;</span></span>
+<span id="cb2-688"><a href="#cb2-688" aria-hidden="true" tabindex="-1"></a><span class="vs">        </span><span class="sc">${</span>missed<span class="op">.</span><span class="at">length</span> <span class="op">?</span> <span class="vs">`</span></span>
+<span id="cb2-689"><a href="#cb2-689" aria-hidden="true" tabindex="-1"></a><span class="vs">          &lt;div class="review-list"&gt;</span></span>
+<span id="cb2-690"><a href="#cb2-690" aria-hidden="true" tabindex="-1"></a><span class="vs">            </span><span class="sc">${</span>missed<span class="op">.</span><span class="fu">map</span>((question<span class="op">,</span> index) <span class="kw">=&gt;</span> {</span>
+<span id="cb2-691"><a href="#cb2-691" aria-hidden="true" tabindex="-1"></a>              <span class="kw">const</span> selected <span class="op">=</span> answers<span class="op">.</span><span class="fu">get</span>(question<span class="op">.</span><span class="at">id</span>)<span class="op">;</span></span>
+<span id="cb2-692"><a href="#cb2-692" aria-hidden="true" tabindex="-1"></a>              <span class="cf">return</span> <span class="vs">`</span></span>
+<span id="cb2-693"><a href="#cb2-693" aria-hidden="true" tabindex="-1"></a><span class="vs">                &lt;div class="review-item missed"&gt;</span></span>
+<span id="cb2-694"><a href="#cb2-694" aria-hidden="true" tabindex="-1"></a><span class="vs">                  &lt;div class="exam-meta"&gt;Missed </span><span class="sc">${</span>index <span class="op">+</span> <span class="dv">1</span><span class="sc">}</span><span class="vs"> - </span><span class="sc">${</span><span class="fu">escapeHtml</span>(question<span class="op">.</span><span class="at">topic</span>)<span class="sc">}</span><span class="vs">&lt;/div&gt;</span></span>
+<span id="cb2-695"><a href="#cb2-695" aria-hidden="true" tabindex="-1"></a><span class="vs">                  &lt;div&gt;</span><span class="sc">${</span><span class="fu">rich</span>(question<span class="op">.</span><span class="at">prompt</span>)<span class="sc">}</span><span class="vs">&lt;/div&gt;</span></span>
+<span id="cb2-696"><a href="#cb2-696" aria-hidden="true" tabindex="-1"></a><span class="vs">                  &lt;div&gt;&lt;strong&gt;Your answer:&lt;/strong&gt; </span><span class="sc">${</span>selected <span class="op">===</span> <span class="kw">undefined</span> <span class="op">?</span> <span class="st">"Unanswered"</span> <span class="op">:</span> <span class="vs">`</span><span class="sc">${</span>letters[selected]<span class="sc">}</span><span class="vs">. </span><span class="sc">${</span><span class="fu">rich</span>(question<span class="op">.</span><span class="at">choices</span>[selected])<span class="sc">}</span><span class="vs">`</span><span class="sc">}</span><span class="vs">&lt;/div&gt;</span></span>
+<span id="cb2-697"><a href="#cb2-697" aria-hidden="true" tabindex="-1"></a><span class="vs">                  &lt;div&gt;&lt;strong&gt;Correct:&lt;/strong&gt; </span><span class="sc">${</span>letters[question<span class="op">.</span><span class="at">correct</span>]<span class="sc">}</span><span class="vs">. </span><span class="sc">${</span><span class="fu">rich</span>(question<span class="op">.</span><span class="at">choices</span>[question<span class="op">.</span><span class="at">correct</span>])<span class="sc">}</span><span class="vs">&lt;/div&gt;</span></span>
+<span id="cb2-698"><a href="#cb2-698" aria-hidden="true" tabindex="-1"></a><span class="vs">                  &lt;div&gt;</span><span class="sc">${</span><span class="fu">rich</span>(question<span class="op">.</span><span class="at">why</span>)<span class="sc">}</span><span class="vs">&lt;/div&gt;</span></span>
+<span id="cb2-699"><a href="#cb2-699" aria-hidden="true" tabindex="-1"></a><span class="vs">                &lt;/div&gt;`</span><span class="op">;</span></span>
+<span id="cb2-700"><a href="#cb2-700" aria-hidden="true" tabindex="-1"></a>            })<span class="op">.</span><span class="fu">join</span>(<span class="st">""</span>)<span class="sc">}</span></span>
+<span id="cb2-701"><a href="#cb2-701" aria-hidden="true" tabindex="-1"></a><span class="vs">          &lt;/div&gt;`</span> <span class="op">:</span> <span class="st">""</span><span class="sc">}</span></span>
+<span id="cb2-702"><a href="#cb2-702" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;div class="exam-controls"&gt;</span></span>
+<span id="cb2-703"><a href="#cb2-703" aria-hidden="true" tabindex="-1"></a><span class="vs">          &lt;button class="exam-button" data-action="start"&gt;Start new shuffled attempt&lt;/button&gt;</span></span>
+<span id="cb2-704"><a href="#cb2-704" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;/div&gt;</span></span>
+<span id="cb2-705"><a href="#cb2-705" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;/div&gt;`</span><span class="op">;</span></span>
+<span id="cb2-706"><a href="#cb2-706" aria-hidden="true" tabindex="-1"></a>  }<span class="op">;</span></span>
+<span id="cb2-707"><a href="#cb2-707" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-708"><a href="#cb2-708" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> render <span class="op">=</span> () <span class="kw">=&gt;</span> {</span>
+<span id="cb2-709"><a href="#cb2-709" aria-hidden="true" tabindex="-1"></a>    <span class="bu">root</span><span class="op">.</span><span class="at">innerHTML</span> <span class="op">=</span> <span class="op">!</span>started <span class="op">?</span> <span class="fu">renderStart</span>() <span class="op">:</span> finished <span class="op">?</span> <span class="fu">renderFinal</span>() <span class="op">:</span> <span class="fu">renderQuestion</span>()<span class="op">;</span></span>
+<span id="cb2-710"><a href="#cb2-710" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="bu">window</span><span class="op">.</span><span class="at">Quarto</span><span class="op">?.</span><span class="at">typesetMath</span>) <span class="bu">window</span><span class="op">.</span><span class="at">Quarto</span><span class="op">.</span><span class="fu">typesetMath</span>(<span class="bu">root</span>)<span class="op">;</span></span>
+<span id="cb2-711"><a href="#cb2-711" aria-hidden="true" tabindex="-1"></a>  }<span class="op">;</span></span>
+<span id="cb2-712"><a href="#cb2-712" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-713"><a href="#cb2-713" aria-hidden="true" tabindex="-1"></a>  <span class="bu">root</span><span class="op">.</span><span class="fu">addEventListener</span>(<span class="st">"click"</span><span class="op">,</span> (<span class="bu">event</span>) <span class="kw">=&gt;</span> {</span>
+<span id="cb2-714"><a href="#cb2-714" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> target <span class="op">=</span> <span class="bu">event</span><span class="op">.</span><span class="at">target</span> <span class="kw">instanceof</span> <span class="bu">Element</span> <span class="op">?</span> <span class="bu">event</span><span class="op">.</span><span class="at">target</span> <span class="op">:</span> <span class="bu">event</span><span class="op">.</span><span class="at">target</span><span class="op">.</span><span class="at">parentElement</span><span class="op">;</span></span>
+<span id="cb2-715"><a href="#cb2-715" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> choiceButton <span class="op">=</span> target<span class="op">?.</span><span class="fu">closest</span>(<span class="st">"[data-choice]"</span>)<span class="op">;</span></span>
+<span id="cb2-716"><a href="#cb2-716" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (choiceButton <span class="op">&amp;&amp;</span> <span class="bu">root</span><span class="op">.</span><span class="fu">contains</span>(choiceButton)) {</span>
+<span id="cb2-717"><a href="#cb2-717" aria-hidden="true" tabindex="-1"></a>      <span class="fu">choose</span>(<span class="bu">Number</span>(choiceButton<span class="op">.</span><span class="at">dataset</span><span class="op">.</span><span class="at">choice</span>))<span class="op">;</span></span>
+<span id="cb2-718"><a href="#cb2-718" aria-hidden="true" tabindex="-1"></a>      <span class="cf">return</span><span class="op">;</span></span>
+<span id="cb2-719"><a href="#cb2-719" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb2-720"><a href="#cb2-720" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> actionButton <span class="op">=</span> target<span class="op">?.</span><span class="fu">closest</span>(<span class="st">"[data-action]"</span>)<span class="op">;</span></span>
+<span id="cb2-721"><a href="#cb2-721" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="op">!</span>actionButton <span class="op">||</span> <span class="op">!</span><span class="bu">root</span><span class="op">.</span><span class="fu">contains</span>(actionButton)) <span class="cf">return</span><span class="op">;</span></span>
+<span id="cb2-722"><a href="#cb2-722" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> action <span class="op">=</span> actionButton<span class="op">.</span><span class="at">dataset</span><span class="op">.</span><span class="at">action</span><span class="op">;</span></span>
+<span id="cb2-723"><a href="#cb2-723" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (action <span class="op">===</span> <span class="st">"start"</span>) <span class="fu">startAttempt</span>()<span class="op">;</span></span>
+<span id="cb2-724"><a href="#cb2-724" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (action <span class="op">===</span> <span class="st">"next"</span>) <span class="fu">nextQuestion</span>()<span class="op">;</span></span>
+<span id="cb2-725"><a href="#cb2-725" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (action <span class="op">===</span> <span class="st">"finish"</span>) <span class="fu">finishAttempt</span>()<span class="op">;</span></span>
+<span id="cb2-726"><a href="#cb2-726" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
+<span id="cb2-727"><a href="#cb2-727" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-728"><a href="#cb2-728" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="kw">typeof</span> invalidation <span class="op">!==</span> <span class="st">"undefined"</span>) invalidation<span class="op">.</span><span class="fu">then</span>(stopTimer)<span class="op">;</span></span>
+<span id="cb2-729"><a href="#cb2-729" aria-hidden="true" tabindex="-1"></a>  <span class="fu">render</span>()<span class="op">;</span></span>
+<span id="cb2-730"><a href="#cb2-730" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> <span class="bu">root</span><span class="op">;</span></span>
+<span id="cb2-731"><a href="#cb2-731" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-2" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+
+
+
+</main> <!-- /main -->
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6ImV4YW1fcXVlc3Rpb25zID0gW1xuICB7XG4gICAgaWQ6IFwiY3BpLWJhc2UtYmFza2V0XCIsXG4gICAgdG9waWM6IFwiQ1BJIC8gaW5mbGF0aW9uXCIsXG4gICAgcHJvbXB0OiBcIkEgYmFzZS15ZWFyIGJhc2tldCBoYXMgMTAgbWVhbHMgYW5kIDQgZGF0YSBwbGFucy4gSW4gMjAyNCwgcHJpY2VzIGFyZSA4IGFuZCAyNS4gSW4gMjAyNiwgcHJpY2VzIGFyZSAxMCBhbmQgMjAuIFdpdGggMjAyNCBhcyB0aGUgYmFzZSB5ZWFyLCB3aGF0IGFyZSBbW1xcXFx0ZXh0e0NQSX1fezIwMjZ9XV0gYW5kIGluZmxhdGlvbiBmcm9tIDIwMjQgdG8gMjAyNj9cIixcbiAgICBjaG9pY2VzOiBbXG4gICAgICBcIltbOTUuMF1dIGFuZCBbWy01LjBcXFxcJV1dXCIsXG4gICAgICBcIltbMTA1LjBdXSBhbmQgW1s1LjBcXFxcJV1dXCIsXG4gICAgICBcIltbMTExLjFdXSBhbmQgW1sxMS4xXFxcXCVdXVwiLFxuICAgICAgXCJbWzEwMC4wXV0gYW5kIFtbMC4wXFxcXCVdXVwiXG4gICAgXSxcbiAgICBjb3JyZWN0OiAzLFxuICAgIHdoeTogXCJUaGUgZml4ZWQgYmFzZSBiYXNrZXQgY29zdHMgW1sxMCg4KSs0KDI1KT0xODBdXSBpbiAyMDI0IGFuZCBbWzEwKDEwKSs0KDIwKT0xODBdXSBpbiAyMDI2LCBzbyBbW1xcXFx0ZXh0e0NQSX09MTgwLzE4MFxcXFx0aW1lczEwMD0xMDBdXSBhbmQgaW5mbGF0aW9uIGlzIHplcm8uXCJcbiAgfSxcbiAge1xuICAgIGlkOiBcImNwaS1zdWJzdGl0dXRpb24tdHJhcFwiLFxuICAgIHRvcGljOiBcIkNQSSAvIGluZmxhdGlvblwiLFxuICAgIHByb21wdDogXCJDb25zdW1lcnMgc3dpdGNoIGZyb20gYmVlZiB0byBjaGlja2VuIGFmdGVyIGJlZWYgZ2V0cyBleHBlbnNpdmUsIGJ1dCB0aGUgQ1BJIHN0aWxsIHByaWNlcyB0aGUgb2xkIGJlZWYtaGVhdnkgYmFza2V0LiBXaGF0IGJpYXMgZG9lcyB0aGlzIGNyZWF0ZT9cIixcbiAgICBjaG9pY2VzOiBbXG4gICAgICBcIkl0IHVuZGVyc3RhdGVzIGluZmxhdGlvbiBiZWNhdXNlIHRoZSBjdXJyZW50IGJhc2tldCBpcyBjaGVhcGVyLlwiLFxuICAgICAgXCJJdCBvdmVyc3RhdGVzIGluZmxhdGlvbiBiZWNhdXNlIGl0IGlnbm9yZXMgc3Vic3RpdHV0aW9uIHRvd2FyZCBjaGVhcGVyIGdvb2RzLlwiLFxuICAgICAgXCJJdCBoYXMgbm8gYmlhcyBiZWNhdXNlIHF1YW50aXRpZXMgYWx3YXlzIHVwZGF0ZSBhdXRvbWF0aWNhbGx5LlwiLFxuICAgICAgXCJJdCBvdmVyc3RhdGVzIHJlYWwgR0RQIGJ1dCBoYXMgbm8gZWZmZWN0IG9uIG1lYXN1cmVkIGluZmxhdGlvbi5cIlxuICAgIF0sXG4gICAgY29ycmVjdDogMSxcbiAgICB3aHk6IFwiQ1BJIGlzIExhc3BleXJlcywgc28gZml4ZWQgYmFzZS15ZWFyIHF1YW50aXRpZXMgb3ZlcnN0YXRlIHRoZSBjb3N0IGluY3JlYXNlIHdoZW4gY29uc3VtZXJzIHN1YnN0aXR1dGUgYXdheSBmcm9tIGdvb2RzIHdob3NlIHJlbGF0aXZlIHByaWNlcyByaXNlLlwiXG4gIH0sXG4gIHtcbiAgICBpZDogXCJpbmZsYXRpb24tZGVub21pbmF0b3JcIixcbiAgICB0b3BpYzogXCJDUEkgLyBpbmZsYXRpb25cIixcbiAgICBwcm9tcHQ6IFwiQ1BJIHJpc2VzIGZyb20gMTI1IHRvIDE0MC4gV2hhdCBpcyB0aGUgaW5mbGF0aW9uIHJhdGU/XCIsXG4gICAgY2hvaWNlczogW1xuICAgICAgXCJbWzEwLjdcXFxcJV1dXCIsXG4gICAgICBcIltbMTIuMFxcXFwlXV1cIixcbiAgICAgIFwiW1sxNS4wXFxcXCVdXVwiLFxuICAgICAgXCJbWzQwLjBcXFxcJV1dXCJcbiAgICBdLFxuICAgIGNvcnJlY3Q6IDEsXG4gICAgd2h5OiBcIkluZmxhdGlvbiB1c2VzIHRoZSBlYXJsaWVyIENQSSBpbiB0aGUgZGVub21pbmF0b3I6IFtbKDE0MC0xMjUpLzEyNT0wLjEyXV0sIG5vdCB0aGUgbmV3IENQSSBvciB0aGUgYmFzZSB2YWx1ZSAxMDAuXCJcbiAgfSxcbiAge1xuICAgIGlkOiBcImtjLWVxdWlsaWJyaXVtLWJhc2ljXCIsXG4gICAgdG9waWM6IFwiS2V5bmVzaWFuIGNyb3NzXCIsXG4gICAgcHJvbXB0OiBcIkluIGEgY2xvc2VkIGVjb25vbXksIFtbQz04MCswLjc1WV1dIGFuZCBbW1xcXFxvdmVybGluZXtJfT03MF1dLiBXaGF0IGlzIGVxdWlsaWJyaXVtIFtbWV4qXV0/XCIsXG4gICAgY2hvaWNlczogW1xuICAgICAgXCJbWzE1MF1dXCIsXG4gICAgICBcIltbNDUwXV1cIixcbiAgICAgIFwiW1s2MDBdXVwiLFxuICAgICAgXCJbWzc1MF1dXCJcbiAgICBdLFxuICAgIGNvcnJlY3Q6IDIsXG4gICAgd2h5OiBcIlNldCBbW1k9ODArMC43NVkrNzBdXSwgc28gW1swLjI1WT0xNTBdXSBhbmQgW1tZXio9NjAwXV0uXCJcbiAgfSxcbiAge1xuICAgIGlkOiBcImtjLWludmVudG9yeS1hZGp1c3RtZW50XCIsXG4gICAgdG9waWM6IFwiS2V5bmVzaWFuIGNyb3NzXCIsXG4gICAgcHJvbXB0OiBcIkF0IGN1cnJlbnQgb3V0cHV0LCBwbGFubmVkIGFnZ3JlZ2F0ZSBleHBlbmRpdHVyZSBpcyA5MjAgd2hpbGUgYWN0dWFsIG91dHB1dCBpcyAxLDAwMC4gV2hhdCBoYXBwZW5zIG5leHQgaW4gdGhlIEtleW5lc2lhbi1jcm9zcyBhZGp1c3RtZW50IHN0b3J5P1wiLFxuICAgIGNob2ljZXM6IFtcbiAgICAgIFwiVW5wbGFubmVkIGludmVudG9yaWVzIGZhbGwsIHNvIGZpcm1zIHJhaXNlIG91dHB1dC5cIixcbiAgICAgIFwiVW5wbGFubmVkIGludmVudG9yaWVzIHJpc2UsIHNvIGZpcm1zIGN1dCBvdXRwdXQuXCIsXG4gICAgICBcIkludGVyZXN0IHJhdGVzIGZhbGwgdW50aWwgbW9uZXkgZGVtYW5kIHJpc2VzLlwiLFxuICAgICAgXCJUaGUgcHJpY2UgbGV2ZWwgZmFsbHMgaW1tZWRpYXRlbHkgYW5kIG91dHB1dCBzdGF5cyBmaXhlZC5cIlxuICAgIF0sXG4gICAgY29ycmVjdDogMSxcbiAgICB3aHk6IFwiSWYgW1tBRV5kPFldXSwgZ29vZHMgYXJlIGxlZnQgdW5zb2xkLCBpbnZlbnRvcmllcyByaXNlIHVuaW50ZW50aW9uYWxseSwgYW5kIGZpcm1zIHJlZHVjZSBwcm9kdWN0aW9uLlwiXG4gIH0sXG4gIHtcbiAgICBpZDogXCJrYy1vcGVuLWltcG9ydC1zaWduXCIsXG4gICAgdG9waWM6IFwiS2V5bmVzaWFuIGNyb3NzXCIsXG4gICAgcHJvbXB0OiBcIk9wZW4tZWNvbm9teSBwbGFubmVkIGV4cGVuZGl0dXJlIGlzIFtbQUU9QytJK0crWC1NXV0uIEhvbGRpbmcgYWxsIGVsc2UgZml4ZWQsIGF1dG9ub21vdXMgaW1wb3J0cyByaXNlIGJ5IDI1IGFuZCBbW2M9MC44MF1dLiBXaGF0IGlzIFtbXFxcXERlbHRhIFleKl1dP1wiLFxuICAgIGNob2ljZXM6IFtcbiAgICAgIFwiW1srMTI1XV1cIixcbiAgICAgIFwiW1stMTI1XV1cIixcbiAgICAgIFwiW1srMjBdXVwiLFxuICAgICAgXCJbWy0yMF1dXCJcbiAgICBdLFxuICAgIGNvcnJlY3Q6IDEsXG4gICAgd2h5OiBcIkF1dG9ub21vdXMgaW1wb3J0cyBlbnRlciBzcGVuZGluZyB3aXRoIGEgbWludXMgc2lnbiwgc28gW1tcXFxcRGVsdGEgWV4qPS0oMS8oMS1jKSlcXFxcRGVsdGFcXFxcb3ZlcmxpbmV7TX09LTUoMjUpPS0xMjVdXS5cIlxuICB9LFxuICB7XG4gICAgaWQ6IFwibXVsdC10YXgtY3V0LXNpemVcIixcbiAgICB0b3BpYzogXCJNdWx0aXBsaWVyc1wiLFxuICAgIHByb21wdDogXCJNUEMgaXMgW1swLjgwXV0gYW5kIHRoZXJlIGlzIGEgcmVjZXNzaW9uYXJ5IGdhcCBvZiAzMDAuIEhvdyBsYXJnZSBhIGx1bXAtc3VtIHRheCBjaGFuZ2UgY2xvc2VzIHRoZSBnYXAgYnkgaXRzZWxmP1wiLFxuICAgIGNob2ljZXM6IFtcbiAgICAgIFwiUmFpc2UgdGF4ZXMgYnkgNjAuXCIsXG4gICAgICBcIkN1dCB0YXhlcyBieSA2MC5cIixcbiAgICAgIFwiUmFpc2UgdGF4ZXMgYnkgNzUuXCIsXG4gICAgICBcIkN1dCB0YXhlcyBieSA3NS5cIlxuICAgIF0sXG4gICAgY29ycmVjdDogMyxcbiAgICB3aHk6IFwiVGhlIHRheCBtdWx0aXBsaWVyIGlzIFtbLWMvKDEtYyk9LTRdXSwgc28gW1tcXFxcRGVsdGFcXFxcb3ZlcmxpbmV7VH09MzAwLygtNCk9LTc1XV0sIGEgdGF4IGN1dC5cIlxuICB9LFxuICB7XG4gICAgaWQ6IFwibXVsdC1wcm9wb3J0aW9uYWwtdGF4XCIsXG4gICAgdG9waWM6IFwiTXVsdGlwbGllcnNcIixcbiAgICBwcm9tcHQ6IFwiV2l0aCBwcm9wb3J0aW9uYWwgdGF4ZXMsIFtbQz1cXFxcb3ZlcmxpbmV7Q18wfStjKDEtdClZXV0uIElmIFtbYz0wLjgwXV0gYW5kIFtbdD0wLjI1XV0sIHdoYXQgaXMgdGhlIHNwZW5kaW5nIG11bHRpcGxpZXI/XCIsXG4gICAgY2hvaWNlczogW1xuICAgICAgXCJbWzIuNV1dXCIsXG4gICAgICBcIltbMy4wXV1cIixcbiAgICAgIFwiW1s0LjBdXVwiLFxuICAgICAgXCJbWzUuMF1dXCJcbiAgICBdLFxuICAgIGNvcnJlY3Q6IDAsXG4gICAgd2h5OiBcIlRoZSBzbG9wZSBvZiBleHBlbmRpdHVyZSBpcyBbW2MoMS10KT0wLjgwKDAuNzUpPTAuNjBdXSwgc28gdGhlIG11bHRpcGxpZXIgaXMgW1sxLygxLTAuNjApPTIuNV1dLlwiXG4gIH0sXG4gIHtcbiAgICBpZDogXCJtdWx0LWJhbGFuY2VkLWJ1ZGdldFwiLFxuICAgIHRvcGljOiBcIk11bHRpcGxpZXJzXCIsXG4gICAgcHJvbXB0OiBcIk1QQyBpcyBbWzAuNzVdXS4gR292ZXJubWVudCBzcGVuZGluZyBhbmQgbHVtcC1zdW0gdGF4ZXMgYm90aCByaXNlIGJ5IDEyMC4gV2hhdCBpcyB0aGUgbmV0IGNoYW5nZSBpbiBlcXVpbGlicml1bSBvdXRwdXQ/XCIsXG4gICAgY2hvaWNlczogW1xuICAgICAgXCJbWzBdXVwiLFxuICAgICAgXCJbWysxMjBdXVwiLFxuICAgICAgXCJbWyszNjBdXVwiLFxuICAgICAgXCJbWy0xMjBdXVwiXG4gICAgXSxcbiAgICBjb3JyZWN0OiAxLFxuICAgIHdoeTogXCJUaGUgYmFsYW5jZWQtYnVkZ2V0IG11bHRpcGxpZXIgaXMgW1sxXV0sIGJlY2F1c2UgW1tLX0c9NF1dIGFuZCBbW0tfVD0tM11dLCBzbyBbW1xcXFxEZWx0YSBZPTEyMF1dLlwiXG4gIH0sXG4gIHtcbiAgICBpZDogXCJtb25leS1zaW5nbGUtYmFua1wiLFxuICAgIHRvcGljOiBcIk1vbmV5IGNyZWF0aW9uIC8gcnJyXCIsXG4gICAgcHJvbXB0OiBcIkEgYmFuayBoYXMgdG90YWwgcmVzZXJ2ZXMgb2YgOTAsIGRlbWFuZCBkZXBvc2l0cyBvZiA0MDAsIGFuZCBbW3Jycj0wLjIwXV0uIFdoYXQgaXMgdGhlIG1heGltdW0gbmV3IGxlbmRpbmcgYnkgdGhpcyBzaW5nbGUgYmFuaz9cIixcbiAgICBjaG9pY2VzOiBbXG4gICAgICBcIltbMTBdXVwiLFxuICAgICAgXCJbWzgwXV1cIixcbiAgICAgIFwiW1s5MF1dXCIsXG4gICAgICBcIltbNDUwXV1cIlxuICAgIF0sXG4gICAgY29ycmVjdDogMCxcbiAgICB3aHk6IFwiUmVxdWlyZWQgcmVzZXJ2ZXMgYXJlIFtbMC4yMCg0MDApPTgwXV0sIHNvIGV4Y2VzcyByZXNlcnZlcyBhbmQgbWF4aW11bSBuZXcgbG9hbnMgZm9yIHRoZSBzaW5nbGUgYmFuayBhcmUgW1s5MC04MD0xMF1dLlwiXG4gIH0sXG4gIHtcbiAgICBpZDogXCJtb25leS1vbW8tc2FsZVwiLFxuICAgIHRvcGljOiBcIk1vbmV5IGNyZWF0aW9uIC8gcnJyXCIsXG4gICAgcHJvbXB0OiBcIlRoZSBGZWQgc2VsbHMgNTAgb2YgYm9uZHMgdG8gdGhlIHB1YmxpYyBhbmQgW1tycnI9MC4xMF1dLiBXaGF0IGlzIHRoZSBtYXhpbXVtIGNoYW5nZSBpbiB0aGUgbW9uZXkgc3VwcGx5P1wiLFxuICAgIGNob2ljZXM6IFtcbiAgICAgIFwiW1srNTAwXV1cIixcbiAgICAgIFwiW1stNTAwXV1cIixcbiAgICAgIFwiW1srNTBdXVwiLFxuICAgICAgXCJbWy01MF1dXCJcbiAgICBdLFxuICAgIGNvcnJlY3Q6IDEsXG4gICAgd2h5OiBcIkFuIE9NTyBzYWxlIGRyYWlucyByZXNlcnZlcywgc28gW1tcXFxcRGVsdGEgTV5TPSgxLzAuMTApKC01MCk9LTUwMF1dLlwiXG4gIH0sXG4gIHtcbiAgICBpZDogXCJtb25leS1ycnItY2hhbmdlXCIsXG4gICAgdG9waWM6IFwiTW9uZXkgY3JlYXRpb24gLyBycnJcIixcbiAgICBwcm9tcHQ6IFwiQmFua3MgaGF2ZSBkZW1hbmQgZGVwb3NpdHMgb2YgMSwwMDAgYW5kIGFyZSBmdWxseSBsb2FuZWQgdXAgd2hlbiBbW3Jycj0wLjIwXV0uIFRoZSByZXF1aXJlZCByZXNlcnZlIHJhdGlvIGZhbGxzIHRvIFtbMC4xMF1dLiBIb3cgbXVjaCBhZGRpdGlvbmFsIG1vbmV5IGNhbiB0aGUgYmFua2luZyBzeXN0ZW0gY3JlYXRlIGZyb20gdGhlIG5ld2x5IGZyZWVkIHJlc2VydmVzP1wiLFxuICAgIGNob2ljZXM6IFtcbiAgICAgIFwiW1sxMDBdXVwiLFxuICAgICAgXCJbWzUwMF1dXCIsXG4gICAgICBcIltbMXssfTAwMF1dXCIsXG4gICAgICBcIltbMnssfTAwMF1dXCJcbiAgICBdLFxuICAgIGNvcnJlY3Q6IDIsXG4gICAgd2h5OiBcIlRoZSBjdXQgZnJlZXMgW1sxMDBdXSBvZiByZXNlcnZlcyBhbmQgdGhlIG5ldyBtdWx0aXBsaWVyIGlzIFtbMTBdXSwgc28gcG9zc2libGUgZXhwYW5zaW9uIGlzIFtbMTAoMTAwKT0xeyx9MDAwXV0uXCJcbiAgfSxcbiAge1xuICAgIGlkOiBcIm1tLXktc2hpZnRcIixcbiAgICB0b3BpYzogXCJNb25leSBtYXJrZXQgZXF1aWxpYnJpdW1cIixcbiAgICBwcm9tcHQ6IFwiUmVhbCBpbmNvbWUgcmlzZXMgd2hpbGUgbm9taW5hbCBtb25leSBzdXBwbHkgYW5kIHRoZSBwcmljZSBsZXZlbCBhcmUgZml4ZWQuIEluIHRoZSBtb25leSBtYXJrZXQsIHdoYXQgaGFwcGVucyB0byBtb25leSBkZW1hbmQgYW5kIFtbcl4qXV0/XCIsXG4gICAgY2hvaWNlczogW1xuICAgICAgXCJNb25leSBkZW1hbmQgc2hpZnRzIHJpZ2h0IGFuZCBbW3JeKl1dIHJpc2VzLlwiLFxuICAgICAgXCJNb25leSBkZW1hbmQgc2hpZnRzIGxlZnQgYW5kIFtbcl4qXV0gZmFsbHMuXCIsXG4gICAgICBcIk1vbmV5IHN1cHBseSBzaGlmdHMgcmlnaHQgYW5kIFtbcl4qXV0gZmFsbHMuXCIsXG4gICAgICBcIk1vbmV5IGRlbWFuZCBpcyB1bmNoYW5nZWQgYmVjYXVzZSBvbmx5IHByaWNlcyBtYXR0ZXIuXCJcbiAgICBdLFxuICAgIGNvcnJlY3Q6IDAsXG4gICAgd2h5OiBcIkhpZ2hlciBpbmNvbWUgcmFpc2VzIHRyYW5zYWN0aW9ucyBkZW1hbmQgZm9yIG1vbmV5LCBzaGlmdGluZyBbW01eRF1dIHJpZ2h0IGFuZCBwdXNoaW5nIHRoZSBlcXVpbGlicml1bSBpbnRlcmVzdCByYXRlIHVwLlwiXG4gIH0sXG4gIHtcbiAgICBpZDogXCJtbS1leGNlc3Mtc3VwcGx5XCIsXG4gICAgdG9waWM6IFwiTW9uZXkgbWFya2V0IGVxdWlsaWJyaXVtXCIsXG4gICAgcHJvbXB0OiBcIkF0IHRoZSBjdXJyZW50IGludGVyZXN0IHJhdGUsIG1vbmV5IHN1cHBsaWVkIGlzIGdyZWF0ZXIgdGhhbiBtb25leSBkZW1hbmRlZC4gV2hhdCBhZGp1c3RtZW50IG1vdmVzIHRoZSBlY29ub215IHRvd2FyZCBtb25leS1tYXJrZXQgZXF1aWxpYnJpdW0/XCIsXG4gICAgY2hvaWNlczogW1xuICAgICAgXCJQZW9wbGUgYnV5IGJvbmRzLCBib25kIHByaWNlcyByaXNlLCBhbmQgaW50ZXJlc3QgcmF0ZXMgZmFsbC5cIixcbiAgICAgIFwiUGVvcGxlIHNlbGwgYm9uZHMsIGJvbmQgcHJpY2VzIGZhbGwsIGFuZCBpbnRlcmVzdCByYXRlcyByaXNlLlwiLFxuICAgICAgXCJCYW5rcyByYWlzZSByZXF1aXJlZCByZXNlcnZlcywgc28gdGhlIG11bHRpcGxpZXIgZmFsbHMuXCIsXG4gICAgICBcIlRoZSBleGNoYW5nZSByYXRlIGFwcHJlY2lhdGVzIHVudGlsIGV4cG9ydHMgZmFsbC5cIlxuICAgIF0sXG4gICAgY29ycmVjdDogMCxcbiAgICB3aHk6IFwiRXhjZXNzIG1vbmV5IGJhbGFuY2VzIGFyZSB1c2VkIHRvIGJ1eSBib25kcywgcmFpc2luZyBib25kIHByaWNlcyBhbmQgbG93ZXJpbmcgeWllbGRzIHVudGlsIG1vbmV5IGRlbWFuZGVkIHJpc2VzIHRvIG1hdGNoIHN1cHBseS5cIlxuICB9LFxuICB7XG4gICAgaWQ6IFwibW0tcmVhbC1iYWxhbmNlc1wiLFxuICAgIHRvcGljOiBcIk1vbmV5IG1hcmtldCBlcXVpbGlicml1bVwiLFxuICAgIHByb21wdDogXCJOb21pbmFsIFtbTV5TXV0gaXMgZml4ZWQsIGJ1dCB0aGUgcHJpY2UgbGV2ZWwgcmlzZXMuIFdoYXQgaGFwcGVucyB0byByZWFsIG1vbmV5IHN1cHBseSBhbmQgW1tyXipdXT9cIixcbiAgICBjaG9pY2VzOiBbXG4gICAgICBcIlJlYWwgbW9uZXkgc3VwcGx5IHJpc2VzIGFuZCBbW3JeKl1dIGZhbGxzLlwiLFxuICAgICAgXCJSZWFsIG1vbmV5IHN1cHBseSBmYWxscyBhbmQgW1tyXipdXSByaXNlcy5cIixcbiAgICAgIFwiQm90aCByZWFsIG1vbmV5IHN1cHBseSBhbmQgW1tyXipdXSByaXNlLlwiLFxuICAgICAgXCJOZWl0aGVyIGNoYW5nZXMgYmVjYXVzZSBub21pbmFsIFtbTV5TXV0gaXMgZml4ZWQuXCJcbiAgICBdLFxuICAgIGNvcnJlY3Q6IDEsXG4gICAgd2h5OiBcIlJlYWwgYmFsYW5jZXMgYXJlIFtbTV5TL1BdXSwgc28gYSBoaWdoZXIgW1tQXV0gc2hpZnRzIHJlYWwgbW9uZXkgc3VwcGx5IGxlZnQgYW5kIHJhaXNlcyB0aGUgZXF1aWxpYnJpdW0gaW50ZXJlc3QgcmF0ZS5cIlxuICB9LFxuICB7XG4gICAgaWQ6IFwiYm9uZC1wcmljZS1yYXRlXCIsXG4gICAgdG9waWM6IFwiQm9uZCBwcmljaW5nXCIsXG4gICAgcHJvbXB0OiBcIkEgZGlzY291bnQgYm9uZCBwYXlzIDEsMDAwIGluIGZpdmUgeWVhcnMuIElmIHRoZSBtYXJrZXQgaW50ZXJlc3QgcmF0ZSByaXNlcyBmcm9tIFtbNFxcXFwlXV0gdG8gW1s2XFxcXCVdXSwgd2hhdCBoYXBwZW5zIHRvIHRoZSBib25kJ3MgY3VycmVudCBwcmljZT9cIixcbiAgICBjaG9pY2VzOiBbXG4gICAgICBcIkl0IHJpc2VzIGJlY2F1c2UgdGhlIGJvbmQgbm93IGVhcm5zIGEgaGlnaGVyIHJhdGUuXCIsXG4gICAgICBcIkl0IGZhbGxzIGJlY2F1c2UgdGhlIGZpeGVkIGZ1dHVyZSBwYXltZW50IGlzIGRpc2NvdW50ZWQgbW9yZSBoZWF2aWx5LlwiLFxuICAgICAgXCJJdCBzdGF5cyBhdCAxLDAwMCBiZWNhdXNlIGZhY2UgdmFsdWUgaXMgZml4ZWQuXCIsXG4gICAgICBcIkl0IHJpc2VzIG9ubHkgaWYgdGhlIGJvbmQgd2FzIGlzc3VlZCBiZWZvcmUgcmF0ZXMgY2hhbmdlZC5cIlxuICAgIF0sXG4gICAgY29ycmVjdDogMSxcbiAgICB3aHk6IFwiRm9yIGEgZml4ZWQgW1tGVl1dLCBbW1BWPUZWLygxK3IpXlRdXSwgc28gYSBoaWdoZXIgZGlzY291bnQgcmF0ZSBsb3dlcnMgcHJpY2UuXCJcbiAgfSxcbiAge1xuICAgIGlkOiBcImJvbmQtaW1wbGllZC15aWVsZFwiLFxuICAgIHRvcGljOiBcIkJvbmQgcHJpY2luZ1wiLFxuICAgIHByb21wdDogXCJBIG9uZS15ZWFyIGRpc2NvdW50IGJvbmQgd2l0aCBmYWNlIHZhbHVlIDEsMDAwIHNlbGxzIGZvciA5NTIuMzguIFdoYXQgaXMgaXRzIGltcGxpZWQgeWllbGQ/XCIsXG4gICAgY2hvaWNlczogW1xuICAgICAgXCJbWzRcXFxcJV1dXCIsXG4gICAgICBcIltbNVxcXFwlXV1cIixcbiAgICAgIFwiW1s0Ny42MlxcXFwlXV1cIixcbiAgICAgIFwiW1s5NS4yNFxcXFwlXV1cIlxuICAgIF0sXG4gICAgY29ycmVjdDogMSxcbiAgICB3aHk6IFwiVGhlIG9uZS15ZWFyIHlpZWxkIGlzIFtbMTAwMC85NTIuMzgtMVxcXFxhcHByb3gwLjA1XV0sIHNvIHRoZSBkaXNjb3VudCBpcyBub3QgdGhlIGludGVyZXN0IHJhdGUuXCJcbiAgfSxcbiAge1xuICAgIGlkOiBcImFzYWQtZGVtYW5kLXNob2NrXCIsXG4gICAgdG9waWM6IFwiQVMtQURcIixcbiAgICBwcm9tcHQ6IFwiQSB3YXZlIG9mIHBlc3NpbWlzbSByZWR1Y2VzIHBsYW5uZWQgaW52ZXN0bWVudC4gSW4gdGhlIHNob3J0LXJ1biBBUy1BRCBtb2RlbCwgd2hhdCBpcyB0aGUgZGlyZWN0IGVmZmVjdD9cIixcbiAgICBjaG9pY2VzOiBbXG4gICAgICBcIkFEIHNoaWZ0cyBsZWZ0LCBsb3dlcmluZyBib3RoIG91dHB1dCBhbmQgdGhlIHByaWNlIGxldmVsIGluIHRoZSBzaG9ydCBydW4uXCIsXG4gICAgICBcIkFEIHNoaWZ0cyByaWdodCwgcmFpc2luZyBvdXRwdXQgYW5kIHRoZSBwcmljZSBsZXZlbC5cIixcbiAgICAgIFwiU1JBUyBzaGlmdHMgbGVmdCwgbG93ZXJpbmcgb3V0cHV0IGFuZCByYWlzaW5nIHRoZSBwcmljZSBsZXZlbC5cIixcbiAgICAgIFwiTFJBUyBzaGlmdHMgbGVmdCBiZWNhdXNlIGludmVzdG1lbnQgaXMgcGFydCBvZiBwb3RlbnRpYWwgb3V0cHV0IGltbWVkaWF0ZWx5LlwiXG4gICAgXSxcbiAgICBjb3JyZWN0OiAwLFxuICAgIHdoeTogXCJMb3dlciBwbGFubmVkIGludmVzdG1lbnQgcmVkdWNlcyBhZ2dyZWdhdGUgZGVtYW5kLCBzbyBzaG9ydC1ydW4gZXF1aWxpYnJpdW0gbW92ZXMgdG8gbG93ZXIgW1tZXV0gYW5kIGxvd2VyIFtbUF1dLlwiXG4gIH0sXG4gIHtcbiAgICBpZDogXCJhc2FkLWNvc3QtcHVzaFwiLFxuICAgIHRvcGljOiBcIkFTLUFEXCIsXG4gICAgcHJvbXB0OiBcIk9pbCBwcmljZXMganVtcCBzaGFycGx5LiBJbiBBUy1BRCB0ZXJtcywgd2hpY2ggb3V0Y29tZSBiZXN0IGRlc2NyaWJlcyB0aGUgc2hvcnQgcnVuP1wiLFxuICAgIGNob2ljZXM6IFtcbiAgICAgIFwiQUQgc2hpZnRzIHJpZ2h0OiBoaWdoZXIgb3V0cHV0IGFuZCBoaWdoZXIgcHJpY2VzLlwiLFxuICAgICAgXCJTUkFTIHNoaWZ0cyByaWdodDogaGlnaGVyIG91dHB1dCBhbmQgbG93ZXIgcHJpY2VzLlwiLFxuICAgICAgXCJTUkFTIHNoaWZ0cyBsZWZ0OiBsb3dlciBvdXRwdXQgYW5kIGhpZ2hlciBwcmljZXMuXCIsXG4gICAgICBcIkxSQVMgc2hpZnRzIHJpZ2h0OiBoaWdoZXIgcG90ZW50aWFsIG91dHB1dCBhbmQgbG93ZXIgcHJpY2VzLlwiXG4gICAgXSxcbiAgICBjb3JyZWN0OiAyLFxuICAgIHdoeTogXCJBIG5lZ2F0aXZlIHN1cHBseSBzaG9jayByYWlzZXMgcHJvZHVjdGlvbiBjb3N0cywgc2hpZnRpbmcgU1JBUyBsZWZ0IGFuZCBjYXVzaW5nIHN0YWdmbGF0aW9uOiBsb3dlciBvdXRwdXQgd2l0aCBoaWdoZXIgcHJpY2VzLlwiXG4gIH0sXG4gIHtcbiAgICBpZDogXCJhc2FkLXBvbGljeS1taXhcIixcbiAgICB0b3BpYzogXCJBUy1BRFwiLFxuICAgIHByb21wdDogXCJUaGUgZWNvbm9teSBpcyBiZWxvdyBmdWxsLWVtcGxveW1lbnQgb3V0cHV0IGFuZCB0aGUgY2VudHJhbCBiYW5rIGV4cGFuZHMgW1tNXlNdXS4gVGhyb3VnaCB0aGUgc3RhbmRhcmQgaW50ZXJlc3QtcmF0ZSBjaGFubmVsLCB3aGF0IGhhcHBlbnMgaW4gQVMtQUQ/XCIsXG4gICAgY2hvaWNlczogW1xuICAgICAgXCJMb3dlciBbW3JdXSByYWlzZXMgaW52ZXN0bWVudCwgQUQgc2hpZnRzIHJpZ2h0LCBhbmQgW1tZXV0gcmlzZXMuXCIsXG4gICAgICBcIkhpZ2hlciBbW3JdXSBsb3dlcnMgaW52ZXN0bWVudCwgQUQgc2hpZnRzIGxlZnQsIGFuZCBbW1ldXSBmYWxscy5cIixcbiAgICAgIFwiTG93ZXIgW1tyXV0gc2hpZnRzIFNSQVMgcmlnaHQsIGxlYXZpbmcgQUQgdW5jaGFuZ2VkLlwiLFxuICAgICAgXCJIaWdoZXIgW1tyXV0gcmFpc2VzIG5ldCBleHBvcnRzLCBBRCBzaGlmdHMgcmlnaHQsIGFuZCBbW1ldXSByaXNlcy5cIlxuICAgIF0sXG4gICAgY29ycmVjdDogMCxcbiAgICB3aHk6IFwiRXhwYW5zaW9uYXJ5IG1vbmV0YXJ5IHBvbGljeSBsb3dlcnMgW1tyXV0sIHN0aW11bGF0ZXMgaW50ZXJlc3Qtc2Vuc2l0aXZlIHNwZW5kaW5nLCBhbmQgc2hpZnRzIEFEIHJpZ2h0LlwiXG4gIH0sXG4gIHtcbiAgICBpZDogXCJmeC1wcHAtcXVvdGVcIixcbiAgICB0b3BpYzogXCJGb3JlaWduIGV4Y2hhbmdlXCIsXG4gICAgcHJvbXB0OiBcIkEgVS5TLiBiYXNrZXQgY29zdHMgNDgwIGRvbGxhcnMgYW5kIHRoZSBzYW1lIFUuSy4gYmFza2V0IGNvc3RzIDI0MCBwb3VuZHMuIFdpdGggdGhlIGV4Y2hhbmdlIHJhdGUgcXVvdGVkIGFzIFtbRV97XFxcXCQvXFxcXHBvdW5kc31dXSwgd2hhdCBpcyBQUFA/XCIsXG4gICAgY2hvaWNlczogW1xuICAgICAgXCJbWzAuNTBcXFxcIFxcXFwkL1xcXFxwb3VuZHNdXVwiLFxuICAgICAgXCJbWzIuMDBcXFxcIFxcXFwkL1xcXFxwb3VuZHNdXVwiLFxuICAgICAgXCJbWzI0MFxcXFwgXFxcXCQvXFxcXHBvdW5kc11dXCIsXG4gICAgICBcIltbNzIwXFxcXCBcXFxcJC9cXFxccG91bmRzXV1cIlxuICAgIF0sXG4gICAgY29ycmVjdDogMSxcbiAgICB3aHk6IFwiRm9yIGEgZG9sbGFycy1wZXItcG91bmQgcXVvdGUsIFBQUCBpcyBbW1Bfe1VTfS9QX3tVS309NDgwLzI0MD0yLjAwXFxcXCBcXFxcJC9cXFxccG91bmRzXV0uXCJcbiAgfSxcbiAge1xuICAgIGlkOiBcImZ4LWNhcGl0YWwtZmxvd1wiLFxuICAgIHRvcGljOiBcIkZvcmVpZ24gZXhjaGFuZ2VcIixcbiAgICBwcm9tcHQ6IFwiVS5TLiBpbnRlcmVzdCByYXRlcyByaXNlIHJlbGF0aXZlIHRvIFUuSy4gcmF0ZXMsIHdpdGggZXhjaGFuZ2UgcmF0ZXMgZmxvYXRpbmcuIFRocm91Z2ggdGhlIGNhcGl0YWwtZmxvdyBjaGFubmVsLCB3aGF0IGhhcHBlbnMgdG8gdGhlIGRvbGxhciBhbmQgdG8gW1tFX3tcXFxcJC9cXFxccG91bmRzfV1dP1wiLFxuICAgIGNob2ljZXM6IFtcbiAgICAgIFwiVGhlIGRvbGxhciBkZXByZWNpYXRlcyBhbmQgW1tFX3tcXFxcJC9cXFxccG91bmRzfV1dIHJpc2VzLlwiLFxuICAgICAgXCJUaGUgZG9sbGFyIGFwcHJlY2lhdGVzIGFuZCBbW0Vfe1xcXFwkL1xcXFxwb3VuZHN9XV0gZmFsbHMuXCIsXG4gICAgICBcIlRoZSBkb2xsYXIgYXBwcmVjaWF0ZXMgYW5kIFtbRV97XFxcXCQvXFxcXHBvdW5kc31dXSByaXNlcy5cIixcbiAgICAgIFwiVGhlIGRvbGxhciBkZXByZWNpYXRlcyBhbmQgW1tFX3tcXFxcJC9cXFxccG91bmRzfV1dIGZhbGxzLlwiXG4gICAgXSxcbiAgICBjb3JyZWN0OiAxLFxuICAgIHdoeTogXCJIaWdoZXIgVS5TLiByZXR1cm5zIGF0dHJhY3QgY2FwaXRhbCBpbnRvIGRvbGxhciBhc3NldHMsIHNvIHRoZSBkb2xsYXIgYXBwcmVjaWF0ZXMgYW5kIGZld2VyIGRvbGxhcnMgYXJlIG5lZWRlZCBwZXIgcG91bmQuXCJcbiAgfSxcbiAge1xuICAgIGlkOiBcImZ4LXBwcC12cy1jYXBpdGFsXCIsXG4gICAgdG9waWM6IFwiRm9yZWlnbiBleGNoYW5nZVwiLFxuICAgIHByb21wdDogXCJVLlMuIGluZmxhdGlvbiBleGNlZWRzIFUuSy4gaW5mbGF0aW9uLCBidXQgVS5TLiBpbnRlcmVzdCByYXRlcyBhbHNvIHJpc2UgYWJvdmUgVS5LLiByYXRlcy4gV2hpY2ggZGlzdGluY3Rpb24gaXMgY29ycmVjdD9cIixcbiAgICBjaG9pY2VzOiBbXG4gICAgICBcIlBQUCBhbmQgY2FwaXRhbCBmbG93cyBib3RoIHByZWRpY3QgZG9sbGFyIGRlcHJlY2lhdGlvbi5cIixcbiAgICAgIFwiUFBQIHByZWRpY3RzIGRvbGxhciBhcHByZWNpYXRpb24sIHdoaWxlIGNhcGl0YWwgZmxvd3MgcHJlZGljdCBkb2xsYXIgZGVwcmVjaWF0aW9uLlwiLFxuICAgICAgXCJQUFAgcHJlZGljdHMgZG9sbGFyIGRlcHJlY2lhdGlvbiwgd2hpbGUgY2FwaXRhbCBmbG93cyBwcmVkaWN0IGRvbGxhciBhcHByZWNpYXRpb24uXCIsXG4gICAgICBcIk5laXRoZXIgY2hhbm5lbCBwcmVkaWN0cyBhIGRpcmVjdGlvbmFsIGNoYW5nZS5cIlxuICAgIF0sXG4gICAgY29ycmVjdDogMixcbiAgICB3aHk6IFwiSGlnaGVyIHJlbGF0aXZlIGluZmxhdGlvbiB3ZWFrZW5zIGEgY3VycmVuY3kgaW4gUFBQLCB3aGlsZSBoaWdoZXIgcmVsYXRpdmUgaW50ZXJlc3QgcmF0ZXMgYXR0cmFjdCBjYXBpdGFsIGFuZCBzdHJlbmd0aGVuIGl0IGluIHRoZSBzaG9ydC1ydW4gY2FwaXRhbC1mbG93IGNoYW5uZWwuXCJcbiAgfSxcbiAge1xuICAgIGlkOiBcInJlZ2ltZS1mbG9hdGluZy1vbW9cIixcbiAgICB0b3BpYzogXCJNb25ldGFyeSByZWdpbWVzXCIsXG4gICAgcHJvbXB0OiBcIlVuZGVyIGZsb2F0aW5nIGV4Y2hhbmdlIHJhdGVzIHdpdGggaGlnaCBjYXBpdGFsIG1vYmlsaXR5LCB0aGUgRmVkIGJ1eXMgYm9uZHMuIFdoaWNoIGNoYWluIGlzIGNvcnJlY3Q/XCIsXG4gICAgY2hvaWNlczogW1xuICAgICAgXCJbW01eU1xcXFx1cGFycm93IFxcXFxSaWdodGFycm93IHJcXFxcZG93bmFycm93IFxcXFxSaWdodGFycm93IElcXFxcdXBhcnJvd11dIGFuZCBkb2xsYXIgZGVwcmVjaWF0aW9uIHJhaXNlcyBuZXQgZXhwb3J0cy5cIixcbiAgICAgIFwiW1tNXlNcXFxcdXBhcnJvdyBcXFxcUmlnaHRhcnJvdyByXFxcXHVwYXJyb3cgXFxcXFJpZ2h0YXJyb3cgSVxcXFxkb3duYXJyb3ddXSBhbmQgZG9sbGFyIGFwcHJlY2lhdGlvbiByYWlzZXMgbmV0IGV4cG9ydHMuXCIsXG4gICAgICBcIltbTV5TXFxcXGRvd25hcnJvdyBcXFxcUmlnaHRhcnJvdyByXFxcXHVwYXJyb3cgXFxcXFJpZ2h0YXJyb3cgSVxcXFxkb3duYXJyb3ddXSBhbmQgdGhlIGV4Y2hhbmdlIHJhdGUgaXMgdW5jaGFuZ2VkLlwiLFxuICAgICAgXCJUaGUgRmVkIG11c3QgcmV2ZXJzZSB0aGUgcHVyY2hhc2UgdG8gZGVmZW5kIGEgcGVnLCBzbyBvdXRwdXQgaXMgdW5jaGFuZ2VkLlwiXG4gICAgXSxcbiAgICBjb3JyZWN0OiAwLFxuICAgIHdoeTogXCJXaXRoIGEgZmxvYXQsIGV4cGFuc2lvbmFyeSBtb25ldGFyeSBwb2xpY3kgd29ya3MgdGhyb3VnaCBib3RoIGxvd2VyIGludGVyZXN0LXNlbnNpdGl2ZSBzcGVuZGluZyBjb3N0cyBhbmQgZGVwcmVjaWF0aW9uLWRyaXZlbiBuZXQgZXhwb3J0cy5cIlxuICB9LFxuICB7XG4gICAgaWQ6IFwicmVnaW1lLXRyaWxlbW1hXCIsXG4gICAgdG9waWM6IFwiTW9uZXRhcnkgcmVnaW1lc1wiLFxuICAgIHByb21wdDogXCJBIGNvdW50cnkgd2FudHMgZnJlZSBjYXBpdGFsIG1vYmlsaXR5IGFuZCBhIGZpeGVkIGV4Y2hhbmdlIHJhdGUuIFdoYXQgbXVzdCBpdCBnaXZlIHVwIGFjY29yZGluZyB0byB0aGUgaW1wb3NzaWJsZSB0cmluaXR5P1wiLFxuICAgIGNob2ljZXM6IFtcbiAgICAgIFwiSW5kZXBlbmRlbnQgbW9uZXRhcnkgcG9saWN5LlwiLFxuICAgICAgXCJGaXNjYWwgcG9saWN5LlwiLFxuICAgICAgXCJUaGUgYWJpbGl0eSB0byB0cmFkZSBnb29kcy5cIixcbiAgICAgIFwiVGhlIGFjY291bnRpbmcgaWRlbnRpdHkgdGhhdCB0aGUgYmFsYW5jZSBvZiBwYXltZW50cyBzdW1zIHRvIHplcm8uXCJcbiAgICBdLFxuICAgIGNvcnJlY3Q6IDAsXG4gICAgd2h5OiBcIldpdGggZnJlZSBjYXBpdGFsIGZsb3dzIGFuZCBhIHBlZywgdGhlIGNlbnRyYWwgYmFuayBtdXN0IGFkanVzdCBtb25leSBzdXBwbHkgdG8gZGVmZW5kIHRoZSBleGNoYW5nZSByYXRlLCBzbyBpdCBjYW5ub3QgcnVuIGluZGVwZW5kZW50IG1vbmV0YXJ5IHBvbGljeS5cIlxuICB9XG5dXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTIiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJ7XG4gIGNvbnN0IG1pbnV0ZXMgPSAyNTtcbiAgY29uc3QgdG90YWxTZWNvbmRzID0gbWludXRlcyAqIDYwO1xuICBjb25zdCBsZXR0ZXJzID0gW1wiQVwiLCBcIkJcIiwgXCJDXCIsIFwiRFwiXTtcbiAgY29uc3Qgcm9vdCA9IGh0bWxgPGRpdiBjbGFzcz1cImV4YW0tc2ltXCI+PC9kaXY+YDtcbiAgbGV0IG9yZGVyID0gW107XG4gIGxldCBjdXJyZW50ID0gMDtcbiAgbGV0IGFuc3dlcnMgPSBuZXcgTWFwKCk7XG4gIGxldCBzdGFydGVkID0gZmFsc2U7XG4gIGxldCBmaW5pc2hlZCA9IGZhbHNlO1xuICBsZXQgcmVtYWluaW5nID0gdG90YWxTZWNvbmRzO1xuICBsZXQgdGltZXIgPSBudWxsO1xuXG4gIGNvbnN0IHNodWZmbGUgPSAoaXRlbXMpID0+IHtcbiAgICBjb25zdCBvdXQgPSBpdGVtcy5zbGljZSgpO1xuICAgIGZvciAobGV0IGkgPSBvdXQubGVuZ3RoIC0gMTsgaSA+IDA7IGkgLT0gMSkge1xuICAgICAgY29uc3QgaiA9IE1hdGguZmxvb3IoTWF0aC5yYW5kb20oKSAqIChpICsgMSkpO1xuICAgICAgW291dFtpXSwgb3V0W2pdXSA9IFtvdXRbal0sIG91dFtpXV07XG4gICAgfVxuICAgIHJldHVybiBvdXQ7XG4gIH07XG5cbiAgY29uc3QgZXNjYXBlSHRtbCA9ICh2YWx1ZSkgPT4gU3RyaW5nKHZhbHVlKVxuICAgIC5yZXBsYWNlKC8mL2csIFwiJmFtcDtcIilcbiAgICAucmVwbGFjZSgvPC9nLCBcIiZsdDtcIilcbiAgICAucmVwbGFjZSgvPi9nLCBcIiZndDtcIilcbiAgICAucmVwbGFjZSgvXCIvZywgXCImcXVvdDtcIilcbiAgICAucmVwbGFjZSgvJy9nLCBcIiYjMzk7XCIpO1xuXG4gIGNvbnN0IHJlbmRlck1hdGggPSAodGV4KSA9PiB7XG4gICAgaWYgKHdpbmRvdy5rYXRleCkge1xuICAgICAgcmV0dXJuIHdpbmRvdy5rYXRleC5yZW5kZXJUb1N0cmluZyh0ZXgsIHt0aHJvd09uRXJyb3I6IGZhbHNlfSk7XG4gICAgfVxuICAgIHJldHVybiBgPHNwYW4gY2xhc3M9XCJtYXRoIGlubGluZVwiPiR7ZXNjYXBlSHRtbCh0ZXgpfTwvc3Bhbj5gO1xuICB9O1xuXG4gIGNvbnN0IHJpY2ggPSAodGV4dCkgPT4gZXNjYXBlSHRtbCh0ZXh0KS5yZXBsYWNlKC9cXFtcXFsoW1xcc1xcU10rPylcXF1cXF0vZywgKF8sIHRleCkgPT4gcmVuZGVyTWF0aCh0ZXgpKTtcblxuICBjb25zdCBmb3JtYXRUaW1lID0gKHNlY29uZHMpID0+IHtcbiAgICBjb25zdCBtID0gTWF0aC5mbG9vcihzZWNvbmRzIC8gNjApO1xuICAgIGNvbnN0IHMgPSBzZWNvbmRzICUgNjA7XG4gICAgcmV0dXJuIGAke219OiR7U3RyaW5nKHMpLnBhZFN0YXJ0KDIsIFwiMFwiKX1gO1xuICB9O1xuXG4gIGNvbnN0IHNjb3JlID0gKCkgPT4gb3JkZXIucmVkdWNlKChzdW0sIHF1ZXN0aW9uKSA9PiB7XG4gICAgY29uc3Qgc2VsZWN0ZWQgPSBhbnN3ZXJzLmdldChxdWVzdGlvbi5pZCk7XG4gICAgcmV0dXJuIHN1bSArIChzZWxlY3RlZCA9PT0gcXVlc3Rpb24uY29ycmVjdCA/IDEgOiAwKTtcbiAgfSwgMCk7XG5cbiAgY29uc3QgYnJlYWtkb3duID0gKCkgPT4ge1xuICAgIGNvbnN0IHJvd3MgPSBuZXcgTWFwKCk7XG4gICAgZm9yIChjb25zdCBxdWVzdGlvbiBvZiBvcmRlcikge1xuICAgICAgaWYgKCFyb3dzLmhhcyhxdWVzdGlvbi50b3BpYykpIHJvd3Muc2V0KHF1ZXN0aW9uLnRvcGljLCB7dG9waWM6IHF1ZXN0aW9uLnRvcGljLCBjb3JyZWN0OiAwLCB0b3RhbDogMH0pO1xuICAgICAgY29uc3Qgcm93ID0gcm93cy5nZXQocXVlc3Rpb24udG9waWMpO1xuICAgICAgcm93LnRvdGFsICs9IDE7XG4gICAgICBpZiAoYW5zd2Vycy5nZXQocXVlc3Rpb24uaWQpID09PSBxdWVzdGlvbi5jb3JyZWN0KSByb3cuY29ycmVjdCArPSAxO1xuICAgIH1cbiAgICByZXR1cm4gQXJyYXkuZnJvbShyb3dzLnZhbHVlcygpKS5zb3J0KChhLCBiKSA9PiBhLnRvcGljLmxvY2FsZUNvbXBhcmUoYi50b3BpYykpO1xuICB9O1xuXG4gIGNvbnN0IHN0b3BUaW1lciA9ICgpID0+IHtcbiAgICBpZiAodGltZXIpIGNsZWFySW50ZXJ2YWwodGltZXIpO1xuICAgIHRpbWVyID0gbnVsbDtcbiAgfTtcblxuICBjb25zdCBzdGFydFRpbWVyID0gKCkgPT4ge1xuICAgIHN0b3BUaW1lcigpO1xuICAgIHRpbWVyID0gc2V0SW50ZXJ2YWwoKCkgPT4ge1xuICAgICAgaWYgKCFzdGFydGVkIHx8IGZpbmlzaGVkKSByZXR1cm47XG4gICAgICByZW1haW5pbmcgLT0gMTtcbiAgICAgIGlmIChyZW1haW5pbmcgPD0gMCkge1xuICAgICAgICByZW1haW5pbmcgPSAwO1xuICAgICAgICBmaW5pc2hlZCA9IHRydWU7XG4gICAgICAgIHN0b3BUaW1lcigpO1xuICAgICAgfVxuICAgICAgcmVuZGVyKCk7XG4gICAgfSwgMTAwMCk7XG4gIH07XG5cbiAgY29uc3Qgc3RhcnRBdHRlbXB0ID0gKCkgPT4ge1xuICAgIG9yZGVyID0gc2h1ZmZsZShleGFtX3F1ZXN0aW9ucyk7XG4gICAgY3VycmVudCA9IDA7XG4gICAgYW5zd2VycyA9IG5ldyBNYXAoKTtcbiAgICBzdGFydGVkID0gdHJ1ZTtcbiAgICBmaW5pc2hlZCA9IGZhbHNlO1xuICAgIHJlbWFpbmluZyA9IHRvdGFsU2Vjb25kcztcbiAgICBzdGFydFRpbWVyKCk7XG4gICAgcmVuZGVyKCk7XG4gIH07XG5cbiAgY29uc3QgZmluaXNoQXR0ZW1wdCA9ICgpID0+IHtcbiAgICBmaW5pc2hlZCA9IHRydWU7XG4gICAgc3RvcFRpbWVyKCk7XG4gICAgcmVuZGVyKCk7XG4gIH07XG5cbiAgY29uc3QgY2hvb3NlID0gKGNob2ljZUluZGV4KSA9PiB7XG4gICAgaWYgKGZpbmlzaGVkKSByZXR1cm47XG4gICAgY29uc3QgcXVlc3Rpb24gPSBvcmRlcltjdXJyZW50XTtcbiAgICBpZiAoYW5zd2Vycy5oYXMocXVlc3Rpb24uaWQpKSByZXR1cm47XG4gICAgYW5zd2Vycy5zZXQocXVlc3Rpb24uaWQsIGNob2ljZUluZGV4KTtcbiAgICByZW5kZXIoKTtcbiAgfTtcblxuICBjb25zdCBuZXh0UXVlc3Rpb24gPSAoKSA9PiB7XG4gICAgaWYgKGN1cnJlbnQgPCBvcmRlci5sZW5ndGggLSAxKSB7XG4gICAgICBjdXJyZW50ICs9IDE7XG4gICAgICByZW5kZXIoKTtcbiAgICB9IGVsc2Uge1xuICAgICAgZmluaXNoQXR0ZW1wdCgpO1xuICAgIH1cbiAgfTtcblxuICBjb25zdCByZW5kZXJLcGlzID0gKCkgPT4ge1xuICAgIGNvbnN0IGFuc3dlcmVkID0gYW5zd2Vycy5zaXplO1xuICAgIGNvbnN0IHBjdCA9IG9yZGVyLmxlbmd0aCA/IE1hdGgucm91bmQoKHNjb3JlKCkgLyBvcmRlci5sZW5ndGgpICogMTAwKSA6IDA7XG4gICAgcmV0dXJuIGBcbiAgICAgIDxkaXYgY2xhc3M9XCJleGFtLWtwaXNcIj5cbiAgICAgICAgPGRpdiBjbGFzcz1cImtwaS1jYXJkXCI+XG4gICAgICAgICAgPGRpdiBjbGFzcz1cImtwaS1sYWJlbFwiPlRpbWVyPC9kaXY+XG4gICAgICAgICAgPGRpdiBjbGFzcz1cImtwaS12YWx1ZVwiPiR7Zm9ybWF0VGltZShyZW1haW5pbmcpfTwvZGl2PlxuICAgICAgICAgIDxkaXYgY2xhc3M9XCJrcGktc3ViXCI+JHttaW51dGVzfSBtaW51dGVzIHRvdGFsPC9kaXY+XG4gICAgICAgIDwvZGl2PlxuICAgICAgICA8ZGl2IGNsYXNzPVwia3BpLWNhcmRcIj5cbiAgICAgICAgICA8ZGl2IGNsYXNzPVwia3BpLWxhYmVsXCI+UHJvZ3Jlc3M8L2Rpdj5cbiAgICAgICAgICA8ZGl2IGNsYXNzPVwia3BpLXZhbHVlXCI+JHthbnN3ZXJlZH0vJHtleGFtX3F1ZXN0aW9ucy5sZW5ndGh9PC9kaXY+XG4gICAgICAgICAgPGRpdiBjbGFzcz1cImtwaS1zdWJcIj5hbnN3ZXJlZDwvZGl2PlxuICAgICAgICA8L2Rpdj5cbiAgICAgICAgPGRpdiBjbGFzcz1cImtwaS1jYXJkXCI+XG4gICAgICAgICAgPGRpdiBjbGFzcz1cImtwaS1sYWJlbFwiPkN1cnJlbnQgc2NvcmU8L2Rpdj5cbiAgICAgICAgICA8ZGl2IGNsYXNzPVwia3BpLXZhbHVlXCI+JHtzdGFydGVkID8gYCR7c2NvcmUoKX0vJHtleGFtX3F1ZXN0aW9ucy5sZW5ndGh9YCA6IFwiLS1cIn08L2Rpdj5cbiAgICAgICAgICA8ZGl2IGNsYXNzPVwia3BpLXN1YlwiPiR7c3RhcnRlZCA/IGAke3BjdH0lIG9mIGZ1bGwgZXhhbWAgOiBcInN0YXJ0cyBhZnRlciBmaXJzdCBhdHRlbXB0XCJ9PC9kaXY+XG4gICAgICAgIDwvZGl2PlxuICAgICAgPC9kaXY+YDtcbiAgfTtcblxuICBjb25zdCByZW5kZXJTdGFydCA9ICgpID0+IGBcbiAgICAke3JlbmRlcktwaXMoKX1cbiAgICA8ZGl2IGNsYXNzPVwibmV3cy1jYXJkXCI+XG4gICAgICA8ZGl2IGNsYXNzPVwibmV3cy1tZXRhXCI+XG4gICAgICAgIDxzcGFuIGNsYXNzPVwibmV3cy1zb3VyY2VcIj4yNSBxdWVzdGlvbnM8L3NwYW4+XG4gICAgICAgIDxzcGFuIGNsYXNzPVwibmV3cy1kYXRlXCI+cmFuZG9tIG9yZGVyPC9zcGFuPlxuICAgICAgPC9kaXY+XG4gICAgICA8ZGl2IGNsYXNzPVwibmV3cy10aXRsZVwiPkV4YW0tbW9kZSBkcmlsbDwvZGl2PlxuICAgICAgPGRpdiBjbGFzcz1cIm5ld3Mtc3VtbWFyeVwiPlxuICAgICAgICBFYWNoIGF0dGVtcHQgc2h1ZmZsZXMgdGhlIHF1ZXN0aW9uIG9yZGVyLiBZb3UgZ2V0IGltbWVkaWF0ZSBmZWVkYmFjayBhZnRlciBjaG9vc2luZyBhbiBhbnN3ZXIsIHRoZW4gYSBmaW5hbCB0b3BpYy1ieS10b3BpYyBzY29yZSB0YWJsZS5cbiAgICAgIDwvZGl2PlxuICAgICAgPGRpdiBjbGFzcz1cImV4YW0tY29udHJvbHNcIj5cbiAgICAgICAgPGJ1dHRvbiBjbGFzcz1cImV4YW0tYnV0dG9uXCIgZGF0YS1hY3Rpb249XCJzdGFydFwiPlN0YXJ0IHJhbmRvbWl6ZWQgYXR0ZW1wdDwvYnV0dG9uPlxuICAgICAgPC9kaXY+XG4gICAgPC9kaXY+YDtcblxuICBjb25zdCByZW5kZXJRdWVzdGlvbiA9ICgpID0+IHtcbiAgICBjb25zdCBxdWVzdGlvbiA9IG9yZGVyW2N1cnJlbnRdO1xuICAgIGNvbnN0IHNlbGVjdGVkID0gYW5zd2Vycy5nZXQocXVlc3Rpb24uaWQpO1xuICAgIGNvbnN0IGFuc3dlcmVkID0gc2VsZWN0ZWQgIT09IHVuZGVmaW5lZDtcbiAgICBjb25zdCBjb3JyZWN0ID0gYW5zd2VyZWQgJiYgc2VsZWN0ZWQgPT09IHF1ZXN0aW9uLmNvcnJlY3Q7XG4gICAgY29uc3QgY2hvaWNlSHRtbCA9IHF1ZXN0aW9uLmNob2ljZXMubWFwKChjaG9pY2UsIGluZGV4KSA9PiB7XG4gICAgICBjb25zdCBzdGF0ZSA9ICFhbnN3ZXJlZFxuICAgICAgICA/IFwiXCJcbiAgICAgICAgOiBpbmRleCA9PT0gcXVlc3Rpb24uY29ycmVjdFxuICAgICAgICAgID8gXCIgY29ycmVjdFwiXG4gICAgICAgICAgOiBpbmRleCA9PT0gc2VsZWN0ZWRcbiAgICAgICAgICAgID8gXCIgaW5jb3JyZWN0XCJcbiAgICAgICAgICAgIDogXCJcIjtcbiAgICAgIHJldHVybiBgXG4gICAgICAgIDxidXR0b24gY2xhc3M9XCJjaG9pY2UtYnV0dG9uJHtzdGF0ZX1cIiBkYXRhLWNob2ljZT1cIiR7aW5kZXh9XCIgJHthbnN3ZXJlZCA/IFwiZGlzYWJsZWRcIiA6IFwiXCJ9PlxuICAgICAgICAgIDxzcGFuIGNsYXNzPVwiY2hvaWNlLWxldHRlclwiPiR7bGV0dGVyc1tpbmRleF19Ljwvc3Bhbj4ke3JpY2goY2hvaWNlKX1cbiAgICAgICAgPC9idXR0b24+YDtcbiAgICB9KS5qb2luKFwiXCIpO1xuXG4gICAgcmV0dXJuIGBcbiAgICAgICR7cmVuZGVyS3BpcygpfVxuICAgICAgPGRpdiBjbGFzcz1cIm5ld3MtY2FyZFwiPlxuICAgICAgICA8ZGl2IGNsYXNzPVwibmV3cy1tZXRhXCI+XG4gICAgICAgICAgPHNwYW4gY2xhc3M9XCJuZXdzLXNvdXJjZVwiPlF1ZXN0aW9uICR7Y3VycmVudCArIDF9IG9mICR7b3JkZXIubGVuZ3RofTwvc3Bhbj5cbiAgICAgICAgICA8c3BhbiBjbGFzcz1cIm5ld3MtZGF0ZVwiPiR7ZXNjYXBlSHRtbChxdWVzdGlvbi50b3BpYyl9PC9zcGFuPlxuICAgICAgICA8L2Rpdj5cbiAgICAgICAgPGRpdiBjbGFzcz1cInF1ZXN0aW9uLWJsb2NrXCI+XG4gICAgICAgICAgPGRpdiBjbGFzcz1cImV4YW0tbWV0YVwiPiR7YW5zd2VyZWQgPyAoY29ycmVjdCA/IFwiQ29ycmVjdFwiIDogXCJJbmNvcnJlY3RcIikgOiBcIkNob29zZSBvbmUgYW5zd2VyXCJ9PC9kaXY+XG4gICAgICAgICAgPGRpdiBjbGFzcz1cImV4YW0tcHJvbXB0XCI+JHtyaWNoKHF1ZXN0aW9uLnByb21wdCl9PC9kaXY+XG4gICAgICAgICAgPGRpdiBjbGFzcz1cImNob2ljZS1saXN0XCI+JHtjaG9pY2VIdG1sfTwvZGl2PlxuICAgICAgICAgICR7YW5zd2VyZWQgPyBgXG4gICAgICAgICAgICA8ZGl2IGNsYXNzPVwiZmVlZGJhY2tcIj5cbiAgICAgICAgICAgICAgPHN0cm9uZz4ke2NvcnJlY3QgPyBcIkNvcnJlY3QuXCIgOiBgTm90IHF1aXRlLiBDb3JyZWN0IGFuc3dlcjogJHtsZXR0ZXJzW3F1ZXN0aW9uLmNvcnJlY3RdfS5gfTwvc3Ryb25nPlxuICAgICAgICAgICAgICAke3JpY2gocXVlc3Rpb24ud2h5KX1cbiAgICAgICAgICAgIDwvZGl2PmAgOiBcIlwifVxuICAgICAgICA8L2Rpdj5cbiAgICAgICAgPGRpdiBjbGFzcz1cImV4YW0tY29udHJvbHNcIj5cbiAgICAgICAgICAke2Fuc3dlcmVkID8gYDxidXR0b24gY2xhc3M9XCJleGFtLWJ1dHRvblwiIGRhdGEtYWN0aW9uPVwibmV4dFwiPiR7Y3VycmVudCA9PT0gb3JkZXIubGVuZ3RoIC0gMSA/IFwiRmluaXNoIGV4YW1cIiA6IFwiTmV4dCBxdWVzdGlvblwifTwvYnV0dG9uPmAgOiBcIlwifVxuICAgICAgICAgIDxidXR0b24gY2xhc3M9XCJleGFtLWJ1dHRvbiBzZWNvbmRhcnlcIiBkYXRhLWFjdGlvbj1cImZpbmlzaFwiPkZpbmlzaCBub3c8L2J1dHRvbj5cbiAgICAgICAgICA8YnV0dG9uIGNsYXNzPVwiZXhhbS1idXR0b24gc2Vjb25kYXJ5XCIgZGF0YS1hY3Rpb249XCJzdGFydFwiPlJlc3RhcnQgc2h1ZmZsZWQ8L2J1dHRvbj5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L2Rpdj5gO1xuICB9O1xuXG4gIGNvbnN0IHJlbmRlckZpbmFsID0gKCkgPT4ge1xuICAgIGNvbnN0IHJvd3MgPSBicmVha2Rvd24oKTtcbiAgICBjb25zdCBmaW5hbFNjb3JlID0gc2NvcmUoKTtcbiAgICBjb25zdCBwY3QgPSBNYXRoLnJvdW5kKChmaW5hbFNjb3JlIC8gZXhhbV9xdWVzdGlvbnMubGVuZ3RoKSAqIDEwMCk7XG4gICAgY29uc3QgbWlzc2VkID0gb3JkZXIuZmlsdGVyKHF1ZXN0aW9uID0+IGFuc3dlcnMuZ2V0KHF1ZXN0aW9uLmlkKSAhPT0gcXVlc3Rpb24uY29ycmVjdCk7XG4gICAgcmV0dXJuIGBcbiAgICAgICR7cmVuZGVyS3BpcygpfVxuICAgICAgPGRpdiBjbGFzcz1cIm5ld3MtY2FyZFwiPlxuICAgICAgICA8ZGl2IGNsYXNzPVwibmV3cy1tZXRhXCI+XG4gICAgICAgICAgPHNwYW4gY2xhc3M9XCJuZXdzLXNvdXJjZVwiPkZpbmFsIHNjb3JlPC9zcGFuPlxuICAgICAgICAgIDxzcGFuIGNsYXNzPVwibmV3cy1kYXRlXCI+JHtmb3JtYXRUaW1lKHRvdGFsU2Vjb25kcyAtIHJlbWFpbmluZyl9IGVsYXBzZWQ8L3NwYW4+XG4gICAgICAgIDwvZGl2PlxuICAgICAgICA8ZGl2IGNsYXNzPVwibmV3cy10aXRsZVwiPiR7ZmluYWxTY29yZX0vJHtleGFtX3F1ZXN0aW9ucy5sZW5ndGh9ICgke3BjdH0lKTwvZGl2PlxuICAgICAgICA8ZGl2IGNsYXNzPVwibmV3cy1zdW1tYXJ5XCI+XG4gICAgICAgICAgJHtyZW1haW5pbmcgPT09IDAgPyBcIlRpbWUgZXhwaXJlZC5cIiA6IFwiQXR0ZW1wdCBjb21wbGV0ZS5cIn1cbiAgICAgICAgICBVbmFuc3dlcmVkIHF1ZXN0aW9ucyBjb3VudCBhcyBtaXNzZWQuXG4gICAgICAgIDwvZGl2PlxuICAgICAgICA8dGFibGUgY2xhc3M9XCJicmVha2Rvd24tdGFibGVcIj5cbiAgICAgICAgICA8dGhlYWQ+XG4gICAgICAgICAgICA8dHI+PHRoPlRvcGljPC90aD48dGg+U2NvcmU8L3RoPjwvdHI+XG4gICAgICAgICAgPC90aGVhZD5cbiAgICAgICAgICA8dGJvZHk+XG4gICAgICAgICAgICAke3Jvd3MubWFwKHJvdyA9PiBgPHRyPjx0ZD4ke2VzY2FwZUh0bWwocm93LnRvcGljKX08L3RkPjx0ZD4ke3Jvdy5jb3JyZWN0fS8ke3Jvdy50b3RhbH08L3RkPjwvdHI+YCkuam9pbihcIlwiKX1cbiAgICAgICAgICA8L3Rib2R5PlxuICAgICAgICA8L3RhYmxlPlxuICAgICAgICAke21pc3NlZC5sZW5ndGggPyBgXG4gICAgICAgICAgPGRpdiBjbGFzcz1cInJldmlldy1saXN0XCI+XG4gICAgICAgICAgICAke21pc3NlZC5tYXAoKHF1ZXN0aW9uLCBpbmRleCkgPT4ge1xuICAgICAgICAgICAgICBjb25zdCBzZWxlY3RlZCA9IGFuc3dlcnMuZ2V0KHF1ZXN0aW9uLmlkKTtcbiAgICAgICAgICAgICAgcmV0dXJuIGBcbiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwicmV2aWV3LWl0ZW0gbWlzc2VkXCI+XG4gICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwiZXhhbS1tZXRhXCI+TWlzc2VkICR7aW5kZXggKyAxfSAtICR7ZXNjYXBlSHRtbChxdWVzdGlvbi50b3BpYyl9PC9kaXY+XG4gICAgICAgICAgICAgICAgICA8ZGl2PiR7cmljaChxdWVzdGlvbi5wcm9tcHQpfTwvZGl2PlxuICAgICAgICAgICAgICAgICAgPGRpdj48c3Ryb25nPllvdXIgYW5zd2VyOjwvc3Ryb25nPiAke3NlbGVjdGVkID09PSB1bmRlZmluZWQgPyBcIlVuYW5zd2VyZWRcIiA6IGAke2xldHRlcnNbc2VsZWN0ZWRdfS4gJHtyaWNoKHF1ZXN0aW9uLmNob2ljZXNbc2VsZWN0ZWRdKX1gfTwvZGl2PlxuICAgICAgICAgICAgICAgICAgPGRpdj48c3Ryb25nPkNvcnJlY3Q6PC9zdHJvbmc+ICR7bGV0dGVyc1txdWVzdGlvbi5jb3JyZWN0XX0uICR7cmljaChxdWVzdGlvbi5jaG9pY2VzW3F1ZXN0aW9uLmNvcnJlY3RdKX08L2Rpdj5cbiAgICAgICAgICAgICAgICAgIDxkaXY+JHtyaWNoKHF1ZXN0aW9uLndoeSl9PC9kaXY+XG4gICAgICAgICAgICAgICAgPC9kaXY+YDtcbiAgICAgICAgICAgIH0pLmpvaW4oXCJcIil9XG4gICAgICAgICAgPC9kaXY+YCA6IFwiXCJ9XG4gICAgICAgIDxkaXYgY2xhc3M9XCJleGFtLWNvbnRyb2xzXCI+XG4gICAgICAgICAgPGJ1dHRvbiBjbGFzcz1cImV4YW0tYnV0dG9uXCIgZGF0YS1hY3Rpb249XCJzdGFydFwiPlN0YXJ0IG5ldyBzaHVmZmxlZCBhdHRlbXB0PC9idXR0b24+XG4gICAgICAgIDwvZGl2PlxuICAgICAgPC9kaXY+YDtcbiAgfTtcblxuICBjb25zdCByZW5kZXIgPSAoKSA9PiB7XG4gICAgcm9vdC5pbm5lckhUTUwgPSAhc3RhcnRlZCA/IHJlbmRlclN0YXJ0KCkgOiBmaW5pc2hlZCA/IHJlbmRlckZpbmFsKCkgOiByZW5kZXJRdWVzdGlvbigpO1xuICAgIGlmICh3aW5kb3cuUXVhcnRvPy50eXBlc2V0TWF0aCkgd2luZG93LlF1YXJ0by50eXBlc2V0TWF0aChyb290KTtcbiAgfTtcblxuICByb290LmFkZEV2ZW50TGlzdGVuZXIoXCJjbGlja1wiLCAoZXZlbnQpID0+IHtcbiAgICBjb25zdCB0YXJnZXQgPSBldmVudC50YXJnZXQgaW5zdGFuY2VvZiBFbGVtZW50ID8gZXZlbnQudGFyZ2V0IDogZXZlbnQudGFyZ2V0LnBhcmVudEVsZW1lbnQ7XG4gICAgY29uc3QgY2hvaWNlQnV0dG9uID0gdGFyZ2V0Py5jbG9zZXN0KFwiW2RhdGEtY2hvaWNlXVwiKTtcbiAgICBpZiAoY2hvaWNlQnV0dG9uICYmIHJvb3QuY29udGFpbnMoY2hvaWNlQnV0dG9uKSkge1xuICAgICAgY2hvb3NlKE51bWJlcihjaG9pY2VCdXR0b24uZGF0YXNldC5jaG9pY2UpKTtcbiAgICAgIHJldHVybjtcbiAgICB9XG4gICAgY29uc3QgYWN0aW9uQnV0dG9uID0gdGFyZ2V0Py5jbG9zZXN0KFwiW2RhdGEtYWN0aW9uXVwiKTtcbiAgICBpZiAoIWFjdGlvbkJ1dHRvbiB8fCAhcm9vdC5jb250YWlucyhhY3Rpb25CdXR0b24pKSByZXR1cm47XG4gICAgY29uc3QgYWN0aW9uID0gYWN0aW9uQnV0dG9uLmRhdGFzZXQuYWN0aW9uO1xuICAgIGlmIChhY3Rpb24gPT09IFwic3RhcnRcIikgc3RhcnRBdHRlbXB0KCk7XG4gICAgaWYgKGFjdGlvbiA9PT0gXCJuZXh0XCIpIG5leHRRdWVzdGlvbigpO1xuICAgIGlmIChhY3Rpb24gPT09IFwiZmluaXNoXCIpIGZpbmlzaEF0dGVtcHQoKTtcbiAgfSk7XG5cbiAgaWYgKHR5cGVvZiBpbnZhbGlkYXRpb24gIT09IFwidW5kZWZpbmVkXCIpIGludmFsaWRhdGlvbi50aGVuKHN0b3BUaW1lcik7XG4gIHJlbmRlcigpO1xuICByZXR1cm4gcm9vdDtcbn1cbiJ9XX0=
+</script>
+<script type="module">
+if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
+window._ojs.paths.runtimeToDoc = "../../practice";
+window._ojs.paths.runtimeToRoot = "../..";
+window._ojs.paths.docToRoot = "..";
+window._ojs.selfContained = false;
+window._ojs.runtime.interpretFromScriptTags();
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/ihelfrich\.github\.io\/macroprep\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../practice/question-bank.html" class="pagination-link" aria-label="Question bank">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Question bank</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../reference/formulas.html" class="pagination-link" aria-label="Formula sheet">
+        <span class="nav-page-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Formula sheet</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 Dr.&nbsp;Ian Helfrich · CC-BY-SA 4.0 · Data © respective sources (FRED, BLS, BEA, etc.).</p>
+</div>   
+    <div class="nav-footer-center">
+<p><a href="https://github.com/ihelfrich/macroprep">Source on GitHub</a></p>
+<div class="toc-actions"><ul><li><a href="https://github.com/ihelfrich/macroprep/edit/main/practice/exam-simulator.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ihelfrich/macroprep/blob/main/practice/exam-simulator.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/ihelfrich/macroprep/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>Built with <a href="https://quarto.org">Quarto</a>.</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

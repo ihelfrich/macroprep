@@ -62,6 +62,7 @@ book:
         - dashboards/money-rates.qmd
         - dashboards/output.qmd
         - dashboards/exchange-rates.qmd
+        - dashboards/yield-curve.qmd
         - dashboards/news.qmd
     - part: "Practice"
       chapters:
@@ -69,6 +70,7 @@ book:
         - practice/quick-quiz.qmd
         - practice/full-exam.qmd
         - practice/question-bank.qmd
+        - practice/exam-simulator.qmd
     - part: "Reference"
       chapters:
         - reference/formulas.qmd
