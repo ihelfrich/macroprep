@@ -1,0 +1,79 @@
+---
+title: "Labor markets"
+---
+
+```{ojs}
+unrate = await (await fetch("../data/fred/UNRATE.json")).json()
+civpart = await (await fetch("../data/fred/CIVPART.json")).json()
+payems = await (await fetch("../data/fred/PAYEMS.json")).json()
+```
+
+```{ojs}
+viewof labor_window = Inputs.range([2, 50], {value: 25, step: 1, label: "Years to display"})
+```
+
+```{ojs}
+{
+  const cutoff = new Date()
+  cutoff.setFullYear(cutoff.getFullYear() - labor_window)
+  const filt = arr => arr.filter(d => new Date(d.date) >= cutoff).map(d => ({...d, date: new Date(d.date)}))
+  return Plot.plot({
+    width: 800, height: 320, marginLeft: 60, marginBottom: 50,
+    x: {type: "utc"},
+    y: {label: "Unemployment rate (%)", grid: true},
+    marks: [
+      Plot.ruleY([4], {stroke: "#888", strokeDasharray: "4 3"}),
+      Plot.text([{x: cutoff, y: 4.15, l: "Textbook natural rate ≈ 4%"}], {x: "x", y: "y", text: "l", fill: "#888", dx: 30, fontSize: 10}),
+      Plot.line(filt(unrate.observations), {x: "date", y: "value", stroke: "#0e7c7b", strokeWidth: 2})
+    ]
+  })
+}
+```
+
+```{ojs}
+{
+  const cutoff = new Date()
+  cutoff.setFullYear(cutoff.getFullYear() - labor_window)
+  const filt = arr => arr.filter(d => new Date(d.date) >= cutoff).map(d => ({...d, date: new Date(d.date)}))
+  return Plot.plot({
+    width: 800, height: 320, marginLeft: 60, marginBottom: 50,
+    x: {type: "utc"},
+    y: {label: "Labor force participation rate (%)", grid: true},
+    marks: [
+      Plot.line(filt(civpart.observations), {x: "date", y: "value", stroke: "#b7410e", strokeWidth: 2})
+    ]
+  })
+}
+```
+
+```{ojs}
+html`<div style="display: flex; gap: 0.8rem; flex-wrap: wrap; margin: 1rem 0;">
+  ${[
+    ["Unemployment rate", unrate.observations.at(-1)?.value, "% of labor force"],
+    ["LF participation", civpart.observations.at(-1)?.value, "% of working-age pop"],
+    ["Nonfarm payrolls", payems.observations.at(-1)?.value, "thousands of persons"]
+  ].map(([label, v, sub]) => `
+    <div class="kpi-card">
+      <div class="kpi-label">${label}</div>
+      <div class="kpi-value">${v ? (v >= 1000 ? (v/1000).toFixed(1) + 'M' : v.toFixed(2) + (label.includes('participation') || label.includes('rate') ? '%' : '')) : '—'}</div>
+      <div class="kpi-sub">${sub}</div>
+    </div>
+  `).join('')}
+</div>`
+```
+
+## What to watch
+
+The headline unemployment rate $u$ has a textbook natural rate around 4%. Below 4% suggests the economy is running hot; well above signals a recession or a slow recovery.
+
+The LFPR has been declining since ~2000 because of demographics (boomer retirements) and structural changes. A falling unemployment rate paired with a falling LFPR is ambiguous — people leaving the workforce reduce $U$ in the numerator, but they're not actually employed.
+
+Nonfarm payrolls are the Bureau of Labor Statistics's establishment-survey count. It moves with the business cycle and is the headline number on "jobs Friday."
+
+## Source
+
+[FRED](https://fred.stlouisfed.org/) — series UNRATE, CIVPART, PAYEMS, all from the BLS Current Population Survey and Current Employment Statistics. Refreshed daily; underlying releases monthly.
+
+```{ojs}
+md`*Last data refresh: ${unrate.last_updated || 'unknown'}.*`
+```

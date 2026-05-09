@@ -1,0 +1,1538 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Macro Prep",
+    "section": "",
+    "text": "1 Macro Prep",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Macro Prep</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#where-to-start",
+    "href": "index.html#where-to-start",
+    "title": "Macro Prep",
+    "section": "1.1 Where to start",
+    "text": "1.1 Where to start\n\n  \n    Foundations\n    CPI, multipliers, fiscal policy\n    The Keynesian-cross spine. Solve for Y*, learn why the multiplier 1/(1−c) becomes 1/(1−c(1−t)) once taxes go proportional, internalize the balanced-budget multiplier.\n  \n  \n    Money\n    Money creation, money market, bond pricing\n    Money multiplier K_S = 1/rrr, demand for money, equilibrium r*, and the inverse relationship between bond price and yield with a worked discount-bond example.\n  \n  \n    Open economy\n    AS-AD, foreign exchange, regimes\n    PPP vs. capital-flow channels for the dollar, fixed vs. floating regimes, the impossible trinity in two paragraphs.\n  \n  \n    Live data\n    Inflation, labor, rates, GDP, FX, news\n    Six interactive dashboards reading cached FRED JSON. Slide the time window, filter sources, see the 2% target line and recession bars.\n  \n  \n    Practice\n    126 worked problems\n    Easy → Medium → Hard → Twist. The \"Twist\" tier is where students lose points — sign flips, units mismatches, regime changes hidden in familiar setups.\n  \n  \n    Reference\n    Formulas, glossary, common traps\n    Every multiplier you need on one page. Every term defined in one sentence. Every exam trap I've seen students fall into, with the fix.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Macro Prep</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#whats-different-about-this-site",
+    "href": "index.html#whats-different-about-this-site",
+    "title": "Macro Prep",
+    "section": "1.2 What’s different about this site",
+    "text": "1.2 What’s different about this site\nThis isn’t a textbook scrape. It’s the cheatsheet I wished existed when I was teaching intermediate macro — every formula stated in clean LaTeX, every exam-relevant trap flagged, and live data wired in so you can see what real CPI looks like right now alongside the equation that produced it.\n\nLive FRED time series — 26 macro series cached as JSON, refreshed daily by a GitHub Action. No API key needed, no rate-limit anxiety.\nRSS aggregation — FOMC statements, BLS releases, Treasury announcements, ECB decisions, all on one page, sorted by date.\nObservable JS dashboards — plots are interactive (slide the year window, hover for values), not static PNGs.\n126 worked practice problems — every solution shows the algebra, names the trap, and ends with the one-line key insight.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Macro Prep</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#recently-from-the-central-banks",
+    "href": "index.html#recently-from-the-central-banks",
+    "title": "Macro Prep",
+    "section": "1.3 Recently from the central banks",
+    "text": "1.3 Recently from the central banks\n\nfeeds_recent = await (await fetch(\"data/feeds/recent.json\")).json()\n\n\n\n\n\n\n\nhtml`&lt;div style=\"display: flex; flex-direction: column; gap: 0.6rem; margin-top: 0.5rem;\"&gt;\n  ${feeds_recent.slice(0, 6).map(item =&gt; `\n    &lt;div class=\"news-card\"&gt;\n      &lt;div class=\"news-meta\"&gt;\n        &lt;span class=\"news-source\"&gt;${item.source}&lt;/span&gt;\n        &lt;span class=\"news-date\"&gt;${new Date(item.date).toLocaleDateString('en-US', {year: 'numeric', month: 'short', day: 'numeric'})}&lt;/span&gt;\n      &lt;/div&gt;\n      &lt;a href=\"${item.link}\" target=\"_blank\" rel=\"noopener\"&gt;\n        &lt;div class=\"news-title\"&gt;${item.title}&lt;/div&gt;\n      &lt;/a&gt;\n    &lt;/div&gt;\n  `).join('')}\n&lt;/div&gt;`\n\n\n\n\n\n\nSee all recent releases →\n\nBuilt by Dr. Ian Helfrich. Source on GitHub. Content licensed CC-BY-SA 4.0.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Macro Prep</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/01-cpi-unemployment.html",
+    "href": "chapters/01-cpi-unemployment.html",
+    "title": "2  CPI, inflation, unemployment",
+    "section": "",
+    "text": "2.1 CPI (Laspeyres)\nThe Consumer Price Index measures the cost of a fixed base-year basket of goods, evaluated at year-t prices, relative to the cost of that same basket at base-year prices.\n\\text{CPI}_t = \\frac{\\sum_i P_{i,t} \\cdot Q_{i,\\text{base}}}{\\sum_i P_{i,\\text{base}} \\cdot Q_{i,\\text{base}}} \\cdot 100\nIn the base year, \\text{CPI} = 100 by construction.",
+    "crumbs": [
+      "Foundations",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>CPI, inflation, unemployment</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/01-cpi-unemployment.html#cpi-laspeyres",
+    "href": "chapters/01-cpi-unemployment.html#cpi-laspeyres",
+    "title": "2  CPI, inflation, unemployment",
+    "section": "",
+    "text": "Important\n\n\n\nThe basket is frozen. You only re-price it. If consumers in 2023 buy more chicken and less beef because beef got expensive, the CPI doesn’t notice — it still uses the base-year quantities. This is why CPI overestimates inflation (substitution bias).\n\n\n\n2.1.1 Inflation\n\\pi_t = \\frac{\\text{CPI}_t - \\text{CPI}_{t-1}}{\\text{CPI}_{t-1}} \\cdot 100\nThe denominator is the earlier year. The base year sets the level; it does not have to be the denominator.\n\n\n2.1.2 IGDPDI (Paasche)\nThe implicit GDP deflator uses current quantities and base-year prices. It underestimates inflation. Reverse for deflation.\n\n\n\nindex\nquantities\nprices\nbias on inflation\n\n\n\n\nCPI (Laspeyres)\nbase-year (frozen)\nyear-t\noverestimates\n\n\nIGDPDI (Paasche)\nyear-t\nbase-year\nunderestimates",
+    "crumbs": [
+      "Foundations",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>CPI, inflation, unemployment</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/01-cpi-unemployment.html#unemployment",
+    "href": "chapters/01-cpi-unemployment.html#unemployment",
+    "title": "2  CPI, inflation, unemployment",
+    "section": "2.2 Unemployment",
+    "text": "2.2 Unemployment\nThe labor force is everyone who is employed plus those actively looking for work:\nLF = E + U\nThe unemployment rate is the share of the labor force who are looking but haven’t found work:\nu = \\frac{U}{E + U}\nThe labor force participation rate is the share of the working-age population in the labor force:\n\\text{LF participation} = \\frac{LF}{\\text{Pop}}\n\n\n\n\n\n\nWarning\n\n\n\nDiscouraged workers are not in the labor force. Someone who has stopped looking is counted as out of the LF, so they don’t appear in u. This is why measured unemployment can fall during a recession (people give up) without the underlying labor market improving.",
+    "crumbs": [
+      "Foundations",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>CPI, inflation, unemployment</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/01-cpi-unemployment.html#types-of-unemployment",
+    "href": "chapters/01-cpi-unemployment.html#types-of-unemployment",
+    "title": "2  CPI, inflation, unemployment",
+    "section": "2.3 Types of unemployment",
+    "text": "2.3 Types of unemployment\n\n\n\n\n\n\n\ntype\ndefinition\n\n\n\n\nFrictional\nShort-run job/skill matching. People between jobs. Always present in a healthy economy.\n\n\nStructural\nWhole industries decline. Workers’ skills no longer demanded. Painful and slow to resolve.\n\n\nCyclical\nFrom recessions. Disappears in expansions. The Keynesian story.\n\n\nNatural rate\nFrictional + structural. Textbook value \\approx 4\\%. The level consistent with no accelerating inflation.\n\n\n\nThe full-employment GDP (Y^{FE}) is the level of output the economy would produce at the natural rate of unemployment. Gaps from Y^{FE} are recessionary (if Y^* &lt; Y^{FE}) or inflationary (if Y^* &gt; Y^{FE}).",
+    "crumbs": [
+      "Foundations",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>CPI, inflation, unemployment</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/01-cpi-unemployment.html#a-worked-example",
+    "href": "chapters/01-cpi-unemployment.html#a-worked-example",
+    "title": "2  CPI, inflation, unemployment",
+    "section": "2.4 A worked example",
+    "text": "2.4 A worked example\nBase year 2019, basket = 30 bread + 1 housing + 25 gas. Prices and quantities:\n\n\n\n\n2019 price\n2020 price\n\n\n\n\nBread\n$1.50\n$2.00\n\n\nHousing\n$1{,}000\n$950\n\n\nGas\n$3.50\n$5.75\n\n\n\nCost of base basket at 2019 prices: 30(1.50) + 1(1000) + 25(3.50) = 45 + 1000 + 87.5 = 1{,}132.5.\nCost at 2020 prices: 30(2.00) + 1(950) + 25(5.75) = 60 + 950 + 143.75 = 1{,}153.75.\nCPI (2019) = 1{,}132.5/1{,}132.5 \\cdot 100 = 100. CPI (2020) = 1{,}153.75/1{,}132.5 \\cdot 100 = 101.88.\nInflation 2019 → 2020 = (101.88 - 100)/100 \\cdot 100 = 1.88\\%.",
+    "crumbs": [
+      "Foundations",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>CPI, inflation, unemployment</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/02-keynesian-cross.html",
+    "href": "chapters/02-keynesian-cross.html",
+    "title": "3  The Keynesian cross",
+    "section": "",
+    "text": "3.1 The simplest closed-economy model\nHouseholds consume out of income; firms invest a fixed amount that doesn’t depend on Y.\nAE^d = C(Y) + I^d \\quad\\text{where } C(Y) = \\overline{C_0} + cY \\text{ and } I^d = \\overline{I}\nEquilibrium output is the level where firms’ production exactly matches what households and firms want to spend:\nY = AE^d\nSubstitute and solve:\nY = \\overline{C_0} + cY + \\overline{I} (1 - c) Y = \\overline{C_0} + \\overline{I} \\boxed{\\;Y^* = \\dfrac{\\overline{C_0} + \\overline{I}}{1 - c}\\;}",
+    "crumbs": [
+      "Foundations",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>The Keynesian cross</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/02-keynesian-cross.html#the-cross-diagram",
+    "href": "chapters/02-keynesian-cross.html#the-cross-diagram",
+    "title": "3  The Keynesian cross",
+    "section": "3.2 The cross diagram",
+    "text": "3.2 The cross diagram\nThe 45° line plots Y = AE^d — the equilibrium condition. The AE^d schedule plots desired expenditure as a function of Y. They cross at Y^*.\n\n\n\nKeynesian cross. AE^d crosses the 45° line at the equilibrium Y^*. To the left of Y^*, AE^d exceeds Y, inventory falls, firms expand. To the right, the opposite.",
+    "crumbs": [
+      "Foundations",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>The Keynesian cross</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/02-keynesian-cross.html#off-equilibrium-adjustment",
+    "href": "chapters/02-keynesian-cross.html#off-equilibrium-adjustment",
+    "title": "3  The Keynesian cross",
+    "section": "3.3 Off-equilibrium adjustment",
+    "text": "3.3 Off-equilibrium adjustment\nActual investment includes any unintended buildup or rundown of inventory:\nI_{\\text{actual}} = I_{\\text{planned}} + \\Delta\\text{unplanned inventory}\nIf Y &gt; AE^d: production exceeds desired demand. Inventory accumulates (unplanned). Firms cut output. Y falls toward Y^*.\nIf Y &lt; AE^d: desired demand exceeds production. Inventory runs down. Firms expand. Y rises toward Y^*.\nAt Y^*: unplanned inventory change is zero.",
+    "crumbs": [
+      "Foundations",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>The Keynesian cross</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/02-keynesian-cross.html#the-saving-investment-alternative",
+    "href": "chapters/02-keynesian-cross.html#the-saving-investment-alternative",
+    "title": "3  The Keynesian cross",
+    "section": "3.4 The saving = investment alternative",
+    "text": "3.4 The saving = investment alternative\nIn the closed-economy frugal model, Y \\equiv C + S and AE^d = C + I^d. At equilibrium:\nC + S = C + I^d \\quad\\Rightarrow\\quad S = I^d\nThis gives a second way to find Y^*: where the saving function S(Y) = -\\overline{C_0} + (1-c)Y crosses the horizontal I^d line.",
+    "crumbs": [
+      "Foundations",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>The Keynesian cross</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/02-keynesian-cross.html#paradox-of-thrift",
+    "href": "chapters/02-keynesian-cross.html#paradox-of-thrift",
+    "title": "3  The Keynesian cross",
+    "section": "3.5 Paradox of thrift",
+    "text": "3.5 Paradox of thrift\nIf households become more frugal — subsistence consumption \\overline{C_0} falls — the saving function shifts up. The new equilibrium has lower Y^*. But S = I^d at equilibrium and I^d didn’t change, so total saving is unchanged. More desire to save, no more actual saving, lower output.\n\n\n\nParadox of thrift. S(Y) shifts up, Y* falls from 500 to 300. Equilibrium saving is still equal to I^d.",
+    "crumbs": [
+      "Foundations",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>The Keynesian cross</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/02-keynesian-cross.html#try-it-live",
+    "href": "chapters/02-keynesian-cross.html#try-it-live",
+    "title": "3  The Keynesian cross",
+    "section": "3.6 Try it live",
+    "text": "3.6 Try it live\nSliders for MPC, \\overline{C_0}, \\overline{I} are in the Keynesian Cross tool. Watch Y^* and the multiplier update in real time.",
+    "crumbs": [
+      "Foundations",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>The Keynesian cross</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/03-multipliers.html",
+    "href": "chapters/03-multipliers.html",
+    "title": "4  Multipliers",
+    "section": "",
+    "text": "4.1 The general multiplier\nFor any autonomous variable \\overline{X}:\nK_X \\equiv \\frac{\\Delta Y^*}{\\Delta \\overline{X}}\nIn the open governed economy with consumption C = \\overline{C_0} + c(Y - \\overline{T}), equilibrium is\nY^* = \\tfrac{1}{1-c}\\,\\overline{C_0} - \\tfrac{c}{1-c}\\,\\overline{T} + \\tfrac{1}{1-c}\\,\\overline{I} + \\tfrac{1}{1-c}\\,\\overline{G} + \\tfrac{1}{1-c}\\,\\overline{X} - \\tfrac{1}{1-c}\\,\\overline{M}\nEach multiplier is the coefficient on its own term:\nAt MPC c = 0.75: K_G = 4, K_T = -3, K_{BB} = 1.",
+    "crumbs": [
+      "Foundations",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Multipliers</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/03-multipliers.html#the-general-multiplier",
+    "href": "chapters/03-multipliers.html#the-general-multiplier",
+    "title": "4  Multipliers",
+    "section": "",
+    "text": "variable\nmultiplier\nsign\n\n\n\n\n\\overline{C_0}, \\overline{I}, \\overline{G}, \\overline{X}\n\\dfrac{1}{1-c}\n+\n\n\n\\overline{T}\n-\\dfrac{c}{1-c}\n–\n\n\n\\overline{M}\n-\\dfrac{1}{1-c}\n–\n\n\n\\overline{G} and \\overline{T} together by same \\Delta\nK_{BB} = K_G + K_T = 1\n+\n\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nMnemonic. “Spending in, full power. Tax in, lose one round of c. Together, exactly one.”",
+    "crumbs": [
+      "Foundations",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Multipliers</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/03-multipliers.html#why-the-multiplier-exists-the-geometric-series",
+    "href": "chapters/03-multipliers.html#why-the-multiplier-exists-the-geometric-series",
+    "title": "4  Multipliers",
+    "section": "4.2 Why the multiplier exists — the geometric series",
+    "text": "4.2 Why the multiplier exists — the geometric series\nA $1 increase in \\overline{G} raises Y by $1 in round one. Households see income rise by $1 and spend c of it. That’s round-two spending. Round three adds c^2; round four c^3. Sum:\n\\Delta Y = 1 + c + c^2 + c^3 + \\cdots = \\frac{1}{1-c}\nThis is why K_G = 1/(1-c).",
+    "crumbs": [
+      "Foundations",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Multipliers</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/03-multipliers.html#why-k_t-is-smaller-than-k_g",
+    "href": "chapters/03-multipliers.html#why-k_t-is-smaller-than-k_g",
+    "title": "4  Multipliers",
+    "section": "4.3 Why |K_T| is smaller than K_G",
+    "text": "4.3 Why |K_T| is smaller than K_G\nA dollar of G enters AE^d in full on round one. A dollar of tax cut adds only c to round-one spending — households save (1-c) of it. The lost round-one (1-c) is the entire gap:\nK_G - |K_T| = \\tfrac{1}{1-c} - \\tfrac{c}{1-c} = \\tfrac{1-c}{1-c} = 1\nThat gap of exactly 1 is the balanced-budget multiplier. Same arithmetic.\n\n\n\n\n\n\nImportant\n\n\n\nThe real-world multiplier is roughly 1.4, not 4. The textbook formula assumes no leakages other than saving. Real-world leakages: income-conditional taxes, imports, monetary offset (Fed raises rates as Y rises), crowding-out of private investment. All shrink the multiplier.\n\n\n\n\n\nInvestment multiplier. \\overline{I} rises by 5, AE^d shifts up by 5, equilibrium Y^* moves from 500 to 520. The \\Delta Y^* / \\Delta\\overline{I} = 4 multiplier in action.",
+    "crumbs": [
+      "Foundations",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Multipliers</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/03-multipliers.html#the-multiplier-dashboard",
+    "href": "chapters/03-multipliers.html#the-multiplier-dashboard",
+    "title": "4  Multipliers",
+    "section": "4.4 The multiplier dashboard",
+    "text": "4.4 The multiplier dashboard\nA live calculator that shows all multipliers for any MPC is at the Multiplier dashboard. Move the slider, watch the table.",
+    "crumbs": [
+      "Foundations",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Multipliers</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/04-fiscal-policy.html",
+    "href": "chapters/04-fiscal-policy.html",
+    "title": "5  Fiscal policy",
+    "section": "",
+    "text": "5.1 What it is\nDiscretionary fiscal policy: deliberate changes in \\overline{G} and \\overline{T} aimed at moving Y^* closer to the full-employment level Y^{FE}.",
+    "crumbs": [
+      "Foundations",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Fiscal policy</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/04-fiscal-policy.html#what-it-is",
+    "href": "chapters/04-fiscal-policy.html#what-it-is",
+    "title": "5  Fiscal policy",
+    "section": "",
+    "text": "gap\nwhat to do\n\n\n\n\nRecessionary: Y^* &lt; Y^{FE}\nExpand. Raise \\overline{G} or cut \\overline{T}.\n\n\nInflationary: Y^* &gt; Y^{FE}\nContract. Cut \\overline{G} or raise \\overline{T}.",
+    "crumbs": [
+      "Foundations",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Fiscal policy</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/04-fiscal-policy.html#closing-a-gap-of-size-delta-y",
+    "href": "chapters/04-fiscal-policy.html#closing-a-gap-of-size-delta-y",
+    "title": "5  Fiscal policy",
+    "section": "5.2 Closing a gap of size \\Delta Y",
+    "text": "5.2 Closing a gap of size \\Delta Y\nAt MPC c = 0.75 (K_G = 4, K_T = -3, K_{BB} = 1):\n\n\n\n\n\n\n\ninstrument\nrequired change\n\n\n\n\nIncrease \\overline{G} alone\n\\Delta\\overline{G} = \\Delta Y / K_G\n\n\nCut \\overline{T} alone\n\\Delta\\overline{T} = \\Delta Y / K_T (negative)\n\n\nBalanced budget: \\overline{G} and \\overline{T} both up by same \\Delta\n\\Delta = \\Delta Y / K_{BB} = \\Delta Y\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nThe balanced-budget option leaves the deficit unchanged but still raises Y^*. The K_G effect outweighs the K_T effect by exactly 1.",
+    "crumbs": [
+      "Foundations",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Fiscal policy</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/04-fiscal-policy.html#worked-example",
+    "href": "chapters/04-fiscal-policy.html#worked-example",
+    "title": "5  Fiscal policy",
+    "section": "5.3 Worked example",
+    "text": "5.3 Worked example\nY^* = 1{,}300. Y^{FE} = 1{,}400. Recessionary gap = 100. MPC = 0.75.\n\nIncrease \\overline{G} alone: \\Delta\\overline{G} = 100 / 4 = 25.\nCut \\overline{T} alone: \\Delta\\overline{T} = 100 / (-3) \\approx -33.33.\nBalanced budget: raise \\overline{G} by 100 and raise \\overline{T} by 100. \\Delta Y^* = 100 \\cdot 4 + 100 \\cdot (-3) = 100. Deficit unchanged.\n\nA tax cut that does the same work as a $25 spending increase requires a $33 tax cut. The tax instrument is weaker per dollar because some of the tax change leaks into saving.",
+    "crumbs": [
+      "Foundations",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Fiscal policy</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/04-fiscal-policy.html#federal-budget-vocabulary",
+    "href": "chapters/04-fiscal-policy.html#federal-budget-vocabulary",
+    "title": "5  Fiscal policy",
+    "section": "5.4 Federal budget vocabulary",
+    "text": "5.4 Federal budget vocabulary\n\n\n\n\n\n\n\n\nterm\nmeaning\ntype\n\n\n\n\nFederal surplus / deficit\nT - G this period\nflow\n\n\nFederal debt\ncumulative deficits over all time\nstock\n\n\nPrivately held federal debt\nthe portion held outside the government\nstock\n\n\n\nDon’t confuse a $1 trillion deficit (one-year flow) with a $33 trillion debt (cumulative stock). They are different beasts measured in the same units.",
+    "crumbs": [
+      "Foundations",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Fiscal policy</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/04-fiscal-policy.html#crowding-out-forward-look",
+    "href": "chapters/04-fiscal-policy.html#crowding-out-forward-look",
+    "title": "5  Fiscal policy",
+    "section": "5.5 Crowding out (forward look)",
+    "text": "5.5 Crowding out (forward look)\nWhen \\overline{G} rises and Y rises, M^D rises (transactions motive), pushing r^* up. Higher r depresses I^d. Some of the original boost to Y is undone. This is crowding out of private investment by government spending. We work out the chain in the Money market chapter.",
+    "crumbs": [
+      "Foundations",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Fiscal policy</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/05-money-banking.html",
+    "href": "chapters/05-money-banking.html",
+    "title": "6  Money and banking",
+    "section": "",
+    "text": "6.1 What money is\nA medium of exchange, a store of value, a unit of account. Its key property is liquidity.",
+    "crumbs": [
+      "Money",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Money and banking</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/05-money-banking.html#what-money-is",
+    "href": "chapters/05-money-banking.html#what-money-is",
+    "title": "6  Money and banking",
+    "section": "",
+    "text": "type\nexample\n\n\n\n\nCommodity money\nGold\n\n\nFiat money\nU.S. dollar — value by government decree, intrinsically worthless\n\n\nLegal tender\nMoney the government requires accepted in settlement of debts",
+    "crumbs": [
+      "Money",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Money and banking</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/05-money-banking.html#m1-and-m2",
+    "href": "chapters/05-money-banking.html#m1-and-m2",
+    "title": "6  Money and banking",
+    "section": "6.2 M1 and M2",
+    "text": "6.2 M1 and M2\n\n\n\n\n\n\n\nmeasure\nwhat’s in it\n\n\n\n\nM1\nCurrency held by public + checkable deposits + travelers’ checks + NOW accounts\n\n\nM2\nM1 + savings deposits + small time deposits + money market mutual funds + near-monies\n\n\n\nBoth are stock measures (point in time). M2 is broader and more stable.",
+    "crumbs": [
+      "Money",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Money and banking</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/05-money-banking.html#the-bank-balance-sheet",
+    "href": "chapters/05-money-banking.html#the-bank-balance-sheet",
+    "title": "6  Money and banking",
+    "section": "6.3 The bank balance sheet",
+    "text": "6.3 The bank balance sheet\n\\text{Assets} = \\text{Liabilities} + \\text{Net Worth}\n\n\n\nAssets\nLiabilities + Net Worth\n\n\n\n\nReserves (vault cash + deposits at Fed)\nDemand deposits (DD_p)\n\n\nLoans\nOther deposits\n\n\nSecurities\nNet worth",
+    "crumbs": [
+      "Money",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Money and banking</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/05-money-banking.html#reserves",
+    "href": "chapters/05-money-banking.html#reserves",
+    "title": "6  Money and banking",
+    "section": "6.4 Reserves",
+    "text": "6.4 Reserves\nRR = rrr \\cdot DD_p \\qquad ER = TR - RR\nBanks earn nothing on ER, so they want ER = 0. They make loans until ER is exhausted. The act of lending creates new deposits at other banks. That is how money is created.",
+    "crumbs": [
+      "Money",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Money and banking</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/05-money-banking.html#the-money-creation-chain",
+    "href": "chapters/05-money-banking.html#the-money-creation-chain",
+    "title": "6  Money and banking",
+    "section": "6.5 The money creation chain",
+    "text": "6.5 The money creation chain\nSuppose rrr = 20\\% and the Fed buys $100 in bonds from Bank A.\n\nBank A receives $100 in reserves. RR = 20, ER = 80. Lends $80.\nBorrower spends; receiver deposits at Bank B. Bank B has $80 in reserves. RR = 16, ER = 64. Lends $64.\nBank C: lends $51.20.\nContinue.\n\nSum of new deposits: 100 + 80 + 64 + 51.2 + \\ldots = 100 \\cdot \\frac{1}{1 - 0.8} = \\$500.\n\n\n\nMoney creation chain. Geometric series, ratio = (1 - rrr) = 0.80. Sum = K_S \\times \\Delta R = 5 \\times 100 = 500. New money created = 500 - 100 = 400.",
+    "crumbs": [
+      "Money",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Money and banking</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/05-money-banking.html#the-money-multiplier",
+    "href": "chapters/05-money-banking.html#the-money-multiplier",
+    "title": "6  Money and banking",
+    "section": "6.6 The money multiplier",
+    "text": "6.6 The money multiplier\nK_S = \\frac{1}{rrr} \\qquad \\Delta M^S = K_S \\cdot \\Delta\\text{Reserves}\n\n\n\n\n\n\nWarning\n\n\n\nThis is an upper bound. It assumes (1) banks lend until ER = 0, and (2) no leakage out of the banking system (no cash held outside banks). Real-world K_S is smaller.",
+    "crumbs": [
+      "Money",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Money and banking</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/05-money-banking.html#the-fed",
+    "href": "chapters/05-money-banking.html#the-fed",
+    "title": "6  Money and banking",
+    "section": "6.7 The Fed",
+    "text": "6.7 The Fed\n\n\n\n\n\n\n\nbody\nrole\n\n\n\n\nBoard of Governors\nSets policy direction. 7 presidentially-appointed members.\n\n\nFOMC\nSets money-supply and interest-rate targets.\n\n\nOpen Market Desk (NY Fed)\nExecutes the trades daily.",
+    "crumbs": [
+      "Money",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Money and banking</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/05-money-banking.html#the-three-fed-tools",
+    "href": "chapters/05-money-banking.html#the-three-fed-tools",
+    "title": "6  Money and banking",
+    "section": "6.8 The three Fed tools",
+    "text": "6.8 The three Fed tools\n\n\n\n\n\n\n\n\ntool\nhow it works\ndirection\n\n\n\n\nrrr\nLower → banks have more ER to lend\n\\downarrow rrr \\Rightarrow \\uparrow M^S\n\n\nDiscount rate\nLower → banks borrow more from Fed\n\\downarrow discount \\Rightarrow \\uparrow M^S\n\n\nOMO (most-used)\nBuying bonds injects reserves\nOMO purchase \\Rightarrow \\uparrow M^S",
+    "crumbs": [
+      "Money",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Money and banking</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/05-money-banking.html#try-it",
+    "href": "chapters/05-money-banking.html#try-it",
+    "title": "6  Money and banking",
+    "section": "6.9 Try it",
+    "text": "6.9 Try it\nThe money creation tool lets you pick rrr and OMO size, and shows the iterative deposit chain plus the geometric sum.",
+    "crumbs": [
+      "Money",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Money and banking</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/06-money-market.html",
+    "href": "chapters/06-money-market.html",
+    "title": "7  The money market",
+    "section": "",
+    "text": "7.1 Three motives for money demand\nSum: M^D = f(Y, P, r). Vertical axis r, horizontal M. Downward sloping in r.",
+    "crumbs": [
+      "Money",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>The money market</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/06-money-market.html#three-motives-for-money-demand",
+    "href": "chapters/06-money-market.html#three-motives-for-money-demand",
+    "title": "7  The money market",
+    "section": "",
+    "text": "motive\nwhat drives it\nwhich curve effect\n\n\n\n\nTransactions\nNeed money to buy goods. Rises with Y and P.\nShifts M^D when Y or P changes.\n\n\nPrecautionary\nBuffer against unexpected spending.\nShifts M^D under uncertainty.\n\n\nSpeculative\nHold money rather than bonds when bonds look unattractive. Falls with r.\nMovement along M^D.",
+    "crumbs": [
+      "Money",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>The money market</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/06-money-market.html#equilibrium-r",
+    "href": "chapters/06-money-market.html#equilibrium-r",
+    "title": "7  The money market",
+    "section": "7.2 Equilibrium r^*",
+    "text": "7.2 Equilibrium r^*\nThe Fed sets M^S (vertical line). M^D is the downward-sloping demand curve. r^* is where they cross — but the actual mechanism of adjustment runs through the bond market.\n\n\n\nMoney market equilibrium. M^S vertical, M^D downward, r* at the intersection.\n\n\nWhen r &gt; r^*: excess supply of money. People try to reduce money holdings by buying bonds. Bond prices rise. Bond yields fall. r falls toward r^*.\nWhen r &lt; r^*: excess demand for money. People sell bonds for cash. Bond prices fall. Yields rise. r rises toward r^*.",
+    "crumbs": [
+      "Money",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>The money market</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/06-money-market.html#what-moves-ms",
+    "href": "chapters/06-money-market.html#what-moves-ms",
+    "title": "7  The money market",
+    "section": "7.3 What moves M^S",
+    "text": "7.3 What moves M^S\nAnything the Fed does. OMO purchase shifts M^S right, lowering r^*.\n\n\n\nExpansionary OMO. M^S shifts right (Fed bought bonds), r^* falls.",
+    "crumbs": [
+      "Money",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>The money market</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/06-money-market.html#what-moves-md",
+    "href": "chapters/06-money-market.html#what-moves-md",
+    "title": "7  The money market",
+    "section": "7.4 What moves M^D",
+    "text": "7.4 What moves M^D\nIncome Y (transactions motive). Price level P (transactions motive). Uncertainty (precautionary). All three shift the curve.\nA change in r moves you along the curve, not shift it.\n\n\n\n\n\n\nTip\n\n\n\nThe dual story. “Fed buys bonds, M^S rises, r^* falls” and “Fed bid up bond prices, so the yield-to-maturity fell” describe the same transaction. Money market and bond market are two views of one thing.",
+    "crumbs": [
+      "Money",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>The money market</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/06-money-market.html#goods-market-leftrightarrow-money-market",
+    "href": "chapters/06-money-market.html#goods-market-leftrightarrow-money-market",
+    "title": "7  The money market",
+    "section": "7.5 Goods market \\leftrightarrow money market",
+    "text": "7.5 Goods market \\leftrightarrow money market\nThe two markets equilibrate together.\n\n\n\nTwo-way feedback. Y enters M^D (transactions). r enters I^d (cost of capital). A shock anywhere ripples both ways.\n\n\n\n7.5.1 Monetary policy transmission, end to end\n\nFed conducts an OMO purchase.\n\\Delta R &gt; 0 \\Rightarrow \\Delta M^S = K_S \\cdot \\Delta R &gt; 0.\n\\uparrow M^S \\Rightarrow \\downarrow r^*.\n\\downarrow r \\Rightarrow \\uparrow I^d (firms find more projects profitable).\n\\uparrow I^d \\Rightarrow \\uparrow AE^d \\Rightarrow \\uparrow Y^* (multiplier K_I).\n\\uparrow Y \\Rightarrow \\uparrow M^D (transactions). r^* rises slightly back. Partial offset.\n\n\n\n7.5.2 Fiscal policy transmission\n\nGovernment raises \\overline{G}.\n\\uparrow AE^d \\Rightarrow \\uparrow Y^* (multiplier K_G).\n\\uparrow Y \\Rightarrow \\uparrow M^D \\Rightarrow \\uparrow r^*.\n\\uparrow r \\Rightarrow \\downarrow I^d (private investment crowded out).\nThe crowding-out partially offsets the original boost. This is why the real-world fiscal multiplier is well below K_G.",
+    "crumbs": [
+      "Money",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>The money market</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/07-bonds.html",
+    "href": "chapters/07-bonds.html",
+    "title": "8  Bonds",
+    "section": "",
+    "text": "8.1 Present value\nA bond is a promise of fixed dollars in the future. Its present value:\nPV = \\frac{FV}{(1+r)^T}\nwhere FV is the face value at maturity, r is the market interest rate, and T is years to maturity.",
+    "crumbs": [
+      "Money",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Bonds</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/07-bonds.html#the-inverse-relationship",
+    "href": "chapters/07-bonds.html#the-inverse-relationship",
+    "title": "8  Bonds",
+    "section": "8.2 The inverse relationship",
+    "text": "8.2 The inverse relationship\nr rises, PV falls. Always. The two cannot move in the same direction.\n\n\n\nBond price falls as r rises. The longer the maturity, the steeper the curve.\n\n\n\n\n\n\n\n\nTip\n\n\n\nWhy? A bond is a fixed promise of future dollars. If the discount rate rises, those future dollars are worth less today. Equivalently: if new bonds pay 8% and you hold a 7% bond, no one will pay full face value for yours; its market price falls until its yield-to-maturity matches 8%.",
+    "crumbs": [
+      "Money",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Bonds</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/07-bonds.html#backing-out-r",
+    "href": "chapters/07-bonds.html#backing-out-r",
+    "title": "8  Bonds",
+    "section": "8.3 Backing out r",
+    "text": "8.3 Backing out r\nIf you know PV, FV, and T:\nr = \\left(\\frac{FV}{PV}\\right)^{1/T} - 1\nTake the T-th root of FV/PV, subtract 1. For T=2, square root. For T=3, cube root.",
+    "crumbs": [
+      "Money",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Bonds</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/07-bonds.html#worked-example",
+    "href": "chapters/07-bonds.html#worked-example",
+    "title": "8  Bonds",
+    "section": "8.4 Worked example",
+    "text": "8.4 Worked example\nFV = \\$1{,}000. T = 5 years. At r = 5\\%: PV = 1000/1.05^5 = \\$783.53. At r = 10\\%: PV = 1000/1.10^5 = \\$620.92. The bond is worth \\$160 less.",
+    "crumbs": [
+      "Money",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Bonds</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/07-bonds.html#try-it",
+    "href": "chapters/07-bonds.html#try-it",
+    "title": "8  Bonds",
+    "section": "8.5 Try it",
+    "text": "8.5 Try it\nThe bond pricer calculates PV given FV, r, T — and inverts to find r given PV.",
+    "crumbs": [
+      "Money",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Bonds</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/08-as-ad.html",
+    "href": "chapters/08-as-ad.html",
+    "title": "9  AS / AD basics",
+    "section": "",
+    "text": "9.1 What shifts AD (aggregate demand)\nThe Keynesian cross holds the price level fixed. AS / AD adds P as an endogenous outcome.",
+    "crumbs": [
+      "Open economy & synthesis",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>AS / AD basics</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/08-as-ad.html#what-shifts-ad-aggregate-demand",
+    "href": "chapters/08-as-ad.html#what-shifts-ad-aggregate-demand",
+    "title": "9  AS / AD basics",
+    "section": "",
+    "text": "change\neffect on AD\n\n\n\n\n\\uparrow \\overline{G}\nshifts right\n\n\n\\downarrow \\overline{T}\nshifts right\n\n\n\\uparrow M^S\nshifts right (lower r → more I^d)\n\n\n\\uparrow wealth\nshifts right\n\n\n\\uparrow exports\nshifts right\n\n\nCurrency depreciation\nshifts right (\\uparrow X, \\downarrow M)",
+    "crumbs": [
+      "Open economy & synthesis",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>AS / AD basics</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/08-as-ad.html#what-shifts-as-aggregate-supply",
+    "href": "chapters/08-as-ad.html#what-shifts-as-aggregate-supply",
+    "title": "9  AS / AD basics",
+    "section": "9.2 What shifts AS (aggregate supply)",
+    "text": "9.2 What shifts AS (aggregate supply)\n\n\n\nchange\neffect on AS\n\n\n\n\nProductivity rises\nshifts right (more output at every P)\n\n\nInput costs fall\nshifts right\n\n\nCost-push shock (oil, war, supply chain)\nshifts left\n\n\nExpected P rises\nshifts left",
+    "crumbs": [
+      "Open economy & synthesis",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>AS / AD basics</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/08-as-ad.html#putting-it-together",
+    "href": "chapters/08-as-ad.html#putting-it-together",
+    "title": "9  AS / AD basics",
+    "section": "9.3 Putting it together",
+    "text": "9.3 Putting it together\nA demand shock (\\uparrow G, depreciation, OMO purchase) shifts AD right. Both Y and P rise.\nA supply shock (oil price spike) shifts AS left. Y falls, P rises. This is stagflation.\nA productivity boom shifts AS right. Y rises, P falls.\n\n\n\n\n\n\nNote\n\n\n\nKey trade-off. Demand shocks move Y and P in the same direction. Supply shocks move them in opposite directions. The diagnostic is the comovement.",
+    "crumbs": [
+      "Open economy & synthesis",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>AS / AD basics</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/08-as-ad.html#why-this-matters-for-fiscalmonetary-policy",
+    "href": "chapters/08-as-ad.html#why-this-matters-for-fiscalmonetary-policy",
+    "title": "9  AS / AD basics",
+    "section": "9.4 Why this matters for fiscal/monetary policy",
+    "text": "9.4 Why this matters for fiscal/monetary policy\nIf the gap is from a demand shortfall (recessionary, Y &lt; Y^{FE}, low P pressure), expansionary fiscal or monetary policy works cleanly: AD shifts right, Y rises toward Y^{FE}, modest P rise.\nIf the gap is from a supply shock (cost-push, Y &lt; Y^{FE} but P already high), expansionary policy raises P further without much Y recovery. The Fed faces a real dilemma.",
+    "crumbs": [
+      "Open economy & synthesis",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>AS / AD basics</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/09-foreign-exchange.html",
+    "href": "chapters/09-foreign-exchange.html",
+    "title": "10  Foreign exchange",
+    "section": "",
+    "text": "10.1 Balance of payments\nTwo main accounts:\nIdentity (floating ER): current account + capital account \\approx 0. A current-account deficit is financed by a capital-account surplus.",
+    "crumbs": [
+      "Open economy & synthesis",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Foreign exchange</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/09-foreign-exchange.html#balance-of-payments",
+    "href": "chapters/09-foreign-exchange.html#balance-of-payments",
+    "title": "10  Foreign exchange",
+    "section": "",
+    "text": "account\nwhat it records\nsign convention\n\n\n\n\nCurrent account\nNet exports + net investment income + net transfers from abroad\nExports = credit (+); imports = debit (−)\n\n\nCapital account\nNet change in asset positions across the border\nForeigners buy U.S. assets = credit (+); U.S. residents buy foreign assets = debit (−)\n\n\n\n\n\n10.1.1 Sign cheat-table\n\n\n\ntransaction\ncurrent acct\ncapital acct\n\n\n\n\nU.S. exports to Germany\n+\n—\n\n\nU.S. imports from Germany\n−\n—\n\n\nForeigner buys U.S. Treasury\n—\n+\n\n\nU.S. resident buys German stock\n—\n−\n\n\nU.S. earns dividend on foreign stock\n+\n—",
+    "crumbs": [
+      "Open economy & synthesis",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Foreign exchange</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/09-foreign-exchange.html#the-fx-market",
+    "href": "chapters/09-foreign-exchange.html#the-fx-market",
+    "title": "10  Foreign exchange",
+    "section": "10.2 The FX market",
+    "text": "10.2 The FX market\nTwo countries: US and UK. Vertical axis is \\$/\\pounds.\nDemand for £ (downward sloping): U.S. wants pounds for UK goods. Supply of £ (upward sloping): UK wants $ for U.S. goods.\n\n\n\nFX market for pounds. Equilibrium where demand and supply cross.",
+    "crumbs": [
+      "Open economy & synthesis",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Foreign exchange</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/09-foreign-exchange.html#comparative-statics",
+    "href": "chapters/09-foreign-exchange.html#comparative-statics",
+    "title": "10  Foreign exchange",
+    "section": "10.3 Comparative statics",
+    "text": "10.3 Comparative statics\nRelative inflation (PPP channel). U.S. inflation rises, UK stable. U.S. goods relatively expensive. U.S. demand for UK goods rises (D for £ shifts right). UK demand for U.S. goods falls (S of £ shifts left). Both push E_{\\$/£} up. The $ depreciates.\nRelative interest rates (capital-flow channel). U.S. rates rise relative to UK. U.S. assets more attractive. UK investors sell £ to buy $ (S of £ shifts right). U.S. residents sell $ to buy £ less (D for £ shifts left). Both push E_{\\$/£} down. The $ appreciates.\n\n\n\n\n\n\nImportant\n\n\n\nInflation and interest rates push the currency in OPPOSITE directions. Higher inflation depreciates; higher interest rate appreciates. This is the most-tested confusion.",
+    "crumbs": [
+      "Open economy & synthesis",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Foreign exchange</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/09-foreign-exchange.html#purchasing-power-parity",
+    "href": "chapters/09-foreign-exchange.html#purchasing-power-parity",
+    "title": "10  Foreign exchange",
+    "section": "10.4 Purchasing power parity",
+    "text": "10.4 Purchasing power parity\nE_{\\$/\\pounds} = \\frac{P_{US,\\text{ basket}}}{P_{UK,\\text{ basket}}}\nSame basket should cost the same in either currency. The Big Mac Index is an empirical version. PPP holds well in the long run, poorly in the short run.\nTry the PPP calculator.",
+    "crumbs": [
+      "Open economy & synthesis",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Foreign exchange</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/09-foreign-exchange.html#effects-of-depreciation",
+    "href": "chapters/09-foreign-exchange.html#effects-of-depreciation",
+    "title": "10  Foreign exchange",
+    "section": "10.5 Effects of depreciation",
+    "text": "10.5 Effects of depreciation\nA depreciation of the home currency raises home exports, lowers home imports, raises (X-M), raises Y^* via the multiplier, and (because AD shifts right) raises P.\nBut not immediately. The J-curve says the trade balance gets worse for 1–4 quarters before improving:\n\n\n\nJ-curve. Currency depreciation worsens the trade balance short-run, improves it long-run. Driven by contracting lags — prices respond fast, quantities respond slow.",
+    "crumbs": [
+      "Open economy & synthesis",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Foreign exchange</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/09-foreign-exchange.html#trade-and-price-feedback",
+    "href": "chapters/09-foreign-exchange.html#trade-and-price-feedback",
+    "title": "10  Foreign exchange",
+    "section": "10.6 Trade and price feedback",
+    "text": "10.6 Trade and price feedback\nTrade feedback effect. U.S. growth raises imports. U.S. imports are foreign exports, so foreign Y rises. Higher foreign Y raises foreign demand for U.S. exports. Some of the original U.S. boost comes back as exports.\nPrice feedback effect. A supply shock raises U.S. prices. Foreign exporters raise their prices in response. Those higher prices are imported back into the U.S., adding to inflation.",
+    "crumbs": [
+      "Open economy & synthesis",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Foreign exchange</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/09-foreign-exchange.html#beggar-thy-neighbor",
+    "href": "chapters/09-foreign-exchange.html#beggar-thy-neighbor",
+    "title": "10  Foreign exchange",
+    "section": "10.7 Beggar-thy-neighbor",
+    "text": "10.7 Beggar-thy-neighbor\nA country tries to boost Y via more exports / fewer imports (tariffs, FX manipulation). Other countries retaliate. Global trade shrinks. Everyone loses. The 1930s.",
+    "crumbs": [
+      "Open economy & synthesis",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Foreign exchange</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/10-monetary-regimes.html",
+    "href": "chapters/10-monetary-regimes.html",
+    "title": "11  Monetary policy under floating vs. fixed ER",
+    "section": "",
+    "text": "11.1 Two channels of expansionary monetary policy\nWhen the Fed eases (\\uparrow M^S):",
+    "crumbs": [
+      "Open economy & synthesis",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Monetary policy under floating vs. fixed ER</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/10-monetary-regimes.html#two-channels-of-expansionary-monetary-policy",
+    "href": "chapters/10-monetary-regimes.html#two-channels-of-expansionary-monetary-policy",
+    "title": "11  Monetary policy under floating vs. fixed ER",
+    "section": "",
+    "text": "Interest-rate channel. \\downarrow r \\Rightarrow \\uparrow I^d \\Rightarrow \\uparrow Y.\nExchange-rate channel. \\downarrow r \\Rightarrow capital outflow \\Rightarrow home currency depreciates \\Rightarrow \\uparrow (X-M) \\Rightarrow \\uparrow Y.",
+    "crumbs": [
+      "Open economy & synthesis",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Monetary policy under floating vs. fixed ER</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/10-monetary-regimes.html#under-flexible-er-both-channels-reinforce",
+    "href": "chapters/10-monetary-regimes.html#under-flexible-er-both-channels-reinforce",
+    "title": "11  Monetary policy under floating vs. fixed ER",
+    "section": "11.2 Under flexible ER: both channels reinforce",
+    "text": "11.2 Under flexible ER: both channels reinforce\nBoth channels push Y up. Monetary policy is potent under floating exchange rates — that’s one reason the U.S., UK, Japan, eurozone all run floating regimes.",
+    "crumbs": [
+      "Open economy & synthesis",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Monetary policy under floating vs. fixed ER</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/10-monetary-regimes.html#under-fixed-er-only-channel-1-operates",
+    "href": "chapters/10-monetary-regimes.html#under-fixed-er-only-channel-1-operates",
+    "title": "11  Monetary policy under floating vs. fixed ER",
+    "section": "11.3 Under fixed ER: only channel 1 operates",
+    "text": "11.3 Under fixed ER: only channel 1 operates\nThe central bank is committed to keep the ER stable. When monetary easing causes capital outflows that would depreciate the currency, the central bank must intervene — selling its FX reserves and buying back its own currency. That contracts M^S back toward where it started.\nNet effect: monetary easing under a fixed ER is muted. Channel 1 (interest-rate) operates partially; channel 2 (FX) is dead.",
+    "crumbs": [
+      "Open economy & synthesis",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Monetary policy under floating vs. fixed ER</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/10-monetary-regimes.html#the-trilemma",
+    "href": "chapters/10-monetary-regimes.html#the-trilemma",
+    "title": "11  Monetary policy under floating vs. fixed ER",
+    "section": "11.4 The trilemma",
+    "text": "11.4 The trilemma\nA country can choose at most two of these three:\n\nFree capital flow.\nFixed exchange rate.\nIndependent monetary policy.\n\n\n\n\n\n\n\n\nwho picks what\nexample\n\n\n\n\nFree capital + floating ER, give up fixed ER\nU.S., UK, Japan, Eurozone\n\n\nFree capital + fixed ER, give up independent monetary policy\nHong Kong (USD peg), members of a currency union\n\n\nFixed ER + independent policy, give up free capital\nChina historically (capital controls)\n\n\n\n\n\n\n\n\n\nImportant\n\n\n\nThis is why monetary unions are a big deal. Joining the Eurozone is choosing column 2 — you fix your ER (effectively, by adopting the same currency) and accept that the ECB sets monetary policy for everyone.",
+    "crumbs": [
+      "Open economy & synthesis",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Monetary policy under floating vs. fixed ER</span>"
+    ]
+  },
+  {
+    "objectID": "interactive/keynesian-cross-tool.html",
+    "href": "interactive/keynesian-cross-tool.html",
+    "title": "12  Interactive: Keynesian cross",
+    "section": "",
+    "text": "12.1 Things to play with\nMove the sliders. Watch the equilibrium Y^* and the multiplier respond.",
+    "crumbs": [
+      "Interactive tools",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Interactive: Keynesian cross</span>"
+    ]
+  },
+  {
+    "objectID": "interactive/keynesian-cross-tool.html#things-to-play-with",
+    "href": "interactive/keynesian-cross-tool.html#things-to-play-with",
+    "title": "12  Interactive: Keynesian cross",
+    "section": "",
+    "text": "Set c = 0.5. Note K = 2. Now move c to 0.9. K jumps to 10. The multiplier is wildly nonlinear in MPC. A small change near 1 produces a huge change in K.\nHold c fixed at 0.75. Move \\overline{I} from 25 to 30 (a \\Delta\\overline{I} = 5). Watch Y^* jump by 20. That’s K_I \\cdot \\Delta\\overline{I} = 4 \\cdot 5 = 20.\nMove \\overline{C_0} from 100 to 50 (people more frugal). Y^* falls. The paradox of thrift in action.",
+    "crumbs": [
+      "Interactive tools",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Interactive: Keynesian cross</span>"
+    ]
+  },
+  {
+    "objectID": "interactive/keynesian-cross-tool.html#what-this-tells-you-about-exam-problems",
+    "href": "interactive/keynesian-cross-tool.html#what-this-tells-you-about-exam-problems",
+    "title": "12  Interactive: Keynesian cross",
+    "section": "12.2 What this tells you about exam problems",
+    "text": "12.2 What this tells you about exam problems\nMost equilibrium-Y^* exam questions can be checked here in 30 seconds. If your hand calculation gives a different answer than this widget, the widget is right and your math has a typo somewhere.",
+    "crumbs": [
+      "Interactive tools",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Interactive: Keynesian cross</span>"
+    ]
+  },
+  {
+    "objectID": "interactive/multiplier-dashboard.html",
+    "href": "interactive/multiplier-dashboard.html",
+    "title": "13  Interactive: multiplier dashboard",
+    "section": "",
+    "text": "13.1 What to notice\nDrag the MPC slider. Every multiplier updates.",
+    "crumbs": [
+      "Interactive tools",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Interactive: multiplier dashboard</span>"
+    ]
+  },
+  {
+    "objectID": "interactive/multiplier-dashboard.html#what-to-notice",
+    "href": "interactive/multiplier-dashboard.html#what-to-notice",
+    "title": "13  Interactive: multiplier dashboard",
+    "section": "",
+    "text": "As MPC approaches 1, every multiplier blows up. K_G at c=0.95 is 20. At c=0.99 it’s 100. Real economies don’t behave this way because of leakages, so the textbook formula is the upper bound.\nTax multiplier is always smaller in magnitude than the spending multiplier, by exactly 1. The K_{BB} = K_G + K_T = 1 identity falls out of this.\nAt MPC = 0.75, the values you’ll see most: K_G = 4, K_T = -3, K_{BB} = 1. Memorize these.",
+    "crumbs": [
+      "Interactive tools",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Interactive: multiplier dashboard</span>"
+    ]
+  },
+  {
+    "objectID": "interactive/multiplier-dashboard.html#why-k_t-k_g",
+    "href": "interactive/multiplier-dashboard.html#why-k_t-k_g",
+    "title": "13  Interactive: multiplier dashboard",
+    "section": "13.2 Why |K_T| < K_G",
+    "text": "13.2 Why |K_T| &lt; K_G\nA dollar of G enters AE^d in full immediately. A dollar of tax cut adds only c to round-one spending — households save (1-c) of the tax cut. The lost first round is exactly the gap.\nK_G - |K_T| = \\frac{1}{1-c} - \\frac{c}{1-c} = \\frac{1-c}{1-c} = 1\nThat gap is also the balanced-budget multiplier. Same identity, two ways to read it.",
+    "crumbs": [
+      "Interactive tools",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Interactive: multiplier dashboard</span>"
+    ]
+  },
+  {
+    "objectID": "interactive/money-creation-tool.html",
+    "href": "interactive/money-creation-tool.html",
+    "title": "14  Interactive: money creation",
+    "section": "",
+    "text": "14.1 What to play with\nPick the required reserve ratio and the OMO size. Watch the geometric series of new deposits.",
+    "crumbs": [
+      "Interactive tools",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Interactive: money creation</span>"
+    ]
+  },
+  {
+    "objectID": "interactive/money-creation-tool.html#what-to-play-with",
+    "href": "interactive/money-creation-tool.html#what-to-play-with",
+    "title": "14  Interactive: money creation",
+    "section": "",
+    "text": "Set rrr = 0.10, OMO = $100. K_S = 10, \\Delta M^S = \\$1{,}000. New money = $900. The lower the reserve requirement, the more banks can lend, the bigger the multiplier.\nSet rrr = 0.50. K_S = 2, \\Delta M^S = 2 \\times \\$100 = \\$200. New money = $100. High reserve requirements throttle money creation.\nWatch how fast convergence happens. By round 6 you’re typically within 95% of the geometric sum. After round 12 you’re at &gt;99%. The series converges quickly when rrr is high (each round shrinks fast); slowly when rrr is low.",
+    "crumbs": [
+      "Interactive tools",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Interactive: money creation</span>"
+    ]
+  },
+  {
+    "objectID": "interactive/money-creation-tool.html#what-this-tool-hides",
+    "href": "interactive/money-creation-tool.html#what-this-tool-hides",
+    "title": "14  Interactive: money creation",
+    "section": "14.2 What this tool hides",
+    "text": "14.2 What this tool hides\nIt assumes (1) banks lend until ER = 0, and (2) all loaned money returns as deposits (no cash leakage). Real-world money multipliers are smaller. With cash-leakage ratio cr:\nK_S^{\\text{real}} = \\frac{1 + cr}{rrr + cr}\nFor rrr = 0.20 and cr = 0.10: K_S^{\\text{real}} = 1.10 / 0.30 \\approx 3.67, well below the textbook 5.",
+    "crumbs": [
+      "Interactive tools",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Interactive: money creation</span>"
+    ]
+  },
+  {
+    "objectID": "interactive/bond-pricer.html",
+    "href": "interactive/bond-pricer.html",
+    "title": "15  Interactive: bond pricer",
+    "section": "",
+    "text": "15.1 Mode 1: price the bond\nTwo modes: compute PV given r, or back out r given PV.",
+    "crumbs": [
+      "Interactive tools",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Interactive: bond pricer</span>"
+    ]
+  },
+  {
+    "objectID": "interactive/bond-pricer.html#mode-1-price-the-bond",
+    "href": "interactive/bond-pricer.html#mode-1-price-the-bond",
+    "title": "15  Interactive: bond pricer",
+    "section": "",
+    "text": "viewof FV1 = Inputs.range([100, 10000], {value: 1000, step: 50, label: \"Face value FV\"})\nviewof r1 = Inputs.range([0.001, 0.20], {value: 0.05, step: 0.005, label: \"Interest rate r\"})\nviewof T1 = Inputs.range([1, 30], {value: 5, step: 1, label: \"Years to maturity T\"})\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPV1 = FV1 / Math.pow(1 + r1, T1)\n\n\n\n\n\n\n\nmd`**Present value:** \\`PV = \\$${FV1} / (1 + ${r1.toFixed(3)})^${T1} = \\$${PV1.toFixed(2)}\\``\n\n\n\n\n\n\n\nPlot.plot({\n  width: 600,\n  height: 320,\n  marginLeft: 70,\n  marginBottom: 50,\n  x: {label: \"Interest rate r (%)\", domain: [0, 20]},\n  y: {label: \"Bond PV ($)\", domain: [0, FV1 * 1.05]},\n  marks: [\n    Plot.line(d3.range(0.001, 0.20, 0.002).map(rr =&gt; ({rr: rr * 100, pv: FV1 / Math.pow(1 + rr, T1)})), {x: \"rr\", y: \"pv\", stroke: \"#0e7c7b\", strokeWidth: 2.2}),\n    Plot.dot([{rr: r1 * 100, pv: PV1}], {x: \"rr\", y: \"pv\", fill: \"#b7410e\", r: 6}),\n    Plot.text([{rr: r1 * 100, pv: PV1, l: `PV = $${PV1.toFixed(0)}`}], {x: \"rr\", y: \"pv\", text: \"l\", dx: 12, dy: -8, fill: \"#b7410e\", fontSize: 11, fontWeight: \"bold\"})\n  ]\n})",
+    "crumbs": [
+      "Interactive tools",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Interactive: bond pricer</span>"
+    ]
+  },
+  {
+    "objectID": "interactive/bond-pricer.html#mode-2-back-out-the-implied-yield",
+    "href": "interactive/bond-pricer.html#mode-2-back-out-the-implied-yield",
+    "title": "15  Interactive: bond pricer",
+    "section": "15.2 Mode 2: back out the implied yield",
+    "text": "15.2 Mode 2: back out the implied yield\nGiven the market price, what yield is the bond paying?\n\n\nviewof FV2 = Inputs.range([100, 10000], {value: 1000, step: 50, label: \"Face value FV\"})\nviewof PV2 = Inputs.range([10, 9999], {value: 800, step: 10, label: \"Market price PV\"})\nviewof T2 = Inputs.range([1, 30], {value: 5, step: 1, label: \"Years to maturity T\"})\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nimplied_r = Math.pow(FV2 / PV2, 1 / T2) - 1\n\n\n\n\n\n\n\nmd`**Implied yield:** \\`r = (${FV2}/${PV2})^(1/${T2}) − 1 = ${(implied_r * 100).toFixed(3)}%\\``",
+    "crumbs": [
+      "Interactive tools",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Interactive: bond pricer</span>"
+    ]
+  },
+  {
+    "objectID": "interactive/bond-pricer.html#what-to-play-with",
+    "href": "interactive/bond-pricer.html#what-to-play-with",
+    "title": "15  Interactive: bond pricer",
+    "section": "15.3 What to play with",
+    "text": "15.3 What to play with\n\nSet FV = 1{,}000, T = 5. Move r from 1% to 20%. Watch PV drop from $951 to $402. The shorter the maturity, the less price-sensitive to r.\nSet T = 30. Same r swing now moves PV from $742 down to $4. Long bonds are extremely interest-rate-sensitive. This is why the long end of the yield curve is volatile.\nMode 2 with PV = 800, FV = 1{,}000, T = 5. Implied yield \\approx 4.56\\%. Useful for “given this discount, what return?”",
+    "crumbs": [
+      "Interactive tools",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Interactive: bond pricer</span>"
+    ]
+  },
+  {
+    "objectID": "interactive/bond-pricer.html#the-intuition",
+    "href": "interactive/bond-pricer.html#the-intuition",
+    "title": "15  Interactive: bond pricer",
+    "section": "15.4 The intuition",
+    "text": "15.4 The intuition\nA bond is a fixed promise of future dollars. If the discount rate rises, those future dollars are worth less today. Equivalently: if new bonds pay 8% and you hold a 7% bond, no one will pay full face value for yours; its market price falls until its yield-to-maturity matches 8%.",
+    "crumbs": [
+      "Interactive tools",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Interactive: bond pricer</span>"
+    ]
+  },
+  {
+    "objectID": "interactive/ppp-calculator.html",
+    "href": "interactive/ppp-calculator.html",
+    "title": "16  Interactive: PPP exchange rate",
+    "section": "",
+    "text": "16.1 How does the ER move if relative inflation differs?\nSet the basket prices in two countries. Get the PPP exchange rate. Then sliders for inflation rates project the ER over time.",
+    "crumbs": [
+      "Interactive tools",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Interactive: PPP exchange rate</span>"
+    ]
+  },
+  {
+    "objectID": "interactive/ppp-calculator.html#how-does-the-er-move-if-relative-inflation-differs",
+    "href": "interactive/ppp-calculator.html#how-does-the-er-move-if-relative-inflation-differs",
+    "title": "16  Interactive: PPP exchange rate",
+    "section": "",
+    "text": "viewof piUS = Inputs.range([0, 0.20], {value: 0.05, step: 0.005, label: \"US annual inflation\"})\nviewof piUK = Inputs.range([0, 0.20], {value: 0.02, step: 0.005, label: \"UK annual inflation\"})\nviewof horizon = Inputs.range([1, 20], {value: 10, step: 1, label: \"Years to project\"})\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyears = d3.range(0, horizon + 1)\nePath = years.map(t =&gt; ({\n  year: t,\n  PUS_t: PUS * Math.pow(1 + piUS, t),\n  PUK_t: PUK * Math.pow(1 + piUK, t),\n  E_t: (PUS * Math.pow(1 + piUS, t)) / (PUK * Math.pow(1 + piUK, t))\n}))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPlot.plot({\n  width: 600,\n  height: 320,\n  marginLeft: 70,\n  marginBottom: 50,\n  x: {label: \"Years from now\"},\n  y: {label: \"PPP exchange rate ($/£)\"},\n  marks: [\n    Plot.line(ePath, {x: \"year\", y: \"E_t\", stroke: \"#0e7c7b\", strokeWidth: 2.2}),\n    Plot.dot(ePath, {x: \"year\", y: \"E_t\", fill: \"#0e7c7b\", r: 3}),\n    Plot.ruleY([E_now], {stroke: \"#888\", strokeDasharray: \"4 3\"}),\n    Plot.text([{year: 0, E_t: E_now, l: `Today: $${E_now.toFixed(2)}/£`}], {x: \"year\", y: \"E_t\", text: \"l\", dx: 80, dy: -10, fill: \"#888\", fontSize: 11})\n  ]\n})\n\n\n\n\n\n\n\nmd`**ER in year ${horizon}:** \\`$${ePath[horizon].E_t.toFixed(3)}/£\\` (vs. today: \\`$${E_now.toFixed(3)}/£\\`)\n\nThe dollar ${ePath[horizon].E_t &gt; E_now ? \"**depreciates**\" : \"**appreciates**\"} over the projection horizon.`",
+    "crumbs": [
+      "Interactive tools",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Interactive: PPP exchange rate</span>"
+    ]
+  },
+  {
+    "objectID": "interactive/ppp-calculator.html#what-to-play-with",
+    "href": "interactive/ppp-calculator.html#what-to-play-with",
+    "title": "16  Interactive: PPP exchange rate",
+    "section": "16.2 What to play with",
+    "text": "16.2 What to play with\n\nUS inflation 5%, UK 2%. Dollar depreciates roughly proportionally — about 3% per year against the pound.\nSet both to the same rate. ER stays flat. PPP says the currency only moves when relative inflation differs.\nReverse them. UK at 5%, US at 2%. Now the dollar appreciates. The country with lower inflation sees its currency strengthen.",
+    "crumbs": [
+      "Interactive tools",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Interactive: PPP exchange rate</span>"
+    ]
+  },
+  {
+    "objectID": "interactive/ppp-calculator.html#where-ppp-fails",
+    "href": "interactive/ppp-calculator.html#where-ppp-fails",
+    "title": "16  Interactive: PPP exchange rate",
+    "section": "16.3 Where PPP fails",
+    "text": "16.3 Where PPP fails\n\nShort-run (months to a year). Sticky prices and trade frictions break the law of one price.\nFor non-traded goods (haircuts, restaurant meals). They never face arbitrage and can stay out of line indefinitely.\nDuring financial crises, when capital flows dominate trade flows.\n\nFor long horizons (5+ years) and traded goods, PPP gives a useful first-order benchmark. The Big Mac Index is the famous popular version.",
+    "crumbs": [
+      "Interactive tools",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Interactive: PPP exchange rate</span>"
+    ]
+  },
+  {
+    "objectID": "dashboards/inflation.html",
+    "href": "dashboards/inflation.html",
+    "title": "17  Inflation",
+    "section": "",
+    "text": "17.1 Reading this\nLive data from FRED. Updates daily via GitHub Actions. Last refresh shown at the bottom of the page.\nThe Fed targets 2% PCE inflation. Headline figures (CPI, PCE) include food and energy; core measures (Core CPI, Core PCE) strip them out because food/energy are volatile and don’t reflect underlying price pressure. Core PCE is the Fed’s preferred gauge.\nWatch for divergence between headline and core. When energy prices spike, headline races ahead of core. When energy collapses, headline drops below core. The persistent signal lives in core.",
+    "crumbs": [
+      "Live data dashboards",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Inflation</span>"
+    ]
+  },
+  {
+    "objectID": "dashboards/inflation.html#source",
+    "href": "dashboards/inflation.html#source",
+    "title": "17  Inflation",
+    "section": "17.2 Source",
+    "text": "17.2 Source\nAll four series from FRED, produced by the Bureau of Labor Statistics (CPI series) and Bureau of Economic Analysis (PCE series). Refreshed daily.\n\nmd`*Last data refresh: ${cpi.last_updated || 'unknown'}.*`",
+    "crumbs": [
+      "Live data dashboards",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Inflation</span>"
+    ]
+  },
+  {
+    "objectID": "dashboards/labor.html",
+    "href": "dashboards/labor.html",
+    "title": "18  Labor markets",
+    "section": "",
+    "text": "18.1 What to watch\nThe headline unemployment rate u has a textbook natural rate around 4%. Below 4% suggests the economy is running hot; well above signals a recession or a slow recovery.\nThe LFPR has been declining since ~2000 because of demographics (boomer retirements) and structural changes. A falling unemployment rate paired with a falling LFPR is ambiguous — people leaving the workforce reduce U in the numerator, but they’re not actually employed.\nNonfarm payrolls are the Bureau of Labor Statistics’s establishment-survey count. It moves with the business cycle and is the headline number on “jobs Friday.”",
+    "crumbs": [
+      "Live data dashboards",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Labor markets</span>"
+    ]
+  },
+  {
+    "objectID": "dashboards/labor.html#source",
+    "href": "dashboards/labor.html#source",
+    "title": "18  Labor markets",
+    "section": "18.2 Source",
+    "text": "18.2 Source\nFRED — series UNRATE, CIVPART, PAYEMS, all from the BLS Current Population Survey and Current Employment Statistics. Refreshed daily; underlying releases monthly.\n\nmd`*Last data refresh: ${unrate.last_updated || 'unknown'}.*`",
+    "crumbs": [
+      "Live data dashboards",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Labor markets</span>"
+    ]
+  },
+  {
+    "objectID": "dashboards/money-rates.html",
+    "href": "dashboards/money-rates.html",
+    "title": "19  Money supply & interest rates",
+    "section": "",
+    "text": "19.1 What to watch\nThe term spread (10y − 2y) is the single most reliable recession predictor in the U.S. dataset. When it inverts (goes negative), a recession typically follows in 6–18 months. Every U.S. recession since 1970 was preceded by inversion. Inversions also produce false alarms occasionally, but the absence of inversion has rarely been wrong.\nM2 is the broad money stock — currency, demand deposits, savings deposits, retail money market funds. Watching its growth rate gives a sense of monetary expansion / contraction independent of what the Fed funds rate is doing.\nFed funds rate is the Fed’s main policy rate. The Fed influences it by adjusting the supply of bank reserves through OMO. The 2-yr Treasury tracks expected future fed funds; the 10-yr reflects long-run inflation and growth expectations.",
+    "crumbs": [
+      "Live data dashboards",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Money supply & interest rates</span>"
+    ]
+  },
+  {
+    "objectID": "dashboards/money-rates.html#source",
+    "href": "dashboards/money-rates.html#source",
+    "title": "19  Money supply & interest rates",
+    "section": "19.2 Source",
+    "text": "19.2 Source\nAll from FRED. Daily series (DFF, DGS2, DGS10, T10Y2Y) update each business day; M2SL and FEDFUNDS update monthly.\n\nmd`*Last data refresh: ${ffr.last_updated || 'unknown'}.*`",
+    "crumbs": [
+      "Live data dashboards",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Money supply & interest rates</span>"
+    ]
+  },
+  {
+    "objectID": "dashboards/output.html",
+    "href": "dashboards/output.html",
+    "title": "20  Output & recessions",
+    "section": "",
+    "text": "20.1 What to watch\nA recession is officially declared by the NBER Business Cycle Dating Committee. The shorthand is “two consecutive quarters of negative GDP growth,” but the NBER actually weighs employment, real income, retail sales, and industrial production alongside GDP. The NBER lags real time — a recession usually starts months before it’s officially declared and can be revised after the fact.\nReal GDP growth above 2.5% is generally considered hot. Below 1% suggests slowdown. Negative for two quarters is the rule-of-thumb recession trigger.",
+    "crumbs": [
+      "Live data dashboards",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Output & recessions</span>"
+    ]
+  },
+  {
+    "objectID": "dashboards/output.html#source",
+    "href": "dashboards/output.html#source",
+    "title": "20  Output & recessions",
+    "section": "20.2 Source",
+    "text": "20.2 Source\nFRED — GDPC1 (real GDP, chained 2017 dollars) from the BEA, quarterly. USREC (recession indicator) from NBER, monthly. Recession bars on the chart are the NBER-dated periods.\n\nmd`*Last data refresh: ${gdpc1.last_updated || 'unknown'}.*`",
+    "crumbs": [
+      "Live data dashboards",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Output & recessions</span>"
+    ]
+  },
+  {
+    "objectID": "dashboards/exchange-rates.html",
+    "href": "dashboards/exchange-rates.html",
+    "title": "21  Exchange rates",
+    "section": "",
+    "text": "21.1 How to read\nUSD/EUR: dollars per euro. Higher = euro stronger / dollar weaker. A move from 1.05 to 1.20 is dollar depreciation against the euro.\nUSD/GBP: same convention. Higher means pound stronger.\nBroad trade-weighted index: weighted basket of major U.S. trade partners, indexed to Jan 2006 = 100. Higher = stronger dollar against the basket. This is the cleanest single measure of dollar strength globally.",
+    "crumbs": [
+      "Live data dashboards",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Exchange rates</span>"
+    ]
+  },
+  {
+    "objectID": "dashboards/exchange-rates.html#what-drives-moves",
+    "href": "dashboards/exchange-rates.html#what-drives-moves",
+    "title": "21  Exchange rates",
+    "section": "21.2 What drives moves",
+    "text": "21.2 What drives moves\nTwo main channels (PPP and capital-flow) work in opposite directions:\n\nHigher U.S. inflation relative to trading partners → dollar depreciates (PPP).\nHigher U.S. interest rates relative to trading partners → dollar appreciates (capital inflows).\n\nIn the short run, capital-flow dominance usually wins. In the long run, PPP usually wins. Watch both gradually.",
+    "crumbs": [
+      "Live data dashboards",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Exchange rates</span>"
+    ]
+  },
+  {
+    "objectID": "dashboards/exchange-rates.html#source",
+    "href": "dashboards/exchange-rates.html#source",
+    "title": "21  Exchange rates",
+    "section": "21.3 Source",
+    "text": "21.3 Source\nFRED — DEXUSEU, DEXUSUK from the Federal Reserve Board’s H.10 release. DTWEXBGS (Goods & Services trade-weighted index) is the Fed’s preferred broad-dollar measure.\n\nmd`*Last data refresh: ${eur.last_updated || 'unknown'}.*`",
+    "crumbs": [
+      "Live data dashboards",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Exchange rates</span>"
+    ]
+  },
+  {
+    "objectID": "dashboards/news.html",
+    "href": "dashboards/news.html",
+    "title": "22  Recent releases",
+    "section": "",
+    "text": "22.1 What’s tracked\nPress releases, FOMC statements, and data drops from the Fed, BLS, BEA, Treasury, and other authoritative macro sources. Refreshed daily.\nSources include FOMC statements and minutes, BLS Employment Situation and CPI releases, BEA GDP and PCE releases, Treasury announcements, ECB monetary policy decisions, Bank of England rate announcements. The full list of feeds is at Sources.\nmd`*Showing ${filtered_feeds.length} items out of ${feeds.length} most recent.*`",
+    "crumbs": [
+      "Live data dashboards",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Recent releases</span>"
+    ]
+  },
+  {
+    "objectID": "practice/decision-tree.html",
+    "href": "practice/decision-tree.html",
+    "title": "23  Decision tree: which technique?",
+    "section": "",
+    "text": "23.1 Step 1: What is the question asking?\nWhen you read an exam question, identify the type before you start computing. The right approach is fast; the wrong one wastes minutes.",
+    "crumbs": [
+      "Practice",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Decision tree: which technique?</span>"
+    ]
+  },
+  {
+    "objectID": "practice/decision-tree.html#step-1-what-is-the-question-asking",
+    "href": "practice/decision-tree.html#step-1-what-is-the-question-asking",
+    "title": "23  Decision tree: which technique?",
+    "section": "",
+    "text": "if the question asks for…\nuse this approach\n\n\n\n\nCPI in some year or inflation between two years\nLaspeyres formula. Cost of base-year basket at year-t prices ÷ cost at base-year prices × 100.\n\n\nUnemployment rate\nu = U / (E + U). Note: discouraged workers are NOT in U.\n\n\nEquilibrium Y^* in a closed economy\nY^* = (\\overline{C_0} + \\overline{I}) / (1-c).\n\n\nEquilibrium Y^* in an open economy with government\nSum-of-multipliers form: Y^* = \\frac{1}{1-c}(\\overline{C_0} + \\overline{I} + \\overline{G} + \\overline{X} - \\overline{M}) - \\frac{c}{1-c}\\overline{T}.\n\n\nThe change in Y^* from a change in autonomous variable\nMultiplier \\times change. \\Delta Y^* = K_X \\cdot \\Delta\\overline{X}.\n\n\nWhat change closes a recessionary/inflationary gap\n\\Delta\\overline{X} = (Y^{FE} - Y^*) / K_X.\n\n\nThe MPC, given Y^* and autonomous values\nSolve 1 - c = (\\overline{C_0} + \\overline{I}) / Y^* for c.\n\n\n\\Delta M^S from an OMO purchase\n\\Delta M^S = K_S \\cdot \\Delta\\text{Reserves} where K_S = 1/rrr.\n\n\nRequired reserves vs. excess reserves\nRR = rrr \\cdot DD_p. ER = TR - RR. Bank can lend up to ER.\n\n\nBond present value\nPV = FV/(1+r)^T.\n\n\nImplied interest rate from a bond price\nr = (FV/PV)^{1/T} - 1.\n\n\nThe PPP exchange rate\nE_{\\$/\\pounds} = P_{US}/P_{UK}.\n\n\nDirection of currency move from relative inflation\nHigh inflation \\Rightarrow depreciate. PPP.\n\n\nDirection of currency move from relative interest rates\nHigh interest rate \\Rightarrow appreciate. Capital flows. (Opposite of inflation.)\n\n\nEffect of currency depreciation on Y\n\\uparrow EX, \\downarrow IM, \\uparrow (X-M), \\uparrow Y, \\uparrow P.\n\n\nEffect of monetary policy under fixed vs. floating ER\nFloating: both r channel and FX channel. Fixed: only r channel; FX channel dead.",
+    "crumbs": [
+      "Practice",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Decision tree: which technique?</span>"
+    ]
+  },
+  {
+    "objectID": "practice/decision-tree.html#step-2-mind-the-signs",
+    "href": "practice/decision-tree.html#step-2-mind-the-signs",
+    "title": "23  Decision tree: which technique?",
+    "section": "23.2 Step 2: Mind the signs",
+    "text": "23.2 Step 2: Mind the signs\nThese are the four most-failed questions on macro exams:\n\nTax multiplier is negative. K_T = -c/(1-c). Cutting T raises Y^*.\nBond price and r are inverse. Always.\nInflation and interest rate effects on FX go OPPOSITE directions. High inflation depreciates; high interest rate appreciates.\nCurrency appreciation lowers exports (home goods more expensive abroad).",
+    "crumbs": [
+      "Practice",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Decision tree: which technique?</span>"
+    ]
+  },
+  {
+    "objectID": "practice/decision-tree.html#step-3-beware-composition",
+    "href": "practice/decision-tree.html#step-3-beware-composition",
+    "title": "23  Decision tree: which technique?",
+    "section": "23.3 Step 3: Beware composition",
+    "text": "23.3 Step 3: Beware composition\nIf the question mentions multiple changes (\\overline{G} rising AND \\overline{T} rising), do them separately and sum:\n\\Delta Y^* = K_G \\Delta\\overline{G} + K_T \\Delta\\overline{T} + \\ldots\nThe balanced-budget multiplier K_{BB} = K_G + K_T = 1 is just this for the special case where \\Delta\\overline{G} = \\Delta\\overline{T}.",
+    "crumbs": [
+      "Practice",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Decision tree: which technique?</span>"
+    ]
+  },
+  {
+    "objectID": "practice/decision-tree.html#step-4-sanity-check",
+    "href": "practice/decision-tree.html#step-4-sanity-check",
+    "title": "23  Decision tree: which technique?",
+    "section": "23.4 Step 4: Sanity check",
+    "text": "23.4 Step 4: Sanity check\nAfter you compute, ask:\n\nIs the sign right? (Did Y^* go up when I expanded fiscal policy?)\nIs the magnitude in a reasonable range? (Multiplier at 0.75 MPC should give K \\approx 4, not 40.)\nDid I plug the numbers in the right place? (T goes inside the bracket multiplied by -c, not -1.)\n\nIf anything fails, redo. Most computational errors are sign errors or fraction-flip errors. The interactive tools on this site can verify numerical answers in 30 seconds — use them.",
+    "crumbs": [
+      "Practice",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Decision tree: which technique?</span>"
+    ]
+  },
+  {
+    "objectID": "practice/quick-quiz.html",
+    "href": "practice/quick-quiz.html",
+    "title": "24  Quick quiz: 12 conceptual questions",
+    "section": "",
+    "text": "24.1 Score yourself\nReveal each answer only after you commit to one. Be honest — guessing without thinking is worse than thinking and being wrong.\n11–12 right: you’re ready. 8–10: review the chapters for the questions you missed. 5–7: re-read everything, then come back. 0–4: you have time. Start with the chapter that covers your weakest area.",
+    "crumbs": [
+      "Practice",
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Quick quiz: 12 conceptual questions</span>"
+    ]
+  },
+  {
+    "objectID": "practice/quick-quiz.html#want-more",
+    "href": "practice/quick-quiz.html#want-more",
+    "title": "24  Quick quiz: 12 conceptual questions",
+    "section": "24.2 Want more?",
+    "text": "24.2 Want more?\nThe Full exam is 30 questions, timed-style, with detailed solutions.",
+    "crumbs": [
+      "Practice",
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Quick quiz: 12 conceptual questions</span>"
+    ]
+  },
+  {
+    "objectID": "practice/full-exam.html",
+    "href": "practice/full-exam.html",
+    "title": "25  Full exam — 30 questions, timed",
+    "section": "",
+    "text": "25.1 Section 1: CPI, unemployment (5 questions)\nAim for 60 minutes. Write down your answers before checking. Solutions are at the end.\n1. Basket = 8 units of food, 5 units of computers. 2019 prices: food $5, computers $10. 2021 prices: food $7, computers $12. Base year = 2019. Find CPI in 2021 and inflation 2019→2021.\n2. CPI in 2020 = 110, CPI in 2024 = 132. Find inflation 2020→2024.\n3. Labor force = 160 million. Employed = 152 million. Find unemployment rate.\n4. A factory closes; 1,000 workers lose their jobs. 800 start looking for new jobs. 200 give up and stop looking. By how much do (a) U, (b) LF, (c) u change?\n5. Frictional, structural, cyclical, natural rate — define each in one sentence.",
+    "crumbs": [
+      "Practice",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Full exam — 30 questions, timed</span>"
+    ]
+  },
+  {
+    "objectID": "practice/full-exam.html#section-2-equilibrium-income-6-questions",
+    "href": "practice/full-exam.html#section-2-equilibrium-income-6-questions",
+    "title": "25  Full exam — 30 questions, timed",
+    "section": "25.2 Section 2: Equilibrium income (6 questions)",
+    "text": "25.2 Section 2: Equilibrium income (6 questions)\n6. C = 50 + 0.80Y, \\overline{I} = 30. Find Y^* and the multiplier.\n7. Same setup. \\overline{I} rises to 50. Find new Y^*.\n8. \\overline{C_0} = 80, c = 0.75, \\overline{T} = 40, \\overline{I} = 50, \\overline{G} = 100, \\overline{X} = 60, \\overline{M} = 30. Find Y^*.\n9. Same as Q8. Imports rise to \\overline{M} = 60 (e.g., new free-trade deal). Find new Y^*.\n10. Y^* = 1{,}000. \\overline{C_0} = 200, \\overline{I} = 50. Find MPC.\n11. MPS = 0.40. Y^* falls by 80. The Treasury blames falling \\overline{I}. By how much did \\overline{I} fall?",
+    "crumbs": [
+      "Practice",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Full exam — 30 questions, timed</span>"
+    ]
+  },
+  {
+    "objectID": "practice/full-exam.html#section-3-fiscal-policy-4-questions",
+    "href": "practice/full-exam.html#section-3-fiscal-policy-4-questions",
+    "title": "25  Full exam — 30 questions, timed",
+    "section": "25.3 Section 3: Fiscal policy (4 questions)",
+    "text": "25.3 Section 3: Fiscal policy (4 questions)\n12. Y^* = 8{,}000, Y^{FE} = 8{,}500. MPC = 0.80. Close the gap with \\overline{G} alone.\n13. Same setup. Close it with \\overline{T} alone.\n14. Same setup. Close it with the balanced-budget combination.\n15. Same setup. The Treasury raises \\overline{G} by 50 and raises \\overline{T} by 100. By how much does Y^* change?",
+    "crumbs": [
+      "Practice",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Full exam — 30 questions, timed</span>"
+    ]
+  },
+  {
+    "objectID": "practice/full-exam.html#section-4-money-banking-4-questions",
+    "href": "practice/full-exam.html#section-4-money-banking-4-questions",
+    "title": "25  Full exam — 30 questions, timed",
+    "section": "25.4 Section 4: Money & banking (4 questions)",
+    "text": "25.4 Section 4: Money & banking (4 questions)\n16. rrr = 15\\%. Find K_S.\n17. Fed buys $200 in bonds. rrr = 10\\%. Find \\Delta M^S.\n18. Bank: TR = 50, DD_p = 200, rrr = 0.20. Compute RR, ER, and the maximum new loans this single bank can extend.\n19. Fed cuts rrr from 20% to 10%. Banking system has DD_p = \\$1{,}000 and was previously fully loaned up. By how much can M^S now expand?",
+    "crumbs": [
+      "Practice",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Full exam — 30 questions, timed</span>"
+    ]
+  },
+  {
+    "objectID": "practice/full-exam.html#section-5-money-market-and-bonds-4-questions",
+    "href": "practice/full-exam.html#section-5-money-market-and-bonds-4-questions",
+    "title": "25  Full exam — 30 questions, timed",
+    "section": "25.5 Section 5: Money market and bonds (4 questions)",
+    "text": "25.5 Section 5: Money market and bonds (4 questions)\n20. A 5-year bond has FV = \\$1{,}000 and r = 4\\%. Find PV.\n21. A 10-year bond has FV = \\$1{,}000 and trades at $600. Find implied r.\n22. r &gt; r^* (excess supply of money). Bond prices and r both move toward equilibrium. In which direction does each move?\n23. Fed buys bonds. Trace the chain: M^S, bond prices, r^*, I^d, Y^*.",
+    "crumbs": [
+      "Practice",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Full exam — 30 questions, timed</span>"
+    ]
+  },
+  {
+    "objectID": "practice/full-exam.html#section-6-open-economy-4-questions",
+    "href": "practice/full-exam.html#section-6-open-economy-4-questions",
+    "title": "25  Full exam — 30 questions, timed",
+    "section": "25.6 Section 6: Open economy (4 questions)",
+    "text": "25.6 Section 6: Open economy (4 questions)\n24. US basket costs $400. UK basket costs £200. Find PPP E_{\\$/£}.\n25. US inflation = 5%/year, UK = 2%. PPP rate today is $2.00/£. Project the rate in 3 years.\n26. US interest rate falls relative to UK. Direction of \\$ vs. £?\n27. US dollar depreciates 10%. Trace effect on EX, IM, (X-M), Y^*, P.",
+    "crumbs": [
+      "Practice",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Full exam — 30 questions, timed</span>"
+    ]
+  },
+  {
+    "objectID": "practice/full-exam.html#section-7-synthesis-3-questions",
+    "href": "practice/full-exam.html#section-7-synthesis-3-questions",
+    "title": "25  Full exam — 30 questions, timed",
+    "section": "25.7 Section 7: Synthesis (3 questions)",
+    "text": "25.7 Section 7: Synthesis (3 questions)\n28. Fed conducts an OMO purchase under FLOATING exchange rates. Trace through both channels (interest-rate and FX). What’s the net effect on Y?\n29. Same OMO under FIXED exchange rates. Why is the net effect on Y much smaller?\n30. What is the trilemma and what does it imply about a country that wants to join a currency union?",
+    "crumbs": [
+      "Practice",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Full exam — 30 questions, timed</span>"
+    ]
+  },
+  {
+    "objectID": "practice/full-exam.html#solutions",
+    "href": "practice/full-exam.html#solutions",
+    "title": "25  Full exam — 30 questions, timed",
+    "section": "25.8 Solutions",
+    "text": "25.8 Solutions\n1. Cost of base basket at 2019 prices: 8(5) + 5(10) = 90. CPI(2019) = 100. Cost at 2021 prices: 8(7) + 5(12) = 116. CPI(2021) = 116/90 \\cdot 100 = 128.89. Inflation = $(128.89 - 100)/100 = $ 28.89%.\n2. $(132-110)/110 = $ 20%.\n3. u = U/(E+U). U = 160-152 = 8. $u = 8/160 = $ 5%.\n4. (a) U rises by 800 (those still looking). (b) LF falls by 200 (the discouraged ones leave). (c) u rises (numerator up by 800, denominator down by 200).\n5. Frictional: short-run job/skill matching. Structural: industry-level decline; permanent skill mismatch. Cyclical: recession-driven, disappears in expansion. Natural rate: frictional + structural; ~4%.\n6. K = 1/(1-0.80) = 5. $Y^* = (50+30)/0.20 = $ 400. Multiplier = 5.\n7. \\Delta\\overline{I} = 20. \\Delta Y^* = 5 \\cdot 20 = 100. New $Y^* = $ 500.\n8. K_G = 1/0.25 = 4. K_T = -0.75/0.25 = -3. $Y^* = 4 (80 + 50 + 100 + 60 - 30) - 3 = 4 - 120 = 1040 - 120 = $ 920.\n9. \\Delta\\overline{M} = +30. K_{IM} = -4. \\Delta Y^* = -4 \\cdot 30 = -120. New $Y^* = $ 800.\n10. 1-c = (200+50)/1000 = 0.25. So $c = $ 0.75.\n11. K_I = 1/0.40 = 2.5. $ = -80/2.5 = $ −32.\n12. Gap = 500. K_G = 5. $ = 500/5 = $ 100.\n13. K_T = -4. $ = 500/(-4) = $ −125 (cut taxes by 125).\n14. K_{BB} = 1. $ = = $ 500.\n15. $Y^* = 50 + 100 (-4) = 250 - 400 = $ −150. The economy contracts because the tax hike outweighs the spending boost.\n16. $K_S = 1/0.15 = $ 6.67.\n17. K_S = 1/0.10 = 10. $M^S = 10 = $ $2,000.\n18. RR = 0.20 \\cdot 200 = 40. $ER = 50 - 40 = $ 10. The bank can extend up to $10 in new loans.\n19. Old: RR = 0.20 \\cdot 1000 = 200, ER = 0. New: RR = 0.10 \\cdot 1000 = 100, so freed ER = 100. New K_S = 10. Expansion = $10 = $ $1,000.\n20. $PV = 1000/1.04^5 = 1000/1.2167 = $ $821.93.\n21. $r = (1000/600)^{1/10} - 1 = 1.6667^{0.1} - 1 - 1 = $ 5.24%.\n22. r falls (toward r^*). Bond prices rise.\n23. OMO purchase: \\Delta R &gt; 0 \\Rightarrow \\uparrow M^S \\Rightarrow bond prices rise \\Rightarrow r^* falls \\Rightarrow I^d rises \\Rightarrow Y^* rises.\n24. $E_{$/£} = 400/200 = $ $2.00/£.\n25. US prices in 3 years: 400 \\cdot 1.05^3 = 463.05. UK: 200 \\cdot 1.02^3 = 212.24. PPP: $463.05/212.24 = $ $2.18/£ ($ depreciated).\n26. Lower US rate relative to UK \\Rightarrow capital flows from US to UK \\Rightarrow supply of \\$ rises, demand for £ rises \\Rightarrow $ depreciates, £ appreciates.\n27. \\uparrow EX (US goods cheaper abroad). \\downarrow IM (foreign goods more expensive in US). (X-M) rises. AE^d shifts up. Y^* rises. P also rises (AD shifts right).\n28. Channel 1: \\uparrow M^S \\Rightarrow \\downarrow r \\Rightarrow \\uparrow I^d \\Rightarrow \\uparrow Y. Channel 2: \\downarrow r \\Rightarrow capital outflow \\Rightarrow \\$ depreciates \\Rightarrow \\uparrow (X-M) \\Rightarrow \\uparrow Y. Both push Y up. Monetary policy is potent.\n29. Channel 2 is dead — the central bank must intervene to keep ER stable, contracting M^S back. Only channel 1 operates, partially. Net effect on Y is muted.\n30. Trilemma: a country can have at most two of {free capital flow, fixed ER, independent monetary policy}. Joining a currency union is choosing free capital + fixed ER (effectively, sharing a currency = ultimate fix). The country gives up independent monetary policy — the central bank for the union sets policy for the whole bloc.",
+    "crumbs": [
+      "Practice",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Full exam — 30 questions, timed</span>"
+    ]
+  },
+  {
+    "objectID": "practice/full-exam.html#score-yourself",
+    "href": "practice/full-exam.html#score-yourself",
+    "title": "25  Full exam — 30 questions, timed",
+    "section": "25.9 Score yourself",
+    "text": "25.9 Score yourself\n\n\n\nout of 30\nwhat to do\n\n\n\n\n27–30\nDone. Sleep.\n\n\n22–26\nRe-do the wrong ones from the chapter, not from memory.\n\n\n16–21\nRead the chapters that cover your weakest section.\n\n\n≤ 15\nNeed a serious study session. Start with the formula card and the decision tree.",
+    "crumbs": [
+      "Practice",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Full exam — 30 questions, timed</span>"
+    ]
+  },
+  {
+    "objectID": "practice/question-bank.html",
+    "href": "practice/question-bank.html",
+    "title": "26  Question bank",
+    "section": "",
+    "text": "26.1 1. CPI / Inflation Calculation\nNotation: bars over autonomous variables (\\overline{C_0}, \\overline{T}, \\overline{I}, \\overline{G}, \\overline{X}, \\overline{M}). MPC = c. K_X = \\Delta Y^* / \\Delta\\overline{X}. rrr is the required reserve ratio. Money multiplier K_S = 1/rrr. Exchange rate E_{\\$/\\pounds} is dollars per pound.",
+    "crumbs": [
+      "Practice",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Question bank</span>"
+    ]
+  },
+  {
+    "objectID": "practice/question-bank.html#cpi-inflation-calculation",
+    "href": "practice/question-bank.html#cpi-inflation-calculation",
+    "title": "26  Question bank",
+    "section": "",
+    "text": "26.1.1 Q1.1 (Easy)\nA two-good basket has 8 units of bread and 5 units of coffee. Base-year (2020) prices: bread $3, coffee $5. In 2023 prices are bread $4, coffee $6. Compute CPI for 2023.\nSolution. Cost of base basket at 2020 prices = 8(3) + 5(5) = 49. Cost at 2023 prices = 8(4) + 5(6) = 62. \\text{CPI}_{2023} = \\frac{62}{49}\\cdot 100 \\approx 126.5.\nKey insight. Quantities are frozen at base-year levels — only re-price.\n\n\n26.1.2 Q1.2 (Easy)\nGiven CPI_{2022} = 110 and CPI_{2023} = 121, compute the inflation rate from 2022 to 2023.\nSolution. \\pi = \\frac{121 - 110}{110}\\cdot 100 = 10.0\\%.\nKey insight. The earlier CPI is always the denominator.\n\n\n26.1.3 Q1.3 (Medium)\nBasket: 20 units of A, 10 units of B. Prices (P_A, P_B): 2021 ($1, $4), 2022 ($1.20, $4.50), 2023 ($1.50, $5). Base = 2021. Compute CPI for each year and the 2022→2023 inflation rate.\nSolution. Base cost = 20(1) + 10(4) = 60. CPI_{2021} = 100. 2022 cost = 20(1.20) + 10(4.50) = 69. CPI_{2022} = 69/60 \\cdot 100 = 115. 2023 cost = 20(1.50) + 10(5) = 80. CPI_{2023} = 80/60 \\cdot 100 \\approx 133.33. \\pi_{22\\to 23} = \\frac{133.33 - 115}{115}\\cdot 100 \\approx 15.94\\%.\nKey insight. Compute the level (CPI), then the percentage change between adjacent levels.\n\n\n26.1.4 Q1.4 (Medium)\nThe base year is 2015. CPI_{2018} = 108, CPI_{2022} = 135. Compute the cumulative inflation from 2018 to 2022 and the average annual rate.\nSolution. Cumulative: (135 - 108)/108 = 25\\%. Annualized: (1.25)^{1/4} - 1 \\approx 5.74\\%.\nKey insight. Cumulative percentage change is not the sum of annual rates — compound it.\n\n\n26.1.5 Q1.5 (Medium)\nBase 2020 (CPI = 100). CPI_{2021} = 105, CPI_{2023} = 120. Find inflation from 2021 to 2023. Why isn’t it 15%?\nSolution. \\pi_{21\\to 23} = \\frac{120 - 105}{105}\\cdot 100 \\approx 14.29\\%. Subtracting CPI levels (120 − 105 = 15) gives a percentage-point change in the index, not an inflation rate.\nKey insight. Inflation = percentage change, with the earlier period as the denominator. The base year fixes the level, not the rate.\n\n\n26.1.6 Q1.6 (Hard)\nA consumer’s grocery basket prices rise from $200 to $220, but they substitute cheaper items so their actual outlay only rises to $210. CPI uses fixed quantities. By what percent does CPI overstate the consumer’s true cost increase?\nSolution. CPI inflation = (220 - 200)/200 = 10\\%. True cost-of-living change = (210 - 200)/200 = 5\\%. CPI overstates by 10 - 5 = 5 percentage points (a factor of 2).\nKey insight. CPI is Laspeyres — fixed base-year quantities — so it ignores substitution and overstates inflation.\n\n\n26.1.7 Q1.7 (Hard)\nThe implicit GDP price deflator (IGDPDI) uses Paasche weights (current-year quantities, base-year prices in the denominator). Explain why IGDPDI typically underestimates inflation while CPI overestimates it.\nSolution. Paasche weights are heavy on goods consumers currently buy a lot of — those are the goods whose prices have risen least (consumers substituted toward them). Weighting low-inflation goods more heavily understates inflation. CPI does the reverse, weighting yesterday’s basket which was tilted toward goods that have since become expensive.\nKey insight. Index weights bias the result. Laspeyres (CPI) overstates; Paasche (IGDPDI) understates. The truth is in between (Fisher).\n\n\n26.1.8 Q1.8 (Hard)\nNominal GDP rose 7% from 2022 to 2023. The GDP deflator rose 4%. What was real GDP growth?\nSolution. 1 + g_{\\text{real}} = \\frac{1 + g_{\\text{nom}}}{1 + \\pi} = \\frac{1.07}{1.04} \\approx 1.0288. Real growth \\approx 2.88\\%. (Approximation 7 - 4 = 3\\% is close but not exact.)\nKey insight. Real growth is the ratio, not the difference. Approximation is okay for small rates.\n\n\n26.1.9 Q1.9 (Twist)\nThe basket above has 8 units of bread and 5 units of coffee. Bread doubles from $3 to $6 between 2020 and 2023. Coffee falls from $5 to $2. Compute CPI_{2023} (base 2020). Is inflation positive?\nSolution. Base = 8(3) + 5(5) = 49. 2023 = 8(6) + 5(2) = 58. CPI = 58/49 \\cdot 100 \\approx 118.4. Inflation \\approx 18.4\\% — yes positive, even though one good’s price fell sharply.\nKey insight. CPI is a weighted average. A big rise in one good can outweigh a fall in another depending on base-year quantity weights.\n\n\n26.1.10 Q1.10 (Twist)\nThe Bureau says 2024 CPI = 130 (base = 2019, where CPI = 100). A 2024 worker earns $60,000 nominal. What is the real wage in 2019 dollars?\nSolution. Real wage = 60{,}000 / 1.30 \\approx \\$46{,}154.\nKey insight. To deflate, divide by (CPI / 100). Levels of CPI tell you the price-level ratio between current and base year.\n\n\n26.1.11 Q1.11 (Twist)\nA union contract pegs nominal wages to lagged CPI: W_t = W_{t-1} \\cdot (\\text{CPI}_{t-1} / \\text{CPI}_{t-2}). If actual inflation accelerates from 3% to 8% between t-1 and t, what happens to the real wage at time t?\nSolution. Nominal wage rises 3% (lagged inflation). Prices rise 8%. Real wage falls by approximately 3 - 8 = -5\\%.\nKey insight. Lagged indexation hurts workers when inflation accelerates and helps when inflation decelerates.",
+    "crumbs": [
+      "Practice",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Question bank</span>"
+    ]
+  },
+  {
+    "objectID": "practice/question-bank.html#unemployment-definitions-and-computation",
+    "href": "practice/question-bank.html#unemployment-definitions-and-computation",
+    "title": "26  Question bank",
+    "section": "26.2 2. Unemployment Definitions and Computation",
+    "text": "26.2 2. Unemployment Definitions and Computation\n\n26.2.1 Q2.1 (Easy)\nA country has 120 million employed and 8 million unemployed. Compute the unemployment rate.\nSolution. u = \\frac{U}{E + U} = \\frac{8}{120 + 8} = \\frac{8}{128} = 6.25\\%.\nKey insight. u uses the labor force (E + U) in the denominator, not total population.\n\n\n26.2.2 Q2.2 (Easy)\nPopulation = 200 million; labor force = 150 million; employed = 142.5 million. Compute the participation rate and the unemployment rate.\nSolution. Participation = LF/\\text{Pop} = 150/200 = 75\\%. U = 150 - 142.5 = 7.5. u = 7.5/150 = 5\\%.\nKey insight. Participation has population in the denominator; unemployment has the labor force.\n\n\n26.2.3 Q2.3 (Easy)\nDistinguish frictional, structural, and cyclical unemployment with one example each.\nSolution. Frictional: a recent college graduate searching for a first job. Structural: a coal miner whose industry is shrinking permanently. Cyclical: a construction worker laid off during a recession.\nKey insight. Natural rate $= $ frictional + structural. Cyclical disappears in expansions.\n\n\n26.2.4 Q2.4 (Medium)\nA discouraged worker stops looking for work and exits the labor force. Holding employment fixed, does the measured unemployment rate rise, fall, or stay the same?\nSolution. U falls by 1, LF falls by 1, E unchanged. New u = (U-1)/(E + U - 1), smaller than the old u = U/(E+U). The rate falls even though the labor market hasn’t actually improved.\nKey insight. The unemployment rate has a known bias: it can fall just because people give up.\n\n\n26.2.5 Q2.5 (Medium)\nE = 95, U = 5, not-in-labor-force = 50. 5 of the not-in-labor-force decide to start looking for work and remain unemployed. What are the new u and participation rate?\nSolution. New U = 10, LF = 105, Pop = 150. u = 10/105 \\approx 9.5\\%. Participation = 105/150 = 70\\% (was 100/150 \\approx 66.7\\%).\nKey insight. Re-entrants raise both the numerator of u and the labor force; effect on u depends on which dominates.\n\n\n26.2.6 Q2.6 (Medium)\nNatural rate = 4\\%. Actual u = 7\\%. Decompose if frictional is 2% and structural is 2%.\nSolution. Cyclical $= u - $ natural = 7 - 4 = 3\\%.\nKey insight. Cyclical unemployment is the recession-driven gap above the natural rate.\n\n\n26.2.7 Q2.7 (Hard)\nDefine the U-6 measure (broad unemployment) conceptually and explain why U-6 &gt; U-3 always.\nSolution. U-3 (the headline rate) counts only people actively searching. U-6 adds discouraged workers, marginally attached, and part-time-for-economic-reasons workers. Each addition raises both numerator and an inclusive denominator, but the numerator grows by more, so U-6 &gt; U-3.\nKey insight. Headline u undercounts labor-market slack. U-6 is closer to a “true” idle-capacity measure.\n\n\n26.2.8 Q2.8 (Hard)\nA factory closes, displacing 1,000 workers. 600 retrain and find new jobs in 6 months. 300 are still searching after 12 months. 100 leave the labor force. After 12 months, what is the contribution to (a) frictional, (b) structural, (c) measured u?\nSolution. (a) Frictional ≈ 0 (none searching short-term). (b) Structural ≈ 300 (long-term displaced). (c) Measured u contribution: 300 unemployed; the 100 who left labor force don’t appear in u.\nKey insight. Long unemployment durations get classified as structural; exits to non-participation don’t move the headline rate.\n\n\n26.2.9 Q2.9 (Twist)\nCountry A: E = 90, U = 10, not-in-LF = 100. Country B: E = 90, U = 10, not-in-LF = 50. Both have u = 10\\%. Which economy is healthier?\nSolution. Same unemployment rate, but Country A has participation 100/200 = 50\\% vs. Country B’s 100/150 \\approx 66.7\\%. Country B mobilizes more of its working-age population. Country A’s low u may reflect mass discouragement, not strong labor demand.\nKey insight. u alone can mislead; pair it with the participation rate.",
+    "crumbs": [
+      "Practice",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Question bank</span>"
+    ]
+  },
+  {
+    "objectID": "practice/question-bank.html#equilibrium-income-y-closed-economy",
+    "href": "practice/question-bank.html#equilibrium-income-y-closed-economy",
+    "title": "26  Question bank",
+    "section": "26.3 3. Equilibrium Income Y^* — Closed Economy",
+    "text": "26.3 3. Equilibrium Income Y^* — Closed Economy\n\n26.3.1 Q3.1 (Easy)\nC = 60 + 0.75 Y, \\overline{I} = 40. Find Y^*.\nSolution. Y^* = \\frac{\\overline{C_0} + \\overline{I}}{1 - c} = \\frac{60 + 40}{0.25} = 400.\nKey insight. Closed-economy formula: autonomous spending divided by (1-c).\n\n\n26.3.2 Q3.2 (Easy)\n\\overline{C_0} = 50, c = 0.8, \\overline{I} = 30. Find Y^* and equilibrium consumption C^*.\nSolution. Y^* = (50 + 30)/0.2 = 400. C^* = 50 + 0.8(400) = 370. (Check: S = 400 - 370 = 30 = \\overline{I}. ✓)\nKey insight. At equilibrium, S = I^d in the closed-economy frugal model.\n\n\n26.3.3 Q3.3 (Easy)\nY^* = 800, \\overline{I} = 80, c = 0.75. Recover \\overline{C_0}.\nSolution. 800 = (\\overline{C_0} + 80)/0.25 \\Rightarrow \\overline{C_0} + 80 = 200 \\Rightarrow \\overline{C_0} = 120.\nKey insight. Any one of the four (autonomous, MPC, Y^*) can be backed out from the other three.\n\n\n26.3.4 Q3.4 (Medium)\nSaving function S(Y) = -40 + 0.2 Y. \\overline{I} = 60. Find Y^* via the S = I method.\nSolution. -40 + 0.2 Y^* = 60 \\Rightarrow Y^* = 100/0.2 = 500.\nKey insight. S(Y) = -\\overline{C_0} + (1-c)Y. Setting S = \\overline{I} is an equivalent route to Y^*.\n\n\n26.3.5 Q3.5 (Medium)\nAt Y = 600, AE^d = 580. Are firms accumulating or depleting inventory? Which way will Y move?\nSolution. Y &gt; AE^d, so production exceeds desired purchases → unplanned inventory rises → firms cut output → Y falls toward Y^*.\nKey insight. Y &gt; AE^d ⇒ inventory accumulation ⇒ output contracts. Reverse for Y &lt; AE^d.\n\n\n26.3.6 Q3.6 (Medium)\n\\overline{C_0} = 100, c = 0.75, \\overline{I} = 50. Households become more frugal: \\overline{C_0} falls to 80. Compute the change in Y^* and in equilibrium saving.\nSolution. Old Y^* = 150/0.25 = 600. New Y^* = 130/0.25 = 520. \\Delta Y^* = -80. Equilibrium saving was 50 before and is still 50 = \\overline{I} after.\nKey insight. Paradox of thrift: more desire to save lowers Y^* but leaves total saving unchanged because S = I pins it.\n\n\n26.3.7 Q3.7 (Medium)\nTwo economies have the same autonomous spending but c_A = 0.6 and c_B = 0.9. Which has the larger Y^*? By how much?\nSolution. K_A = 1/0.4 = 2.5, K_B = 1/0.1 = 10. For the same autonomous spending, Y_B^* / Y_A^* = 4.\nKey insight. The multiplier rises sharply as c approaches 1. Small changes in MPC produce big changes in equilibrium output.\n\n\n26.3.8 Q3.8 (Hard)\nC = 80 + 0.8(Y - 0.25 Y) (so consumption depends on after-tax income with a proportional tax rate t = 0.25). \\overline{I} = 100. Find Y^*.\nSolution. C = 80 + 0.8(0.75 Y) = 80 + 0.6 Y. Effective c = 0.6. Y^* = (80 + 100)/0.4 = 450.\nKey insight. Proportional taxes lower the effective MPC out of Y from c to c(1-t), shrinking the multiplier.\n\n\n26.3.9 Q3.9 (Hard)\nInvestment depends on Y: I^d = 20 + 0.1 Y. C = 50 + 0.75 Y. Find Y^*.\nSolution. Y = 50 + 0.75 Y + 20 + 0.1 Y = 70 + 0.85 Y \\Rightarrow 0.15 Y = 70 \\Rightarrow Y^* = 466.67.\nKey insight. Endogenous investment raises the effective slope of AE^d and the implied multiplier.\n\n\n26.3.10 Q3.10 (Twist)\nSuppose \\overline{I} rises by 25 and simultaneously households lose confidence so \\overline{C_0} falls by 25. Predict \\Delta Y^* at c = 0.75.\nSolution. \\Delta Y^* = K \\cdot (\\Delta\\overline{I} + \\Delta\\overline{C_0}) = 4 \\cdot (25 - 25) = 0.\nKey insight. Same multiplier ⇒ offsetting shocks cancel exactly.",
+    "crumbs": [
+      "Practice",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Question bank</span>"
+    ]
+  },
+  {
+    "objectID": "practice/question-bank.html#equilibrium-income-y-open-economy-with-government",
+    "href": "practice/question-bank.html#equilibrium-income-y-open-economy-with-government",
+    "title": "26  Question bank",
+    "section": "26.4 4. Equilibrium Income Y^* — Open Economy with Government",
+    "text": "26.4 4. Equilibrium Income Y^* — Open Economy with Government\n\n26.4.1 Q4.1 (Easy)\n\\overline{C_0} = 100, c = 0.75, \\overline{T} = 40, \\overline{I} = 80, \\overline{G} = 100, \\overline{X} = 60, \\overline{M} = 40. Find Y^*.\nSolution. Y^* = \\tfrac{1}{0.25}\\big[100 - 0.75(40) + 80 + 100 + 60 - 40\\big] = 4 \\cdot 270 = 1{,}080.\nKey insight. \\overline{T} enters the bracket multiplied by -c, not -1.\n\n\n26.4.2 Q4.2 (Easy)\n\\overline{C_0} = 120, c = 0.8, \\overline{T} = 50, \\overline{I} = 100, \\overline{G} = 80, \\overline{X} = 0, \\overline{M} = 0. Find Y^*.\nSolution. Bracket = 120 - 0.8(50) + 100 + 80 = 260. Y^* = 5 \\cdot 260 = 1{,}300.\nKey insight. With no trade, the only difference from the closed-economy formula is the -c\\overline{T} + \\overline{G} pair.\n\n\n26.4.3 Q4.3 (Medium)\nSame as Q4.1, but exports rise by 30. Find new Y^*.\nSolution. \\Delta Y^* = K_X \\cdot 30 = 4 \\cdot 30 = 120. New Y^* = 1{,}200.\nKey insight. Exports get the spending multiplier 1/(1-c).\n\n\n26.4.4 Q4.4 (Medium)\nY^* = 2{,}000, c = 0.6. By how much must \\overline{G} change to raise Y^* to 2,200?\nSolution. K_G = 1/0.4 = 2.5. \\Delta\\overline{G} = 200/2.5 = 80.\nKey insight. \\Delta\\overline{G} = \\Delta Y^* / K_G.\n\n\n26.4.5 Q4.5 (Medium)\nc = 0.75. \\overline{G} rises by 50, \\overline{T} rises by 30. Find \\Delta Y^*.\nSolution. \\Delta Y^* = K_G(50) + K_T(30) = 4(50) + (-3)(30) = 200 - 90 = 110.\nKey insight. Add multiplier-weighted contributions for simultaneous changes.\n\n\n26.4.6 Q4.6 (Medium)\nc = 0.8. Imports rise autonomously by 25 and exports rise autonomously by 40. Find \\Delta Y^*.\nSolution. K = 5, K_{IM} = -5. \\Delta Y^* = 5(40) + (-5)(25) = 200 - 125 = 75.\nKey insight. Net export shocks get the spending multiplier with the appropriate sign.\n\n\n26.4.7 Q4.7 (Hard)\nY^* = 1{,}200, c = 0.75, Y^{FE} = 1{,}500. Imports are expected to rise by 50 (autonomous shift). After that, what \\Delta\\overline{G} closes the recessionary gap?\nSolution. Without action, imports drag Y^* down by K_{IM} \\cdot 50 = -200, to 1{,}000. Gap is then 500. \\Delta\\overline{G} = 500/4 = 125.\nKey insight. Always project the equilibrium with the new shocks before computing the policy response.\n\n\n26.4.8 Q4.8 (Hard)\n\\overline{C_0} = 80, c = 0.75, \\overline{T} = 60, \\overline{I} = 100, \\overline{G} = 120, \\overline{X} = 60, \\overline{M} = 80. Compute Y^* and the trade balance at equilibrium.\nSolution. Bracket = 80 - 45 + 100 + 120 + 60 - 80 = 235. Y^* = 4 \\cdot 235 = 940. Trade balance = \\overline{X} - \\overline{M} = -20 (deficit).\nKey insight. Trade balance in this autonomous-import model is \\overline{X} - \\overline{M} — independent of Y^* unless imports are made Y-dependent.\n\n\n26.4.9 Q4.9 (Hard)\nMake imports depend on Y: \\overline{M} = 20 + 0.1 Y. Other inputs as in Q4.8. Find Y^*.\nSolution. Y = \\overline{C_0} + c(Y - \\overline{T}) + \\overline{I} + \\overline{G} + \\overline{X} - 20 - 0.1Y. Y(1 - 0.75 + 0.1) = 80 - 45 + 100 + 120 + 60 - 20 = 295. 0.35 Y = 295 \\Rightarrow Y^* = 842.86.\nKey insight. Endogenous imports lower the effective multiplier from 1/(1-c) to 1/(1 - c + m), where m is the marginal propensity to import.\n\n\n26.4.10 Q4.10 (Twist)\nc = 0.75. The government runs a “balanced trade” reform: \\overline{X} rises by 50, \\overline{M} rises by 50 (because exporters import inputs). Net \\Delta Y^*?\nSolution. \\Delta Y^* = K_X(50) + K_{IM}(50) = 4(50) - 4(50) = 0.\nKey insight. Equal-magnitude export and import shocks cancel — both get multiplier 4 with opposite signs.\n\n\n26.4.11 Q4.11 (Twist)\nc = 0.6. The government raises \\overline{G} by 100 financed by raising \\overline{T} by exactly 100 (balanced budget). What is \\Delta Y^*?\nSolution. K_G = 2.5, K_T = -1.5. \\Delta Y^* = 2.5(100) + (-1.5)(100) = 100. Equals K_{BB} \\cdot 100 = 1 \\cdot 100.\nKey insight. K_{BB} = 1 for any c in this model.",
+    "crumbs": [
+      "Practice",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Question bank</span>"
+    ]
+  },
+  {
+    "objectID": "practice/question-bank.html#multipliers-identification-and-sizing",
+    "href": "practice/question-bank.html#multipliers-identification-and-sizing",
+    "title": "26  Question bank",
+    "section": "26.5 5. Multipliers — Identification and Sizing",
+    "text": "26.5 5. Multipliers — Identification and Sizing\n\n26.5.1 Q5.1 (Easy)\nc = 0.8. Compute K_G, K_T, K_{BB}, K_{IM}.\nSolution. K_G = 5, K_T = -4, K_{BB} = 1, K_{IM} = -5.\nKey insight. Memorize the family: \\frac{1}{1-c} for spending, -\\frac{c}{1-c} for taxes, sum = 1.\n\n\n26.5.2 Q5.2 (Easy)\n\\Delta Y^* = +60 when \\overline{I} rises by 15. Recover c.\nSolution. K_I = 60/15 = 4 = 1/(1-c) \\Rightarrow c = 0.75.\nKey insight. Multiplier \\Rightarrow MPC: c = 1 - 1/K.\n\n\n26.5.3 Q5.3 (Easy)\n\\Delta Y^* = -90 when \\overline{T} rises by 30. Recover c.\nSolution. K_T = -90/30 = -3 = -c/(1-c) \\Rightarrow 3(1-c) = c \\Rightarrow c = 0.75.\nKey insight. |K_T| = c \\cdot K_G. A 1-pp change in c moves K_T more than 1-pp.\n\n\n26.5.4 Q5.4 (Medium)\nMPS = 0.20, so K = 5, K_T = -4. Y^* falls by 100. Which is consistent? (a) \\Delta\\overline{C_0} = +20, (b) \\Delta\\overline{I} = -20, (c) \\Delta\\overline{T} = +25, (d) \\Delta\\overline{G} = -25.\nSolution. (a) 5 \\cdot 20 = +100. ✗ wrong sign. (b) 5(-20) = -100. ✓ (c) -4(25) = -100. ✓ (d) 5(-25) = -125. ✗ wrong magnitude.\nKey insight. Two distinct shocks (b) and (c) produce the same \\Delta Y^* — wording matters.\n\n\n26.5.5 Q5.5 (Medium)\nc = 0.75. Both \\overline{G} and \\overline{T} rise by 80. Find \\Delta Y^*.\nSolution. K_{BB} \\cdot 80 = 1 \\cdot 80 = 80.\nKey insight. Balanced-budget multiplier = 1, period.\n\n\n26.5.6 Q5.6 (Medium)\nc = 0.6. The Fed cuts taxes by 100. Politicians simultaneously cut spending by 60 to “show fiscal discipline.” Find \\Delta Y^*.\nSolution. K_T = -1.5, K_G = 2.5. \\Delta Y^* = (-1.5)(-100) + 2.5(-60) = 150 - 150 = 0.\nKey insight. Mixed signals can perfectly offset; always sum the multiplier-weighted contributions.\n\n\n26.5.7 Q5.7 (Hard)\nA textbook says “the multiplier is 4.” Real-world studies estimate U.S. fiscal multipliers around 1.4. Name three leakages textbook models ignore that explain the gap.\nSolution. (1) Income-conditional taxes (proportional tax rate shrinks effective c). (2) Imports (marginal propensity to import is a leakage). (3) Monetary offset / crowding-out — rising Y raises r, dampening \\overline{I}.\nKey insight. Real-world multipliers are smaller because real economies leak in many channels.\n\n\n26.5.8 Q5.8 (Hard)\nc = 0.75. \\Delta Y^* = +50 following \\Delta\\overline{G} = +100 and an unknown \\Delta\\overline{T}. Find \\Delta\\overline{T}.\nSolution. 50 = 4(100) + (-3)\\Delta\\overline{T} \\Rightarrow \\Delta\\overline{T} = 350/3 \\approx 116.67.\nKey insight. Solve for the unknown after writing \\Delta Y^* as the sum of multiplier-weighted shocks.\n\n\n26.5.9 Q5.9 (Hard)\nEffective MPC out of Y is c_{\\text{eff}} = c(1 - t) when there’s a proportional tax t. With c = 0.8, t = 0.25, what is the spending multiplier?\nSolution. c_{\\text{eff}} = 0.6. K_G = 1/(1 - 0.6) = 2.5.\nKey insight. Proportional taxes shrink the multiplier. The textbook lump-sum-tax result is an upper bound.\n\n\n26.5.10 Q5.10 (Twist)\nc = 0.75. The Fed says: “We will cut r by enough to offset any expansionary fiscal action.” If the government raises \\overline{G} by 100, what is \\Delta Y^* given the Fed’s reaction function?\nSolution. Zero, by construction. Fed offsets the fiscal expansion via tighter money / higher r — full crowding out.\nKey insight. When monetary policy is reactive, fiscal multipliers can shrink toward zero.\n\n\n26.5.11 Q5.11 (Twist)\nA country has K_G = 2.5 in normal times but K_G \\approx 1.5 at the zero lower bound (no monetary offset, but other leakages still operate). Why might K_G be larger at the ZLB?\nSolution. At the ZLB, the central bank cannot raise rates in response to fiscal stimulus, so the crowding-out channel is dead. Only tax and import leakages operate. Multiplier rises relative to a regime with active monetary offset.\nKey insight. State-dependent multipliers: ZLB raises fiscal potency precisely because monetary offset disappears.",
+    "crumbs": [
+      "Practice",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Question bank</span>"
+    ]
+  },
+  {
+    "objectID": "practice/question-bank.html#fiscal-policy-gap-closing",
+    "href": "practice/question-bank.html#fiscal-policy-gap-closing",
+    "title": "26  Question bank",
+    "section": "26.6 6. Fiscal Policy — Gap-Closing",
+    "text": "26.6 6. Fiscal Policy — Gap-Closing\n\n26.6.1 Q6.1 (Easy)\nY^* = 800, Y^{FE} = 900, c = 0.75. Close the gap with G alone.\nSolution. Gap = 100. \\Delta\\overline{G} = 100/4 = 25.\nKey insight. \\Delta\\overline{G} = \\text{gap}/K_G.\n\n\n26.6.2 Q6.2 (Easy)\nSame as Q6.1, but use a tax cut.\nSolution. \\Delta\\overline{T} = 100 / (-3) \\approx -33.33.\nKey insight. Tax instrument is weaker per dollar than spending — must move it more.\n\n\n26.6.3 Q6.3 (Easy)\nY^* = 1{,}200, Y^{FE} = 1{,}000, c = 0.8. The economy has an inflationary gap. Close it with \\overline{G}.\nSolution. Gap = -200 (need to contract). \\Delta\\overline{G} = -200/5 = -40.\nKey insight. Inflationary gap means Y^* &gt; Y^{FE}; sign of \\Delta\\overline{G} flips.\n\n\n26.6.4 Q6.4 (Medium)\nc = 0.75, recessionary gap = 150. Close it with a balanced-budget package.\nSolution. K_{BB} = 1. \\Delta\\overline{G} = \\Delta\\overline{T} = 150.\nKey insight. Balanced budget gap-closing requires $= $ gap (since multiplier is 1).\n\n\n26.6.5 Q6.5 (Medium)\nc = 0.6, recessionary gap = 240. The government uses 60% of the gap-closing via G and 40% via tax cuts. Find required \\Delta\\overline{G} and \\Delta\\overline{T}.\nSolution. Need 144 of \\Delta Y^* from G, 96 from T. K_G = 2.5, K_T = -1.5. \\Delta\\overline{G} = 144/2.5 = 57.6. \\Delta\\overline{T} = 96/(-1.5) = -64.\nKey insight. Allocate target \\Delta Y^* across instruments, then divide by the corresponding multiplier.\n\n\n26.6.6 Q6.6 (Medium)\nThe deficit (G - T) was 50 last year. The economy is in a recessionary gap of 200 with c = 0.75. The government uses \\overline{G} alone. By how much does the deficit rise?\nSolution. \\Delta\\overline{G} = 200/4 = 50. T unchanged. New deficit = 50 + 50 = 100.\nKey insight. Discretionary fiscal stimulus widens the deficit dollar-for-dollar in \\Delta G.\n\n\n26.6.7 Q6.7 (Hard)\nc = 0.75. Recessionary gap = 100. The government raises \\overline{G} by 50 and raises \\overline{T} by 20. Did it close the gap? If not, by how much did it miss?\nSolution. \\Delta Y^* = 4(50) + (-3)(20) = 200 - 60 = 140. Overshoots by 40 — could create an inflationary gap.\nKey insight. Always sum multiplier-weighted shocks before declaring a gap closed.\n\n\n26.6.8 Q6.8 (Hard)\nCountry runs G = 500, T = 480 (deficit 20). Recession hits — Y^* falls 200 below Y^{FE} at c = 0.8. Politicians refuse to widen the deficit beyond 20. Use balanced-budget policy.\nSolution. K_{BB} = 1 \\Rightarrow \\Delta\\overline{G} = \\Delta\\overline{T} = 200. New G = 700, T = 680. Deficit unchanged at 20. Gap closed.\nKey insight. Balanced-budget multiplier preserves the deficit while still raising Y^*.\n\n\n26.6.9 Q6.9 (Hard)\nY^* = 1{,}500, Y^{FE} = 1{,}700. Imports just rose autonomously by 40. c = 0.75. Find \\Delta\\overline{G} to close the (post-shock) gap.\nSolution. Post-shock Y^* = 1{,}500 + (-4)(40) = 1{,}340. New gap = 360. \\Delta\\overline{G} = 360/4 = 90.\nKey insight. Project equilibrium with shocks before sizing the policy response.\n\n\n26.6.10 Q6.10 (Twist)\nA senator argues: “Tax cuts always work better than spending increases because they let people choose what to buy.” On a per-dollar basis, evaluate this claim using K_G and K_T.\nSolution. |K_T| = c/(1-c) &lt; 1/(1-c) = K_G. A $1 spending increase moves Y^* by K_G; a $1 tax cut moves Y^* by |K_T| = c \\cdot K_G &lt; K_G. The senator is wrong on per-dollar potency — round 1 of a tax cut leaks (1-c) into saving, while round 1 of G enters AE^d in full.\nKey insight. Per dollar, spending is more potent than tax cuts in this model.",
+    "crumbs": [
+      "Practice",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Question bank</span>"
+    ]
+  },
+  {
+    "objectID": "practice/question-bank.html#money-banking-reserves-t-accounts-money-creation",
+    "href": "practice/question-bank.html#money-banking-reserves-t-accounts-money-creation",
+    "title": "26  Question bank",
+    "section": "26.7 7. Money & Banking — Reserves, T-accounts, Money Creation",
+    "text": "26.7 7. Money & Banking — Reserves, T-accounts, Money Creation\n\n26.7.1 Q7.1 (Easy)\nrrr = 10\\%. Bank has DD_p = \\$2{,}000, TR = \\$250. Compute RR and ER.\nSolution. RR = 0.10(2000) = 200. ER = 250 - 200 = 50.\nKey insight. ER = TR - RR. Banks loan out ER.\n\n\n26.7.2 Q7.2 (Easy)\nrrr = 25\\%. Compute the money multiplier K_S.\nSolution. K_S = 1/0.25 = 4.\nKey insight. Money multiplier is the reciprocal of the required reserve ratio.\n\n\n26.7.3 Q7.3 (Easy)\nFed buys $30 in securities; rrr = 10\\%. Find max \\Delta M^S.\nSolution. \\Delta M^S = (1/0.10) \\cdot 30 = 300.\nKey insight. \\Delta M^S = K_S \\cdot \\Delta R assuming no leakage.\n\n\n26.7.4 Q7.4 (Medium)\nA customer deposits $1,000 cash. rrr = 20\\%. The bank creates a single loan of \\$X (no chain). What is X? What happens to M^S when the loan is spent and re-deposited?\nSolution. X = 800 (the bank lends out ER = 1000 - 200 = 800). When redeposited, second bank holds RR = 0.20 \\cdot 800 = 160, lends 640. The full chain sums to \\Delta DD_p = 5{,}000.\nKey insight. Lending creates new deposits — that is how M^S expands.\n\n\n26.7.5 Q7.5 (Medium)\nBanking system has DD_p = \\$1{,}000, TR = \\$200, rrr = 20\\%. The Fed cuts rrr to 10%. Find max new \\Delta M^S.\nSolution. Pre-cut RR = 200, ER = 0 (loaned up). Post-cut required RR = 100, so freed reserves = 100. New K_S = 10. \\Delta M^S = 10 \\cdot 100 = 1{,}000.\nKey insight. A cut in rrr does two things: frees existing reserves and raises K_S.\n\n\n26.7.6 Q7.6 (Medium)\nDistinguish M1 and M2.\nSolution. M1 = currency held by public + checkable deposits + travelers’ checks + NOW accounts. M2 = M1 + savings + small time deposits + money market mutual funds + near-monies.\nKey insight. M1 is “transactions money”; M2 is broader and more stable.\n\n\n26.7.7 Q7.7 (Medium)\nShow the Fed’s balance sheet entries for an OMO purchase of $50 in Treasuries.\nSolution. Fed assets: Treasuries +50. Fed liabilities: bank reserves +50. Both sides expand equally.\nKey insight. OMO purchase swaps bank-held bonds for bank reserves — the latter is high-powered money.\n\n\n26.7.8 Q7.8 (Hard)\nrrr = 20\\%. Public holds 10% of any new deposits as cash outside banks. Fed buys $50. Find effective \\Delta M^S.\nSolution. K_S^{\\text{leak}} = \\frac{1+cr}{rrr+cr} = \\frac{1.10}{0.30} \\approx 3.67. \\Delta M^S \\approx 3.67 \\cdot 50 = 183.5 (vs. 250 with no leakage).\nKey insight. Cash held outside banks is a leakage that shrinks the multiplier below 1/rrr.\n\n\n26.7.9 Q7.9 (Hard)\nBanks voluntarily hold ER &gt; 0 as a precaution (post-2008 environment). With rrr = 10\\% and banks holding 5% extra ER, what is the effective K_S?\nSolution. Effective reserve ratio = 15\\%. K_S = 1/0.15 \\approx 6.67 (vs. 10 with no excess).\nKey insight. Voluntary excess reserves act like an additional reserve requirement and shrink the multiplier.\n\n\n26.7.10 Q7.10 (Hard)\nBank A receives a $200 deposit; rrr = 25\\%. Trace the first three rounds of money creation. What is the eventual total expansion?\nSolution. Round 1: Bank A lends $150. Round 2: receiving bank lends $112.50. Round 3: next bank lends $84.375. Total: 200 \\cdot 4 = 800.\nKey insight. Geometric series: 200 \\cdot \\sum_{k=0}^{\\infty} 0.75^k = 200/0.25 = 800.\n\n\n26.7.11 Q7.11 (Twist)\nThe Fed sells $100 in securities (rrr = 10\\%). What is the change in M^S? Where do the dollars come from on the bank-system side?\nSolution. \\Delta M^S = -1000. Buyer’s bank loses $100 in reserves, must call in loans to restore RR, contracting deposits throughout the system by $1000.\nKey insight. OMO sales drain reserves and force the deposit chain to contract — symmetric to the purchase case.",
+    "crumbs": [
+      "Practice",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Question bank</span>"
+    ]
+  },
+  {
+    "objectID": "practice/question-bank.html#money-market-ms-md-equilibrium-r",
+    "href": "practice/question-bank.html#money-market-ms-md-equilibrium-r",
+    "title": "26  Question bank",
+    "section": "26.8 8. Money Market — M^S, M^D, Equilibrium r^*",
+    "text": "26.8 8. Money Market — M^S, M^D, Equilibrium r^*\n\n26.8.1 Q8.1 (Easy)\nList the three motives for holding money.\nSolution. Transactions, precautionary, speculative.\nKey insight. Y shifts M^D via transactions; r moves along M^D via speculative.\n\n\n26.8.2 Q8.2 (Easy)\nThe Fed buys $50 in bonds. Direction of r^*?\nSolution. \\uparrow M^S \\Rightarrow excess money supply at old r \\Rightarrow people buy bonds \\Rightarrow bond prices rise \\Rightarrow r^* falls.\nKey insight. \\uparrow M^S \\Rightarrow \\downarrow r^*.\n\n\n26.8.3 Q8.3 (Easy)\nThe economy enters a boom — Y rises sharply. With M^S fixed, what happens to r^*?\nSolution. Transactions M^D shifts right \\Rightarrow r^* rises.\nKey insight. Goods market feeds back into money market through Y \\to M^D.\n\n\n26.8.4 Q8.4 (Medium)\nThe price level P rises by 5%. With M^S and Y fixed, what happens to r^* in the basic CFO money-market diagram?\nSolution. Higher P raises nominal transactions demand \\Rightarrow M^D shifts right \\Rightarrow r^* rises.\nKey insight. Both Y and P shift the money demand curve to the right.\n\n\n26.8.5 Q8.5 (Medium)\nM^S = 600 and M^D = 800 - 20 r. Find r^*.\nSolution. 600 = 800 - 20 r \\Rightarrow r^* = 10\\%.\nKey insight. Solve M^S = M^D for r.\n\n\n26.8.6 Q8.6 (Medium)\nM^D = 1000 - 50 r + 0.2 Y. Y = 2000, M^S = 1300. Find r^*.\nSolution. 1300 = 1000 - 50r + 0.2(2000) = 1400 - 50r \\Rightarrow r^* = 2\\%.\nKey insight. With Y in M^D, plug it in before solving for r^*.\n\n\n26.8.7 Q8.7 (Medium)\nAt r &gt; r^* in the money market, what disequilibrium exists and how is it resolved?\nSolution. Excess supply of money (M^S &gt; M^D at the high r). People reduce money holdings by buying bonds. Bond prices rise, yields fall, r falls toward r^*.\nKey insight. Money-market disequilibrium clears through the bond market.\n\n\n26.8.8 Q8.8 (Hard)\nFed wants to lower r^* from 6% to 4% with M^D = 1500 - 100 r. Find required \\Delta M^S.\nSolution. At r = 6: M^D = 900. At r = 4: M^D = 1100. \\Delta M^S = 200.\nKey insight. Required \\Delta M^S depends on the slope of M^D — flatter M^D means smaller \\Delta M^S to move r.\n\n\n26.8.9 Q8.9 (Hard)\nFed announces an inflation target. Public expects P to rise. M^D shifts right by 50. Fed wants to keep r^* unchanged. What \\Delta M^S?\nSolution. \\Delta M^S = +50 (accommodate the demand shift).\nKey insight. To peg r, the Fed must let M^S float to absorb M^D shocks.\n\n\n26.8.10 Q8.10 (Hard)\nMoney market: M^D = 800 - 30 r + 0.4 Y, M^S = 1000. Goods market: Y = 5(\\overline{C_0} + \\overline{I} - 10 r) (interest-sensitive investment). \\overline{C_0} + \\overline{I} = 250. Find joint equilibrium (Y^*, r^*).\nSolution. From goods: Y = 1250 - 50 r. From money: 1000 = 800 - 30 r + 0.4 Y \\Rightarrow 200 = -30 r + 0.4 Y. Substitute: 200 = -30r + 0.4(1250 - 50r) = 500 - 50r \\Rightarrow r^* = 6. Y^* = 1250 - 300 = 950.\nKey insight. Joint equilibrium requires solving both equations simultaneously — IS-LM in disguise.",
+    "crumbs": [
+      "Practice",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Question bank</span>"
+    ]
+  },
+  {
+    "objectID": "practice/question-bank.html#bond-pricing-and-yields",
+    "href": "practice/question-bank.html#bond-pricing-and-yields",
+    "title": "26  Question bank",
+    "section": "26.9 9. Bond Pricing and Yields",
+    "text": "26.9 9. Bond Pricing and Yields\n\n26.9.1 Q9.1 (Easy)\nFV = \\$1{,}000, T = 1, r = 5\\%. Find PV.\nSolution. PV = 1000/1.05 \\approx 952.38.\nKey insight. Single-period PV: just divide by (1+r).\n\n\n26.9.2 Q9.2 (Easy)\nFV = \\$1{,}000, T = 5, r = 4\\%. Find PV.\nSolution. PV = 1000/(1.04)^5 = 1000/1.21665 \\approx 821.93.\nKey insight. Compounding over multiple periods substantially lowers PV.\n\n\n26.9.3 Q9.3 (Easy)\nA 1-year zero coupon bond has FV = \\$500 and trades at \\$476.19. Find r.\nSolution. r = 500/476.19 - 1 = 0.05 = 5\\%.\nKey insight. Single-period yield: r = FV/PV - 1.\n\n\n26.9.4 Q9.4 (Medium)\nA 2-year bond has FV = \\$1{,}000 and PV = \\$890. Find the yield.\nSolution. (1+r)^2 = 1000/890 = 1.1236 \\Rightarrow 1+r = 1.06 \\Rightarrow r = 6\\%.\nKey insight. Multi-period yield: r = (FV/PV)^{1/T} - 1.\n\n\n26.9.5 Q9.5 (Medium)\nA 10-year bond’s yield rises from 4% to 5%. Compute the percentage drop in its price (assume FV = \\$1000).\nSolution. Old price = 1000/(1.04)^{10} = 675.56. New price = 1000/(1.05)^{10} = 613.91. Change = -9.13\\%.\nKey insight. Long-maturity bonds have steep price-yield curves; small yield moves cause big price moves.\n\n\n26.9.6 Q9.6 (Medium)\nCompare the price impact of a 1pp yield rise (from 4% to 5%) on a 1-year vs. 30-year bond, FV = 1000.\nSolution. 1-year: 1000/1.04 = 961.54 \\to 1000/1.05 = 952.38, -0.95\\%. 30-year: 1000/1.04^{30} = 308.32 \\to 1000/1.05^{30} = 231.38, -24.96\\%.\nKey insight. Duration scales price sensitivity to yield. Long bonds are far more rate-sensitive.\n\n\n26.9.7 Q9.7 (Medium)\nThe Fed buys bonds aggressively — r^* in the money market falls from 5% to 3%. What happens to the price of a 5-year zero coupon bond, FV = 1000?\nSolution. Old: 1000/1.05^5 = 783.53. New: 1000/1.03^5 = 862.61. Price rises \\approx 10.1\\%.\nKey insight. OMO purchase, lower r, higher bond prices — they are the same event.\n\n\n26.9.8 Q9.8 (Hard)\nA 3-year bond pays $50 coupon annually plus $1000 face at maturity. r = 6\\%. Find PV.\nSolution. PV = 50/1.06 + 50/1.06^2 + 1050/1.06^3 = 47.17 + 44.50 + 881.60 = 973.27.\nKey insight. PV of a coupon bond is the sum of PVs of each cash flow.\n\n\n26.9.9 Q9.9 (Hard)\nTwo bonds (zero coupon, FV = 1000): A has T = 5, B has T = 10. Both yield 5%. Yield rises to 6%. Which loses more value in dollars? Why?\nSolution. A: 783.53 \\to 747.26, -36.27. B: 613.91 \\to 558.39, -55.52. B loses more.\nKey insight. Longer T ⇒ bigger \\partial PV / \\partial r.\n\n\n26.9.10 Q9.10 (Twist)\nMoney market is in disequilibrium: r = 6\\%, r^* = 5\\%. A 1-year bond, FV = \\$500, currently prices at r = 6\\%. As the market re-equilibrates, what happens to the bond price?\nSolution. At r = 6\\%: PV = 500/1.06 \\approx 471.70. At r = 5\\%: PV = 500/1.05 \\approx 476.19. Price rises by $4.49.\nKey insight. Excess money supply drives bond buying, which pushes prices up and r down toward r^*.\n\n\n26.9.11 Q9.11 (Twist)\nA bond yields 7%; new bonds in the market yield 8%. Why does the price of the old bond fall?\nSolution. No buyer will pay full face for a 7% coupon when 8% is available — the old bond’s price drops until its yield-to-maturity matches 8%.\nKey insight. Bond prices adjust mechanically to make yields consistent with the prevailing market rate.",
+    "crumbs": [
+      "Practice",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Question bank</span>"
+    ]
+  },
+  {
+    "objectID": "practice/question-bank.html#foreign-exchange-and-ppp",
+    "href": "practice/question-bank.html#foreign-exchange-and-ppp",
+    "title": "26  Question bank",
+    "section": "26.10 10. Foreign Exchange and PPP",
+    "text": "26.10 10. Foreign Exchange and PPP\n\n26.10.1 Q10.1 (Easy)\nA basket costs $600 in the US and £400 in the UK. Find the PPP exchange rate E_{\\$/\\pounds}.\nSolution. E_{\\$/\\pounds} = 600/400 = 1.50.\nKey insight. PPP: E = P_{US}/P_{UK}.\n\n\n26.10.2 Q10.2 (Easy)\nUS inflation 6%, UK inflation 2%. Predict direction of E_{\\$/\\pounds}.\nSolution. E_{\\$/\\pounds} rises — $ depreciates because US prices rose faster.\nKey insight. Higher-inflation country’s currency depreciates.\n\n\n26.10.3 Q10.3 (Easy)\nThe Fed raises US interest rates while UK rates are unchanged. Direction of E_{\\$/\\pounds}?\nSolution. Capital flows into US (D^\\pounds falls; S^\\pounds rises). E_{\\$/\\pounds} falls — $ appreciates.\nKey insight. Higher domestic interest rates appreciate the home currency.\n\n\n26.10.4 Q10.4 (Medium)\nStarting at E_{\\$/\\pounds} = 1.50, US prices rise 8%, UK prices rise 2%. New PPP rate?\nSolution. New US basket cost = 600 \\cdot 1.08 = 648. New UK = 400 \\cdot 1.02 = 408. E = 648/408 \\approx 1.588.\nKey insight. PPP rate moves with the inflation differential.\n\n\n26.10.5 Q10.5 (Medium)\n$ depreciates from 1.50 to 1.80 $/£. A UK textbook costs £30. By how much does its price in dollars change?\nSolution. Old $ price: 30 = 45. New: 30 = 54. Up $9, or 20%.\nKey insight. Depreciation makes foreign goods more expensive in domestic currency.\n\n\n26.10.6 Q10.6 (Medium)\nUS and Mexico. PPP rate is 20 pesos/$. A Big Mac costs $5 in US and 80 pesos in Mexico. Is the peso over- or undervalued?\nSolution. Big Mac PPP = 80/5 = 16 pesos/$. Actual is 20 pesos/$. Peso is undervalued (need more pesos per $ than PPP says).\nKey insight. When market E exceeds PPP-implied E, the foreign currency is undervalued.\n\n\n26.10.7 Q10.7 (Hard)\n$ depreciates 10%. Trace the effect on Y^* (qualitatively, assuming c = 0.75 and modest export elasticity).\nSolution. $EX, IM (X-M) $ AE shifts up \\Rightarrow Y^* rises (multiplier K = 4). AD shifts right \\Rightarrow P rises too. Effects subject to J-curve in early quarters.\nKey insight. Depreciation is expansionary (higher Y, higher P) in the medium run after the J-curve.\n\n\n26.10.8 Q10.8 (Hard)\nExplain the J-curve. Why does the trade balance worsen before improving?\nSolution. After depreciation, import prices rise immediately (existing import contracts), but quantities respond slowly. So in the short run, IM in dollar terms rises (price effect) and EX has not yet risen substantially. Net exports fall. Over 2–4 quarters, quantities adjust and (X-M) improves.\nKey insight. Prices respond fast, quantities slow — that delay produces the J-curve.\n\n\n26.10.9 Q10.9 (Hard)\nUS inflation 5%, Eurozone inflation 1%. US nominal rates 4%, Eurozone 0%. Predict short-run direction of $/€.\nSolution. Inflation differential pushes $ to depreciate. Interest rate differential pushes $ to appreciate. Net effect ambiguous; PPP holds long-run, capital flows dominate short-run, so $ likely appreciates short-run.\nKey insight. Two channels (inflation, interest) often pull opposite ways. Capital flows tend to win short-run; PPP wins long-run.\n\n\n26.10.10 Q10.10 (Twist)\nA country runs a trade surplus but its currency depreciates. Reconcile.\nSolution. Trade surplus generates supply of foreign currency (or demand for home currency). But large capital outflows (residents buying foreign assets) can dominate, pushing the home currency down. Currency value reflects the capital + current account together.\nKey insight. Exchange rate is determined by total supply/demand for currency, not only the trade balance.\n\n\n26.10.11 Q10.11 (Twist)\nWhy does PPP hold poorly in the short run but well in the long run?\nSolution. Short run: prices are sticky, capital flows dominate, transport costs and trade barriers matter. Long run: arbitrage in goods works through; sticky prices adjust; capital flows are mean-reverting.\nKey insight. PPP is an arbitrage relationship that needs time to bind.",
+    "crumbs": [
+      "Practice",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Question bank</span>"
+    ]
+  },
+  {
+    "objectID": "practice/question-bank.html#monetary-policy-under-fixed-vs.-flexible-exchange-rates",
+    "href": "practice/question-bank.html#monetary-policy-under-fixed-vs.-flexible-exchange-rates",
+    "title": "26  Question bank",
+    "section": "26.11 11. Monetary Policy under Fixed vs. Flexible Exchange Rates",
+    "text": "26.11 11. Monetary Policy under Fixed vs. Flexible Exchange Rates\n\n26.11.1 Q11.1 (Easy)\nUnder flexible ER, the Fed cuts rates. Through which two channels does Y rise?\nSolution. (1) Interest channel: \\downarrow r \\Rightarrow \\uparrow I^d \\Rightarrow \\uparrow Y. (2) Exchange-rate channel: \\downarrow r \\Rightarrow capital outflow \\Rightarrow $ depreciates \\Rightarrow \\uparrow (X-M) \\Rightarrow \\uparrow Y.\nKey insight. Under floating ER, both channels reinforce — monetary policy is potent.\n\n\n26.11.2 Q11.2 (Easy)\nUnder fixed ER, the central bank tries to expand M^S. Why is this hard?\nSolution. Lower r triggers capital outflow, which would depreciate the currency. To defend the peg, the central bank must sell foreign reserves and buy back its own currency, contracting M^S. Net change is small.\nKey insight. Fixed ER kills monetary independence — the FX channel forces M^S back.\n\n\n26.11.3 Q11.3 (Easy)\nState the trilemma.\nSolution. A country can have at most two of: (i) free capital flows, (ii) fixed exchange rate, (iii) independent monetary policy.\nKey insight. Pick two; you cannot have all three.\n\n\n26.11.4 Q11.4 (Medium)\nHong Kong pegs to the USD and allows free capital flows. What does the trilemma imply about HK’s monetary policy independence?\nSolution. HK has no monetary policy independence — it imports US monetary policy via the peg. When the Fed raises rates, HK must too.\nKey insight. A hard peg with open capital outsources monetary policy to the anchor country.\n\n\n26.11.5 Q11.5 (Medium)\nUnder floating ER, the central bank surprises markets with a 1% rate cut. Trace the FX-channel impact on Y.\nSolution. \\downarrow r → capital outflows seek higher returns abroad → S^{\\text{FX}} rises (citizens supply local currency for foreign), local currency depreciates → \\uparrow (X - M) \\Rightarrow \\uparrow AE^d \\Rightarrow \\uparrow Y (multiplied by K).\nKey insight. Capital flows respond to rate differentials and move the FX rate; FX moves trade balance; trade balance moves Y.\n\n\n26.11.6 Q11.6 (Medium)\nUnder fixed ER, the government runs a fiscal expansion (\\uparrow \\overline{G}). What happens to r, capital flows, and M^S?\nSolution. \\uparrow G \\Rightarrow \\uparrow Y \\Rightarrow \\uparrow M^D \\Rightarrow \\uparrow r. Higher r attracts capital inflow, which would appreciate the currency. To defend the peg, central bank buys foreign currency, expanding M^S. Result: monetary policy automatically accommodates fiscal expansion under fixed ER. Fiscal multiplier is bigger than under floating.\nKey insight. Mundell-Fleming: fiscal policy is potent under fixed ER (no monetary offset); monetary policy is potent under floating ER.\n\n\n26.11.7 Q11.7 (Hard)\nBrazil floats its currency and conducts independent monetary policy. The Fed hikes US rates by 200 bp. What pressure does Brazil feel?\nSolution. Capital flows out of Brazil to chase higher US yields. Real depreciates. Brazil’s central bank may hike to slow capital flight, even if domestic conditions don’t warrant it. This is the “fear of floating.”\nKey insight. Even floating regimes are not fully insulated from foreign monetary policy.\n\n\n26.11.8 Q11.8 (Hard)\nArgentina’s currency board (a hard peg) collapses when the central bank runs out of foreign reserves. Why?\nSolution. A peg requires the central bank to defend the rate by selling FX reserves whenever there’s pressure to depreciate. If reserves are exhausted (e.g., after persistent capital outflows or trade deficits), the peg breaks. Speculators front-run this.\nKey insight. Pegs are only as strong as the central bank’s foreign-reserve buffer.\n\n\n26.11.9 Q11.9 (Twist)\nA country with capital controls can run a fixed ER and independent monetary policy simultaneously. Explain.\nSolution. Capital controls block the arbitrage that would otherwise force r_{\\text{home}} = r_{\\text{world}}. Without that constraint, the central bank can set r domestically while pegging the FX rate. China operates roughly this way.\nKey insight. The trilemma’s “free capital flows” leg can be relaxed via controls — at the cost of capital-market efficiency.",
+    "crumbs": [
+      "Practice",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Question bank</span>"
+    ]
+  },
+  {
+    "objectID": "practice/question-bank.html#asad-synthesis-and-miscellaneous",
+    "href": "practice/question-bank.html#asad-synthesis-and-miscellaneous",
+    "title": "26  Question bank",
+    "section": "26.12 12. AS/AD Synthesis and Miscellaneous",
+    "text": "26.12 12. AS/AD Synthesis and Miscellaneous\n\n26.12.1 Q12.1 (Easy)\nList four shocks that shift AD right.\nSolution. \\uparrow \\overline{G}, \\downarrow \\overline{T}, \\uparrow M^S, currency depreciation, wealth boom, \\uparrow \\overline{X}.\nKey insight. Anything that raises autonomous spending or eases monetary conditions shifts AD right.\n\n\n26.12.2 Q12.2 (Easy)\nGive two examples of negative AS shocks.\nSolution. Oil-price spike, war damaging capital stock, sharp wage push, drought.\nKey insight. AS shifts left when input costs rise or productive capacity falls.\n\n\n26.12.3 Q12.3 (Easy)\nA productivity boom shifts AS right. What happens to Y and P?\nSolution. Y rises, P falls.\nKey insight. Positive AS shock = the rare “good news for both sides” of the AD/AS diagram.\n\n\n26.12.4 Q12.4 (Medium)\nStagflation in 1970s: explain in AS/AD terms.\nSolution. Negative AS shock (oil embargo) shifted AS left. Output fell (Y \\downarrow), prices rose (P \\uparrow) — stagflation. Standard demand-side tools couldn’t fix both simultaneously.\nKey insight. AS shocks produce the awkward Y and P moving in opposite directions.\n\n\n26.12.5 Q12.5 (Medium)\n\\overline{G} rises by 100 with c = 0.75. In the basic Keynesian model, P is fixed — Y rises by 400. In AS/AD with an upward-sloping AS, why is the actual \\Delta Y smaller?\nSolution. \\uparrow AD raises both Y and P. Higher P raises M^D, raises r^*, lowers \\overline{I} — partial crowding out. Some of the AD shock is absorbed by higher prices, not higher output.\nKey insight. Sloped AS dilutes the multiplier; flat AS (zero-lower-bound style) recovers the textbook 4×.\n\n\n26.12.6 Q12.6 (Medium)\nDistinguish federal deficit from federal debt.\nSolution. Deficit is a flow (G - T in one period). Debt is a stock (cumulative past deficits).\nKey insight. Deficit/year \\to debt; you can have a falling debt-to-GDP ratio with a positive deficit if GDP grows fast enough.\n\n\n26.12.7 Q12.7 (Medium)\nTrade feedback effect: explain in one sentence.\nSolution. A boom in country A raises A’s imports, which are B’s exports, raising B’s Y, which raises B’s imports of A’s exports, partially feeding the boom back to A.\nKey insight. International spillovers amplify domestic shocks.\n\n\n26.12.8 Q12.8 (Hard)\nBeggar-thy-neighbor policies (tariffs, currency manipulation) raise home Y at foreign expense. Why are they self-defeating in equilibrium?\nSolution. Foreign retaliation. Trade volumes fall on both sides; the beggar gain disappears once partners impose matching restrictions. Equilibrium is lower trade for everyone with no relative gain.\nKey insight. Trade policy is a coordination game; unilateral defection invites retaliation.\n\n\n26.12.9 Q12.9 (Hard)\nThe Fed simultaneously conducts contractionary monetary policy (\\uparrow r) while the government runs a fiscal expansion (\\uparrow \\overline{G}). Use AS/AD and the open-economy model to predict effects on Y, P, and the exchange rate.\nSolution. Both AD shifts net out — could be unchanged. But r rises sharply (fiscal pressure + monetary tightening). High r attracts capital inflows, currency appreciates, (X - M) falls, dragging on Y. This is a stylized version of “Reaganomics” — strong dollar with mixed Y outcome.\nKey insight. Combined fiscal-monetary stance affects FX through the rate channel; trade balance is collateral damage.\n\n\n26.12.10 Q12.10 (Twist)\nCrowding out in a closed economy works through r. Identify two additional crowding channels in an open economy.\nSolution. (1) Exchange-rate appreciation (capital inflows) reduces net exports. (2) Higher imports leak demand abroad. Both shrink the domestic multiplier further beyond the closed-economy interest-rate channel.\nKey insight. Open-economy crowding stacks: rate channel + FX channel + import leakage.\n\n\n26.12.11 Q12.11 (Twist)\nIdentify which technique to apply: “MPC = 0.75. Inflationary gap = 200. The Fed tightens by raising rates 1pp; this lowers \\overline{I} by 30. By how much must the government cut \\overline{G} to close the remaining gap?”\nSolution. Combine techniques. (i) Project Fed’s effect: \\Delta Y^* = 4 \\cdot (-30) = -120. Remaining gap = 200 - 120 = 80 (still need to contract by 80). (ii) Fiscal: \\Delta\\overline{G} = -80/4 = -20.\nKey insight. When multiple shocks act, project all of them on Y^* first, then size the residual policy response.\n\n\n26.12.12 Q12.12 (Twist)\nThe economy is at Y^{FE} with P stable. The currency depreciates 10%. Predict short-run and medium-run effects on Y and P.\nSolution. Short run (J-curve): trade balance worsens, slight drag on Y, P rising due to import-price pass-through. Medium run: (X-M) improves, AD shifts right, Y rises above Y^{FE} (inflationary gap), P rises further. AS may eventually shift left as wages catch up to higher prices.\nKey insight. Same shock, different time horizons, different signs on Y. Always specify the horizon.",
+    "crumbs": [
+      "Practice",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Question bank</span>"
+    ]
+  },
+  {
+    "objectID": "reference/formulas.html",
+    "href": "reference/formulas.html",
+    "title": "27  Formula sheet",
+    "section": "",
+    "text": "27.1 Identities\nPrint this. Bring it.\nY \\equiv C + S \\qquad S \\equiv Y - C \\qquad MPC + MPS = 1 \\qquad APC + APS = 1",
+    "crumbs": [
+      "Reference",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Formula sheet</span>"
+    ]
+  },
+  {
+    "objectID": "reference/formulas.html#consumption",
+    "href": "reference/formulas.html#consumption",
+    "title": "27  Formula sheet",
+    "section": "27.2 Consumption",
+    "text": "27.2 Consumption\nC = \\overline{C_0} + c \\cdot Y_d \\qquad Y_d = Y - \\overline{T}",
+    "crumbs": [
+      "Reference",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Formula sheet</span>"
+    ]
+  },
+  {
+    "objectID": "reference/formulas.html#equilibrium-income",
+    "href": "reference/formulas.html#equilibrium-income",
+    "title": "27  Formula sheet",
+    "section": "27.3 Equilibrium income",
+    "text": "27.3 Equilibrium income\nClosed: Y^* = \\frac{\\overline{C_0} + \\overline{I}}{1-c}\nOpen with government: Y^* = \\tfrac{1}{1-c}\\,\\overline{C_0} - \\tfrac{c}{1-c}\\,\\overline{T} + \\tfrac{1}{1-c}\\,\\overline{I} + \\tfrac{1}{1-c}\\,\\overline{G} + \\tfrac{1}{1-c}\\,\\overline{X} - \\tfrac{1}{1-c}\\,\\overline{M}",
+    "crumbs": [
+      "Reference",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Formula sheet</span>"
+    ]
+  },
+  {
+    "objectID": "reference/formulas.html#multipliers",
+    "href": "reference/formulas.html#multipliers",
+    "title": "27  Formula sheet",
+    "section": "27.4 Multipliers",
+    "text": "27.4 Multipliers\nK_X \\equiv \\frac{\\Delta Y^*}{\\Delta\\overline{X}}\n\n\n\n\n\n\n\nvariable\nmultiplier\n\n\n\n\n\\overline{I}, \\overline{C_0}, \\overline{G}, \\overline{X}\n\\dfrac{1}{1-c}\n\n\n\\overline{T}\n-\\dfrac{c}{1-c}\n\n\n\\overline{M}\n-\\dfrac{1}{1-c}\n\n\nBalanced budget (\\overline{G} and \\overline{T} together)\nK_{BB} = 1\n\n\n\nAt c = 0.75: K_G = 4, K_T = -3, K_{BB} = 1.",
+    "crumbs": [
+      "Reference",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Formula sheet</span>"
+    ]
+  },
+  {
+    "objectID": "reference/formulas.html#inflation-cpi-unemployment",
+    "href": "reference/formulas.html#inflation-cpi-unemployment",
+    "title": "27  Formula sheet",
+    "section": "27.5 Inflation, CPI, unemployment",
+    "text": "27.5 Inflation, CPI, unemployment\n\\text{CPI}_t = \\frac{\\sum P_t \\cdot Q_{base}}{\\sum P_{base} \\cdot Q_{base}} \\cdot 100 \\qquad \\pi_t = \\frac{\\text{CPI}_t - \\text{CPI}_{t-1}}{\\text{CPI}_{t-1}} \\cdot 100\nu = \\frac{U}{E + U} \\qquad LF = E + U \\qquad \\text{LFP} = \\frac{LF}{\\text{Pop}}",
+    "crumbs": [
+      "Reference",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Formula sheet</span>"
+    ]
+  },
+  {
+    "objectID": "reference/formulas.html#money-banking",
+    "href": "reference/formulas.html#money-banking",
+    "title": "27  Formula sheet",
+    "section": "27.6 Money & banking",
+    "text": "27.6 Money & banking\nRR = rrr \\cdot DD_p \\qquad ER = TR - RR K_S = \\frac{1}{rrr} \\qquad \\Delta M^S = K_S \\cdot \\Delta R",
+    "crumbs": [
+      "Reference",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Formula sheet</span>"
+    ]
+  },
+  {
+    "objectID": "reference/formulas.html#bonds",
+    "href": "reference/formulas.html#bonds",
+    "title": "27  Formula sheet",
+    "section": "27.7 Bonds",
+    "text": "27.7 Bonds\nPV = \\frac{FV}{(1+r)^T} \\qquad r = \\left(\\frac{FV}{PV}\\right)^{1/T} - 1",
+    "crumbs": [
+      "Reference",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Formula sheet</span>"
+    ]
+  },
+  {
+    "objectID": "reference/formulas.html#ppp",
+    "href": "reference/formulas.html#ppp",
+    "title": "27  Formula sheet",
+    "section": "27.8 PPP",
+    "text": "27.8 PPP\nE_{\\$/£} = \\frac{P_{US}}{P_{UK}}",
+    "crumbs": [
+      "Reference",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Formula sheet</span>"
+    ]
+  },
+  {
+    "objectID": "reference/formulas.html#direction-shortcuts",
+    "href": "reference/formulas.html#direction-shortcuts",
+    "title": "27  Formula sheet",
+    "section": "27.9 Direction shortcuts",
+    "text": "27.9 Direction shortcuts\n\n\n\n\n\n\n\nshock\neffect\n\n\n\n\n\\uparrow M^S\n\\downarrow r^*\n\n\nOMO purchase\n\\uparrow M^S, \\uparrow bond prices, \\downarrow r^*\n\n\nOMO sale\n\\downarrow M^S, \\downarrow bond prices, \\uparrow r^*\n\n\n\\uparrow Y\n\\uparrow M^D, \\uparrow r^*\n\n\nHigher inflation country\ncurrency depreciates\n\n\nHigher interest rate country\ncurrency appreciates\n\n\nCurrency depreciation\n\\uparrow EX, \\downarrow IM, \\uparrow Y^*, \\uparrow P\n\n\nMonetary policy, floating ER\nboth r channel and FX channel work\n\n\nMonetary policy, fixed ER\nonly r channel; FX channel dead",
+    "crumbs": [
+      "Reference",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Formula sheet</span>"
+    ]
+  },
+  {
+    "objectID": "reference/glossary.html",
+    "href": "reference/glossary.html",
+    "title": "28  Glossary",
+    "section": "",
+    "text": "Frictional unemployment. Short-run job/skill matching. People between jobs.\nStructural unemployment. Changes in the structure of the economy. Whole industries decline.\nCyclical unemployment. From recessions. Disappears in expansions.\nNatural rate. Frictional + structural. Textbook value \\approx 4\\%. The level consistent with full employment and no accelerating inflation.\nDiscouraged worker. Not in the labor force. Doesn’t show up in u.\nMPC. \\Delta C / \\Delta Y_d. Slope of the consumption function.\nAPC. C / Y_d.\nSubsistence consumption \\overline{C_0}. Consumption when Y_d = 0. Vertical intercept of C.\nAutonomous (exogenous). Does not depend on Y. In our model: \\overline{I}, \\overline{G}, \\overline{C_0}, \\overline{T}, \\overline{X}, \\overline{M}.\nMultiplier K_X. \\Delta Y^* / \\Delta\\overline{X}. Magnitude depends only on c.\nM1. Currency held by public + checking + travelers’ checks + NOW accounts. Stock measure.\nM2. M1 + savings + small time deposits + money market mutual funds + near-monies.\nRequired reserve ratio (rrr). Fraction of demand deposits banks must hold as reserves.\nDiscount rate. Rate at which the Fed lends to commercial banks.\nOpen Market Operations (OMO). Fed buys or sells government securities. The most-used tool.\nMoney multiplier K_S. 1/rrr. Dollars of M^S per dollar of new reserves (assuming no leakage).\nLiquidity. Ease of converting an asset to cash without losing value.\nCommodity money. Has intrinsic value (gold).\nFiat money. Intrinsically worthless. Value comes from government decree.\nLegal tender. Government requires acceptance for settlement of debts.\nCurrency debasement. Value of money falls when supply rises rapidly.\nDiscretionary fiscal policy. Deliberate changes in \\overline{G} and \\overline{T} to affect Y^*.\nRecessionary gap. Y^* &lt; Y^{FE}.\nInflationary gap. Y^* &gt; Y^{FE}.\nFederal surplus / deficit. T - G. Flow.\nFederal debt. Cumulative deficits over time. Stock.\nPrivately held federal debt. Portion held by non-government entities.\nForeign exchange. All currencies other than the domestic one.\nBalance of payments. Record of all international transactions in goods, services, and assets.\nCurrent account. Net exports + net investment income from abroad + net transfers from abroad.\nCapital account. Net change in asset positions. U.S. buying foreign assets is a debit. Foreigners buying U.S. assets is a credit.\nTrade deficit / surplus. EX - IM negative / positive.\nFloating ER. Market-determined.\nFixed ER. Pegged by central bank intervention.\nPPP. Exchange rate equals ratio of price levels.\nJ-curve. After a depreciation, the trade balance gets worse first, then better.\nTrade feedback effect. One country’s growth raises imports, which become foreign exports, which boost foreign Y, which feeds back as more demand for the original country’s exports.\nPrice feedback effect. Inflation in one country raises import prices in other countries, transmitting inflation.\nBeggar-thy-neighbor. Trying to boost own Y by exporting more and importing less. Hurts trading partners. Triggers retaliation.\nTrilemma. A country can choose at most two of: free capital flow, fixed exchange rate, independent monetary policy.",
+    "crumbs": [
+      "Reference",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Glossary</span>"
+    ]
+  },
+  {
+    "objectID": "reference/traps.html",
+    "href": "reference/traps.html",
+    "title": "29  Common screw-ups",
+    "section": "",
+    "text": "The 17 things students confuse. Read this before the exam.\nCPI overestimates inflation, IGDPDI underestimates. CPI uses base-year quantities (Laspeyres), so it ignores substitution. IGDPDI uses current-year quantities and base-year prices (Paasche), so it does the opposite. Reverse for deflation.\nNatural rate of unemployment is not zero. It is frictional + structural, often pegged at \\approx 4\\%. Cyclical is the part that disappears in expansions.\nAggregate output equals aggregate income identically. Total value of goods produced = total factor payments. Both are Y.\nActual investment equals planned investment only at equilibrium. Off-equilibrium: I_{actual} = I_{planned} + \\Delta\\text{unplanned inventory}. If Y &gt; AE^d, inventory builds up.\nParadox of thrift. More saving (lower \\overline{C_0}) lowers Y^*. Total saving stays the same because S = I^d at equilibrium and I^d didn’t change.\nTax multiplier is negative. K_T = -c/(1-c). Cutting taxes raises Y^*, raising taxes lowers Y^*.\nBalanced-budget multiplier is 1, not 0. Raise both G and T by $100. Deficit unchanged. Y^* rises by exactly $100. The K_G effect outweighs the K_T effect by exactly 1.\nReal-world multiplier is roughly 1.4, not 4. The textbook formula assumes no leakages other than saving. Income-conditional taxes, imports, monetary offset, and crowding-out shrink it.\nFederal debt is a stock. Federal deficit is a flow. They are not the same number.\nBanks want excess reserves at zero. ER earns nothing. Banks make loans until ER = 0. The lending creates new deposits. That is how money is created.\nThe Fed changes M^S directly. The interest rate r^* adjusts via the bond market: \\uparrow M^S \\Rightarrow excess money \\Rightarrow people buy bonds \\Rightarrow bond prices rise \\Rightarrow yields fall.\nBond price and r are inverse. Always. A 7% bond becomes worth less when new bonds pay 8%.\nThree motives for money demand. Transactions, precautionary, speculative. Y shifts the curve through transactions. r moves along the curve through speculative.\nImports are a debit on the current account. They use up foreign exchange. Exports are a credit. They generate it.\nCapital account: U.S. resident buying a foreign asset is a debit. Foreigner buying a U.S. asset is a credit. Watch the direction of the asset, not the direction of the cash.\nCurrency appreciation lowers exports, doesn’t raise them. Stronger currency makes home goods more expensive abroad.\nUnder fixed exchange rates, monetary policy loses its FX channel. Only the interest-rate channel operates, partially. This is why countries with fixed rates lose monetary independence.",
+    "crumbs": [
+      "Reference",
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Common screw-ups</span>"
+    ]
+  },
+  {
+    "objectID": "reference/sources.html",
+    "href": "reference/sources.html",
+    "title": "30  Sources & data lineage",
+    "section": "",
+    "text": "30.1 Time series — FRED (St. Louis Fed)\nThis site stitches together public data from official statistical agencies and central banks. Nothing here is proprietary; everything is cached locally so the site keeps working if any upstream goes down briefly.\n26 series fetched daily from the public CSV endpoint (https://fred.stlouisfed.org/graph/fredgraph.csv?id={SID}). No API key required.\nCached at data/fred/{SID}.json. Refreshed by .github/workflows/refresh-data.yml (daily, 06:30 UTC). Source script: scripts/fetch_macro_data.py.",
+    "crumbs": [
+      "Reference",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Sources & data lineage</span>"
+    ]
+  },
+  {
+    "objectID": "reference/sources.html#time-series-fred-st.-louis-fed",
+    "href": "reference/sources.html#time-series-fred-st.-louis-fed",
+    "title": "30  Sources & data lineage",
+    "section": "",
+    "text": "Group\nSeries IDs\n\n\n\n\nPrices\nCPIAUCSL, CPILFESL, PCEPI, PCEPILFE, T5YIE\n\n\nLabor\nUNRATE, PAYEMS, CIVPART, ICSA\n\n\nMoney & credit\nM2SL, BAMLH0A0HYM2\n\n\nOutput\nGDPC1, GDP, INDPRO, RSAFS\n\n\nRates\nDFF, FEDFUNDS, DGS10, DGS2, T10Y2Y, MORTGAGE30US\n\n\nFX\nDTWEXBGS, DEXUSEU, DEXUSUK\n\n\nRecession / sentiment\nUSREC, UMCSENT",
+    "crumbs": [
+      "Reference",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Sources & data lineage</span>"
+    ]
+  },
+  {
+    "objectID": "reference/sources.html#rss-atom-feeds",
+    "href": "reference/sources.html#rss-atom-feeds",
+    "title": "30  Sources & data lineage",
+    "section": "30.2 RSS / Atom feeds",
+    "text": "30.2 RSS / Atom feeds\n\n\n\nSource\nFeed\n\n\n\n\nFederal Reserve\nAll press releases · Monetary policy · Speeches\n\n\nBLS\nLatest news releases\n\n\nBEA\nNews releases\n\n\nU.S. Treasury\nPress releases\n\n\nNY Fed\nPress releases\n\n\nECB\nPress releases\n\n\nBank of England\nNews\n\n\nIMF\nPress releases\n\n\nBIS\nPress releases\n\n\nEIA\nToday in Energy\n\n\n\nCached at data/feeds/recent.json (top 100 items, date desc). Per-feed health at data/feeds/_sources.json. Source script: scripts/fetch_feeds.py.",
+    "crumbs": [
+      "Reference",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Sources & data lineage</span>"
+    ]
+  },
+  {
+    "objectID": "reference/sources.html#why-caching",
+    "href": "reference/sources.html#why-caching",
+    "title": "30  Sources & data lineage",
+    "section": "30.3 Why caching",
+    "text": "30.3 Why caching\nTwo reasons:\n\nReliability. A cron-fetched JSON cache means the site renders even when an upstream feed is intermittently 5xx-ing. Failed fetches are recorded in _sources.json so we can see when something is broken.\nCost / etiquette. Fetching once a day server-side and serving static JSON to every visitor avoids hammering FRED with one CSV request per page view.",
+    "crumbs": [
+      "Reference",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Sources & data lineage</span>"
+    ]
+  },
+  {
+    "objectID": "reference/sources.html#reuse",
+    "href": "reference/sources.html#reuse",
+    "title": "30  Sources & data lineage",
+    "section": "30.4 Reuse",
+    "text": "30.4 Reuse\nAll site content (text, charts, code) is CC-BY-SA 4.0. The underlying data is © its respective sources and subject to their terms — generally permissive for non-commercial educational reuse with attribution.",
+    "crumbs": [
+      "Reference",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Sources & data lineage</span>"
+    ]
+  }
+]

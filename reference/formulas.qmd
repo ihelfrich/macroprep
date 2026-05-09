@@ -1,0 +1,67 @@
+---
+title: "Formula sheet"
+---
+
+Print this. Bring it.
+
+## Identities
+
+$$Y \equiv C + S \qquad S \equiv Y - C \qquad MPC + MPS = 1 \qquad APC + APS = 1$$
+
+## Consumption
+
+$$C = \overline{C_0} + c \cdot Y_d \qquad Y_d = Y - \overline{T}$$
+
+## Equilibrium income
+
+Closed:
+$$Y^* = \frac{\overline{C_0} + \overline{I}}{1-c}$$
+
+Open with government:
+$$Y^* = \tfrac{1}{1-c}\,\overline{C_0} - \tfrac{c}{1-c}\,\overline{T} + \tfrac{1}{1-c}\,\overline{I} + \tfrac{1}{1-c}\,\overline{G} + \tfrac{1}{1-c}\,\overline{X} - \tfrac{1}{1-c}\,\overline{M}$$
+
+## Multipliers
+
+$$K_X \equiv \frac{\Delta Y^*}{\Delta\overline{X}}$$
+
+| variable | multiplier |
+|---|---:|
+| $\overline{I}, \overline{C_0}, \overline{G}, \overline{X}$ | $\dfrac{1}{1-c}$ |
+| $\overline{T}$ | $-\dfrac{c}{1-c}$ |
+| $\overline{M}$ | $-\dfrac{1}{1-c}$ |
+| Balanced budget ($\overline{G}$ and $\overline{T}$ together) | $K_{BB} = 1$ |
+
+At $c = 0.75$: $K_G = 4$, $K_T = -3$, $K_{BB} = 1$.
+
+## Inflation, CPI, unemployment
+
+$$\text{CPI}_t = \frac{\sum P_t \cdot Q_{base}}{\sum P_{base} \cdot Q_{base}} \cdot 100 \qquad \pi_t = \frac{\text{CPI}_t - \text{CPI}_{t-1}}{\text{CPI}_{t-1}} \cdot 100$$
+
+$$u = \frac{U}{E + U} \qquad LF = E + U \qquad \text{LFP} = \frac{LF}{\text{Pop}}$$
+
+## Money & banking
+
+$$RR = rrr \cdot DD_p \qquad ER = TR - RR$$
+$$K_S = \frac{1}{rrr} \qquad \Delta M^S = K_S \cdot \Delta R$$
+
+## Bonds
+
+$$PV = \frac{FV}{(1+r)^T} \qquad r = \left(\frac{FV}{PV}\right)^{1/T} - 1$$
+
+## PPP
+
+$$E_{\$/£} = \frac{P_{US}}{P_{UK}}$$
+
+## Direction shortcuts
+
+| shock | effect |
+|---|---|
+| $\uparrow M^S$ | $\downarrow r^*$ |
+| OMO purchase | $\uparrow M^S$, $\uparrow$ bond prices, $\downarrow r^*$ |
+| OMO sale | $\downarrow M^S$, $\downarrow$ bond prices, $\uparrow r^*$ |
+| $\uparrow Y$ | $\uparrow M^D$, $\uparrow r^*$ |
+| Higher inflation country | currency depreciates |
+| Higher interest rate country | currency appreciates |
+| Currency depreciation | $\uparrow EX$, $\downarrow IM$, $\uparrow Y^*$, $\uparrow P$ |
+| Monetary policy, floating ER | both $r$ channel and FX channel work |
+| Monetary policy, fixed ER | only $r$ channel; FX channel dead |

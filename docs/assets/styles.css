@@ -1,0 +1,64 @@
+/* macroprep — supplemental styles (animations, dark mode, print) */
+
+@keyframes mf-fade-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.mf-hero, .mf-toc-card, .kpi-card, .news-card {
+  animation: mf-fade-in 0.4s ease-out;
+}
+
+/* Hover micro-interactions */
+.kpi-card:hover {
+  transform: translateY(-1px);
+  transition: transform 0.15s ease-out;
+}
+
+/* Smooth focus states for keyboard navigation */
+a:focus-visible, button:focus-visible, summary:focus-visible {
+  outline: 2px solid #b85c38;
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
+/* OJS input controls — tighten spacing */
+form.oi {
+  background: #f3efe3;
+  border: 1px solid #d8d2c0;
+  border-radius: 4px;
+  padding: 0.6rem 0.9rem;
+  margin: 0.6rem 0;
+}
+form.oi label { font-family: "Inter", sans-serif; font-size: 0.92rem; color: #2a4d6e; }
+
+/* Plot / figure containers */
+.cell-output-display svg, .cell-output-display img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Dark mode (system preference) */
+@media (prefers-color-scheme: dark) {
+  body.quarto-dark {
+    background: #1a1d24;
+    color: #e6e2d6;
+  }
+  body.quarto-dark h1, body.quarto-dark h2, body.quarto-dark h3 {
+    color: #f0e4c8;
+  }
+  body.quarto-dark .kpi-card,
+  body.quarto-dark .news-card {
+    background: #232730;
+    border-color: #3a3f4a;
+    color: #e6e2d6;
+  }
+}
+
+/* Print: hide chrome */
+@media print {
+  .sidebar, .navbar, .quarto-margin-sidebar, .toc-active { display: none !important; }
+  .content { max-width: 100% !important; }
+  .mf-hero { background: white !important; color: black !important; border: 2px solid black; }
+  a { color: black; text-decoration: underline; }
+}

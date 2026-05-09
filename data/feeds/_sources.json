@@ -1,0 +1,113 @@
+{
+  "generated_at": "2026-05-09T23:38:45.674085+00:00",
+  "sources": [
+    {
+      "name": "Federal Reserve — All press releases",
+      "url": "https://www.federalreserve.gov/feeds/press_all.xml",
+      "category": "monetary_policy_us",
+      "ok": true,
+      "item_count": 20,
+      "error": null,
+      "fetched_at": "2026-05-09T23:38:19.332542+00:00"
+    },
+    {
+      "name": "Federal Reserve — Monetary policy",
+      "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
+      "category": "fomc",
+      "ok": true,
+      "item_count": 15,
+      "error": null,
+      "fetched_at": "2026-05-09T23:38:20.243050+00:00"
+    },
+    {
+      "name": "Federal Reserve — Speeches",
+      "url": "https://www.federalreserve.gov/feeds/speeches.xml",
+      "category": "speeches",
+      "ok": true,
+      "item_count": 15,
+      "error": null,
+      "fetched_at": "2026-05-09T23:38:21.126189+00:00"
+    },
+    {
+      "name": "BLS — News releases",
+      "url": "https://www.bls.gov/feed/bls_latest.rss",
+      "category": "data_release_us",
+      "ok": false,
+      "item_count": 0,
+      "error": "network: HTTP Error 403: Forbidden",
+      "fetched_at": "2026-05-09T23:38:21.929046+00:00"
+    },
+    {
+      "name": "BEA — News releases",
+      "url": "https://apps.bea.gov/rss/rss.xml",
+      "category": "data_release_us",
+      "ok": true,
+      "item_count": 45,
+      "error": null,
+      "fetched_at": "2026-05-09T23:38:22.816626+00:00"
+    },
+    {
+      "name": "U.S. Treasury — Press releases",
+      "url": "https://home.treasury.gov/system/files/rss/press-releases.xml",
+      "category": "treasury",
+      "ok": false,
+      "item_count": 0,
+      "error": "network: HTTP Error 404: Not Found",
+      "fetched_at": "2026-05-09T23:38:23.770322+00:00"
+    },
+    {
+      "name": "NY Fed — Press releases",
+      "url": "https://www.newyorkfed.org/api/syndication/rss/feeds.xml?type=Press",
+      "category": "monetary_policy_us",
+      "ok": false,
+      "item_count": 0,
+      "error": "network: HTTP Error 404: Not Found",
+      "fetched_at": "2026-05-09T23:38:33.743744+00:00"
+    },
+    {
+      "name": "ECB — Press releases",
+      "url": "https://www.ecb.europa.eu/rss/press.xml",
+      "category": "monetary_policy_eu",
+      "ok": true,
+      "item_count": 15,
+      "error": null,
+      "fetched_at": "2026-05-09T23:38:34.910284+00:00"
+    },
+    {
+      "name": "Bank of England — News",
+      "url": "https://www.bankofengland.co.uk/rss/news",
+      "category": "monetary_policy_uk",
+      "ok": true,
+      "item_count": 50,
+      "error": null,
+      "fetched_at": "2026-05-09T23:38:36.624146+00:00"
+    },
+    {
+      "name": "IMF — Press releases",
+      "url": "https://www.imf.org/en/News/RSS?Language=ENG&Topics=515",
+      "category": "international",
+      "ok": true,
+      "item_count": 0,
+      "error": null,
+      "fetched_at": "2026-05-09T23:38:38.188579+00:00"
+    },
+    {
+      "name": "BIS — All press releases",
+      "url": "https://www.bis.org/doclist/press_releases.rss",
+      "category": "international",
+      "ok": false,
+      "item_count": 0,
+      "error": "network: HTTP Error 404: Not Found",
+      "fetched_at": "2026-05-09T23:38:43.349340+00:00"
+    },
+    {
+      "name": "EIA — Today in Energy",
+      "url": "https://www.eia.gov/rss/todayinenergy.xml",
+      "category": "energy",
+      "ok": true,
+      "item_count": 21,
+      "error": null,
+      "fetched_at": "2026-05-09T23:38:44.866082+00:00"
+    }
+  ]
+}

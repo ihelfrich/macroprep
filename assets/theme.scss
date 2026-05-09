@@ -1,0 +1,293 @@
+/*-- scss:defaults --*/
+
+// ===== Palette =====
+$paper:    #faf8f3;
+$paper-2:  #f3efe3;
+$ink:      #0d3b66;
+$ink-soft: #2a4d6e;
+$rust:     #b85c38;
+$sage:     #4f7942;
+$violet:   #5b4fc7;
+$gold:     #d4a72c;
+$muted:    #6b6b6b;
+$rule:     #d8d2c0;
+
+// ===== Typography =====
+$font-family-serif:     "Source Serif 4", "Source Serif Pro", "STIX Two Text", Georgia, serif;
+$font-family-sans-serif: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+$font-family-monospace: "JetBrains Mono", "SF Mono", Menlo, Consolas, monospace;
+
+$body-bg:        $paper;
+$body-color:     #1c1c1c;
+$link-color:     $rust;
+$link-hover-color: darken($rust, 10%);
+
+$headings-font-family: $font-family-serif;
+$headings-color:       $ink;
+$headings-font-weight: 600;
+
+$h1-font-size: 2.4rem;
+$h2-font-size: 1.7rem;
+$h3-font-size: 1.3rem;
+
+$font-size-base: 1.05rem;
+$line-height-base: 1.65;
+
+$navbar-bg: $ink;
+$sidebar-bg: $paper-2;
+
+$border-radius: 4px;
+$code-bg: rgba($ink, 0.04);
+$code-color: $rust;
+
+/*-- scss:rules --*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;600&display=swap');
+
+body {
+  font-family: $font-family-serif;
+  font-feature-settings: "kern", "liga", "onum";
+  background:
+    linear-gradient(to bottom, $paper 0%, $paper 100%);
+}
+
+// Headings get a subtle accent rule
+h1 {
+  border-bottom: 3px solid $ink;
+  padding-bottom: 0.4rem;
+  letter-spacing: -0.01em;
+}
+h2 {
+  border-left: 4px solid $rust;
+  padding-left: 0.6rem;
+  margin-top: 2.2rem;
+}
+h3 { color: $ink-soft; }
+
+// ===== Hero (landing page) =====
+.mf-hero {
+  background: linear-gradient(135deg, $ink 0%, lighten($ink, 8%) 60%, $violet 130%);
+  color: $paper;
+  padding: 3.2rem 2.4rem 2.6rem;
+  border-radius: 8px;
+  margin: 0 0 2rem 0;
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+      radial-gradient(circle at 85% 20%, rgba($gold, 0.18), transparent 45%),
+      radial-gradient(circle at 12% 90%, rgba($rust, 0.22), transparent 50%);
+    pointer-events: none;
+  }
+
+  h1, h2, h3 { color: $paper; border: none; padding: 0; margin: 0; }
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+  }
+  .mf-hero-sub {
+    font-size: 1.15rem;
+    opacity: 0.88;
+    margin-top: 0.7rem;
+    max-width: 38rem;
+  }
+  .mf-hero-meta {
+    margin-top: 1.4rem;
+    font-family: $font-family-monospace;
+    font-size: 0.82rem;
+    opacity: 0.75;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+}
+
+// ===== TOC grid on landing =====
+.mf-toc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.mf-toc-card {
+  background: $paper-2;
+  border: 1px solid $rule;
+  border-radius: 6px;
+  padding: 1.1rem 1.2rem;
+  transition: transform 0.15s, box-shadow 0.15s, border-color 0.15s;
+  text-decoration: none !important;
+  color: inherit !important;
+  display: block;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba($ink, 0.12);
+    border-color: $rust;
+  }
+  .mf-toc-eyebrow {
+    font-family: $font-family-monospace;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: $rust;
+    margin-bottom: 0.3rem;
+  }
+  .mf-toc-title {
+    font-family: $font-family-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: $ink;
+    margin-bottom: 0.25rem;
+  }
+  .mf-toc-blurb {
+    font-size: 0.9rem;
+    color: $muted;
+    line-height: 1.45;
+  }
+}
+
+// ===== KPI cards (used by dashboards) =====
+.kpi-card {
+  background: $paper;
+  border: 1px solid $rule;
+  border-left: 4px solid $rust;
+  border-radius: 4px;
+  padding: 0.7rem 1rem;
+  min-width: 140px;
+  flex: 0 0 auto;
+
+  .kpi-label {
+    font-family: $font-family-monospace;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: $muted;
+  }
+  .kpi-value {
+    font-family: $font-family-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: $ink;
+    line-height: 1.1;
+    margin: 0.15rem 0;
+    font-variant-numeric: tabular-nums;
+  }
+  .kpi-sub {
+    font-size: 0.78rem;
+    color: $muted;
+  }
+}
+
+// ===== News cards =====
+.news-card {
+  background: $paper;
+  border: 1px solid $rule;
+  border-radius: 4px;
+  padding: 0.9rem 1.1rem;
+  transition: border-color 0.15s, box-shadow 0.15s;
+
+  &:hover {
+    border-color: $ink-soft;
+    box-shadow: 0 3px 10px rgba($ink, 0.06);
+  }
+  .news-meta {
+    display: flex;
+    justify-content: space-between;
+    font-family: $font-family-monospace;
+    font-size: 0.74rem;
+    color: $muted;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.4rem;
+  }
+  .news-source { color: $rust; font-weight: 600; }
+  .news-title {
+    font-family: $font-family-serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: $ink;
+    line-height: 1.35;
+    margin-bottom: 0.35rem;
+  }
+  a { text-decoration: none; }
+  a:hover .news-title { color: $rust; }
+  .news-summary {
+    font-size: 0.92rem;
+    color: $ink-soft;
+    line-height: 1.5;
+  }
+}
+
+// ===== Callouts get more character =====
+div.callout {
+  border-radius: 5px;
+  border-left-width: 4px;
+}
+div.callout-tip   { border-left-color: $sage; }
+div.callout-note  { border-left-color: $ink; }
+div.callout-warning { border-left-color: $gold; }
+div.callout-important { border-left-color: $rust; }
+
+// ===== Code =====
+code {
+  font-family: $font-family-monospace;
+  font-size: 0.9em;
+  background: $code-bg;
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+}
+pre code { background: transparent; padding: 0; }
+
+// ===== Sidebar polish =====
+.sidebar {
+  font-family: $font-family-sans-serif;
+  font-size: 0.93rem;
+  .sidebar-item-text { color: $ink-soft; }
+  .active > .sidebar-item-text { color: $rust; font-weight: 600; }
+}
+
+// ===== Tables =====
+table {
+  font-variant-numeric: tabular-nums;
+  border-collapse: collapse;
+  thead th {
+    background: $paper-2;
+    border-bottom: 2px solid $ink;
+    font-family: $font-family-sans-serif;
+    font-size: 0.88rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  td, th { padding: 0.4rem 0.7rem; }
+  tbody tr:nth-child(even) { background: rgba($paper-2, 0.5); }
+}
+
+// ===== Math =====
+.katex { font-size: 1.05em; }
+
+// ===== Quiz / question-bank styling =====
+.question-block {
+  border-left: 3px solid $violet;
+  padding: 0.4rem 0 0.4rem 1rem;
+  margin: 1rem 0;
+}
+
+// Solution callouts (collapsible)
+details {
+  background: $paper-2;
+  border: 1px solid $rule;
+  border-radius: 4px;
+  padding: 0.6rem 0.9rem;
+  margin: 0.6rem 0;
+  summary {
+    cursor: pointer;
+    font-family: $font-family-sans-serif;
+    font-weight: 600;
+    color: $rust;
+  }
+}

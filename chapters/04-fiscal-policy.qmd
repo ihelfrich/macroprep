@@ -1,0 +1,50 @@
+---
+title: "Fiscal policy"
+---
+
+## What it is
+
+Discretionary fiscal policy: deliberate changes in $\overline{G}$ and $\overline{T}$ aimed at moving $Y^*$ closer to the full-employment level $Y^{FE}$.
+
+| gap | what to do |
+|---|---|
+| Recessionary: $Y^* < Y^{FE}$ | Expand. Raise $\overline{G}$ or cut $\overline{T}$. |
+| Inflationary: $Y^* > Y^{FE}$ | Contract. Cut $\overline{G}$ or raise $\overline{T}$. |
+
+## Closing a gap of size $\Delta Y$
+
+At MPC $c = 0.75$ ($K_G = 4, K_T = -3, K_{BB} = 1$):
+
+| instrument | required change |
+|---|---|
+| Increase $\overline{G}$ alone | $\Delta\overline{G} = \Delta Y / K_G$ |
+| Cut $\overline{T}$ alone | $\Delta\overline{T} = \Delta Y / K_T$ (negative) |
+| Balanced budget: $\overline{G}$ and $\overline{T}$ both up by same $\Delta$ | $\Delta = \Delta Y / K_{BB} = \Delta Y$ |
+
+::: {.callout-note}
+The balanced-budget option leaves the deficit unchanged but still raises $Y^*$. The $K_G$ effect outweighs the $K_T$ effect by exactly 1.
+:::
+
+## Worked example
+
+$Y^* = 1{,}300$. $Y^{FE} = 1{,}400$. Recessionary gap = 100. MPC = 0.75.
+
+- Increase $\overline{G}$ alone: $\Delta\overline{G} = 100 / 4 = 25$.
+- Cut $\overline{T}$ alone: $\Delta\overline{T} = 100 / (-3) \approx -33.33$.
+- Balanced budget: raise $\overline{G}$ by 100 *and* raise $\overline{T}$ by 100. $\Delta Y^* = 100 \cdot 4 + 100 \cdot (-3) = 100$. Deficit unchanged.
+
+A tax cut that does the same work as a $25 spending increase requires a $33 tax cut. **The tax instrument is weaker per dollar** because some of the tax change leaks into saving.
+
+## Federal budget vocabulary
+
+| term | meaning | type |
+|---|---|---|
+| Federal surplus / deficit | $T - G$ this period | flow |
+| Federal debt | cumulative deficits over all time | stock |
+| Privately held federal debt | the portion held outside the government | stock |
+
+Don't confuse a $1 trillion deficit (one-year flow) with a $33 trillion debt (cumulative stock). They are different beasts measured in the same units.
+
+## Crowding out (forward look)
+
+When $\overline{G}$ rises and $Y$ rises, $M^D$ rises (transactions motive), pushing $r^*$ up. Higher $r$ depresses $I^d$. Some of the original boost to $Y$ is undone. This is **crowding out** of private investment by government spending. We work out the chain in the [Money market chapter](06-money-market.qmd).

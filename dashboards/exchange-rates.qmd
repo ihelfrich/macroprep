@@ -1,0 +1,102 @@
+---
+title: "Exchange rates"
+---
+
+```{ojs}
+eur = await (await fetch("../data/fred/DEXUSEU.json")).json()
+gbp = await (await fetch("../data/fred/DEXUSUK.json")).json()
+broad = await (await fetch("../data/fred/DTWEXBGS.json")).json()
+```
+
+```{ojs}
+viewof er_window = Inputs.range([2, 30], {value: 15, step: 1, label: "Years to display"})
+```
+
+```{ojs}
+{
+  const cutoff = new Date()
+  cutoff.setFullYear(cutoff.getFullYear() - er_window)
+  const filt = arr => arr.filter(d => new Date(d.date) >= cutoff).map(d => ({...d, date: new Date(d.date)}))
+  return Plot.plot({
+    width: 800, height: 320, marginLeft: 60, marginBottom: 50,
+    x: {type: "utc"},
+    y: {label: "USD/EUR ($ per €)", grid: true},
+    marks: [
+      Plot.line(filt(eur.observations), {x: "date", y: "value", stroke: "#0e7c7b", strokeWidth: 1.8})
+    ]
+  })
+}
+```
+
+```{ojs}
+{
+  const cutoff = new Date()
+  cutoff.setFullYear(cutoff.getFullYear() - er_window)
+  const filt = arr => arr.filter(d => new Date(d.date) >= cutoff).map(d => ({...d, date: new Date(d.date)}))
+  return Plot.plot({
+    width: 800, height: 320, marginLeft: 60, marginBottom: 50,
+    x: {type: "utc"},
+    y: {label: "USD/GBP ($ per £)", grid: true},
+    marks: [
+      Plot.line(filt(gbp.observations), {x: "date", y: "value", stroke: "#b7410e", strokeWidth: 1.8})
+    ]
+  })
+}
+```
+
+```{ojs}
+{
+  const cutoff = new Date()
+  cutoff.setFullYear(cutoff.getFullYear() - er_window)
+  const filt = arr => arr.filter(d => new Date(d.date) >= cutoff).map(d => ({...d, date: new Date(d.date)}))
+  return Plot.plot({
+    width: 800, height: 320, marginLeft: 70, marginBottom: 50,
+    x: {type: "utc"},
+    y: {label: "Broad trade-weighted dollar index (Jan 2006 = 100)", grid: true},
+    marks: [
+      Plot.line(filt(broad.observations), {x: "date", y: "value", stroke: "#5a5a5a", strokeWidth: 2})
+    ]
+  })
+}
+```
+
+```{ojs}
+html`<div style="display: flex; gap: 0.8rem; flex-wrap: wrap; margin: 1rem 0;">
+  ${[
+    ["USD/EUR", eur.observations.at(-1)?.value, "$ per €"],
+    ["USD/GBP", gbp.observations.at(-1)?.value, "$ per £"],
+    ["Broad $ index", broad.observations.at(-1)?.value, "Jan 2006 = 100"]
+  ].map(([label, v, units]) => `
+    <div class="kpi-card">
+      <div class="kpi-label">${label}</div>
+      <div class="kpi-value">${v != null ? v.toFixed(3) : '—'}</div>
+      <div class="kpi-sub">${units}</div>
+    </div>
+  `).join('')}
+</div>`
+```
+
+## How to read
+
+USD/EUR: dollars per euro. **Higher = euro stronger / dollar weaker.** A move from 1.05 to 1.20 is dollar depreciation against the euro.
+
+USD/GBP: same convention. Higher means pound stronger.
+
+Broad trade-weighted index: weighted basket of major U.S. trade partners, indexed to Jan 2006 = 100. Higher = stronger dollar against the basket. This is the cleanest single measure of dollar strength globally.
+
+## What drives moves
+
+Two main channels (PPP and capital-flow) work in opposite directions:
+
+- **Higher U.S. inflation** relative to trading partners → dollar depreciates (PPP).
+- **Higher U.S. interest rates** relative to trading partners → dollar appreciates (capital inflows).
+
+In the short run, capital-flow dominance usually wins. In the long run, PPP usually wins. Watch both gradually.
+
+## Source
+
+[FRED](https://fred.stlouisfed.org/) — DEXUSEU, DEXUSUK from the Federal Reserve Board's H.10 release. DTWEXBGS (Goods & Services trade-weighted index) is the Fed's preferred broad-dollar measure.
+
+```{ojs}
+md`*Last data refresh: ${eur.last_updated || 'unknown'}.*`
+```

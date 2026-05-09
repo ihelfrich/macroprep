@@ -1,0 +1,38 @@
+---
+title: "Monetary policy under floating vs. fixed ER"
+---
+
+## Two channels of expansionary monetary policy
+
+When the Fed eases ($\uparrow M^S$):
+
+1. **Interest-rate channel.** $\downarrow r \Rightarrow \uparrow I^d \Rightarrow \uparrow Y$.
+2. **Exchange-rate channel.** $\downarrow r \Rightarrow$ capital outflow $\Rightarrow$ home currency depreciates $\Rightarrow \uparrow (X-M) \Rightarrow \uparrow Y$.
+
+## Under flexible ER: both channels reinforce
+
+Both channels push $Y$ up. Monetary policy is *potent* under floating exchange rates — that's one reason the U.S., UK, Japan, eurozone all run floating regimes.
+
+## Under fixed ER: only channel 1 operates
+
+The central bank is committed to keep the ER stable. When monetary easing causes capital outflows that would depreciate the currency, the central bank must intervene — selling its FX reserves and buying back its own currency. That contracts $M^S$ back toward where it started.
+
+Net effect: monetary easing under a fixed ER is **muted**. Channel 1 (interest-rate) operates partially; channel 2 (FX) is dead.
+
+## The trilemma
+
+A country can choose **at most two** of these three:
+
+1. Free capital flow.
+2. Fixed exchange rate.
+3. Independent monetary policy.
+
+| who picks what | example |
+|---|---|
+| Free capital + floating ER, give up fixed ER | U.S., UK, Japan, Eurozone |
+| Free capital + fixed ER, give up independent monetary policy | Hong Kong (USD peg), members of a currency union |
+| Fixed ER + independent policy, give up free capital | China historically (capital controls) |
+
+::: {.callout-important}
+**This is why monetary unions are a big deal.** Joining the Eurozone is choosing column 2 — you fix your ER (effectively, by adopting the same currency) and accept that the ECB sets monetary policy for everyone.
+:::

@@ -1,0 +1,105 @@
+project:
+  type: book
+  output-dir: docs
+  resources:
+    - "data/**"
+
+book:
+  title: "Macro Prep"
+  subtitle: "Interactive intermediate-macro reference with live data, drill, and analysis tools."
+  author: "Dr. Ian Helfrich"
+  date: last-modified
+  date-format: "MMMM YYYY"
+  site-url: "https://ihelfrich.github.io/macroprep/"
+  repo-url: "https://github.com/ihelfrich/macroprep"
+  repo-branch: main
+  repo-actions: [edit, source, issue]
+  search:
+    type: overlay
+    location: sidebar
+  page-navigation: true
+  reader-mode: false
+  sidebar:
+    style: docked
+    background: light
+    collapse-level: 1
+  page-footer:
+    left: |
+      © 2026 Dr. Ian Helfrich · CC-BY-SA 4.0 · Data © respective sources (FRED, BLS, BEA, etc.).
+    center: |
+      [Source on GitHub](https://github.com/ihelfrich/macroprep)
+    right: |
+      Built with [Quarto](https://quarto.org).
+  chapters:
+    - index.qmd
+    - part: "Foundations"
+      chapters:
+        - chapters/01-cpi-unemployment.qmd
+        - chapters/02-keynesian-cross.qmd
+        - chapters/03-multipliers.qmd
+        - chapters/04-fiscal-policy.qmd
+    - part: "Money"
+      chapters:
+        - chapters/05-money-banking.qmd
+        - chapters/06-money-market.qmd
+        - chapters/07-bonds.qmd
+    - part: "Open economy & synthesis"
+      chapters:
+        - chapters/08-as-ad.qmd
+        - chapters/09-foreign-exchange.qmd
+        - chapters/10-monetary-regimes.qmd
+    - part: "Interactive tools"
+      chapters:
+        - interactive/keynesian-cross-tool.qmd
+        - interactive/multiplier-dashboard.qmd
+        - interactive/money-creation-tool.qmd
+        - interactive/bond-pricer.qmd
+        - interactive/ppp-calculator.qmd
+    - part: "Live data dashboards"
+      chapters:
+        - dashboards/inflation.qmd
+        - dashboards/labor.qmd
+        - dashboards/money-rates.qmd
+        - dashboards/output.qmd
+        - dashboards/exchange-rates.qmd
+        - dashboards/news.qmd
+    - part: "Practice"
+      chapters:
+        - practice/decision-tree.qmd
+        - practice/quick-quiz.qmd
+        - practice/full-exam.qmd
+        - practice/question-bank.qmd
+    - part: "Reference"
+      chapters:
+        - reference/formulas.qmd
+        - reference/glossary.qmd
+        - reference/traps.qmd
+        - reference/sources.qmd
+
+bibliography: references.bib
+csl: https://www.zotero.org/styles/chicago-author-date
+
+format:
+  html:
+    theme:
+      light: [cosmo, assets/theme.scss]
+    css: assets/styles.css
+    toc: true
+    toc-depth: 3
+    toc-expand: 2
+    toc-location: right
+    code-copy: true
+    code-overflow: wrap
+    smooth-scroll: true
+    citations-hover: true
+    crossrefs-hover: true
+    link-external-newwindow: true
+    html-math-method: katex
+    fig-format: png
+    fig-dpi: 220
+    fig-align: center
+
+execute:
+  freeze: auto
+  echo: false
+  warning: false

@@ -1,0 +1,77 @@
+---
+title: "CPI, inflation, unemployment"
+---
+
+## CPI (Laspeyres)
+
+The Consumer Price Index measures the cost of a fixed *base-year basket* of goods, evaluated at year-$t$ prices, relative to the cost of that same basket at base-year prices.
+
+$$\text{CPI}_t = \frac{\sum_i P_{i,t} \cdot Q_{i,\text{base}}}{\sum_i P_{i,\text{base}} \cdot Q_{i,\text{base}}} \cdot 100$$
+
+In the base year, $\text{CPI} = 100$ by construction.
+
+::: {.callout-important}
+**The basket is frozen.** You only re-price it. If consumers in 2023 buy more chicken and less beef because beef got expensive, the CPI doesn't notice — it still uses the base-year quantities. This is why **CPI overestimates inflation** (substitution bias).
+:::
+
+### Inflation
+
+$$\pi_t = \frac{\text{CPI}_t - \text{CPI}_{t-1}}{\text{CPI}_{t-1}} \cdot 100$$
+
+The denominator is the **earlier** year. The base year sets the level; it does not have to be the denominator.
+
+### IGDPDI (Paasche)
+
+The implicit GDP deflator uses *current* quantities and base-year prices. It **underestimates** inflation. Reverse for deflation.
+
+| index | quantities | prices | bias on inflation |
+|---|---|---|---|
+| CPI (Laspeyres) | base-year (frozen) | year-$t$ | overestimates |
+| IGDPDI (Paasche) | year-$t$ | base-year | underestimates |
+
+## Unemployment
+
+The labor force is everyone who is employed plus those actively looking for work:
+
+$$LF = E + U$$
+
+The unemployment rate is the share of the labor force who are looking but haven't found work:
+
+$$u = \frac{U}{E + U}$$
+
+The labor force participation rate is the share of the working-age population in the labor force:
+
+$$\text{LF participation} = \frac{LF}{\text{Pop}}$$
+
+::: {.callout-warning}
+**Discouraged workers are not in the labor force.** Someone who has stopped looking is counted as out of the LF, so they don't appear in $u$. This is why measured unemployment can fall during a recession (people give up) without the underlying labor market improving.
+:::
+
+## Types of unemployment
+
+| type | definition |
+|---|---|
+| **Frictional** | Short-run job/skill matching. People between jobs. Always present in a healthy economy. |
+| **Structural** | Whole industries decline. Workers' skills no longer demanded. Painful and slow to resolve. |
+| **Cyclical** | From recessions. Disappears in expansions. The Keynesian story. |
+| **Natural rate** | Frictional + structural. Textbook value $\approx 4\%$. The level consistent with no accelerating inflation. |
+
+The **full-employment GDP** ($Y^{FE}$) is the level of output the economy would produce at the natural rate of unemployment. Gaps from $Y^{FE}$ are recessionary (if $Y^* < Y^{FE}$) or inflationary (if $Y^* > Y^{FE}$).
+
+## A worked example
+
+Base year 2019, basket = 30 bread + 1 housing + 25 gas. Prices and quantities:
+
+|  | 2019 price | 2020 price |
+|---|---:|---:|
+| Bread | $1.50 | $2.00 |
+| Housing | $1{,}000 | $950 |
+| Gas | $3.50 | $5.75 |
+
+Cost of base basket at 2019 prices: $30(1.50) + 1(1000) + 25(3.50) = 45 + 1000 + 87.5 = 1{,}132.5$.
+
+Cost at 2020 prices: $30(2.00) + 1(950) + 25(5.75) = 60 + 950 + 143.75 = 1{,}153.75$.
+
+CPI (2019) = $1{,}132.5/1{,}132.5 \cdot 100 = 100$. CPI (2020) = $1{,}153.75/1{,}132.5 \cdot 100 = 101.88$.
+
+Inflation 2019 → 2020 = $(101.88 - 100)/100 \cdot 100 = 1.88\%$.

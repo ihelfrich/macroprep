@@ -1,0 +1,96 @@
+---
+title: "Inflation"
+---
+
+Live data from FRED. Updates daily via GitHub Actions. Last refresh shown at the bottom of the page.
+
+```{ojs}
+//| label: load-inflation-data
+cpi = await (await fetch("../data/fred/CPIAUCSL.json")).json()
+core_cpi = await (await fetch("../data/fred/CPILFESL.json")).json()
+pce = await (await fetch("../data/fred/PCEPI.json")).json()
+core_pce = await (await fetch("../data/fred/PCEPILFE.json")).json()
+```
+
+```{ojs}
+// Compute YoY inflation series (current value / 12 months ago - 1) * 100
+function yoy(obs) {
+  const out = []
+  for (let i = 12; i < obs.length; i++) {
+    if (obs[i].value && obs[i-12].value) {
+      out.push({date: obs[i].date, value: ((obs[i].value / obs[i-12].value) - 1) * 100})
+    }
+  }
+  return out
+}
+cpi_yoy = yoy(cpi.observations)
+core_cpi_yoy = yoy(core_cpi.observations)
+pce_yoy = yoy(pce.observations)
+core_pce_yoy = yoy(core_pce.observations)
+```
+
+```{ojs}
+viewof window_years = Inputs.range([2, 30], {value: 10, step: 1, label: "Years to display"})
+```
+
+```{ojs}
+//| label: inflation-plot
+{
+  const cutoff = new Date()
+  cutoff.setFullYear(cutoff.getFullYear() - window_years)
+  const filt = arr => arr.filter(d => new Date(d.date) >= cutoff)
+  const series = [
+    ...filt(cpi_yoy).map(d => ({...d, series: "Headline CPI"})),
+    ...filt(core_cpi_yoy).map(d => ({...d, series: "Core CPI"})),
+    ...filt(pce_yoy).map(d => ({...d, series: "Headline PCE"})),
+    ...filt(core_pce_yoy).map(d => ({...d, series: "Core PCE"}))
+  ]
+  return Plot.plot({
+    width: 800,
+    height: 380,
+    marginLeft: 60,
+    marginBottom: 50,
+    x: {type: "utc"},
+    y: {label: "Year-over-year inflation (%)", grid: true},
+    color: {legend: true, scheme: "set1"},
+    marks: [
+      Plot.ruleY([0]),
+      Plot.ruleY([2], {stroke: "#888", strokeDasharray: "4 3"}),
+      Plot.text([{x: cutoff, y: 2.1, l: "Fed 2% target"}], {x: "x", y: "y", text: "l", fill: "#888", fontSize: 10, dx: 30}),
+      Plot.line(series.map(d => ({...d, date: new Date(d.date)})), {x: "date", y: "value", stroke: "series", strokeWidth: 1.8})
+    ]
+  })
+}
+```
+
+```{ojs}
+//| label: inflation-current
+html`<div style="display: flex; gap: 0.8rem; flex-wrap: wrap; margin: 1rem 0;">
+  ${[
+    ["Headline CPI YoY", cpi_yoy.at(-1)?.value, "Δ all urban consumers"],
+    ["Core CPI YoY", core_cpi_yoy.at(-1)?.value, "ex food & energy"],
+    ["Headline PCE YoY", pce_yoy.at(-1)?.value, "personal-cons. expend."],
+    ["Core PCE YoY", core_pce_yoy.at(-1)?.value, "Fed's preferred gauge"]
+  ].map(([label, v, sub]) => `
+    <div class="kpi-card">
+      <div class="kpi-label">${label}</div>
+      <div class="kpi-value">${v ? v.toFixed(2) + '%' : '—'}</div>
+      <div class="kpi-sub">${sub}</div>
+    </div>
+  `).join('')}
+</div>`
+```
+
+## Reading this
+
+The Fed targets **2%** PCE inflation. Headline figures (CPI, PCE) include food and energy; core measures (Core CPI, Core PCE) strip them out because food/energy are volatile and don't reflect underlying price pressure. Core PCE is the Fed's *preferred* gauge.
+
+Watch for divergence between headline and core. When energy prices spike, headline races ahead of core. When energy collapses, headline drops below core. The persistent signal lives in core.
+
+## Source
+
+All four series from [FRED](https://fred.stlouisfed.org/), produced by the Bureau of Labor Statistics (CPI series) and Bureau of Economic Analysis (PCE series). Refreshed daily.
+
+```{ojs}
+md`*Last data refresh: ${cpi.last_updated || 'unknown'}.*`
+```

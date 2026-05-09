@@ -1,0 +1,53 @@
+---
+title: "Decision tree: which technique?"
+---
+
+When you read an exam question, identify the *type* before you start computing. The right approach is fast; the wrong one wastes minutes.
+
+## Step 1: What is the question asking?
+
+| if the question asks for… | use this approach |
+|---|---|
+| **CPI in some year** or **inflation between two years** | Laspeyres formula. Cost of base-year basket at year-$t$ prices ÷ cost at base-year prices × 100. |
+| **Unemployment rate** | $u = U / (E + U)$. Note: discouraged workers are NOT in $U$. |
+| **Equilibrium $Y^*$** in a closed economy | $Y^* = (\overline{C_0} + \overline{I}) / (1-c)$. |
+| **Equilibrium $Y^*$** in an open economy with government | Sum-of-multipliers form: $Y^* = \frac{1}{1-c}(\overline{C_0} + \overline{I} + \overline{G} + \overline{X} - \overline{M}) - \frac{c}{1-c}\overline{T}$. |
+| **The change in $Y^*$ from a change in autonomous variable** | Multiplier $\times$ change. $\Delta Y^* = K_X \cdot \Delta\overline{X}$. |
+| **What change closes a recessionary/inflationary gap** | $\Delta\overline{X} = (Y^{FE} - Y^*) / K_X$. |
+| **The MPC, given $Y^*$ and autonomous values** | Solve $1 - c = (\overline{C_0} + \overline{I}) / Y^*$ for $c$. |
+| **$\Delta M^S$ from an OMO purchase** | $\Delta M^S = K_S \cdot \Delta\text{Reserves}$ where $K_S = 1/rrr$. |
+| **Required reserves vs. excess reserves** | $RR = rrr \cdot DD_p$. $ER = TR - RR$. Bank can lend up to $ER$. |
+| **Bond present value** | $PV = FV/(1+r)^T$. |
+| **Implied interest rate from a bond price** | $r = (FV/PV)^{1/T} - 1$. |
+| **The PPP exchange rate** | $E_{\$/\pounds} = P_{US}/P_{UK}$. |
+| **Direction of currency move from relative inflation** | High inflation $\Rightarrow$ depreciate. PPP. |
+| **Direction of currency move from relative interest rates** | High interest rate $\Rightarrow$ appreciate. Capital flows. (Opposite of inflation.) |
+| **Effect of currency depreciation on $Y$** | $\uparrow EX, \downarrow IM, \uparrow (X-M), \uparrow Y, \uparrow P$. |
+| **Effect of monetary policy under fixed vs. floating ER** | Floating: both $r$ channel and FX channel. Fixed: only $r$ channel; FX channel dead. |
+
+## Step 2: Mind the signs
+
+These are the four most-failed questions on macro exams:
+
+1. **Tax multiplier is negative.** $K_T = -c/(1-c)$. Cutting $T$ raises $Y^*$.
+2. **Bond price and $r$ are inverse.** Always.
+3. **Inflation and interest rate effects on FX go OPPOSITE directions.** High inflation depreciates; high interest rate appreciates.
+4. **Currency appreciation lowers exports** (home goods more expensive abroad).
+
+## Step 3: Beware composition
+
+If the question mentions multiple changes ($\overline{G}$ rising AND $\overline{T}$ rising), do them separately and sum:
+
+$$\Delta Y^* = K_G \Delta\overline{G} + K_T \Delta\overline{T} + \ldots$$
+
+The balanced-budget multiplier $K_{BB} = K_G + K_T = 1$ is just this for the special case where $\Delta\overline{G} = \Delta\overline{T}$.
+
+## Step 4: Sanity check
+
+After you compute, ask:
+
+- Is the sign right? (Did $Y^*$ go up when I expanded fiscal policy?)
+- Is the magnitude in a reasonable range? (Multiplier at 0.75 MPC should give $K \approx 4$, not 40.)
+- Did I plug the numbers in the right place? ($T$ goes inside the bracket multiplied by $-c$, not $-1$.)
+
+If anything fails, redo. Most computational errors are sign errors or fraction-flip errors. The interactive tools on this site can verify numerical answers in 30 seconds — use them.

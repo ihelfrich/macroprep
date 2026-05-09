@@ -1,0 +1,73 @@
+---
+title: "Interactive: bond pricer"
+---
+
+Two modes: compute $PV$ given $r$, or back out $r$ given $PV$.
+
+## Mode 1: price the bond
+
+::: {.widget-panel}
+
+```{ojs}
+viewof FV1 = Inputs.range([100, 10000], {value: 1000, step: 50, label: "Face value FV"})
+viewof r1 = Inputs.range([0.001, 0.20], {value: 0.05, step: 0.005, label: "Interest rate r"})
+viewof T1 = Inputs.range([1, 30], {value: 5, step: 1, label: "Years to maturity T"})
+```
+
+```{ojs}
+PV1 = FV1 / Math.pow(1 + r1, T1)
+```
+
+```{ojs}
+md`**Present value:** \`PV = \$${FV1} / (1 + ${r1.toFixed(3)})^${T1} = \$${PV1.toFixed(2)}\``
+```
+
+```{ojs}
+Plot.plot({
+  width: 600,
+  height: 320,
+  marginLeft: 70,
+  marginBottom: 50,
+  x: {label: "Interest rate r (%)", domain: [0, 20]},
+  y: {label: "Bond PV ($)", domain: [0, FV1 * 1.05]},
+  marks: [
+    Plot.line(d3.range(0.001, 0.20, 0.002).map(rr => ({rr: rr * 100, pv: FV1 / Math.pow(1 + rr, T1)})), {x: "rr", y: "pv", stroke: "#0e7c7b", strokeWidth: 2.2}),
+    Plot.dot([{rr: r1 * 100, pv: PV1}], {x: "rr", y: "pv", fill: "#b7410e", r: 6}),
+    Plot.text([{rr: r1 * 100, pv: PV1, l: `PV = $${PV1.toFixed(0)}`}], {x: "rr", y: "pv", text: "l", dx: 12, dy: -8, fill: "#b7410e", fontSize: 11, fontWeight: "bold"})
+  ]
+})
+```
+
+:::
+
+## Mode 2: back out the implied yield
+
+Given the market price, what yield is the bond paying?
+
+::: {.widget-panel}
+
+```{ojs}
+viewof FV2 = Inputs.range([100, 10000], {value: 1000, step: 50, label: "Face value FV"})
+viewof PV2 = Inputs.range([10, 9999], {value: 800, step: 10, label: "Market price PV"})
+viewof T2 = Inputs.range([1, 30], {value: 5, step: 1, label: "Years to maturity T"})
+```
+
+```{ojs}
+implied_r = Math.pow(FV2 / PV2, 1 / T2) - 1
+```
+
+```{ojs}
+md`**Implied yield:** \`r = (${FV2}/${PV2})^(1/${T2}) − 1 = ${(implied_r * 100).toFixed(3)}%\``
+```
+
+:::
+
+## What to play with
+
+- Set $FV = 1{,}000$, $T = 5$. Move $r$ from 1% to 20%. Watch $PV$ drop from \$951 to \$402. The shorter the maturity, the less price-sensitive to $r$.
+- Set $T = 30$. Same $r$ swing now moves $PV$ from \$742 down to \$4. Long bonds are extremely interest-rate-sensitive. This is why the long end of the yield curve is volatile.
+- Mode 2 with $PV = 800$, $FV = 1{,}000$, $T = 5$. Implied yield $\approx 4.56\%$. Useful for "given this discount, what return?"
+
+## The intuition
+
+A bond is a fixed promise of future dollars. If the discount rate rises, those future dollars are worth less today. Equivalently: if new bonds pay 8% and you hold a 7% bond, no one will pay full face value for yours; its market price falls until its yield-to-maturity matches 8%.

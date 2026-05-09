@@ -1,0 +1,25 @@
+# Quarto build artifacts
+_freeze/
+_book/
+.quarto/
+site_libs/
+
+# Editor / OS
+.DS_Store
+*.swp
+.vscode/
+.idea/
+.Rproj.user/
+*.Rproj
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Cached data — committed to repo, but ignore the temp work directory
+data/_tmp/
+
+/.quarto/
+**/*.quarto_ipynb

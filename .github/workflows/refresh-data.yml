@@ -1,0 +1,42 @@
+name: Refresh macro data (FRED + feeds)
+
+on:
+  schedule:
+    # 06:30 UTC daily (just after Federal Reserve daily H.15 release at midnight UTC)
+    - cron: "30 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Refresh FRED time series
+        run: python3 scripts/fetch_macro_data.py
+        continue-on-error: true
+
+      - name: Refresh news/RSS feeds
+        run: python3 scripts/fetch_feeds.py
+        continue-on-error: true
+
+      - name: Commit updates if any
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if ! git diff --cached --quiet; then
+            git commit -m "auto: refresh macro data $(date -u +%Y-%m-%d)"
+            git push
+          else
+            echo "No data changes to commit."
+          fi

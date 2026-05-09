@@ -1,0 +1,106 @@
+---
+title: "Money supply & interest rates"
+---
+
+```{ojs}
+m2 = await (await fetch("../data/fred/M2SL.json")).json()
+ffr = await (await fetch("../data/fred/FEDFUNDS.json")).json()
+dgs10 = await (await fetch("../data/fred/DGS10.json")).json()
+dgs2 = await (await fetch("../data/fred/DGS2.json")).json()
+t10y2y = await (await fetch("../data/fred/T10Y2Y.json")).json()
+```
+
+```{ojs}
+viewof rates_window = Inputs.range([2, 50], {value: 25, step: 1, label: "Years to display"})
+```
+
+```{ojs}
+{
+  const cutoff = new Date()
+  cutoff.setFullYear(cutoff.getFullYear() - rates_window)
+  const filt = arr => arr.filter(d => new Date(d.date) >= cutoff).map(d => ({...d, date: new Date(d.date)}))
+  const data = [
+    ...filt(ffr.observations).map(d => ({...d, series: "Fed funds rate"})),
+    ...filt(dgs2.observations).map(d => ({...d, series: "2-year Treasury"})),
+    ...filt(dgs10.observations).map(d => ({...d, series: "10-year Treasury"}))
+  ]
+  return Plot.plot({
+    width: 800, height: 380, marginLeft: 60, marginBottom: 50,
+    x: {type: "utc"},
+    y: {label: "Interest rate (%)", grid: true},
+    color: {legend: true, scheme: "set1"},
+    marks: [
+      Plot.ruleY([0]),
+      Plot.line(data, {x: "date", y: "value", stroke: "series", strokeWidth: 1.8})
+    ]
+  })
+}
+```
+
+```{ojs}
+// Term spread (10y minus 2y) — recession-predictive
+{
+  const cutoff = new Date()
+  cutoff.setFullYear(cutoff.getFullYear() - rates_window)
+  const filt = arr => arr.filter(d => new Date(d.date) >= cutoff).map(d => ({...d, date: new Date(d.date)}))
+  return Plot.plot({
+    width: 800, height: 280, marginLeft: 60, marginBottom: 50,
+    x: {type: "utc"},
+    y: {label: "10y − 2y term spread (pp)", grid: true},
+    marks: [
+      Plot.ruleY([0], {stroke: "#888"}),
+      Plot.areaY(filt(t10y2y.observations), {x: "date", y: "value", fill: "#0e7c7b", fillOpacity: 0.3}),
+      Plot.line(filt(t10y2y.observations), {x: "date", y: "value", stroke: "#0e7c7b", strokeWidth: 1.5})
+    ]
+  })
+}
+```
+
+```{ojs}
+{
+  const cutoff = new Date()
+  cutoff.setFullYear(cutoff.getFullYear() - rates_window)
+  const filt = arr => arr.filter(d => new Date(d.date) >= cutoff).map(d => ({...d, date: new Date(d.date)}))
+  return Plot.plot({
+    width: 800, height: 320, marginLeft: 70, marginBottom: 50,
+    x: {type: "utc"},
+    y: {label: "M2 money stock ($ billions, SA)", grid: true},
+    marks: [
+      Plot.line(filt(m2.observations), {x: "date", y: "value", stroke: "#b7410e", strokeWidth: 2})
+    ]
+  })
+}
+```
+
+```{ojs}
+html`<div style="display: flex; gap: 0.8rem; flex-wrap: wrap; margin: 1rem 0;">
+  ${[
+    ["Fed funds rate", ffr.observations.at(-1)?.value, "%"],
+    ["10-yr Treasury", dgs10.observations.at(-1)?.value, "%"],
+    ["2-yr Treasury", dgs2.observations.at(-1)?.value, "%"],
+    ["10y − 2y spread", t10y2y.observations.at(-1)?.value, "pp"],
+    ["M2", m2.observations.at(-1)?.value, "$B SA"]
+  ].map(([label, v, units]) => `
+    <div class="kpi-card">
+      <div class="kpi-label">${label}</div>
+      <div class="kpi-value">${v != null ? v.toFixed(2) + ' ' + units : '—'}</div>
+    </div>
+  `).join('')}
+</div>`
+```
+
+## What to watch
+
+**The term spread (10y − 2y)** is the single most reliable recession predictor in the U.S. dataset. When it inverts (goes negative), a recession typically follows in 6–18 months. Every U.S. recession since 1970 was preceded by inversion. Inversions also produce false alarms occasionally, but the absence of inversion has rarely been wrong.
+
+**M2** is the broad money stock — currency, demand deposits, savings deposits, retail money market funds. Watching its growth rate gives a sense of monetary expansion / contraction independent of what the Fed funds rate is doing.
+
+**Fed funds rate** is the Fed's main policy rate. The Fed influences it by adjusting the supply of bank reserves through OMO. The 2-yr Treasury tracks expected future fed funds; the 10-yr reflects long-run inflation and growth expectations.
+
+## Source
+
+All from [FRED](https://fred.stlouisfed.org/). Daily series (DFF, DGS2, DGS10, T10Y2Y) update each business day; M2SL and FEDFUNDS update monthly.
+
+```{ojs}
+md`*Last data refresh: ${ffr.last_updated || 'unknown'}.*`
+```

@@ -1,0 +1,83 @@
+---
+title: "Glossary"
+---
+
+**Frictional unemployment.** Short-run job/skill matching. People between jobs.
+
+**Structural unemployment.** Changes in the structure of the economy. Whole industries decline.
+
+**Cyclical unemployment.** From recessions. Disappears in expansions.
+
+**Natural rate.** Frictional + structural. Textbook value $\approx 4\%$. The level consistent with full employment and no accelerating inflation.
+
+**Discouraged worker.** Not in the labor force. Doesn't show up in $u$.
+
+**MPC.** $\Delta C / \Delta Y_d$. Slope of the consumption function.
+
+**APC.** $C / Y_d$.
+
+**Subsistence consumption $\overline{C_0}$.** Consumption when $Y_d = 0$. Vertical intercept of $C$.
+
+**Autonomous (exogenous).** Does not depend on $Y$. In our model: $\overline{I}, \overline{G}, \overline{C_0}, \overline{T}, \overline{X}, \overline{M}$.
+
+**Multiplier $K_X$.** $\Delta Y^* / \Delta\overline{X}$. Magnitude depends only on $c$.
+
+**M1.** Currency held by public + checking + travelers' checks + NOW accounts. Stock measure.
+
+**M2.** M1 + savings + small time deposits + money market mutual funds + near-monies.
+
+**Required reserve ratio (rrr).** Fraction of demand deposits banks must hold as reserves.
+
+**Discount rate.** Rate at which the Fed lends to commercial banks.
+
+**Open Market Operations (OMO).** Fed buys or sells government securities. The most-used tool.
+
+**Money multiplier $K_S$.** $1/rrr$. Dollars of $M^S$ per dollar of new reserves (assuming no leakage).
+
+**Liquidity.** Ease of converting an asset to cash without losing value.
+
+**Commodity money.** Has intrinsic value (gold).
+
+**Fiat money.** Intrinsically worthless. Value comes from government decree.
+
+**Legal tender.** Government requires acceptance for settlement of debts.
+
+**Currency debasement.** Value of money falls when supply rises rapidly.
+
+**Discretionary fiscal policy.** Deliberate changes in $\overline{G}$ and $\overline{T}$ to affect $Y^*$.
+
+**Recessionary gap.** $Y^* < Y^{FE}$.
+
+**Inflationary gap.** $Y^* > Y^{FE}$.
+
+**Federal surplus / deficit.** $T - G$. Flow.
+
+**Federal debt.** Cumulative deficits over time. Stock.
+
+**Privately held federal debt.** Portion held by non-government entities.
+
+**Foreign exchange.** All currencies other than the domestic one.
+
+**Balance of payments.** Record of all international transactions in goods, services, and assets.
+
+**Current account.** Net exports + net investment income from abroad + net transfers from abroad.
+
+**Capital account.** Net change in asset positions. U.S. buying foreign assets is a debit. Foreigners buying U.S. assets is a credit.
+
+**Trade deficit / surplus.** $EX - IM$ negative / positive.
+
+**Floating ER.** Market-determined.
+
+**Fixed ER.** Pegged by central bank intervention.
+
+**PPP.** Exchange rate equals ratio of price levels.
+
+**J-curve.** After a depreciation, the trade balance gets worse first, then better.
+
+**Trade feedback effect.** One country's growth raises imports, which become foreign exports, which boost foreign $Y$, which feeds back as more demand for the original country's exports.
+
+**Price feedback effect.** Inflation in one country raises import prices in other countries, transmitting inflation.
+
+**Beggar-thy-neighbor.** Trying to boost own $Y$ by exporting more and importing less. Hurts trading partners. Triggers retaliation.
+
+**Trilemma.** A country can choose at most two of: free capital flow, fixed exchange rate, independent monetary policy.

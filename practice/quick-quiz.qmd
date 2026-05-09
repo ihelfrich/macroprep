@@ -1,0 +1,104 @@
+---
+title: "Quick quiz: 12 conceptual questions"
+---
+
+Reveal each answer only after you commit to one. Be honest — guessing without thinking is worse than thinking and being wrong.
+
+```{=html}
+<style>
+  .qq { background: white; border: 1px solid #e6e3dc; border-left: 4px solid #0e7c7b; border-radius: 6px; padding: 1rem 1.4rem; margin: 1.5rem 0; }
+  .qq .qa { display: none; margin-top: 0.8rem; padding-top: 0.8rem; border-top: 1px dashed #e6e3dc; }
+  .qq.show .qa { display: block; }
+  .qq button { background: #0e7c7b; color: white; border: none; padding: 0.4rem 1rem; border-radius: 4px; cursor: pointer; font-family: 'Inter', sans-serif; font-size: 0.85rem; margin-top: 0.4rem; }
+  .qq button:hover { background: #0a5e5d; }
+</style>
+<script>
+function revealAnswer(btn) {
+  btn.parentElement.classList.toggle('show');
+  btn.textContent = btn.parentElement.classList.contains('show') ? 'Hide answer' : 'Reveal answer';
+}
+</script>
+
+<div class="qq">
+<strong>Q1.</strong> CPI uses base-year quantities and current-year prices. Does this overstate or understate inflation, and why?
+<button onclick="revealAnswer(this)">Reveal answer</button>
+<div class="qa"><strong>Overstates.</strong> Consumers substitute away from goods whose prices have risen, but Laspeyres holds quantities fixed at the (cheaper-substitute-not-yet-bought) base-year basket. The IGDPDI (Paasche) does the opposite and underestimates.</div>
+</div>
+
+<div class="qq">
+<strong>Q2.</strong> A discouraged worker stops looking for a job. What happens to (a) U, (b) LF, (c) the unemployment rate $u$?
+<button onclick="revealAnswer(this)">Reveal answer</button>
+<div class="qa"><strong>(a) U falls (they're no longer counted as unemployed). (b) LF falls by the same amount. (c) $u$ falls.</strong> This is why measured unemployment can drop in a bad economy — it's a bad signal of labor-market improvement.</div>
+</div>
+
+<div class="qq">
+<strong>Q3.</strong> MPC = 0.80. The government wants to raise $Y^*$ by 200. By how much must it raise $\overline{G}$?
+<button onclick="revealAnswer(this)">Reveal answer</button>
+<div class="qa">$K_G = 1/(1-0.80) = 5$. $\Delta\overline{G} = 200/5 = $ <strong>40</strong>.</div>
+</div>
+
+<div class="qq">
+<strong>Q4.</strong> Same MPC. Same target. By how much must it cut $\overline{T}$? Why is this number bigger in absolute value than the $G$ answer?
+<button onclick="revealAnswer(this)">Reveal answer</button>
+<div class="qa">$K_T = -0.80/0.20 = -4$. $\Delta\overline{T} = 200/(-4) = $ <strong>−50</strong>. Bigger because some of a tax cut is saved (the round-one $1-c$ portion). The spending instrument is more powerful per dollar.</div>
+</div>
+
+<div class="qq">
+<strong>Q5.</strong> Same MPC. Use the balanced-budget combination to close the gap. By how much do $\overline{G}$ and $\overline{T}$ each rise?
+<button onclick="revealAnswer(this)">Reveal answer</button>
+<div class="qa">$K_{BB} = 1$. So $\Delta\overline{G} = \Delta\overline{T} = $ <strong>200</strong>. Verify: $\Delta Y^* = 200 \cdot 5 + 200 \cdot (-4) = 1000 - 800 = 200$. ✓ Deficit unchanged.</div>
+</div>
+
+<div class="qq">
+<strong>Q6.</strong> The Fed sells $50 of bonds (OMO sale). $rrr = 25\%$. What is $\Delta M^S$? Does $r^*$ rise or fall?
+<button onclick="revealAnswer(this)">Reveal answer</button>
+<div class="qa">$K_S = 4$. $\Delta M^S = 4 \cdot (-50) = $ <strong>−$200</strong>. $M^S$ shifts left, so <strong>$r^*$ rises</strong>.</div>
+</div>
+
+<div class="qq">
+<strong>Q7.</strong> A 10-year bond has $FV = \$1{,}000$ and trades at $\$700$. What's the implied yield $r$?
+<button onclick="revealAnswer(this)">Reveal answer</button>
+<div class="qa">$r = (1000/700)^{1/10} - 1 = (1.4286)^{0.1} - 1 \approx 1.0363 - 1 = $ <strong>3.63%</strong>.</div>
+</div>
+
+<div class="qq">
+<strong>Q8.</strong> The market interest rate jumps from 3% to 8%. What happens to the price of an existing bond (issued when rates were 3%)?
+<button onclick="revealAnswer(this)">Reveal answer</button>
+<div class="qa"><strong>Falls.</strong> The old bond pays 3% but new bonds pay 8%. Nobody will pay full face value for a 3% bond when they could buy a new 8% one. Price drops until yield-to-maturity matches 8%.</div>
+</div>
+
+<div class="qq">
+<strong>Q9.</strong> US inflation runs at 6%/year. UK inflation is 2%/year. What does PPP say happens to the dollar relative to the pound over time?
+<button onclick="revealAnswer(this)">Reveal answer</button>
+<div class="qa"><strong>The dollar depreciates</strong> by roughly 4%/year against the pound. The country with higher inflation always sees its currency weaken, in proportion to the inflation differential.</div>
+</div>
+
+<div class="qq">
+<strong>Q10.</strong> US interest rates rise to 8%. UK stays at 4%. What happens to the dollar via the capital-flow channel?
+<button onclick="revealAnswer(this)">Reveal answer</button>
+<div class="qa"><strong>The dollar appreciates.</strong> Higher US rates attract foreign capital. UK investors sell £ for $ to buy US assets. Demand for $ rises; supply of £ rises. $E_{\$/£}$ falls (fewer $ per £). Note this is the OPPOSITE direction from the inflation effect — keep them straight.</div>
+</div>
+
+<div class="qq">
+<strong>Q11.</strong> A country fixes its exchange rate. The central bank tries to ease (boost $M^S$). What actually happens to $M^S$ and $Y$?
+<button onclick="revealAnswer(this)">Reveal answer</button>
+<div class="qa">The easing causes capital outflows that would depreciate the currency. To prevent depreciation, the central bank must sell FX reserves and buy back its own currency, which contracts $M^S$ back. <strong>Net: $M^S$ barely moves; the FX channel is dead; only a partial interest-rate channel operates. Monetary policy is muted under fixed ER.</strong></div>
+</div>
+
+<div class="qq">
+<strong>Q12.</strong> A country wants free capital flow, a fixed exchange rate, and independent monetary policy. Why can't it have all three?
+<button onclick="revealAnswer(this)">Reveal answer</button>
+<div class="qa"><strong>The trilemma.</strong> Free capital + fixed ER means the central bank must always intervene to defend the peg, which means it can't independently set $M^S$. Free capital + independent monetary policy means the ER must float, which means it can't be fixed. Fixed ER + independent monetary policy means capital must be controlled (or the peg breaks under speculative attack). Pick two; lose the third.</div>
+</div>
+```
+
+## Score yourself
+
+11–12 right: you're ready.
+8–10: review the chapters for the questions you missed.
+5–7: re-read everything, then come back.
+0–4: you have time. Start with the chapter that covers your weakest area.
+
+## Want more?
+
+The [Full exam](full-exam.qmd) is 30 questions, timed-style, with detailed solutions.

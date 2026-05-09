@@ -1,0 +1,49 @@
+---
+title: "Recent releases"
+---
+
+Press releases, FOMC statements, and data drops from the Fed, BLS, BEA, Treasury, and other authoritative macro sources. Refreshed daily.
+
+```{ojs}
+feeds = await (await fetch("../data/feeds/recent.json")).json()
+```
+
+```{ojs}
+viewof source_filter = Inputs.checkbox(
+  Array.from(new Set(feeds.map(d => d.source))).sort(),
+  {label: "Show sources", value: Array.from(new Set(feeds.map(d => d.source))).sort()}
+)
+```
+
+```{ojs}
+viewof n_show = Inputs.range([5, 100], {value: 30, step: 5, label: "Number of items to show"})
+```
+
+```{ojs}
+filtered_feeds = feeds.filter(d => source_filter.includes(d.source)).slice(0, n_show)
+```
+
+```{ojs}
+html`<div style="display: flex; flex-direction: column; gap: 1rem; margin-top: 1rem;">
+  ${filtered_feeds.map(item => `
+    <div class="news-card">
+      <div class="news-meta">
+        <span class="news-source">${item.source}</span>
+        <span class="news-date">${new Date(item.date).toLocaleDateString('en-US', {year: 'numeric', month: 'short', day: 'numeric'})}</span>
+      </div>
+      <a href="${item.link}" target="_blank" rel="noopener">
+        <div class="news-title">${item.title}</div>
+      </a>
+      ${item.summary ? `<div class="news-summary">${item.summary.slice(0, 220)}${item.summary.length > 220 ? '…' : ''}</div>` : ''}
+    </div>
+  `).join('')}
+</div>`
+```
+
+## What's tracked
+
+Sources include FOMC statements and minutes, BLS Employment Situation and CPI releases, BEA GDP and PCE releases, Treasury announcements, ECB monetary policy decisions, Bank of England rate announcements. The full list of feeds is at [Sources](../reference/sources.qmd).
+
+```{ojs}
+md`*Showing ${filtered_feeds.length} items out of ${feeds.length} most recent.*`
+```

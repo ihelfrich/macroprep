@@ -1,0 +1,65 @@
+---
+title: "Interactive: multiplier dashboard"
+---
+
+Drag the MPC slider. Every multiplier updates.
+
+::: {.widget-panel}
+
+```{ojs}
+viewof mpc = Inputs.range([0.05, 0.99], {value: 0.75, step: 0.01, label: "MPC (c)"})
+```
+
+```{ojs}
+mults = ({
+  K_G: 1 / (1 - mpc),
+  K_I: 1 / (1 - mpc),
+  K_C0: 1 / (1 - mpc),
+  K_EX: 1 / (1 - mpc),
+  K_T: -mpc / (1 - mpc),
+  K_IM: -1 / (1 - mpc),
+  K_BB: 1
+})
+```
+
+```{ojs}
+Inputs.table([
+  {name: "K_G  (gov spending)", value: mults.K_G, sign: "+"},
+  {name: "K_I  (investment)", value: mults.K_I, sign: "+"},
+  {name: "K_C0  (subsistence consumption)", value: mults.K_C0, sign: "+"},
+  {name: "K_EX  (exports)", value: mults.K_EX, sign: "+"},
+  {name: "K_T  (taxes)", value: mults.K_T, sign: "−"},
+  {name: "K_IM  (autonomous imports)", value: mults.K_IM, sign: "−"},
+  {name: "K_BB  (balanced budget)", value: mults.K_BB, sign: "+"},
+], {
+  format: {value: x => x.toFixed(2)},
+  width: {name: 280, value: 100, sign: 60}
+})
+```
+
+```{ojs}
+md`### To close a recessionary gap of \$100 with each instrument
+
+| instrument | required change |
+|---|---:|
+| Increase G alone | \$${(100/mults.K_G).toFixed(2)} |
+| Cut T alone | \$${(100/mults.K_T).toFixed(2)} |
+| Balanced budget (raise both G and T equally) | \$${(100/mults.K_BB).toFixed(2)} each |
+`
+```
+
+:::
+
+## What to notice
+
+- **As MPC approaches 1**, every multiplier blows up. $K_G$ at $c=0.95$ is 20. At $c=0.99$ it's 100. Real economies don't behave this way because of leakages, so the textbook formula is the *upper bound*.
+- **Tax multiplier is always smaller in magnitude than the spending multiplier**, by exactly 1. The $K_{BB} = K_G + K_T = 1$ identity falls out of this.
+- **At MPC = 0.75**, the values you'll see most: $K_G = 4$, $K_T = -3$, $K_{BB} = 1$. Memorize these.
+
+## Why $|K_T| < K_G$
+
+A dollar of $G$ enters $AE^d$ in full immediately. A dollar of tax cut adds only $c$ to round-one spending — households save $(1-c)$ of the tax cut. The lost first round is exactly the gap.
+
+$$K_G - |K_T| = \frac{1}{1-c} - \frac{c}{1-c} = \frac{1-c}{1-c} = 1$$
+
+That gap is also the balanced-budget multiplier. Same identity, two ways to read it.

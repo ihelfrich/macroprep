@@ -1,0 +1,49 @@
+---
+title: "Sources & data lineage"
+---
+
+This site stitches together public data from official statistical agencies and central banks. Nothing here is proprietary; everything is cached locally so the site keeps working if any upstream goes down briefly.
+
+## Time series — FRED (St. Louis Fed)
+
+26 series fetched daily from the public CSV endpoint (`https://fred.stlouisfed.org/graph/fredgraph.csv?id={SID}`). No API key required.
+
+| Group | Series IDs |
+|---|---|
+| Prices | CPIAUCSL, CPILFESL, PCEPI, PCEPILFE, T5YIE |
+| Labor | UNRATE, PAYEMS, CIVPART, ICSA |
+| Money & credit | M2SL, BAMLH0A0HYM2 |
+| Output | GDPC1, GDP, INDPRO, RSAFS |
+| Rates | DFF, FEDFUNDS, DGS10, DGS2, T10Y2Y, MORTGAGE30US |
+| FX | DTWEXBGS, DEXUSEU, DEXUSUK |
+| Recession / sentiment | USREC, UMCSENT |
+
+Cached at `data/fred/{SID}.json`. Refreshed by `.github/workflows/refresh-data.yml` (daily, 06:30 UTC). Source script: `scripts/fetch_macro_data.py`.
+
+## RSS / Atom feeds
+
+| Source | Feed |
+|---|---|
+| Federal Reserve | All press releases · Monetary policy · Speeches |
+| BLS | Latest news releases |
+| BEA | News releases |
+| U.S. Treasury | Press releases |
+| NY Fed | Press releases |
+| ECB | Press releases |
+| Bank of England | News |
+| IMF | Press releases |
+| BIS | Press releases |
+| EIA | Today in Energy |
+
+Cached at `data/feeds/recent.json` (top 100 items, date desc). Per-feed health at `data/feeds/_sources.json`. Source script: `scripts/fetch_feeds.py`.
+
+## Why caching
+
+Two reasons:
+
+1. **Reliability.** A cron-fetched JSON cache means the site renders even when an upstream feed is intermittently 5xx-ing. Failed fetches are recorded in `_sources.json` so we can see when something is broken.
+2. **Cost / etiquette.** Fetching once a day server-side and serving static JSON to every visitor avoids hammering FRED with one CSV request per page view.
+
+## Reuse
+
+All site content (text, charts, code) is CC-BY-SA 4.0. The underlying data is © its respective sources and subject to their terms — generally permissive for non-commercial educational reuse with attribution.

@@ -1,0 +1,81 @@
+---
+title: "Interactive: PPP exchange rate"
+---
+
+Set the basket prices in two countries. Get the PPP exchange rate. Then sliders for inflation rates project the ER over time.
+
+::: {.widget-panel}
+
+```{ojs}
+viewof PUS = Inputs.range([100, 2000], {value: 400, step: 10, label: "US basket price ($)"})
+viewof PUK = Inputs.range([100, 2000], {value: 200, step: 10, label: "UK basket price (£)"})
+```
+
+```{ojs}
+E_now = PUS / PUK
+```
+
+```{ojs}
+md`**PPP exchange rate today:** \`E = $${PUS} / £${PUK} = $${E_now.toFixed(3)} per £\``
+```
+
+:::
+
+## How does the ER move if relative inflation differs?
+
+::: {.widget-panel}
+
+```{ojs}
+viewof piUS = Inputs.range([0, 0.20], {value: 0.05, step: 0.005, label: "US annual inflation"})
+viewof piUK = Inputs.range([0, 0.20], {value: 0.02, step: 0.005, label: "UK annual inflation"})
+viewof horizon = Inputs.range([1, 20], {value: 10, step: 1, label: "Years to project"})
+```
+
+```{ojs}
+years = d3.range(0, horizon + 1)
+ePath = years.map(t => ({
+  year: t,
+  PUS_t: PUS * Math.pow(1 + piUS, t),
+  PUK_t: PUK * Math.pow(1 + piUK, t),
+  E_t: (PUS * Math.pow(1 + piUS, t)) / (PUK * Math.pow(1 + piUK, t))
+}))
+```
+
+```{ojs}
+Plot.plot({
+  width: 600,
+  height: 320,
+  marginLeft: 70,
+  marginBottom: 50,
+  x: {label: "Years from now"},
+  y: {label: "PPP exchange rate ($/£)"},
+  marks: [
+    Plot.line(ePath, {x: "year", y: "E_t", stroke: "#0e7c7b", strokeWidth: 2.2}),
+    Plot.dot(ePath, {x: "year", y: "E_t", fill: "#0e7c7b", r: 3}),
+    Plot.ruleY([E_now], {stroke: "#888", strokeDasharray: "4 3"}),
+    Plot.text([{year: 0, E_t: E_now, l: `Today: $${E_now.toFixed(2)}/£`}], {x: "year", y: "E_t", text: "l", dx: 80, dy: -10, fill: "#888", fontSize: 11})
+  ]
+})
+```
+
+```{ojs}
+md`**ER in year ${horizon}:** \`$${ePath[horizon].E_t.toFixed(3)}/£\` (vs. today: \`$${E_now.toFixed(3)}/£\`)
+
+The dollar ${ePath[horizon].E_t > E_now ? "**depreciates**" : "**appreciates**"} over the projection horizon.`
+```
+
+:::
+
+## What to play with
+
+- **US inflation 5%, UK 2%.** Dollar depreciates roughly proportionally — about 3% per year against the pound.
+- **Set both to the same rate.** ER stays flat. PPP says the currency only moves when *relative* inflation differs.
+- **Reverse them.** UK at 5%, US at 2%. Now the dollar appreciates. The country with lower inflation sees its currency strengthen.
+
+## Where PPP fails
+
+- Short-run (months to a year). Sticky prices and trade frictions break the law of one price.
+- For non-traded goods (haircuts, restaurant meals). They never face arbitrage and can stay out of line indefinitely.
+- During financial crises, when capital flows dominate trade flows.
+
+For long horizons (5+ years) and traded goods, PPP gives a useful first-order benchmark. The Big Mac Index is the famous popular version.

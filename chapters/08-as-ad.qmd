@@ -1,0 +1,43 @@
+---
+title: "AS / AD basics"
+---
+
+The Keynesian cross holds the price level fixed. AS / AD adds $P$ as an endogenous outcome.
+
+## What shifts AD (aggregate demand)
+
+| change | effect on AD |
+|---|---|
+| $\uparrow \overline{G}$ | shifts right |
+| $\downarrow \overline{T}$ | shifts right |
+| $\uparrow M^S$ | shifts right (lower $r$ → more $I^d$) |
+| $\uparrow$ wealth | shifts right |
+| $\uparrow$ exports | shifts right |
+| Currency depreciation | shifts right ($\uparrow X$, $\downarrow M$) |
+
+## What shifts AS (aggregate supply)
+
+| change | effect on AS |
+|---|---|
+| Productivity rises | shifts right (more output at every $P$) |
+| Input costs fall | shifts right |
+| Cost-push shock (oil, war, supply chain) | shifts left |
+| Expected $P$ rises | shifts left |
+
+## Putting it together
+
+A demand shock ($\uparrow G$, depreciation, OMO purchase) shifts AD right. Both $Y$ and $P$ rise.
+
+A supply shock (oil price spike) shifts AS left. $Y$ falls, $P$ rises. This is **stagflation**.
+
+A productivity boom shifts AS right. $Y$ rises, $P$ falls.
+
+::: {.callout-note}
+**Key trade-off.** Demand shocks move $Y$ and $P$ in the same direction. Supply shocks move them in opposite directions. The diagnostic is the comovement.
+:::
+
+## Why this matters for fiscal/monetary policy
+
+If the gap is from a demand shortfall (recessionary, $Y < Y^{FE}$, low $P$ pressure), expansionary fiscal or monetary policy works cleanly: AD shifts right, $Y$ rises toward $Y^{FE}$, modest $P$ rise.
+
+If the gap is from a supply shock (cost-push, $Y < Y^{FE}$ but $P$ already high), expansionary policy raises $P$ further without much $Y$ recovery. The Fed faces a real dilemma.

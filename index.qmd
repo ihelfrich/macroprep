@@ -1,0 +1,89 @@
+---
+title: "Macro Prep"
+pagetitle: "Macro Prep — interactive intermediate macro reference"
+toc: false
+---
+
+::: {.mf-hero}
+# Macro Prep
+::: {.mf-hero-sub}
+A working reference for intermediate macroeconomics — Case-Fair-Oster Ch. 7–13 and 19, paired with live FRED data, central-bank press feeds, and 126 worked practice problems. Built for the panicked student the night before a final, and for anyone who wants to actually understand what the Fed just did.
+:::
+::: {.mf-hero-meta}
+Updated daily · Data: FRED · Feeds: Fed, BLS, BEA, Treasury, ECB, BoE, IMF, BIS, EIA
+:::
+:::
+
+## Where to start
+
+```{=html}
+<div class="mf-toc-grid">
+  <a class="mf-toc-card" href="chapters/01-cpi-unemployment.html">
+    <div class="mf-toc-eyebrow">Foundations</div>
+    <div class="mf-toc-title">CPI, multipliers, fiscal policy</div>
+    <div class="mf-toc-blurb">The Keynesian-cross spine. Solve for Y*, learn why the multiplier 1/(1−c) becomes 1/(1−c(1−t)) once taxes go proportional, internalize the balanced-budget multiplier.</div>
+  </a>
+  <a class="mf-toc-card" href="chapters/05-money-banking.html">
+    <div class="mf-toc-eyebrow">Money</div>
+    <div class="mf-toc-title">Money creation, money market, bond pricing</div>
+    <div class="mf-toc-blurb">Money multiplier K_S = 1/rrr, demand for money, equilibrium r*, and the inverse relationship between bond price and yield with a worked discount-bond example.</div>
+  </a>
+  <a class="mf-toc-card" href="chapters/08-as-ad.html">
+    <div class="mf-toc-eyebrow">Open economy</div>
+    <div class="mf-toc-title">AS-AD, foreign exchange, regimes</div>
+    <div class="mf-toc-blurb">PPP vs. capital-flow channels for the dollar, fixed vs. floating regimes, the impossible trinity in two paragraphs.</div>
+  </a>
+  <a class="mf-toc-card" href="dashboards/inflation.html">
+    <div class="mf-toc-eyebrow">Live data</div>
+    <div class="mf-toc-title">Inflation, labor, rates, GDP, FX, news</div>
+    <div class="mf-toc-blurb">Six interactive dashboards reading cached FRED JSON. Slide the time window, filter sources, see the 2% target line and recession bars.</div>
+  </a>
+  <a class="mf-toc-card" href="practice/question-bank.html">
+    <div class="mf-toc-eyebrow">Practice</div>
+    <div class="mf-toc-title">126 worked problems</div>
+    <div class="mf-toc-blurb">Easy → Medium → Hard → Twist. The "Twist" tier is where students lose points — sign flips, units mismatches, regime changes hidden in familiar setups.</div>
+  </a>
+  <a class="mf-toc-card" href="reference/formulas.html">
+    <div class="mf-toc-eyebrow">Reference</div>
+    <div class="mf-toc-title">Formulas, glossary, common traps</div>
+    <div class="mf-toc-blurb">Every multiplier you need on one page. Every term defined in one sentence. Every exam trap I've seen students fall into, with the fix.</div>
+  </a>
+</div>
+```
+
+## What's different about this site
+
+This isn't a textbook scrape. It's the cheatsheet I wished existed when I was teaching intermediate macro — every formula stated in clean LaTeX, every exam-relevant trap flagged, and live data wired in so you can see *what real CPI looks like right now* alongside the equation that produced it.
+
+- **Live FRED time series** — 26 macro series cached as JSON, refreshed daily by a GitHub Action. No API key needed, no rate-limit anxiety.
+- **RSS aggregation** — FOMC statements, BLS releases, Treasury announcements, ECB decisions, all on one page, sorted by date.
+- **Observable JS dashboards** — plots are interactive (slide the year window, hover for values), not static PNGs.
+- **126 worked practice problems** — every solution shows the algebra, names the trap, and ends with the one-line key insight.
+
+## Recently from the central banks
+
+```{ojs}
+feeds_recent = await (await fetch("data/feeds/recent.json")).json()
+```
+
+```{ojs}
+html`<div style="display: flex; flex-direction: column; gap: 0.6rem; margin-top: 0.5rem;">
+  ${feeds_recent.slice(0, 6).map(item => `
+    <div class="news-card">
+      <div class="news-meta">
+        <span class="news-source">${item.source}</span>
+        <span class="news-date">${new Date(item.date).toLocaleDateString('en-US', {year: 'numeric', month: 'short', day: 'numeric'})}</span>
+      </div>
+      <a href="${item.link}" target="_blank" rel="noopener">
+        <div class="news-title">${item.title}</div>
+      </a>
+    </div>
+  `).join('')}
+</div>`
+```
+
+[See all recent releases →](dashboards/news.qmd)
+
+---
+
+*Built by [Dr. Ian Helfrich](https://github.com/ihelfrich). Source on [GitHub](https://github.com/ihelfrich/macroprep). Content licensed CC-BY-SA 4.0.*

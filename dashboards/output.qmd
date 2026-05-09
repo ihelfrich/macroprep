@@ -1,0 +1,92 @@
+---
+title: "Output & recessions"
+---
+
+```{ojs}
+gdpc1 = await (await fetch("../data/fred/GDPC1.json")).json()
+usrec = await (await fetch("../data/fred/USREC.json")).json()
+```
+
+```{ojs}
+viewof gdp_window = Inputs.range([5, 75], {value: 35, step: 1, label: "Years to display"})
+```
+
+```{ojs}
+// Compute QoQ growth rate (annualized) from real GDP
+function qoq_annualized(obs) {
+  const out = []
+  for (let i = 1; i < obs.length; i++) {
+    if (obs[i].value && obs[i-1].value) {
+      const g = ((obs[i].value / obs[i-1].value) ** 4 - 1) * 100
+      out.push({date: obs[i].date, value: g})
+    }
+  }
+  return out
+}
+gdp_growth = qoq_annualized(gdpc1.observations)
+```
+
+```{ojs}
+{
+  const cutoff = new Date()
+  cutoff.setFullYear(cutoff.getFullYear() - gdp_window)
+  const filt = arr => arr.filter(d => new Date(d.date) >= cutoff).map(d => ({...d, date: new Date(d.date)}))
+  const recs = filt(usrec.observations).filter(d => d.value === 1)
+  return Plot.plot({
+    width: 800, height: 380, marginLeft: 70, marginBottom: 50,
+    x: {type: "utc"},
+    y: {label: "Real GDP, billions of chained 2017 $ (log scale)", grid: true, type: "log"},
+    marks: [
+      // Recession bars
+      Plot.rect(recs, {x1: "date", x2: (d, i) => i < recs.length-1 ? recs[i+1].date : new Date(), y1: 1, y2: 1e6, fill: "#cccccc", fillOpacity: 0.4}),
+      Plot.line(filt(gdpc1.observations), {x: "date", y: "value", stroke: "#0e7c7b", strokeWidth: 2})
+    ]
+  })
+}
+```
+
+```{ojs}
+{
+  const cutoff = new Date()
+  cutoff.setFullYear(cutoff.getFullYear() - gdp_window)
+  const filt = arr => arr.filter(d => new Date(d.date) >= cutoff).map(d => ({...d, date: new Date(d.date)}))
+  return Plot.plot({
+    width: 800, height: 280, marginLeft: 60, marginBottom: 50,
+    x: {type: "utc"},
+    y: {label: "Real GDP growth, QoQ annualized (%)", grid: true},
+    marks: [
+      Plot.ruleY([0]),
+      Plot.barY(filt(gdp_growth), {x: "date", y: "value", fill: d => d.value >= 0 ? "#0e7c7b" : "#b7410e"})
+    ]
+  })
+}
+```
+
+```{ojs}
+html`<div style="display: flex; gap: 0.8rem; flex-wrap: wrap; margin: 1rem 0;">
+  ${[
+    ["Latest real GDP (level)", gdpc1.observations.at(-1)?.value, "billions of 2017 $"],
+    ["Latest QoQ growth (ann.)", gdp_growth.at(-1)?.value, "%"]
+  ].map(([label, v, units]) => `
+    <div class="kpi-card">
+      <div class="kpi-label">${label}</div>
+      <div class="kpi-value">${v != null ? (label.includes('growth') ? v.toFixed(2) + units : v.toLocaleString(undefined, {maximumFractionDigits: 1})) : '—'}</div>
+      <div class="kpi-sub">${units}</div>
+    </div>
+  `).join('')}
+</div>`
+```
+
+## What to watch
+
+A **recession** is officially declared by the [NBER Business Cycle Dating Committee](https://www.nber.org/research/business-cycle-dating). The shorthand is "two consecutive quarters of negative GDP growth," but the NBER actually weighs employment, real income, retail sales, and industrial production alongside GDP. The NBER lags real time — a recession usually starts months before it's officially declared and can be revised after the fact.
+
+Real GDP growth above 2.5% is generally considered hot. Below 1% suggests slowdown. Negative for two quarters is the rule-of-thumb recession trigger.
+
+## Source
+
+[FRED](https://fred.stlouisfed.org/) — GDPC1 (real GDP, chained 2017 dollars) from the BEA, quarterly. USREC (recession indicator) from NBER, monthly. Recession bars on the chart are the NBER-dated periods.
+
+```{ojs}
+md`*Last data refresh: ${gdpc1.last_updated || 'unknown'}.*`
+```

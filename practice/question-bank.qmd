@@ -1,0 +1,16 @@
+---
+title: "Question bank"
+subtitle: "126 worked problems across the Case-Fair-Oster Ch. 7–13, 19 spine"
+toc: true
+toc-depth: 3
+---
+
+> **How to use this.** Read the prompt, work it on paper, *then* expand the solution. Each block escalates Easy → Medium → Hard → Twist. The "Twist" problems are where students lose points on the actual exam — they hide a sign flip, a units mismatch, or a regime change inside a familiar setup.
+
+::: {.callout-tip collapse="true"}
+## Notation crib (click to expand)
+
+Bars over autonomous variables: $\overline{C_0}, \overline{T}, \overline{I}, \overline{G}, \overline{X}, \overline{M}$. MPC = $c$. Expenditure multiplier $K_X = \Delta Y^\ast / \Delta \overline{X}$. Required reserve ratio = $rrr$. Money multiplier $K_S = 1/rrr$. Exchange rate $E_{\$/\pounds}$ quoted as **dollars per pound** throughout.
+:::
+
+{{< include ../_practice_bank_body.md >}}

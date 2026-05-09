@@ -1,0 +1,56 @@
+---
+title: "Interactive: Keynesian cross"
+---
+
+Move the sliders. Watch the equilibrium $Y^*$ and the multiplier respond.
+
+::: {.widget-panel}
+
+```{ojs}
+viewof c = Inputs.range([0.1, 0.95], {value: 0.75, step: 0.01, label: "MPC (c)"})
+viewof C0 = Inputs.range([0, 200], {value: 100, step: 5, label: "Subsistence consumption (C₀)"})
+viewof Id = Inputs.range([0, 200], {value: 25, step: 5, label: "Investment Id"})
+```
+
+```{ojs}
+Ystar = (C0 + Id) / (1 - c)
+multiplier = 1 / (1 - c)
+```
+
+```{ojs}
+md`### Live results
+
+  - **Equilibrium output:** \`Y* = (${C0} + ${Id}) / (1 − ${c.toFixed(2)}) = ${Ystar.toFixed(1)}\`
+  - **Spending multiplier:** \`K = 1 / (1 − ${c.toFixed(2)}) = ${multiplier.toFixed(2)}\`
+  - **Tax multiplier:** \`K_T = −${c.toFixed(2)} / (1 − ${c.toFixed(2)}) = ${(-c/(1-c)).toFixed(2)}\`
+`
+```
+
+```{ojs}
+Plot.plot({
+  width: 600,
+  height: 400,
+  marginLeft: 60,
+  marginBottom: 50,
+  x: {label: "Aggregate output / income, Y", domain: [0, Math.max(800, Ystar*1.4)]},
+  y: {label: "Aggregate desired expenditure, AE^d", domain: [0, Math.max(800, Ystar*1.4)]},
+  marks: [
+    Plot.line(d3.range(0, Math.max(800, Ystar*1.4), 5).map(y => ({y: y, ae: y})), {x: "y", y: "ae", stroke: "#888", strokeWidth: 1.2}),
+    Plot.line(d3.range(0, Math.max(800, Ystar*1.4), 5).map(y => ({y: y, ae: C0 + Id + c*y})), {x: "y", y: "ae", stroke: "#0e7c7b", strokeWidth: 2.2}),
+    Plot.dot([{y: Ystar, ae: Ystar}], {x: "y", y: "ae", fill: "#b7410e", r: 6}),
+    Plot.text([{y: Ystar, ae: Ystar, l: `Y* = ${Ystar.toFixed(0)}`}], {x: "y", y: "ae", text: "l", dx: 12, dy: -8, fill: "#b7410e", fontSize: 12, fontWeight: "bold"})
+  ]
+})
+```
+
+:::
+
+## Things to play with
+
+- Set $c = 0.5$. Note $K = 2$. Now move $c$ to $0.9$. $K$ jumps to $10$. **The multiplier is wildly nonlinear in MPC.** A small change near 1 produces a huge change in $K$.
+- Hold $c$ fixed at $0.75$. Move $\overline{I}$ from 25 to 30 (a $\Delta\overline{I} = 5$). Watch $Y^*$ jump by 20. That's $K_I \cdot \Delta\overline{I} = 4 \cdot 5 = 20$.
+- Move $\overline{C_0}$ from 100 to 50 (people more frugal). $Y^*$ falls. The paradox of thrift in action.
+
+## What this tells you about exam problems
+
+Most equilibrium-$Y^*$ exam questions can be checked here in 30 seconds. If your hand calculation gives a different answer than this widget, the widget is right and your math has a typo somewhere.

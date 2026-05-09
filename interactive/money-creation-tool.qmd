@@ -1,0 +1,95 @@
+---
+title: "Interactive: money creation"
+---
+
+Pick the required reserve ratio and the OMO size. Watch the geometric series of new deposits.
+
+::: {.widget-panel}
+
+```{ojs}
+viewof rrr = Inputs.range([0.05, 0.50], {value: 0.20, step: 0.01, label: "Required reserve ratio"})
+viewof omo = Inputs.range([10, 1000], {value: 100, step: 10, label: "OMO purchase ($)"})
+```
+
+```{ojs}
+Ks = 1 / rrr
+deltaMs = Ks * omo
+newMoney = deltaMs - omo
+```
+
+```{ojs}
+md`### Live results
+
+  - **Money multiplier:** \`K_S = 1 / ${rrr.toFixed(2)} = ${Ks.toFixed(2)}\`
+  - **Total change in money supply:** \`ΔM^S = ${Ks.toFixed(2)} × \$${omo} = \$${deltaMs.toFixed(2)}\`
+  - **New money created** (above the original injection): \`\$${newMoney.toFixed(2)}\`
+`
+```
+
+```{ojs}
+rounds = {
+  let rs = []
+  let dep = omo
+  let total = 0
+  for (let i = 0; i < 12; i++) {
+    let rr_amount = dep * rrr
+    let er_amount = dep - rr_amount
+    total += dep
+    rs.push({
+      round: i + 1,
+      deposit_received: dep,
+      kept_as_RR: rr_amount,
+      lent_out: er_amount,
+      cumulative_deposits: total
+    })
+    dep = er_amount
+  }
+  return rs
+}
+```
+
+```{ojs}
+Inputs.table(rounds, {
+  format: {
+    deposit_received: x => "$" + x.toFixed(2),
+    kept_as_RR: x => "$" + x.toFixed(2),
+    lent_out: x => "$" + x.toFixed(2),
+    cumulative_deposits: x => "$" + x.toFixed(2)
+  },
+  width: {round: 60, deposit_received: 130, kept_as_RR: 130, lent_out: 130, cumulative_deposits: 160}
+})
+```
+
+```{ojs}
+Plot.plot({
+  width: 600,
+  height: 320,
+  marginLeft: 70,
+  marginBottom: 50,
+  x: {label: "Round", type: "linear", domain: [0.5, 12.5]},
+  y: {label: "Cumulative deposits ($)", domain: [0, deltaMs * 1.05]},
+  marks: [
+    Plot.ruleY([deltaMs], {stroke: "#b7410e", strokeDasharray: "4 3"}),
+    Plot.text([{x: 6, y: deltaMs * 1.02, l: `Geometric sum → $${deltaMs.toFixed(0)}`}], {x: "x", y: "y", text: "l", fill: "#b7410e", fontSize: 11}),
+    Plot.barY(rounds, {x: "round", y: "cumulative_deposits", fill: "#0e7c7b", fillOpacity: 0.25}),
+    Plot.line(rounds, {x: "round", y: "cumulative_deposits", stroke: "#0e7c7b", strokeWidth: 2.2}),
+    Plot.dot(rounds, {x: "round", y: "cumulative_deposits", fill: "#0e7c7b", r: 4})
+  ]
+})
+```
+
+:::
+
+## What to play with
+
+- **Set rrr = 0.10**, OMO = \$100. $K_S = 10$, $\Delta M^S = \$1{,}000$. New money = \$900. The lower the reserve requirement, the more banks can lend, the bigger the multiplier.
+- **Set rrr = 0.50**. $K_S = 2$, $\Delta M^S = 2 \times \$100 = \$200$. New money = \$100. High reserve requirements throttle money creation.
+- **Watch how fast convergence happens.** By round 6 you're typically within 95% of the geometric sum. After round 12 you're at >99%. The series converges quickly when $rrr$ is high (each round shrinks fast); slowly when $rrr$ is low.
+
+## What this tool hides
+
+It assumes (1) banks lend until $ER = 0$, and (2) all loaned money returns as deposits (no cash leakage). Real-world money multipliers are smaller. With cash-leakage ratio $cr$:
+
+$$K_S^{\text{real}} = \frac{1 + cr}{rrr + cr}$$
+
+For $rrr = 0.20$ and $cr = 0.10$: $K_S^{\text{real}} = 1.10 / 0.30 \approx 3.67$, well below the textbook 5.

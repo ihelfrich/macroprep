@@ -1,0 +1,39 @@
+---
+title: "Common screw-ups"
+---
+
+The 17 things students confuse. Read this before the exam.
+
+**CPI overestimates inflation, IGDPDI underestimates.** CPI uses base-year quantities (Laspeyres), so it ignores substitution. IGDPDI uses current-year quantities and base-year prices (Paasche), so it does the opposite. Reverse for deflation.
+
+**Natural rate of unemployment is not zero.** It is frictional + structural, often pegged at $\approx 4\%$. Cyclical is the part that disappears in expansions.
+
+**Aggregate output equals aggregate income identically.** Total value of goods produced = total factor payments. Both are $Y$.
+
+**Actual investment equals planned investment only at equilibrium.** Off-equilibrium: $I_{actual} = I_{planned} + \Delta\text{unplanned inventory}$. If $Y > AE^d$, inventory builds up.
+
+**Paradox of thrift.** More saving (lower $\overline{C_0}$) lowers $Y^*$. Total saving stays the same because $S = I^d$ at equilibrium and $I^d$ didn't change.
+
+**Tax multiplier is negative.** $K_T = -c/(1-c)$. Cutting taxes raises $Y^*$, raising taxes lowers $Y^*$.
+
+**Balanced-budget multiplier is 1, not 0.** Raise both $G$ and $T$ by $100. Deficit unchanged. $Y^*$ rises by exactly $100. The $K_G$ effect outweighs the $K_T$ effect by exactly $1$.
+
+**Real-world multiplier is roughly 1.4, not 4.** The textbook formula assumes no leakages other than saving. Income-conditional taxes, imports, monetary offset, and crowding-out shrink it.
+
+**Federal debt is a stock. Federal deficit is a flow.** They are not the same number.
+
+**Banks want excess reserves at zero.** ER earns nothing. Banks make loans until $ER = 0$. The lending creates new deposits. That is how money is created.
+
+**The Fed changes $M^S$ directly.** The interest rate $r^*$ adjusts via the bond market: $\uparrow M^S \Rightarrow$ excess money $\Rightarrow$ people buy bonds $\Rightarrow$ bond prices rise $\Rightarrow$ yields fall.
+
+**Bond price and $r$ are inverse. Always.** A 7% bond becomes worth less when new bonds pay 8%.
+
+**Three motives for money demand.** Transactions, precautionary, speculative. $Y$ shifts the curve through transactions. $r$ moves along the curve through speculative.
+
+**Imports are a debit on the current account.** They use up foreign exchange. Exports are a credit. They generate it.
+
+**Capital account: U.S. resident buying a foreign asset is a debit.** Foreigner buying a U.S. asset is a credit. Watch the direction of the asset, not the direction of the cash.
+
+**Currency appreciation lowers exports, doesn't raise them.** Stronger currency makes home goods more expensive abroad.
+
+**Under fixed exchange rates, monetary policy loses its FX channel.** Only the interest-rate channel operates, partially. This is why countries with fixed rates lose monetary independence.
