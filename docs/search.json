@@ -1415,179 +1415,190 @@
     ]
   },
   {
+    "objectID": "practice/adaptive-quiz.html",
+    "href": "practice/adaptive-quiz.html",
+    "title": "30  Adaptive question bank",
+    "section": "",
+    "text": "Pick which chapter sets you want, choose a mode, and start. Adaptive mode estimates your ability after each answer (1-parameter Rasch model) and serves the next question at a difficulty matching your current level. Your progress saves locally in your browser.\n\n\nLoading question bank…",
+    "crumbs": [
+      "Practice",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Adaptive question bank</span>"
+    ]
+  },
+  {
     "objectID": "reference/formulas.html",
     "href": "reference/formulas.html",
-    "title": "30  Formula sheet",
+    "title": "31  Formula sheet",
     "section": "",
-    "text": "30.1 Identities\nPrint this. Bring it.\nY \\equiv C + S \\qquad S \\equiv Y - C \\qquad MPC + MPS = 1 \\qquad APC + APS = 1",
+    "text": "31.1 Identities\nPrint this. Bring it.\nY \\equiv C + S \\qquad S \\equiv Y - C \\qquad MPC + MPS = 1 \\qquad APC + APS = 1",
     "crumbs": [
       "Reference",
-      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Formula sheet</span>"
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Formula sheet</span>"
     ]
   },
   {
     "objectID": "reference/formulas.html#consumption",
     "href": "reference/formulas.html#consumption",
-    "title": "30  Formula sheet",
-    "section": "30.2 Consumption",
-    "text": "30.2 Consumption\nC = \\overline{C_0} + c \\cdot Y_d \\qquad Y_d = Y - \\overline{T}",
+    "title": "31  Formula sheet",
+    "section": "31.2 Consumption",
+    "text": "31.2 Consumption\nC = \\overline{C_0} + c \\cdot Y_d \\qquad Y_d = Y - \\overline{T}",
     "crumbs": [
       "Reference",
-      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Formula sheet</span>"
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Formula sheet</span>"
     ]
   },
   {
     "objectID": "reference/formulas.html#equilibrium-income",
     "href": "reference/formulas.html#equilibrium-income",
-    "title": "30  Formula sheet",
-    "section": "30.3 Equilibrium income",
-    "text": "30.3 Equilibrium income\nClosed: Y^* = \\frac{\\overline{C_0} + \\overline{I}}{1-c}\nOpen with government: Y^* = \\tfrac{1}{1-c}\\,\\overline{C_0} - \\tfrac{c}{1-c}\\,\\overline{T} + \\tfrac{1}{1-c}\\,\\overline{I} + \\tfrac{1}{1-c}\\,\\overline{G} + \\tfrac{1}{1-c}\\,\\overline{X} - \\tfrac{1}{1-c}\\,\\overline{M}",
+    "title": "31  Formula sheet",
+    "section": "31.3 Equilibrium income",
+    "text": "31.3 Equilibrium income\nClosed: Y^* = \\frac{\\overline{C_0} + \\overline{I}}{1-c}\nOpen with government: Y^* = \\tfrac{1}{1-c}\\,\\overline{C_0} - \\tfrac{c}{1-c}\\,\\overline{T} + \\tfrac{1}{1-c}\\,\\overline{I} + \\tfrac{1}{1-c}\\,\\overline{G} + \\tfrac{1}{1-c}\\,\\overline{X} - \\tfrac{1}{1-c}\\,\\overline{M}",
     "crumbs": [
       "Reference",
-      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Formula sheet</span>"
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Formula sheet</span>"
     ]
   },
   {
     "objectID": "reference/formulas.html#multipliers",
     "href": "reference/formulas.html#multipliers",
-    "title": "30  Formula sheet",
-    "section": "30.4 Multipliers",
-    "text": "30.4 Multipliers\nK_X \\equiv \\frac{\\Delta Y^*}{\\Delta\\overline{X}}\n\n\n\n\n\n\n\nvariable\nmultiplier\n\n\n\n\n\\overline{I}, \\overline{C_0}, \\overline{G}, \\overline{X}\n\\dfrac{1}{1-c}\n\n\n\\overline{T}\n-\\dfrac{c}{1-c}\n\n\n\\overline{M}\n-\\dfrac{1}{1-c}\n\n\nBalanced budget (\\overline{G} and \\overline{T} together)\nK_{BB} = 1\n\n\n\nAt c = 0.75: K_G = 4, K_T = -3, K_{BB} = 1.",
+    "title": "31  Formula sheet",
+    "section": "31.4 Multipliers",
+    "text": "31.4 Multipliers\nK_X \\equiv \\frac{\\Delta Y^*}{\\Delta\\overline{X}}\n\n\n\n\n\n\n\nvariable\nmultiplier\n\n\n\n\n\\overline{I}, \\overline{C_0}, \\overline{G}, \\overline{X}\n\\dfrac{1}{1-c}\n\n\n\\overline{T}\n-\\dfrac{c}{1-c}\n\n\n\\overline{M}\n-\\dfrac{1}{1-c}\n\n\nBalanced budget (\\overline{G} and \\overline{T} together)\nK_{BB} = 1\n\n\n\nAt c = 0.75: K_G = 4, K_T = -3, K_{BB} = 1.",
     "crumbs": [
       "Reference",
-      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Formula sheet</span>"
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Formula sheet</span>"
     ]
   },
   {
     "objectID": "reference/formulas.html#inflation-cpi-unemployment",
     "href": "reference/formulas.html#inflation-cpi-unemployment",
-    "title": "30  Formula sheet",
-    "section": "30.5 Inflation, CPI, unemployment",
-    "text": "30.5 Inflation, CPI, unemployment\n\\text{CPI}_t = \\frac{\\sum P_t \\cdot Q_{base}}{\\sum P_{base} \\cdot Q_{base}} \\cdot 100 \\qquad \\pi_t = \\frac{\\text{CPI}_t - \\text{CPI}_{t-1}}{\\text{CPI}_{t-1}} \\cdot 100\nu = \\frac{U}{E + U} \\qquad LF = E + U \\qquad \\text{LFP} = \\frac{LF}{\\text{Pop}}",
+    "title": "31  Formula sheet",
+    "section": "31.5 Inflation, CPI, unemployment",
+    "text": "31.5 Inflation, CPI, unemployment\n\\text{CPI}_t = \\frac{\\sum P_t \\cdot Q_{base}}{\\sum P_{base} \\cdot Q_{base}} \\cdot 100 \\qquad \\pi_t = \\frac{\\text{CPI}_t - \\text{CPI}_{t-1}}{\\text{CPI}_{t-1}} \\cdot 100\nu = \\frac{U}{E + U} \\qquad LF = E + U \\qquad \\text{LFP} = \\frac{LF}{\\text{Pop}}",
     "crumbs": [
       "Reference",
-      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Formula sheet</span>"
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Formula sheet</span>"
     ]
   },
   {
     "objectID": "reference/formulas.html#money-banking",
     "href": "reference/formulas.html#money-banking",
-    "title": "30  Formula sheet",
-    "section": "30.6 Money & banking",
-    "text": "30.6 Money & banking\nRR = rrr \\cdot DD_p \\qquad ER = TR - RR K_S = \\frac{1}{rrr} \\qquad \\Delta M^S = K_S \\cdot \\Delta R",
+    "title": "31  Formula sheet",
+    "section": "31.6 Money & banking",
+    "text": "31.6 Money & banking\nRR = rrr \\cdot DD_p \\qquad ER = TR - RR K_S = \\frac{1}{rrr} \\qquad \\Delta M^S = K_S \\cdot \\Delta R",
     "crumbs": [
       "Reference",
-      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Formula sheet</span>"
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Formula sheet</span>"
     ]
   },
   {
     "objectID": "reference/formulas.html#bonds",
     "href": "reference/formulas.html#bonds",
-    "title": "30  Formula sheet",
-    "section": "30.7 Bonds",
-    "text": "30.7 Bonds\nPV = \\frac{FV}{(1+r)^T} \\qquad r = \\left(\\frac{FV}{PV}\\right)^{1/T} - 1",
+    "title": "31  Formula sheet",
+    "section": "31.7 Bonds",
+    "text": "31.7 Bonds\nPV = \\frac{FV}{(1+r)^T} \\qquad r = \\left(\\frac{FV}{PV}\\right)^{1/T} - 1",
     "crumbs": [
       "Reference",
-      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Formula sheet</span>"
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Formula sheet</span>"
     ]
   },
   {
     "objectID": "reference/formulas.html#ppp",
     "href": "reference/formulas.html#ppp",
-    "title": "30  Formula sheet",
-    "section": "30.8 PPP",
-    "text": "30.8 PPP\nE_{\\$/£} = \\frac{P_{US}}{P_{UK}}",
+    "title": "31  Formula sheet",
+    "section": "31.8 PPP",
+    "text": "31.8 PPP\nE_{\\$/£} = \\frac{P_{US}}{P_{UK}}",
     "crumbs": [
       "Reference",
-      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Formula sheet</span>"
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Formula sheet</span>"
     ]
   },
   {
     "objectID": "reference/formulas.html#direction-shortcuts",
     "href": "reference/formulas.html#direction-shortcuts",
-    "title": "30  Formula sheet",
-    "section": "30.9 Direction shortcuts",
-    "text": "30.9 Direction shortcuts\n\n\n\n\n\n\n\nshock\neffect\n\n\n\n\n\\uparrow M^S\n\\downarrow r^*\n\n\nOMO purchase\n\\uparrow M^S, \\uparrow bond prices, \\downarrow r^*\n\n\nOMO sale\n\\downarrow M^S, \\downarrow bond prices, \\uparrow r^*\n\n\n\\uparrow Y\n\\uparrow M^D, \\uparrow r^*\n\n\nHigher inflation country\ncurrency depreciates\n\n\nHigher interest rate country\ncurrency appreciates\n\n\nCurrency depreciation\n\\uparrow EX, \\downarrow IM, \\uparrow Y^*, \\uparrow P\n\n\nMonetary policy, floating ER\nboth r channel and FX channel work\n\n\nMonetary policy, fixed ER\nonly r channel; FX channel dead",
+    "title": "31  Formula sheet",
+    "section": "31.9 Direction shortcuts",
+    "text": "31.9 Direction shortcuts\n\n\n\n\n\n\n\nshock\neffect\n\n\n\n\n\\uparrow M^S\n\\downarrow r^*\n\n\nOMO purchase\n\\uparrow M^S, \\uparrow bond prices, \\downarrow r^*\n\n\nOMO sale\n\\downarrow M^S, \\downarrow bond prices, \\uparrow r^*\n\n\n\\uparrow Y\n\\uparrow M^D, \\uparrow r^*\n\n\nHigher inflation country\ncurrency depreciates\n\n\nHigher interest rate country\ncurrency appreciates\n\n\nCurrency depreciation\n\\uparrow EX, \\downarrow IM, \\uparrow Y^*, \\uparrow P\n\n\nMonetary policy, floating ER\nboth r channel and FX channel work\n\n\nMonetary policy, fixed ER\nonly r channel; FX channel dead",
     "crumbs": [
       "Reference",
-      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Formula sheet</span>"
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Formula sheet</span>"
     ]
   },
   {
     "objectID": "reference/glossary.html",
     "href": "reference/glossary.html",
-    "title": "31  Glossary",
+    "title": "32  Glossary",
     "section": "",
     "text": "Frictional unemployment. Short-run job/skill matching. People between jobs.\nStructural unemployment. Changes in the structure of the economy. Whole industries decline.\nCyclical unemployment. From recessions. Disappears in expansions.\nNatural rate. Frictional + structural. Textbook value \\approx 4\\%. The level consistent with full employment and no accelerating inflation.\nDiscouraged worker. Not in the labor force. Doesn’t show up in u.\nMPC. \\Delta C / \\Delta Y_d. Slope of the consumption function.\nAPC. C / Y_d.\nSubsistence consumption \\overline{C_0}. Consumption when Y_d = 0. Vertical intercept of C.\nAutonomous (exogenous). Does not depend on Y. In our model: \\overline{I}, \\overline{G}, \\overline{C_0}, \\overline{T}, \\overline{X}, \\overline{M}.\nMultiplier K_X. \\Delta Y^* / \\Delta\\overline{X}. Magnitude depends only on c.\nM1. Currency held by public + checking + travelers’ checks + NOW accounts. Stock measure.\nM2. M1 + savings + small time deposits + money market mutual funds + near-monies.\nRequired reserve ratio (rrr). Fraction of demand deposits banks must hold as reserves.\nDiscount rate. Rate at which the Fed lends to commercial banks.\nOpen Market Operations (OMO). Fed buys or sells government securities. The most-used tool.\nMoney multiplier K_S. 1/rrr. Dollars of M^S per dollar of new reserves (assuming no leakage).\nLiquidity. Ease of converting an asset to cash without losing value.\nCommodity money. Has intrinsic value (gold).\nFiat money. Intrinsically worthless. Value comes from government decree.\nLegal tender. Government requires acceptance for settlement of debts.\nCurrency debasement. Value of money falls when supply rises rapidly.\nDiscretionary fiscal policy. Deliberate changes in \\overline{G} and \\overline{T} to affect Y^*.\nRecessionary gap. Y^* &lt; Y^{FE}.\nInflationary gap. Y^* &gt; Y^{FE}.\nFederal surplus / deficit. T - G. Flow.\nFederal debt. Cumulative deficits over time. Stock.\nPrivately held federal debt. Portion held by non-government entities.\nForeign exchange. All currencies other than the domestic one.\nBalance of payments. Record of all international transactions in goods, services, and assets.\nCurrent account. Net exports + net investment income from abroad + net transfers from abroad.\nCapital account. Net change in asset positions. U.S. buying foreign assets is a debit. Foreigners buying U.S. assets is a credit.\nTrade deficit / surplus. EX - IM negative / positive.\nFloating ER. Market-determined.\nFixed ER. Pegged by central bank intervention.\nPPP. Exchange rate equals ratio of price levels.\nJ-curve. After a depreciation, the trade balance gets worse first, then better.\nTrade feedback effect. One country’s growth raises imports, which become foreign exports, which boost foreign Y, which feeds back as more demand for the original country’s exports.\nPrice feedback effect. Inflation in one country raises import prices in other countries, transmitting inflation.\nBeggar-thy-neighbor. Trying to boost own Y by exporting more and importing less. Hurts trading partners. Triggers retaliation.\nTrilemma. A country can choose at most two of: free capital flow, fixed exchange rate, independent monetary policy.",
     "crumbs": [
       "Reference",
-      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Glossary</span>"
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>Glossary</span>"
     ]
   },
   {
     "objectID": "reference/traps.html",
     "href": "reference/traps.html",
-    "title": "32  Common screw-ups",
+    "title": "33  Common screw-ups",
     "section": "",
     "text": "The 17 things students confuse. Read this before the exam.\nCPI overestimates inflation, IGDPDI underestimates. CPI uses base-year quantities (Laspeyres), so it ignores substitution. IGDPDI uses current-year quantities and base-year prices (Paasche), so it does the opposite. Reverse for deflation.\nNatural rate of unemployment is not zero. It is frictional + structural, often pegged at \\approx 4\\%. Cyclical is the part that disappears in expansions.\nAggregate output equals aggregate income identically. Total value of goods produced = total factor payments. Both are Y.\nActual investment equals planned investment only at equilibrium. Off-equilibrium: I_{actual} = I_{planned} + \\Delta\\text{unplanned inventory}. If Y &gt; AE^d, inventory builds up.\nParadox of thrift. More saving (lower \\overline{C_0}) lowers Y^*. Total saving stays the same because S = I^d at equilibrium and I^d didn’t change.\nTax multiplier is negative. K_T = -c/(1-c). Cutting taxes raises Y^*, raising taxes lowers Y^*.\nBalanced-budget multiplier is 1, not 0. Raise both G and T by $100. Deficit unchanged. Y^* rises by exactly $100. The K_G effect outweighs the K_T effect by exactly 1.\nReal-world multiplier is roughly 1.4, not 4. The textbook formula assumes no leakages other than saving. Income-conditional taxes, imports, monetary offset, and crowding-out shrink it.\nFederal debt is a stock. Federal deficit is a flow. They are not the same number.\nBanks want excess reserves at zero. ER earns nothing. Banks make loans until ER = 0. The lending creates new deposits. That is how money is created.\nThe Fed changes M^S directly. The interest rate r^* adjusts via the bond market: \\uparrow M^S \\Rightarrow excess money \\Rightarrow people buy bonds \\Rightarrow bond prices rise \\Rightarrow yields fall.\nBond price and r are inverse. Always. A 7% bond becomes worth less when new bonds pay 8%.\nThree motives for money demand. Transactions, precautionary, speculative. Y shifts the curve through transactions. r moves along the curve through speculative.\nImports are a debit on the current account. They use up foreign exchange. Exports are a credit. They generate it.\nCapital account: U.S. resident buying a foreign asset is a debit. Foreigner buying a U.S. asset is a credit. Watch the direction of the asset, not the direction of the cash.\nCurrency appreciation lowers exports, doesn’t raise them. Stronger currency makes home goods more expensive abroad.\nUnder fixed exchange rates, monetary policy loses its FX channel. Only the interest-rate channel operates, partially. This is why countries with fixed rates lose monetary independence.",
     "crumbs": [
       "Reference",
-      "<span class='chapter-number'>32</span>  <span class='chapter-title'>Common screw-ups</span>"
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Common screw-ups</span>"
     ]
   },
   {
     "objectID": "reference/sources.html",
     "href": "reference/sources.html",
-    "title": "33  Sources & data lineage",
+    "title": "34  Sources & data lineage",
     "section": "",
-    "text": "33.1 Time series — FRED (St. Louis Fed)\nThis site stitches together public data from official statistical agencies and central banks. Nothing here is proprietary; everything is cached locally so the site keeps working if any upstream goes down briefly.\n26 series fetched daily from the public CSV endpoint (https://fred.stlouisfed.org/graph/fredgraph.csv?id={SID}). No API key required.\nCached at data/fred/{SID}.json. Refreshed by .github/workflows/refresh-data.yml (daily, 06:30 UTC). Source script: scripts/fetch_macro_data.py.",
+    "text": "34.1 Time series — FRED (St. Louis Fed)\nThis site stitches together public data from official statistical agencies and central banks. Nothing here is proprietary; everything is cached locally so the site keeps working if any upstream goes down briefly.\n26 series fetched daily from the public CSV endpoint (https://fred.stlouisfed.org/graph/fredgraph.csv?id={SID}). No API key required.\nCached at data/fred/{SID}.json. Refreshed by .github/workflows/refresh-data.yml (daily, 06:30 UTC). Source script: scripts/fetch_macro_data.py.",
     "crumbs": [
       "Reference",
-      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Sources & data lineage</span>"
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Sources & data lineage</span>"
     ]
   },
   {
     "objectID": "reference/sources.html#time-series-fred-st.-louis-fed",
     "href": "reference/sources.html#time-series-fred-st.-louis-fed",
-    "title": "33  Sources & data lineage",
+    "title": "34  Sources & data lineage",
     "section": "",
     "text": "Group\nSeries IDs\n\n\n\n\nPrices\nCPIAUCSL, CPILFESL, PCEPI, PCEPILFE, T5YIE\n\n\nLabor\nUNRATE, PAYEMS, CIVPART, ICSA\n\n\nMoney & credit\nM2SL, BAMLH0A0HYM2\n\n\nOutput\nGDPC1, GDP, INDPRO, RSAFS\n\n\nRates\nDFF, FEDFUNDS, DGS10, DGS2, T10Y2Y, MORTGAGE30US\n\n\nFX\nDTWEXBGS, DEXUSEU, DEXUSUK\n\n\nRecession / sentiment\nUSREC, UMCSENT",
     "crumbs": [
       "Reference",
-      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Sources & data lineage</span>"
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Sources & data lineage</span>"
     ]
   },
   {
     "objectID": "reference/sources.html#rss-atom-feeds",
     "href": "reference/sources.html#rss-atom-feeds",
-    "title": "33  Sources & data lineage",
-    "section": "33.2 RSS / Atom feeds",
-    "text": "33.2 RSS / Atom feeds\n\n\n\nSource\nFeed\n\n\n\n\nFederal Reserve\nAll press releases · Monetary policy · Speeches\n\n\nBLS\nLatest news releases\n\n\nBEA\nNews releases\n\n\nU.S. Treasury\nPress releases\n\n\nNY Fed\nPress releases\n\n\nECB\nPress releases\n\n\nBank of England\nNews\n\n\nIMF\nPress releases\n\n\nBIS\nPress releases\n\n\nEIA\nToday in Energy\n\n\n\nCached at data/feeds/recent.json (top 100 items, date desc). Per-feed health at data/feeds/_sources.json. Source script: scripts/fetch_feeds.py.",
+    "title": "34  Sources & data lineage",
+    "section": "34.2 RSS / Atom feeds",
+    "text": "34.2 RSS / Atom feeds\n\n\n\nSource\nFeed\n\n\n\n\nFederal Reserve\nAll press releases · Monetary policy · Speeches\n\n\nBLS\nLatest news releases\n\n\nBEA\nNews releases\n\n\nU.S. Treasury\nPress releases\n\n\nNY Fed\nPress releases\n\n\nECB\nPress releases\n\n\nBank of England\nNews\n\n\nIMF\nPress releases\n\n\nBIS\nPress releases\n\n\nEIA\nToday in Energy\n\n\n\nCached at data/feeds/recent.json (top 100 items, date desc). Per-feed health at data/feeds/_sources.json. Source script: scripts/fetch_feeds.py.",
     "crumbs": [
       "Reference",
-      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Sources & data lineage</span>"
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Sources & data lineage</span>"
     ]
   },
   {
     "objectID": "reference/sources.html#why-caching",
     "href": "reference/sources.html#why-caching",
-    "title": "33  Sources & data lineage",
-    "section": "33.3 Why caching",
-    "text": "33.3 Why caching\nTwo reasons:\n\nReliability. A cron-fetched JSON cache means the site renders even when an upstream feed is intermittently 5xx-ing. Failed fetches are recorded in _sources.json so we can see when something is broken.\nCost / etiquette. Fetching once a day server-side and serving static JSON to every visitor avoids hammering FRED with one CSV request per page view.",
+    "title": "34  Sources & data lineage",
+    "section": "34.3 Why caching",
+    "text": "34.3 Why caching\nTwo reasons:\n\nReliability. A cron-fetched JSON cache means the site renders even when an upstream feed is intermittently 5xx-ing. Failed fetches are recorded in _sources.json so we can see when something is broken.\nCost / etiquette. Fetching once a day server-side and serving static JSON to every visitor avoids hammering FRED with one CSV request per page view.",
     "crumbs": [
       "Reference",
-      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Sources & data lineage</span>"
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Sources & data lineage</span>"
     ]
   },
   {
     "objectID": "reference/sources.html#reuse",
     "href": "reference/sources.html#reuse",
-    "title": "33  Sources & data lineage",
-    "section": "33.4 Reuse",
-    "text": "33.4 Reuse\nAll site content (text, charts, code) is CC-BY-SA 4.0. The underlying data is © its respective sources and subject to their terms — generally permissive for non-commercial educational reuse with attribution.",
+    "title": "34  Sources & data lineage",
+    "section": "34.4 Reuse",
+    "text": "34.4 Reuse\nAll site content (text, charts, code) is CC-BY-SA 4.0. The underlying data is © its respective sources and subject to their terms — generally permissive for non-commercial educational reuse with attribution.",
     "crumbs": [
       "Reference",
-      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Sources & data lineage</span>"
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Sources & data lineage</span>"
     ]
   }
 ]

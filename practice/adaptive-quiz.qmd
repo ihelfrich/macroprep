@@ -1,0 +1,626 @@
+---
+title: "Adaptive question bank"
+subtitle: "738 multiple-choice questions across Ch 5–17 — filter by chapter, shuffle, or let the algorithm tune difficulty to you"
+toc: false
+---
+
+Pick which chapter sets you want, choose a mode, and start. **Adaptive mode** estimates your ability after each answer (1-parameter Rasch model) and serves the next question at a difficulty matching your current level. Your progress saves locally in your browser.
+
+```{=html}
+<style>
+  /* Quiz container */
+  .aq-wrap { font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif; max-width: 920px; margin: 1rem auto; }
+  .aq-card {
+    background: #fcfbf7;
+    border: 1px solid #e6e1d2;
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    animation: aq-fade-in 0.3s ease-out;
+  }
+  @keyframes aq-fade-in { from {opacity:0; transform:translateY(4px);} to {opacity:1; transform:none;} }
+
+  /* Settings */
+  .aq-setup { display: flex; flex-direction: column; gap: 1.1rem; }
+  .aq-setup h3 { font-size: 0.95rem; margin: 0 0 0.4rem; color: #2a4d6e; font-weight: 700; letter-spacing: 0.02em; }
+  .aq-fieldset {
+    background: #fff; border: 1px solid #e6e1d2; border-radius: 6px;
+    padding: 0.8rem 1rem;
+  }
+  .aq-fieldset legend { font-size: 0.78rem; font-family: "JetBrains Mono", "SF Mono", Consolas, monospace; color: #6c6a63; text-transform: uppercase; letter-spacing: 0.06em; padding: 0 0.4rem; }
+
+  .aq-checks { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.5rem 1rem; }
+  .aq-check { display: flex; align-items: center; gap: 0.5rem; font-size: 0.88rem; color: #213547; cursor: pointer; user-select: none; padding: 0.3rem 0.4rem; border-radius: 4px; transition: background 0.15s; }
+  .aq-check:hover { background: #f3efe3; }
+  .aq-check input { margin: 0; }
+  .aq-check .aq-count { font-family: "JetBrains Mono", "SF Mono", monospace; color: #b85c38; font-size: 0.78rem; margin-left: auto; }
+
+  .aq-modes { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+  .aq-mode {
+    flex: 1; min-width: 200px;
+    background: #fff; border: 1.5px solid #d8d2c0; border-radius: 8px;
+    padding: 0.75rem 0.9rem; cursor: pointer; transition: all 0.15s;
+  }
+  .aq-mode:hover { border-color: #2a4d6e; }
+  .aq-mode.selected { border-color: #0e7c7b; background: #f0f8f8; }
+  .aq-mode .aq-mode-name { font-weight: 700; color: #0e7c7b; font-size: 0.95rem; }
+  .aq-mode .aq-mode-desc { font-size: 0.8rem; color: #555; margin-top: 0.2rem; line-height: 1.4; }
+
+  .aq-row { display: flex; align-items: center; gap: 0.8rem; flex-wrap: wrap; }
+  .aq-row label { font-size: 0.85rem; color: #2a4d6e; font-weight: 600; }
+  .aq-row select, .aq-row input[type=number] {
+    background: #fff; border: 1.5px solid #d8d2c0; border-radius: 4px;
+    padding: 0.35rem 0.55rem; font-size: 0.88rem; font-family: inherit;
+  }
+
+  .aq-controls { display: flex; gap: 0.55rem; flex-wrap: wrap; }
+  .aq-btn {
+    background: linear-gradient(135deg, #0e7c7b, #0a5e5d);
+    color: white; border: none; border-radius: 5px;
+    padding: 0.55rem 1.1rem; font-weight: 700; font-size: 0.9rem;
+    cursor: pointer; font-family: inherit;
+    transition: filter 0.15s, transform 0.1s;
+  }
+  .aq-btn:hover:not(:disabled) { filter: brightness(1.08); transform: translateY(-1px); }
+  .aq-btn:disabled { opacity: 0.4; cursor: default; }
+  .aq-btn.sec {
+    background: #fff; color: #2a4d6e; border: 1.5px solid #d8d2c0;
+  }
+  .aq-btn.sec:hover:not(:disabled) { border-color: #2a4d6e; }
+  .aq-btn.danger { background: linear-gradient(135deg, #b85c38, #8a3f22); }
+
+  /* Quiz screen */
+  .aq-status {
+    display: flex; justify-content: space-between; align-items: center;
+    font-size: 0.76rem; font-family: "JetBrains Mono", "SF Mono", monospace;
+    color: #6c6a63; text-transform: uppercase; letter-spacing: 0.05em;
+    padding-bottom: 0.55rem; border-bottom: 1px solid #e6e1d2; margin-bottom: 0.8rem;
+  }
+  .aq-status .aq-progress-bar {
+    flex: 1; max-width: 280px; height: 6px; background: #ece6d4; border-radius: 3px;
+    margin: 0 0.8rem; overflow: hidden;
+  }
+  .aq-status .aq-progress-fill {
+    height: 100%; background: linear-gradient(90deg, #0e7c7b, #4caf95); transition: width 0.4s;
+  }
+
+  .aq-tag {
+    display: inline-block; background: #f3efe3; color: #2a4d6e;
+    padding: 2px 8px; border-radius: 3px; font-size: 0.72rem;
+    font-family: "JetBrains Mono", "SF Mono", monospace;
+    letter-spacing: 0.03em;
+  }
+
+  .aq-prompt {
+    font-size: 1.04rem; line-height: 1.65; color: #213547;
+    margin: 0.8rem 0; min-height: 3rem;
+  }
+
+  .aq-choices { display: flex; flex-direction: column; gap: 0.55rem; }
+  .aq-choice {
+    display: flex; align-items: flex-start; gap: 0.65rem;
+    background: white; border: 1.5px solid #d8d2c0; border-radius: 6px;
+    padding: 0.65rem 0.85rem; font-size: 0.92rem; line-height: 1.5;
+    color: #213547; cursor: pointer; text-align: left;
+    font-family: inherit;
+    transition: border-color 0.12s, background 0.12s, box-shadow 0.12s;
+  }
+  .aq-choice:hover:not(:disabled) { border-color: #0e7c7b; box-shadow: 0 2px 8px rgba(14,124,123,0.08); }
+  .aq-choice:disabled { cursor: default; }
+  .aq-choice.selected { border-color: #0e7c7b; background: #eff7f7; }
+  .aq-choice.correct { border-color: #4caf65; background: #ebf7ee; }
+  .aq-choice.wrong { border-color: #b85c38; background: #fff1ed; }
+  .aq-letter {
+    flex-shrink: 0;
+    width: 1.55rem; height: 1.55rem; border-radius: 50%;
+    border: 1.5px solid currentColor;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.78rem; font-weight: 700; color: #b85c38;
+    font-family: "JetBrains Mono", "SF Mono", monospace;
+  }
+
+  .aq-feedback {
+    margin-top: 0.9rem; padding: 0.7rem 0.95rem;
+    background: #f3efe3; border-left: 4px solid #0e7c7b;
+    border-radius: 4px; font-size: 0.88rem; color: #2a4d6e; line-height: 1.55;
+  }
+  .aq-feedback.correct { border-left-color: #4caf65; }
+  .aq-feedback.wrong   { border-left-color: #b85c38; }
+  .aq-feedback strong  { color: #213547; }
+
+  /* Stats panel (adaptive mode) */
+  .aq-stats {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 0.6rem; margin: 0.9rem 0;
+  }
+  .aq-stat {
+    background: white; border: 1px solid #e6e1d2; border-radius: 6px;
+    padding: 0.55rem 0.8rem;
+  }
+  .aq-stat .aq-stat-label {
+    font-size: 0.7rem; color: #6c6a63; text-transform: uppercase;
+    letter-spacing: 0.05em; font-family: "JetBrains Mono", "SF Mono", monospace;
+  }
+  .aq-stat .aq-stat-value {
+    font-size: 1.4rem; font-weight: 700; color: #2a4d6e;
+    font-family: "JetBrains Mono", "SF Mono", monospace;
+  }
+  .aq-stat .aq-stat-sub { font-size: 0.76rem; color: #6c6a63; }
+
+  .aq-ability-bar {
+    height: 8px; background: #ece6d4; border-radius: 4px;
+    margin-top: 0.4rem; position: relative; overflow: hidden;
+  }
+  .aq-ability-fill {
+    height: 100%; background: linear-gradient(90deg, #b85c38, #c7a93a, #4caf65);
+    border-radius: 4px; transition: width 0.5s;
+  }
+
+  /* End screen */
+  .aq-end { text-align: center; padding: 0.6rem; }
+  .aq-end h3 { color: #0e7c7b; font-size: 1.5rem; margin-bottom: 0.4rem; }
+  .aq-end-score { font-size: 2.4rem; font-weight: 900; color: #2a4d6e; margin: 0.4rem 0; font-family: "JetBrains Mono", "SF Mono", monospace; }
+
+  .aq-mini { font-size: 0.78rem; color: #6c6a63; }
+  .aq-warn { color: #b85c38; font-size: 0.82rem; padding: 0.5rem 0.7rem; background: #fff1ed; border-radius: 4px; }
+
+  @media (max-width: 600px) {
+    .aq-card { padding: 0.9rem 1rem; }
+    .aq-status { font-size: 0.68rem; }
+    .aq-progress-bar { display: none; }
+  }
+</style>
+
+<div class="aq-wrap"><div id="aq-root" class="aq-card"><div class="aq-mini">Loading question bank…</div></div></div>
+
+<script>
+(async function () {
+  // ─── Load questions ──────────────────────────────────────────────────────────
+  const root = document.getElementById("aq-root");
+  let data;
+  try {
+    const res = await fetch("../data/practice/macro_questions.json", {cache: "default"});
+    data = await res.json();
+  } catch (err) {
+    root.innerHTML = `<div class="aq-warn">Could not load question bank: ${err.message}</div>`;
+    return;
+  }
+  const ALL_Q = data.questions;
+  const LETTERS = ["A", "B", "C", "D"];
+
+  // Discover chapter sets in the order they appear
+  const SET_ORDER = [];
+  const SET_LABEL = {};
+  const SET_COUNT = {};
+  for (const q of ALL_Q) {
+    if (!(q.set in SET_LABEL)) {
+      SET_ORDER.push(q.set);
+      SET_LABEL[q.set] = q.set_label;
+      SET_COUNT[q.set] = 0;
+    }
+    SET_COUNT[q.set] += 1;
+  }
+
+  // ─── Persistent state ────────────────────────────────────────────────────────
+  const STORAGE = "macroprep.aq.v1";
+  const defaultPersist = () => ({
+    theta: 0,             // student ability (log-odds)
+    difficulty: {},       // itemId -> b
+    seen: {},             // itemId -> {correct: int, total: int}
+    selected_sets: SET_ORDER.slice(),
+    mode: "adaptive",
+    count: 25
+  });
+  function loadPersist() {
+    try { return Object.assign(defaultPersist(), JSON.parse(localStorage.getItem(STORAGE) || "{}")); }
+    catch { return defaultPersist(); }
+  }
+  function savePersist(p) { try { localStorage.setItem(STORAGE, JSON.stringify(p)); } catch {} }
+  let persist = loadPersist();
+
+  // ─── Session state ───────────────────────────────────────────────────────────
+  let state = "setup";      // setup | quiz | end
+  let pool = [];            // filtered question pool for this session
+  let order = [];           // index order (sequential / shuffled)
+  let asked = new Set();    // ids asked this session
+  let qIdx = 0;             // current question pointer (sequential mode)
+  let currentQ = null;
+  let selected = -1;
+  let revealed = false;
+  let stats = { correct: 0, total: 0, perSet: {} };
+  let sessionStart = Date.now();
+
+  // ─── Adaptive scoring (1PL Rasch) ────────────────────────────────────────────
+  const K_THETA = 0.55;     // student learning rate
+  const K_B = 0.04;         // item difficulty drift per response (slow)
+  function pCorrect(theta, b) { return 1 / (1 + Math.exp(b - theta)); }
+  function getB(qid) {
+    if (qid in persist.difficulty) return persist.difficulty[qid];
+    return 0;  // unseeded — start neutral
+  }
+  function updateAdaptive(q, correct) {
+    const b = getB(q.id);
+    const p = pCorrect(persist.theta, b);
+    persist.theta += K_THETA * ((correct ? 1 : 0) - p);
+    // clamp theta to [-3, 3] to keep things sane
+    persist.theta = Math.max(-3, Math.min(3, persist.theta));
+    // Update difficulty (slow drift, opposite direction)
+    persist.difficulty[q.id] = b + K_B * (p - (correct ? 1 : 0));
+    if (!persist.seen[q.id]) persist.seen[q.id] = {correct: 0, total: 0};
+    persist.seen[q.id].total += 1;
+    if (correct) persist.seen[q.id].correct += 1;
+    savePersist(persist);
+  }
+
+  // Pick the next adaptive question: among the top-K candidates closest to theta, choose one
+  function pickAdaptive() {
+    const remaining = pool.filter(q => !asked.has(q.id));
+    if (!remaining.length) return null;
+    const theta = persist.theta;
+    remaining.sort((a, b) => Math.abs(getB(a.id) - theta) - Math.abs(getB(b.id) - theta));
+    // Pick from top 5 closest at random for variety
+    const top = remaining.slice(0, Math.min(5, remaining.length));
+    return top[Math.floor(Math.random() * top.length)];
+  }
+
+  function nextQuestion() {
+    if (asked.size >= persist.count || asked.size >= pool.length) {
+      state = "end";
+      render();
+      return;
+    }
+    if (persist.mode === "adaptive") {
+      currentQ = pickAdaptive();
+    } else {
+      // Iterate order[] until we find one not yet asked
+      while (qIdx < order.length && asked.has(pool[order[qIdx]].id)) qIdx++;
+      currentQ = qIdx < order.length ? pool[order[qIdx]] : null;
+      qIdx++;
+    }
+    if (!currentQ) { state = "end"; render(); return; }
+    asked.add(currentQ.id);
+    selected = -1;
+    revealed = false;
+    render();
+  }
+
+  function startSession() {
+    pool = ALL_Q.filter(q => persist.selected_sets.includes(q.set));
+    if (!pool.length) return;
+    // Build shuffled or sequential order
+    order = pool.map((_, i) => i);
+    if (persist.mode === "shuffle" || persist.mode === "adaptive") {
+      for (let i = order.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [order[i], order[j]] = [order[j], order[i]];
+      }
+    }
+    asked = new Set();
+    qIdx = 0;
+    stats = { correct: 0, total: 0, perSet: {} };
+    sessionStart = Date.now();
+    state = "quiz";
+    nextQuestion();
+  }
+
+  // ─── Rendering ───────────────────────────────────────────────────────────────
+  function esc(s) {
+    return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+  }
+
+  function renderSetup() {
+    const total = persist.selected_sets.reduce((sum, s) => sum + (SET_COUNT[s] || 0), 0);
+    const setsHTML = SET_ORDER.map(s => {
+      const checked = persist.selected_sets.includes(s) ? "checked" : "";
+      return `<label class="aq-check">
+        <input type="checkbox" data-setid="${esc(s)}" ${checked}>
+        <span>${esc(SET_LABEL[s])}</span>
+        <span class="aq-count">${SET_COUNT[s]}</span>
+      </label>`;
+    }).join("");
+
+    const modes = [
+      ["sequential", "Sequential", "Questions in their original PDF order. Useful for systematic review."],
+      ["shuffle",    "Shuffled",   "Random order across the chapters you selected."],
+      ["adaptive",   "Adaptive",   "1-parameter Rasch model estimates your ability after each answer and serves the next question at a difficulty matching your current θ. Your estimate persists across sessions."]
+    ].map(([m, label, desc]) => `
+      <div class="aq-mode ${persist.mode === m ? "selected" : ""}" data-mode="${m}">
+        <div class="aq-mode-name">${label}</div>
+        <div class="aq-mode-desc">${esc(desc)}</div>
+      </div>`).join("");
+
+    const seenTotal = Object.keys(persist.seen).length;
+    const thetaPct = Math.round(((persist.theta + 3) / 6) * 100);
+
+    root.innerHTML = `
+      <div class="aq-setup">
+        <div>
+          <h3>1. Chapters</h3>
+          <div class="aq-fieldset">
+            <div class="aq-checks">${setsHTML}</div>
+            <div class="aq-mini" style="margin-top:0.6rem">
+              <span id="aq-pool-count">${total}</span> questions in current selection.
+              <button class="aq-btn sec" id="aq-select-all" style="padding:0.2rem 0.5rem; font-size:0.78rem; margin-left:0.4rem">Select all</button>
+              <button class="aq-btn sec" id="aq-select-none" style="padding:0.2rem 0.5rem; font-size:0.78rem">Clear</button>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3>2. Mode</h3>
+          <div class="aq-modes">${modes}</div>
+        </div>
+
+        <div>
+          <h3>3. Session length</h3>
+          <div class="aq-row">
+            <label>Stop after</label>
+            <select id="aq-count">
+              <option value="10">10 questions</option>
+              <option value="25">25 questions</option>
+              <option value="50">50 questions</option>
+              <option value="100">100 questions</option>
+              <option value="9999">All available</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="aq-controls">
+          <button class="aq-btn" id="aq-start">Start session</button>
+          ${seenTotal ? `<button class="aq-btn sec" id="aq-reset">Reset ability estimate</button>` : ""}
+        </div>
+
+        ${seenTotal ? `
+          <div class="aq-fieldset" style="background:#f9f7f0">
+            <div class="aq-mini">
+              <strong>Saved progress:</strong> answered ${seenTotal} unique question${seenTotal === 1 ? "" : "s"}.
+              Current ability estimate θ = <strong>${persist.theta.toFixed(2)}</strong>.
+              <div class="aq-ability-bar"><div class="aq-ability-fill" style="width:${thetaPct}%"></div></div>
+              <span style="font-size:0.7rem">−3 (struggling) ────── 0 (average) ────── +3 (mastery)</span>
+            </div>
+          </div>` : ""}
+      </div>`;
+
+    // Set count selector to persisted value
+    const sel = document.getElementById("aq-count");
+    sel.value = persist.count;
+
+    // Wire setup events
+    root.querySelectorAll("[data-setid]").forEach(cb => {
+      cb.addEventListener("change", (e) => {
+        const id = e.target.dataset.setid;
+        if (e.target.checked) {
+          if (!persist.selected_sets.includes(id)) persist.selected_sets.push(id);
+        } else {
+          persist.selected_sets = persist.selected_sets.filter(s => s !== id);
+        }
+        savePersist(persist);
+        const total2 = persist.selected_sets.reduce((sum, s) => sum + (SET_COUNT[s] || 0), 0);
+        document.getElementById("aq-pool-count").textContent = total2;
+      });
+    });
+    root.querySelectorAll("[data-mode]").forEach(el => {
+      el.addEventListener("click", () => {
+        persist.mode = el.dataset.mode;
+        savePersist(persist);
+        render();
+      });
+    });
+    document.getElementById("aq-select-all").onclick = () => {
+      persist.selected_sets = SET_ORDER.slice();
+      savePersist(persist);
+      render();
+    };
+    document.getElementById("aq-select-none").onclick = () => {
+      persist.selected_sets = [];
+      savePersist(persist);
+      render();
+    };
+    document.getElementById("aq-count").onchange = (e) => {
+      persist.count = parseInt(e.target.value, 10);
+      savePersist(persist);
+    };
+    document.getElementById("aq-start").onclick = () => {
+      if (!persist.selected_sets.length) return;
+      startSession();
+    };
+    if (document.getElementById("aq-reset")) {
+      document.getElementById("aq-reset").onclick = () => {
+        if (confirm("Reset your saved ability estimate and per-question stats?")) {
+          persist.theta = 0;
+          persist.difficulty = {};
+          persist.seen = {};
+          savePersist(persist);
+          render();
+        }
+      };
+    }
+  }
+
+  function renderQuiz() {
+    if (!currentQ) return;
+    const q = currentQ;
+    const total = Math.min(persist.count, pool.length);
+    const done = asked.size - (revealed ? 0 : 1) + (revealed ? 1 : 0);  // we just added q to asked
+    const num = asked.size;
+    const pct = Math.round((num / total) * 100);
+
+    const choicesHTML = q.choices.map((c, i) => {
+      let cls = "aq-choice";
+      if (revealed && i === q.correct) cls += " correct";
+      else if (revealed && i === selected && selected !== q.correct) cls += " wrong";
+      else if (!revealed && i === selected) cls += " selected";
+      return `<button class="${cls}" data-c="${i}" ${revealed ? "disabled" : ""}>
+        <span class="aq-letter">${LETTERS[i]}</span>
+        <span>${esc(c)}</span>
+      </button>`;
+    }).join("");
+
+    let feedback = "";
+    if (revealed) {
+      const isC = selected === q.correct;
+      feedback = `<div class="aq-feedback ${isC ? "correct" : "wrong"}">
+        <strong>${isC ? "Correct." : `Not quite — answer is ${LETTERS[q.correct]}.`}</strong>
+        ${persist.mode === "adaptive" ? `<br><span class="aq-mini">θ updated to ${persist.theta.toFixed(2)}. Item difficulty b = ${getB(q.id).toFixed(2)}.</span>` : ""}
+      </div>`;
+    }
+
+    let statsHTML = "";
+    if (persist.mode === "adaptive") {
+      const thetaPct = Math.round(((persist.theta + 3) / 6) * 100);
+      statsHTML = `
+        <div class="aq-stats">
+          <div class="aq-stat">
+            <div class="aq-stat-label">Correct</div>
+            <div class="aq-stat-value">${stats.correct}/${stats.total}</div>
+          </div>
+          <div class="aq-stat">
+            <div class="aq-stat-label">Ability θ</div>
+            <div class="aq-stat-value">${persist.theta.toFixed(2)}</div>
+            <div class="aq-ability-bar"><div class="aq-ability-fill" style="width:${thetaPct}%"></div></div>
+          </div>
+          <div class="aq-stat">
+            <div class="aq-stat-label">Item difficulty</div>
+            <div class="aq-stat-value">${getB(q.id).toFixed(2)}</div>
+            <div class="aq-stat-sub">${(pCorrect(persist.theta, getB(q.id)) * 100).toFixed(0)}% expected</div>
+          </div>
+        </div>`;
+    } else {
+      statsHTML = `
+        <div class="aq-stats">
+          <div class="aq-stat">
+            <div class="aq-stat-label">Correct</div>
+            <div class="aq-stat-value">${stats.correct}/${stats.total}</div>
+            <div class="aq-stat-sub">${stats.total ? Math.round(stats.correct/stats.total*100) : 0}%</div>
+          </div>
+        </div>`;
+    }
+
+    root.innerHTML = `
+      <div class="aq-status">
+        <span>Q${num}/${total}</span>
+        <div class="aq-progress-bar"><div class="aq-progress-fill" style="width:${pct}%"></div></div>
+        <span>${esc(persist.mode)} mode</span>
+      </div>
+      <div>
+        <span class="aq-tag">${esc(q.set_label)}</span>
+      </div>
+      <div class="aq-prompt">${esc(q.prompt)}</div>
+      <div class="aq-choices">${choicesHTML}</div>
+      ${statsHTML}
+      ${feedback}
+      <div class="aq-controls" style="margin-top:0.9rem">
+        ${revealed
+          ? `<button class="aq-btn" id="aq-next">${(asked.size >= persist.count || asked.size >= pool.length) ? "Finish" : "Next question"} →</button>`
+          : `<button class="aq-btn" id="aq-submit" ${selected < 0 ? "disabled" : ""}>Submit (Enter)</button>
+             <button class="aq-btn sec" id="aq-skip">Skip</button>`}
+        <button class="aq-btn sec danger" id="aq-quit" style="margin-left:auto">Quit session</button>
+      </div>
+      <div class="aq-mini" style="margin-top:0.6rem">Keyboard: <strong>A B C D</strong> to choose · <strong>Enter</strong> to submit / next · <strong>Esc</strong> to skip</div>`;
+
+    // Wire events
+    root.querySelectorAll("[data-c]").forEach(b => {
+      b.addEventListener("click", () => {
+        if (revealed) return;
+        selected = Number(b.dataset.c);
+        render();
+      });
+    });
+    document.getElementById("aq-submit")?.addEventListener("click", submitAnswer);
+    document.getElementById("aq-next")?.addEventListener("click", nextQuestion);
+    document.getElementById("aq-skip")?.addEventListener("click", () => {
+      // Skip counts as "not answered" — pull a new one, do not update theta
+      asked.delete(currentQ.id);
+      nextQuestion();
+    });
+    document.getElementById("aq-quit").addEventListener("click", () => {
+      if (confirm("Quit this session and return to setup?")) {
+        state = "setup";
+        render();
+      }
+    });
+  }
+
+  function renderEnd() {
+    const pct = stats.total ? Math.round(stats.correct / stats.total * 100) : 0;
+    const elapsed = Math.round((Date.now() - sessionStart) / 1000);
+    const mm = Math.floor(elapsed / 60), ss = elapsed % 60;
+    const thetaPct = Math.round(((persist.theta + 3) / 6) * 100);
+    // Per-set breakdown
+    const setRows = Object.entries(stats.perSet).sort()
+      .map(([setid, s]) => `<tr><td>${esc(SET_LABEL[setid] || setid)}</td><td style="text-align:right;font-family:monospace">${s.correct}/${s.total}</td></tr>`)
+      .join("");
+
+    root.innerHTML = `
+      <div class="aq-end">
+        <h3>Session complete</h3>
+        <div class="aq-end-score">${stats.correct}/${stats.total} (${pct}%)</div>
+        <div class="aq-mini">Time: ${mm}:${ss.toString().padStart(2,"0")} · Mode: ${persist.mode}</div>
+        ${persist.mode === "adaptive" ? `
+          <div style="max-width:380px; margin: 1.2rem auto;">
+            <div class="aq-mini">Ability θ = <strong>${persist.theta.toFixed(2)}</strong></div>
+            <div class="aq-ability-bar" style="margin-top:0.3rem"><div class="aq-ability-fill" style="width:${thetaPct}%"></div></div>
+            <div class="aq-mini" style="font-size:0.7rem">−3 (struggling) ── 0 (average) ── +3 (mastery)</div>
+          </div>` : ""}
+        ${setRows ? `<table style="margin: 1rem auto; font-size:0.88rem; border-collapse:collapse">
+          <thead><tr><th style="text-align:left;padding:0.3rem 1rem 0.3rem 0;border-bottom:1px solid #d8d2c0">Chapter set</th><th style="text-align:right;padding:0.3rem 0 0.3rem 1rem;border-bottom:1px solid #d8d2c0">Score</th></tr></thead>
+          <tbody>${setRows}</tbody>
+        </table>` : ""}
+        <div class="aq-controls" style="justify-content:center; margin-top:1rem">
+          <button class="aq-btn" id="aq-again">Another session</button>
+          <button class="aq-btn sec" id="aq-back">Change settings</button>
+        </div>
+      </div>`;
+    document.getElementById("aq-again").onclick = () => startSession();
+    document.getElementById("aq-back").onclick = () => { state = "setup"; render(); };
+  }
+
+  function submitAnswer() {
+    if (revealed || selected < 0 || !currentQ) return;
+    const correct = selected === currentQ.correct;
+    stats.total += 1;
+    if (correct) stats.correct += 1;
+    const setid = currentQ.set;
+    if (!stats.perSet[setid]) stats.perSet[setid] = { correct: 0, total: 0 };
+    stats.perSet[setid].total += 1;
+    if (correct) stats.perSet[setid].correct += 1;
+    if (persist.mode === "adaptive") updateAdaptive(currentQ, correct);
+    revealed = true;
+    render();
+  }
+
+  // ─── Keyboard shortcuts ──────────────────────────────────────────────────────
+  document.addEventListener("keydown", (e) => {
+    if (state !== "quiz" || !currentQ) return;
+    const tag = (e.target.tagName || "").toLowerCase();
+    if (tag === "input" || tag === "textarea" || tag === "select") return;
+    if (revealed) {
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); nextQuestion(); }
+      return;
+    }
+    const k = e.key.toLowerCase();
+    if (k === "a" || k === "b" || k === "c" || k === "d") {
+      e.preventDefault();
+      selected = "abcd".indexOf(k);
+      render();
+    } else if (e.key === "Enter") {
+      e.preventDefault();
+      if (selected >= 0) submitAnswer();
+    } else if (e.key === "Escape") {
+      e.preventDefault();
+      asked.delete(currentQ.id);
+      nextQuestion();
+    }
+  });
+
+  // ─── Dispatcher ──────────────────────────────────────────────────────────────
+  function render() {
+    if (state === "setup") renderSetup();
+    else if (state === "quiz") renderQuiz();
+    else if (state === "end") renderEnd();
+  }
+
+  render();
+})();
+</script>
+```

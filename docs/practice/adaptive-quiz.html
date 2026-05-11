@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>21&nbsp; Exchange rates – Macro Prep</title>
+<title>30&nbsp; Adaptive question bank – Macro Prep</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -23,41 +23,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -68,8 +33,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../dashboards/yield-curve.html" rel="next">
-<link href="../dashboards/output.html" rel="prev">
+<link href="../reference/formulas.html" rel="next">
+<link href="../practice/millionaire.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -107,14 +72,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
-<script type="module" src="../site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
-<link href="../site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="../assets/styles.css">
 </head>
 
-<body class="nav-sidebar docked quarto-light">
+<body class="nav-sidebar docked fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -123,7 +86,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../dashboards/inflation.html">Live data dashboards</a></li><li class="breadcrumb-item"><a href="../dashboards/exchange-rates.html"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Exchange rates</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../practice/decision-tree.html">Practice</a></li><li class="breadcrumb-item"><a href="../practice/adaptive-quiz.html"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Adaptive question bank</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -289,13 +252,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false">
  <span class="menu-text">Live data dashboards</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../dashboards/inflation.html" class="sidebar-item-text sidebar-link">
@@ -322,7 +285,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../dashboards/exchange-rates.html" class="sidebar-item-text sidebar-link active">
+  <a href="../dashboards/exchange-rates.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Exchange rates</span></span></a>
   </div>
 </li>
@@ -342,13 +305,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
  <span class="menu-text">Practice</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../practice/decision-tree.html" class="sidebar-item-text sidebar-link">
@@ -387,7 +350,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../practice/adaptive-quiz.html" class="sidebar-item-text sidebar-link">
+  <a href="../practice/adaptive-quiz.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Adaptive question bank</span></span></a>
   </div>
 </li>
@@ -433,23 +396,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="2">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#how-to-read" id="toc-how-to-read" class="nav-link active" data-scroll-target="#how-to-read"><span class="header-section-number">21.1</span> How to read</a></li>
-  <li><a href="#what-drives-moves" id="toc-what-drives-moves" class="nav-link" data-scroll-target="#what-drives-moves"><span class="header-section-number">21.2</span> What drives moves</a></li>
-  <li><a href="#source" id="toc-source" class="nav-link" data-scroll-target="#source"><span class="header-section-number">21.3</span> Source</a></li>
-  </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/ihelfrich/macroprep/edit/main/dashboards/exchange-rates.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ihelfrich/macroprep/blob/main/dashboards/exchange-rates.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/ihelfrich/macroprep/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../dashboards/inflation.html">Live data dashboards</a></li><li class="breadcrumb-item"><a href="../dashboards/exchange-rates.html"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Exchange rates</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../practice/decision-tree.html">Practice</a></li><li class="breadcrumb-item"><a href="../practice/adaptive-quiz.html"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Adaptive question bank</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Exchange rates</span></h1>
+<h1 class="title"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Adaptive question bank</span></h1>
+<p class="subtitle lead">738 multiple-choice questions across Ch 5–17 — filter by chapter, shuffle, or let the algorithm tune difficulty to you</p>
 </div>
 
 
@@ -466,162 +420,627 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="6" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 5;"><span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>eur <span class="op">=</span> <span class="cf">await</span> (<span class="cf">await</span> <span class="fu">fetch</span>(<span class="st">"../data/fred/DEXUSEU.json"</span>))<span class="op">.</span><span class="fu">json</span>()</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>gbp <span class="op">=</span> <span class="cf">await</span> (<span class="cf">await</span> <span class="fu">fetch</span>(<span class="st">"../data/fred/DEXUSUK.json"</span>))<span class="op">.</span><span class="fu">json</span>()</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>broad <span class="op">=</span> <span class="cf">await</span> (<span class="cf">await</span> <span class="fu">fetch</span>(<span class="st">"../data/fred/DTWEXBGS.json"</span>))<span class="op">.</span><span class="fu">json</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-1-1" data-nodetype="declaration">
+<p>Pick which chapter sets you want, choose a mode, and start. <strong>Adaptive mode</strong> estimates your ability after each answer (1-parameter Rasch model) and serves the next question at a difficulty matching your current level. Your progress saves locally in your browser.</p>
+<style>
+  /* Quiz container */
+  .aq-wrap { font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif; max-width: 920px; margin: 1rem auto; }
+  .aq-card {
+    background: #fcfbf7;
+    border: 1px solid #e6e1d2;
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    animation: aq-fade-in 0.3s ease-out;
+  }
+  @keyframes aq-fade-in { from {opacity:0; transform:translateY(4px);} to {opacity:1; transform:none;} }
 
-</div>
-</div>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-1-2" data-nodetype="declaration">
+  /* Settings */
+  .aq-setup { display: flex; flex-direction: column; gap: 1.1rem; }
+  .aq-setup h3 { font-size: 0.95rem; margin: 0 0 0.4rem; color: #2a4d6e; font-weight: 700; letter-spacing: 0.02em; }
+  .aq-fieldset {
+    background: #fff; border: 1px solid #e6e1d2; border-radius: 6px;
+    padding: 0.8rem 1rem;
+  }
+  .aq-fieldset legend { font-size: 0.78rem; font-family: "JetBrains Mono", "SF Mono", Consolas, monospace; color: #6c6a63; text-transform: uppercase; letter-spacing: 0.06em; padding: 0 0.4rem; }
 
-</div>
-</div>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-1-3" data-nodetype="declaration">
+  .aq-checks { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.5rem 1rem; }
+  .aq-check { display: flex; align-items: center; gap: 0.5rem; font-size: 0.88rem; color: #213547; cursor: pointer; user-select: none; padding: 0.3rem 0.4rem; border-radius: 4px; transition: background 0.15s; }
+  .aq-check:hover { background: #f3efe3; }
+  .aq-check input { margin: 0; }
+  .aq-check .aq-count { font-family: "JetBrains Mono", "SF Mono", monospace; color: #b85c38; font-size: 0.78rem; margin-left: auto; }
 
-</div>
-</div>
-</div>
-</div>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="11" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 10;"><span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>viewof er_window <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="dv">2</span><span class="op">,</span> <span class="dv">30</span>]<span class="op">,</span> {<span class="dt">value</span><span class="op">:</span> <span class="dv">15</span><span class="op">,</span> <span class="dt">step</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Years to display"</span>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display">
-<div id="ojs-cell-2" data-nodetype="declaration">
+  .aq-modes { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+  .aq-mode {
+    flex: 1; min-width: 200px;
+    background: #fff; border: 1.5px solid #d8d2c0; border-radius: 8px;
+    padding: 0.75rem 0.9rem; cursor: pointer; transition: all 0.15s;
+  }
+  .aq-mode:hover { border-color: #2a4d6e; }
+  .aq-mode.selected { border-color: #0e7c7b; background: #f0f8f8; }
+  .aq-mode .aq-mode-name { font-weight: 700; color: #0e7c7b; font-size: 0.95rem; }
+  .aq-mode .aq-mode-desc { font-size: 0.8rem; color: #555; margin-top: 0.2rem; line-height: 1.4; }
 
-</div>
-</div>
-</div>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb3" data-startfrom="15" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 14;"><span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>{</span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> cutoff <span class="op">=</span> <span class="kw">new</span> <span class="bu">Date</span>()</span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>  cutoff<span class="op">.</span><span class="fu">setFullYear</span>(cutoff<span class="op">.</span><span class="fu">getFullYear</span>() <span class="op">-</span> er_window)</span>
-<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> filt <span class="op">=</span> arr <span class="kw">=&gt;</span> arr<span class="op">.</span><span class="fu">filter</span>(d <span class="kw">=&gt;</span> <span class="kw">new</span> <span class="bu">Date</span>(d<span class="op">.</span><span class="at">date</span>) <span class="op">&gt;=</span> cutoff)<span class="op">.</span><span class="fu">map</span>(d <span class="kw">=&gt;</span> ({<span class="op">...</span>d<span class="op">,</span> <span class="dt">date</span><span class="op">:</span> <span class="kw">new</span> <span class="bu">Date</span>(d<span class="op">.</span><span class="at">date</span>)}))</span>
-<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> Plot<span class="op">.</span><span class="fu">plot</span>({</span>
-<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>    <span class="dt">width</span><span class="op">:</span> <span class="dv">800</span><span class="op">,</span> <span class="dt">height</span><span class="op">:</span> <span class="dv">320</span><span class="op">,</span> <span class="dt">marginLeft</span><span class="op">:</span> <span class="dv">60</span><span class="op">,</span> <span class="dt">marginBottom</span><span class="op">:</span> <span class="dv">50</span><span class="op">,</span></span>
-<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>    <span class="dt">x</span><span class="op">:</span> {<span class="dt">type</span><span class="op">:</span> <span class="st">"utc"</span>}<span class="op">,</span></span>
-<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>    <span class="dt">y</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"USD/EUR ($ per €)"</span><span class="op">,</span> <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span>}<span class="op">,</span></span>
-<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>    <span class="dt">marks</span><span class="op">:</span> [</span>
-<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>      Plot<span class="op">.</span><span class="fu">line</span>(<span class="fu">filt</span>(eur<span class="op">.</span><span class="at">observations</span>)<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"date"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"value"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> <span class="st">"#0e7c7b"</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="fl">1.8</span>})</span>
-<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>    ]</span>
-<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>  })</span>
-<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display">
-<div id="ojs-cell-3" data-nodetype="expression">
+  .aq-row { display: flex; align-items: center; gap: 0.8rem; flex-wrap: wrap; }
+  .aq-row label { font-size: 0.85rem; color: #2a4d6e; font-weight: 600; }
+  .aq-row select, .aq-row input[type=number] {
+    background: #fff; border: 1.5px solid #d8d2c0; border-radius: 4px;
+    padding: 0.35rem 0.55rem; font-size: 0.88rem; font-family: inherit;
+  }
 
-</div>
-</div>
-</div>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb4" data-startfrom="31" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 30;"><span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a>{</span>
-<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> cutoff <span class="op">=</span> <span class="kw">new</span> <span class="bu">Date</span>()</span>
-<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a>  cutoff<span class="op">.</span><span class="fu">setFullYear</span>(cutoff<span class="op">.</span><span class="fu">getFullYear</span>() <span class="op">-</span> er_window)</span>
-<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> filt <span class="op">=</span> arr <span class="kw">=&gt;</span> arr<span class="op">.</span><span class="fu">filter</span>(d <span class="kw">=&gt;</span> <span class="kw">new</span> <span class="bu">Date</span>(d<span class="op">.</span><span class="at">date</span>) <span class="op">&gt;=</span> cutoff)<span class="op">.</span><span class="fu">map</span>(d <span class="kw">=&gt;</span> ({<span class="op">...</span>d<span class="op">,</span> <span class="dt">date</span><span class="op">:</span> <span class="kw">new</span> <span class="bu">Date</span>(d<span class="op">.</span><span class="at">date</span>)}))</span>
-<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> Plot<span class="op">.</span><span class="fu">plot</span>({</span>
-<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a>    <span class="dt">width</span><span class="op">:</span> <span class="dv">800</span><span class="op">,</span> <span class="dt">height</span><span class="op">:</span> <span class="dv">320</span><span class="op">,</span> <span class="dt">marginLeft</span><span class="op">:</span> <span class="dv">60</span><span class="op">,</span> <span class="dt">marginBottom</span><span class="op">:</span> <span class="dv">50</span><span class="op">,</span></span>
-<span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a>    <span class="dt">x</span><span class="op">:</span> {<span class="dt">type</span><span class="op">:</span> <span class="st">"utc"</span>}<span class="op">,</span></span>
-<span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a>    <span class="dt">y</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"USD/GBP ($ per £)"</span><span class="op">,</span> <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span>}<span class="op">,</span></span>
-<span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a>    <span class="dt">marks</span><span class="op">:</span> [</span>
-<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a>      Plot<span class="op">.</span><span class="fu">line</span>(<span class="fu">filt</span>(gbp<span class="op">.</span><span class="at">observations</span>)<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"date"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"value"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> <span class="st">"#b7410e"</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="fl">1.8</span>})</span>
-<span id="cb4-41"><a href="#cb4-41" aria-hidden="true" tabindex="-1"></a>    ]</span>
-<span id="cb4-42"><a href="#cb4-42" aria-hidden="true" tabindex="-1"></a>  })</span>
-<span id="cb4-43"><a href="#cb4-43" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display">
-<div id="ojs-cell-4" data-nodetype="expression">
+  .aq-controls { display: flex; gap: 0.55rem; flex-wrap: wrap; }
+  .aq-btn {
+    background: linear-gradient(135deg, #0e7c7b, #0a5e5d);
+    color: white; border: none; border-radius: 5px;
+    padding: 0.55rem 1.1rem; font-weight: 700; font-size: 0.9rem;
+    cursor: pointer; font-family: inherit;
+    transition: filter 0.15s, transform 0.1s;
+  }
+  .aq-btn:hover:not(:disabled) { filter: brightness(1.08); transform: translateY(-1px); }
+  .aq-btn:disabled { opacity: 0.4; cursor: default; }
+  .aq-btn.sec {
+    background: #fff; color: #2a4d6e; border: 1.5px solid #d8d2c0;
+  }
+  .aq-btn.sec:hover:not(:disabled) { border-color: #2a4d6e; }
+  .aq-btn.danger { background: linear-gradient(135deg, #b85c38, #8a3f22); }
 
-</div>
-</div>
-</div>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb5" data-startfrom="47" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 46;"><span id="cb5-47"><a href="#cb5-47" aria-hidden="true" tabindex="-1"></a>{</span>
-<span id="cb5-48"><a href="#cb5-48" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> cutoff <span class="op">=</span> <span class="kw">new</span> <span class="bu">Date</span>()</span>
-<span id="cb5-49"><a href="#cb5-49" aria-hidden="true" tabindex="-1"></a>  cutoff<span class="op">.</span><span class="fu">setFullYear</span>(cutoff<span class="op">.</span><span class="fu">getFullYear</span>() <span class="op">-</span> er_window)</span>
-<span id="cb5-50"><a href="#cb5-50" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> filt <span class="op">=</span> arr <span class="kw">=&gt;</span> arr<span class="op">.</span><span class="fu">filter</span>(d <span class="kw">=&gt;</span> <span class="kw">new</span> <span class="bu">Date</span>(d<span class="op">.</span><span class="at">date</span>) <span class="op">&gt;=</span> cutoff)<span class="op">.</span><span class="fu">map</span>(d <span class="kw">=&gt;</span> ({<span class="op">...</span>d<span class="op">,</span> <span class="dt">date</span><span class="op">:</span> <span class="kw">new</span> <span class="bu">Date</span>(d<span class="op">.</span><span class="at">date</span>)}))</span>
-<span id="cb5-51"><a href="#cb5-51" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> Plot<span class="op">.</span><span class="fu">plot</span>({</span>
-<span id="cb5-52"><a href="#cb5-52" aria-hidden="true" tabindex="-1"></a>    <span class="dt">width</span><span class="op">:</span> <span class="dv">800</span><span class="op">,</span> <span class="dt">height</span><span class="op">:</span> <span class="dv">320</span><span class="op">,</span> <span class="dt">marginLeft</span><span class="op">:</span> <span class="dv">70</span><span class="op">,</span> <span class="dt">marginBottom</span><span class="op">:</span> <span class="dv">50</span><span class="op">,</span></span>
-<span id="cb5-53"><a href="#cb5-53" aria-hidden="true" tabindex="-1"></a>    <span class="dt">x</span><span class="op">:</span> {<span class="dt">type</span><span class="op">:</span> <span class="st">"utc"</span>}<span class="op">,</span></span>
-<span id="cb5-54"><a href="#cb5-54" aria-hidden="true" tabindex="-1"></a>    <span class="dt">y</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Broad trade-weighted dollar index (Jan 2006 = 100)"</span><span class="op">,</span> <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span>}<span class="op">,</span></span>
-<span id="cb5-55"><a href="#cb5-55" aria-hidden="true" tabindex="-1"></a>    <span class="dt">marks</span><span class="op">:</span> [</span>
-<span id="cb5-56"><a href="#cb5-56" aria-hidden="true" tabindex="-1"></a>      Plot<span class="op">.</span><span class="fu">line</span>(<span class="fu">filt</span>(broad<span class="op">.</span><span class="at">observations</span>)<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"date"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"value"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> <span class="st">"#5a5a5a"</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="dv">2</span>})</span>
-<span id="cb5-57"><a href="#cb5-57" aria-hidden="true" tabindex="-1"></a>    ]</span>
-<span id="cb5-58"><a href="#cb5-58" aria-hidden="true" tabindex="-1"></a>  })</span>
-<span id="cb5-59"><a href="#cb5-59" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display">
-<div id="ojs-cell-5" data-nodetype="expression">
+  /* Quiz screen */
+  .aq-status {
+    display: flex; justify-content: space-between; align-items: center;
+    font-size: 0.76rem; font-family: "JetBrains Mono", "SF Mono", monospace;
+    color: #6c6a63; text-transform: uppercase; letter-spacing: 0.05em;
+    padding-bottom: 0.55rem; border-bottom: 1px solid #e6e1d2; margin-bottom: 0.8rem;
+  }
+  .aq-status .aq-progress-bar {
+    flex: 1; max-width: 280px; height: 6px; background: #ece6d4; border-radius: 3px;
+    margin: 0 0.8rem; overflow: hidden;
+  }
+  .aq-status .aq-progress-fill {
+    height: 100%; background: linear-gradient(90deg, #0e7c7b, #4caf95); transition: width 0.4s;
+  }
 
-</div>
-</div>
-</div>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb6" data-startfrom="63" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 62;"><span id="cb6-63"><a href="#cb6-63" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`&lt;div style="display: flex; gap: 0.8rem; flex-wrap: wrap; margin: 1rem 0;"&gt;</span></span>
-<span id="cb6-64"><a href="#cb6-64" aria-hidden="true" tabindex="-1"></a><span class="vs">  </span><span class="sc">${</span>[</span>
-<span id="cb6-65"><a href="#cb6-65" aria-hidden="true" tabindex="-1"></a>    [<span class="st">"USD/EUR"</span><span class="op">,</span> eur<span class="op">.</span><span class="at">observations</span><span class="op">.</span><span class="fu">at</span>(<span class="op">-</span><span class="dv">1</span>)<span class="op">?.</span><span class="at">value</span><span class="op">,</span> <span class="st">"$ per €"</span>]<span class="op">,</span></span>
-<span id="cb6-66"><a href="#cb6-66" aria-hidden="true" tabindex="-1"></a>    [<span class="st">"USD/GBP"</span><span class="op">,</span> gbp<span class="op">.</span><span class="at">observations</span><span class="op">.</span><span class="fu">at</span>(<span class="op">-</span><span class="dv">1</span>)<span class="op">?.</span><span class="at">value</span><span class="op">,</span> <span class="st">"$ per £"</span>]<span class="op">,</span></span>
-<span id="cb6-67"><a href="#cb6-67" aria-hidden="true" tabindex="-1"></a>    [<span class="st">"Broad $ index"</span><span class="op">,</span> broad<span class="op">.</span><span class="at">observations</span><span class="op">.</span><span class="fu">at</span>(<span class="op">-</span><span class="dv">1</span>)<span class="op">?.</span><span class="at">value</span><span class="op">,</span> <span class="st">"Jan 2006 = 100"</span>]</span>
-<span id="cb6-68"><a href="#cb6-68" aria-hidden="true" tabindex="-1"></a>  ]<span class="op">.</span><span class="fu">map</span>(([label<span class="op">,</span> v<span class="op">,</span> units]) <span class="kw">=&gt;</span> <span class="vs">`</span></span>
-<span id="cb6-69"><a href="#cb6-69" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;div class="kpi-card"&gt;</span></span>
-<span id="cb6-70"><a href="#cb6-70" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;div class="kpi-label"&gt;</span><span class="sc">${</span>label<span class="sc">}</span><span class="vs">&lt;/div&gt;</span></span>
-<span id="cb6-71"><a href="#cb6-71" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;div class="kpi-value"&gt;</span><span class="sc">${</span>v <span class="op">!=</span> <span class="kw">null</span> <span class="op">?</span> v<span class="op">.</span><span class="fu">toFixed</span>(<span class="dv">3</span>) <span class="op">:</span> <span class="st">'—'</span><span class="sc">}</span><span class="vs">&lt;/div&gt;</span></span>
-<span id="cb6-72"><a href="#cb6-72" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;div class="kpi-sub"&gt;</span><span class="sc">${</span>units<span class="sc">}</span><span class="vs">&lt;/div&gt;</span></span>
-<span id="cb6-73"><a href="#cb6-73" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;/div&gt;</span></span>
-<span id="cb6-74"><a href="#cb6-74" aria-hidden="true" tabindex="-1"></a><span class="vs">  `</span>)<span class="op">.</span><span class="fu">join</span>(<span class="st">''</span>)<span class="sc">}</span></span>
-<span id="cb6-75"><a href="#cb6-75" aria-hidden="true" tabindex="-1"></a><span class="vs">&lt;/div&gt;`</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display">
-<div id="ojs-cell-6" data-nodetype="expression">
+  .aq-tag {
+    display: inline-block; background: #f3efe3; color: #2a4d6e;
+    padding: 2px 8px; border-radius: 3px; font-size: 0.72rem;
+    font-family: "JetBrains Mono", "SF Mono", monospace;
+    letter-spacing: 0.03em;
+  }
 
-</div>
-</div>
-</div>
-<section id="how-to-read" class="level2" data-number="21.1">
-<h2 data-number="21.1" class="anchored" data-anchor-id="how-to-read"><span class="header-section-number">21.1</span> How to read</h2>
-<p>USD/EUR: dollars per euro. <strong>Higher = euro stronger / dollar weaker.</strong> A move from 1.05 to 1.20 is dollar depreciation against the euro.</p>
-<p>USD/GBP: same convention. Higher means pound stronger.</p>
-<p>Broad trade-weighted index: weighted basket of major U.S. trade partners, indexed to Jan 2006 = 100. Higher = stronger dollar against the basket. This is the cleanest single measure of dollar strength globally.</p>
-</section>
-<section id="what-drives-moves" class="level2" data-number="21.2">
-<h2 data-number="21.2" class="anchored" data-anchor-id="what-drives-moves"><span class="header-section-number">21.2</span> What drives moves</h2>
-<p>Two main channels (PPP and capital-flow) work in opposite directions:</p>
-<ul>
-<li><strong>Higher U.S. inflation</strong> relative to trading partners → dollar depreciates (PPP).</li>
-<li><strong>Higher U.S. interest rates</strong> relative to trading partners → dollar appreciates (capital inflows).</li>
-</ul>
-<p>In the short run, capital-flow dominance usually wins. In the long run, PPP usually wins. Watch both gradually.</p>
-</section>
-<section id="source" class="level2" data-number="21.3">
-<h2 data-number="21.3" class="anchored" data-anchor-id="source"><span class="header-section-number">21.3</span> Source</h2>
-<p><a href="https://fred.stlouisfed.org/">FRED</a> — DEXUSEU, DEXUSUK from the Federal Reserve Board’s H.10 release. DTWEXBGS (Goods &amp; Services trade-weighted index) is the Fed’s preferred broad-dollar measure.</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb7" data-startfrom="100" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 99;"><span id="cb7-100"><a href="#cb7-100" aria-hidden="true" tabindex="-1"></a><span class="fu">md</span><span class="vs">`*Last data refresh: </span><span class="sc">${</span>eur<span class="op">.</span><span class="at">last_updated</span> <span class="op">||</span> <span class="st">'unknown'</span><span class="sc">}</span><span class="vs">.*`</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display">
-<div id="ojs-cell-7" data-nodetype="expression">
+  .aq-prompt {
+    font-size: 1.04rem; line-height: 1.65; color: #213547;
+    margin: 0.8rem 0; min-height: 3rem;
+  }
 
-</div>
-</div>
-</div>
+  .aq-choices { display: flex; flex-direction: column; gap: 0.55rem; }
+  .aq-choice {
+    display: flex; align-items: flex-start; gap: 0.65rem;
+    background: white; border: 1.5px solid #d8d2c0; border-radius: 6px;
+    padding: 0.65rem 0.85rem; font-size: 0.92rem; line-height: 1.5;
+    color: #213547; cursor: pointer; text-align: left;
+    font-family: inherit;
+    transition: border-color 0.12s, background 0.12s, box-shadow 0.12s;
+  }
+  .aq-choice:hover:not(:disabled) { border-color: #0e7c7b; box-shadow: 0 2px 8px rgba(14,124,123,0.08); }
+  .aq-choice:disabled { cursor: default; }
+  .aq-choice.selected { border-color: #0e7c7b; background: #eff7f7; }
+  .aq-choice.correct { border-color: #4caf65; background: #ebf7ee; }
+  .aq-choice.wrong { border-color: #b85c38; background: #fff1ed; }
+  .aq-letter {
+    flex-shrink: 0;
+    width: 1.55rem; height: 1.55rem; border-radius: 50%;
+    border: 1.5px solid currentColor;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.78rem; font-weight: 700; color: #b85c38;
+    font-family: "JetBrains Mono", "SF Mono", monospace;
+  }
+
+  .aq-feedback {
+    margin-top: 0.9rem; padding: 0.7rem 0.95rem;
+    background: #f3efe3; border-left: 4px solid #0e7c7b;
+    border-radius: 4px; font-size: 0.88rem; color: #2a4d6e; line-height: 1.55;
+  }
+  .aq-feedback.correct { border-left-color: #4caf65; }
+  .aq-feedback.wrong   { border-left-color: #b85c38; }
+  .aq-feedback strong  { color: #213547; }
+
+  /* Stats panel (adaptive mode) */
+  .aq-stats {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 0.6rem; margin: 0.9rem 0;
+  }
+  .aq-stat {
+    background: white; border: 1px solid #e6e1d2; border-radius: 6px;
+    padding: 0.55rem 0.8rem;
+  }
+  .aq-stat .aq-stat-label {
+    font-size: 0.7rem; color: #6c6a63; text-transform: uppercase;
+    letter-spacing: 0.05em; font-family: "JetBrains Mono", "SF Mono", monospace;
+  }
+  .aq-stat .aq-stat-value {
+    font-size: 1.4rem; font-weight: 700; color: #2a4d6e;
+    font-family: "JetBrains Mono", "SF Mono", monospace;
+  }
+  .aq-stat .aq-stat-sub { font-size: 0.76rem; color: #6c6a63; }
+
+  .aq-ability-bar {
+    height: 8px; background: #ece6d4; border-radius: 4px;
+    margin-top: 0.4rem; position: relative; overflow: hidden;
+  }
+  .aq-ability-fill {
+    height: 100%; background: linear-gradient(90deg, #b85c38, #c7a93a, #4caf65);
+    border-radius: 4px; transition: width 0.5s;
+  }
+
+  /* End screen */
+  .aq-end { text-align: center; padding: 0.6rem; }
+  .aq-end h3 { color: #0e7c7b; font-size: 1.5rem; margin-bottom: 0.4rem; }
+  .aq-end-score { font-size: 2.4rem; font-weight: 900; color: #2a4d6e; margin: 0.4rem 0; font-family: "JetBrains Mono", "SF Mono", monospace; }
+
+  .aq-mini { font-size: 0.78rem; color: #6c6a63; }
+  .aq-warn { color: #b85c38; font-size: 0.82rem; padding: 0.5rem 0.7rem; background: #fff1ed; border-radius: 4px; }
+
+  @media (max-width: 600px) {
+    .aq-card { padding: 0.9rem 1rem; }
+    .aq-status { font-size: 0.68rem; }
+    .aq-progress-bar { display: none; }
+  }
+</style>
+
+<div class="aq-wrap"><div id="aq-root" class="aq-card"><div class="aq-mini">Loading question bank…</div></div></div>
+
+<script>
+(async function () {
+  // ─── Load questions ──────────────────────────────────────────────────────────
+  const root = document.getElementById("aq-root");
+  let data;
+  try {
+    const res = await fetch("../data/practice/macro_questions.json", {cache: "default"});
+    data = await res.json();
+  } catch (err) {
+    root.innerHTML = `<div class="aq-warn">Could not load question bank: ${err.message}</div>`;
+    return;
+  }
+  const ALL_Q = data.questions;
+  const LETTERS = ["A", "B", "C", "D"];
+
+  // Discover chapter sets in the order they appear
+  const SET_ORDER = [];
+  const SET_LABEL = {};
+  const SET_COUNT = {};
+  for (const q of ALL_Q) {
+    if (!(q.set in SET_LABEL)) {
+      SET_ORDER.push(q.set);
+      SET_LABEL[q.set] = q.set_label;
+      SET_COUNT[q.set] = 0;
+    }
+    SET_COUNT[q.set] += 1;
+  }
+
+  // ─── Persistent state ────────────────────────────────────────────────────────
+  const STORAGE = "macroprep.aq.v1";
+  const defaultPersist = () => ({
+    theta: 0,             // student ability (log-odds)
+    difficulty: {},       // itemId -> b
+    seen: {},             // itemId -> {correct: int, total: int}
+    selected_sets: SET_ORDER.slice(),
+    mode: "adaptive",
+    count: 25
+  });
+  function loadPersist() {
+    try { return Object.assign(defaultPersist(), JSON.parse(localStorage.getItem(STORAGE) || "{}")); }
+    catch { return defaultPersist(); }
+  }
+  function savePersist(p) { try { localStorage.setItem(STORAGE, JSON.stringify(p)); } catch {} }
+  let persist = loadPersist();
+
+  // ─── Session state ───────────────────────────────────────────────────────────
+  let state = "setup";      // setup | quiz | end
+  let pool = [];            // filtered question pool for this session
+  let order = [];           // index order (sequential / shuffled)
+  let asked = new Set();    // ids asked this session
+  let qIdx = 0;             // current question pointer (sequential mode)
+  let currentQ = null;
+  let selected = -1;
+  let revealed = false;
+  let stats = { correct: 0, total: 0, perSet: {} };
+  let sessionStart = Date.now();
+
+  // ─── Adaptive scoring (1PL Rasch) ────────────────────────────────────────────
+  const K_THETA = 0.55;     // student learning rate
+  const K_B = 0.04;         // item difficulty drift per response (slow)
+  function pCorrect(theta, b) { return 1 / (1 + Math.exp(b - theta)); }
+  function getB(qid) {
+    if (qid in persist.difficulty) return persist.difficulty[qid];
+    return 0;  // unseeded — start neutral
+  }
+  function updateAdaptive(q, correct) {
+    const b = getB(q.id);
+    const p = pCorrect(persist.theta, b);
+    persist.theta += K_THETA * ((correct ? 1 : 0) - p);
+    // clamp theta to [-3, 3] to keep things sane
+    persist.theta = Math.max(-3, Math.min(3, persist.theta));
+    // Update difficulty (slow drift, opposite direction)
+    persist.difficulty[q.id] = b + K_B * (p - (correct ? 1 : 0));
+    if (!persist.seen[q.id]) persist.seen[q.id] = {correct: 0, total: 0};
+    persist.seen[q.id].total += 1;
+    if (correct) persist.seen[q.id].correct += 1;
+    savePersist(persist);
+  }
+
+  // Pick the next adaptive question: among the top-K candidates closest to theta, choose one
+  function pickAdaptive() {
+    const remaining = pool.filter(q => !asked.has(q.id));
+    if (!remaining.length) return null;
+    const theta = persist.theta;
+    remaining.sort((a, b) => Math.abs(getB(a.id) - theta) - Math.abs(getB(b.id) - theta));
+    // Pick from top 5 closest at random for variety
+    const top = remaining.slice(0, Math.min(5, remaining.length));
+    return top[Math.floor(Math.random() * top.length)];
+  }
+
+  function nextQuestion() {
+    if (asked.size >= persist.count || asked.size >= pool.length) {
+      state = "end";
+      render();
+      return;
+    }
+    if (persist.mode === "adaptive") {
+      currentQ = pickAdaptive();
+    } else {
+      // Iterate order[] until we find one not yet asked
+      while (qIdx < order.length && asked.has(pool[order[qIdx]].id)) qIdx++;
+      currentQ = qIdx < order.length ? pool[order[qIdx]] : null;
+      qIdx++;
+    }
+    if (!currentQ) { state = "end"; render(); return; }
+    asked.add(currentQ.id);
+    selected = -1;
+    revealed = false;
+    render();
+  }
+
+  function startSession() {
+    pool = ALL_Q.filter(q => persist.selected_sets.includes(q.set));
+    if (!pool.length) return;
+    // Build shuffled or sequential order
+    order = pool.map((_, i) => i);
+    if (persist.mode === "shuffle" || persist.mode === "adaptive") {
+      for (let i = order.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [order[i], order[j]] = [order[j], order[i]];
+      }
+    }
+    asked = new Set();
+    qIdx = 0;
+    stats = { correct: 0, total: 0, perSet: {} };
+    sessionStart = Date.now();
+    state = "quiz";
+    nextQuestion();
+  }
+
+  // ─── Rendering ───────────────────────────────────────────────────────────────
+  function esc(s) {
+    return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+  }
+
+  function renderSetup() {
+    const total = persist.selected_sets.reduce((sum, s) => sum + (SET_COUNT[s] || 0), 0);
+    const setsHTML = SET_ORDER.map(s => {
+      const checked = persist.selected_sets.includes(s) ? "checked" : "";
+      return `<label class="aq-check">
+        <input type="checkbox" data-setid="${esc(s)}" ${checked}>
+        <span>${esc(SET_LABEL[s])}</span>
+        <span class="aq-count">${SET_COUNT[s]}</span>
+      </label>`;
+    }).join("");
+
+    const modes = [
+      ["sequential", "Sequential", "Questions in their original PDF order. Useful for systematic review."],
+      ["shuffle",    "Shuffled",   "Random order across the chapters you selected."],
+      ["adaptive",   "Adaptive",   "1-parameter Rasch model estimates your ability after each answer and serves the next question at a difficulty matching your current θ. Your estimate persists across sessions."]
+    ].map(([m, label, desc]) => `
+      <div class="aq-mode ${persist.mode === m ? "selected" : ""}" data-mode="${m}">
+        <div class="aq-mode-name">${label}</div>
+        <div class="aq-mode-desc">${esc(desc)}</div>
+      </div>`).join("");
+
+    const seenTotal = Object.keys(persist.seen).length;
+    const thetaPct = Math.round(((persist.theta + 3) / 6) * 100);
+
+    root.innerHTML = `
+      <div class="aq-setup">
+        <div>
+          <h3>1. Chapters</h3>
+          <div class="aq-fieldset">
+            <div class="aq-checks">${setsHTML}</div>
+            <div class="aq-mini" style="margin-top:0.6rem">
+              <span id="aq-pool-count">${total}</span> questions in current selection.
+              <button class="aq-btn sec" id="aq-select-all" style="padding:0.2rem 0.5rem; font-size:0.78rem; margin-left:0.4rem">Select all</button>
+              <button class="aq-btn sec" id="aq-select-none" style="padding:0.2rem 0.5rem; font-size:0.78rem">Clear</button>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3>2. Mode</h3>
+          <div class="aq-modes">${modes}</div>
+        </div>
+
+        <div>
+          <h3>3. Session length</h3>
+          <div class="aq-row">
+            <label>Stop after</label>
+            <select id="aq-count">
+              <option value="10">10 questions</option>
+              <option value="25">25 questions</option>
+              <option value="50">50 questions</option>
+              <option value="100">100 questions</option>
+              <option value="9999">All available</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="aq-controls">
+          <button class="aq-btn" id="aq-start">Start session</button>
+          ${seenTotal ? `<button class="aq-btn sec" id="aq-reset">Reset ability estimate</button>` : ""}
+        </div>
+
+        ${seenTotal ? `
+          <div class="aq-fieldset" style="background:#f9f7f0">
+            <div class="aq-mini">
+              <strong>Saved progress:</strong> answered ${seenTotal} unique question${seenTotal === 1 ? "" : "s"}.
+              Current ability estimate θ = <strong>${persist.theta.toFixed(2)}</strong>.
+              <div class="aq-ability-bar"><div class="aq-ability-fill" style="width:${thetaPct}%"></div></div>
+              <span style="font-size:0.7rem">−3 (struggling) ────── 0 (average) ────── +3 (mastery)</span>
+            </div>
+          </div>` : ""}
+      </div>`;
+
+    // Set count selector to persisted value
+    const sel = document.getElementById("aq-count");
+    sel.value = persist.count;
+
+    // Wire setup events
+    root.querySelectorAll("[data-setid]").forEach(cb => {
+      cb.addEventListener("change", (e) => {
+        const id = e.target.dataset.setid;
+        if (e.target.checked) {
+          if (!persist.selected_sets.includes(id)) persist.selected_sets.push(id);
+        } else {
+          persist.selected_sets = persist.selected_sets.filter(s => s !== id);
+        }
+        savePersist(persist);
+        const total2 = persist.selected_sets.reduce((sum, s) => sum + (SET_COUNT[s] || 0), 0);
+        document.getElementById("aq-pool-count").textContent = total2;
+      });
+    });
+    root.querySelectorAll("[data-mode]").forEach(el => {
+      el.addEventListener("click", () => {
+        persist.mode = el.dataset.mode;
+        savePersist(persist);
+        render();
+      });
+    });
+    document.getElementById("aq-select-all").onclick = () => {
+      persist.selected_sets = SET_ORDER.slice();
+      savePersist(persist);
+      render();
+    };
+    document.getElementById("aq-select-none").onclick = () => {
+      persist.selected_sets = [];
+      savePersist(persist);
+      render();
+    };
+    document.getElementById("aq-count").onchange = (e) => {
+      persist.count = parseInt(e.target.value, 10);
+      savePersist(persist);
+    };
+    document.getElementById("aq-start").onclick = () => {
+      if (!persist.selected_sets.length) return;
+      startSession();
+    };
+    if (document.getElementById("aq-reset")) {
+      document.getElementById("aq-reset").onclick = () => {
+        if (confirm("Reset your saved ability estimate and per-question stats?")) {
+          persist.theta = 0;
+          persist.difficulty = {};
+          persist.seen = {};
+          savePersist(persist);
+          render();
+        }
+      };
+    }
+  }
+
+  function renderQuiz() {
+    if (!currentQ) return;
+    const q = currentQ;
+    const total = Math.min(persist.count, pool.length);
+    const done = asked.size - (revealed ? 0 : 1) + (revealed ? 1 : 0);  // we just added q to asked
+    const num = asked.size;
+    const pct = Math.round((num / total) * 100);
+
+    const choicesHTML = q.choices.map((c, i) => {
+      let cls = "aq-choice";
+      if (revealed && i === q.correct) cls += " correct";
+      else if (revealed && i === selected && selected !== q.correct) cls += " wrong";
+      else if (!revealed && i === selected) cls += " selected";
+      return `<button class="${cls}" data-c="${i}" ${revealed ? "disabled" : ""}>
+        <span class="aq-letter">${LETTERS[i]}</span>
+        <span>${esc(c)}</span>
+      </button>`;
+    }).join("");
+
+    let feedback = "";
+    if (revealed) {
+      const isC = selected === q.correct;
+      feedback = `<div class="aq-feedback ${isC ? "correct" : "wrong"}">
+        <strong>${isC ? "Correct." : `Not quite — answer is ${LETTERS[q.correct]}.`}</strong>
+        ${persist.mode === "adaptive" ? `<br><span class="aq-mini">θ updated to ${persist.theta.toFixed(2)}. Item difficulty b = ${getB(q.id).toFixed(2)}.</span>` : ""}
+      </div>`;
+    }
+
+    let statsHTML = "";
+    if (persist.mode === "adaptive") {
+      const thetaPct = Math.round(((persist.theta + 3) / 6) * 100);
+      statsHTML = `
+        <div class="aq-stats">
+          <div class="aq-stat">
+            <div class="aq-stat-label">Correct</div>
+            <div class="aq-stat-value">${stats.correct}/${stats.total}</div>
+          </div>
+          <div class="aq-stat">
+            <div class="aq-stat-label">Ability θ</div>
+            <div class="aq-stat-value">${persist.theta.toFixed(2)}</div>
+            <div class="aq-ability-bar"><div class="aq-ability-fill" style="width:${thetaPct}%"></div></div>
+          </div>
+          <div class="aq-stat">
+            <div class="aq-stat-label">Item difficulty</div>
+            <div class="aq-stat-value">${getB(q.id).toFixed(2)}</div>
+            <div class="aq-stat-sub">${(pCorrect(persist.theta, getB(q.id)) * 100).toFixed(0)}% expected</div>
+          </div>
+        </div>`;
+    } else {
+      statsHTML = `
+        <div class="aq-stats">
+          <div class="aq-stat">
+            <div class="aq-stat-label">Correct</div>
+            <div class="aq-stat-value">${stats.correct}/${stats.total}</div>
+            <div class="aq-stat-sub">${stats.total ? Math.round(stats.correct/stats.total*100) : 0}%</div>
+          </div>
+        </div>`;
+    }
+
+    root.innerHTML = `
+      <div class="aq-status">
+        <span>Q${num}/${total}</span>
+        <div class="aq-progress-bar"><div class="aq-progress-fill" style="width:${pct}%"></div></div>
+        <span>${esc(persist.mode)} mode</span>
+      </div>
+      <div>
+        <span class="aq-tag">${esc(q.set_label)}</span>
+      </div>
+      <div class="aq-prompt">${esc(q.prompt)}</div>
+      <div class="aq-choices">${choicesHTML}</div>
+      ${statsHTML}
+      ${feedback}
+      <div class="aq-controls" style="margin-top:0.9rem">
+        ${revealed
+          ? `<button class="aq-btn" id="aq-next">${(asked.size >= persist.count || asked.size >= pool.length) ? "Finish" : "Next question"} →</button>`
+          : `<button class="aq-btn" id="aq-submit" ${selected < 0 ? "disabled" : ""}>Submit (Enter)</button>
+             <button class="aq-btn sec" id="aq-skip">Skip</button>`}
+        <button class="aq-btn sec danger" id="aq-quit" style="margin-left:auto">Quit session</button>
+      </div>
+      <div class="aq-mini" style="margin-top:0.6rem">Keyboard: <strong>A B C D</strong> to choose · <strong>Enter</strong> to submit / next · <strong>Esc</strong> to skip</div>`;
+
+    // Wire events
+    root.querySelectorAll("[data-c]").forEach(b => {
+      b.addEventListener("click", () => {
+        if (revealed) return;
+        selected = Number(b.dataset.c);
+        render();
+      });
+    });
+    document.getElementById("aq-submit")?.addEventListener("click", submitAnswer);
+    document.getElementById("aq-next")?.addEventListener("click", nextQuestion);
+    document.getElementById("aq-skip")?.addEventListener("click", () => {
+      // Skip counts as "not answered" — pull a new one, do not update theta
+      asked.delete(currentQ.id);
+      nextQuestion();
+    });
+    document.getElementById("aq-quit").addEventListener("click", () => {
+      if (confirm("Quit this session and return to setup?")) {
+        state = "setup";
+        render();
+      }
+    });
+  }
+
+  function renderEnd() {
+    const pct = stats.total ? Math.round(stats.correct / stats.total * 100) : 0;
+    const elapsed = Math.round((Date.now() - sessionStart) / 1000);
+    const mm = Math.floor(elapsed / 60), ss = elapsed % 60;
+    const thetaPct = Math.round(((persist.theta + 3) / 6) * 100);
+    // Per-set breakdown
+    const setRows = Object.entries(stats.perSet).sort()
+      .map(([setid, s]) => `<tr><td>${esc(SET_LABEL[setid] || setid)}</td><td style="text-align:right;font-family:monospace">${s.correct}/${s.total}</td></tr>`)
+      .join("");
+
+    root.innerHTML = `
+      <div class="aq-end">
+        <h3>Session complete</h3>
+        <div class="aq-end-score">${stats.correct}/${stats.total} (${pct}%)</div>
+        <div class="aq-mini">Time: ${mm}:${ss.toString().padStart(2,"0")} · Mode: ${persist.mode}</div>
+        ${persist.mode === "adaptive" ? `
+          <div style="max-width:380px; margin: 1.2rem auto;">
+            <div class="aq-mini">Ability θ = <strong>${persist.theta.toFixed(2)}</strong></div>
+            <div class="aq-ability-bar" style="margin-top:0.3rem"><div class="aq-ability-fill" style="width:${thetaPct}%"></div></div>
+            <div class="aq-mini" style="font-size:0.7rem">−3 (struggling) ── 0 (average) ── +3 (mastery)</div>
+          </div>` : ""}
+        ${setRows ? `<table style="margin: 1rem auto; font-size:0.88rem; border-collapse:collapse">
+          <thead><tr><th style="text-align:left;padding:0.3rem 1rem 0.3rem 0;border-bottom:1px solid #d8d2c0">Chapter set</th><th style="text-align:right;padding:0.3rem 0 0.3rem 1rem;border-bottom:1px solid #d8d2c0">Score</th></tr></thead>
+          <tbody>${setRows}</tbody>
+        </table>` : ""}
+        <div class="aq-controls" style="justify-content:center; margin-top:1rem">
+          <button class="aq-btn" id="aq-again">Another session</button>
+          <button class="aq-btn sec" id="aq-back">Change settings</button>
+        </div>
+      </div>`;
+    document.getElementById("aq-again").onclick = () => startSession();
+    document.getElementById("aq-back").onclick = () => { state = "setup"; render(); };
+  }
+
+  function submitAnswer() {
+    if (revealed || selected < 0 || !currentQ) return;
+    const correct = selected === currentQ.correct;
+    stats.total += 1;
+    if (correct) stats.correct += 1;
+    const setid = currentQ.set;
+    if (!stats.perSet[setid]) stats.perSet[setid] = { correct: 0, total: 0 };
+    stats.perSet[setid].total += 1;
+    if (correct) stats.perSet[setid].correct += 1;
+    if (persist.mode === "adaptive") updateAdaptive(currentQ, correct);
+    revealed = true;
+    render();
+  }
+
+  // ─── Keyboard shortcuts ──────────────────────────────────────────────────────
+  document.addEventListener("keydown", (e) => {
+    if (state !== "quiz" || !currentQ) return;
+    const tag = (e.target.tagName || "").toLowerCase();
+    if (tag === "input" || tag === "textarea" || tag === "select") return;
+    if (revealed) {
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); nextQuestion(); }
+      return;
+    }
+    const k = e.key.toLowerCase();
+    if (k === "a" || k === "b" || k === "c" || k === "d") {
+      e.preventDefault();
+      selected = "abcd".indexOf(k);
+      render();
+    } else if (e.key === "Enter") {
+      e.preventDefault();
+      if (selected >= 0) submitAnswer();
+    } else if (e.key === "Escape") {
+      e.preventDefault();
+      asked.delete(currentQ.id);
+      nextQuestion();
+    }
+  });
+
+  // ─── Dispatcher ──────────────────────────────────────────────────────────────
+  function render() {
+    if (state === "setup") renderSetup();
+    else if (state === "quiz") renderQuiz();
+    else if (state === "end") renderEnd();
+  }
+
+  render();
+})();
+</script>
 
 
-</section>
 
 </main> <!-- /main -->
-<script type="ojs-module-contents">
-eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6ImV1ciA9IGF3YWl0IChhd2FpdCBmZXRjaChcIi4uL2RhdGEvZnJlZC9ERVhVU0VVLmpzb25cIikpLmpzb24oKVxuZ2JwID0gYXdhaXQgKGF3YWl0IGZldGNoKFwiLi4vZGF0YS9mcmVkL0RFWFVTVUsuanNvblwiKSkuanNvbigpXG5icm9hZCA9IGF3YWl0IChhd2FpdCBmZXRjaChcIi4uL2RhdGEvZnJlZC9EVFdFWEJHUy5qc29uXCIpKS5qc29uKClcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMiIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6InZpZXdvZiBlcl93aW5kb3cgPSBJbnB1dHMucmFuZ2UoWzIsIDMwXSwge3ZhbHVlOiAxNSwgc3RlcDogMSwgbGFiZWw6IFwiWWVhcnMgdG8gZGlzcGxheVwifSlcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMyIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IntcbiAgY29uc3QgY3V0b2ZmID0gbmV3IERhdGUoKVxuICBjdXRvZmYuc2V0RnVsbFllYXIoY3V0b2ZmLmdldEZ1bGxZZWFyKCkgLSBlcl93aW5kb3cpXG4gIGNvbnN0IGZpbHQgPSBhcnIgPT4gYXJyLmZpbHRlcihkID0+IG5ldyBEYXRlKGQuZGF0ZSkgPj0gY3V0b2ZmKS5tYXAoZCA9PiAoey4uLmQsIGRhdGU6IG5ldyBEYXRlKGQuZGF0ZSl9KSlcbiAgcmV0dXJuIFBsb3QucGxvdCh7XG4gICAgd2lkdGg6IDgwMCwgaGVpZ2h0OiAzMjAsIG1hcmdpbkxlZnQ6IDYwLCBtYXJnaW5Cb3R0b206IDUwLFxuICAgIHg6IHt0eXBlOiBcInV0Y1wifSxcbiAgICB5OiB7bGFiZWw6IFwiVVNEL0VVUiAoJCBwZXIg4oKsKVwiLCBncmlkOiB0cnVlfSxcbiAgICBtYXJrczogW1xuICAgICAgUGxvdC5saW5lKGZpbHQoZXVyLm9ic2VydmF0aW9ucyksIHt4OiBcImRhdGVcIiwgeTogXCJ2YWx1ZVwiLCBzdHJva2U6IFwiIzBlN2M3YlwiLCBzdHJva2VXaWR0aDogMS44fSlcbiAgICBdXG4gIH0pXG59XG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTQiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJ7XG4gIGNvbnN0IGN1dG9mZiA9IG5ldyBEYXRlKClcbiAgY3V0b2ZmLnNldEZ1bGxZZWFyKGN1dG9mZi5nZXRGdWxsWWVhcigpIC0gZXJfd2luZG93KVxuICBjb25zdCBmaWx0ID0gYXJyID0+IGFyci5maWx0ZXIoZCA9PiBuZXcgRGF0ZShkLmRhdGUpID49IGN1dG9mZikubWFwKGQgPT4gKHsuLi5kLCBkYXRlOiBuZXcgRGF0ZShkLmRhdGUpfSkpXG4gIHJldHVybiBQbG90LnBsb3Qoe1xuICAgIHdpZHRoOiA4MDAsIGhlaWdodDogMzIwLCBtYXJnaW5MZWZ0OiA2MCwgbWFyZ2luQm90dG9tOiA1MCxcbiAgICB4OiB7dHlwZTogXCJ1dGNcIn0sXG4gICAgeToge2xhYmVsOiBcIlVTRC9HQlAgKCQgcGVyIMKjKVwiLCBncmlkOiB0cnVlfSxcbiAgICBtYXJrczogW1xuICAgICAgUGxvdC5saW5lKGZpbHQoZ2JwLm9ic2VydmF0aW9ucyksIHt4OiBcImRhdGVcIiwgeTogXCJ2YWx1ZVwiLCBzdHJva2U6IFwiI2I3NDEwZVwiLCBzdHJva2VXaWR0aDogMS44fSlcbiAgICBdXG4gIH0pXG59XG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTUiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJ7XG4gIGNvbnN0IGN1dG9mZiA9IG5ldyBEYXRlKClcbiAgY3V0b2ZmLnNldEZ1bGxZZWFyKGN1dG9mZi5nZXRGdWxsWWVhcigpIC0gZXJfd2luZG93KVxuICBjb25zdCBmaWx0ID0gYXJyID0+IGFyci5maWx0ZXIoZCA9PiBuZXcgRGF0ZShkLmRhdGUpID49IGN1dG9mZikubWFwKGQgPT4gKHsuLi5kLCBkYXRlOiBuZXcgRGF0ZShkLmRhdGUpfSkpXG4gIHJldHVybiBQbG90LnBsb3Qoe1xuICAgIHdpZHRoOiA4MDAsIGhlaWdodDogMzIwLCBtYXJnaW5MZWZ0OiA3MCwgbWFyZ2luQm90dG9tOiA1MCxcbiAgICB4OiB7dHlwZTogXCJ1dGNcIn0sXG4gICAgeToge2xhYmVsOiBcIkJyb2FkIHRyYWRlLXdlaWdodGVkIGRvbGxhciBpbmRleCAoSmFuIDIwMDYgPSAxMDApXCIsIGdyaWQ6IHRydWV9LFxuICAgIG1hcmtzOiBbXG4gICAgICBQbG90LmxpbmUoZmlsdChicm9hZC5vYnNlcnZhdGlvbnMpLCB7eDogXCJkYXRlXCIsIHk6IFwidmFsdWVcIiwgc3Ryb2tlOiBcIiM1YTVhNWFcIiwgc3Ryb2tlV2lkdGg6IDJ9KVxuICAgIF1cbiAgfSlcbn1cbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtNiIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6Imh0bWxgPGRpdiBzdHlsZT1cImRpc3BsYXk6IGZsZXg7IGdhcDogMC44cmVtOyBmbGV4LXdyYXA6IHdyYXA7IG1hcmdpbjogMXJlbSAwO1wiPlxuICAke1tcbiAgICBbXCJVU0QvRVVSXCIsIGV1ci5vYnNlcnZhdGlvbnMuYXQoLTEpPy52YWx1ZSwgXCIkIHBlciDigqxcIl0sXG4gICAgW1wiVVNEL0dCUFwiLCBnYnAub2JzZXJ2YXRpb25zLmF0KC0xKT8udmFsdWUsIFwiJCBwZXIgwqNcIl0sXG4gICAgW1wiQnJvYWQgJCBpbmRleFwiLCBicm9hZC5vYnNlcnZhdGlvbnMuYXQoLTEpPy52YWx1ZSwgXCJKYW4gMjAwNiA9IDEwMFwiXVxuICBdLm1hcCgoW2xhYmVsLCB2LCB1bml0c10pID0+IGBcbiAgICA8ZGl2IGNsYXNzPVwia3BpLWNhcmRcIj5cbiAgICAgIDxkaXYgY2xhc3M9XCJrcGktbGFiZWxcIj4ke2xhYmVsfTwvZGl2PlxuICAgICAgPGRpdiBjbGFzcz1cImtwaS12YWx1ZVwiPiR7diAhPSBudWxsID8gdi50b0ZpeGVkKDMpIDogJ+KAlCd9PC9kaXY+XG4gICAgICA8ZGl2IGNsYXNzPVwia3BpLXN1YlwiPiR7dW5pdHN9PC9kaXY+XG4gICAgPC9kaXY+XG4gIGApLmpvaW4oJycpfVxuPC9kaXY+YFxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC03IiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoibWRgKkxhc3QgZGF0YSByZWZyZXNoOiAke2V1ci5sYXN0X3VwZGF0ZWQgfHwgJ3Vua25vd24nfS4qYFxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJzaGlueUlucHV0KCdlcl93aW5kb3cnKSJ9XX0=
-</script>
-<script type="module">
-if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
-window._ojs.paths.runtimeToDoc = "../../dashboards";
-window._ojs.paths.runtimeToRoot = "../..";
-window._ojs.paths.docToRoot = "..";
-window._ojs.selfContained = false;
-window._ojs.runtime.interpretFromScriptTags();
-</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -1029,13 +1448,13 @@ window._ojs.runtime.interpretFromScriptTags();
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../dashboards/output.html" class="pagination-link" aria-label="Output &amp; recessions">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Output &amp; recessions</span></span>
+      <a href="../practice/millionaire.html" class="pagination-link" aria-label="Who Wants to Be a Macro Millionaire?">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Who Wants to Be a Macro Millionaire?</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../dashboards/yield-curve.html" class="pagination-link" aria-label="Yield curve &amp; recession">
-        <span class="nav-page-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Yield curve &amp; recession</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../reference/formulas.html" class="pagination-link" aria-label="Formula sheet">
+        <span class="nav-page-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Formula sheet</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1047,7 +1466,7 @@ window._ojs.runtime.interpretFromScriptTags();
 </div>   
     <div class="nav-footer-center">
 <p><a href="https://github.com/ihelfrich/macroprep">Source on GitHub</a></p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ihelfrich/macroprep/edit/main/dashboards/exchange-rates.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ihelfrich/macroprep/blob/main/dashboards/exchange-rates.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/ihelfrich/macroprep/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions"><ul><li><a href="https://github.com/ihelfrich/macroprep/edit/main/practice/adaptive-quiz.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ihelfrich/macroprep/blob/main/practice/adaptive-quiz.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/ihelfrich/macroprep/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Built with <a href="https://quarto.org">Quarto</a>.</p>
 </div>

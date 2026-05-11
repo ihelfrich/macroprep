@@ -73,6 +73,7 @@ book:
         - practice/question-bank.qmd
         - practice/exam-simulator.qmd
         - practice/millionaire.qmd
+        - practice/adaptive-quiz.qmd
     - part: "Reference"
       chapters:
         - reference/formulas.qmd
