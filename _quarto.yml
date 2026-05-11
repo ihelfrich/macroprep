@@ -71,6 +71,7 @@ book:
         - practice/full-exam.qmd
         - practice/question-bank.qmd
         - practice/exam-simulator.qmd
+        - practice/millionaire.qmd
     - part: "Reference"
       chapters:
         - reference/formulas.qmd
