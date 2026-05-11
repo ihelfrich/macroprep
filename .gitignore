@@ -3,6 +3,8 @@ _freeze/
 _book/
 .quarto/
 site_libs/
+# keep the deployed copy of site_libs so GitHub Pages can serve it
+!docs/site_libs/
 
 # Editor / OS
 .DS_Store
