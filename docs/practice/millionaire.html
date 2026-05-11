@@ -832,7 +832,7 @@ ul.task-list li input[type="checkbox"] {
 
   function renderQuestion() {
     const q = QS[qi];
-    const choicesHTML = q.choices.map((c, i) =>
+    const choicesHTML = q.ch.map((c, i) =>
       `<button class="${choiceClass(i)}"
               data-choice="${i}"
               ${choiceDisabled(i) ? "disabled" : ""}>
@@ -848,11 +848,11 @@ ul.task-list li input[type="checkbox"] {
 
     let panelHTML = "";
     if (state === "confirming") {
-      panelHTML = `<div class="mm-panel"><strong>Is that your final answer?</strong> You selected <strong>${LETTERS[selected]}. ${esc(q.choices[selected])}</strong>. Lock it in or pick again.</div>`;
+      panelHTML = `<div class="mm-panel"><strong>Is that your final answer?</strong> You selected <strong>${LETTERS[selected]}. ${esc(q.ch[selected])}</strong>. Lock it in or pick again.</div>`;
     } else if (state === "revealed") {
       const correct = selected === q.ans;
       panelHTML = `<div class="mm-panel">
-        <strong>${correct ? "Correct!" : `Wrong. The answer was ${LETTERS[q.ans]}. ${esc(q.choices[q.ans])}`}</strong><br>
+        <strong>${correct ? "Correct!" : `Wrong. The answer was ${LETTERS[q.ans]}. ${esc(q.ch[q.ans])}`}</strong><br>
         ${esc(q.why)}
       </div>`;
     } else {
@@ -905,7 +905,7 @@ ul.task-list li input[type="checkbox"] {
     play().innerHTML = `
       <div class="mm-splash">
         <h3 style="color:#f44336">Eliminated!</h3>
-        <p>You answered question ${qi + 1} incorrectly. The correct answer was <strong>${LETTERS[QS[qi].ans]}. ${esc(QS[qi].choices[QS[qi].ans])}</strong>.</p>
+        <p>You answered question ${qi + 1} incorrectly. The correct answer was <strong>${LETTERS[QS[qi].ans]}. ${esc(QS[qi].ch[QS[qi].ans])}</strong>.</p>
         <p style="font-size:0.82rem;color:#607090">${esc(QS[qi].why)}</p>
         <div class="mm-big-prize" style="color:#5bc8e8">${safeWin}</div>
         <p style="color:#607090">You leave with your safe-floor winnings.</p>
