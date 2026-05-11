@@ -248,10 +248,42 @@ Answer each question to climb the prize ladder. Three lifelines, two safe floors
 </div>
 
 <script>
-(function () {
+(async function () {
   const PRIZES = ["$100","$200","$300","$500","$1,000","$2,000","$4,000","$8,000","$16,000","$32,000","$64,000","$125,000","$250,000","$500,000","$1,000,000"];
   const SAFE = new Set([4, 9]);   // $1,000 and $32,000 (0-based)
   const LETTERS = ["A","B","C","D"];
+
+  // ─── Question bank (738 MC questions from Audrey's exam PDFs) ────────────
+  let bankData = null;
+  let SET_ORDER = [], SET_LABEL = {}, SET_COUNT = {};
+  try {
+    const r = await fetch("../data/practice/macro_questions.json", {cache: "default"});
+    bankData = await r.json();
+    for (const q of bankData.questions) {
+      if (!(q.set in SET_LABEL)) {
+        SET_ORDER.push(q.set);
+        SET_LABEL[q.set] = q.set_label;
+        SET_COUNT[q.set] = 0;
+      }
+      SET_COUNT[q.set] += 1;
+    }
+  } catch (err) {
+    // Bank failed to load — random mode unavailable; curated mode still works.
+    console.warn("Millionaire: bank load failed, only curated mode available:", err);
+  }
+
+  // ─── Persistent settings ─────────────────────────────────────────────────
+  const SETTINGS_KEY = "macroprep.mm.settings.v1";
+  const defaultSettings = () => ({
+    mode: "curated",           // "curated" | "random"
+    selected_sets: ["ch15"],   // for random mode
+  });
+  function loadSettings() {
+    try { return Object.assign(defaultSettings(), JSON.parse(localStorage.getItem(SETTINGS_KEY) || "{}")); }
+    catch { return defaultSettings(); }
+  }
+  function saveSettings() { try { localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings)); } catch {} }
+  let settings = loadSettings();
 
   // ─── Sound (Web Audio, synthesized — no asset files) ────────────────────
   const MUTE_KEY = "macroprep.mm.muted";
@@ -338,8 +370,8 @@ Answer each question to climb the prize ladder. Three lifelines, two safe floors
     setTimeout(() => wrap.classList.remove("shake"), 700);
   }
 
-  // 15 questions from Ch. 15 (AD-AS, business cycles, monetary policy)
-  const QS = [
+  // 15 curated questions from Ch. 15 (AD-AS, business cycles, monetary policy)
+  const CURATED_QS = [
     {
       topic: "Business cycles",
       q: "During recessions, unemployment typically ___",
@@ -537,6 +569,67 @@ Answer each question to climb the prize ladder. Three lifelines, two safe floors
     }
   ];
 
+  // Active question array — swapped in by startGame() based on mode
+  let QS = CURATED_QS;
+
+  // ─── Helpers for random-mode questions ──────────────────────────────────
+  // Bank questions only have {prompt, choices, correct}. We synthesize the
+  // lifeline data (kill / hint / poll) and a why-line on the fly.
+  const RANDOM_HINTS = [
+    "The professor pauses to think... 'Eliminate the most obviously wrong option first, then compare the remaining two.'",
+    "The professor says: 'Re-read the question carefully. Sometimes one option is true but doesn't actually answer what's being asked.'",
+    "The professor reminds you: 'Watch sign conventions and direction of movement. Is this a shift, or a movement along the curve?'",
+    "The professor's voice through the phone: 'Make sure each option matches the precise textbook definition before you pick.'",
+    "The professor advises: 'Ask yourself whether the question is about short run versus long run — those usually have different answers in macro.'",
+    "The professor says: 'Two of these options are usually wrong on a technicality. Find the technicality, then the answer is between the other two.'",
+  ];
+  function shuffleInPlace(arr) {
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  }
+  function attachLifelineData(q) {
+    const wrongs = shuffleInPlace([0,1,2,3].filter(i => i !== q.correct));
+    const kill = wrongs.slice(0, 2);
+    const hint = RANDOM_HINTS[Math.floor(Math.random() * RANDOM_HINTS.length)];
+    // Poll: skew toward correct (55-78%), distribute remainder among 3 wrong slots
+    const correctPct = 55 + Math.floor(Math.random() * 24);  // 55–78
+    let rem = 100 - correctPct;
+    const wrongPcts = [];
+    for (let i = 0; i < 2; i++) {
+      const cap = Math.max(1, rem - (2 - i));
+      const p = 1 + Math.floor(Math.random() * Math.max(1, cap));
+      wrongPcts.push(p);
+      rem -= p;
+    }
+    wrongPcts.push(Math.max(0, rem));
+    const poll = [];
+    let wp = 0;
+    for (let i = 0; i < 4; i++) {
+      if (i === q.correct) poll.push(correctPct);
+      else poll.push(wrongPcts[wp++]);
+    }
+    // Topic label: strip "Ch X-Y: " prefix from set_label
+    const topic = (q.set_label || "").replace(/^Ch[^:]*:\s*/, "");
+    return {
+      topic: topic || "Macro",
+      q: q.prompt,
+      ch: q.choices,
+      ans: q.correct,
+      why: `The correct answer is ${LETTERS[q.correct]}: ${q.choices[q.correct]}.`,
+      hint, poll, kill
+    };
+  }
+  function sampleRandomQs(selectedSets, n) {
+    if (!bankData) return null;
+    const pool = bankData.questions.filter(x => selectedSets.includes(x.set));
+    if (pool.length < n) return null;
+    const shuf = shuffleInPlace(pool.slice());
+    return shuf.slice(0, n).map(attachLifelineData);
+  }
+
   // ── State ──────────────────────────────────────────────────────────────────
   let state = "splash";   // splash | question | confirming | revealed | gameover | walkaway | win
   let qi = 0;             // current question index
@@ -597,16 +690,87 @@ Answer each question to climb the prize ladder. Three lifelines, two safe floors
 
   // ── Screens ────────────────────────────────────────────────────────────────
   function renderSplash() {
+    const bankAvailable = !!bankData;
+    const curatedSelected = settings.mode === "curated";
+    const setsHTML = bankAvailable ? SET_ORDER.map(s => {
+      const checked = settings.selected_sets.includes(s) ? "checked" : "";
+      const disabled = curatedSelected ? "disabled" : "";
+      return `<label class="mm-set-row" style="opacity:${curatedSelected ? "0.4" : "1"}">
+        <input type="checkbox" data-setid="${esc(s)}" ${checked} ${disabled} style="margin-right:0.45rem">
+        <span style="flex:1">${esc(SET_LABEL[s])}</span>
+        <span style="color:#7bd3f6; font-family:monospace; font-size:0.78rem">${SET_COUNT[s]}</span>
+      </label>`;
+    }).join("") : "";
+
+    const totalRandom = settings.selected_sets.reduce((sum, s) => sum + (SET_COUNT[s] || 0), 0);
+    const canStartRandom = bankAvailable && settings.selected_sets.length > 0 && totalRandom >= 15;
+    const canStart = curatedSelected || canStartRandom;
+
     play().innerHTML = `
-      <div class="mm-splash">
-        <h3>Who Wants to Be a Macro Millionaire?</h3>
-        <p>15 questions on aggregate demand, aggregate supply, and business cycles from Ch.&nbsp;15. Two safe floors — $1,000 and $32,000. Three lifelines: 50:50, Phone a Professor, and Ask the Class.</p>
-        <div class="mm-lifeline-info">50:50 &nbsp;·&nbsp; Phone a Professor &nbsp;·&nbsp; Ask the Class</div>
-        <div class="mm-controls" style="justify-content:center">
-          <button class="mm-btn" id="mm-start">Start the game</button>
+      <div class="mm-splash" style="text-align:left; max-width:520px; margin:0 auto; padding:1.2rem 0.5rem">
+        <h3 style="text-align:center">Who Wants to Be a Macro Millionaire?</h3>
+        <p style="text-align:center; color:#8090b0; font-size:0.85rem">
+          15 questions · 2 safe floors ($1,000, $32,000) · 3 lifelines (50:50, 📞 Professor, 📊 Ask the Class)
+        </p>
+
+        <div style="margin-top:1.1rem; padding:0.75rem; border:1px solid rgba(255,255,255,0.12); border-radius:8px; background:rgba(255,255,255,0.03)">
+          <div style="font-size:0.78rem; color:#7bd3f6; text-transform:uppercase; letter-spacing:0.06em; font-family:monospace; margin-bottom:0.55rem">Question source</div>
+          <label class="mm-set-row" style="font-weight:${curatedSelected ? "700" : "400"}">
+            <input type="radio" name="mm-mode" value="curated" ${curatedSelected ? "checked" : ""} style="margin-right:0.45rem">
+            <span>Curated Ch. 15 (the original 15 with full explanations)</span>
+          </label>
+          <label class="mm-set-row" style="font-weight:${!curatedSelected ? "700" : "400"}; ${bankAvailable ? "" : "opacity:0.4"}">
+            <input type="radio" name="mm-mode" value="random" ${!curatedSelected ? "checked" : ""} ${bankAvailable ? "" : "disabled"} style="margin-right:0.45rem">
+            <span>Random 15 from selected chapter sets ${bankAvailable ? "" : "<em style=\"color:#f88\">(bank unavailable)</em>"}</span>
+          </label>
+        </div>
+
+        ${bankAvailable ? `
+        <div style="margin-top:0.65rem; padding:0.75rem; border:1px solid rgba(255,255,255,0.12); border-radius:8px; background:rgba(255,255,255,0.03)">
+          <div style="font-size:0.78rem; color:#7bd3f6; text-transform:uppercase; letter-spacing:0.06em; font-family:monospace; margin-bottom:0.55rem">Chapter sets (random mode)</div>
+          ${setsHTML}
+          <div style="font-size:0.77rem; color:#90a8d0; margin-top:0.55rem">
+            ${totalRandom} questions in current selection. ${totalRandom > 0 && totalRandom < 15 ? "<span style=\"color:#f9a\">Need at least 15.</span>" : ""}
+          </div>
+        </div>` : ""}
+
+        <div class="mm-controls" style="justify-content:center; margin-top:1rem">
+          <button class="mm-btn" id="mm-start" ${canStart ? "" : "disabled"}>Start the game</button>
         </div>
       </div>`;
+    // Light styling for set rows
+    const styleId = "mm-set-style";
+    if (!document.getElementById(styleId)) {
+      const st = document.createElement("style");
+      st.id = styleId;
+      st.textContent = ".mm-set-row{display:flex;align-items:center;font-size:0.88rem;color:#cdd6ee;cursor:pointer;padding:0.3rem 0.25rem;border-radius:4px;}.mm-set-row:hover{background:rgba(255,255,255,0.06);}";
+      document.head.appendChild(st);
+    }
     ladderEl().innerHTML = "";
+
+    // Wire mode radios
+    play().querySelectorAll("input[name='mm-mode']").forEach(r => {
+      r.onchange = () => {
+        if (r.checked) {
+          settings.mode = r.value;
+          saveSettings();
+          render();
+        }
+      };
+    });
+    // Wire chapter checkboxes
+    play().querySelectorAll("[data-setid]").forEach(cb => {
+      cb.onchange = () => {
+        const id = cb.dataset.setid;
+        if (cb.checked) {
+          if (!settings.selected_sets.includes(id)) settings.selected_sets.push(id);
+        } else {
+          settings.selected_sets = settings.selected_sets.filter(s => s !== id);
+        }
+        saveSettings();
+        render();
+      };
+    });
     document.getElementById("mm-start").onclick = startGame;
   }
 
@@ -691,10 +855,12 @@ Answer each question to climb the prize ladder. Three lifelines, two safe floors
         <p style="color:#607090">You leave with your safe-floor winnings.</p>
         <div class="mm-controls" style="justify-content:center">
           <button class="mm-btn" id="mm-restart">Play again</button>
+          <button class="mm-btn sec" id="mm-resetup">Change settings</button>
         </div>
       </div>`;
     renderLadder();
     document.getElementById("mm-restart").onclick = startGame;
+    document.getElementById("mm-resetup").onclick = () => { state = "splash"; render(); };
   }
 
   function renderWalkAway() {
@@ -706,10 +872,12 @@ Answer each question to climb the prize ladder. Three lifelines, two safe floors
         <p>You quit at question ${qi + 1} and keep <strong>${walked}</strong>. Bold play — question ${qi + 1} was worth ${PRIZES[qi]}.</p>
         <div class="mm-controls" style="justify-content:center">
           <button class="mm-btn" id="mm-restart">Play again</button>
+          <button class="mm-btn sec" id="mm-resetup">Change settings</button>
         </div>
       </div>`;
     renderLadder();
     document.getElementById("mm-restart").onclick = startGame;
+    document.getElementById("mm-resetup").onclick = () => { state = "splash"; render(); };
   }
 
   function renderWin() {
@@ -720,10 +888,12 @@ Answer each question to climb the prize ladder. Three lifelines, two safe floors
         <p>You answered all 15 questions correctly. You know your AD-AS inside out.</p>
         <div class="mm-controls" style="justify-content:center">
           <button class="mm-btn" id="mm-restart">Play again</button>
+          <button class="mm-btn sec" id="mm-resetup">Change settings</button>
         </div>
       </div>`;
     renderLadder();
     document.getElementById("mm-restart").onclick = startGame;
+    document.getElementById("mm-resetup").onclick = () => { state = "splash"; render(); };
   }
 
   // ── Render dispatcher ──────────────────────────────────────────────────────
@@ -737,6 +907,18 @@ Answer each question to climb the prize ladder. Three lifelines, two safe floors
 
   // ── Actions ────────────────────────────────────────────────────────────────
   function startGame() {
+    // Build active question array from current settings
+    if (settings.mode === "random" && bankData && settings.selected_sets.length > 0) {
+      const sampled = sampleRandomQs(settings.selected_sets, 15);
+      if (sampled) {
+        QS = sampled;
+      } else {
+        // Not enough questions in selection — fall back to curated
+        QS = CURATED_QS;
+      }
+    } else {
+      QS = CURATED_QS;
+    }
     qi = 0; selected = -1; eliminated = new Set();
     llUsed = { half: false, prof: false, poll: false };
     showHint = false; showPoll = false; guaranteed = 0;
