@@ -3,6 +3,7 @@ project:
   output-dir: docs
   resources:
     - "data/**"
+    - ".nojekyll"
 
 book:
   title: "Macro Prep"
