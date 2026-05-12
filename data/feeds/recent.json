@@ -1,5 +1,13 @@
 [
   {
+    "source": "EIA — Today in Energy",
+    "category": "energy",
+    "title": "The United States set record energy production in 2025, again",
+    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67684",
+    "date": "2026-05-11T14:00:00+00:00",
+    "summary": "Total energy production in the United States increased to a new record of 107 quadrillion British thermal units (quads) in 2025, a 3.4% increase from the previous record set in 2024, according to new data in our Monthly Energy Review. Total production was driven by record-high production in natural gas, crude oil, natural gas plant liquids (NGPLs), and renewables. This was the fourth consecutive…"
+  },
+  {
     "source": "ECB — Press releases",
     "category": "monetary_policy_eu",
     "title": "Luis de Guindos: Interview with Financial Times",
@@ -790,13 +798,5 @@
     "link": "https://www.bankofengland.co.uk/markets/market-notices/2026/march/apf-gilt-sales-market-notice-20-march-2026",
     "date": "2026-03-20T16:30:00+00:00",
     "summary": "This Market Notice sets out the schedule for sales in Q2 2026 of gilts held in the Asset Purchase Facility (APF) for monetary policy purposes."
-  },
-  {
-    "source": "Federal Reserve — All press releases",
-    "category": "monetary_policy_us",
-    "title": "Federal Reserve Board issues enforcement actions with former employee of Ally Bank and former employee of Regions Bank",
-    "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260320a.htm",
-    "date": "2026-03-20T15:00:00+00:00",
-    "summary": "Federal Reserve Board issues enforcement actions with former employee of Ally Bank and former employee of Regions Bank"
   }
 ]
