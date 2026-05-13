@@ -1,5 +1,21 @@
 [
   {
+    "source": "Federal Reserve — All press releases",
+    "category": "monetary_policy_us",
+    "title": "Federal Reserve Board announces termination of enforcement actions with F & M Holding Company, Inc. and Thread Bancorp, Inc.",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260512a.htm",
+    "date": "2026-05-12T15:00:00+00:00",
+    "summary": "Federal Reserve Board announces termination of enforcement actions with F & M Holding Company, Inc. and Thread Bancorp, Inc."
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "Frank Elderson: Boosting prosperity through deeper integration",
+    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260512~640d289749.en.html",
+    "date": "2026-05-12T10:40:00+00:00",
+    "summary": ""
+  },
+  {
     "source": "EIA — Today in Energy",
     "category": "energy",
     "title": "The United States set record energy production in 2025, again",
@@ -213,14 +229,6 @@
     "title": "Results of the ECB Survey of Professional Forecasters for the second quarter of 2026",
     "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260504~bb7a0cbf4c.en.html",
     "date": "2026-05-04T08:00:00+00:00",
-    "summary": ""
-  },
-  {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Luis de Guindos: Interview with El País",
-    "link": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in260503~b1346d6381.en.html",
-    "date": "2026-05-03T06:00:00+00:00",
     "summary": ""
   },
   {
@@ -790,13 +798,5 @@
     "link": "https://www.bankofengland.co.uk/news/2026/march/pra-fines-bol-and-oplyse-holdings",
     "date": "2026-03-24T10:00:00+00:00",
     "summary": "The Prudential Regulation Authority (PRA) has fined The Bank of London Group Limited and Oplyse Holdings Limited (formerly The Bank of London Group Holdings Limited) £2 million for misleading the PRA over their capital positions, failing to act with integrity, failing to be open and cooperative with the regulator and failing to maintain adequate financial resources."
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Asset Purchase Facility: Gilt Sales – Market Notice 20 March 2026",
-    "link": "https://www.bankofengland.co.uk/markets/market-notices/2026/march/apf-gilt-sales-market-notice-20-march-2026",
-    "date": "2026-03-20T16:30:00+00:00",
-    "summary": "This Market Notice sets out the schedule for sales in Q2 2026 of gilts held in the Asset Purchase Facility (APF) for monetary policy purposes."
   }
 ]
