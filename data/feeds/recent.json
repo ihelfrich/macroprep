@@ -1,5 +1,37 @@
 [
   {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "Christine Lagarde: The courage to build a Europe that endures",
+    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260513_1~ab5ae9e754.en.html",
+    "date": "2026-05-13T19:50:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "Philip R. Lane: Analytical perspectives on energy supply shocks",
+    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260513~5b14c78806.en.html",
+    "date": "2026-05-13T19:00:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "Federal Reserve — All press releases",
+    "category": "monetary_policy_us",
+    "title": "Federal Reserve Board issues Economic Well-Being of U.S. Households in 2025 report",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/other20260513a.htm",
+    "date": "2026-05-13T15:30:00+00:00",
+    "summary": "Federal Reserve Board issues Economic Well-Being of U.S. Households in 2025 report"
+  },
+  {
+    "source": "EIA — Today in Energy",
+    "category": "energy",
+    "title": "Electricity generation from solar could exceed coal in ERCOT for the first time in 2026",
+    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67685",
+    "date": "2026-05-13T14:00:00+00:00",
+    "summary": "In our most recent Short-Term Energy Outlook (STEO), we forecast that annual electric power generation from utility-scale solar will surpass that from coal for the first time in 2026 within the electricity grid that covers most of Texas. Solar generation is expected to reach 78 billion kilowatthours (BkWh) in 2026 in the electricity grid operated by the Electric Reliability Council of Texas (ERCO…"
+  },
+  {
     "source": "Federal Reserve — All press releases",
     "category": "monetary_policy_us",
     "title": "Federal Reserve Board announces termination of enforcement actions with F & M Holding Company, Inc. and Thread Bancorp, Inc.",
@@ -213,22 +245,6 @@
     "title": "Luis de Guindos: Presentation of the ECB Annual Report 2025 to the Committee on Economic and Monetary Affairs of the European Parliament",
     "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260504_1~c7601bf295.en.html",
     "date": "2026-05-04T12:30:00+00:00",
-    "summary": ""
-  },
-  {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Piero Cipollone: Digital assets, payment efficiency and monetary policy",
-    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260504~3e75e8b138.en.html",
-    "date": "2026-05-04T11:30:00+00:00",
-    "summary": ""
-  },
-  {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Results of the ECB Survey of Professional Forecasters for the second quarter of 2026",
-    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260504~bb7a0cbf4c.en.html",
-    "date": "2026-05-04T08:00:00+00:00",
     "summary": ""
   },
   {
@@ -782,21 +798,5 @@
     "link": "https://www.federalreserve.gov/newsevents/pressreleases/other20260325a.htm",
     "date": "2026-03-25T16:00:00+00:00",
     "summary": "Federal Reserve Board releases annual audited financial statements"
-  },
-  {
-    "source": "BEA — News releases",
-    "category": "data_release_us",
-    "title": "U.S. International Transactions and Investment Position, 4th Quarter and Year 2025",
-    "link": "https://www.bea.gov",
-    "date": "2026-03-25T12:30:00+00:00",
-    "summary": "The U.S. current-account deficit resulting from international economic transactions narrowed by $48.4 billion, or 20.2 percent, to $190.7 billion in the fourth quarter of 2025, according to statistics released today by the U.S. Bureau of Economic Analysis. The revised third-quarter deficit was $239.1 billion. The fourth-quarter deficit was 2.4 percent of current-dollar gross domestic product, dow…"
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "PRA fines The Bank of London and its parent company Oplyse Holdings Limited £2m for failing to act with integrity and misleading the PRA over their capital position",
-    "link": "https://www.bankofengland.co.uk/news/2026/march/pra-fines-bol-and-oplyse-holdings",
-    "date": "2026-03-24T10:00:00+00:00",
-    "summary": "The Prudential Regulation Authority (PRA) has fined The Bank of London Group Limited and Oplyse Holdings Limited (formerly The Bank of London Group Holdings Limited) £2 million for misleading the PRA over their capital positions, failing to act with integrity, failing to be open and cooperative with the regulator and failing to maintain adequate financial resources."
   }
 ]
