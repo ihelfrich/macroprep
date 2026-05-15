@@ -1,5 +1,37 @@
 [
   {
+    "source": "Federal Reserve — Speeches",
+    "category": "speeches",
+    "title": "Barr, Efficient and Effective Central Banking: Beyond the Balance Sheet",
+    "link": "https://www.federalreserve.gov/newsevents/speech/barr20260514a.htm",
+    "date": "2026-05-14T23:00:00+00:00",
+    "summary": "Speech At the Money Marketeers of New York University, New York, New York"
+  },
+  {
+    "source": "Federal Reserve — All press releases",
+    "category": "monetary_policy_us",
+    "title": "Stephen I. Miran submits his resignation as a member of the Federal Reserve Board, effective when or shortly before his successor on the Board is sworn in",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/other20260514b.htm",
+    "date": "2026-05-14T18:00:00+00:00",
+    "summary": "Stephen I. Miran submits his resignation as a member of the Federal Reserve Board, effective when or shortly before his successor on the Board is sworn in"
+  },
+  {
+    "source": "Federal Reserve — Speeches",
+    "category": "speeches",
+    "title": "Bowman, Opening Remarks",
+    "link": "https://www.federalreserve.gov/newsevents/speech/bowman20260514a.htm",
+    "date": "2026-05-14T17:00:00+00:00",
+    "summary": "Speech At the Federal Reserve Bank of Kansas City 2026 Future of Banking Conference: Powering Progress, Protecting Trust, Kansas City, Missouri (via pre-recorded video)"
+  },
+  {
+    "source": "Federal Reserve — All press releases",
+    "category": "monetary_policy_us",
+    "title": "Federal Reserve Board releases results from two surveys of senior financial officers at banks about their views on discount window operating days and their strategies and practices for managing reserve balances",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/other20260514a.htm",
+    "date": "2026-05-14T14:00:00+00:00",
+    "summary": "Federal Reserve Board releases results from two surveys of senior financial officers at banks about their views on discount window operating days and their strategies and practices for managing reserve balances"
+  },
+  {
     "source": "ECB — Press releases",
     "category": "monetary_policy_eu",
     "title": "Christine Lagarde: The courage to build a Europe that endures",
@@ -760,43 +792,11 @@
     "summary": "Speech At the Global Perspectives Speaker Series, Federal Reserve Bank of Dallas, Dallas, Texas"
   },
   {
-    "source": "Federal Reserve — Speeches",
-    "category": "speeches",
-    "title": "Miran, Prospects for Shrinking the Fed’s Balance Sheet",
-    "link": "https://www.federalreserve.gov/newsevents/speech/miran20260326a.htm",
-    "date": "2026-03-26T22:30:00+00:00",
-    "summary": "Speech At the Economic Club of Miami, Miami, Florida"
-  },
-  {
     "source": "Federal Reserve — All press releases",
     "category": "monetary_policy_us",
     "title": "Federal Reserve Board announces it has made the joint findings with the Office of the Comptroller of the Currency required for the OCC to approve a request by Morgan Stanley Bank, N.A., for an exemption under section 23A of the Federal Reserve Act",
     "link": "https://www.federalreserve.gov/newsevents/pressreleases/orders20260326a.htm",
     "date": "2026-03-26T21:00:00+00:00",
     "summary": "Federal Reserve Board announces it has made the joint findings with the Office of the Comptroller of the Currency required for the OCC to approve a request by Morgan Stanley Bank, N.A., for an exemption under section 23A of the Federal Reserve Act"
-  },
-  {
-    "source": "Federal Reserve — Speeches",
-    "category": "speeches",
-    "title": "Cook, Reflections on Financial Stability",
-    "link": "https://www.federalreserve.gov/newsevents/speech/cook20260326a.htm",
-    "date": "2026-03-26T20:00:00+00:00",
-    "summary": "Speech At Yale Program on Financial Stability, School of Management, Yale University, New Haven, Connecticut"
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Bank of England streamlines reporting and disclosure requirements for bank failure regime",
-    "link": "https://www.bankofengland.co.uk/news/2026/march/boe-streamlines-reporting-and-disclosure-requirements-for-bank-failure-regime",
-    "date": "2026-03-26T10:00:00+00:00",
-    "summary": "The Bank of England and Prudential Regulation Authority have finalised a package of changes to firms’ resolution reporting and disclosure requirements which reduces the burden of regulation while maintaining a robust and credible regime that supports growth and competition."
-  },
-  {
-    "source": "Federal Reserve — All press releases",
-    "category": "monetary_policy_us",
-    "title": "Federal Reserve Board releases annual audited financial statements",
-    "link": "https://www.federalreserve.gov/newsevents/pressreleases/other20260325a.htm",
-    "date": "2026-03-25T16:00:00+00:00",
-    "summary": "Federal Reserve Board releases annual audited financial statements"
   }
 ]
