@@ -1,5 +1,53 @@
 [
   {
+    "source": "Federal Reserve — All press releases",
+    "category": "monetary_policy_us",
+    "title": "Federal Reserve Board names Jerome H. Powell as chair pro tempore; Powell will serve as chair pro tempore until Kevin M. Warsh is sworn in as the new chair",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/other20260515a.htm",
+    "date": "2026-05-15T21:00:00+00:00",
+    "summary": "Federal Reserve Board names Jerome H. Powell as chair pro tempore; Powell will serve as chair pro tempore until Kevin M. Warsh is sworn in as the new chair"
+  },
+  {
+    "source": "Federal Reserve — All press releases",
+    "category": "monetary_policy_us",
+    "title": "Federal Reserve Board announces approval of application by the Stephen M. Calk 2025 Trust",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/orders20260515a.htm",
+    "date": "2026-05-15T20:30:00+00:00",
+    "summary": "Federal Reserve Board announces approval of application by the Stephen M. Calk 2025 Trust"
+  },
+  {
+    "source": "Federal Reserve — All press releases",
+    "category": "monetary_policy_us",
+    "title": "Federal Reserve Board announces it does not object to the conversion of United Texas Bank, of Dallas, Texas, from a bank supervised by the Federal Reserve to a national bank supervised by the Office of the Comptroller of the Currency",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/orders20260515b.htm",
+    "date": "2026-05-15T20:30:00+00:00",
+    "summary": "Federal Reserve Board announces it does not object to the conversion of United Texas Bank, of Dallas, Texas, from a bank supervised by the Federal Reserve to a national bank supervised by the Office of the Comptroller of the Currency"
+  },
+  {
+    "source": "Federal Reserve — All press releases",
+    "category": "monetary_policy_us",
+    "title": "Federal Reserve Board announces termination of enforcement actions with UBS Group AG, Credit Suisse AG, Credit Suisse Holdings (USA), Inc., and Credit Suisse AG, New York Branch",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260515a.htm",
+    "date": "2026-05-15T15:00:00+00:00",
+    "summary": "Federal Reserve Board announces termination of enforcement actions with UBS Group AG, Credit Suisse AG, Credit Suisse Holdings (USA), Inc., and Credit Suisse AG, New York Branch"
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "The Bank, FCA and HM Treasury joint statement on Frontier AI models and cyber resilience",
+    "link": "https://www.bankofengland.co.uk/news/2026/may/boe-fca-and-hm-treasury-joint-statement-on-frontier-ai-models-and-cyber-resilience",
+    "date": "2026-05-15T14:00:00+00:00",
+    "summary": "Statement from the Bank of England, Financial Conduct Authority and HM Treasury"
+  },
+  {
+    "source": "EIA — Today in Energy",
+    "category": "energy",
+    "title": "U.S. industrial natural gas consumption expected to hit records in 2026 and 2027",
+    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67686",
+    "date": "2026-05-15T14:00:00+00:00",
+    "summary": "We forecast U.S. industrial natural gas consumption will climb to record highs through 2027 in our latest Short-Term Energy Outlook. Industrial consumption averaged a record 23.6 billion cubic feet per day (Bcf/d) in 2025, 1% more than the record 23.4 Bcf/d reached in 2023. In our forecast, consumption gradually increases further in 2026 and in 2027 as we expect the natural gas-weighted manufactu…"
+  },
+  {
     "source": "Federal Reserve — Speeches",
     "category": "speeches",
     "title": "Barr, Efficient and Effective Central Banking: Beyond the Balance Sheet",
@@ -656,14 +704,6 @@
     "summary": "Minutes of the Federal Open Market Committee, March 17–18, 2026"
   },
   {
-    "source": "Federal Reserve — All press releases",
-    "category": "monetary_policy_us",
-    "title": "Federal Reserve Board invites public comment on proposal that would allow U.S. banks and credit unions to use intermediaries to transfer funds through the FedNow Service",
-    "link": "https://www.federalreserve.gov/newsevents/pressreleases/other20260408a.htm",
-    "date": "2026-04-08T15:30:00+00:00",
-    "summary": "Federal Reserve Board invites public comment on proposal that would allow U.S. banks and credit unions to use intermediaries to transfer funds through the FedNow Service"
-  },
-  {
     "source": "Federal Reserve — Speeches",
     "category": "speeches",
     "title": "Jefferson, Economic Outlook and the Labor Market",
@@ -686,14 +726,6 @@
     "link": "https://www.eia.gov/todayinenergy/detail.php?id=67407",
     "date": "2026-04-06T14:00:00+00:00",
     "summary": "In 2025, the United States imported an average of 490,000 barrels per day (b/d) of crude oil from the Middle East Gulf region—Bahrain, Iraq, Kuwait, Oman, Qatar, Saudi Arabia, and the United Arab Emirates (UAE). Crude oil imports from the region are primarily medium sour grades of crude oil and flow mainly into the West Coast and Gulf Coast of the United States."
-  },
-  {
-    "source": "Federal Reserve — All press releases",
-    "category": "monetary_policy_us",
-    "title": "Federal Reserve Board issues enforcement action with former employee of United Bank",
-    "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260403a.htm",
-    "date": "2026-04-03T15:00:00+00:00",
-    "summary": "Federal Reserve Board issues enforcement action with former employee of United Bank"
   },
   {
     "source": "EIA — Today in Energy",
@@ -766,37 +798,5 @@
     "link": "https://www.federalreserve.gov/newsevents/speech/barr20260331a.htm",
     "date": "2026-03-31T19:00:00+00:00",
     "summary": "Speech At “The GENIUS Act in Practice: Key Questions for Stablecoin Regulation,” The Federalist Society, Washington, D.C."
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Update to Discount Window Facility pricing – Market Notice 27 March 2026",
-    "link": "https://www.bankofengland.co.uk/markets/market-notices/2026/march/update-to-discount-window-facility-pricing-market-notice-27-march-2026",
-    "date": "2026-03-27T07:30:00+00:00",
-    "summary": "The Bank is today announcing a simplification and reduction in the Discount Window Facility (DWF) pricing, as part of its previously announced review of the DWF."
-  },
-  {
-    "source": "Federal Reserve — Speeches",
-    "category": "speeches",
-    "title": "Barr, Brief Remarks on the Economic Outlook and Monetary Policy",
-    "link": "https://www.federalreserve.gov/newsevents/speech/barr20260326a.htm",
-    "date": "2026-03-26T23:10:00+00:00",
-    "summary": "Speech At the Brookings Institution, Washington, D.C."
-  },
-  {
-    "source": "Federal Reserve — Speeches",
-    "category": "speeches",
-    "title": "Jefferson, Economic Outlook and Energy Effects",
-    "link": "https://www.federalreserve.gov/newsevents/speech/jefferson20260326a.htm",
-    "date": "2026-03-26T23:00:00+00:00",
-    "summary": "Speech At the Global Perspectives Speaker Series, Federal Reserve Bank of Dallas, Dallas, Texas"
-  },
-  {
-    "source": "Federal Reserve — All press releases",
-    "category": "monetary_policy_us",
-    "title": "Federal Reserve Board announces it has made the joint findings with the Office of the Comptroller of the Currency required for the OCC to approve a request by Morgan Stanley Bank, N.A., for an exemption under section 23A of the Federal Reserve Act",
-    "link": "https://www.federalreserve.gov/newsevents/pressreleases/orders20260326a.htm",
-    "date": "2026-03-26T21:00:00+00:00",
-    "summary": "Federal Reserve Board announces it has made the joint findings with the Office of the Comptroller of the Currency required for the OCC to approve a request by Morgan Stanley Bank, N.A., for an exemption under section 23A of the Federal Reserve Act"
   }
 ]
