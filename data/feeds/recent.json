@@ -1,5 +1,21 @@
 [
   {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "FCA and Bank of England set out shared vision for tokenisation in UK wholesale markets",
+    "link": "https://www.bankofengland.co.uk/news/2026/may/fca-and-boe-set-out-shared-vision-for-tokenisation-in-uk-wholesale-markets",
+    "date": "2026-05-18T08:06:58+00:00",
+    "summary": "The Financial Conduct Authority and the Bank of England set out a shared vision and seek industry views on the future of UK wholesale markets"
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "PRA announces ring-fence change to reduce costs",
+    "link": "https://www.bankofengland.co.uk/news/2026/may/pra-announces-ring-fence-change-to-reduce-costs",
+    "date": "2026-05-17T23:00:00+00:00",
+    "summary": "The Prudential Regulation Authority has today announced plans to consult on reforming rules around shared operational services for ring-fenced banks."
+  },
+  {
     "source": "Federal Reserve — All press releases",
     "category": "monetary_policy_us",
     "title": "Federal Reserve Board names Jerome H. Powell as chair pro tempore; Powell will serve as chair pro tempore until Kevin M. Warsh is sworn in as the new chair",
@@ -370,18 +386,18 @@
   {
     "source": "Bank of England — News",
     "category": "monetary_policy_uk",
-    "title": "Exchange of letters between the Governor and the Chancellor regarding CPI Inflation - April 2026",
-    "link": "https://www.bankofengland.co.uk/letter/2026/cpi-inflation-april-2026",
-    "date": "2026-04-30T11:00:00+00:00",
-    "summary": "Exchange of letters between the Governor and the Chancellor"
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
     "title": "Bank Rate maintained at 3.75% - April 2026 Monetary Policy Summary and Minutes",
     "link": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/april-2026",
     "date": "2026-04-30T11:00:00+00:00",
     "summary": "The Bank of England’s Monetary Policy Committee is responsible for making decisions about Bank Rate."
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Exchange of letters between the Governor and the Chancellor regarding CPI Inflation - April 2026",
+    "link": "https://www.bankofengland.co.uk/letter/2026/cpi-inflation-april-2026",
+    "date": "2026-04-30T11:00:00+00:00",
+    "summary": "Exchange of letters between the Governor and the Chancellor"
   },
   {
     "source": "Federal Reserve — All press releases",
@@ -782,21 +798,5 @@
     "link": "https://www.bankofengland.co.uk/letter/2026/letter-from-sarah-breeden-sam-woods-to-chancellor",
     "date": "2026-04-01T09:30:00+00:00",
     "summary": "Letter from Sarah Breeden and Sam Woods to the Chancellor and Secretaries of State"
-  },
-  {
-    "source": "Federal Reserve — Speeches",
-    "category": "speeches",
-    "title": "Bowman, Supporting Small Businesses",
-    "link": "https://www.federalreserve.gov/newsevents/speech/bowman20260331a.htm",
-    "date": "2026-03-31T21:10:00+00:00",
-    "summary": "Speech At CBA LIVE 26, Consumer Bankers Association, San Diego, California"
-  },
-  {
-    "source": "Federal Reserve — Speeches",
-    "category": "speeches",
-    "title": "Barr, Brief Remarks on Stablecoins",
-    "link": "https://www.federalreserve.gov/newsevents/speech/barr20260331a.htm",
-    "date": "2026-03-31T19:00:00+00:00",
-    "summary": "Speech At “The GENIUS Act in Practice: Key Questions for Stablecoin Regulation,” The Federalist Society, Washington, D.C."
   }
 ]
