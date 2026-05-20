@@ -1,5 +1,21 @@
 [
   {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "Results of the March 2026 survey on credit terms and conditions in euro-denominated securities financing and OTC derivatives markets (SESFOD)",
+    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260520~feb373ad0d.en.html",
+    "date": "2026-05-20T09:00:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "EIA — Today in Energy",
+    "category": "energy",
+    "title": "Data center server energy use grows across the commercial building stock",
+    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67704",
+    "date": "2026-05-19T14:00:00+00:00",
+    "summary": "In the Annual Energy Outlook 2026 (AEO2026), our long-term outlook, we project electricity consumed by data center servers will increase across the commercial building stock, increasing more in standalone data centers than in all other data center rooms combined. By 2050, server consumption alone reaches between 446 billion kilowatthours (BkWh) and 818 billion BkWh. The highest end of the range r…"
+  },
+  {
     "source": "Bank of England — News",
     "category": "monetary_policy_uk",
     "title": "FCA and Bank of England set out shared vision for tokenisation in UK wholesale markets",
@@ -336,14 +352,6 @@
     "summary": ""
   },
   {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Luis de Guindos: Presentation of the ECB Annual Report 2025 to the Committee on Economic and Monetary Affairs of the European Parliament",
-    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260504_1~c7601bf295.en.html",
-    "date": "2026-05-04T12:30:00+00:00",
-    "summary": ""
-  },
-  {
     "source": "Federal Reserve — Speeches",
     "category": "speeches",
     "title": "Bowman, Artificial Intelligence in the Financial System",
@@ -386,18 +394,18 @@
   {
     "source": "Bank of England — News",
     "category": "monetary_policy_uk",
-    "title": "Bank Rate maintained at 3.75% - April 2026 Monetary Policy Summary and Minutes",
-    "link": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/april-2026",
-    "date": "2026-04-30T11:00:00+00:00",
-    "summary": "The Bank of England’s Monetary Policy Committee is responsible for making decisions about Bank Rate."
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
     "title": "Exchange of letters between the Governor and the Chancellor regarding CPI Inflation - April 2026",
     "link": "https://www.bankofengland.co.uk/letter/2026/cpi-inflation-april-2026",
     "date": "2026-04-30T11:00:00+00:00",
     "summary": "Exchange of letters between the Governor and the Chancellor"
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Bank Rate maintained at 3.75% - April 2026 Monetary Policy Summary and Minutes",
+    "link": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/april-2026",
+    "date": "2026-04-30T11:00:00+00:00",
+    "summary": "The Bank of England’s Monetary Policy Committee is responsible for making decisions about Bank Rate."
   },
   {
     "source": "Federal Reserve — All press releases",
@@ -790,13 +798,5 @@
     "link": "https://www.bankofengland.co.uk/financial-policy-committee-record/2026/april-2026",
     "date": "2026-04-01T09:30:00+00:00",
     "summary": "Our Financial Policy Committee (FPC) meets to identify risks to financial stability and agree policy actions aimed at safeguarding the resilience of the UK financial system."
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "The Bank and the PRA’s response to HMT, DSIT and DBT on AI in financial services",
-    "link": "https://www.bankofengland.co.uk/letter/2026/letter-from-sarah-breeden-sam-woods-to-chancellor",
-    "date": "2026-04-01T09:30:00+00:00",
-    "summary": "Letter from Sarah Breeden and Sam Woods to the Chancellor and Secretaries of State"
   }
 ]
