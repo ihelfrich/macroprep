@@ -474,18 +474,18 @@
   {
     "source": "Bank of England — News",
     "category": "monetary_policy_uk",
-    "title": "Exchange of letters between the Governor and the Chancellor regarding CPI Inflation - April 2026",
-    "link": "https://www.bankofengland.co.uk/letter/2026/cpi-inflation-april-2026",
-    "date": "2026-04-30T11:00:00+00:00",
-    "summary": "Exchange of letters between the Governor and the Chancellor"
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
     "title": "Bank Rate maintained at 3.75% - April 2026 Monetary Policy Summary and Minutes",
     "link": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/april-2026",
     "date": "2026-04-30T11:00:00+00:00",
     "summary": "The Bank of England’s Monetary Policy Committee is responsible for making decisions about Bank Rate."
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Exchange of letters between the Governor and the Chancellor regarding CPI Inflation - April 2026",
+    "link": "https://www.bankofengland.co.uk/letter/2026/cpi-inflation-april-2026",
+    "date": "2026-04-30T11:00:00+00:00",
+    "summary": "Exchange of letters between the Governor and the Chancellor"
   },
   {
     "source": "Federal Reserve — All press releases",
