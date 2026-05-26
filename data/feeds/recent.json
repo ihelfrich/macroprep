@@ -1,5 +1,21 @@
 [
   {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "Philip R. Lane: Interview with Nikkei",
+    "link": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in260526_1~71caa51b14.en.html",
+    "date": "2026-05-26T10:00:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "Isabel Schnabel: Interview with Reuters",
+    "link": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in260526~6736a05aaa.en.html",
+    "date": "2026-05-26T06:00:00+00:00",
+    "summary": ""
+  },
+  {
     "source": "Federal Reserve — All press releases",
     "category": "monetary_policy_us",
     "title": "Kevin Warsh takes oath of office as chairman and a member of the Board of Governors of the Federal Reserve System, and the Federal Open Market Committee unanimously selects Warsh as its chairman",
@@ -376,22 +392,6 @@
     "summary": ""
   },
   {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Piero Cipollone: The new energy shock: economic scenarios and policy implications",
-    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260506~1bbd4ed780.en.html",
-    "date": "2026-05-06T08:20:00+00:00",
-    "summary": ""
-  },
-  {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "New data release: ECB wage tracker indicates negotiated wage pressures stable in 2026",
-    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260506~4ea17afd4a.en.html",
-    "date": "2026-05-06T08:00:00+00:00",
-    "summary": ""
-  },
-  {
     "source": "Federal Reserve — Speeches",
     "category": "speeches",
     "title": "Bowman, A Coordinated Approach to Consumer Fraud Protection",
@@ -474,18 +474,18 @@
   {
     "source": "Bank of England — News",
     "category": "monetary_policy_uk",
-    "title": "Bank Rate maintained at 3.75% - April 2026 Monetary Policy Summary and Minutes",
-    "link": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/april-2026",
-    "date": "2026-04-30T11:00:00+00:00",
-    "summary": "The Bank of England’s Monetary Policy Committee is responsible for making decisions about Bank Rate."
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
     "title": "Exchange of letters between the Governor and the Chancellor regarding CPI Inflation - April 2026",
     "link": "https://www.bankofengland.co.uk/letter/2026/cpi-inflation-april-2026",
     "date": "2026-04-30T11:00:00+00:00",
     "summary": "Exchange of letters between the Governor and the Chancellor"
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Bank Rate maintained at 3.75% - April 2026 Monetary Policy Summary and Minutes",
+    "link": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/april-2026",
+    "date": "2026-04-30T11:00:00+00:00",
+    "summary": "The Bank of England’s Monetary Policy Committee is responsible for making decisions about Bank Rate."
   },
   {
     "source": "Federal Reserve — All press releases",
