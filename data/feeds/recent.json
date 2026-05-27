@@ -2,6 +2,54 @@
   {
     "source": "ECB — Press releases",
     "category": "monetary_policy_eu",
+    "title": "Luis de Guindos: Financial Stability Review - May 2026",
+    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260527~bc724e42c1.en.pdf",
+    "date": "2026-05-27T08:00:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "Financial stability vulnerabilities remain elevated as geoeconomic shock unfolds",
+    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260527~92140c5054.en.html",
+    "date": "2026-05-27T08:00:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "Federal Reserve — All press releases",
+    "category": "monetary_policy_us",
+    "title": "Minutes of the Board's discount rate meeting on April 20 and 29, 2026",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260526a.htm",
+    "date": "2026-05-26T18:00:00+00:00",
+    "summary": "Minutes of the Board's discount rate meeting on April 20 and 29, 2026"
+  },
+  {
+    "source": "Federal Reserve — Monetary policy",
+    "category": "fomc",
+    "title": "Minutes of the Board's discount rate meeting on April 20 and 29, 2026",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260526a.htm",
+    "date": "2026-05-26T18:00:00+00:00",
+    "summary": "Minutes of the Board's discount rate meeting on April 20 and 29, 2026"
+  },
+  {
+    "source": "EIA — Today in Energy",
+    "category": "energy",
+    "title": "Most planned natural gas pipeline capacity additions in 2026 and 2027 originate in Texas",
+    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67707",
+    "date": "2026-05-26T14:00:00+00:00",
+    "summary": "Developers plan to bring approximately 44.9 billion cubic feet per day (Bcf/d) of new pipeline capacity online in the United States in 2026 and 2027, according to our latest Natural Gas Pipeline Projects Tracker. Approximately 70% (31.6 Bcf/d) of this new capacity is already under construction. More than 66% (29.7 Bcf/d) of the capacity additions originate in Texas. Louisiana is second with 19% (…"
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Statistical Notice 2026/04 - BEEDS User Acceptance Testing (UAT) Environment – Statistical Taxonomy v1.3.1 FINAL",
+    "link": "https://www.bankofengland.co.uk/statistics/notice/2026/statistical-notice-2026-04",
+    "date": "2026-05-26T13:03:58+00:00",
+    "summary": "Statistical Notices update the definitions and guidance contained in the Banking Statistics Yellow Folder"
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
     "title": "Philip R. Lane: Interview with Nikkei",
     "link": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in260526_1~71caa51b14.en.html",
     "date": "2026-05-26T10:00:00+00:00",
@@ -376,22 +424,6 @@
     "summary": "The Bank's Court of Directors acts as a unitary board, setting the organisation's strategy and budget and taking key decisions on resourcing and appointments. Required to meet a minimum seven times per year, it has five executive members from the Bank and up to nine non-executive members."
   },
   {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Luis de Guindos: Deepening financial integration to support Europe’s prosperity",
-    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260507~c99288185f.en.html",
-    "date": "2026-05-07T07:15:00+00:00",
-    "summary": ""
-  },
-  {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Euro area financial integration improves despite persistent fragmentation, ECB report shows",
-    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260507~8af27d170e.en.html",
-    "date": "2026-05-07T06:00:00+00:00",
-    "summary": ""
-  },
-  {
     "source": "Federal Reserve — Speeches",
     "category": "speeches",
     "title": "Bowman, A Coordinated Approach to Consumer Fraud Protection",
@@ -474,18 +506,18 @@
   {
     "source": "Bank of England — News",
     "category": "monetary_policy_uk",
-    "title": "Exchange of letters between the Governor and the Chancellor regarding CPI Inflation - April 2026",
-    "link": "https://www.bankofengland.co.uk/letter/2026/cpi-inflation-april-2026",
-    "date": "2026-04-30T11:00:00+00:00",
-    "summary": "Exchange of letters between the Governor and the Chancellor"
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
     "title": "Bank Rate maintained at 3.75% - April 2026 Monetary Policy Summary and Minutes",
     "link": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/april-2026",
     "date": "2026-04-30T11:00:00+00:00",
     "summary": "The Bank of England’s Monetary Policy Committee is responsible for making decisions about Bank Rate."
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Exchange of letters between the Governor and the Chancellor regarding CPI Inflation - April 2026",
+    "link": "https://www.bankofengland.co.uk/letter/2026/cpi-inflation-april-2026",
+    "date": "2026-04-30T11:00:00+00:00",
+    "summary": "Exchange of letters between the Governor and the Chancellor"
   },
   {
     "source": "Federal Reserve — All press releases",
@@ -582,14 +614,6 @@
     "link": "https://www.eia.gov/todayinenergy/detail.php?id=67564",
     "date": "2026-04-23T14:00:00+00:00",
     "summary": "On April 22, 2026, Golden Pass LNG-the 10th liquefied natural gas (LNG) terminal in the United States-shipped its first cargo from Train 1, according to the project developer. The shipment left port 23 days after achieving first LNG production in March 2026. The terminal began shipping as geopolitical developments in the Strait of Hormuz have affected over 10 billion cubic feet per day (Bcf/d), o…"
-  },
-  {
-    "source": "Federal Reserve — All press releases",
-    "category": "monetary_policy_us",
-    "title": "Federal Reserve Board issues enforcement action with former employee of First Financial Bank",
-    "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260422a.htm",
-    "date": "2026-04-22T15:00:00+00:00",
-    "summary": "Federal Reserve Board issues enforcement action with former employee of First Financial Bank"
   },
   {
     "source": "Bank of England — News",
@@ -774,29 +798,5 @@
     "link": "https://www.federalreserve.gov/newsevents/speech/jefferson20260407a.htm",
     "date": "2026-04-07T21:50:00+00:00",
     "summary": "Speech At the College of Business Administration, University of Detroit Mercy, Detroit, Michigan"
-  },
-  {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "Crude oil and petroleum product prices increased sharply in the first quarter of 2026",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67424",
-    "date": "2026-04-07T14:00:00+00:00",
-    "summary": "Crude oil and petroleum product prices increased significantly in the first quarter of 2026 (1Q26), particularly following military action in the Middle East on February 28 and the subsequent de facto closure of the Strait of Hormuz. In this quarterly update, we review petroleum markets price developments in 1Q26, covering crude oil prices, petroleum product prices, and refinery inputs."
-  },
-  {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "The Middle East Gulf was source for 8% of 2025 U.S. crude oil imports",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67407",
-    "date": "2026-04-06T14:00:00+00:00",
-    "summary": "In 2025, the United States imported an average of 490,000 barrels per day (b/d) of crude oil from the Middle East Gulf region—Bahrain, Iraq, Kuwait, Oman, Qatar, Saudi Arabia, and the United Arab Emirates (UAE). Crude oil imports from the region are primarily medium sour grades of crude oil and flow mainly into the West Coast and Gulf Coast of the United States."
-  },
-  {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "Rooftop solar photovoltaic systems account for 20% of Puerto Rico's capacity mix",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67406",
-    "date": "2026-04-02T14:00:00+00:00",
-    "summary": "Rooftop solar generating capacity in Puerto Rico totaled 1,456 megawatts (MW) at the end of 2025, 20% of the overall capacity mix. Rooftop solar capacity has increased faster than other sources over the past decade. Between 2016 and 2025 rooftop solar installations accounted for 81% of the new generating capacity in Puerto Rico, according to data from our Electric Power Monthly and Puerto Rico En…"
   }
 ]
