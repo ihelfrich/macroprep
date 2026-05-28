@@ -2,6 +2,46 @@
   {
     "source": "ECB — Press releases",
     "category": "monetary_policy_eu",
+    "title": "Piero Cipollone: Money in the digital age",
+    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260528_1~7bb2eecfe5.en.html",
+    "date": "2026-05-28T08:30:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "Christine Lagarde: When It Matters Most: Upholding Independence in Challenging Times",
+    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260528~0cb263f599.en.html",
+    "date": "2026-05-28T07:10:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "Federal Reserve — Speeches",
+    "category": "speeches",
+    "title": "Jefferson, Global Economic Developments and the U.S. Economy",
+    "link": "https://www.federalreserve.gov/newsevents/speech/jefferson20260527a.htm",
+    "date": "2026-05-28T00:00:00+00:00",
+    "summary": "Speech At the 2026 Bank of Japan-Institute for Monetary and Economic Studies Conference, Tokyo, Japan"
+  },
+  {
+    "source": "Federal Reserve — Speeches",
+    "category": "speeches",
+    "title": "Cook, The Opportunities and Risks AI Presents for the Economy and Financial System",
+    "link": "https://www.federalreserve.gov/newsevents/speech/cook20260527a.htm",
+    "date": "2026-05-27T19:55:00+00:00",
+    "summary": "Speech At the Stanford Institute for Economic Policy Research, Stanford University, Stanford, California"
+  },
+  {
+    "source": "EIA — Today in Energy",
+    "category": "energy",
+    "title": "The United States is a major energy exporter and importer, especially for petroleum",
+    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67724",
+    "date": "2026-05-27T14:00:00+00:00",
+    "summary": "Total energy exports from the United States reached a record 31 quadrillion British thermal units (quads) in 2025, 2% more than the previous record set in 2024. U.S. energy imports were 21 quads, down 5% from 2024. Taken together, net trade—total imports less total exports—reached 11 quads of net exports in 2025, a record and 20% more net exports than the previous record set in 2024."
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
     "title": "Luis de Guindos: Financial Stability Review - May 2026",
     "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260527~bc724e42c1.en.pdf",
     "date": "2026-05-27T08:00:00+00:00",
@@ -85,7 +125,7 @@
     "title": "Waller, Policy Risks Have Changed",
     "link": "https://www.federalreserve.gov/newsevents/speech/waller20260522a.htm",
     "date": "2026-05-22T14:00:00+00:00",
-    "summary": "Speech At The Centre for Central Banking Guest Lecture, Frankfurt, Germany"
+    "summary": "Speech At The Centre for Central Banking Guest Lecture, Frankfurt School of Finance and Management, Frankfurt, Germany"
   },
   {
     "source": "EIA — Today in Energy",
@@ -384,28 +424,12 @@
     "summary": "Speech At the Central Bank of West African States (BCEAO) Conference on Digital Assets, Dakar, Senegal"
   },
   {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Christine Lagarde: Stablecoins and the future of money: separating functions from instruments",
-    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260508~dd909fbed1.en.html",
-    "date": "2026-05-08T07:00:00+00:00",
-    "summary": ""
-  },
-  {
     "source": "Bank of England — News",
     "category": "monetary_policy_uk",
     "title": "Minutes of the Market Participants Group meeting – 7 May 2026",
     "link": "https://www.bankofengland.co.uk/minutes/2026/may/market-participants-group-meeting-7-may-2026",
     "date": "2026-05-08T06:30:00+00:00",
     "summary": "The Market Participants Group (MPG) is a senior-level forum for financial market participants to share their views on relevant themes and narratives in financial markets with members of the Bank of England’s Monetary Policy Committee."
-  },
-  {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Isabel Schnabel: The quiet erosion of central bank independence",
-    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260507_1~d5ae988ece.en.html",
-    "date": "2026-05-07T17:00:00+00:00",
-    "summary": ""
   },
   {
     "source": "EIA — Today in Energy",
@@ -774,29 +798,5 @@
     "link": "https://www.eia.gov/todayinenergy/detail.php?id=67426",
     "date": "2026-04-10T20:00:00+00:00",
     "summary": "Annual motor gasoline consumption in the United States decreased in 2025 even as vehicle miles traveled (VMT) increased because of increasing fuel efficiency, a trend we forecast will continue in 2026 and 2027. U.S. motor gasoline consumption averaged 8.9 million barrels per day (b/d) in 2025, 1% less than 2024 and 4% less than pre-pandemic demand in 2019. In our April Short-Term Energy Outlook (…"
-  },
-  {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "Domestic and international demand drive natural gas production growth",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67425",
-    "date": "2026-04-08T20:00:00+00:00",
-    "summary": "In our Annual Energy Outlook 2026 (AEO2026), we project U.S. dry natural gas production, which accounted for 38% of total U.S. energy production in 2025, will increase significantly over the next several decades, meeting growing domestic and international natural gas demand."
-  },
-  {
-    "source": "Federal Reserve — Monetary policy",
-    "category": "fomc",
-    "title": "Minutes of the Federal Open Market Committee, March 17–18, 2026",
-    "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260408a.htm",
-    "date": "2026-04-08T18:00:00+00:00",
-    "summary": "Minutes of the Federal Open Market Committee, March 17–18, 2026"
-  },
-  {
-    "source": "Federal Reserve — Speeches",
-    "category": "speeches",
-    "title": "Jefferson, Economic Outlook and the Labor Market",
-    "link": "https://www.federalreserve.gov/newsevents/speech/jefferson20260407a.htm",
-    "date": "2026-04-07T21:50:00+00:00",
-    "summary": "Speech At the College of Business Administration, University of Detroit Mercy, Detroit, Michigan"
   }
 ]
