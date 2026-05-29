@@ -2,6 +2,54 @@
   {
     "source": "ECB — Press releases",
     "category": "monetary_policy_eu",
+    "title": "ECB appoints three Directors General",
+    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260529~2699fd8390.en.html",
+    "date": "2026-05-29T00:00:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "Federal Reserve — All press releases",
+    "category": "monetary_policy_us",
+    "title": "Federal Reserve Board issues enforcement actions with former employee of Atlantic Union Bank and former employee of Frost Bank",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260528a.htm",
+    "date": "2026-05-28T15:00:00+00:00",
+    "summary": "Federal Reserve Board issues enforcement actions with former employee of Atlantic Union Bank and former employee of Frost Bank"
+  },
+  {
+    "source": "EIA — Today in Energy",
+    "category": "energy",
+    "title": "Natural gas for power generation flat this summer, record high expected in 2027",
+    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67725",
+    "date": "2026-05-28T14:00:00+00:00",
+    "summary": "We forecast natural gas consumption by the U.S. electric power sector this summer will remain near recent highs and set a record next summer in our May Short-Term Energy Outlook (STEO). Despite a 2% increase in overall U.S. electricity demand this summer, we expect natural gas-fired electricity generation to be similar to last summer, primarily because of forecast increased generation from renewa…"
+  },
+  {
+    "source": "BEA — News releases",
+    "category": "data_release_us",
+    "title": "GDP (Second Estimate) and Corporate Profits, 1st Quarter 2026",
+    "link": "https://www.bea.gov/news/2026/gdp-second-estimate-and-corporate-profits-1st-quarter-2026",
+    "date": "2026-05-28T12:30:00+00:00",
+    "summary": "Real gross domestic product (GDP) increased at an annual rate of 1.6 percent in the first quarter of 2026 (January, February, and March), according to the second estimate released today by the U.S. Bureau of Economic Analysis. In the fourth quarter of 2025, real GDP increased 0.5 percent. The contributors to the increase in real GDP in the first quarter were exports, investment, consumer spending…"
+  },
+  {
+    "source": "BEA — News releases",
+    "category": "data_release_us",
+    "title": "Personal Income and Outlays, April 2026",
+    "link": "https://www.bea.gov/news/2026/personal-income-and-outlays-april-2026",
+    "date": "2026-05-28T12:30:00+00:00",
+    "summary": "Personal income decreased less than $0.1 billion (less than 0.1 percent at a monthly rate) in April, according to estimates released today by the U.S. Bureau of Economic Analysis (BEA). Disposable personal income (DPI)-personal income less personal current taxes-decreased $19.9 billion (0.1 percent), and personal consumption expenditures (PCE) increased $111.1 billion (0.5 percent). Personal outl…"
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "Meeting of 29-30 April 2026",
+    "link": "https://www.ecb.europa.eu//press/accounts/2026/html/ecb.mg260528~a93230dc4b.en.html",
+    "date": "2026-05-28T11:30:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
     "title": "Piero Cipollone: Money in the digital age",
     "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260528_1~7bb2eecfe5.en.html",
     "date": "2026-05-28T08:30:00+00:00",
@@ -376,22 +424,6 @@
     "summary": "Total energy production in the United States increased to a new record of 107 quadrillion British thermal units (quads) in 2025, a 3.4% increase from the previous record set in 2024, according to new data in our Monthly Energy Review. Total production was driven by record-high production in natural gas, crude oil, natural gas plant liquids (NGPLs), and renewables. This was the fourth consecutive…"
   },
   {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Luis de Guindos: Interview with Financial Times",
-    "link": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in260511~3fa2df2fa9.en.html",
-    "date": "2026-05-11T04:00:00+00:00",
-    "summary": ""
-  },
-  {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "European Central Bank and Reserve Bank of India sign Memorandum of Understanding on cooperation",
-    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260510~e8a674e2fb.en.html",
-    "date": "2026-05-10T13:00:00+00:00",
-    "summary": ""
-  },
-  {
     "source": "Federal Reserve — Speeches",
     "category": "speeches",
     "title": "Waller, Update On Federal Reserve Bank Operations",
@@ -512,22 +544,6 @@
     "summary": "Between the week ending March 20 and the week ending April 24, the U.S. Department of Energy (DOE) released a total of 17.5 million barrels of crude oil from the U.S. Strategic Petroleum Reserve (SPR), according to data in our Weekly Petroleum Status Report. DOE released 7.1 million barrels in the week ending April 24, the most released since the week ending October 7, 2022. SPR stocks are curren…"
   },
   {
-    "source": "BEA — News releases",
-    "category": "data_release_us",
-    "title": "GDP (Advance Estimate), 1st Quarter 2026",
-    "link": "https://www.bea.gov/news/2026/gdp-advance-estimate-1st-quarter-2026",
-    "date": "2026-04-30T12:30:00+00:00",
-    "summary": "Real gross domestic product (GDP) increased at an annual rate of 2.0 percent in the first quarter of 2026 (January, February, and March), according to the advance estimate released today by the U.S. Bureau of Economic Analysis. In the fourth quarter of 2025, real GDP increased 0.5 percent. The contributors to the increase in real GDP in the first quarter were investment, exports, consumer spendin…"
-  },
-  {
-    "source": "BEA — News releases",
-    "category": "data_release_us",
-    "title": "Personal Income and Outlays, March 2026",
-    "link": "https://www.bea.gov/news/2026/personal-income-and-outlays-march-2026",
-    "date": "2026-04-30T12:30:00+00:00",
-    "summary": "Personal income increased $149.2 billion (0.6 percent at a monthly rate) in March, according to estimates released today by the U.S. Bureau of Economic Analysis (BEA). Disposable personal income (DPI)-personal income less personal current taxes-increased $142.5 billion (0.6 percent), and personal consumption expenditures (PCE) increased $195.4 billion (0.9 percent). Personal outlays-the sum of PC…"
-  },
-  {
     "source": "Bank of England — News",
     "category": "monetary_policy_uk",
     "title": "Bank Rate maintained at 3.75% - April 2026 Monetary Policy Summary and Minutes",
@@ -622,14 +638,6 @@
     "link": "https://www.eia.gov/todayinenergy/detail.php?id=67544",
     "date": "2026-04-24T14:00:00+00:00",
     "summary": "The Dated Brent spot price increased to a premium of more than $25 per barrel (b) compared with the front-month Brent futures contract in early April. Brent crude oil price benchmarks are widely used by commodities traders, financial market participants, economists, and others to assess changes in global petroleum prices more broadly."
-  },
-  {
-    "source": "Federal Reserve — All press releases",
-    "category": "monetary_policy_us",
-    "title": "Agencies finalize changes to enhance community bank leverage ratio",
-    "link": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260423a.htm",
-    "date": "2026-04-23T19:30:00+00:00",
-    "summary": "Agencies finalize changes to enhance community bank leverage ratio"
   },
   {
     "source": "EIA — Today in Energy",
@@ -790,13 +798,5 @@
     "link": "https://www.bankofengland.co.uk/news/2026/april/boe-enhances-resolution-readiness-with-updated-operational-guides",
     "date": "2026-04-13T10:00:00+00:00",
     "summary": "The Bank of England has today published new and updated guidance on how the Bank might implement the UK’s resolution regime in the event of a bank failure."
-  },
-  {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "Increasing fuel efficiency leads to decreasing gasoline consumption",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67426",
-    "date": "2026-04-10T20:00:00+00:00",
-    "summary": "Annual motor gasoline consumption in the United States decreased in 2025 even as vehicle miles traveled (VMT) increased because of increasing fuel efficiency, a trend we forecast will continue in 2026 and 2027. U.S. motor gasoline consumption averaged 8.9 million barrels per day (b/d) in 2025, 1% less than 2024 and 4% less than pre-pandemic demand in 2019. In our April Short-Term Energy Outlook (…"
   }
 ]
