@@ -1,5 +1,13 @@
 [
   {
+    "source": "Federal Reserve — Speeches",
+    "category": "speeches",
+    "title": "Bowman, A Framework for Practical Monetary Policy Decision Making",
+    "link": "https://www.federalreserve.gov/newsevents/speech/bowman20260529a.htm",
+    "date": "2026-05-29T13:10:00+00:00",
+    "summary": "Speech At the Reykjav&iacute;k Economic Conference 2026, Central Bank of Iceland, Reykjav&iacute;k, Iceland"
+  },
+  {
     "source": "ECB — Press releases",
     "category": "monetary_policy_eu",
     "title": "ECB appoints three Directors General",
@@ -426,16 +434,16 @@
   {
     "source": "Federal Reserve — Speeches",
     "category": "speeches",
-    "title": "Waller, Update On Federal Reserve Bank Operations",
-    "link": "https://www.federalreserve.gov/newsevents/speech/waller20260508a.htm",
+    "title": "Bowman, When Regulation Reshapes Markets: The Migration of Corporate Lending",
+    "link": "https://www.federalreserve.gov/newsevents/speech/bowman20260508a.htm",
     "date": "2026-05-08T23:30:00+00:00",
     "summary": "Speech At the Hoover Institution Annual Monetary Policy Conference, Stanford, California"
   },
   {
     "source": "Federal Reserve — Speeches",
     "category": "speeches",
-    "title": "Bowman, When Regulation Reshapes Markets: The Migration of Corporate Lending",
-    "link": "https://www.federalreserve.gov/newsevents/speech/bowman20260508a.htm",
+    "title": "Waller, Update On Federal Reserve Bank Operations",
+    "link": "https://www.federalreserve.gov/newsevents/speech/waller20260508a.htm",
     "date": "2026-05-08T23:30:00+00:00",
     "summary": "Speech At the Hoover Institution Annual Monetary Policy Conference, Stanford, California"
   },
@@ -546,18 +554,18 @@
   {
     "source": "Bank of England — News",
     "category": "monetary_policy_uk",
-    "title": "Bank Rate maintained at 3.75% - April 2026 Monetary Policy Summary and Minutes",
-    "link": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/april-2026",
-    "date": "2026-04-30T11:00:00+00:00",
-    "summary": "The Bank of England’s Monetary Policy Committee is responsible for making decisions about Bank Rate."
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
     "title": "Exchange of letters between the Governor and the Chancellor regarding CPI Inflation - April 2026",
     "link": "https://www.bankofengland.co.uk/letter/2026/cpi-inflation-april-2026",
     "date": "2026-04-30T11:00:00+00:00",
     "summary": "Exchange of letters between the Governor and the Chancellor"
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Bank Rate maintained at 3.75% - April 2026 Monetary Policy Summary and Minutes",
+    "link": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/april-2026",
+    "date": "2026-04-30T11:00:00+00:00",
+    "summary": "The Bank of England’s Monetary Policy Committee is responsible for making decisions about Bank Rate."
   },
   {
     "source": "Federal Reserve — All press releases",
@@ -790,13 +798,5 @@
     "link": "https://www.bankofengland.co.uk/minutes/2025/november/fxjsc-main-committee-meeting-24-november-2025",
     "date": "2026-04-13T14:15:00+00:00",
     "summary": "The Bank of England chairs the London Foreign Exchange Joint Standing Committee (FXJSC), which is a forum for discussion of the wholesale foreign exchange market. The FXJSC is made up of market participants, infrastructure providers and the UK financial regulators."
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Bank of England enhances resolution readiness with updated operational guides",
-    "link": "https://www.bankofengland.co.uk/news/2026/april/boe-enhances-resolution-readiness-with-updated-operational-guides",
-    "date": "2026-04-13T10:00:00+00:00",
-    "summary": "The Bank of England has today published new and updated guidance on how the Bank might implement the UK’s resolution regime in the event of a bank failure."
   }
 ]
