@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-30T08:43:26+00:00",
+  "generated_at": "2026-05-31T09:27:30+00:00",
   "endpoint": "https://fred.stlouisfed.org/graph/fredgraph.csv",
   "n_series": 26,
   "series": [
@@ -69,9 +69,9 @@
       "description": "Market-implied 5y inflation expectations",
       "file": "T5YIE.json",
       "status": "ok",
-      "n_observations": 5855,
+      "n_observations": 5856,
       "start": "2003-01-02",
-      "end": "2026-05-28"
+      "end": "2026-05-29"
     },
     {
       "id": "UNRATE",
@@ -279,9 +279,9 @@
       "description": "Term spread / classic recession indicator",
       "file": "T10Y2Y.json",
       "status": "ok",
-      "n_observations": 6353,
+      "n_observations": 6354,
       "start": "2001-01-02",
-      "end": "2026-05-28"
+      "end": "2026-05-29"
     },
     {
       "id": "MORTGAGE30US",
