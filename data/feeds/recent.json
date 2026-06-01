@@ -1,5 +1,37 @@
 [
   {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "ECB Consumer Expectations Survey results – April 2026",
+    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260601~bf8026bfc2.en.html",
+    "date": "2026-06-01T08:00:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "Federal Reserve — Speeches",
+    "category": "speeches",
+    "title": "Powell, Acceptance Remarks",
+    "link": "https://www.federalreserve.gov/newsevents/speech/powell20260531a.htm",
+    "date": "2026-06-01T00:30:00+00:00",
+    "summary": "Speech For the 2026 John F. Kennedy Profile in Courage Award, John F. Kennedy Library Foundation, Boston, Massachusetts"
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "Isabel Schnabel: From money market funds to stablecoins: lessons for central banks",
+    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260601~38dffe5ec5.en.html",
+    "date": "2026-06-01T00:10:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "Luis de Guindos: Interview with Expansión",
+    "link": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in260531~f648dbde70.en.html",
+    "date": "2026-05-31T14:00:00+00:00",
+    "summary": ""
+  },
+  {
     "source": "Federal Reserve — Speeches",
     "category": "speeches",
     "title": "Bowman, A Framework for Practical Monetary Policy Decision Making",
@@ -376,22 +408,6 @@
     "summary": "Federal Reserve Board releases results from two surveys of senior financial officers at banks about their views on discount window operating days and their strategies and practices for managing reserve balances"
   },
   {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Christine Lagarde: The courage to build a Europe that endures",
-    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260513_1~ab5ae9e754.en.html",
-    "date": "2026-05-13T19:50:00+00:00",
-    "summary": ""
-  },
-  {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Philip R. Lane: Analytical perspectives on energy supply shocks",
-    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260513~5b14c78806.en.html",
-    "date": "2026-05-13T19:00:00+00:00",
-    "summary": ""
-  },
-  {
     "source": "Federal Reserve — All press releases",
     "category": "monetary_policy_us",
     "title": "Federal Reserve Board issues Economic Well-Being of U.S. Households in 2025 report",
@@ -414,14 +430,6 @@
     "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260512a.htm",
     "date": "2026-05-12T15:00:00+00:00",
     "summary": "Federal Reserve Board announces termination of enforcement actions with F & M Holding Company, Inc. and Thread Bancorp, Inc."
-  },
-  {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Frank Elderson: Boosting prosperity through deeper integration",
-    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260512~640d289749.en.html",
-    "date": "2026-05-12T10:40:00+00:00",
-    "summary": ""
   },
   {
     "source": "EIA — Today in Energy",
@@ -766,14 +774,6 @@
     "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260414a.htm",
     "date": "2026-04-14T18:00:00+00:00",
     "summary": "Minutes of the Board’s discount rate meetings on February 9 and March 18, 2026"
-  },
-  {
-    "source": "Federal Reserve — Speeches",
-    "category": "speeches",
-    "title": "Barr, Rural Communities: Worth the Investment",
-    "link": "https://www.federalreserve.gov/newsevents/speech/barr20260414a.htm",
-    "date": "2026-04-14T16:45:00+00:00",
-    "summary": "Speech At Strengthening America’s Economy through Rural Investment: A Working Forum, Washington, D.C."
   },
   {
     "source": "EIA — Today in Energy",
