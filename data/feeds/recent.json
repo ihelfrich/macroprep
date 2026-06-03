@@ -2,6 +2,38 @@
   {
     "source": "ECB — Press releases",
     "category": "monetary_policy_eu",
+    "title": "Frank Elderson: Strengthening operational resilience for the age of AI",
+    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260603~5b8e67f237.en.html",
+    "date": "2026-06-03T09:55:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Public asked to help select UK wildlife to appear on new banknote series",
+    "link": "https://www.bankofengland.co.uk/news/2026/june/wildlife-new-banknote-series",
+    "date": "2026-06-02T23:01:00+00:00",
+    "summary": "The public are being asked to give their views on a selection of wildlife, native to the UK, that will appear on the next series of banknotes in a consultation launched today."
+  },
+  {
+    "source": "Federal Reserve — All press releases",
+    "category": "monetary_policy_us",
+    "title": "Agencies remove additional references to reputation risk",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260602a.htm",
+    "date": "2026-06-02T15:00:00+00:00",
+    "summary": "Agencies remove additional references to reputation risk"
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "Boris Vujčić: A European perspective on currency and convergence",
+    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260602~101b71c594.en.html",
+    "date": "2026-06-02T14:35:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
     "title": "International role of the euro increased moderately in 2025",
     "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260602~f941e87516.en.html",
     "date": "2026-06-02T08:00:00+00:00",
@@ -237,22 +269,6 @@
     "title": "Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates)",
     "link": "https://www.ecb.europa.eu//press/govcdec/otherdec/2026/html/ecb.gc260522~a4812a8f23.en.html",
     "date": "2026-05-22T13:00:00+00:00",
-    "summary": ""
-  },
-  {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Philip R. Lane: Europe and the world economy",
-    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260522~f0f11a5f05.en.html",
-    "date": "2026-05-22T01:15:00+00:00",
-    "summary": ""
-  },
-  {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Frank Elderson: A central banker’s perspective on climate change and nature degradation",
-    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260521~ccae6782e3.en.pdf",
-    "date": "2026-05-21T15:30:00+00:00",
     "summary": ""
   },
   {
@@ -552,14 +568,6 @@
     "summary": "Agencies issue host state loan-to-deposit ratios"
   },
   {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "DOE has released 17.5 million barrels from the Strategic Petroleum Reserve since March",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67625",
-    "date": "2026-04-30T14:00:00+00:00",
-    "summary": "Between the week ending March 20 and the week ending April 24, the U.S. Department of Energy (DOE) released a total of 17.5 million barrels of crude oil from the U.S. Strategic Petroleum Reserve (SPR), according to data in our Weekly Petroleum Status Report. DOE released 7.1 million barrels in the week ending April 24, the most released since the week ending October 7, 2022. SPR stocks are curren…"
-  },
-  {
     "source": "Bank of England — News",
     "category": "monetary_policy_uk",
     "title": "Exchange of letters between the Governor and the Chancellor regarding CPI Inflation - April 2026",
@@ -592,28 +600,12 @@
     "summary": "Federal Reserve issues FOMC statement"
   },
   {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "Alaska proved reserves increased in 2024, while nationwide proved reserves fell",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67624",
-    "date": "2026-04-29T14:00:00+00:00",
-    "summary": "Oil and gas producers operating in Alaska reported increases in proved reserves in 2024 at a time when low prices triggered a decrease in nationwide proved reserves, according to our recently released U.S. Crude Oil and Natural Gas Proved Reserves, Year-End 2024 report. Alaska's crude oil and lease condensate proved reserves increased 5%, and natural gas proved reserves increased nearly 7% in 202…"
-  },
-  {
     "source": "Bank of England — News",
     "category": "monetary_policy_uk",
     "title": "PRA publishes plans to support resilience in the life insurance industry",
     "link": "https://www.bankofengland.co.uk/news/2026/april/pra-publishes-plans-to-support-resilience-in-the-life-insurance-industry",
     "date": "2026-04-29T08:30:00+00:00",
     "summary": "Funded reinsurance transactions involving UK life insurers will face enhanced regulatory requirements under new proposals unveiled today by the Prudential Regulation Authority (PRA)."
-  },
-  {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "International LNG prices rise amid Strait of Hormuz closure",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67604",
-    "date": "2026-04-28T14:00:00+00:00",
-    "summary": "Prices for natural gas in Europe and Asia have diverged from those in the United States since the February 28 closure of the Strait of Hormuz."
   },
   {
     "source": "Bank of England — News",
@@ -624,44 +616,12 @@
     "summary": "Statistical Notices update the definitions and guidance contained in the Banking Statistics Yellow Folder"
   },
   {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "Small modular reactors and microreactors under development in the United States",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67584",
-    "date": "2026-04-27T14:00:00+00:00",
-    "summary": "Electric utilities in the United States currently operate about 98 gigawatts (GW) of nuclear generating capacity, but very little nuclear capacity has been built in the last few decades. High capital costs and lengthy licensing and approval processes have limited the expansion of nuclear power. However, several companies are developing new small modular reactor (SMR) designs aimed at reducing cap…"
-  },
-  {
     "source": "Federal Reserve — All press releases",
     "category": "monetary_policy_us",
     "title": "Federal Reserve Board announces approval of application by OceanFirst Financial Corp.",
     "link": "https://www.federalreserve.gov/newsevents/pressreleases/orders20260424a.htm",
     "date": "2026-04-24T20:00:00+00:00",
     "summary": "Federal Reserve Board announces approval of application by OceanFirst Financial Corp."
-  },
-  {
-    "source": "Federal Reserve — All press releases",
-    "category": "monetary_policy_us",
-    "title": "Federal Reserve Board announces approval of application by Banco de Credito del Peru",
-    "link": "https://www.federalreserve.gov/newsevents/pressreleases/orders20260424b.htm",
-    "date": "2026-04-24T20:00:00+00:00",
-    "summary": "Federal Reserve Board announces approval of application by Banco de Credito del Peru"
-  },
-  {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "Brent crude oil spot prices surge past futures price in April",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67544",
-    "date": "2026-04-24T14:00:00+00:00",
-    "summary": "The Dated Brent spot price increased to a premium of more than $25 per barrel (b) compared with the front-month Brent futures contract in early April. Brent crude oil price benchmarks are widely used by commodities traders, financial market participants, economists, and others to assess changes in global petroleum prices more broadly."
-  },
-  {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "The 10th U.S. liquefied natural gas export terminal, Golden Pass, ships first cargo",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67564",
-    "date": "2026-04-23T14:00:00+00:00",
-    "summary": "On April 22, 2026, Golden Pass LNG-the 10th liquefied natural gas (LNG) terminal in the United States-shipped its first cargo from Train 1, according to the project developer. The shipment left port 23 days after achieving first LNG production in March 2026. The terminal began shipping as geopolitical developments in the Strait of Hormuz have affected over 10 billion cubic feet per day (Bcf/d), o…"
   },
   {
     "source": "Bank of England — News",
@@ -678,22 +638,6 @@
     "link": "https://www.federalreserve.gov/newsevents/speech/waller20260421a.htm",
     "date": "2026-04-21T18:30:00+00:00",
     "summary": "Speech At The Brookings Institution, Washington, D.C."
-  },
-  {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "Natural gas inventories at the end of winter heating season were near five-year average",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67524",
-    "date": "2026-04-21T14:00:00+00:00",
-    "summary": "We estimate the Lower 48 U.S. states began this natural gas injection season (April–October) with 1,890 billion cubic feet (Bcf) of working natural gas in storage, based on interpolated data from our Weekly Natural Gas Storage Report. This level was 3% above the previous five-year (2021–25) average and 3% above last year's end-of-season storage volume."
-  },
-  {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "China, the United States, and Japan hold most strategic oil inventories in 2025",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67504",
-    "date": "2026-04-20T14:00:00+00:00",
-    "summary": "In the 1970s, the United States and other OECD countries established strategic oil stocks aimed at mitigating the impact of supply disruptions. In March 2026, the United States, along with other members of the International Energy Agency, agreed to a coordinated emergency release of strategic oil stocks following the effective closure of the Strait of Hormuz."
   },
   {
     "source": "Bank of England — News",
@@ -736,14 +680,6 @@
     "summary": "Meeting held 5 August 2025"
   },
   {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "U.S. natural gas exports to grow nearly 30% by 2027 as LNG facilities ramp up",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67484",
-    "date": "2026-04-16T14:00:00+00:00",
-    "summary": "In our latest Short-Term Energy Outlook (STEO), we forecast that U.S. liquefied natural gas (LNG) exports will continue to increase as five LNG export projects start operations and ramp up production by the end of 2027. We also forecast increased natural gas pipeline exports, mainly to Mexico. In our forecast, net exports of U.S. natural gas (exports minus imports) grow 18% to 18.7 billion cubic…"
-  },
-  {
     "source": "Bank of England — News",
     "category": "monetary_policy_uk",
     "title": "Artificial Intelligence Consortium minutes – February 2026",
@@ -752,36 +688,12 @@
     "summary": "The Artificial Intelligence Consortium (AIC) aims to provide a platform for public-private engagement to further dialogue on the capabilities, development, deployment, use, and potential risks of artificial intelligence (AI) in UK financial services."
   },
   {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "What's in your gasoline? Understanding U.S. motor gasoline formulations",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67464",
-    "date": "2026-04-15T20:00:00+00:00",
-    "summary": "Motor gasoline in the United States is a blend of hydrocarbons and chemicals, with specific formulas varying by region and season. To meet federal air quality standards, the U.S. Environmental Protection Agency (EPA) and state regulators require different formulations, depending on air quality and location, which affect performance, cost, and emissions. In addition, warmer summer months require a…"
-  },
-  {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "Hydropower generation expected to recover despite snow drought in the West",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67444",
-    "date": "2026-04-14T20:00:00+00:00",
-    "summary": "In our April Short-Term Energy Outlook (STEO), we expect U.S. hydropower generation will increase by 5% in 2026 but remain 1.8% below the 10-year average following snow drought conditions in some states. Hydropower generation in 2025 increased to 245 billion kilowatthours (BkWh), about 4 BkWh more than the record-low generation year 2024. In 2026, we expect generation will be 259 BkWh, which woul…"
-  },
-  {
     "source": "Federal Reserve — Monetary policy",
     "category": "fomc",
     "title": "Minutes of the Board’s discount rate meetings on February 9 and March 18, 2026",
     "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260414a.htm",
     "date": "2026-04-14T18:00:00+00:00",
     "summary": "Minutes of the Board’s discount rate meetings on February 9 and March 18, 2026"
-  },
-  {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "U.S. coal-fired generating capacity retired in 2025 was the least in 15 years",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67427",
-    "date": "2026-04-13T20:00:00+00:00",
-    "summary": "During 2025, the U.S. electric power sector retired 2.6 gigawatts (GW) of coal-fired generating capacity at four power plants, the least since 2010. At the beginning of 2025, coal plant operators had planned to retire 8.5 GW of capacity; however, 4.8 GW of planned retirements were delayed to a future year, and the operators of two coal plants (1.1 GW) cancelled plans to retire. In addition, the o…"
   },
   {
     "source": "Bank of England — News",
@@ -798,5 +710,93 @@
     "link": "https://www.bankofengland.co.uk/minutes/2025/november/fxjsc-main-committee-meeting-24-november-2025",
     "date": "2026-04-13T14:15:00+00:00",
     "summary": "The Bank of England chairs the London Foreign Exchange Joint Standing Committee (FXJSC), which is a forum for discussion of the wholesale foreign exchange market. The FXJSC is made up of market participants, infrastructure providers and the UK financial regulators."
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Bank of England enhances resolution readiness with updated operational guides",
+    "link": "https://www.bankofengland.co.uk/news/2026/april/boe-enhances-resolution-readiness-with-updated-operational-guides",
+    "date": "2026-04-13T10:00:00+00:00",
+    "summary": "The Bank of England has today published new and updated guidance on how the Bank might implement the UK’s resolution regime in the event of a bank failure."
+  },
+  {
+    "source": "Federal Reserve — Monetary policy",
+    "category": "fomc",
+    "title": "Minutes of the Federal Open Market Committee, March 17–18, 2026",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260408a.htm",
+    "date": "2026-04-08T18:00:00+00:00",
+    "summary": "Minutes of the Federal Open Market Committee, March 17–18, 2026"
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Minutes: CBDC Academic Advisory Group - January 2026",
+    "link": "https://www.bankofengland.co.uk/minutes/2026/january/cbdc-academic-advisory-group-january-2026",
+    "date": "2026-04-02T13:05:00+00:00",
+    "summary": "Meeting of the CBDC Academic Advisory Group"
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Minutes of the Money Market Committee meeting – March 2026",
+    "link": "https://www.bankofengland.co.uk/minutes/2026/march/money-markets-committee-minutes-march-2026",
+    "date": "2026-04-02T11:39:00+00:00",
+    "summary": "The Money Markets Committee is a forum for market participants and authorities to discuss the UK unsecured deposits and funding market and securities lending and repo markets."
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Changes to publication dates of the Decision Maker Panel data and Agents’ summary of business conditions",
+    "link": "https://www.bankofengland.co.uk/news/2026/april/changes-to-publication-dates-of-the-decision-maker-panel-data-and-agents-summary",
+    "date": "2026-04-02T08:30:00+00:00",
+    "summary": "We are changing the publication dates of the Decision Maker Panel and Agents’ summary of business conditions so that they no longer fall on the same day as publication of the Monetary Policy Report"
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Financial Policy Committee Record – April 2026",
+    "link": "https://www.bankofengland.co.uk/financial-policy-committee-record/2026/april-2026",
+    "date": "2026-04-01T09:30:00+00:00",
+    "summary": "Our Financial Policy Committee (FPC) meets to identify risks to financial stability and agree policy actions aimed at safeguarding the resilience of the UK financial system."
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "The Bank and the PRA’s response to HMT, DSIT and DBT on AI in financial services",
+    "link": "https://www.bankofengland.co.uk/letter/2026/letter-from-sarah-breeden-sam-woods-to-chancellor",
+    "date": "2026-04-01T09:30:00+00:00",
+    "summary": "Letter from Sarah Breeden and Sam Woods to the Chancellor and Secretaries of State"
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Update to Discount Window Facility pricing – Market Notice 27 March 2026",
+    "link": "https://www.bankofengland.co.uk/markets/market-notices/2026/march/update-to-discount-window-facility-pricing-market-notice-27-march-2026",
+    "date": "2026-03-27T07:30:00+00:00",
+    "summary": "The Bank is today announcing a simplification and reduction in the Discount Window Facility (DWF) pricing, as part of its previously announced review of the DWF."
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Bank of England streamlines reporting and disclosure requirements for bank failure regime",
+    "link": "https://www.bankofengland.co.uk/news/2026/march/boe-streamlines-reporting-and-disclosure-requirements-for-bank-failure-regime",
+    "date": "2026-03-26T10:00:00+00:00",
+    "summary": "The Bank of England and Prudential Regulation Authority have finalised a package of changes to firms’ resolution reporting and disclosure requirements which reduces the burden of regulation while maintaining a robust and credible regime that supports growth and competition."
+  },
+  {
+    "source": "BEA — News releases",
+    "category": "data_release_us",
+    "title": "U.S. International Transactions and Investment Position, 4th Quarter and Year 2025",
+    "link": "https://www.bea.gov",
+    "date": "2026-03-25T12:30:00+00:00",
+    "summary": "The U.S. current-account deficit resulting from international economic transactions narrowed by $48.4 billion, or 20.2 percent, to $190.7 billion in the fourth quarter of 2025, according to statistics released today by the U.S. Bureau of Economic Analysis. The revised third-quarter deficit was $239.1 billion. The fourth-quarter deficit was 2.4 percent of current-dollar gross domestic product, dow…"
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "PRA fines The Bank of London and its parent company Oplyse Holdings Limited £2m for failing to act with integrity and misleading the PRA over their capital position",
+    "link": "https://www.bankofengland.co.uk/news/2026/march/pra-fines-bol-and-oplyse-holdings",
+    "date": "2026-03-24T10:00:00+00:00",
+    "summary": "The Prudential Regulation Authority (PRA) has fined The Bank of London Group Limited and Oplyse Holdings Limited (formerly The Bank of London Group Holdings Limited) £2 million for misleading the PRA over their capital positions, failing to act with integrity, failing to be open and cooperative with the regulator and failing to maintain adequate financial resources."
   }
 ]

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-02T11:01:25+00:00",
+  "generated_at": "2026-06-03T11:34:16+00:00",
   "endpoint": "https://fred.stlouisfed.org/graph/fredgraph.csv",
   "n_series": 26,
   "series": [
@@ -26,10 +26,8 @@
       "group": "prices",
       "description": "Core inflation",
       "file": "CPILFESL.json",
-      "status": "ok",
-      "n_observations": 303,
-      "start": "2001-01-01",
-      "end": "2026-04-01"
+      "status": "error",
+      "error": "The read operation timed out"
     },
     {
       "id": "PCEPI",
@@ -54,10 +52,8 @@
       "group": "prices",
       "description": "Core PCE inflation",
       "file": "PCEPILFE.json",
-      "status": "ok",
-      "n_observations": 304,
-      "start": "2001-01-01",
-      "end": "2026-04-01"
+      "status": "error",
+      "error": "The read operation timed out"
     },
     {
       "id": "T5YIE",
@@ -68,10 +64,8 @@
       "group": "prices",
       "description": "Market-implied 5y inflation expectations",
       "file": "T5YIE.json",
-      "status": "ok",
-      "n_observations": 5857,
-      "start": "2003-01-02",
-      "end": "2026-06-01"
+      "status": "error",
+      "error": "The read operation timed out"
     },
     {
       "id": "UNRATE",
@@ -110,10 +104,8 @@
       "group": "labor",
       "description": "Share of working-age pop in labor force",
       "file": "CIVPART.json",
-      "status": "ok",
-      "n_observations": 303,
-      "start": "2001-01-01",
-      "end": "2026-04-01"
+      "status": "error",
+      "error": "The read operation timed out"
     },
     {
       "id": "ICSA",
@@ -124,10 +116,8 @@
       "group": "labor",
       "description": "Weekly high-frequency labor signal",
       "file": "ICSA.json",
-      "status": "ok",
-      "n_observations": 1325,
-      "start": "2001-01-06",
-      "end": "2026-05-23"
+      "status": "error",
+      "error": "The read operation timed out"
     },
     {
       "id": "M2SL",
@@ -138,10 +128,8 @@
       "group": "money",
       "description": "Broad money supply",
       "file": "M2SL.json",
-      "status": "ok",
-      "n_observations": 304,
-      "start": "2001-01-01",
-      "end": "2026-04-01"
+      "status": "error",
+      "error": "The read operation timed out"
     },
     {
       "id": "BAMLH0A0HYM2",
@@ -154,8 +142,8 @@
       "file": "BAMLH0A0HYM2.json",
       "status": "ok",
       "n_observations": 785,
-      "start": "2023-06-02",
-      "end": "2026-05-31"
+      "start": "2023-06-05",
+      "end": "2026-06-01"
     },
     {
       "id": "GDPC1",
@@ -222,10 +210,8 @@
       "group": "rates",
       "description": "Overnight policy rate",
       "file": "DFF.json",
-      "status": "ok",
-      "n_observations": 9280,
-      "start": "2001-01-01",
-      "end": "2026-05-29"
+      "status": "error",
+      "error": "The read operation timed out"
     },
     {
       "id": "FEDFUNDS",
@@ -250,10 +236,8 @@
       "group": "rates",
       "description": "Benchmark long rate",
       "file": "DGS10.json",
-      "status": "ok",
-      "n_observations": 6354,
-      "start": "2001-01-02",
-      "end": "2026-05-29"
+      "status": "error",
+      "error": "The read operation timed out"
     },
     {
       "id": "DGS2",
@@ -264,10 +248,8 @@
       "group": "rates",
       "description": "Short-end policy-sensitive yield",
       "file": "DGS2.json",
-      "status": "ok",
-      "n_observations": 6354,
-      "start": "2001-01-02",
-      "end": "2026-05-29"
+      "status": "error",
+      "error": "The read operation timed out"
     },
     {
       "id": "T10Y2Y",
@@ -278,10 +260,8 @@
       "group": "rates",
       "description": "Term spread / classic recession indicator",
       "file": "T10Y2Y.json",
-      "status": "ok",
-      "n_observations": 6355,
-      "start": "2001-01-02",
-      "end": "2026-06-01"
+      "status": "error",
+      "error": "The read operation timed out"
     },
     {
       "id": "MORTGAGE30US",
@@ -292,10 +272,8 @@
       "group": "rates",
       "description": "Household borrowing cost",
       "file": "MORTGAGE30US.json",
-      "status": "ok",
-      "n_observations": 1326,
-      "start": "2001-01-05",
-      "end": "2026-05-28"
+      "status": "error",
+      "error": "The read operation timed out"
     },
     {
       "id": "DTWEXBGS",
@@ -306,10 +284,8 @@
       "group": "fx",
       "description": "Trade-weighted dollar",
       "file": "DTWEXBGS.json",
-      "status": "ok",
-      "n_observations": 5116,
-      "start": "2006-01-02",
-      "end": "2026-05-29"
+      "status": "error",
+      "error": "The read operation timed out"
     },
     {
       "id": "DEXUSEU",
@@ -320,10 +296,8 @@
       "group": "fx",
       "description": "Headline USD/EUR",
       "file": "DEXUSEU.json",
-      "status": "ok",
-      "n_observations": 6369,
-      "start": "2001-01-02",
-      "end": "2026-05-29"
+      "status": "error",
+      "error": "The read operation timed out"
     },
     {
       "id": "DEXUSUK",
@@ -334,10 +308,8 @@
       "group": "fx",
       "description": "USD/GBP",
       "file": "DEXUSUK.json",
-      "status": "ok",
-      "n_observations": 6369,
-      "start": "2001-01-02",
-      "end": "2026-05-29"
+      "status": "error",
+      "error": "The read operation timed out"
     },
     {
       "id": "USREC",
@@ -348,10 +320,8 @@
       "group": "recession",
       "description": "For shading recession bands",
       "file": "USREC.json",
-      "status": "ok",
-      "n_observations": 305,
-      "start": "2001-01-01",
-      "end": "2026-05-01"
+      "status": "error",
+      "error": "The read operation timed out"
     },
     {
       "id": "UMCSENT",
