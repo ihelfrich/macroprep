@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-03T11:34:16+00:00",
+  "generated_at": "2026-06-04T10:20:52+00:00",
   "endpoint": "https://fred.stlouisfed.org/graph/fredgraph.csv",
   "n_series": 26,
   "series": [
@@ -26,8 +26,10 @@
       "group": "prices",
       "description": "Core inflation",
       "file": "CPILFESL.json",
-      "status": "error",
-      "error": "The read operation timed out"
+      "status": "ok",
+      "n_observations": 303,
+      "start": "2001-01-01",
+      "end": "2026-04-01"
     },
     {
       "id": "PCEPI",
@@ -52,8 +54,10 @@
       "group": "prices",
       "description": "Core PCE inflation",
       "file": "PCEPILFE.json",
-      "status": "error",
-      "error": "The read operation timed out"
+      "status": "ok",
+      "n_observations": 304,
+      "start": "2001-01-01",
+      "end": "2026-04-01"
     },
     {
       "id": "T5YIE",
@@ -128,8 +132,10 @@
       "group": "money",
       "description": "Broad money supply",
       "file": "M2SL.json",
-      "status": "error",
-      "error": "The read operation timed out"
+      "status": "ok",
+      "n_observations": 304,
+      "start": "2001-01-01",
+      "end": "2026-04-01"
     },
     {
       "id": "BAMLH0A0HYM2",
@@ -141,9 +147,9 @@
       "description": "Credit risk premium",
       "file": "BAMLH0A0HYM2.json",
       "status": "ok",
-      "n_observations": 785,
+      "n_observations": 786,
       "start": "2023-06-05",
-      "end": "2026-06-01"
+      "end": "2026-06-02"
     },
     {
       "id": "GDPC1",

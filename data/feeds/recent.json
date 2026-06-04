@@ -2,6 +2,38 @@
   {
     "source": "ECB — Press releases",
     "category": "monetary_policy_eu",
+    "title": "Christine Lagarde: Women and leadership: widening the pipeline",
+    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260604~f5d373b29f.en.html",
+    "date": "2026-06-04T08:00:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "EIA — Today in Energy",
+    "category": "energy",
+    "title": "U.S. natural gas storage capacity increased slightly in 2025",
+    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67745",
+    "date": "2026-06-03T14:00:00+00:00",
+    "summary": "Underground working natural gas storage capacity in the Lower 48 states increased slightly in 2025, according to our latest data, with growth concentrated in the South Central and Mountain regions. Underground natural gas storage provides a source of energy when demand increases, balancing U.S. energy needs. We calculate natural gas storage capacity in two ways: demonstrated peak capacity and wor…"
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "Piero Cipollone: Europe’s money evolves so people’s freedom to pay remains",
+    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260603_1~2801335beb.en.html",
+    "date": "2026-06-03T13:30:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Statistical Notice 2026/05 - Implementation of Bank of England Statistics Taxonomy v1.3.1",
+    "link": "https://www.bankofengland.co.uk/statistics/notice/2026/statistical-notice-2026-05",
+    "date": "2026-06-03T12:47:51+00:00",
+    "summary": "Statistical Notices update the definitions and guidance contained in the Banking Statistics Yellow Folder"
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
     "title": "Frank Elderson: Strengthening operational resilience for the age of AI",
     "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260603~5b8e67f237.en.html",
     "date": "2026-06-03T09:55:00+00:00",
@@ -30,6 +62,14 @@
     "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260602~101b71c594.en.html",
     "date": "2026-06-02T14:35:00+00:00",
     "summary": ""
+  },
+  {
+    "source": "EIA — Today in Energy",
+    "category": "energy",
+    "title": "California natural gas prices reach historic lows in early 2026",
+    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67744",
+    "date": "2026-06-02T14:00:00+00:00",
+    "summary": "Monthly average natural gas spot prices in California reached record lows in the first five months of 2026, dropping to values last recorded in the nationwide low-price market of 2024. Record lows were recorded in Northern California's PG&E Citygate and Southern California's SoCal Border Average; SoCal Citygate prices fell to near-record lows but remained higher than some 2024 prices. Several fac…"
   },
   {
     "source": "ECB — Press releases",
@@ -224,14 +264,6 @@
     "summary": ""
   },
   {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Isabel Schnabel: Interview with Reuters",
-    "link": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in260526~6736a05aaa.en.html",
-    "date": "2026-05-26T06:00:00+00:00",
-    "summary": ""
-  },
-  {
     "source": "Federal Reserve — All press releases",
     "category": "monetary_policy_us",
     "title": "Kevin Warsh takes oath of office as chairman and a member of the Board of Governors of the Federal Reserve System, and the Federal Open Market Committee unanimously selects Warsh as its chairman",
@@ -262,14 +294,6 @@
     "link": "https://www.eia.gov/todayinenergy/detail.php?id=67706",
     "date": "2026-05-22T14:00:00+00:00",
     "summary": "Against the backdrop of a nationwide increase in gasoline prices, regional dynamics including local supply and demand conditions, state fuel specifications, and state taxes influence the different prices drivers see at the pump."
-  },
-  {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates)",
-    "link": "https://www.ecb.europa.eu//press/govcdec/otherdec/2026/html/ecb.gc260522~a4812a8f23.en.html",
-    "date": "2026-05-22T13:00:00+00:00",
-    "summary": ""
   },
   {
     "source": "Federal Reserve — All press releases",
@@ -774,29 +798,5 @@
     "link": "https://www.bankofengland.co.uk/markets/market-notices/2026/march/update-to-discount-window-facility-pricing-market-notice-27-march-2026",
     "date": "2026-03-27T07:30:00+00:00",
     "summary": "The Bank is today announcing a simplification and reduction in the Discount Window Facility (DWF) pricing, as part of its previously announced review of the DWF."
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Bank of England streamlines reporting and disclosure requirements for bank failure regime",
-    "link": "https://www.bankofengland.co.uk/news/2026/march/boe-streamlines-reporting-and-disclosure-requirements-for-bank-failure-regime",
-    "date": "2026-03-26T10:00:00+00:00",
-    "summary": "The Bank of England and Prudential Regulation Authority have finalised a package of changes to firms’ resolution reporting and disclosure requirements which reduces the burden of regulation while maintaining a robust and credible regime that supports growth and competition."
-  },
-  {
-    "source": "BEA — News releases",
-    "category": "data_release_us",
-    "title": "U.S. International Transactions and Investment Position, 4th Quarter and Year 2025",
-    "link": "https://www.bea.gov",
-    "date": "2026-03-25T12:30:00+00:00",
-    "summary": "The U.S. current-account deficit resulting from international economic transactions narrowed by $48.4 billion, or 20.2 percent, to $190.7 billion in the fourth quarter of 2025, according to statistics released today by the U.S. Bureau of Economic Analysis. The revised third-quarter deficit was $239.1 billion. The fourth-quarter deficit was 2.4 percent of current-dollar gross domestic product, dow…"
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "PRA fines The Bank of London and its parent company Oplyse Holdings Limited £2m for failing to act with integrity and misleading the PRA over their capital position",
-    "link": "https://www.bankofengland.co.uk/news/2026/march/pra-fines-bol-and-oplyse-holdings",
-    "date": "2026-03-24T10:00:00+00:00",
-    "summary": "The Prudential Regulation Authority (PRA) has fined The Bank of London Group Limited and Oplyse Holdings Limited (formerly The Bank of London Group Holdings Limited) £2 million for misleading the PRA over their capital positions, failing to act with integrity, failing to be open and cooperative with the regulator and failing to maintain adequate financial resources."
   }
 ]
