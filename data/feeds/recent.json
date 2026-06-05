@@ -1,5 +1,21 @@
 [
   {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Bank of England and Financial Conduct Authority – Memorandum of Understanding on the supervision of Financial Market Infrastructure",
+    "link": "https://www.bankofengland.co.uk/news/2026/june/boe-and-fca-mou-on-supervision-of-financial-market-infrastructures",
+    "date": "2026-06-05T09:25:00+00:00",
+    "summary": "Joint statement from the Bank of England and Financial Conduct Authority"
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Minutes of the Synchronisation thematic engagement working group - 30 April 2026",
+    "link": "https://www.bankofengland.co.uk/minutes/2026/april/synchronisation-thematic-engagement-working-group",
+    "date": "2026-06-04T10:45:26+00:00",
+    "summary": "The latest meeting of the Synchronisation thematic engagement working group"
+  },
+  {
     "source": "ECB — Press releases",
     "category": "monetary_policy_eu",
     "title": "Christine Lagarde: Women and leadership: widening the pipeline",
@@ -782,21 +798,5 @@
     "link": "https://www.bankofengland.co.uk/financial-policy-committee-record/2026/april-2026",
     "date": "2026-04-01T09:30:00+00:00",
     "summary": "Our Financial Policy Committee (FPC) meets to identify risks to financial stability and agree policy actions aimed at safeguarding the resilience of the UK financial system."
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "The Bank and the PRA’s response to HMT, DSIT and DBT on AI in financial services",
-    "link": "https://www.bankofengland.co.uk/letter/2026/letter-from-sarah-breeden-sam-woods-to-chancellor",
-    "date": "2026-04-01T09:30:00+00:00",
-    "summary": "Letter from Sarah Breeden and Sam Woods to the Chancellor and Secretaries of State"
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Update to Discount Window Facility pricing – Market Notice 27 March 2026",
-    "link": "https://www.bankofengland.co.uk/markets/market-notices/2026/march/update-to-discount-window-facility-pricing-market-notice-27-march-2026",
-    "date": "2026-03-27T07:30:00+00:00",
-    "summary": "The Bank is today announcing a simplification and reduction in the Discount Window Facility (DWF) pricing, as part of its previously announced review of the DWF."
   }
 ]
