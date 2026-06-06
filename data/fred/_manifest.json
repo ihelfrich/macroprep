@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-05T10:35:57+00:00",
+  "generated_at": "2026-06-06T09:12:01+00:00",
   "endpoint": "https://fred.stlouisfed.org/graph/fredgraph.csv",
   "n_series": 26,
   "series": [
@@ -81,9 +81,9 @@
       "description": "Headline U-3",
       "file": "UNRATE.json",
       "status": "ok",
-      "n_observations": 303,
+      "n_observations": 304,
       "start": "2001-01-01",
-      "end": "2026-04-01"
+      "end": "2026-05-01"
     },
     {
       "id": "PAYEMS",
@@ -95,9 +95,9 @@
       "description": "Monthly jobs report headline",
       "file": "PAYEMS.json",
       "status": "ok",
-      "n_observations": 304,
+      "n_observations": 305,
       "start": "2001-01-01",
-      "end": "2026-04-01"
+      "end": "2026-05-01"
     },
     {
       "id": "CIVPART",
@@ -108,8 +108,10 @@
       "group": "labor",
       "description": "Share of working-age pop in labor force",
       "file": "CIVPART.json",
-      "status": "error",
-      "error": "The read operation timed out"
+      "status": "ok",
+      "n_observations": 304,
+      "start": "2001-01-01",
+      "end": "2026-05-01"
     },
     {
       "id": "ICSA",
@@ -148,8 +150,8 @@
       "file": "BAMLH0A0HYM2.json",
       "status": "ok",
       "n_observations": 787,
-      "start": "2023-06-05",
-      "end": "2026-06-03"
+      "start": "2023-06-06",
+      "end": "2026-06-04"
     },
     {
       "id": "GDPC1",
@@ -278,8 +280,10 @@
       "group": "rates",
       "description": "Household borrowing cost",
       "file": "MORTGAGE30US.json",
-      "status": "error",
-      "error": "The read operation timed out"
+      "status": "ok",
+      "n_observations": 1327,
+      "start": "2001-01-05",
+      "end": "2026-06-04"
     },
     {
       "id": "DTWEXBGS",

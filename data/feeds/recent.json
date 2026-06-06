@@ -1,5 +1,13 @@
 [
   {
+    "source": "EIA — Today in Energy",
+    "category": "energy",
+    "title": "China's nuclear power capacity nearly doubled since 2016",
+    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67746",
+    "date": "2026-06-05T14:00:00+00:00",
+    "summary": "From 2016 to 2024, China's nuclear generation capacity increased 76% (24 GW), based on our International Energy Statistics (IES) data. According to the International Atomic Energy Agency's Power Reactor Information System (PRIS), China added an additional 1.1 GW of nuclear power capacity in 2025 and 2.2 GW in 2026 (through May). China is continuing to build out its nuclear generating capacity and…"
+  },
+  {
     "source": "Bank of England — News",
     "category": "monetary_policy_uk",
     "title": "Bank of England and Financial Conduct Authority – Memorandum of Understanding on the supervision of Financial Market Infrastructure",
@@ -790,13 +798,5 @@
     "link": "https://www.bankofengland.co.uk/news/2026/april/changes-to-publication-dates-of-the-decision-maker-panel-data-and-agents-summary",
     "date": "2026-04-02T08:30:00+00:00",
     "summary": "We are changing the publication dates of the Decision Maker Panel and Agents’ summary of business conditions so that they no longer fall on the same day as publication of the Monetary Policy Report"
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Financial Policy Committee Record – April 2026",
-    "link": "https://www.bankofengland.co.uk/financial-policy-committee-record/2026/april-2026",
-    "date": "2026-04-01T09:30:00+00:00",
-    "summary": "Our Financial Policy Committee (FPC) meets to identify risks to financial stability and agree policy actions aimed at safeguarding the resilience of the UK financial system."
   }
 ]
