@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06T09:12:01+00:00",
+  "generated_at": "2026-06-07T09:48:58+00:00",
   "endpoint": "https://fred.stlouisfed.org/graph/fredgraph.csv",
   "n_series": 26,
   "series": [
@@ -122,8 +122,10 @@
       "group": "labor",
       "description": "Weekly high-frequency labor signal",
       "file": "ICSA.json",
-      "status": "error",
-      "error": "The read operation timed out"
+      "status": "ok",
+      "n_observations": 1326,
+      "start": "2001-01-06",
+      "end": "2026-05-30"
     },
     {
       "id": "M2SL",
@@ -280,10 +282,8 @@
       "group": "rates",
       "description": "Household borrowing cost",
       "file": "MORTGAGE30US.json",
-      "status": "ok",
-      "n_observations": 1327,
-      "start": "2001-01-05",
-      "end": "2026-06-04"
+      "status": "error",
+      "error": "The read operation timed out"
     },
     {
       "id": "DTWEXBGS",
