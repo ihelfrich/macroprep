@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-07T09:48:58+00:00",
+  "generated_at": "2026-06-08T11:31:56+00:00",
   "endpoint": "https://fred.stlouisfed.org/graph/fredgraph.csv",
   "n_series": 26,
   "series": [
@@ -122,10 +122,8 @@
       "group": "labor",
       "description": "Weekly high-frequency labor signal",
       "file": "ICSA.json",
-      "status": "ok",
-      "n_observations": 1326,
-      "start": "2001-01-06",
-      "end": "2026-05-30"
+      "status": "error",
+      "error": "The read operation timed out"
     },
     {
       "id": "M2SL",
@@ -192,10 +190,8 @@
       "group": "gdp",
       "description": "Monthly real-economy proxy",
       "file": "INDPRO.json",
-      "status": "ok",
-      "n_observations": 304,
-      "start": "2001-01-01",
-      "end": "2026-04-01"
+      "status": "error",
+      "error": "The read operation timed out"
     },
     {
       "id": "RSAFS",
