@@ -1,5 +1,13 @@
 [
   {
+    "source": "EIA — Today in Energy",
+    "category": "energy",
+    "title": "U.S. jet fuel production rises after prices doubled in March",
+    "link": "https://www.eia.gov/todayinenergy/detail.php?id=",
+    "date": "2026-06-08T14:00:00+00:00",
+    "summary": "Weekly estimates suggest U.S. jet fuel production has increased to record highs in response to elevated jet fuel prices after the Strait of Hormuz closed on February 28. Higher crude oil prices and supply concerns, particularly in Europe and Asia, which previously imported much of their jet fuel supply from the Persian Gulf, have driven up jet fuel prices. Much of the increased U.S. jet fuel prod…"
+  },
+  {
     "source": "ECB — Press releases",
     "category": "monetary_policy_eu",
     "title": "ECB announces main milestones for roll-out of Integrated Reporting Framework",
@@ -790,13 +798,5 @@
     "link": "https://www.bankofengland.co.uk/minutes/2026/march/money-markets-committee-minutes-march-2026",
     "date": "2026-04-02T11:39:00+00:00",
     "summary": "The Money Markets Committee is a forum for market participants and authorities to discuss the UK unsecured deposits and funding market and securities lending and repo markets."
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Changes to publication dates of the Decision Maker Panel data and Agents’ summary of business conditions",
-    "link": "https://www.bankofengland.co.uk/news/2026/april/changes-to-publication-dates-of-the-decision-maker-panel-data-and-agents-summary",
-    "date": "2026-04-02T08:30:00+00:00",
-    "summary": "We are changing the publication dates of the Decision Maker Panel and Agents’ summary of business conditions so that they no longer fall on the same day as publication of the Monetary Policy Report"
   }
 ]
