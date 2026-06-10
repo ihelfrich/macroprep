@@ -1,5 +1,21 @@
 [
   {
+    "source": "Federal Reserve — All press releases",
+    "category": "monetary_policy_us",
+    "title": "Federal Reserve Board announces that results from its annual bank stress test will be released on Wednesday, June 24, at 4 p.m. EDT.",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260609a.htm",
+    "date": "2026-06-09T20:00:00+00:00",
+    "summary": "Federal Reserve Board announces that results from its annual bank stress test will be released on Wednesday, June 24, at 4 p.m. EDT."
+  },
+  {
+    "source": "BEA — News releases",
+    "category": "data_release_us",
+    "title": "U.S. International Trade in Goods and Services, April 2026",
+    "link": "https://www.bea.gov/news/2026/us-international-trade-goods-and-services-april-2026",
+    "date": "2026-06-09T12:30:00+00:00",
+    "summary": "The U.S. monthly international trade deficit decreased in April 2026 according to the U.S. Bureau of Economic Analysis and the U.S. Census Bureau. The deficit decreased from $56.6 billion in March (revised) to $55.9 billion in April, as exports increased more than imports. The goods deficit decreased $2.4 billion in April to $83.7 billion. The services surplus decreased $1.7 billion in April to $…"
+  },
+  {
     "source": "EIA — Today in Energy",
     "category": "energy",
     "title": "U.S. jet fuel production rises after prices doubled in March",
@@ -592,14 +608,6 @@
     "summary": "Commercial electricity sales in Virginia increased by nearly 30.0 million megawatthours (MWh) between 2019 and 2025, much faster growth than in any other state except Texas, a much larger state, according to our Annual Electric Power Industry Report. The growth in sales of electricity in Virginia is largely driven by a concentration of data centers, as well as electric vehicle adoption and buildi…"
   },
   {
-    "source": "BEA — News releases",
-    "category": "data_release_us",
-    "title": "U.S. International Trade in Goods and Services, March 2026",
-    "link": "https://www.bea.gov/news/2026/us-international-trade-goods-and-services-march-2026",
-    "date": "2026-05-05T12:30:00+00:00",
-    "summary": "The U.S. monthly international trade deficit increased in March 2026 according to the U.S. Bureau of Economic Analysis and the U.S. Census Bureau. The deficit increased from $57.8 billion in February (revised) to $60.3 billion in March, as imports increased more than exports. The goods deficit increased $4.1 billion in March to $88.7 billion. The services surplus increased $1.6 billion in March t…"
-  },
-  {
     "source": "Bank of England — News",
     "category": "monetary_policy_uk",
     "title": "Exchange of letters between the Governor and the Chancellor on the Asset Purchase Facility - May 2026",
@@ -678,14 +686,6 @@
     "link": "https://www.bankofengland.co.uk/statistics/notice/2026/statistical-notice-2026-03",
     "date": "2026-04-28T12:40:43+00:00",
     "summary": "Statistical Notices update the definitions and guidance contained in the Banking Statistics Yellow Folder"
-  },
-  {
-    "source": "Federal Reserve — All press releases",
-    "category": "monetary_policy_us",
-    "title": "Federal Reserve Board announces approval of application by OceanFirst Financial Corp.",
-    "link": "https://www.federalreserve.gov/newsevents/pressreleases/orders20260424a.htm",
-    "date": "2026-04-24T20:00:00+00:00",
-    "summary": "Federal Reserve Board announces approval of application by OceanFirst Financial Corp."
   },
   {
     "source": "Bank of England — News",
