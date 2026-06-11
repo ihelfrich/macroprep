@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-10T10:44:46+00:00",
+  "generated_at": "2026-06-11T11:11:00+00:00",
   "endpoint": "https://fred.stlouisfed.org/graph/fredgraph.csv",
   "n_series": 26,
   "series": [
@@ -13,9 +13,9 @@
       "description": "Headline CPI",
       "file": "CPIAUCSL.json",
       "status": "ok",
-      "n_observations": 303,
+      "n_observations": 304,
       "start": "2001-01-01",
-      "end": "2026-04-01"
+      "end": "2026-05-01"
     },
     {
       "id": "CPILFESL",
@@ -27,9 +27,9 @@
       "description": "Core inflation",
       "file": "CPILFESL.json",
       "status": "ok",
-      "n_observations": 303,
+      "n_observations": 304,
       "start": "2001-01-01",
-      "end": "2026-04-01"
+      "end": "2026-05-01"
     },
     {
       "id": "PCEPI",
@@ -149,9 +149,9 @@
       "description": "Credit risk premium",
       "file": "BAMLH0A0HYM2.json",
       "status": "ok",
-      "n_observations": 785,
+      "n_observations": 786,
       "start": "2023-06-12",
-      "end": "2026-06-08"
+      "end": "2026-06-09"
     },
     {
       "id": "GDPC1",

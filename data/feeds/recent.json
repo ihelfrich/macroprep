@@ -1,5 +1,29 @@
 [
   {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "Frank Elderson: Interview with Het Financieele Dagblad",
+    "link": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in260610~439aa97519.en.html",
+    "date": "2026-06-10T14:00:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "EIA — Today in Energy",
+    "category": "energy",
+    "title": "Higher blending targets drive RIN prices close to record highs",
+    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67765",
+    "date": "2026-06-10T14:00:00+00:00",
+    "summary": "Compliance credits for biomass-based diesel and ethanol have doubled in value since the start of this year. The credits, known as renewable identification numbers (RINs), have increased in price, mostly because of higher U.S. biofuel blending targets. The combination of high RIN prices and rising motor gasoline and diesel fuel prices has created an especially favorable market for producing and bl…"
+  },
+  {
+    "source": "BEA — News releases",
+    "category": "data_release_us",
+    "title": "New Foreign Direct Investment in the United States, 2025",
+    "link": "https://www.bea.gov/news/2026/new-foreign-direct-investment-united-states-2025",
+    "date": "2026-06-10T12:30:00+00:00",
+    "summary": "Expenditures by foreign direct investors to acquire, establish, or expand U.S. businesses totaled $232.2 billion in 2025, according to preliminary statistics released today by the U.S. Bureau of Economic Analysis. Expenditures increased $76.8 billion, or 49.5 percent, from 2024 levels. As in previous years, acquisitions of existing U.S. businesses accounted for most of the expenditures. Acquisiti…"
+  },
+  {
     "source": "Federal Reserve — All press releases",
     "category": "monetary_policy_us",
     "title": "Federal Reserve Board announces that results from its annual bank stress test will be released on Wednesday, June 24, at 4 p.m. EDT.",
@@ -19,7 +43,7 @@
     "source": "EIA — Today in Energy",
     "category": "energy",
     "title": "U.S. jet fuel production rises after prices doubled in March",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=",
+    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67764",
     "date": "2026-06-08T14:00:00+00:00",
     "summary": "Weekly estimates suggest U.S. jet fuel production has increased to record highs in response to elevated jet fuel prices after the Strait of Hormuz closed on February 28. Higher crude oil prices and supply concerns, particularly in Europe and Asia, which previously imported much of their jet fuel supply from the Persian Gulf, have driven up jet fuel prices. Much of the increased U.S. jet fuel prod…"
   },
@@ -276,14 +300,6 @@
     "category": "monetary_policy_eu",
     "title": "Luis de Guindos: Financial Stability Review - May 2026",
     "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260527~bc724e42c1.en.pdf",
-    "date": "2026-05-27T08:00:00+00:00",
-    "summary": ""
-  },
-  {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Financial stability vulnerabilities remain elevated as geoeconomic shock unfolds",
-    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260527~92140c5054.en.html",
     "date": "2026-05-27T08:00:00+00:00",
     "summary": ""
   },
@@ -782,21 +798,5 @@
     "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260408a.htm",
     "date": "2026-04-08T18:00:00+00:00",
     "summary": "Minutes of the Federal Open Market Committee, March 17–18, 2026"
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Minutes: CBDC Academic Advisory Group - January 2026",
-    "link": "https://www.bankofengland.co.uk/minutes/2026/january/cbdc-academic-advisory-group-january-2026",
-    "date": "2026-04-02T13:05:00+00:00",
-    "summary": "Meeting of the CBDC Academic Advisory Group"
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Minutes of the Money Market Committee meeting – March 2026",
-    "link": "https://www.bankofengland.co.uk/minutes/2026/march/money-markets-committee-minutes-march-2026",
-    "date": "2026-04-02T11:39:00+00:00",
-    "summary": "The Money Markets Committee is a forum for market participants and authorities to discuss the UK unsecured deposits and funding market and securities lending and repo markets."
   }
 ]
