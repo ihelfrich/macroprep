@@ -2,6 +2,46 @@
   {
     "source": "ECB — Press releases",
     "category": "monetary_policy_eu",
+    "title": "EU structural financial indicators: end of 2025",
+    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260612~ab34769159.en.html",
+    "date": "2026-06-12T08:00:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Changes to collateral eligibility in the Sterling Monetary Framework - Market Notice 11 June 2026",
+    "link": "https://www.bankofengland.co.uk/markets/market-notices/2026/june/collateral-eligibility-in-the-smf-11-june-2026",
+    "date": "2026-06-11T16:00:00+00:00",
+    "summary": "This Market Notice covers changes to the Bank’s collateral eligibility framework for the Sterling Monetary Framework (SMF)."
+  },
+  {
+    "source": "Federal Reserve — All press releases",
+    "category": "monetary_policy_us",
+    "title": "Federal Reserve Board announces final rule that establishes data standards for certain information collections",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260611a.htm",
+    "date": "2026-06-11T15:00:00+00:00",
+    "summary": "Federal Reserve Board announces final rule that establishes data standards for certain information collections"
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "Christine Lagarde, Boris Vujčić: Monetary policy statement (with Q&A)",
+    "link": "https://www.ecb.europa.eu//press/press_conference/monetary-policy-statement/2026/html/ecb.is260611~372040d313.en.html",
+    "date": "2026-06-11T13:00:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "Monetary policy decisions",
+    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.mp260611~4d41bd5e83.en.html",
+    "date": "2026-06-11T12:15:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
     "title": "Frank Elderson: Interview with Het Financieele Dagblad",
     "link": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in260610~439aa97519.en.html",
     "date": "2026-06-10T14:00:00+00:00",
@@ -256,22 +296,6 @@
     "summary": ""
   },
   {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Piero Cipollone: Money in the digital age",
-    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260528_1~7bb2eecfe5.en.html",
-    "date": "2026-05-28T08:30:00+00:00",
-    "summary": ""
-  },
-  {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Christine Lagarde: When It Matters Most: Upholding Independence in Challenging Times",
-    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260528~0cb263f599.en.html",
-    "date": "2026-05-28T07:10:00+00:00",
-    "summary": ""
-  },
-  {
     "source": "Federal Reserve — Speeches",
     "category": "speeches",
     "title": "Jefferson, Global Economic Developments and the U.S. Economy",
@@ -294,14 +318,6 @@
     "link": "https://www.eia.gov/todayinenergy/detail.php?id=67724",
     "date": "2026-05-27T14:00:00+00:00",
     "summary": "Total energy exports from the United States reached a record 31 quadrillion British thermal units (quads) in 2025, 2% more than the previous record set in 2024. U.S. energy imports were 21 quads, down 5% from 2024. Taken together, net trade—total imports less total exports—reached 11 quads of net exports in 2025, a record and 20% more net exports than the previous record set in 2024."
-  },
-  {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Luis de Guindos: Financial Stability Review - May 2026",
-    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260527~bc724e42c1.en.pdf",
-    "date": "2026-05-27T08:00:00+00:00",
-    "summary": ""
   },
   {
     "source": "Federal Reserve — All press releases",
@@ -672,14 +688,6 @@
     "summary": "The Bank of England’s Monetary Policy Committee is responsible for making decisions about Bank Rate."
   },
   {
-    "source": "Federal Reserve — All press releases",
-    "category": "monetary_policy_us",
-    "title": "Federal Reserve issues FOMC statement",
-    "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260429a.htm",
-    "date": "2026-04-29T18:00:00+00:00",
-    "summary": "Federal Reserve issues FOMC statement"
-  },
-  {
     "source": "Federal Reserve — Monetary policy",
     "category": "fomc",
     "title": "Federal Reserve issues FOMC statement",
@@ -790,13 +798,5 @@
     "link": "https://www.bankofengland.co.uk/news/2026/april/boe-enhances-resolution-readiness-with-updated-operational-guides",
     "date": "2026-04-13T10:00:00+00:00",
     "summary": "The Bank of England has today published new and updated guidance on how the Bank might implement the UK’s resolution regime in the event of a bank failure."
-  },
-  {
-    "source": "Federal Reserve — Monetary policy",
-    "category": "fomc",
-    "title": "Minutes of the Federal Open Market Committee, March 17–18, 2026",
-    "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260408a.htm",
-    "date": "2026-04-08T18:00:00+00:00",
-    "summary": "Minutes of the Federal Open Market Committee, March 17–18, 2026"
   }
 ]
