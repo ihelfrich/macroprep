@@ -1,5 +1,21 @@
 [
   {
+    "source": "EIA — Today in Energy",
+    "category": "energy",
+    "title": "Largest wind farm in the United States slated to begin commercial operations",
+    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67766",
+    "date": "2026-06-12T14:00:00+00:00",
+    "summary": "The SunZia Wind Project, the largest wind farm in the United States, is slated to begin commercial operations this month. The wind farm, located in New Mexico, has a total net summer generating capacity of 3,650 megawatts (MW) and is composed of 916 wind turbines. SunZia's capacity is more than three times larger than the next two largest wind farms, Alta Wind in Southern California (1,098 MW) an…"
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates)",
+    "link": "https://www.ecb.europa.eu//press/govcdec/otherdec/2026/html/ecb.gc260612~12de4776f6.en.html",
+    "date": "2026-06-12T13:00:00+00:00",
+    "summary": ""
+  },
+  {
     "source": "ECB — Press releases",
     "category": "monetary_policy_eu",
     "title": "EU structural financial indicators: end of 2025",
@@ -286,14 +302,6 @@
     "link": "https://www.bea.gov/news/2026/personal-income-and-outlays-april-2026",
     "date": "2026-05-28T12:30:00+00:00",
     "summary": "Personal income decreased less than $0.1 billion (less than 0.1 percent at a monthly rate) in April, according to estimates released today by the U.S. Bureau of Economic Analysis (BEA). Disposable personal income (DPI)-personal income less personal current taxes-decreased $19.9 billion (0.1 percent), and personal consumption expenditures (PCE) increased $111.1 billion (0.5 percent). Personal outl…"
-  },
-  {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Meeting of 29-30 April 2026",
-    "link": "https://www.ecb.europa.eu//press/accounts/2026/html/ecb.mg260528~a93230dc4b.en.html",
-    "date": "2026-05-28T11:30:00+00:00",
-    "summary": ""
   },
   {
     "source": "Federal Reserve — Speeches",
@@ -746,7 +754,7 @@
   {
     "source": "Bank of England — News",
     "category": "monetary_policy_uk",
-    "title": "Banknote imagery advisory group minutes - October 2025",
+    "title": "Banknote imagery advisory group minutes - 14 October 2025",
     "link": "https://www.bankofengland.co.uk/minutes/2025/october/banknote-advisory-group-14october",
     "date": "2026-04-17T12:15:00+00:00",
     "summary": "Meeting held 14 October 2025"
@@ -754,7 +762,7 @@
   {
     "source": "Bank of England — News",
     "category": "monetary_policy_uk",
-    "title": "Banknotes imagery advisory group minutes - August 2025",
+    "title": "Banknotes imagery advisory group minutes - 5 August 2025",
     "link": "https://www.bankofengland.co.uk/minutes/2025/august/banknote-advisory-minutes",
     "date": "2026-04-17T12:15:00+00:00",
     "summary": "Meeting held 5 August 2025"
@@ -790,13 +798,5 @@
     "link": "https://www.bankofengland.co.uk/minutes/2025/november/fxjsc-main-committee-meeting-24-november-2025",
     "date": "2026-04-13T14:15:00+00:00",
     "summary": "The Bank of England chairs the London Foreign Exchange Joint Standing Committee (FXJSC), which is a forum for discussion of the wholesale foreign exchange market. The FXJSC is made up of market participants, infrastructure providers and the UK financial regulators."
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Bank of England enhances resolution readiness with updated operational guides",
-    "link": "https://www.bankofengland.co.uk/news/2026/april/boe-enhances-resolution-readiness-with-updated-operational-guides",
-    "date": "2026-04-13T10:00:00+00:00",
-    "summary": "The Bank of England has today published new and updated guidance on how the Bank might implement the UK’s resolution regime in the event of a bank failure."
   }
 ]
