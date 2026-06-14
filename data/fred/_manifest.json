@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-13T09:49:38+00:00",
+  "generated_at": "2026-06-14T10:06:27+00:00",
   "endpoint": "https://fred.stlouisfed.org/graph/fredgraph.csv",
   "n_series": 26,
   "series": [
@@ -280,8 +280,10 @@
       "group": "rates",
       "description": "Household borrowing cost",
       "file": "MORTGAGE30US.json",
-      "status": "error",
-      "error": "The read operation timed out"
+      "status": "ok",
+      "n_observations": 1328,
+      "start": "2001-01-05",
+      "end": "2026-06-11"
     },
     {
       "id": "DTWEXBGS",
@@ -328,8 +330,10 @@
       "group": "recession",
       "description": "For shading recession bands",
       "file": "USREC.json",
-      "status": "error",
-      "error": "The read operation timed out"
+      "status": "ok",
+      "n_observations": 305,
+      "start": "2001-01-01",
+      "end": "2026-05-01"
     },
     {
       "id": "UMCSENT",
