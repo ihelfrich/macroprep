@@ -1,5 +1,61 @@
 [
   {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "Carbon emissions of ECB and Eurosystem portfolios continue to decline",
+    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260615~92388776dd.en.html",
+    "date": "2026-06-15T09:00:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Banknote imagery advisory group minutes – 15 December 2025",
+    "link": "https://www.bankofengland.co.uk/minutes/2025/december/banknote-advisory-minutes-15-december",
+    "date": "2026-06-15T09:00:00+00:00",
+    "summary": "Meeting held 15 December 2025"
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Banknote imagery expert panel minutes – 10 March 2026",
+    "link": "https://www.bankofengland.co.uk/minutes/2026/march/banknote-expert-minutes-10-march",
+    "date": "2026-06-15T08:00:00+00:00",
+    "summary": "Meeting held 10 March 2026"
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Banknote imagery expert panel minutes – 15 April 2026",
+    "link": "https://www.bankofengland.co.uk/minutes/2026/april/banknote-advisory-minutes-15-april",
+    "date": "2026-06-15T08:00:00+00:00",
+    "summary": "Meeting held 15 April 2026"
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Banknote imagery expert panel minutes – 24 April 2026",
+    "link": "https://www.bankofengland.co.uk/minutes/2026/april/banknote-expert-minutes-24-april",
+    "date": "2026-06-15T08:00:00+00:00",
+    "summary": "Meeting held 24 April 2026"
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Banknote imagery advisory group minutes – 29 April 2026",
+    "link": "https://www.bankofengland.co.uk/minutes/2026/april/banknote-advisory-minutes-29-april",
+    "date": "2026-06-15T08:00:00+00:00",
+    "summary": "Meeting held 29 April 2026"
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "Christine Lagarde: Money in transition",
+    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260615~35e6c6c4de.en.html",
+    "date": "2026-06-15T07:30:00+00:00",
+    "summary": ""
+  },
+  {
     "source": "EIA — Today in Energy",
     "category": "energy",
     "title": "Largest wind farm in the United States slated to begin commercial operations",
@@ -248,28 +304,12 @@
     "summary": ""
   },
   {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Luis de Guindos: Interview with Expansión",
-    "link": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in260531~f648dbde70.en.html",
-    "date": "2026-05-31T14:00:00+00:00",
-    "summary": ""
-  },
-  {
     "source": "Federal Reserve — Speeches",
     "category": "speeches",
     "title": "Bowman, A Framework for Practical Monetary Policy Decision Making",
     "link": "https://www.federalreserve.gov/newsevents/speech/bowman20260529a.htm",
     "date": "2026-05-29T13:10:00+00:00",
     "summary": "Speech At the Reykjav&iacute;k Economic Conference 2026, Central Bank of Iceland, Reykjav&iacute;k, Iceland"
-  },
-  {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "ECB appoints three Directors General",
-    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260529~2699fd8390.en.html",
-    "date": "2026-05-29T00:00:00+00:00",
-    "summary": ""
   },
   {
     "source": "Federal Reserve — All press releases",
@@ -758,45 +798,5 @@
     "link": "https://www.bankofengland.co.uk/minutes/2025/october/banknote-advisory-group-14october",
     "date": "2026-04-17T12:15:00+00:00",
     "summary": "Meeting held 14 October 2025"
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Banknotes imagery advisory group minutes - 5 August 2025",
-    "link": "https://www.bankofengland.co.uk/minutes/2025/august/banknote-advisory-minutes",
-    "date": "2026-04-17T12:15:00+00:00",
-    "summary": "Meeting held 5 August 2025"
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Artificial Intelligence Consortium minutes – February 2026",
-    "link": "https://www.bankofengland.co.uk/minutes/2026/february/ai-consortium-minutes-9-february-2026",
-    "date": "2026-04-16T09:24:13+00:00",
-    "summary": "The Artificial Intelligence Consortium (AIC) aims to provide a platform for public-private engagement to further dialogue on the capabilities, development, deployment, use, and potential risks of artificial intelligence (AI) in UK financial services."
-  },
-  {
-    "source": "Federal Reserve — Monetary policy",
-    "category": "fomc",
-    "title": "Minutes of the Board’s discount rate meetings on February 9 and March 18, 2026",
-    "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260414a.htm",
-    "date": "2026-04-14T18:00:00+00:00",
-    "summary": "Minutes of the Board’s discount rate meetings on February 9 and March 18, 2026"
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "FXJSC Combined Operations and Legal Sub-Committee Meeting",
-    "link": "https://www.bankofengland.co.uk/minutes/2025/november/minutes",
-    "date": "2026-04-13T14:15:00+00:00",
-    "summary": "The Bank of England chairs the London Foreign Exchange Joint Standing Committee (FXJSC) Operations and Legal Sub-Committees. The FXJSC is made up of market participants, infrastructure providers and the UK financial regulators."
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Minutes of the London FXJSC Main Committee Meeting – 27 November 2025",
-    "link": "https://www.bankofengland.co.uk/minutes/2025/november/fxjsc-main-committee-meeting-24-november-2025",
-    "date": "2026-04-13T14:15:00+00:00",
-    "summary": "The Bank of England chairs the London Foreign Exchange Joint Standing Committee (FXJSC), which is a forum for discussion of the wholesale foreign exchange market. The FXJSC is made up of market participants, infrastructure providers and the UK financial regulators."
   }
 ]
