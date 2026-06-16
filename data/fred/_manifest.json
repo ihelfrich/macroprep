@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-15T12:53:57+00:00",
+  "generated_at": "2026-06-16T11:46:41+00:00",
   "endpoint": "https://fred.stlouisfed.org/graph/fredgraph.csv",
   "n_series": 26,
   "series": [
@@ -149,9 +149,9 @@
       "description": "Credit risk premium",
       "file": "BAMLH0A0HYM2.json",
       "status": "ok",
-      "n_observations": 787,
-      "start": "2023-06-13",
-      "end": "2026-06-11"
+      "n_observations": 785,
+      "start": "2023-06-16",
+      "end": "2026-06-12"
     },
     {
       "id": "GDPC1",
@@ -190,8 +190,10 @@
       "group": "gdp",
       "description": "Monthly real-economy proxy",
       "file": "INDPRO.json",
-      "status": "error",
-      "error": "The read operation timed out"
+      "status": "ok",
+      "n_observations": 305,
+      "start": "2001-01-01",
+      "end": "2026-05-01"
     },
     {
       "id": "RSAFS",
