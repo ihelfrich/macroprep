@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-16T11:46:41+00:00",
+  "generated_at": "2026-06-17T11:20:24+00:00",
   "endpoint": "https://fred.stlouisfed.org/graph/fredgraph.csv",
   "n_series": 26,
   "series": [
@@ -68,8 +68,10 @@
       "group": "prices",
       "description": "Market-implied 5y inflation expectations",
       "file": "T5YIE.json",
-      "status": "error",
-      "error": "The read operation timed out"
+      "status": "ok",
+      "n_observations": 5868,
+      "start": "2003-01-02",
+      "end": "2026-06-16"
     },
     {
       "id": "UNRATE",
@@ -122,8 +124,10 @@
       "group": "labor",
       "description": "Weekly high-frequency labor signal",
       "file": "ICSA.json",
-      "status": "error",
-      "error": "The read operation timed out"
+      "status": "ok",
+      "n_observations": 1327,
+      "start": "2001-01-06",
+      "end": "2026-06-06"
     },
     {
       "id": "M2SL",
@@ -150,8 +154,8 @@
       "file": "BAMLH0A0HYM2.json",
       "status": "ok",
       "n_observations": 785,
-      "start": "2023-06-16",
-      "end": "2026-06-12"
+      "start": "2023-06-19",
+      "end": "2026-06-15"
     },
     {
       "id": "GDPC1",
@@ -218,8 +222,10 @@
       "group": "rates",
       "description": "Overnight policy rate",
       "file": "DFF.json",
-      "status": "error",
-      "error": "The read operation timed out"
+      "status": "ok",
+      "n_observations": 9297,
+      "start": "2001-01-01",
+      "end": "2026-06-15"
     },
     {
       "id": "FEDFUNDS",
@@ -244,8 +250,10 @@
       "group": "rates",
       "description": "Benchmark long rate",
       "file": "DGS10.json",
-      "status": "error",
-      "error": "The read operation timed out"
+      "status": "ok",
+      "n_observations": 6365,
+      "start": "2001-01-02",
+      "end": "2026-06-15"
     },
     {
       "id": "DGS2",
@@ -256,8 +264,10 @@
       "group": "rates",
       "description": "Short-end policy-sensitive yield",
       "file": "DGS2.json",
-      "status": "error",
-      "error": "The read operation timed out"
+      "status": "ok",
+      "n_observations": 6365,
+      "start": "2001-01-02",
+      "end": "2026-06-15"
     },
     {
       "id": "T10Y2Y",
@@ -268,8 +278,10 @@
       "group": "rates",
       "description": "Term spread / classic recession indicator",
       "file": "T10Y2Y.json",
-      "status": "error",
-      "error": "The read operation timed out"
+      "status": "ok",
+      "n_observations": 6366,
+      "start": "2001-01-02",
+      "end": "2026-06-16"
     },
     {
       "id": "MORTGAGE30US",
@@ -280,8 +292,10 @@
       "group": "rates",
       "description": "Household borrowing cost",
       "file": "MORTGAGE30US.json",
-      "status": "error",
-      "error": "The read operation timed out"
+      "status": "ok",
+      "n_observations": 1328,
+      "start": "2001-01-05",
+      "end": "2026-06-11"
     },
     {
       "id": "DTWEXBGS",
@@ -292,8 +306,10 @@
       "group": "fx",
       "description": "Trade-weighted dollar",
       "file": "DTWEXBGS.json",
-      "status": "error",
-      "error": "The read operation timed out"
+      "status": "ok",
+      "n_observations": 5126,
+      "start": "2006-01-02",
+      "end": "2026-06-12"
     },
     {
       "id": "DEXUSEU",
@@ -304,8 +320,10 @@
       "group": "fx",
       "description": "Headline USD/EUR",
       "file": "DEXUSEU.json",
-      "status": "error",
-      "error": "The read operation timed out"
+      "status": "ok",
+      "n_observations": 6379,
+      "start": "2001-01-02",
+      "end": "2026-06-12"
     },
     {
       "id": "DEXUSUK",
@@ -316,8 +334,10 @@
       "group": "fx",
       "description": "USD/GBP",
       "file": "DEXUSUK.json",
-      "status": "error",
-      "error": "The read operation timed out"
+      "status": "ok",
+      "n_observations": 6379,
+      "start": "2001-01-02",
+      "end": "2026-06-12"
     },
     {
       "id": "USREC",
@@ -328,8 +348,10 @@
       "group": "recession",
       "description": "For shading recession bands",
       "file": "USREC.json",
-      "status": "error",
-      "error": "The read operation timed out"
+      "status": "ok",
+      "n_observations": 305,
+      "start": "2001-01-01",
+      "end": "2026-05-01"
     },
     {
       "id": "UMCSENT",

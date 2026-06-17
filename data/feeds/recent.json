@@ -1,5 +1,45 @@
 [
   {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Announcement of the publication of the Governor's interview transcript",
+    "link": "https://www.bankofengland.co.uk/news/2026/june/statement-announcing-governors-interview",
+    "date": "2026-06-17T09:00:00+00:00",
+    "summary": "Statement from the Bank of England"
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "New data release: ECB wage tracker points to stable negotiated wage pressures in 2026",
+    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260617~79dfc49802.en.html",
+    "date": "2026-06-17T08:00:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "EIA — Today in Energy",
+    "category": "energy",
+    "title": "Solar generation in CAISO surpassed natural gas in the first five months of 2026",
+    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67784",
+    "date": "2026-06-16T14:00:00+00:00",
+    "summary": "In the first five months of 2026, utility-scale solar generation surpassed natural gas generation in CAISO. Solar electricity generation in the California Independent System Operator (CAISO) over the first five months of 2026 increased 21% compared with the same period in 2024, and natural gas generation decreased by 60%, data from our Hourly Electric Grid Monitor shows."
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "Philip R. Lane: Outlook for the euro area economy",
+    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260616~8076dabd2c.en.pdf",
+    "date": "2026-06-16T13:10:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Summary of the RTGS CHAPS Industry Forum",
+    "link": "https://www.bankofengland.co.uk/minutes/2026/june/rtgs-chaps-industry-forum-4-june-2026",
+    "date": "2026-06-15T13:15:24+00:00",
+    "summary": "The first meeting of the RTGS CHAPS Industry Forum"
+  },
+  {
     "source": "ECB — Press releases",
     "category": "monetary_policy_eu",
     "title": "Carbon emissions of ECB and Eurosystem portfolios continue to decline",
@@ -280,28 +320,12 @@
     "summary": ""
   },
   {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "ECB Consumer Expectations Survey results – April 2026",
-    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260601~bf8026bfc2.en.html",
-    "date": "2026-06-01T08:00:00+00:00",
-    "summary": ""
-  },
-  {
     "source": "Federal Reserve — Speeches",
     "category": "speeches",
     "title": "Powell, Acceptance Remarks",
     "link": "https://www.federalreserve.gov/newsevents/speech/powell20260531a.htm",
     "date": "2026-06-01T00:30:00+00:00",
     "summary": "Speech For the 2026 John F. Kennedy Profile in Courage Award, John F. Kennedy Library Foundation, Boston, Massachusetts"
-  },
-  {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Isabel Schnabel: From money market funds to stablecoins: lessons for central banks",
-    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260601~38dffe5ec5.en.html",
-    "date": "2026-06-01T00:10:00+00:00",
-    "summary": ""
   },
   {
     "source": "Federal Reserve — Speeches",
@@ -774,29 +798,5 @@
     "link": "https://www.federalreserve.gov/newsevents/speech/waller20260421a.htm",
     "date": "2026-04-21T18:30:00+00:00",
     "summary": "Speech At The Brookings Institution, Washington, D.C."
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "FPC review of UK bank capital – summary of stakeholder evidence gathering event",
-    "link": "https://www.bankofengland.co.uk/news/2026/april/fpc-preview-of-uk-bank-capital-summary-of-stakeholder-evidence-gathering-event",
-    "date": "2026-04-20T09:00:00+00:00",
-    "summary": "The Financial Policy Committee is conducting a review of UK bank capital, which has included gathering evidence from a range of stakeholders. This event was part of that evidence gathering process."
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Minutes of the SONIA Stakeholder Advisory Group - 24 March 2026",
-    "link": "https://www.bankofengland.co.uk/minutes/2026/march/sonia-stakeholder-advisory-group-24-march-2026",
-    "date": "2026-04-17T15:20:02+00:00",
-    "summary": "The SONIA Stakeholder Advisory Group supports the Bank’s administration of SONIA by providing advice and technical input to the Bank and the SONIA Oversight Committee"
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Banknote imagery advisory group minutes - 14 October 2025",
-    "link": "https://www.bankofengland.co.uk/minutes/2025/october/banknote-advisory-group-14october",
-    "date": "2026-04-17T12:15:00+00:00",
-    "summary": "Meeting held 14 October 2025"
   }
 ]
