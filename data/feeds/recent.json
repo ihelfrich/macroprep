@@ -1,5 +1,45 @@
 [
   {
+    "source": "Federal Reserve — All press releases",
+    "category": "monetary_policy_us",
+    "title": "Federal Reserve issues FOMC statement",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm",
+    "date": "2026-06-17T18:00:00+00:00",
+    "summary": "Federal Reserve issues FOMC statement"
+  },
+  {
+    "source": "Federal Reserve — All press releases",
+    "category": "monetary_policy_us",
+    "title": "Federal Reserve Board and Federal Open Market Committee release economic projections from the June 16-17 FOMC meeting",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617b.htm",
+    "date": "2026-06-17T18:00:00+00:00",
+    "summary": "Federal Reserve Board and Federal Open Market Committee release economic projections from the June 16-17 FOMC meeting"
+  },
+  {
+    "source": "Federal Reserve — Monetary policy",
+    "category": "fomc",
+    "title": "Federal Reserve issues FOMC statement",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm",
+    "date": "2026-06-17T18:00:00+00:00",
+    "summary": "Federal Reserve issues FOMC statement"
+  },
+  {
+    "source": "Federal Reserve — Monetary policy",
+    "category": "fomc",
+    "title": "Federal Reserve Board and Federal Open Market Committee release economic projections from the June 16-17 FOMC meeting",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617b.htm",
+    "date": "2026-06-17T18:00:00+00:00",
+    "summary": "Federal Reserve Board and Federal Open Market Committee release economic projections from the June 16-17 FOMC meeting"
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Index-linked Treasury Stock",
+    "link": "https://www.bankofengland.co.uk/news/2026/june/index-linked-treasury-stock-jun-2026",
+    "date": "2026-06-17T13:30:00+00:00",
+    "summary": "Index-linked treasury stocks are gilts issued by the UK Government. They pay out twice a year, with the amount indexed to the Retail Prices Index."
+  },
+  {
     "source": "Bank of England — News",
     "category": "monetary_policy_uk",
     "title": "Announcement of the publication of the Governor's interview transcript",
@@ -656,14 +696,6 @@
     "summary": "Speech At the Hoover Institution Annual Monetary Policy Conference, Stanford, California"
   },
   {
-    "source": "Federal Reserve — All press releases",
-    "category": "monetary_policy_us",
-    "title": "Federal Reserve Board announces approval of related applications by Columbia Bank MHC, and Columbia Financial, Inc.",
-    "link": "https://www.federalreserve.gov/newsevents/pressreleases/orders20260508a.htm",
-    "date": "2026-05-08T21:00:00+00:00",
-    "summary": "Federal Reserve Board announces approval of related applications by Columbia Bank MHC, and Columbia Financial, Inc."
-  },
-  {
     "source": "Federal Reserve — Speeches",
     "category": "speeches",
     "title": "Cook, Perspectives on Tokenization and Implications for the Financial System",
@@ -736,14 +768,6 @@
     "summary": "Speech At the Financial Stability Oversight Council Artificial Intelligence Series Roundtable on Cybersecurity and Risk Management, Washington, D.C."
   },
   {
-    "source": "Federal Reserve — All press releases",
-    "category": "monetary_policy_us",
-    "title": "Agencies issue host state loan-to-deposit ratios",
-    "link": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260501a.htm",
-    "date": "2026-05-01T15:00:00+00:00",
-    "summary": "Agencies issue host state loan-to-deposit ratios"
-  },
-  {
     "source": "Bank of England — News",
     "category": "monetary_policy_uk",
     "title": "Exchange of letters between the Governor and the Chancellor regarding CPI Inflation - April 2026",
@@ -774,29 +798,5 @@
     "link": "https://www.bankofengland.co.uk/news/2026/april/pra-publishes-plans-to-support-resilience-in-the-life-insurance-industry",
     "date": "2026-04-29T08:30:00+00:00",
     "summary": "Funded reinsurance transactions involving UK life insurers will face enhanced regulatory requirements under new proposals unveiled today by the Prudential Regulation Authority (PRA)."
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Statistical Notice 2026/03 - Bank of England Levy: request for contact details",
-    "link": "https://www.bankofengland.co.uk/statistics/notice/2026/statistical-notice-2026-03",
-    "date": "2026-04-28T12:40:43+00:00",
-    "summary": "Statistical Notices update the definitions and guidance contained in the Banking Statistics Yellow Folder"
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "FCA and PRA confirm changes to streamline senior manager accountability and boost growth",
-    "link": "https://www.bankofengland.co.uk/news/2026/april/fca-and-pra-confirm-changes-to-streamline-senior-manager-accountability-and-boost-growth",
-    "date": "2026-04-22T09:00:00+00:00",
-    "summary": "The PRA and FCA have set out reforms to the Senior Managers and Certification Regime, designed to reduce costs and offer greater flexibility."
-  },
-  {
-    "source": "Federal Reserve — Speeches",
-    "category": "speeches",
-    "title": "Waller, Modernizing Federal Reserve Operations in the 21st Century",
-    "link": "https://www.federalreserve.gov/newsevents/speech/waller20260421a.htm",
-    "date": "2026-04-21T18:30:00+00:00",
-    "summary": "Speech At The Brookings Institution, Washington, D.C."
   }
 ]
