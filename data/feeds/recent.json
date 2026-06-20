@@ -1,5 +1,13 @@
 [
   {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Asset Purchase Facility: Gilt Sales – Market Notice 19 June 2026",
+    "link": "https://www.bankofengland.co.uk/markets/market-notices/2026/june/apf-gilt-sales-market-notice-19-june-2026",
+    "date": "2026-06-19T15:30:00+00:00",
+    "summary": "This Market Notice sets out the schedule for sales in Q3 2026 of gilts held in the Asset Purchase Facility (APF) for monetary policy purposes."
+  },
+  {
     "source": "ECB — Press releases",
     "category": "monetary_policy_eu",
     "title": "Frank Elderson: Fireside chat",
@@ -790,13 +798,5 @@
     "link": "https://www.bankofengland.co.uk/letter/2026/asset-purchase-facility-may-2026",
     "date": "2026-05-05T11:00:00+00:00",
     "summary": "Exchange of letters between the Governor and the Chancellor"
-  },
-  {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "Coal distributions for non-electric power use decline in the South",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67644",
-    "date": "2026-05-04T14:00:00+00:00",
-    "summary": "The volume of coal delivered in the United States for uses other than power generation—primarily, for manufacturing—decreased by about half in the last 15 years. Coal delivered for these purposes in the South decreased the most in percentage terms between 2010 and 2025, falling 75%, or 14.7 million short tons (MMst), according to our Annual Coal Distribution Report and Quarterly Coal Distribution…"
   }
 ]
