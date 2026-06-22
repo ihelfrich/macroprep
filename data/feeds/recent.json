@@ -2,6 +2,14 @@
   {
     "source": "Bank of England — News",
     "category": "monetary_policy_uk",
+    "title": "Bank of England launches policy statement and draft rules on regulating systemic stablecoins",
+    "link": "https://www.bankofengland.co.uk/news/2026/june/boe-launches-policy-statement-and-draft-rules-on-regulating-systemic-stablecoins",
+    "date": "2026-06-22T07:30:00+00:00",
+    "summary": "The Bank of England has today published its policy statement and draft Code of Practice (rules) for systemic stablecoin issuers."
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
     "title": "Asset Purchase Facility: Gilt Sales – Market Notice 19 June 2026",
     "link": "https://www.bankofengland.co.uk/markets/market-notices/2026/june/apf-gilt-sales-market-notice-19-june-2026",
     "date": "2026-06-19T15:30:00+00:00",
@@ -790,13 +798,5 @@
     "link": "https://www.eia.gov/todayinenergy/detail.php?id=67664",
     "date": "2026-05-05T14:00:00+00:00",
     "summary": "Commercial electricity sales in Virginia increased by nearly 30.0 million megawatthours (MWh) between 2019 and 2025, much faster growth than in any other state except Texas, a much larger state, according to our Annual Electric Power Industry Report. The growth in sales of electricity in Virginia is largely driven by a concentration of data centers, as well as electric vehicle adoption and buildi…"
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Exchange of letters between the Governor and the Chancellor on the Asset Purchase Facility - May 2026",
-    "link": "https://www.bankofengland.co.uk/letter/2026/asset-purchase-facility-may-2026",
-    "date": "2026-05-05T11:00:00+00:00",
-    "summary": "Exchange of letters between the Governor and the Chancellor"
   }
 ]
