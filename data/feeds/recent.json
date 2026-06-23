@@ -1,5 +1,37 @@
 [
   {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "Philip R. Lane: Introductory remarks",
+    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260623~c112a749e2.en.html",
+    "date": "2026-06-23T00:00:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "Federal Reserve — Speeches",
+    "category": "speeches",
+    "title": "Waller, Welcoming Remarks on the International Role of the U.S. Dollar",
+    "link": "https://www.federalreserve.gov/newsevents/speech/waller20260622a.htm",
+    "date": "2026-06-22T13:00:00+00:00",
+    "summary": "Speech At the Fifth Conference on the International Roles of the Dollar, Board of Governors of the Federal Reserve System, Washington, D.C."
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "Christine Lagarde: Hearing of the Committee on Economic and Monetary Affairs of the European Parliament",
+    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260622~b060a27b78.en.html",
+    "date": "2026-06-22T13:00:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "Federal Reserve — All press releases",
+    "category": "monetary_policy_us",
+    "title": "Federal Reserve notes with deep sadness the passing of Alan Greenspan",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/other20260622a.htm",
+    "date": "2026-06-22T12:45:00+00:00",
+    "summary": "Federal Reserve notes with deep sadness the passing of Alan Greenspan"
+  },
+  {
     "source": "Bank of England — News",
     "category": "monetary_policy_uk",
     "title": "Bank of England launches policy statement and draft rules on regulating systemic stablecoins",
@@ -352,14 +384,6 @@
     "summary": "Weekly estimates suggest U.S. jet fuel production has increased to record highs in response to elevated jet fuel prices after the Strait of Hormuz closed on February 28. Higher crude oil prices and supply concerns, particularly in Europe and Asia, which previously imported much of their jet fuel supply from the Persian Gulf, have driven up jet fuel prices. Much of the increased U.S. jet fuel prod…"
   },
   {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "ECB announces main milestones for roll-out of Integrated Reporting Framework",
-    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260608~6766ec7154.en.html",
-    "date": "2026-06-08T08:00:00+00:00",
-    "summary": ""
-  },
-  {
     "source": "Federal Reserve — Speeches",
     "category": "speeches",
     "title": "Barr, Deregulating in a Financial Boom: What Could Go Wrong?",
@@ -390,14 +414,6 @@
     "link": "https://www.bankofengland.co.uk/minutes/2026/april/synchronisation-thematic-engagement-working-group",
     "date": "2026-06-04T10:45:26+00:00",
     "summary": "The latest meeting of the Synchronisation thematic engagement working group"
-  },
-  {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Christine Lagarde: Women and leadership: widening the pipeline",
-    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260604~f5d373b29f.en.html",
-    "date": "2026-06-04T08:00:00+00:00",
-    "summary": ""
   },
   {
     "source": "EIA — Today in Energy",
@@ -704,14 +720,6 @@
     "summary": "Speech At the Money Marketeers of New York University, New York, New York"
   },
   {
-    "source": "Federal Reserve — All press releases",
-    "category": "monetary_policy_us",
-    "title": "Stephen I. Miran submits his resignation as a member of the Federal Reserve Board, effective when or shortly before his successor on the Board is sworn in",
-    "link": "https://www.federalreserve.gov/newsevents/pressreleases/other20260514b.htm",
-    "date": "2026-05-14T18:00:00+00:00",
-    "summary": "Stephen I. Miran submits his resignation as a member of the Federal Reserve Board, effective when or shortly before his successor on the Board is sworn in"
-  },
-  {
     "source": "Federal Reserve — Speeches",
     "category": "speeches",
     "title": "Bowman, Opening Remarks",
@@ -738,16 +746,16 @@
   {
     "source": "Federal Reserve — Speeches",
     "category": "speeches",
-    "title": "Bowman, When Regulation Reshapes Markets: The Migration of Corporate Lending",
-    "link": "https://www.federalreserve.gov/newsevents/speech/bowman20260508a.htm",
+    "title": "Waller, Update On Federal Reserve Bank Operations",
+    "link": "https://www.federalreserve.gov/newsevents/speech/waller20260508a.htm",
     "date": "2026-05-08T23:30:00+00:00",
     "summary": "Speech At the Hoover Institution Annual Monetary Policy Conference, Stanford, California"
   },
   {
     "source": "Federal Reserve — Speeches",
     "category": "speeches",
-    "title": "Waller, Update On Federal Reserve Bank Operations",
-    "link": "https://www.federalreserve.gov/newsevents/speech/waller20260508a.htm",
+    "title": "Bowman, When Regulation Reshapes Markets: The Migration of Corporate Lending",
+    "link": "https://www.federalreserve.gov/newsevents/speech/bowman20260508a.htm",
     "date": "2026-05-08T23:30:00+00:00",
     "summary": "Speech At the Hoover Institution Annual Monetary Policy Conference, Stanford, California"
   },
@@ -790,13 +798,5 @@
     "link": "https://www.federalreserve.gov/newsevents/speech/bowman20260505a.htm",
     "date": "2026-05-05T14:00:00+00:00",
     "summary": "Speech At the 2026 Women in Housing and Finance Symposium, Washington, D.C."
-  },
-  {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "Commercial electricity sales have soared in Virginia, driven by data centers",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67664",
-    "date": "2026-05-05T14:00:00+00:00",
-    "summary": "Commercial electricity sales in Virginia increased by nearly 30.0 million megawatthours (MWh) between 2019 and 2025, much faster growth than in any other state except Texas, a much larger state, according to our Annual Electric Power Industry Report. The growth in sales of electricity in Virginia is largely driven by a concentration of data centers, as well as electric vehicle adoption and buildi…"
   }
 ]
