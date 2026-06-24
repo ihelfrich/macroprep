@@ -2,6 +2,30 @@
   {
     "source": "ECB — Press releases",
     "category": "monetary_policy_eu",
+    "title": "Iceland joins TIPS for instant payments",
+    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260624_1~ce8e85127f.en.html",
+    "date": "2026-06-24T08:00:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "EIA — Today in Energy",
+    "category": "energy",
+    "title": "UAE's exit from OPEC+ reduced the group's share of crude oil production and capacity",
+    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67804",
+    "date": "2026-06-23T14:00:00+00:00",
+    "summary": "On April 28, 2026, the United Arab Emirates (UAE) announced that it was leaving OPEC, effective on May 1. OPEC was formed in 1960 by Iraq, Iran, Kuwait, Saudi Arabia, and Venezuela, with the stated objective to \"coordinate and unify petroleum policies among Member Countries.\" OPEC is best known for its effect on global crude oil prices."
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "Boris Vujčić: Outlook for the euro area economy and monetary policy",
+    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260623_1~e421434341.en.pdf",
+    "date": "2026-06-23T13:55:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
     "title": "Philip R. Lane: Introductory remarks",
     "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260623~c112a749e2.en.html",
     "date": "2026-06-23T00:00:00+00:00",
@@ -325,22 +349,6 @@
     "title": "Christine Lagarde, Boris Vujčić: Monetary policy statement (with Q&A)",
     "link": "https://www.ecb.europa.eu//press/press_conference/monetary-policy-statement/2026/html/ecb.is260611~372040d313.en.html",
     "date": "2026-06-11T13:00:00+00:00",
-    "summary": ""
-  },
-  {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Monetary policy decisions",
-    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.mp260611~4d41bd5e83.en.html",
-    "date": "2026-06-11T12:15:00+00:00",
-    "summary": ""
-  },
-  {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Frank Elderson: Interview with Het Financieele Dagblad",
-    "link": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in260610~439aa97519.en.html",
-    "date": "2026-06-10T14:00:00+00:00",
     "summary": ""
   },
   {
@@ -790,13 +798,5 @@
     "link": "https://www.bankofengland.co.uk/minutes/2026/may/court-minutes-12-february-2026",
     "date": "2026-05-07T13:00:00+00:00",
     "summary": "The Bank's Court of Directors acts as a unitary board, setting the organisation's strategy and budget and taking key decisions on resourcing and appointments. Required to meet a minimum seven times per year, it has five executive members from the Bank and up to nine non-executive members."
-  },
-  {
-    "source": "Federal Reserve — Speeches",
-    "category": "speeches",
-    "title": "Bowman, A Coordinated Approach to Consumer Fraud Protection",
-    "link": "https://www.federalreserve.gov/newsevents/speech/bowman20260505a.htm",
-    "date": "2026-05-05T14:00:00+00:00",
-    "summary": "Speech At the 2026 Women in Housing and Finance Symposium, Washington, D.C."
   }
 ]
