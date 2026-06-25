@@ -1,5 +1,77 @@
 [
   {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "The Retail Payments Infrastructure Board launches consultation on the next generation UK payments infrastructure",
+    "link": "https://www.bankofengland.co.uk/news/2026/june/rpib-launches-consultation-on-next-generation-uk-payments-infrastructure",
+    "date": "2026-06-25T09:00:00+00:00",
+    "summary": "Today marks a major milestone in the modernisation of the UK's payments landscape, with the Retail Payments Infrastructure Board (RPIB) launching a consultation on the future design of the UK's next-generation retail payments infrastructure."
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "ECB to integrate non-financial credit claim portfolios into general collateral framework, phasing out temporary measures",
+    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260625~edee181785.en.html",
+    "date": "2026-06-25T08:00:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "Isabel Schnabel: Interview with Die Zeit",
+    "link": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in260626~c18c7252f3.en.html",
+    "date": "2026-06-25T07:00:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "Federal Reserve — All press releases",
+    "category": "monetary_policy_us",
+    "title": "Federal Reserve Board's annual bank stress test confirms that large banks are well positioned to weather a severe recession and able to continue to lend to households and businesses",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260624a.htm",
+    "date": "2026-06-24T20:00:00+00:00",
+    "summary": "Federal Reserve Board's annual bank stress test confirms that large banks are well positioned to weather a severe recession and able to continue to lend to households and businesses"
+  },
+  {
+    "source": "EIA — Today in Energy",
+    "category": "energy",
+    "title": "U.S. commercial crude oil inventories have decreased in June",
+    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67805",
+    "date": "2026-06-24T19:00:00+00:00",
+    "summary": "For the week ending June 19, 2026, U.S. refineries processed 17.1 million barrels per day (b/d) of crude oil, down 81,000 b/d from the previous week, and they operated at 96.1% capacity utilization. Gasoline production averaged 9.5 million b/d, and distillate production increased to 5.2 million b/d."
+  },
+  {
+    "source": "Federal Reserve — Speeches",
+    "category": "speeches",
+    "title": "Cook, Welcome Remarks",
+    "link": "https://www.federalreserve.gov/newsevents/speech/cook20260624a.htm",
+    "date": "2026-06-24T18:00:00+00:00",
+    "summary": "Speech At the State of Small Business Symposium hosted by the Federal Reserve Bank of Cleveland (via pre-recorded video)"
+  },
+  {
+    "source": "BEA — News releases",
+    "category": "data_release_us",
+    "title": "U.S. International Transactions and Investment Position, 1st Quarter 2026 and Annual Update",
+    "link": "https://www.bea.gov/news/2026/us-international-transactions-and-investment-position-1st-quarter-2026-and-annual-update",
+    "date": "2026-06-24T12:30:00+00:00",
+    "summary": "The U.S. current-account deficit resulting from international economic transactions widened by $5.8 billion, or 2.6 percent, to $226.8 billion in the first quarter of 2026, according to statistics released today by the U.S. Bureau of Economic Analysis. The revised fourth-quarter deficit was $221.1 billion. The first-quarter deficit was 2.9 percent of current-dollar gross domestic product, up from…"
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "ECB reports on progress towards euro adoption",
+    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260624~ec1dcac037.en.html",
+    "date": "2026-06-24T10:00:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Megan Greene's CV and questionnaire for the Treasury Select Committee",
+    "link": "https://www.bankofengland.co.uk/news/2026/june/megan-greene-tsc-reappointment",
+    "date": "2026-06-24T08:20:56+00:00",
+    "summary": "Published for the Treasury Select Committee"
+  },
+  {
     "source": "ECB — Press releases",
     "category": "monetary_policy_eu",
     "title": "Iceland joins TIPS for instant payments",
@@ -312,22 +384,6 @@
     "summary": "The SunZia Wind Project, the largest wind farm in the United States, is slated to begin commercial operations this month. The wind farm, located in New Mexico, has a total net summer generating capacity of 3,650 megawatts (MW) and is composed of 916 wind turbines. SunZia's capacity is more than three times larger than the next two largest wind farms, Alta Wind in Southern California (1,098 MW) an…"
   },
   {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates)",
-    "link": "https://www.ecb.europa.eu//press/govcdec/otherdec/2026/html/ecb.gc260612~12de4776f6.en.html",
-    "date": "2026-06-12T13:00:00+00:00",
-    "summary": ""
-  },
-  {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "EU structural financial indicators: end of 2025",
-    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260612~ab34769159.en.html",
-    "date": "2026-06-12T08:00:00+00:00",
-    "summary": ""
-  },
-  {
     "source": "Bank of England — News",
     "category": "monetary_policy_uk",
     "title": "Changes to collateral eligibility in the Sterling Monetary Framework - Market Notice 11 June 2026",
@@ -342,14 +398,6 @@
     "link": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260611a.htm",
     "date": "2026-06-11T15:00:00+00:00",
     "summary": "Federal Reserve Board announces final rule that establishes data standards for certain information collections"
-  },
-  {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Christine Lagarde, Boris Vujčić: Monetary policy statement (with Q&A)",
-    "link": "https://www.ecb.europa.eu//press/press_conference/monetary-policy-statement/2026/html/ecb.is260611~372040d313.en.html",
-    "date": "2026-06-11T13:00:00+00:00",
-    "summary": ""
   },
   {
     "source": "EIA — Today in Energy",
@@ -696,14 +744,6 @@
     "summary": "Federal Reserve Board announces it does not object to the conversion of United Texas Bank, of Dallas, Texas, from a bank supervised by the Federal Reserve to a national bank supervised by the Office of the Comptroller of the Currency"
   },
   {
-    "source": "Federal Reserve — All press releases",
-    "category": "monetary_policy_us",
-    "title": "Federal Reserve Board announces termination of enforcement actions with UBS Group AG, Credit Suisse AG, Credit Suisse Holdings (USA), Inc., and Credit Suisse AG, New York Branch",
-    "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260515a.htm",
-    "date": "2026-05-15T15:00:00+00:00",
-    "summary": "Federal Reserve Board announces termination of enforcement actions with UBS Group AG, Credit Suisse AG, Credit Suisse Holdings (USA), Inc., and Credit Suisse AG, New York Branch"
-  },
-  {
     "source": "Bank of England — News",
     "category": "monetary_policy_uk",
     "title": "The Bank, FCA and HM Treasury joint statement on Frontier AI models and cyber resilience",
@@ -754,49 +794,9 @@
   {
     "source": "Federal Reserve — Speeches",
     "category": "speeches",
-    "title": "Waller, Update On Federal Reserve Bank Operations",
-    "link": "https://www.federalreserve.gov/newsevents/speech/waller20260508a.htm",
-    "date": "2026-05-08T23:30:00+00:00",
-    "summary": "Speech At the Hoover Institution Annual Monetary Policy Conference, Stanford, California"
-  },
-  {
-    "source": "Federal Reserve — Speeches",
-    "category": "speeches",
     "title": "Bowman, When Regulation Reshapes Markets: The Migration of Corporate Lending",
     "link": "https://www.federalreserve.gov/newsevents/speech/bowman20260508a.htm",
     "date": "2026-05-08T23:30:00+00:00",
     "summary": "Speech At the Hoover Institution Annual Monetary Policy Conference, Stanford, California"
-  },
-  {
-    "source": "Federal Reserve — Speeches",
-    "category": "speeches",
-    "title": "Cook, Perspectives on Tokenization and Implications for the Financial System",
-    "link": "https://www.federalreserve.gov/newsevents/speech/cook20260508a.htm",
-    "date": "2026-05-08T09:45:00+00:00",
-    "summary": "Speech At the Central Bank of West African States (BCEAO) Conference on Digital Assets, Dakar, Senegal"
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Minutes of the Market Participants Group meeting – 7 May 2026",
-    "link": "https://www.bankofengland.co.uk/minutes/2026/may/market-participants-group-meeting-7-may-2026",
-    "date": "2026-05-08T06:30:00+00:00",
-    "summary": "The Market Participants Group (MPG) is a senior-level forum for financial market participants to share their views on relevant themes and narratives in financial markets with members of the Bank of England’s Monetary Policy Committee."
-  },
-  {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "One-fifth of U.S. renewable diesel and SAF production was exported in 2H25",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67665",
-    "date": "2026-05-07T14:00:00+00:00",
-    "summary": "The United States exported nearly 50,000 barrels per day (b/d) of renewable diesel and other biofuels—a category which includes sustainable aviation fuel (SAF)—in the second half of 2025 (2H25), about 20% of the combined production for those fuels. About half of these exports went to Canada, with the rest mostly going to Europe."
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Minutes of the Meeting of the Court of Directors held on 12 February 2026",
-    "link": "https://www.bankofengland.co.uk/minutes/2026/may/court-minutes-12-february-2026",
-    "date": "2026-05-07T13:00:00+00:00",
-    "summary": "The Bank's Court of Directors acts as a unitary board, setting the organisation's strategy and budget and taking key decisions on resourcing and appointments. Required to meet a minimum seven times per year, it has five executive members from the Bank and up to nine non-executive members."
   }
 ]

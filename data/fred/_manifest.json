@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24T09:54:42+00:00",
+  "generated_at": "2026-06-25T09:49:27+00:00",
   "endpoint": "https://fred.stlouisfed.org/graph/fredgraph.csv",
   "n_series": 26,
   "series": [
@@ -69,9 +69,9 @@
       "description": "Market-implied 5y inflation expectations",
       "file": "T5YIE.json",
       "status": "ok",
-      "n_observations": 5872,
+      "n_observations": 5873,
       "start": "2003-01-02",
-      "end": "2026-06-23"
+      "end": "2026-06-24"
     },
     {
       "id": "UNRATE",
@@ -153,9 +153,9 @@
       "description": "Credit risk premium",
       "file": "BAMLH0A0HYM2.json",
       "status": "ok",
-      "n_observations": 785,
+      "n_observations": 786,
       "start": "2023-06-26",
-      "end": "2026-06-22"
+      "end": "2026-06-23"
     },
     {
       "id": "GDPC1",
@@ -223,9 +223,9 @@
       "description": "Overnight policy rate",
       "file": "DFF.json",
       "status": "ok",
-      "n_observations": 9304,
+      "n_observations": 9305,
       "start": "2001-01-01",
-      "end": "2026-06-22"
+      "end": "2026-06-23"
     },
     {
       "id": "FEDFUNDS",
@@ -251,9 +251,9 @@
       "description": "Benchmark long rate",
       "file": "DGS10.json",
       "status": "ok",
-      "n_observations": 6369,
+      "n_observations": 6370,
       "start": "2001-01-02",
-      "end": "2026-06-22"
+      "end": "2026-06-23"
     },
     {
       "id": "DGS2",
@@ -265,9 +265,9 @@
       "description": "Short-end policy-sensitive yield",
       "file": "DGS2.json",
       "status": "ok",
-      "n_observations": 6369,
+      "n_observations": 6370,
       "start": "2001-01-02",
-      "end": "2026-06-22"
+      "end": "2026-06-23"
     },
     {
       "id": "T10Y2Y",
@@ -279,9 +279,9 @@
       "description": "Term spread / classic recession indicator",
       "file": "T10Y2Y.json",
       "status": "ok",
-      "n_observations": 6370,
+      "n_observations": 6371,
       "start": "2001-01-02",
-      "end": "2026-06-23"
+      "end": "2026-06-24"
     },
     {
       "id": "MORTGAGE30US",
