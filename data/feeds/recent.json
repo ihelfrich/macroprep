@@ -1,5 +1,13 @@
 [
   {
+    "source": "EIA — Today in Energy",
+    "category": "energy",
+    "title": "Metered electricity demand in the New York ISO falls midday because of small-scale solar",
+    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67806",
+    "date": "2026-06-26T14:00:00+00:00",
+    "summary": "An increase in electricity generation from small-scale solar in New York has decreased the midday demand for metered electricity, amid overall declining load in the state. The trend is particularly notable in the early spring (March and April), when solar generation has an outsized impact because demand is relatively low and conditions for solar generation are favorable."
+  },
+  {
     "source": "ECB — Press releases",
     "category": "monetary_policy_eu",
     "title": "ECB Consumer Expectations Survey results – May 2026",
@@ -790,13 +798,5 @@
     "link": "https://www.eia.gov/todayinenergy/detail.php?id=67685",
     "date": "2026-05-13T14:00:00+00:00",
     "summary": "In our most recent Short-Term Energy Outlook (STEO), we forecast that annual electric power generation from utility-scale solar will surpass that from coal for the first time in 2026 within the electricity grid that covers most of Texas. Solar generation is expected to reach 78 billion kilowatthours (BkWh) in 2026 in the electricity grid operated by the Electric Reliability Council of Texas (ERCO…"
-  },
-  {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "The United States set record energy production in 2025, again",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67684",
-    "date": "2026-05-11T14:00:00+00:00",
-    "summary": "Total energy production in the United States increased to a new record of 107 quadrillion British thermal units (quads) in 2025, a 3.4% increase from the previous record set in 2024, according to new data in our Monthly Energy Review. Total production was driven by record-high production in natural gas, crude oil, natural gas plant liquids (NGPLs), and renewables. This was the fourth consecutive…"
   }
 ]
