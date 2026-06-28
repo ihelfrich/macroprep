@@ -1,5 +1,13 @@
 [
   {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "Isabel Schnabel: Is inflation back?",
+    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260627~3807c2766e.en.pdf",
+    "date": "2026-06-27T13:45:00+00:00",
+    "summary": ""
+  },
+  {
     "source": "EIA — Today in Energy",
     "category": "energy",
     "title": "Metered electricity demand in the New York ISO falls midday because of small-scale solar",
@@ -358,14 +366,6 @@
     "link": "https://www.eia.gov/todayinenergy/detail.php?id=67784",
     "date": "2026-06-16T14:00:00+00:00",
     "summary": "In the first five months of 2026, utility-scale solar generation surpassed natural gas generation in CAISO. Solar electricity generation in the California Independent System Operator (CAISO) over the first five months of 2026 increased 21% compared with the same period in 2024, and natural gas generation decreased by 60%, data from our Hourly Electric Grid Monitor shows."
-  },
-  {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Philip R. Lane: Outlook for the euro area economy",
-    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260616~8076dabd2c.en.pdf",
-    "date": "2026-06-16T13:10:00+00:00",
-    "summary": ""
   },
   {
     "source": "Bank of England — News",
