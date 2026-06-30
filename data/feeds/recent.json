@@ -2,6 +2,46 @@
   {
     "source": "ECB — Press releases",
     "category": "monetary_policy_eu",
+    "title": "ECB publishes indicative operational calendars for 2028",
+    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260630_1~ff55b9e99a.en.html",
+    "date": "2026-06-30T08:00:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "ECB publishes indicative operational calendars for 2027",
+    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260630~9f54a0a4fb.en.html",
+    "date": "2026-06-30T08:00:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Statistical Notice 2026/06 - Form PL - updates to definitions",
+    "link": "https://www.bankofengland.co.uk/statistics/notice/2026/statistical-notice-2026-06",
+    "date": "2026-06-30T08:00:00+00:00",
+    "summary": "Statistical Notices update the definitions and guidance contained in the Banking Statistics Yellow Folder"
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "Christine Lagarde: Back to basics in an uncertain environment",
+    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260629~cb5a2e2168.en.html",
+    "date": "2026-06-29T19:00:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "EIA — Today in Energy",
+    "category": "energy",
+    "title": "U.S. refining capacity decreased during 2025",
+    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67807",
+    "date": "2026-06-29T14:00:00+00:00",
+    "summary": "U.S. operable atmospheric distillation capacity, the primary measure of refinery capacity, totaled 18.2 million barrels per calendar day (b/cd) on January 1, 2026-down over 250,000 b/cd (about 1%) compared with January 1, 2025-according to our latest annual Refinery Capacity Report."
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
     "title": "Isabel Schnabel: Is inflation back?",
     "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260627~3807c2766e.en.pdf",
     "date": "2026-06-27T13:45:00+00:00",
@@ -224,14 +264,6 @@
     "summary": ""
   },
   {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "ECB publishes consolidated banking data for end-December 2025",
-    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260619~f097597c01.en.html",
-    "date": "2026-06-19T08:00:00+00:00",
-    "summary": ""
-  },
-  {
     "source": "Bank of England — News",
     "category": "monetary_policy_uk",
     "title": "PRA sets out adjustments to its market risk internal model approach under Basel 3.1",
@@ -288,14 +320,6 @@
     "summary": "Following the publication of the Monetary Policy Summary and minutes of the Monetary Policy Committee meeting"
   },
   {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Piero Cipollone: Digital euro: the future of money",
-    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260618~da08e71469.en.pdf",
-    "date": "2026-06-18T12:00:00+00:00",
-    "summary": ""
-  },
-  {
     "source": "Bank of England — News",
     "category": "monetary_policy_uk",
     "title": "Bank Rate maintained at 3.75% - June 2026 Monetary Policy Summary and Minutes",
@@ -350,14 +374,6 @@
     "link": "https://www.bankofengland.co.uk/news/2026/june/statement-announcing-governors-interview",
     "date": "2026-06-17T09:00:00+00:00",
     "summary": "Statement from the Bank of England"
-  },
-  {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "New data release: ECB wage tracker points to stable negotiated wage pressures in 2026",
-    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260617~79dfc49802.en.html",
-    "date": "2026-06-17T08:00:00+00:00",
-    "summary": ""
   },
   {
     "source": "EIA — Today in Energy",
@@ -782,21 +798,5 @@
     "link": "https://www.federalreserve.gov/newsevents/speech/barr20260514a.htm",
     "date": "2026-05-14T23:00:00+00:00",
     "summary": "Speech At the Money Marketeers of New York University, New York, New York"
-  },
-  {
-    "source": "Federal Reserve — Speeches",
-    "category": "speeches",
-    "title": "Bowman, Opening Remarks",
-    "link": "https://www.federalreserve.gov/newsevents/speech/bowman20260514a.htm",
-    "date": "2026-05-14T17:00:00+00:00",
-    "summary": "Speech At the Federal Reserve Bank of Kansas City 2026 Future of Banking Conference: Powering Progress, Protecting Trust, Kansas City, Missouri (via pre-recorded video)"
-  },
-  {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "Electricity generation from solar could exceed coal in ERCOT for the first time in 2026",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67685",
-    "date": "2026-05-13T14:00:00+00:00",
-    "summary": "In our most recent Short-Term Energy Outlook (STEO), we forecast that annual electric power generation from utility-scale solar will surpass that from coal for the first time in 2026 within the electricity grid that covers most of Texas. Solar generation is expected to reach 78 billion kilowatthours (BkWh) in 2026 in the electricity grid operated by the Electric Reliability Council of Texas (ERCO…"
   }
 ]
