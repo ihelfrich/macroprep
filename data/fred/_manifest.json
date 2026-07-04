@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03T09:39:20+00:00",
+  "generated_at": "2026-07-04T09:03:57+00:00",
   "endpoint": "https://fred.stlouisfed.org/graph/fredgraph.csv",
   "n_series": 26,
   "series": [
@@ -154,8 +154,8 @@
       "file": "BAMLH0A0HYM2.json",
       "status": "ok",
       "n_observations": 787,
-      "start": "2023-07-03",
-      "end": "2026-07-01"
+      "start": "2023-07-04",
+      "end": "2026-07-02"
     },
     {
       "id": "GDPC1",
