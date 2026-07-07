@@ -2,6 +2,30 @@
   {
     "source": "Bank of England — News",
     "category": "monetary_policy_uk",
+    "title": "Financial Policy Committee Record – July 2026",
+    "link": "https://www.bankofengland.co.uk/financial-policy-committee-record/2026/july-2026",
+    "date": "2026-07-07T09:30:00+00:00",
+    "summary": "Our Financial Policy Committee (FPC) meets to identify risks to financial stability and agree policy actions aimed at safeguarding the resilience of the UK financial system."
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "Philip R. Lane: AI and monetary policy",
+    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260706~b81aa4e329.en.html",
+    "date": "2026-07-06T18:30:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "Federal Reserve — Speeches",
+    "category": "speeches",
+    "title": "Waller, Two Thoughts on the Transmission of Monetary Policy",
+    "link": "https://www.federalreserve.gov/newsevents/speech/waller20260706a.htm",
+    "date": "2026-07-06T15:00:00+00:00",
+    "summary": "Speech At \"Challenges for Monetary Policy Transmission in a Changing World,\" a conference sponsored by the Bank of Italy for the research network initiated by the European System of Central Banks, Rome, Italy"
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
     "title": "Bank of England appoints Rhys Phillips as the new Chief Cashier",
     "link": "https://www.bankofengland.co.uk/news/2026/july/boe-appoints-rhys-phillips-as-the-new-chief-cashier",
     "date": "2026-07-06T09:00:00+00:00",
@@ -42,18 +66,18 @@
   {
     "source": "Bank of England — News",
     "category": "monetary_policy_uk",
-    "title": "Minutes of the London FXJSC Main Committee Meeting – 26 March 2026",
-    "link": "https://www.bankofengland.co.uk/minutes/2026/march/fxjsc-main-committee-meeting-26-march-2026",
-    "date": "2026-07-02T09:26:00+00:00",
-    "summary": "The Bank of England chairs the London Foreign Exchange Joint Standing Committee (FXJSC), which is a forum for discussion of the wholesale foreign exchange market. The FXJSC is made up of market participants, infrastructure providers and the UK financial regulators."
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
     "title": "Minutes of the London FXJSC Legal Sub Committee Meeting – 17 March 2026",
     "link": "https://www.bankofengland.co.uk/minutes/2026/march/fxjsc-legal-sub-committee-meeting-17-march-2026",
     "date": "2026-07-02T09:26:00+00:00",
     "summary": "The Bank of England chairs the London Foreign Exchange Joint Standing Committee (FXJSC) Legal Sub-Committee. The FXJSC is made up of market participants, infrastructure providers and the UK financial regulators."
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Minutes of the London FXJSC Main Committee Meeting – 26 March 2026",
+    "link": "https://www.bankofengland.co.uk/minutes/2026/march/fxjsc-main-committee-meeting-26-march-2026",
+    "date": "2026-07-02T09:26:00+00:00",
+    "summary": "The Bank of England chairs the London Foreign Exchange Joint Standing Committee (FXJSC), which is a forum for discussion of the wholesale foreign exchange market. The FXJSC is made up of market participants, infrastructure providers and the UK financial regulators."
   },
   {
     "source": "Bank of England — News",
@@ -285,14 +309,6 @@
     "title": "Boris Vujčić: Outlook for the euro area economy and monetary policy",
     "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260623_1~e421434341.en.pdf",
     "date": "2026-06-23T13:55:00+00:00",
-    "summary": ""
-  },
-  {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Philip R. Lane: Introductory remarks",
-    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260623~c112a749e2.en.html",
-    "date": "2026-06-23T00:00:00+00:00",
     "summary": ""
   },
   {
@@ -782,21 +798,5 @@
     "link": "https://www.eia.gov/todayinenergy/detail.php?id=67705",
     "date": "2026-05-20T14:00:00+00:00",
     "summary": "In the first four months of 2026, electricity, natural gas, and coal prices suggested continued favorable economics for coal generation in MISO. The dark spread of coal, the difference between the fuel costs for coal-fired generation and the wholesale electricity price, in the Midcontinent Independent System Operator (MISO) region outpaced a similar measure of revenue relative to fuel costs for n…"
-  },
-  {
-    "source": "Federal Reserve — Speeches",
-    "category": "speeches",
-    "title": "Barr, Measuring Financial Health",
-    "link": "https://www.federalreserve.gov/newsevents/speech/barr20260520a.htm",
-    "date": "2026-05-20T13:15:00+00:00",
-    "summary": "Speech At EMERGE Financial Health 2026 Scaling Progress, Shaping the Future, Atlanta, Georgia"
-  },
-  {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "Data center server energy use grows across the commercial building stock",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67704",
-    "date": "2026-05-19T14:00:00+00:00",
-    "summary": "In the Annual Energy Outlook 2026 (AEO2026), our long-term outlook, we project electricity consumed by data center servers will increase across the commercial building stock, increasing more in standalone data centers than in all other data center rooms combined. By 2050, server consumption alone reaches between 446 billion kilowatthours (BkWh) and 818 billion BkWh. The highest end of the range r…"
   }
 ]
