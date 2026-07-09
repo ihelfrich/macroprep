@@ -2,6 +2,46 @@
   {
     "source": "Federal Reserve — All press releases",
     "category": "monetary_policy_us",
+    "title": "Minutes of the Federal Open Market Committee, June 16-17, 2026",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260708a.htm",
+    "date": "2026-07-08T18:00:00+00:00",
+    "summary": "Minutes of the Federal Open Market Committee, June 16-17, 2026"
+  },
+  {
+    "source": "Federal Reserve — Monetary policy",
+    "category": "fomc",
+    "title": "Minutes of the Federal Open Market Committee, June 16-17, 2026",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260708a.htm",
+    "date": "2026-07-08T18:00:00+00:00",
+    "summary": "Minutes of the Federal Open Market Committee, June 16-17, 2026"
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Minutes of the UK Money Markets Code Sub-Committee – June 2026",
+    "link": "https://www.bankofengland.co.uk/minutes/2026/june/money-markets-committee-minutes-june-2026",
+    "date": "2026-07-08T14:52:13+00:00",
+    "summary": "The Money Markets Committee is a forum for market participants and authorities to discuss the UK unsecured deposits and funding market and securities lending and repo markets."
+  },
+  {
+    "source": "EIA — Today in Energy",
+    "category": "energy",
+    "title": "U.S. exports of crude oil and petroleum products reached record in April",
+    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67825",
+    "date": "2026-07-08T14:00:00+00:00",
+    "summary": "U.S. petroleum exports reached a record in April as disruptions to international crude oil and refined product flows through the Strait of Hormuz increased global demand for U.S. exports. Exports increased to 13.6 million barrels per day (b/d) in April, 15% more than the previous record set in March."
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Statistical Notice 2026/07 - Bank of England Levy: Notification Document Levy Year 2026/27",
+    "link": "https://www.bankofengland.co.uk/statistics/notice/2026/statistical-notice-2026-07",
+    "date": "2026-07-08T10:09:46+00:00",
+    "summary": "Statistical Notices update the definitions and guidance contained in the Banking Statistics Yellow Folder"
+  },
+  {
+    "source": "Federal Reserve — All press releases",
+    "category": "monetary_policy_us",
     "title": "Federal Reserve Board requests comment on a proposal to amend its requirements for banks to maintain anti-money laundering programs",
     "link": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260707a.htm",
     "date": "2026-07-07T19:00:00+00:00",
@@ -131,7 +171,7 @@
     "source": "EIA — Today in Energy",
     "category": "energy",
     "title": "The 250-year history of U.S. energy consumption",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=",
+    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67824",
     "date": "2026-06-30T14:00:00+00:00",
     "summary": "Over the 250-year history of our nation, energy consumption has evolved from wood use in the 18th and 19th centuries to today's use of modern renewable, hydrocarbon, and nuclear technology. In 2025, total energy used in the United States was 96 quadrillion British thermal units (quads), up 2% from 2024, but below 2007's record 99 quads. Petroleum was the most-used energy source last year, followe…"
   },
@@ -202,18 +242,18 @@
   {
     "source": "Federal Reserve — All press releases",
     "category": "monetary_policy_us",
-    "title": "Federal Reserve Board announces termination of enforcement action with Jiko Group, Inc.",
-    "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260625a.htm",
-    "date": "2026-06-25T15:00:00+00:00",
-    "summary": "Federal Reserve Board announces termination of enforcement action with Jiko Group, Inc."
-  },
-  {
-    "source": "Federal Reserve — All press releases",
-    "category": "monetary_policy_us",
     "title": "Federal Reserve Board issues enforcement action with employee of Bank of Eufaula and S N B Bancshares, Inc.",
     "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260625b.htm",
     "date": "2026-06-25T15:00:00+00:00",
     "summary": "Federal Reserve Board issues enforcement action with employee of Bank of Eufaula and S N B Bancshares, Inc."
+  },
+  {
+    "source": "Federal Reserve — All press releases",
+    "category": "monetary_policy_us",
+    "title": "Federal Reserve Board announces termination of enforcement action with Jiko Group, Inc.",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260625a.htm",
+    "date": "2026-06-25T15:00:00+00:00",
+    "summary": "Federal Reserve Board announces termination of enforcement action with Jiko Group, Inc."
   },
   {
     "source": "BEA — News releases",
@@ -688,14 +728,6 @@
     "summary": "Federal Reserve Board issues enforcement actions with former employee of Atlantic Union Bank and former employee of Frost Bank"
   },
   {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "Natural gas for power generation flat this summer, record high expected in 2027",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67725",
-    "date": "2026-05-28T14:00:00+00:00",
-    "summary": "We forecast natural gas consumption by the U.S. electric power sector this summer will remain near recent highs and set a record next summer in our May Short-Term Energy Outlook (STEO). Despite a 2% increase in overall U.S. electricity demand this summer, we expect natural gas-fired electricity generation to be similar to last summer, primarily because of forecast increased generation from renewa…"
-  },
-  {
     "source": "BEA — News releases",
     "category": "data_release_us",
     "title": "Personal Income and Outlays, April 2026",
@@ -720,14 +752,6 @@
     "summary": "Speech At the Stanford Institute for Economic Policy Research, Stanford University, Stanford, California"
   },
   {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "The United States is a major energy exporter and importer, especially for petroleum",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67724",
-    "date": "2026-05-27T14:00:00+00:00",
-    "summary": "Total energy exports from the United States reached a record 31 quadrillion British thermal units (quads) in 2025, 2% more than the previous record set in 2024. U.S. energy imports were 21 quads, down 5% from 2024. Taken together, net trade—total imports less total exports—reached 11 quads of net exports in 2025, a record and 20% more net exports than the previous record set in 2024."
-  },
-  {
     "source": "Federal Reserve — All press releases",
     "category": "monetary_policy_us",
     "title": "Minutes of the Board's discount rate meeting on April 20 and 29, 2026",
@@ -742,14 +766,6 @@
     "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260526a.htm",
     "date": "2026-05-26T18:00:00+00:00",
     "summary": "Minutes of the Board's discount rate meeting on April 20 and 29, 2026"
-  },
-  {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "Most planned natural gas pipeline capacity additions in 2026 and 2027 originate in Texas",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67707",
-    "date": "2026-05-26T14:00:00+00:00",
-    "summary": "Developers plan to bring approximately 44.9 billion cubic feet per day (Bcf/d) of new pipeline capacity online in the United States in 2026 and 2027, according to our latest Natural Gas Pipeline Projects Tracker. Approximately 70% (31.6 Bcf/d) of this new capacity is already under construction. More than 66% (29.7 Bcf/d) of the capacity additions originate in Texas. Louisiana is second with 19% (…"
   },
   {
     "source": "Bank of England — News",
@@ -768,28 +784,12 @@
     "summary": "Kevin Warsh takes oath of office as chairman and a member of the Board of Governors of the Federal Reserve System, and the Federal Open Market Committee unanimously selects Warsh as its chairman"
   },
   {
-    "source": "Federal Reserve — All press releases",
-    "category": "monetary_policy_us",
-    "title": "Agencies publish resolution plan feedback letters for certain domestic and foreign banking organizations",
-    "link": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260522a.htm",
-    "date": "2026-05-22T20:00:00+00:00",
-    "summary": "Agencies publish resolution plan feedback letters for certain domestic and foreign banking organizations"
-  },
-  {
     "source": "Federal Reserve — Speeches",
     "category": "speeches",
     "title": "Waller, Policy Risks Have Changed",
     "link": "https://www.federalreserve.gov/newsevents/speech/waller20260522a.htm",
     "date": "2026-05-22T14:00:00+00:00",
     "summary": "Speech At The Centre for Central Banking Guest Lecture, Frankfurt School of Finance and Management, Frankfurt, Germany"
-  },
-  {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "The regional differences in gasoline prices this Memorial Day",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67706",
-    "date": "2026-05-22T14:00:00+00:00",
-    "summary": "Against the backdrop of a nationwide increase in gasoline prices, regional dynamics including local supply and demand conditions, state fuel specifications, and state taxes influence the different prices drivers see at the pump."
   },
   {
     "source": "Federal Reserve — Monetary policy",
