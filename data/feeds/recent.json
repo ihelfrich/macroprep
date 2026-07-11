@@ -1,5 +1,21 @@
 [
   {
+    "source": "BEA — News releases",
+    "category": "data_release_us",
+    "title": "Activities of U.S. Affiliates of Foreign Multinational Enterprises, 2024",
+    "link": "https://www.bea.gov/news/2026/activities-us-affiliates-foreign-multinational-enterprises-2024",
+    "date": "2026-07-10T12:30:00+00:00",
+    "summary": "Majority-owned U.S. affiliates of foreign multinational enterprises employed 8.57 million workers in the United States in 2024, a 0.2 percent increase from 8.56 million workers in 2023, according to statistics on U.S. affiliate operations and finances released today by the U.S. Bureau of Economic Analysis. Full Text"
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "UK financial regulators to begin overseeing Critical Third Parties announced by HM Treasury",
+    "link": "https://www.bankofengland.co.uk/news/2026/july/uk-financial-regulators-to-begin-overseeing-critical-third-parties-announced-by-hmt",
+    "date": "2026-07-10T09:15:00+00:00",
+    "summary": "The Bank of England, the Prudential Regulation Authority and the Financial Conduct Authority will start overseeing the first Critical Third Parties on Monday 13 July 2026, following designation by HM Treasury."
+  },
+  {
     "source": "Federal Reserve — All press releases",
     "category": "monetary_policy_us",
     "title": "Federal Reserve announces the leadership and objectives of its task forces to advance the conduct of monetary policy",
@@ -189,7 +205,7 @@
     "title": "Minutes of the London FXJSC Legal Sub Committee Meeting – 17 March 2026",
     "link": "https://www.bankofengland.co.uk/minutes/2026/march/fxjsc-legal-sub-committee-meeting-17-march-2026",
     "date": "2026-07-02T09:26:00+00:00",
-    "summary": "The Bank of England chairs the London Foreign Exchange Joint Standing Committee (FXJSC) Legal Sub-Committee. The FXJSC is made up of market participants, infrastructure providers and the UK financial regulators."
+    "summary": "The Bank of England provides the Secretariat to the London Foreign Exchange Joint Standing Committee (FXJSC) Legal Sub-Committee. The FXJSC is made up of market participants, infrastructure providers and the UK financial regulators."
   },
   {
     "source": "Bank of England — News",
@@ -782,21 +798,5 @@
     "link": "https://www.federalreserve.gov/newsevents/speech/jefferson20260527a.htm",
     "date": "2026-05-28T00:00:00+00:00",
     "summary": "Speech At the 2026 Bank of Japan-Institute for Monetary and Economic Studies Conference, Tokyo, Japan"
-  },
-  {
-    "source": "Federal Reserve — Speeches",
-    "category": "speeches",
-    "title": "Cook, The Opportunities and Risks AI Presents for the Economy and Financial System",
-    "link": "https://www.federalreserve.gov/newsevents/speech/cook20260527a.htm",
-    "date": "2026-05-27T19:55:00+00:00",
-    "summary": "Speech At the Stanford Institute for Economic Policy Research, Stanford University, Stanford, California"
-  },
-  {
-    "source": "Federal Reserve — Monetary policy",
-    "category": "fomc",
-    "title": "Minutes of the Board's discount rate meeting on April 20 and 29, 2026",
-    "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260526a.htm",
-    "date": "2026-05-26T18:00:00+00:00",
-    "summary": "Minutes of the Board's discount rate meeting on April 20 and 29, 2026"
   }
 ]
