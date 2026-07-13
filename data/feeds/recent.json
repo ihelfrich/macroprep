@@ -1,5 +1,13 @@
 [
   {
+    "source": "Federal Reserve — Speeches",
+    "category": "speeches",
+    "title": "Bowman, Modernizing Financial Regulation",
+    "link": "https://www.federalreserve.gov/newsevents/speech/bowman20260713a.htm",
+    "date": "2026-07-13T09:25:00+00:00",
+    "summary": "Speech At a Bank Policy Institute London Conference, London, United Kingdom"
+  },
+  {
     "source": "BEA — News releases",
     "category": "data_release_us",
     "title": "Activities of U.S. Affiliates of Foreign Multinational Enterprises, 2024",
@@ -790,13 +798,5 @@
     "link": "https://www.bea.gov/news/2026/personal-income-and-outlays-april-2026",
     "date": "2026-05-28T12:30:00+00:00",
     "summary": "Personal income decreased less than $0.1 billion (less than 0.1 percent at a monthly rate) in April, according to estimates released today by the U.S. Bureau of Economic Analysis (BEA). Disposable personal income (DPI)-personal income less personal current taxes-decreased $19.9 billion (0.1 percent), and personal consumption expenditures (PCE) increased $111.1 billion (0.5 percent). Personal outl…"
-  },
-  {
-    "source": "Federal Reserve — Speeches",
-    "category": "speeches",
-    "title": "Jefferson, Global Economic Developments and the U.S. Economy",
-    "link": "https://www.federalreserve.gov/newsevents/speech/jefferson20260527a.htm",
-    "date": "2026-05-28T00:00:00+00:00",
-    "summary": "Speech At the 2026 Bank of Japan-Institute for Monetary and Economic Studies Conference, Tokyo, Japan"
   }
 ]
