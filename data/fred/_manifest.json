@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-14T08:31:53+00:00",
+  "generated_at": "2026-07-15T08:39:38+00:00",
   "endpoint": "https://fred.stlouisfed.org/graph/fredgraph.csv",
   "n_series": 26,
   "series": [
@@ -13,9 +13,9 @@
       "description": "Headline CPI",
       "file": "CPIAUCSL.json",
       "status": "ok",
-      "n_observations": 304,
+      "n_observations": 305,
       "start": "2001-01-01",
-      "end": "2026-05-01"
+      "end": "2026-06-01"
     },
     {
       "id": "CPILFESL",
@@ -27,9 +27,9 @@
       "description": "Core inflation",
       "file": "CPILFESL.json",
       "status": "ok",
-      "n_observations": 304,
+      "n_observations": 305,
       "start": "2001-01-01",
-      "end": "2026-05-01"
+      "end": "2026-06-01"
     },
     {
       "id": "PCEPI",
@@ -69,9 +69,9 @@
       "description": "Market-implied 5y inflation expectations",
       "file": "T5YIE.json",
       "status": "ok",
-      "n_observations": 5885,
+      "n_observations": 5886,
       "start": "2003-01-02",
-      "end": "2026-07-13"
+      "end": "2026-07-14"
     },
     {
       "id": "UNRATE",
@@ -154,8 +154,8 @@
       "file": "BAMLH0A0HYM2.json",
       "status": "ok",
       "n_observations": 785,
-      "start": "2023-07-14",
-      "end": "2026-07-10"
+      "start": "2023-07-17",
+      "end": "2026-07-13"
     },
     {
       "id": "GDPC1",
@@ -223,9 +223,9 @@
       "description": "Overnight policy rate",
       "file": "DFF.json",
       "status": "ok",
-      "n_observations": 9322,
+      "n_observations": 9325,
       "start": "2001-01-01",
-      "end": "2026-07-10"
+      "end": "2026-07-13"
     },
     {
       "id": "FEDFUNDS",
@@ -251,9 +251,9 @@
       "description": "Benchmark long rate",
       "file": "DGS10.json",
       "status": "ok",
-      "n_observations": 6382,
+      "n_observations": 6383,
       "start": "2001-01-02",
-      "end": "2026-07-10"
+      "end": "2026-07-13"
     },
     {
       "id": "DGS2",
@@ -265,9 +265,9 @@
       "description": "Short-end policy-sensitive yield",
       "file": "DGS2.json",
       "status": "ok",
-      "n_observations": 6382,
+      "n_observations": 6383,
       "start": "2001-01-02",
-      "end": "2026-07-10"
+      "end": "2026-07-13"
     },
     {
       "id": "T10Y2Y",
@@ -279,9 +279,9 @@
       "description": "Term spread / classic recession indicator",
       "file": "T10Y2Y.json",
       "status": "ok",
-      "n_observations": 6383,
+      "n_observations": 6384,
       "start": "2001-01-02",
-      "end": "2026-07-13"
+      "end": "2026-07-14"
     },
     {
       "id": "MORTGAGE30US",

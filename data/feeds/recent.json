@@ -2,6 +2,70 @@
   {
     "source": "ECB — Press releases",
     "category": "monetary_policy_eu",
+    "title": "Piero Cipollone: Interview with Ouest-France",
+    "link": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in260715~ab95a43007.en.html",
+    "date": "2026-07-15T06:00:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "Federal Reserve — Speeches",
+    "category": "speeches",
+    "title": "Bowman, Responsible Innovation and Financial Inclusion",
+    "link": "https://www.federalreserve.gov/newsevents/speech/bowman20260714a.htm",
+    "date": "2026-07-14T18:55:00+00:00",
+    "summary": "Speech At “Next-Gen Financial Inclusion,” the third annual Financial Inclusion Conference hosted by the Federal Reserve Board, Washington, D.C. (via pre-recorded video)"
+  },
+  {
+    "source": "Federal Reserve — All press releases",
+    "category": "monetary_policy_us",
+    "title": "Minutes of the Board's discount rate meetings on June 8 and June 17, 2026",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260714a.htm",
+    "date": "2026-07-14T18:00:00+00:00",
+    "summary": "Minutes of the Board's discount rate meetings on June 8 and June 17, 2026"
+  },
+  {
+    "source": "Federal Reserve — Monetary policy",
+    "category": "fomc",
+    "title": "Minutes of the Board's discount rate meetings on June 8 and June 17, 2026",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260714a.htm",
+    "date": "2026-07-14T18:00:00+00:00",
+    "summary": "Minutes of the Board's discount rate meetings on June 8 and June 17, 2026"
+  },
+  {
+    "source": "Federal Reserve — Speeches",
+    "category": "speeches",
+    "title": "Barr, Will Artificial Intelligence Broadly Raise Living Standards or Drive Income and Wealth Inequality?",
+    "link": "https://www.federalreserve.gov/newsevents/speech/barr20260714a.htm",
+    "date": "2026-07-14T16:40:00+00:00",
+    "summary": "Speech At “Next-Gen Financial Inclusion,” the third annual Financial Inclusion Conference hosted by the Federal Reserve Board"
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "PRA and FCA propose new captive insurance regime to drive UK growth and competitiveness",
+    "link": "https://www.bankofengland.co.uk/news/2026/july/pra-and-fca-propose-new-captive-insurance-regime-to-drive-uk-growth-and-competitiveness",
+    "date": "2026-07-14T14:00:00+00:00",
+    "summary": "Innovative new proposals aim to establish the UK as a centre for the fast-growing captive insurance market."
+  },
+  {
+    "source": "EIA — Today in Energy",
+    "category": "energy",
+    "title": "Global liquefied natural gas trade volumes reached record high in 2025",
+    "link": "https://www.eia.gov/todayinenergy/detail.php?id=",
+    "date": "2026-07-14T14:00:00+00:00",
+    "summary": "Global liquefied natural gas (LNG) trade volumes increased 5.4% to a record 56.3 billion cubic feet per day last year (Bcf/d), driven largely by U.S. LNG export capacity expanding to meet growing demand, according to a recent report from the International Group of Liquefied Natural Gas Importers (GIIGNL). Global LNG trade has slowed this year following the closure of the key export route for Qata…"
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "ECB selects 36 payment service providers to join digital euro pilot",
+    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260714~8cd07d9d45.en.html",
+    "date": "2026-07-14T09:00:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
     "title": "Piero Cipollone: Interview with Jornal de Negocios",
     "link": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in260713~d928475792.en.html",
     "date": "2026-07-13T17:00:00+00:00",
@@ -346,18 +410,18 @@
   {
     "source": "Federal Reserve — All press releases",
     "category": "monetary_policy_us",
-    "title": "Federal Reserve Board announces termination of enforcement action with Jiko Group, Inc.",
-    "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260625a.htm",
-    "date": "2026-06-25T15:00:00+00:00",
-    "summary": "Federal Reserve Board announces termination of enforcement action with Jiko Group, Inc."
-  },
-  {
-    "source": "Federal Reserve — All press releases",
-    "category": "monetary_policy_us",
     "title": "Federal Reserve Board issues enforcement action with employee of Bank of Eufaula and S N B Bancshares, Inc.",
     "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260625b.htm",
     "date": "2026-06-25T15:00:00+00:00",
     "summary": "Federal Reserve Board issues enforcement action with employee of Bank of Eufaula and S N B Bancshares, Inc."
+  },
+  {
+    "source": "Federal Reserve — All press releases",
+    "category": "monetary_policy_us",
+    "title": "Federal Reserve Board announces termination of enforcement action with Jiko Group, Inc.",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260625a.htm",
+    "date": "2026-06-25T15:00:00+00:00",
+    "summary": "Federal Reserve Board announces termination of enforcement action with Jiko Group, Inc."
   },
   {
     "source": "BEA — News releases",
@@ -390,22 +454,6 @@
     "link": "https://www.bankofengland.co.uk/news/2026/june/rpib-launches-consultation-on-next-generation-uk-payments-infrastructure",
     "date": "2026-06-25T09:00:00+00:00",
     "summary": "Today marks a major milestone in the modernisation of the UK's payments landscape, with the Retail Payments Infrastructure Board (RPIB) launching a consultation on the future design of the UK's next-generation retail payments infrastructure."
-  },
-  {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "ECB to integrate non-financial credit claim portfolios into general collateral framework, phasing out temporary measures",
-    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260625~edee181785.en.html",
-    "date": "2026-06-25T08:00:00+00:00",
-    "summary": ""
-  },
-  {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Isabel Schnabel: Interview with Die Zeit",
-    "link": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in260626~c18c7252f3.en.html",
-    "date": "2026-06-25T07:00:00+00:00",
-    "summary": ""
   },
   {
     "source": "Federal Reserve — All press releases",
@@ -750,53 +798,5 @@
     "link": "https://www.eia.gov/todayinenergy/detail.php?id=67745",
     "date": "2026-06-03T14:00:00+00:00",
     "summary": "Underground working natural gas storage capacity in the Lower 48 states increased slightly in 2025, according to our latest data, with growth concentrated in the South Central and Mountain regions. Underground natural gas storage provides a source of energy when demand increases, balancing U.S. energy needs. We calculate natural gas storage capacity in two ways: demonstrated peak capacity and wor…"
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Statistical Notice 2026/05 - Implementation of Bank of England Statistics Taxonomy v1.3.1",
-    "link": "https://www.bankofengland.co.uk/statistics/notice/2026/statistical-notice-2026-05",
-    "date": "2026-06-03T12:47:51+00:00",
-    "summary": "Statistical Notices update the definitions and guidance contained in the Banking Statistics Yellow Folder"
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Public asked to help select UK wildlife to appear on new banknote series",
-    "link": "https://www.bankofengland.co.uk/news/2026/june/wildlife-new-banknote-series",
-    "date": "2026-06-02T23:01:00+00:00",
-    "summary": "The public are being asked to give their views on a selection of wildlife, native to the UK, that will appear on the next series of banknotes in a consultation launched today."
-  },
-  {
-    "source": "Federal Reserve — All press releases",
-    "category": "monetary_policy_us",
-    "title": "Agencies remove additional references to reputation risk",
-    "link": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260602a.htm",
-    "date": "2026-06-02T15:00:00+00:00",
-    "summary": "Agencies remove additional references to reputation risk"
-  },
-  {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "California natural gas prices reach historic lows in early 2026",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67744",
-    "date": "2026-06-02T14:00:00+00:00",
-    "summary": "Monthly average natural gas spot prices in California reached record lows in the first five months of 2026, dropping to values last recorded in the nationwide low-price market of 2024. Record lows were recorded in Northern California's PG&E Citygate and Southern California's SoCal Border Average; SoCal Citygate prices fell to near-record lows but remained higher than some 2024 prices. Several fac…"
-  },
-  {
-    "source": "Federal Reserve — Speeches",
-    "category": "speeches",
-    "title": "Powell, Acceptance Remarks",
-    "link": "https://www.federalreserve.gov/newsevents/speech/powell20260531a.htm",
-    "date": "2026-06-01T00:30:00+00:00",
-    "summary": "Speech For the 2026 John F. Kennedy Profile in Courage Award, John F. Kennedy Library Foundation, Boston, Massachusetts"
-  },
-  {
-    "source": "Federal Reserve — Speeches",
-    "category": "speeches",
-    "title": "Bowman, A Framework for Practical Monetary Policy Decision Making",
-    "link": "https://www.federalreserve.gov/newsevents/speech/bowman20260529a.htm",
-    "date": "2026-05-29T13:10:00+00:00",
-    "summary": "Speech At the Reykjav&iacute;k Economic Conference 2026, Central Bank of Iceland, Reykjav&iacute;k, Iceland"
   }
 ]
