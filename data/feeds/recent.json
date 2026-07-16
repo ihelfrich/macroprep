@@ -1,5 +1,21 @@
 [
   {
+    "source": "Federal Reserve — Speeches",
+    "category": "speeches",
+    "title": "Cook, Economic Outlook",
+    "link": "https://www.federalreserve.gov/newsevents/speech/cook20260715a.htm",
+    "date": "2026-07-15T17:00:00+00:00",
+    "summary": "Speech At The Exchequer Club of Washington D.C., Washington, D.C."
+  },
+  {
+    "source": "EIA — Today in Energy",
+    "category": "energy",
+    "title": "Petroleum markets responded to disruptions in the Middle East in the second quarter",
+    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67865",
+    "date": "2026-07-15T14:00:00+00:00",
+    "summary": "Petroleum markets in the second quarter of 2026 (2Q26) were characterized by continued disruptions to international crude oil and petroleum product flows through the Strait of Hormuz, contributing to higher and more volatile crude oil prices through most of the quarter. The disruptions also resulted in international buyers seeking alternative supply sources for petroleum products, driving up U.S.…"
+  },
+  {
     "source": "ECB — Press releases",
     "category": "monetary_policy_eu",
     "title": "Piero Cipollone: Interview with Ouest-France",
@@ -51,7 +67,7 @@
     "source": "EIA — Today in Energy",
     "category": "energy",
     "title": "Global liquefied natural gas trade volumes reached record high in 2025",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=",
+    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67864",
     "date": "2026-07-14T14:00:00+00:00",
     "summary": "Global liquefied natural gas (LNG) trade volumes increased 5.4% to a record 56.3 billion cubic feet per day last year (Bcf/d), driven largely by U.S. LNG export capacity expanding to meet growing demand, according to a recent report from the International Group of Liquefied Natural Gas Importers (GIIGNL). Global LNG trade has slowed this year following the closure of the key export route for Qata…"
   },
@@ -782,21 +798,5 @@
     "link": "https://www.bankofengland.co.uk/news/2026/june/boe-and-fca-mou-on-supervision-of-financial-market-infrastructures",
     "date": "2026-06-05T09:25:00+00:00",
     "summary": "Joint statement from the Bank of England and Financial Conduct Authority"
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Minutes of the Synchronisation thematic engagement working group - 30 April 2026",
-    "link": "https://www.bankofengland.co.uk/minutes/2026/april/synchronisation-thematic-engagement-working-group",
-    "date": "2026-06-04T10:45:26+00:00",
-    "summary": "The latest meeting of the Synchronisation thematic engagement working group"
-  },
-  {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "U.S. natural gas storage capacity increased slightly in 2025",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67745",
-    "date": "2026-06-03T14:00:00+00:00",
-    "summary": "Underground working natural gas storage capacity in the Lower 48 states increased slightly in 2025, according to our latest data, with growth concentrated in the South Central and Mountain regions. Underground natural gas storage provides a source of energy when demand increases, balancing U.S. energy needs. We calculate natural gas storage capacity in two ways: demonstrated peak capacity and wor…"
   }
 ]
