@@ -2,6 +2,38 @@
   {
     "source": "Federal Reserve — Speeches",
     "category": "speeches",
+    "title": "Jefferson, Navigating Economic Shocks: A Monetary Policymaker’s Perspective",
+    "link": "https://www.federalreserve.gov/newsevents/speech/jefferson20260716a.htm",
+    "date": "2026-07-16T23:00:00+00:00",
+    "summary": "Speech At the Stanford Institute for Economic Policy Research, Stanford University, Stanford, California"
+  },
+  {
+    "source": "Federal Reserve — All press releases",
+    "category": "monetary_policy_us",
+    "title": "Agencies issue joint statement on handling of highly sensitive information during bank examinations",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260716a.htm",
+    "date": "2026-07-16T18:00:00+00:00",
+    "summary": "Agencies issue joint statement on handling of highly sensitive information during bank examinations"
+  },
+  {
+    "source": "Federal Reserve — All press releases",
+    "category": "monetary_policy_us",
+    "title": "Federal Reserve Board issues enforcement action with former chief lending officer of Heritage State Bank",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260716a.htm",
+    "date": "2026-07-16T15:00:00+00:00",
+    "summary": "Federal Reserve Board issues enforcement action with former chief lending officer of Heritage State Bank"
+  },
+  {
+    "source": "EIA — Today in Energy",
+    "category": "energy",
+    "title": "What are tank bottoms?",
+    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67866",
+    "date": "2026-07-16T14:00:00+00:00",
+    "summary": "Crude oil inventories held at storage facilities in Cushing, Oklahoma, fell below 20 million barrels during the week ending June 19 until the week ending July 10, according to our Weekly Petroleum Status Report."
+  },
+  {
+    "source": "Federal Reserve — Speeches",
+    "category": "speeches",
     "title": "Cook, Economic Outlook",
     "link": "https://www.federalreserve.gov/newsevents/speech/cook20260715a.htm",
     "date": "2026-07-15T17:00:00+00:00",
@@ -760,43 +792,11 @@
     "summary": "Expenditures by foreign direct investors to acquire, establish, or expand U.S. businesses totaled $232.2 billion in 2025, according to preliminary statistics released today by the U.S. Bureau of Economic Analysis. Expenditures increased $76.8 billion, or 49.5 percent, from 2024 levels. As in previous years, acquisitions of existing U.S. businesses accounted for most of the expenditures. Acquisiti…"
   },
   {
-    "source": "Federal Reserve — All press releases",
-    "category": "monetary_policy_us",
-    "title": "Federal Reserve Board announces that results from its annual bank stress test will be released on Wednesday, June 24, at 4 p.m. EDT.",
-    "link": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260609a.htm",
-    "date": "2026-06-09T20:00:00+00:00",
-    "summary": "Federal Reserve Board announces that results from its annual bank stress test will be released on Wednesday, June 24, at 4 p.m. EDT."
-  },
-  {
     "source": "EIA — Today in Energy",
     "category": "energy",
     "title": "U.S. jet fuel production rises after prices doubled in March",
     "link": "https://www.eia.gov/todayinenergy/detail.php?id=67764",
     "date": "2026-06-08T14:00:00+00:00",
     "summary": "Weekly estimates suggest U.S. jet fuel production has increased to record highs in response to elevated jet fuel prices after the Strait of Hormuz closed on February 28. Higher crude oil prices and supply concerns, particularly in Europe and Asia, which previously imported much of their jet fuel supply from the Persian Gulf, have driven up jet fuel prices. Much of the increased U.S. jet fuel prod…"
-  },
-  {
-    "source": "Federal Reserve — Speeches",
-    "category": "speeches",
-    "title": "Barr, Deregulating in a Financial Boom: What Could Go Wrong?",
-    "link": "https://www.federalreserve.gov/newsevents/speech/barr20260606a.htm",
-    "date": "2026-06-06T16:00:00+00:00",
-    "summary": "Speech At American University, Washington, D.C."
-  },
-  {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "China's nuclear power capacity nearly doubled since 2016",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67746",
-    "date": "2026-06-05T14:00:00+00:00",
-    "summary": "From 2016 to 2024, China's nuclear generation capacity increased 76% (24 GW), based on our International Energy Statistics (IES) data. According to the International Atomic Energy Agency's Power Reactor Information System (PRIS), China added an additional 1.1 GW of nuclear power capacity in 2025 and 2.2 GW in 2026 (through May). China is continuing to build out its nuclear generating capacity and…"
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Bank of England and Financial Conduct Authority – Memorandum of Understanding on the supervision of Financial Market Infrastructure",
-    "link": "https://www.bankofengland.co.uk/news/2026/june/boe-and-fca-mou-on-supervision-of-financial-market-infrastructures",
-    "date": "2026-06-05T09:25:00+00:00",
-    "summary": "Joint statement from the Bank of England and Financial Conduct Authority"
   }
 ]
