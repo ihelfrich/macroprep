@@ -1,5 +1,21 @@
 [
   {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "July 2026 euro area bank lending survey",
+    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260721~44ee50f75c.en.html",
+    "date": "2026-07-21T08:00:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "EIA — Today in Energy",
+    "category": "energy",
+    "title": "New York imports more electricity from Canada after high-voltage transmission line opens",
+    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67867",
+    "date": "2026-07-20T14:00:00+00:00",
+    "summary": "On July 3, 2026, the New York Independent System Operator (NYISO) imported 52 gigawatthours (GWh) of electricity from Canada, the most traded between the two areas since January 2025. Some of the imported electricity flowed along the new Champlain Hudson Power Express (CHPE) transmission line between Quebec, Canada, and New York City, which officially reached commercial operations in May after th…"
+  },
+  {
     "source": "Bank of England — News",
     "category": "monetary_policy_uk",
     "title": "PRA fines HDI Global SE £4,165,000 for inaccurate reporting of FSCS Liabilities and FSCS Fee Tariff data",
@@ -456,14 +472,6 @@
     "summary": "U.S. operable atmospheric distillation capacity, the primary measure of refinery capacity, totaled 18.2 million barrels per calendar day (b/cd) on January 1, 2026-down over 250,000 b/cd (about 1%) compared with January 1, 2025-according to our latest annual Refinery Capacity Report."
   },
   {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Isabel Schnabel: Is inflation back?",
-    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260627~3807c2766e.en.pdf",
-    "date": "2026-06-27T13:45:00+00:00",
-    "summary": ""
-  },
-  {
     "source": "EIA — Today in Energy",
     "category": "energy",
     "title": "Metered electricity demand in the New York ISO falls midday because of small-scale solar",
@@ -790,13 +798,5 @@
     "link": "https://www.eia.gov/todayinenergy/detail.php?id=67765",
     "date": "2026-06-10T14:00:00+00:00",
     "summary": "Compliance credits for biomass-based diesel and ethanol have doubled in value since the start of this year. The credits, known as renewable identification numbers (RINs), have increased in price, mostly because of higher U.S. biofuel blending targets. The combination of high RIN prices and rising motor gasoline and diesel fuel prices has created an especially favorable market for producing and bl…"
-  },
-  {
-    "source": "BEA — News releases",
-    "category": "data_release_us",
-    "title": "New Foreign Direct Investment in the United States, 2025",
-    "link": "https://www.bea.gov/news/2026/new-foreign-direct-investment-united-states-2025",
-    "date": "2026-06-10T12:30:00+00:00",
-    "summary": "Expenditures by foreign direct investors to acquire, establish, or expand U.S. businesses totaled $232.2 billion in 2025, according to preliminary statistics released today by the U.S. Bureau of Economic Analysis. Expenditures increased $76.8 billion, or 49.5 percent, from 2024 levels. As in previous years, acquisitions of existing U.S. businesses accounted for most of the expenditures. Acquisiti…"
   }
 ]
