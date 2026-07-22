@@ -1,5 +1,29 @@
 [
   {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "PRA consults on updated guidance for friendly society amalgamations and transfers",
+    "link": "https://www.bankofengland.co.uk/news/2026/july/pra-consults-on-updated-guidance-for-friendly-society-amalgamations-and-transfers",
+    "date": "2026-07-22T09:00:00+00:00",
+    "summary": "The proposals would provide more detail on the PRA’s approach to Part VIII transactions, helping firms plan amalgamations and transfers more efficiently."
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "ECB appoints Boris Kisselevsky as Director General Secretariat",
+    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260721_1~8c6ba4c5fb.en.html",
+    "date": "2026-07-21T14:00:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "BEA — News releases",
+    "category": "data_release_us",
+    "title": "Direct Investment by Country and Industry, 2025",
+    "link": "https://www.bea.gov/news/2026/direct-investment-country-and-industry-2025",
+    "date": "2026-07-21T12:30:00+00:00",
+    "summary": "The U.S. direct investment abroad position, or cumulative level of investment, increased $438.1 billion to $7.14 trillion at the end of 2025, according to statistics released today by the U.S. Bureau of Economic Analysis. The increase was led by a $350.2 billion increase in the position in Europe, primarily in the United Kingdom and Luxembourg. By industry, manufacturing had the largest increase,…"
+  },
+  {
     "source": "ECB — Press releases",
     "category": "monetary_policy_eu",
     "title": "July 2026 euro area bank lending survey",
@@ -456,14 +480,6 @@
     "summary": "Statistical Notices update the definitions and guidance contained in the Banking Statistics Yellow Folder"
   },
   {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Christine Lagarde: Back to basics in an uncertain environment",
-    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260629~cb5a2e2168.en.html",
-    "date": "2026-06-29T19:00:00+00:00",
-    "summary": ""
-  },
-  {
     "source": "EIA — Today in Energy",
     "category": "energy",
     "title": "U.S. refining capacity decreased during 2025",
@@ -782,21 +798,5 @@
     "link": "https://www.bankofengland.co.uk/markets/market-notices/2026/june/collateral-eligibility-in-the-smf-11-june-2026",
     "date": "2026-06-11T16:00:00+00:00",
     "summary": "This Market Notice covers changes to the Bank’s collateral eligibility framework for the Sterling Monetary Framework (SMF)."
-  },
-  {
-    "source": "Federal Reserve — All press releases",
-    "category": "monetary_policy_us",
-    "title": "Federal Reserve Board announces final rule that establishes data standards for certain information collections",
-    "link": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260611a.htm",
-    "date": "2026-06-11T15:00:00+00:00",
-    "summary": "Federal Reserve Board announces final rule that establishes data standards for certain information collections"
-  },
-  {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "Higher blending targets drive RIN prices close to record highs",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67765",
-    "date": "2026-06-10T14:00:00+00:00",
-    "summary": "Compliance credits for biomass-based diesel and ethanol have doubled in value since the start of this year. The credits, known as renewable identification numbers (RINs), have increased in price, mostly because of higher U.S. biofuel blending targets. The combination of high RIN prices and rising motor gasoline and diesel fuel prices has created an especially favorable market for producing and bl…"
   }
 ]
