@@ -1,5 +1,13 @@
 [
   {
+    "source": "EIA — Today in Energy",
+    "category": "energy",
+    "title": "Commercial crude oil inventories increased by 2.0 million barrels",
+    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67868",
+    "date": "2026-07-22T14:00:00+00:00",
+    "summary": "For the week ending July 17, 2026, commercial crude oil inventories (excluding the Strategic Petroleum Reserve) increased 2.0 million barrels to 411.7 million barrels, 6% below the previous five-year (2021–2025) average. Gasoline inventories increased 0.8 million barrels, 7% below the five-year average. Distillate inventories increased 1.4 million barrels, 10% below the five-year average. Propane…"
+  },
+  {
     "source": "Bank of England — News",
     "category": "monetary_policy_uk",
     "title": "PRA consults on updated guidance for friendly society amalgamations and transfers",
@@ -790,13 +798,5 @@
     "link": "https://www.eia.gov/todayinenergy/detail.php?id=67766",
     "date": "2026-06-12T14:00:00+00:00",
     "summary": "The SunZia Wind Project, the largest wind farm in the United States, is slated to begin commercial operations this month. The wind farm, located in New Mexico, has a total net summer generating capacity of 3,650 megawatts (MW) and is composed of 916 wind turbines. SunZia's capacity is more than three times larger than the next two largest wind farms, Alta Wind in Southern California (1,098 MW) an…"
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Changes to collateral eligibility in the Sterling Monetary Framework - Market Notice 11 June 2026",
-    "link": "https://www.bankofengland.co.uk/markets/market-notices/2026/june/collateral-eligibility-in-the-smf-11-june-2026",
-    "date": "2026-06-11T16:00:00+00:00",
-    "summary": "This Market Notice covers changes to the Bank’s collateral eligibility framework for the Sterling Monetary Framework (SMF)."
   }
 ]
