@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23T09:04:33+00:00",
+  "generated_at": "2026-07-24T09:01:26+00:00",
   "endpoint": "https://fred.stlouisfed.org/graph/fredgraph.csv",
   "n_series": 26,
   "series": [
@@ -69,9 +69,9 @@
       "description": "Market-implied 5y inflation expectations",
       "file": "T5YIE.json",
       "status": "ok",
-      "n_observations": 5892,
+      "n_observations": 5893,
       "start": "2003-01-02",
-      "end": "2026-07-22"
+      "end": "2026-07-23"
     },
     {
       "id": "UNRATE",
@@ -125,9 +125,9 @@
       "description": "Weekly high-frequency labor signal",
       "file": "ICSA.json",
       "status": "ok",
-      "n_observations": 1332,
+      "n_observations": 1333,
       "start": "2001-01-06",
-      "end": "2026-07-11"
+      "end": "2026-07-18"
     },
     {
       "id": "M2SL",
@@ -153,9 +153,9 @@
       "description": "Credit risk premium",
       "file": "BAMLH0A0HYM2.json",
       "status": "ok",
-      "n_observations": 786,
+      "n_observations": 787,
       "start": "2023-07-24",
-      "end": "2026-07-21"
+      "end": "2026-07-22"
     },
     {
       "id": "GDPC1",
@@ -223,9 +223,9 @@
       "description": "Overnight policy rate",
       "file": "DFF.json",
       "status": "ok",
-      "n_observations": 9333,
+      "n_observations": 9334,
       "start": "2001-01-01",
-      "end": "2026-07-21"
+      "end": "2026-07-22"
     },
     {
       "id": "FEDFUNDS",
@@ -251,9 +251,9 @@
       "description": "Benchmark long rate",
       "file": "DGS10.json",
       "status": "ok",
-      "n_observations": 6389,
+      "n_observations": 6390,
       "start": "2001-01-02",
-      "end": "2026-07-21"
+      "end": "2026-07-22"
     },
     {
       "id": "DGS2",
@@ -265,9 +265,9 @@
       "description": "Short-end policy-sensitive yield",
       "file": "DGS2.json",
       "status": "ok",
-      "n_observations": 6389,
+      "n_observations": 6390,
       "start": "2001-01-02",
-      "end": "2026-07-21"
+      "end": "2026-07-22"
     },
     {
       "id": "T10Y2Y",
@@ -279,9 +279,9 @@
       "description": "Term spread / classic recession indicator",
       "file": "T10Y2Y.json",
       "status": "ok",
-      "n_observations": 6390,
+      "n_observations": 6391,
       "start": "2001-01-02",
-      "end": "2026-07-22"
+      "end": "2026-07-23"
     },
     {
       "id": "MORTGAGE30US",
@@ -293,9 +293,9 @@
       "description": "Household borrowing cost",
       "file": "MORTGAGE30US.json",
       "status": "ok",
-      "n_observations": 1333,
+      "n_observations": 1334,
       "start": "2001-01-05",
-      "end": "2026-07-16"
+      "end": "2026-07-23"
     },
     {
       "id": "DTWEXBGS",
