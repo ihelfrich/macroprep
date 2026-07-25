@@ -2,6 +2,46 @@
   {
     "source": "ECB — Press releases",
     "category": "monetary_policy_eu",
+    "title": "Philip R. Lane: Outlook for the euro area economy",
+    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260724~d484b483b9.en.pdf",
+    "date": "2026-07-24T15:30:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "EIA — Today in Energy",
+    "category": "energy",
+    "title": "Energia Costa Azul, Mexico's second LNG terminal, shipped first cargo",
+    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67884",
+    "date": "2026-07-24T14:00:00+00:00",
+    "summary": "Energia Costa Azul, the second liquefied natural gas (LNG) export facility in Mexico, shipped its initial cargo from Phase 1 of the terminal on July 8, according to the project developer. The completion of the project adds 0.4 billion cubic feet per day (Bcf/d) of nominal export capacity from a single train, tripling Mexico's LNG export capacity. The facility is the first terminal in Mexico and t…"
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates)",
+    "link": "https://www.ecb.europa.eu//press/govcdec/otherdec/2026/html/ecb.gc260724~eebbc30622.en.html",
+    "date": "2026-07-24T13:00:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "ECB to extend use of climate factors in Eurosystem collateral framework to non-financial corporate credit claims",
+    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260724_4~f082ce289d.en.html",
+    "date": "2026-07-24T10:00:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "Results of the June 2026 survey on credit terms and conditions in euro-denominated securities financing and OTC derivatives markets (SESFOD)",
+    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260724_3~c0b45e246f.en.html",
+    "date": "2026-07-24T09:00:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
     "title": "ECB to start implementing enhanced repo facility for central banks",
     "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260724_2~d7d475d2f0.en.html",
     "date": "2026-07-24T08:30:00+00:00",
@@ -232,30 +272,6 @@
     "summary": "Global liquefied natural gas (LNG) trade volumes increased 5.4% to a record 56.3 billion cubic feet per day last year (Bcf/d), driven largely by U.S. LNG export capacity expanding to meet growing demand, according to a recent report from the International Group of Liquefied Natural Gas Importers (GIIGNL). Global LNG trade has slowed this year following the closure of the key export route for Qata…"
   },
   {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "ECB selects 36 payment service providers to join digital euro pilot",
-    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260714~8cd07d9d45.en.html",
-    "date": "2026-07-14T09:00:00+00:00",
-    "summary": ""
-  },
-  {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Piero Cipollone: Interview with Jornal de Negocios",
-    "link": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in260713~d928475792.en.html",
-    "date": "2026-07-13T17:00:00+00:00",
-    "summary": ""
-  },
-  {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Isabel Schnabel: How to foster growth and resilience in Europe",
-    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260713~e78632b27a.en.pdf",
-    "date": "2026-07-13T16:45:00+00:00",
-    "summary": ""
-  },
-  {
     "source": "Federal Reserve — Speeches",
     "category": "speeches",
     "title": "Waller, Monetary Policy at a Crossroads",
@@ -326,14 +342,6 @@
     "link": "https://www.eia.gov/todayinenergy/detail.php?id=67844",
     "date": "2026-07-09T14:00:00+00:00",
     "summary": "The United States remained the world's largest crude oil producer in 2025, according to our International Energy Statistics database, extending a streak that began in 2018 when the United States overtook Russia to become the world's leading producer."
-  },
-  {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Meeting of 10-11 June 2026",
-    "link": "https://www.ecb.europa.eu//press/accounts/2026/html/ecb.mg260709~0e7f8241c9.en.html",
-    "date": "2026-07-09T11:30:00+00:00",
-    "summary": ""
   },
   {
     "source": "Federal Reserve — All press releases",
@@ -790,13 +798,5 @@
     "link": "https://www.bankofengland.co.uk/minutes/2026/april/banknote-expert-minutes-24-april",
     "date": "2026-06-15T08:00:00+00:00",
     "summary": "Meeting held 24 April 2026"
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Banknote imagery advisory group minutes – 29 April 2026",
-    "link": "https://www.bankofengland.co.uk/minutes/2026/april/banknote-advisory-minutes-29-april",
-    "date": "2026-06-15T08:00:00+00:00",
-    "summary": "Meeting held 29 April 2026"
   }
 ]
