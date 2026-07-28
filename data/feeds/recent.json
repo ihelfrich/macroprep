@@ -1,5 +1,13 @@
 [
   {
+    "source": "EIA — Today in Energy",
+    "category": "energy",
+    "title": "Hybrid sales rise while battery electric sales remain lower after tax credit expiration",
+    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67885",
+    "date": "2026-07-27T14:00:00+00:00",
+    "summary": "In the second quarter of 2026 (2Q26), 24% of new light-duty vehicles sold in the United States were hybrid electric, battery electric, or plug-in hybrid electric vehicles, up from 22% in 2Q25. Between 2Q25 and 2Q26, hybrid electric vehicles continued to gain market share, reaching a record 16% of light-duty vehicle sales. The market shares of battery electric and plug-in hybrid electric vehicles…"
+  },
+  {
     "source": "ECB — Press releases",
     "category": "monetary_policy_eu",
     "title": "Philip R. Lane: Outlook for the euro area economy",
@@ -790,13 +798,5 @@
     "link": "https://www.bankofengland.co.uk/minutes/2026/april/banknote-advisory-minutes-15-april",
     "date": "2026-06-15T08:00:00+00:00",
     "summary": "Meeting held 15 April 2026"
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Banknote imagery expert panel minutes – 24 April 2026",
-    "link": "https://www.bankofengland.co.uk/minutes/2026/april/banknote-expert-minutes-24-april",
-    "date": "2026-06-15T08:00:00+00:00",
-    "summary": "Meeting held 24 April 2026"
   }
 ]
