@@ -2,6 +2,38 @@
   {
     "source": "ECB — Press releases",
     "category": "monetary_policy_eu",
+    "title": "Digital euro app to incorporate highest accessibility standards",
+    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260730~3b3bfbb565.en.html",
+    "date": "2026-07-30T08:00:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "Federal Reserve — All press releases",
+    "category": "monetary_policy_us",
+    "title": "Federal Reserve issues FOMC statement",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+    "date": "2026-07-29T18:00:00+00:00",
+    "summary": "Federal Reserve issues FOMC statement"
+  },
+  {
+    "source": "Federal Reserve — Monetary policy",
+    "category": "fomc",
+    "title": "Federal Reserve issues FOMC statement",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+    "date": "2026-07-29T18:00:00+00:00",
+    "summary": "Federal Reserve issues FOMC statement"
+  },
+  {
+    "source": "EIA — Today in Energy",
+    "category": "energy",
+    "title": "Lower crude oil prices reduced U.S.-Canada energy trade value in 2025",
+    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67904",
+    "date": "2026-07-29T14:00:00+00:00",
+    "summary": "The value of energy trade between the United States and Canada fell by 11% in 2025 to an estimated $137 billion, according to data from the U.S. Census Bureau. Energy trade value is the total value of energy imports and exports between two countries and is driven by commodity volumes and prices. Most of the U.S.-Canada trade value is U.S. energy imports from Canada—$111 billion in 2025—rather tha…"
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
     "title": "ECB wage tracker at 2.7% in Q1 2027, indicating stable negotiated wage pressures",
     "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260729~4ad7508d8a.en.html",
     "date": "2026-07-29T08:00:00+00:00",
@@ -173,14 +205,6 @@
     "title": "Survey on the Access to Finance of Enterprises: lending conditions tightened",
     "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260720~cafc3874a7.en.html",
     "date": "2026-07-20T08:00:00+00:00",
-    "summary": ""
-  },
-  {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Piero Cipollone: The cooperative spirit at the heart of the digital euro",
-    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260717~b6a156dc40.en.html",
-    "date": "2026-07-17T10:00:00+00:00",
     "summary": ""
   },
   {
@@ -774,29 +798,5 @@
     "link": "https://www.bankofengland.co.uk/minutes/2026/june/rtgs-chaps-industry-forum-4-june-2026",
     "date": "2026-06-15T13:15:24+00:00",
     "summary": "The first meeting of the RTGS CHAPS Industry Forum"
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Banknote imagery advisory group minutes – 15 December 2025",
-    "link": "https://www.bankofengland.co.uk/minutes/2025/december/banknote-advisory-minutes-15-december",
-    "date": "2026-06-15T09:00:00+00:00",
-    "summary": "Meeting held 15 December 2025"
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Banknote imagery expert panel minutes – 10 March 2026",
-    "link": "https://www.bankofengland.co.uk/minutes/2026/march/banknote-expert-minutes-10-march",
-    "date": "2026-06-15T08:00:00+00:00",
-    "summary": "Meeting held 10 March 2026"
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Banknote imagery expert panel minutes – 15 April 2026",
-    "link": "https://www.bankofengland.co.uk/minutes/2026/april/banknote-advisory-minutes-15-april",
-    "date": "2026-06-15T08:00:00+00:00",
-    "summary": "Meeting held 15 April 2026"
   }
 ]
