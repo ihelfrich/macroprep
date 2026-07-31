@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T09:09:54+00:00",
+  "generated_at": "2026-07-31T09:22:02+00:00",
   "endpoint": "https://fred.stlouisfed.org/graph/fredgraph.csv",
   "n_series": 26,
   "series": [
@@ -41,9 +41,9 @@
       "description": "Fed's preferred inflation measure",
       "file": "PCEPI.json",
       "status": "ok",
-      "n_observations": 305,
+      "n_observations": 306,
       "start": "2001-01-01",
-      "end": "2026-05-01"
+      "end": "2026-06-01"
     },
     {
       "id": "PCEPILFE",
@@ -55,9 +55,9 @@
       "description": "Core PCE inflation",
       "file": "PCEPILFE.json",
       "status": "ok",
-      "n_observations": 305,
+      "n_observations": 306,
       "start": "2001-01-01",
-      "end": "2026-05-01"
+      "end": "2026-06-01"
     },
     {
       "id": "T5YIE",
@@ -69,9 +69,9 @@
       "description": "Market-implied 5y inflation expectations",
       "file": "T5YIE.json",
       "status": "ok",
-      "n_observations": 5897,
+      "n_observations": 5898,
       "start": "2003-01-02",
-      "end": "2026-07-29"
+      "end": "2026-07-30"
     },
     {
       "id": "UNRATE",
@@ -125,9 +125,9 @@
       "description": "Weekly high-frequency labor signal",
       "file": "ICSA.json",
       "status": "ok",
-      "n_observations": 1333,
+      "n_observations": 1334,
       "start": "2001-01-06",
-      "end": "2026-07-18"
+      "end": "2026-07-25"
     },
     {
       "id": "M2SL",
@@ -153,9 +153,9 @@
       "description": "Credit risk premium",
       "file": "BAMLH0A0HYM2.json",
       "status": "ok",
-      "n_observations": 786,
+      "n_observations": 787,
       "start": "2023-07-31",
-      "end": "2026-07-28"
+      "end": "2026-07-29"
     },
     {
       "id": "GDPC1",
@@ -167,9 +167,9 @@
       "description": "Headline real output",
       "file": "GDPC1.json",
       "status": "ok",
-      "n_observations": 101,
+      "n_observations": 102,
       "start": "2001-01-01",
-      "end": "2026-01-01"
+      "end": "2026-04-01"
     },
     {
       "id": "GDP",
@@ -181,9 +181,9 @@
       "description": "Nominal output",
       "file": "GDP.json",
       "status": "ok",
-      "n_observations": 101,
+      "n_observations": 102,
       "start": "2001-01-01",
-      "end": "2026-01-01"
+      "end": "2026-04-01"
     },
     {
       "id": "INDPRO",
@@ -223,9 +223,9 @@
       "description": "Overnight policy rate",
       "file": "DFF.json",
       "status": "ok",
-      "n_observations": 9340,
+      "n_observations": 9341,
       "start": "2001-01-01",
-      "end": "2026-07-28"
+      "end": "2026-07-29"
     },
     {
       "id": "FEDFUNDS",
@@ -251,9 +251,9 @@
       "description": "Benchmark long rate",
       "file": "DGS10.json",
       "status": "ok",
-      "n_observations": 6394,
+      "n_observations": 6395,
       "start": "2001-01-02",
-      "end": "2026-07-28"
+      "end": "2026-07-29"
     },
     {
       "id": "DGS2",
@@ -265,9 +265,9 @@
       "description": "Short-end policy-sensitive yield",
       "file": "DGS2.json",
       "status": "ok",
-      "n_observations": 6394,
+      "n_observations": 6395,
       "start": "2001-01-02",
-      "end": "2026-07-28"
+      "end": "2026-07-29"
     },
     {
       "id": "T10Y2Y",
@@ -279,9 +279,9 @@
       "description": "Term spread / classic recession indicator",
       "file": "T10Y2Y.json",
       "status": "ok",
-      "n_observations": 6395,
+      "n_observations": 6396,
       "start": "2001-01-02",
-      "end": "2026-07-29"
+      "end": "2026-07-30"
     },
     {
       "id": "MORTGAGE30US",
@@ -293,9 +293,9 @@
       "description": "Household borrowing cost",
       "file": "MORTGAGE30US.json",
       "status": "ok",
-      "n_observations": 1334,
+      "n_observations": 1335,
       "start": "2001-01-05",
-      "end": "2026-07-23"
+      "end": "2026-07-30"
     },
     {
       "id": "DTWEXBGS",

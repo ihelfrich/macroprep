@@ -1,5 +1,53 @@
 [
   {
+    "source": "Federal Reserve — All press releases",
+    "category": "monetary_policy_us",
+    "title": "Federal Reserve Board issues enforcement actions with former employee of Regions Bank and former employee of First Interstate Bank",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260730a.htm",
+    "date": "2026-07-30T15:00:00+00:00",
+    "summary": "Federal Reserve Board issues enforcement actions with former employee of Regions Bank and former employee of First Interstate Bank"
+  },
+  {
+    "source": "Federal Reserve — All press releases",
+    "category": "monetary_policy_us",
+    "title": "Federal Reserve Board issues enforcement action with Iuka Bancshares, Inc. and The Iuka State Bank",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260730b.htm",
+    "date": "2026-07-30T15:00:00+00:00",
+    "summary": "Federal Reserve Board issues enforcement action with Iuka Bancshares, Inc. and The Iuka State Bank"
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Minutes of the Meeting of the Court of Directors held on 4 June 2026",
+    "link": "https://www.bankofengland.co.uk/minutes/2026/july/court-minutes-4-june-2026",
+    "date": "2026-07-30T13:00:00+00:00",
+    "summary": "The Bank's Court of Directors acts as a unitary board, setting the organisation's strategy and budget and taking key decisions on resourcing and appointments. Required to meet a minimum seven times per year, it has five executive members from the Bank and up to nine non-executive members."
+  },
+  {
+    "source": "BEA — News releases",
+    "category": "data_release_us",
+    "title": "GDP (Advance Estimate), 2nd Quarter 2026",
+    "link": "https://www.bea.gov/news/2026/gdp-advance-estimate-2nd-quarter-2026",
+    "date": "2026-07-30T12:30:00+00:00",
+    "summary": "Real gross domestic product (GDP) increased at an annual rate of 1.5 percent in the second quarter of 2026 (April, May, and June), according to the advance estimate released today by the U.S. Bureau of Economic Analysis (BEA). In the first quarter, real GDP increased 2.1 percent. The contributors to the increase in real GDP in the second quarter were increases in consumer spending, investment, an…"
+  },
+  {
+    "source": "BEA — News releases",
+    "category": "data_release_us",
+    "title": "Personal Income and Outlays, June 2026",
+    "link": "https://www.bea.gov/news/2026/personal-income-and-outlays-june-2026",
+    "date": "2026-07-30T12:30:00+00:00",
+    "summary": "Personal income increased $54.9 billion (0.2 percent at a monthly rate) in June, according to estimates released today by the U.S. Bureau of Economic Analysis (BEA). Disposable personal income (DPI)-personal income less personal current taxes-increased $48.3 billion (0.2 percent), and personal consumption expenditures (PCE) increased $65.2 billion (0.3 percent). Personal outlays-the sum of PCE, p…"
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Bank Rate maintained at 3.75% - July 2026 Monetary Policy Summary and Minutes",
+    "link": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026",
+    "date": "2026-07-30T11:00:00+00:00",
+    "summary": "The Bank of England’s Monetary Policy Committee is responsible for making decisions about Bank Rate."
+  },
+  {
     "source": "ECB — Press releases",
     "category": "monetary_policy_eu",
     "title": "Digital euro app to incorporate highest accessibility standards",
@@ -576,14 +624,6 @@
     "summary": "Personal income increased $181.6 billion (0.7 percent at a monthly rate) in May, according to estimates released today by the U.S. Bureau of Economic Analysis (BEA). Disposable personal income (DPI)-personal income less personal current taxes-increased $164.9 billion (0.7 percent), and personal consumption expenditures (PCE) increased $156.1 billion (0.7 percent). Personal outlays-the sum of PCE,…"
   },
   {
-    "source": "BEA — News releases",
-    "category": "data_release_us",
-    "title": "GDP, (Third Estimate), Industries, Corporate Profits, State GDP, and State Personal Income, 1st Quarter 2026",
-    "link": "https://www.bea.gov/news/2026/gdp-third-estimate-industries-corporate-profits-state-gdp-and-state-personal-income-1st",
-    "date": "2026-06-25T12:30:00+00:00",
-    "summary": "Real gross domestic product (GDP) increased at an annual rate of 2.1 percent in the first quarter of 2026 (January, February, and March), according to the third estimate released today by the U.S. Bureau of Economic Analysis. In the fourth quarter of 2025, real GDP increased 0.5 percent. The contributors to the increase in real GDP in the first quarter were increases in investment, exports, gover…"
-  },
-  {
     "source": "Bank of England — News",
     "category": "monetary_policy_uk",
     "title": "The Retail Payments Infrastructure Board launches consultation on the next generation UK payments infrastructure",
@@ -736,22 +776,6 @@
     "summary": "The Bank of England’s Monetary Policy Committee is responsible for making decisions about Bank Rate."
   },
   {
-    "source": "Federal Reserve — All press releases",
-    "category": "monetary_policy_us",
-    "title": "Federal Reserve issues FOMC statement",
-    "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm",
-    "date": "2026-06-17T18:00:00+00:00",
-    "summary": "Federal Reserve issues FOMC statement"
-  },
-  {
-    "source": "Federal Reserve — All press releases",
-    "category": "monetary_policy_us",
-    "title": "Federal Reserve Board and Federal Open Market Committee release economic projections from the June 16-17 FOMC meeting",
-    "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617b.htm",
-    "date": "2026-06-17T18:00:00+00:00",
-    "summary": "Federal Reserve Board and Federal Open Market Committee release economic projections from the June 16-17 FOMC meeting"
-  },
-  {
     "source": "Federal Reserve — Monetary policy",
     "category": "fomc",
     "title": "Federal Reserve issues FOMC statement",
@@ -774,29 +798,5 @@
     "link": "https://www.bankofengland.co.uk/news/2026/june/index-linked-treasury-stock-jun-2026",
     "date": "2026-06-17T13:30:00+00:00",
     "summary": "Index-linked treasury stocks are gilts issued by the UK Government. They pay out twice a year, with the amount indexed to the Retail Prices Index."
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Announcement of the publication of the Governor's interview transcript",
-    "link": "https://www.bankofengland.co.uk/news/2026/june/statement-announcing-governors-interview",
-    "date": "2026-06-17T09:00:00+00:00",
-    "summary": "Statement from the Bank of England"
-  },
-  {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "Solar generation in CAISO surpassed natural gas in the first five months of 2026",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67784",
-    "date": "2026-06-16T14:00:00+00:00",
-    "summary": "In the first five months of 2026, utility-scale solar generation surpassed natural gas generation in CAISO. Solar electricity generation in the California Independent System Operator (CAISO) over the first five months of 2026 increased 21% compared with the same period in 2024, and natural gas generation decreased by 60%, data from our Hourly Electric Grid Monitor shows."
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Summary of the RTGS CHAPS Industry Forum",
-    "link": "https://www.bankofengland.co.uk/minutes/2026/june/rtgs-chaps-industry-forum-4-june-2026",
-    "date": "2026-06-15T13:15:24+00:00",
-    "summary": "The first meeting of the RTGS CHAPS Industry Forum"
   }
 ]
