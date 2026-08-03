@@ -1,5 +1,13 @@
 [
   {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Appointment of Chair and Deputy Chair of the Enforcement Decision Making Committee (EDMC)",
+    "link": "https://www.bankofengland.co.uk/news/2026/august/appointment-of-chair-and-deputy-chair-of-the-edmc",
+    "date": "2026-08-03T09:00:00+00:00",
+    "summary": "Following an external recruitment process, the Bank of England (the Bank) has appointed Nicholas Segal as Chair of its Enforcement Decision Making Committee (EDMC), and Peter King as Deputy Chair, with effect from 1 August 2026."
+  },
+  {
     "source": "Federal Reserve — All press releases",
     "category": "monetary_policy_us",
     "title": "Federal Reserve Board requests comment on a proposal to modernize its rule governing the extension of credit to bank \"insiders\"—bank executives, board members and major shareholders who could potentially influence a bank's lending decisions",
@@ -790,13 +798,5 @@
     "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm",
     "date": "2026-06-17T18:00:00+00:00",
     "summary": "Federal Reserve issues FOMC statement"
-  },
-  {
-    "source": "Federal Reserve — Monetary policy",
-    "category": "fomc",
-    "title": "Federal Reserve Board and Federal Open Market Committee release economic projections from the June 16-17 FOMC meeting",
-    "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617b.htm",
-    "date": "2026-06-17T18:00:00+00:00",
-    "summary": "Federal Reserve Board and Federal Open Market Committee release economic projections from the June 16-17 FOMC meeting"
   }
 ]
