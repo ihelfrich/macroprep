@@ -1,5 +1,13 @@
 [
   {
+    "source": "EIA — Today in Energy",
+    "category": "energy",
+    "title": "Hourly peak load in ERCOT set a new record, exceeding 91 GW on July 22",
+    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67906",
+    "date": "2026-08-03T14:00:00+00:00",
+    "summary": "Hourly peak load in the Electric Reliability Council of Texas (ERCOT), the regional transmission organization serving most of Texas, reached a record 91.1 gigawatts (GW) on July 22, 2026, according to data reported to us for our Hourly Electric Grid Monitor."
+  },
+  {
     "source": "Bank of England — News",
     "category": "monetary_policy_uk",
     "title": "Appointment of Chair and Deputy Chair of the Enforcement Decision Making Committee (EDMC)",
@@ -600,36 +608,12 @@
     "summary": "Agencies release list of distressed or underserved nonmetropolitan middle-income geographies"
   },
   {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "The 250-year history of U.S. energy consumption",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67824",
-    "date": "2026-06-30T14:00:00+00:00",
-    "summary": "Over the 250-year history of our nation, energy consumption has evolved from wood use in the 18th and 19th centuries to today's use of modern renewable, hydrocarbon, and nuclear technology. In 2025, total energy used in the United States was 96 quadrillion British thermal units (quads), up 2% from 2024, but below 2007's record 99 quads. Petroleum was the most-used energy source last year, followe…"
-  },
-  {
     "source": "Bank of England — News",
     "category": "monetary_policy_uk",
     "title": "Statistical Notice 2026/06 - Form PL - updates to definitions",
     "link": "https://www.bankofengland.co.uk/statistics/notice/2026/statistical-notice-2026-06",
     "date": "2026-06-30T08:00:00+00:00",
     "summary": "Statistical Notices update the definitions and guidance contained in the Banking Statistics Yellow Folder"
-  },
-  {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "U.S. refining capacity decreased during 2025",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67807",
-    "date": "2026-06-29T14:00:00+00:00",
-    "summary": "U.S. operable atmospheric distillation capacity, the primary measure of refinery capacity, totaled 18.2 million barrels per calendar day (b/cd) on January 1, 2026-down over 250,000 b/cd (about 1%) compared with January 1, 2025-according to our latest annual Refinery Capacity Report."
-  },
-  {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "Metered electricity demand in the New York ISO falls midday because of small-scale solar",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67806",
-    "date": "2026-06-26T14:00:00+00:00",
-    "summary": "An increase in electricity generation from small-scale solar in New York has decreased the midday demand for metered electricity, amid overall declining load in the state. The trend is particularly notable in the early spring (March and April), when solar generation has an outsized impact because demand is relatively low and conditions for solar generation are favorable."
   },
   {
     "source": "Federal Reserve — All press releases",
@@ -672,14 +656,6 @@
     "summary": "Federal Reserve Board's annual bank stress test confirms that large banks are well positioned to weather a severe recession and able to continue to lend to households and businesses"
   },
   {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "U.S. commercial crude oil inventories have decreased in June",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67805",
-    "date": "2026-06-24T19:00:00+00:00",
-    "summary": "For the week ending June 19, 2026, U.S. refineries processed 17.1 million barrels per day (b/d) of crude oil, down 81,000 b/d from the previous week, and they operated at 96.1% capacity utilization. Gasoline production averaged 9.5 million b/d, and distillate production increased to 5.2 million b/d."
-  },
-  {
     "source": "Federal Reserve — Speeches",
     "category": "speeches",
     "title": "Cook, Welcome Remarks",
@@ -702,14 +678,6 @@
     "link": "https://www.bankofengland.co.uk/news/2026/june/megan-greene-tsc-reappointment",
     "date": "2026-06-24T08:20:56+00:00",
     "summary": "Published for the Treasury Select Committee"
-  },
-  {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "UAE's exit from OPEC+ reduced the group's share of crude oil production and capacity",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67804",
-    "date": "2026-06-23T14:00:00+00:00",
-    "summary": "On April 28, 2026, the United Arab Emirates (UAE) announced that it was leaving OPEC, effective on May 1. OPEC was formed in 1960 by Iraq, Iran, Kuwait, Saudi Arabia, and Venezuela, with the stated objective to \"coordinate and unify petroleum policies among Member Countries.\" OPEC is best known for its effect on global crude oil prices."
   },
   {
     "source": "Federal Reserve — Speeches",
@@ -760,14 +728,6 @@
     "summary": "Federal Reserve Board issues enforcement action with former employee of Bank of Eufaula and S N B Bancshares, Inc."
   },
   {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "Permian natural gas production increased faster than crude oil",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67785",
-    "date": "2026-06-18T14:00:00+00:00",
-    "summary": "The Permian region's marketed natural gas production grew from 17.2 billion cubic feet per day (Bcf/d) in 2021 to 27.6 Bcf/d in 2025, a 60% increase, according to data from our latest Short Term Energy Outlook. Over the same period, crude oil production grew by 39%, going from 4.7 million barrels per day (b/d) to 6.6 million b/d. The higher growth in natural gas production is the result of increa…"
-  },
-  {
     "source": "Bank of England — News",
     "category": "monetary_policy_uk",
     "title": "Minutes of the Meeting of the Court of Directors held on 23 April 2026",
@@ -798,5 +758,45 @@
     "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm",
     "date": "2026-06-17T18:00:00+00:00",
     "summary": "Federal Reserve issues FOMC statement"
+  },
+  {
+    "source": "Federal Reserve — Monetary policy",
+    "category": "fomc",
+    "title": "Federal Reserve Board and Federal Open Market Committee release economic projections from the June 16-17 FOMC meeting",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617b.htm",
+    "date": "2026-06-17T18:00:00+00:00",
+    "summary": "Federal Reserve Board and Federal Open Market Committee release economic projections from the June 16-17 FOMC meeting"
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Index-linked Treasury Stock",
+    "link": "https://www.bankofengland.co.uk/news/2026/june/index-linked-treasury-stock-jun-2026",
+    "date": "2026-06-17T13:30:00+00:00",
+    "summary": "Index-linked treasury stocks are gilts issued by the UK Government. They pay out twice a year, with the amount indexed to the Retail Prices Index."
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Announcement of the publication of the Governor's interview transcript",
+    "link": "https://www.bankofengland.co.uk/news/2026/june/statement-announcing-governors-interview",
+    "date": "2026-06-17T09:00:00+00:00",
+    "summary": "Statement from the Bank of England"
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Summary of the RTGS CHAPS Industry Forum",
+    "link": "https://www.bankofengland.co.uk/minutes/2026/june/rtgs-chaps-industry-forum-4-june-2026",
+    "date": "2026-06-15T13:15:24+00:00",
+    "summary": "The first meeting of the RTGS CHAPS Industry Forum"
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Banknote imagery advisory group minutes – 15 December 2025",
+    "link": "https://www.bankofengland.co.uk/minutes/2025/december/banknote-advisory-minutes-15-december",
+    "date": "2026-06-15T09:00:00+00:00",
+    "summary": "Meeting held 15 December 2025"
   }
 ]
