@@ -1,5 +1,13 @@
 [
   {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Green notice 2026/02",
+    "link": "https://www.bankofengland.co.uk/statistics/notice/2026/green-notice-2026-02",
+    "date": "2026-08-06T11:00:00+00:00",
+    "summary": "Green notices cover significant and/or significant proposals for Bank of England reporting. If any of these proposals are finalised and are to be implemented, they will appear in a statistical notice."
+  },
+  {
     "source": "Federal Reserve — Speeches",
     "category": "speeches",
     "title": "Cook, Outlook for the U.S. and Alaskan Economies",
@@ -790,13 +798,5 @@
     "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617b.htm",
     "date": "2026-06-17T18:00:00+00:00",
     "summary": "Federal Reserve Board and Federal Open Market Committee release economic projections from the June 16-17 FOMC meeting"
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Index-linked Treasury Stock",
-    "link": "https://www.bankofengland.co.uk/news/2026/june/index-linked-treasury-stock-jun-2026",
-    "date": "2026-06-17T13:30:00+00:00",
-    "summary": "Index-linked treasury stocks are gilts issued by the UK Government. They pay out twice a year, with the amount indexed to the Retail Prices Index."
   }
 ]
