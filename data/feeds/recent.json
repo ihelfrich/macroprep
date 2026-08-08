@@ -1,5 +1,21 @@
 [
   {
+    "source": "EIA — Today in Energy",
+    "category": "energy",
+    "title": "Battery storage capacity averaged 70% growth over the last three years",
+    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67925",
+    "date": "2026-08-07T14:00:00+00:00",
+    "summary": "Utility-scale battery storage capacity in the United States increased significantly during the last three years, with an annual average growth rate of 70%. By the end of 2025, the U.S. power system had operational battery storage capacity of 43.6 gigawatts (GW). During the first six months of 2026, operators added another 8.3 GW of battery storage capacity, reaching nearly 52 GW of nameplate batt…"
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "ECB publishes consolidated banking data for end-March 2026",
+    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260807~58eb5109ce.en.html",
+    "date": "2026-08-07T08:00:00+00:00",
+    "summary": ""
+  },
+  {
     "source": "Bank of England — News",
     "category": "monetary_policy_uk",
     "title": "Green notice 2026/02",
@@ -350,14 +366,6 @@
     "link": "https://www.bankofengland.co.uk/news/2026/july/pra-fines-hdi-global-se-4165000-for-inaccurate-reporting",
     "date": "2026-07-20T09:00:00+00:00",
     "summary": "The Prudential Regulation Authority (PRA) has imposed a financial penalty of £4,165,000 on HDI Global SE in connection with the submission of incorrect data to the PRA."
-  },
-  {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Survey on the Access to Finance of Enterprises: lending conditions tightened",
-    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260720~cafc3874a7.en.html",
-    "date": "2026-07-20T08:00:00+00:00",
-    "summary": ""
   },
   {
     "source": "Federal Reserve — Speeches",
@@ -790,13 +798,5 @@
     "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm",
     "date": "2026-06-17T18:00:00+00:00",
     "summary": "Federal Reserve issues FOMC statement"
-  },
-  {
-    "source": "Federal Reserve — Monetary policy",
-    "category": "fomc",
-    "title": "Federal Reserve Board and Federal Open Market Committee release economic projections from the June 16-17 FOMC meeting",
-    "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617b.htm",
-    "date": "2026-06-17T18:00:00+00:00",
-    "summary": "Federal Reserve Board and Federal Open Market Committee release economic projections from the June 16-17 FOMC meeting"
   }
 ]
