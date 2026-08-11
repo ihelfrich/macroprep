@@ -2,6 +2,14 @@
   {
     "source": "EIA — Today in Energy",
     "category": "energy",
+    "title": "Duration of power outages in Puerto Rico not caused by major events increased 19% in 2025",
+    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67926",
+    "date": "2026-08-10T14:00:00+00:00",
+    "summary": "In 2025, customers in Puerto Rico experienced an average of 36 hours of power interruptions that were not caused by major events such as hurricanes, 19% more than in 2024. On average, between 2021 and 2025, Puerto Rican customers experience 29 hours of power loss each year. By comparison, electricity customers in the mainland United States generally experience about two hours of electricity inter…"
+  },
+  {
+    "source": "EIA — Today in Energy",
+    "category": "energy",
     "title": "Battery storage capacity averaged 70% growth over the last three years",
     "link": "https://www.eia.gov/todayinenergy/detail.php?id=67925",
     "date": "2026-08-07T14:00:00+00:00",
@@ -790,13 +798,5 @@
     "link": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/june-2026",
     "date": "2026-06-18T11:00:00+00:00",
     "summary": "The Bank of England’s Monetary Policy Committee is responsible for making decisions about Bank Rate."
-  },
-  {
-    "source": "Federal Reserve — Monetary policy",
-    "category": "fomc",
-    "title": "Federal Reserve issues FOMC statement",
-    "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm",
-    "date": "2026-06-17T18:00:00+00:00",
-    "summary": "Federal Reserve issues FOMC statement"
   }
 ]
