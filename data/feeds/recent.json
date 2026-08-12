@@ -1,5 +1,21 @@
 [
   {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Results of the Semi-Annual FX Turnover Surveys in April 2026",
+    "link": "https://www.bankofengland.co.uk/markets/london-foreign-exchange-joint-standing-committee/results-of-the-semi-annual-fx-turnover-survey-april-2026",
+    "date": "2026-08-11T13:00:00+00:00",
+    "summary": "In April 2026, 25 financial institutions active in the UK foreign exchange (FX) market participated in the semi-annual turnover survey for the Foreign Exchange Joint Standing Committee (FXJSC). The survey results are summarised below. Detailed tables for the April 2026 reporting period, linked below, are available separately."
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "ECB and Frankfurt Radio Symphony invite the public to Europa Open Air concert on 20 August 2026",
+    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260811~47cd3ee040.en.html",
+    "date": "2026-08-11T08:30:00+00:00",
+    "summary": ""
+  },
+  {
     "source": "EIA — Today in Energy",
     "category": "energy",
     "title": "Duration of power outages in Puerto Rico not caused by major events increased 19% in 2025",
@@ -350,14 +366,6 @@
     "link": "https://www.bea.gov/news/2026/direct-investment-country-and-industry-2025",
     "date": "2026-07-21T12:30:00+00:00",
     "summary": "The U.S. direct investment abroad position, or cumulative level of investment, increased $438.1 billion to $7.14 trillion at the end of 2025, according to statistics released today by the U.S. Bureau of Economic Analysis. The increase was led by a $350.2 billion increase in the position in Europe, primarily in the United Kingdom and Luxembourg. By industry, manufacturing had the largest increase,…"
-  },
-  {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "July 2026 euro area bank lending survey",
-    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260721~44ee50f75c.en.html",
-    "date": "2026-07-21T08:00:00+00:00",
-    "summary": ""
   },
   {
     "source": "EIA — Today in Energy",
@@ -790,13 +798,5 @@
     "link": "https://www.bankofengland.co.uk/news/2026/june/the-governor-interview-transcript-18-june-2026",
     "date": "2026-06-18T12:30:00+00:00",
     "summary": "Following the publication of the Monetary Policy Summary and minutes of the Monetary Policy Committee meeting"
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Bank Rate maintained at 3.75% - June 2026 Monetary Policy Summary and Minutes",
-    "link": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/june-2026",
-    "date": "2026-06-18T11:00:00+00:00",
-    "summary": "The Bank of England’s Monetary Policy Committee is responsible for making decisions about Bank Rate."
   }
 ]
