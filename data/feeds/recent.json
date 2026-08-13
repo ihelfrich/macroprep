@@ -1,5 +1,13 @@
 [
   {
+    "source": "EIA — Today in Energy",
+    "category": "energy",
+    "title": "United States on track for record natural gas production in 2026",
+    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67944",
+    "date": "2026-08-12T14:00:00+00:00",
+    "summary": "We forecast U.S. marketed natural gas production will average 122.5 billion cubic feet per day (Bcf/d) in 2026, surpassing the previous record of 118.5 Bcf/d set in 2025, in our August 2026 Short-Term Energy Outlook (STEO)."
+  },
+  {
     "source": "Bank of England — News",
     "category": "monetary_policy_uk",
     "title": "Results of the Semi-Annual FX Turnover Surveys in April 2026",
@@ -790,13 +798,5 @@
     "link": "https://www.bankofengland.co.uk/minutes/2026/june/court-minutes-23-april-2026",
     "date": "2026-06-18T13:00:00+00:00",
     "summary": "The Bank's Court of Directors acts as a unitary board, setting the organisation's strategy and budget and taking key decisions on resourcing and appointments. Required to meet a minimum seven times per year, it has five executive members from the Bank and up to nine non-executive members."
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Transcript of the Governor's pooled broadcast interview given on 18 June 2026",
-    "link": "https://www.bankofengland.co.uk/news/2026/june/the-governor-interview-transcript-18-june-2026",
-    "date": "2026-06-18T12:30:00+00:00",
-    "summary": "Following the publication of the Monetary Policy Summary and minutes of the Monetary Policy Committee meeting"
   }
 ]
