@@ -1,5 +1,21 @@
 [
   {
+    "source": "EIA — Today in Energy",
+    "category": "energy",
+    "title": "Waterborne shipments from the U.S. Gulf Coast increased in April and May",
+    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67964",
+    "date": "2026-08-17T14:00:00+00:00",
+    "summary": "Waterborne shipments of crude oil and petroleum products from the U.S. Gulf Coast (PADD 3) to the West Coast (PADD 5) more than quadrupled year-on-year in April and May following a waiver that permitted a broader group of ships to travel between U.S. ports. Shipments from the U.S. Gulf Coast to the East Coast (PADD 1) also increased."
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "Philip R. Lane: The rise in defence spending and the euro area economy",
+    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260817~1f9f7149c9.en.pdf",
+    "date": "2026-08-17T09:30:00+00:00",
+    "summary": ""
+  },
+  {
     "source": "Federal Reserve — All press releases",
     "category": "monetary_policy_us",
     "title": "Federal Reserve Board issues enforcement action with former employee of Regions Bank",
@@ -349,14 +365,6 @@
     "title": "Christine Lagarde, Boris Vujčić: Monetary policy statement (with Q&A)",
     "link": "https://www.ecb.europa.eu//press/press_conference/monetary-policy-statement/2026/html/ecb.is260723~b6fadd48f4.en.html",
     "date": "2026-07-23T13:00:00+00:00",
-    "summary": ""
-  },
-  {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Monetary policy decisions",
-    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.mp260723~29f24d99bc.en.html",
-    "date": "2026-07-23T12:15:00+00:00",
     "summary": ""
   },
   {
@@ -790,13 +798,5 @@
     "link": "https://www.bankofengland.co.uk/news/2026/june/pra-adjustments-market-risk-internal-model-approach-under-basel31",
     "date": "2026-06-19T06:00:00+00:00",
     "summary": "The Prudential Regulation Authority (PRA) has today published a consultation on the internal model approach to market risk (IMA), which represents the final piece of Basel 3.1’s implementation in the UK."
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Minutes of the Meeting of the Court of Directors held on 23 April 2026",
-    "link": "https://www.bankofengland.co.uk/minutes/2026/june/court-minutes-23-april-2026",
-    "date": "2026-06-18T13:00:00+00:00",
-    "summary": "The Bank's Court of Directors acts as a unitary board, setting the organisation's strategy and budget and taking key decisions on resourcing and appointments. Required to meet a minimum seven times per year, it has five executive members from the Bank and up to nine non-executive members."
   }
 ]

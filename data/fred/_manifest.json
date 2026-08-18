@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T07:29:17+00:00",
+  "generated_at": "2026-08-18T07:11:49+00:00",
   "endpoint": "https://fred.stlouisfed.org/graph/fredgraph.csv",
   "n_series": 26,
   "series": [
@@ -69,9 +69,9 @@
       "description": "Market-implied 5y inflation expectations",
       "file": "T5YIE.json",
       "status": "ok",
-      "n_observations": 5909,
+      "n_observations": 5910,
       "start": "2003-01-02",
-      "end": "2026-08-14"
+      "end": "2026-08-17"
     },
     {
       "id": "UNRATE",
@@ -153,9 +153,9 @@
       "description": "Credit risk premium",
       "file": "BAMLH0A0HYM2.json",
       "status": "ok",
-      "n_observations": 787,
-      "start": "2023-08-15",
-      "end": "2026-08-13"
+      "n_observations": 785,
+      "start": "2023-08-18",
+      "end": "2026-08-14"
     },
     {
       "id": "GDPC1",
@@ -223,9 +223,9 @@
       "description": "Overnight policy rate",
       "file": "DFF.json",
       "status": "ok",
-      "n_observations": 9356,
+      "n_observations": 9357,
       "start": "2001-01-01",
-      "end": "2026-08-13"
+      "end": "2026-08-14"
     },
     {
       "id": "FEDFUNDS",
@@ -251,9 +251,9 @@
       "description": "Benchmark long rate",
       "file": "DGS10.json",
       "status": "ok",
-      "n_observations": 6406,
+      "n_observations": 6407,
       "start": "2001-01-02",
-      "end": "2026-08-13"
+      "end": "2026-08-14"
     },
     {
       "id": "DGS2",
@@ -265,9 +265,9 @@
       "description": "Short-end policy-sensitive yield",
       "file": "DGS2.json",
       "status": "ok",
-      "n_observations": 6406,
+      "n_observations": 6407,
       "start": "2001-01-02",
-      "end": "2026-08-13"
+      "end": "2026-08-14"
     },
     {
       "id": "T10Y2Y",
@@ -279,9 +279,9 @@
       "description": "Term spread / classic recession indicator",
       "file": "T10Y2Y.json",
       "status": "ok",
-      "n_observations": 6407,
+      "n_observations": 6408,
       "start": "2001-01-02",
-      "end": "2026-08-14"
+      "end": "2026-08-17"
     },
     {
       "id": "MORTGAGE30US",
@@ -307,9 +307,9 @@
       "description": "Trade-weighted dollar",
       "file": "DTWEXBGS.json",
       "status": "ok",
-      "n_observations": 5164,
+      "n_observations": 5169,
       "start": "2006-01-02",
-      "end": "2026-08-07"
+      "end": "2026-08-14"
     },
     {
       "id": "DEXUSEU",
@@ -321,9 +321,9 @@
       "description": "Headline USD/EUR",
       "file": "DEXUSEU.json",
       "status": "ok",
-      "n_observations": 6417,
+      "n_observations": 6422,
       "start": "2001-01-02",
-      "end": "2026-08-07"
+      "end": "2026-08-14"
     },
     {
       "id": "DEXUSUK",
@@ -335,9 +335,9 @@
       "description": "USD/GBP",
       "file": "DEXUSUK.json",
       "status": "ok",
-      "n_observations": 6417,
+      "n_observations": 6422,
       "start": "2001-01-02",
-      "end": "2026-08-07"
+      "end": "2026-08-14"
     },
     {
       "id": "USREC",
