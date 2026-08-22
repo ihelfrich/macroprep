@@ -1,5 +1,13 @@
 [
   {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "ECB Consumer Expectations Survey results – July 2026",
+    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260821~a044fdddd9.en.html",
+    "date": "2026-08-21T08:00:00+00:00",
+    "summary": ""
+  },
+  {
     "source": "Federal Reserve — All press releases",
     "category": "monetary_policy_us",
     "title": "Federal Reserve Board announces approval of application by National Westminster Bank Plc",
@@ -406,14 +414,6 @@
     "link": "https://www.bankofengland.co.uk/letter/2026/letter-from-the-governor-to-the-daily-mail",
     "date": "2026-07-23T16:00:00+00:00",
     "summary": "Letter from Governor Andrew Bailey to the Daily Mail on the subject of AI and cyber-attacks"
-  },
-  {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "ECB reveals shortlisted designs for new banknotes and launches public survey",
-    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260723~c2d43f9170.en.html",
-    "date": "2026-07-23T14:15:00+00:00",
-    "summary": ""
   },
   {
     "source": "EIA — Today in Energy",
