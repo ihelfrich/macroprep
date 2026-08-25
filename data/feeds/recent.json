@@ -1,5 +1,13 @@
 [
   {
+    "source": "EIA — Today in Energy",
+    "category": "energy",
+    "title": "Dangote refinery drives increase in petroleum shipments from Nigeria",
+    "link": "https://www.eia.gov/todayinenergy/detail.php?id=68004",
+    "date": "2026-08-24T14:00:00+00:00",
+    "summary": "Seaborne petroleum product exports from Nigeria have grown seven-fold since 2023, playing an increasing role in the international market for petroleum products at a time when supplies from other areas have been constrained."
+  },
+  {
     "source": "ECB — Press releases",
     "category": "monetary_policy_eu",
     "title": "Piero Cipollone: Interview with ilsussidiario.net",
@@ -790,13 +798,5 @@
     "link": "https://www.federalreserve.gov/newsevents/speech/waller20260622a.htm",
     "date": "2026-06-22T13:00:00+00:00",
     "summary": "Speech At the Fifth Conference on the International Roles of the Dollar, Board of Governors of the Federal Reserve System, Washington, D.C."
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Bank of England launches policy statement and draft rules on regulating systemic stablecoins",
-    "link": "https://www.bankofengland.co.uk/news/2026/june/boe-launches-policy-statement-and-draft-rules-on-regulating-systemic-stablecoins",
-    "date": "2026-06-22T07:30:00+00:00",
-    "summary": "The Bank of England has today published its policy statement and draft Code of Practice (rules) for systemic stablecoin issuers."
   }
 ]
