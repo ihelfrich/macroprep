@@ -2,6 +2,30 @@
   {
     "source": "ECB — Press releases",
     "category": "monetary_policy_eu",
+    "title": "Boris Vujčić: Listening to households: expectations, behaviour and monetary policy",
+    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260901~bb28f33f54.en.html",
+    "date": "2026-09-01T16:00:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "EIA — Today in Energy",
+    "category": "energy",
+    "title": "U.S. LNG exports rose 23% in the first half of 2026 because of higher capacity",
+    "link": "https://www.eia.gov/todayinenergy/detail.php?id=",
+    "date": "2026-09-01T14:00:00+00:00",
+    "summary": "U.S. liquefied natural gas (LNG) exports averaged 17.4 billion cubic feet per day (Bcf/d) in the first six months of the year, 23% more than the same period in 2025, according to our Natural Gas Monthly. In our latest Short-Term Energy Outlook, we estimate U.S. LNG exports will average 17.3 Bcf/d in the second half of 2026 (2H26) before rising to 18.7 Bcf/d in 1H27."
+  },
+  {
+    "source": "Federal Reserve — Speeches",
+    "category": "speeches",
+    "title": "Barr, Unlocking Opportunities for Workers and Entrepreneurs with a Criminal Record",
+    "link": "https://www.federalreserve.gov/newsevents/speech/barr20260901a.htm",
+    "date": "2026-09-01T13:05:00+00:00",
+    "summary": "Speech At the Second-Chance Lending Forum, Developing Evidence-Based Policy on Creditworthiness and Criminal History, Washington, D.C."
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
     "title": "Isabel Schnabel: Central banks on-chain",
     "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260828~fe9afc86e8.en.html",
     "date": "2026-08-28T16:00:00+00:00",
@@ -352,14 +376,6 @@
     "summary": "Federal Reserve Board requests comment on a proposal to modernize its rule governing the extension of credit to bank \"insiders\"—bank executives, board members and major shareholders who could potentially influence a bank's lending decisions"
   },
   {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "China's crude oil imports fell in the second quarter",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67905",
-    "date": "2026-07-31T14:00:00+00:00",
-    "summary": "China, the world's largest importer of crude oil, imported less crude oil in the second quarter of 2026 (2Q26) following higher crude oil prices that resulted from disrupted flows through the Strait of Hormuz. China's lower imports reduced global demand, softening the upward price effects from the disrupted supply through the strait."
-  },
-  {
     "source": "Federal Reserve — All press releases",
     "category": "monetary_policy_us",
     "title": "Federal Reserve Board issues enforcement actions with former employee of Regions Bank and former employee of First Interstate Bank",
@@ -424,28 +440,12 @@
     "summary": "Federal Reserve issues FOMC statement"
   },
   {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "Lower crude oil prices reduced U.S.-Canada energy trade value in 2025",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67904",
-    "date": "2026-07-29T14:00:00+00:00",
-    "summary": "The value of energy trade between the United States and Canada fell by 11% in 2025 to an estimated $137 billion, according to data from the U.S. Census Bureau. Energy trade value is the total value of energy imports and exports between two countries and is driven by commodity volumes and prices. Most of the U.S.-Canada trade value is U.S. energy imports from Canada—$111 billion in 2025—rather tha…"
-  },
-  {
     "source": "ECB — Press releases",
     "category": "monetary_policy_eu",
     "title": "ECB wage tracker at 2.7% in Q1 2027, indicating stable negotiated wage pressures",
     "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260729~4ad7508d8a.en.html",
     "date": "2026-07-29T08:00:00+00:00",
     "summary": ""
-  },
-  {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "Hybrid sales rise while battery electric sales remain lower after tax credit expiration",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67885",
-    "date": "2026-07-27T14:00:00+00:00",
-    "summary": "In the second quarter of 2026 (2Q26), 24% of new light-duty vehicles sold in the United States were hybrid electric, battery electric, or plug-in hybrid electric vehicles, up from 22% in 2Q25. Between 2Q25 and 2Q26, hybrid electric vehicles continued to gain market share, reaching a record 16% of light-duty vehicle sales. The market shares of battery electric and plug-in hybrid electric vehicles…"
   },
   {
     "source": "ECB — Press releases",
@@ -456,27 +456,11 @@
     "summary": ""
   },
   {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "Energia Costa Azul, Mexico's second LNG terminal, shipped first cargo",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67884",
-    "date": "2026-07-24T14:00:00+00:00",
-    "summary": "Energia Costa Azul, the second liquefied natural gas (LNG) export facility in Mexico, shipped its initial cargo from Phase 1 of the terminal on July 8, according to the project developer. The completion of the project adds 0.4 billion cubic feet per day (Bcf/d) of nominal export capacity from a single train, tripling Mexico's LNG export capacity. The facility is the first terminal in Mexico and t…"
-  },
-  {
     "source": "ECB — Press releases",
     "category": "monetary_policy_eu",
     "title": "Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates)",
     "link": "https://www.ecb.europa.eu//press/govcdec/otherdec/2026/html/ecb.gc260724~eebbc30622.en.html",
     "date": "2026-07-24T13:00:00+00:00",
-    "summary": ""
-  },
-  {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "ECB to extend use of climate factors in Eurosystem collateral framework to non-financial corporate credit claims",
-    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260724_4~f082ce289d.en.html",
-    "date": "2026-07-24T10:00:00+00:00",
     "summary": ""
   },
   {
@@ -486,14 +470,6 @@
     "link": "https://www.bankofengland.co.uk/letter/2026/letter-from-the-governor-to-the-daily-mail",
     "date": "2026-07-23T16:00:00+00:00",
     "summary": "Letter from Governor Andrew Bailey to the Daily Mail on the subject of AI and cyber-attacks"
-  },
-  {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "Commercial crude oil inventories increased by 2.0 million barrels",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67868",
-    "date": "2026-07-22T14:00:00+00:00",
-    "summary": "For the week ending July 17, 2026, commercial crude oil inventories (excluding the Strategic Petroleum Reserve) increased 2.0 million barrels to 411.7 million barrels, 6% below the previous five-year (2021–2025) average. Gasoline inventories increased 0.8 million barrels, 7% below the five-year average. Distillate inventories increased 1.4 million barrels, 10% below the five-year average. Propane…"
   },
   {
     "source": "Bank of England — News",
@@ -510,14 +486,6 @@
     "link": "https://www.bea.gov/news/2026/direct-investment-country-and-industry-2025",
     "date": "2026-07-21T12:30:00+00:00",
     "summary": "The U.S. direct investment abroad position, or cumulative level of investment, increased $438.1 billion to $7.14 trillion at the end of 2025, according to statistics released today by the U.S. Bureau of Economic Analysis. The increase was led by a $350.2 billion increase in the position in Europe, primarily in the United Kingdom and Luxembourg. By industry, manufacturing had the largest increase,…"
-  },
-  {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "New York imports more electricity from Canada after high-voltage transmission line opens",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67867",
-    "date": "2026-07-20T14:00:00+00:00",
-    "summary": "On July 3, 2026, the New York Independent System Operator (NYISO) imported 52 gigawatthours (GWh) of electricity from Canada, the most traded between the two areas since January 2025. Some of the imported electricity flowed along the new Champlain Hudson Power Express (CHPE) transmission line between Quebec, Canada, and New York City, which officially reached commercial operations in May after th…"
   },
   {
     "source": "Bank of England — News",
@@ -552,28 +520,12 @@
     "summary": "Federal Reserve Board issues enforcement action with former chief lending officer of Heritage State Bank"
   },
   {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "What are tank bottoms?",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67866",
-    "date": "2026-07-16T14:00:00+00:00",
-    "summary": "Crude oil inventories held at storage facilities in Cushing, Oklahoma, fell below 20 million barrels during the week ending June 19 until the week ending July 10, according to our Weekly Petroleum Status Report."
-  },
-  {
     "source": "Federal Reserve — Speeches",
     "category": "speeches",
     "title": "Cook, Economic Outlook",
     "link": "https://www.federalreserve.gov/newsevents/speech/cook20260715a.htm",
     "date": "2026-07-15T17:00:00+00:00",
     "summary": "Speech At The Exchequer Club of Washington D.C., Washington, D.C."
-  },
-  {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "Petroleum markets responded to disruptions in the Middle East in the second quarter",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67865",
-    "date": "2026-07-15T14:00:00+00:00",
-    "summary": "Petroleum markets in the second quarter of 2026 (2Q26) were characterized by continued disruptions to international crude oil and petroleum product flows through the Strait of Hormuz, contributing to higher and more volatile crude oil prices through most of the quarter. The disruptions also resulted in international buyers seeking alternative supply sources for petroleum products, driving up U.S.…"
   },
   {
     "source": "Federal Reserve — Speeches",
@@ -614,14 +566,6 @@
     "link": "https://www.bankofengland.co.uk/news/2026/july/pra-and-fca-propose-new-captive-insurance-regime-to-drive-uk-growth-and-competitiveness",
     "date": "2026-07-14T14:00:00+00:00",
     "summary": "Innovative new proposals aim to establish the UK as a centre for the fast-growing captive insurance market."
-  },
-  {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "Global liquefied natural gas trade volumes reached record high in 2025",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67864",
-    "date": "2026-07-14T14:00:00+00:00",
-    "summary": "Global liquefied natural gas (LNG) trade volumes increased 5.4% to a record 56.3 billion cubic feet per day last year (Bcf/d), driven largely by U.S. LNG export capacity expanding to meet growing demand, according to a recent report from the International Group of Liquefied Natural Gas Importers (GIIGNL). Global LNG trade has slowed this year following the closure of the key export route for Qata…"
   },
   {
     "source": "Federal Reserve — Speeches",
@@ -688,14 +632,6 @@
     "summary": "Federal Reserve Board issues enforcement action with TS Banking Group, Inc. and TS Contrarian Bancshares, Inc."
   },
   {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "The United States produced more crude oil than any other country in 2025",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67844",
-    "date": "2026-07-09T14:00:00+00:00",
-    "summary": "The United States remained the world's largest crude oil producer in 2025, according to our International Energy Statistics database, extending a streak that began in 2018 when the United States overtook Russia to become the world's leading producer."
-  },
-  {
     "source": "Federal Reserve — Monetary policy",
     "category": "fomc",
     "title": "Minutes of the Federal Open Market Committee, June 16-17, 2026",
@@ -718,14 +654,6 @@
     "link": "https://www.bankofengland.co.uk/letter/2026/letter-from-the-governor-to-joe-powell",
     "date": "2026-07-08T14:00:00+00:00",
     "summary": "Letter from the Governor"
-  },
-  {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "U.S. exports of crude oil and petroleum products reached record in April",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=67825",
-    "date": "2026-07-08T14:00:00+00:00",
-    "summary": "U.S. petroleum exports reached a record in April as disruptions to international crude oil and refined product flows through the Strait of Hormuz increased global demand for U.S. exports. Exports increased to 13.6 million barrels per day (b/d) in April, 15% more than the previous record set in March."
   },
   {
     "source": "Bank of England — News",
@@ -798,5 +726,77 @@
     "link": "https://www.bankofengland.co.uk/statistics/notice/2026/statistical-notice-2026-06",
     "date": "2026-06-30T08:00:00+00:00",
     "summary": "Statistical Notices update the definitions and guidance contained in the Banking Statistics Yellow Folder"
+  },
+  {
+    "source": "BEA — News releases",
+    "category": "data_release_us",
+    "title": "Personal Income and Outlays, May 2026",
+    "link": "https://www.bea.gov/news/2026/personal-income-and-outlays-may-2026",
+    "date": "2026-06-25T12:30:00+00:00",
+    "summary": "Personal income increased $181.6 billion (0.7 percent at a monthly rate) in May, according to estimates released today by the U.S. Bureau of Economic Analysis (BEA). Disposable personal income (DPI)-personal income less personal current taxes-increased $164.9 billion (0.7 percent), and personal consumption expenditures (PCE) increased $156.1 billion (0.7 percent). Personal outlays-the sum of PCE,…"
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "The Retail Payments Infrastructure Board launches consultation on the next generation UK payments infrastructure",
+    "link": "https://www.bankofengland.co.uk/news/2026/june/rpib-launches-consultation-on-next-generation-uk-payments-infrastructure",
+    "date": "2026-06-25T09:00:00+00:00",
+    "summary": "Today marks a major milestone in the modernisation of the UK's payments landscape, with the Retail Payments Infrastructure Board (RPIB) launching a consultation on the future design of the UK's next-generation retail payments infrastructure."
+  },
+  {
+    "source": "Federal Reserve — Speeches",
+    "category": "speeches",
+    "title": "Cook, Welcome Remarks",
+    "link": "https://www.federalreserve.gov/newsevents/speech/cook20260624a.htm",
+    "date": "2026-06-24T18:00:00+00:00",
+    "summary": "Speech At the State of Small Business Symposium hosted by the Federal Reserve Bank of Cleveland (via pre-recorded video)"
+  },
+  {
+    "source": "BEA — News releases",
+    "category": "data_release_us",
+    "title": "U.S. International Transactions and Investment Position, 1st Quarter 2026 and Annual Update",
+    "link": "https://www.bea.gov/news/2026/us-international-transactions-and-investment-position-1st-quarter-2026-and-annual-update",
+    "date": "2026-06-24T12:30:00+00:00",
+    "summary": "Full Text]]>"
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Megan Greene's CV and questionnaire for the Treasury Select Committee",
+    "link": "https://www.bankofengland.co.uk/news/2026/june/megan-greene-tsc-reappointment",
+    "date": "2026-06-24T08:20:56+00:00",
+    "summary": "Published for the Treasury Select Committee"
+  },
+  {
+    "source": "Federal Reserve — Speeches",
+    "category": "speeches",
+    "title": "Waller, Welcoming Remarks on the International Role of the U.S. Dollar",
+    "link": "https://www.federalreserve.gov/newsevents/speech/waller20260622a.htm",
+    "date": "2026-06-22T13:00:00+00:00",
+    "summary": "Speech At the Fifth Conference on the International Roles of the Dollar, Board of Governors of the Federal Reserve System, Washington, D.C."
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Bank of England launches policy statement and draft rules on regulating systemic stablecoins",
+    "link": "https://www.bankofengland.co.uk/news/2026/june/boe-launches-policy-statement-and-draft-rules-on-regulating-systemic-stablecoins",
+    "date": "2026-06-22T07:30:00+00:00",
+    "summary": "The Bank of England has today published its policy statement and draft Code of Practice (rules) for systemic stablecoin issuers."
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Asset Purchase Facility: Gilt Sales – Market Notice 19 June 2026",
+    "link": "https://www.bankofengland.co.uk/markets/market-notices/2026/june/apf-gilt-sales-market-notice-19-june-2026",
+    "date": "2026-06-19T15:30:00+00:00",
+    "summary": "This Market Notice sets out the schedule for sales in Q3 2026 of gilts held in the Asset Purchase Facility (APF) for monetary policy purposes."
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "PRA sets out adjustments to its market risk internal model approach under Basel 3.1",
+    "link": "https://www.bankofengland.co.uk/news/2026/june/pra-adjustments-market-risk-internal-model-approach-under-basel31",
+    "date": "2026-06-19T06:00:00+00:00",
+    "summary": "The Prudential Regulation Authority (PRA) has today published a consultation on the internal model approach to market risk (IMA), which represents the final piece of Basel 3.1’s implementation in the UK."
   }
 ]
