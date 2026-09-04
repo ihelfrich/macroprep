@@ -2,6 +2,38 @@
   {
     "source": "ECB — Press releases",
     "category": "monetary_policy_eu",
+    "title": "Philip R. Lane: Diversity at the European Central Bank",
+    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260904~7b9257099b.en.pdf",
+    "date": "2026-09-04T09:10:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "EIA — Today in Energy",
+    "category": "energy",
+    "title": "Weekly average load in ERCOT continues near record high",
+    "link": "https://www.eia.gov/todayinenergy/detail.php?id=68084",
+    "date": "2026-09-03T14:00:00+00:00",
+    "summary": "Sustained high temperatures have contributed to persistently high electricity demand in the Electric Reliability Council of Texas (ERCOT), the regional transmission organization for most of the state."
+  },
+  {
+    "source": "Federal Reserve — Speeches",
+    "category": "speeches",
+    "title": "Waller, The Economic Outlook and Some Comments on My Policy Communication",
+    "link": "https://www.federalreserve.gov/newsevents/speech/waller20260903a.htm",
+    "date": "2026-09-03T12:30:00+00:00",
+    "summary": "Speech At Reuters NEXT Newsmaker Interview, Washington, D.C."
+  },
+  {
+    "source": "BEA — News releases",
+    "category": "data_release_us",
+    "title": "U.S. International Trade in Goods and Services, July 2026",
+    "link": "https://www.bea.gov/news/2026/us-international-trade-goods-and-services-july-2026",
+    "date": "2026-09-03T12:30:00+00:00",
+    "summary": "The U.S. goods and services trade deficit increased in July 2026 according to the U.S. Bureau of Economic Analysis and the U.S. Census Bureau. The deficit increased from $71.2 billion in June (revised) to $88.6 billion in July, as imports increased and exports decreased. The goods deficit increased $17.6 billion in July to $119.6 billion. The services surplus increased $0.2 billion in July to $31…"
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
     "title": "Boris Vujčić: Listening to households: expectations, behaviour and monetary policy",
     "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260901~bb28f33f54.en.html",
     "date": "2026-09-01T16:00:00+00:00",
@@ -11,7 +43,7 @@
     "source": "EIA — Today in Energy",
     "category": "energy",
     "title": "U.S. LNG exports rose 23% in the first half of 2026 because of higher capacity",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=",
+    "link": "https://www.eia.gov/todayinenergy/detail.php?id=68064",
     "date": "2026-09-01T14:00:00+00:00",
     "summary": "U.S. liquefied natural gas (LNG) exports averaged 17.4 billion cubic feet per day (Bcf/d) in the first six months of the year, 23% more than the same period in 2025, according to our Natural Gas Monthly. In our latest Short-Term Energy Outlook, we estimate U.S. LNG exports will average 17.3 Bcf/d in the second half of 2026 (2H26) before rising to 18.7 Bcf/d in 1H27."
   },
@@ -336,14 +368,6 @@
     "summary": "Federal Reserve Board announces approval of the application by Banco Santander, S.A. and Santander Holdings USA, Inc."
   },
   {
-    "source": "BEA — News releases",
-    "category": "data_release_us",
-    "title": "U.S. International Trade in Goods and Services, June 2026",
-    "link": "https://www.bea.gov/news/2026/us-international-trade-goods-and-services-june-2026",
-    "date": "2026-08-04T12:30:00+00:00",
-    "summary": "Full Text]]>"
-  },
-  {
     "source": "EIA — Today in Energy",
     "category": "energy",
     "title": "Hourly peak load in ERCOT set a new record, exceeding 91 GW on July 22",
@@ -453,14 +477,6 @@
     "title": "Philip R. Lane: Outlook for the euro area economy",
     "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260724~d484b483b9.en.pdf",
     "date": "2026-07-24T15:30:00+00:00",
-    "summary": ""
-  },
-  {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates)",
-    "link": "https://www.ecb.europa.eu//press/govcdec/otherdec/2026/html/ecb.gc260724~eebbc30622.en.html",
-    "date": "2026-07-24T13:00:00+00:00",
     "summary": ""
   },
   {
@@ -782,21 +798,5 @@
     "link": "https://www.bankofengland.co.uk/news/2026/june/boe-launches-policy-statement-and-draft-rules-on-regulating-systemic-stablecoins",
     "date": "2026-06-22T07:30:00+00:00",
     "summary": "The Bank of England has today published its policy statement and draft Code of Practice (rules) for systemic stablecoin issuers."
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Asset Purchase Facility: Gilt Sales – Market Notice 19 June 2026",
-    "link": "https://www.bankofengland.co.uk/markets/market-notices/2026/june/apf-gilt-sales-market-notice-19-june-2026",
-    "date": "2026-06-19T15:30:00+00:00",
-    "summary": "This Market Notice sets out the schedule for sales in Q3 2026 of gilts held in the Asset Purchase Facility (APF) for monetary policy purposes."
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "PRA sets out adjustments to its market risk internal model approach under Basel 3.1",
-    "link": "https://www.bankofengland.co.uk/news/2026/june/pra-adjustments-market-risk-internal-model-approach-under-basel31",
-    "date": "2026-06-19T06:00:00+00:00",
-    "summary": "The Prudential Regulation Authority (PRA) has today published a consultation on the internal model approach to market risk (IMA), which represents the final piece of Basel 3.1’s implementation in the UK."
   }
 ]
