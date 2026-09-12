@@ -1,5 +1,29 @@
 [
   {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "Christine Lagarde: Europe seen from Normandy",
+    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260912~fafa4b35b0.en.html",
+    "date": "2026-09-12T10:15:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "Philip R. Lane: Outlook for the euro area economy",
+    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260911~a4d6526f00.en.pdf",
+    "date": "2026-09-11T17:00:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "Federal Reserve — All press releases",
+    "category": "monetary_policy_us",
+    "title": "Agencies seek comment on proposed third-party risk management guidance and issue statement on community bank engagement with core service providers",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260911a.htm",
+    "date": "2026-09-11T14:00:00+00:00",
+    "summary": "Agencies seek comment on proposed third-party risk management guidance and issue statement on community bank engagement with core service providers"
+  },
+  {
     "source": "Federal Reserve — All press releases",
     "category": "monetary_policy_us",
     "title": "Agencies reduce regulatory burden for community banks, increase eligibility for 18-month exam cycle",
@@ -266,18 +290,18 @@
   {
     "source": "Federal Reserve — All press releases",
     "category": "monetary_policy_us",
-    "title": "Federal Reserve Board issues enforcement actions with former employee of Regions Bank and former employee of United Community Bank",
-    "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260820a.htm",
-    "date": "2026-08-20T15:00:00+00:00",
-    "summary": "Federal Reserve Board issues enforcement actions with former employee of Regions Bank and former employee of United Community Bank"
-  },
-  {
-    "source": "Federal Reserve — All press releases",
-    "category": "monetary_policy_us",
     "title": "Federal Reserve Board issues enforcement action with SouthPoint Bancshares, Inc. and announces termination of enforcement action with Deutsche Bank AG, DB USA Corporation, and Deutsche Bank AG New York Branch",
     "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260820b.htm",
     "date": "2026-08-20T15:00:00+00:00",
     "summary": "Federal Reserve Board issues enforcement action with SouthPoint Bancshares, Inc. and announces termination of enforcement action with Deutsche Bank AG, DB USA Corporation, and Deutsche Bank AG New York Branch"
+  },
+  {
+    "source": "Federal Reserve — All press releases",
+    "category": "monetary_policy_us",
+    "title": "Federal Reserve Board issues enforcement actions with former employee of Regions Bank and former employee of United Community Bank",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260820a.htm",
+    "date": "2026-08-20T15:00:00+00:00",
+    "summary": "Federal Reserve Board issues enforcement actions with former employee of Regions Bank and former employee of United Community Bank"
   },
   {
     "source": "Federal Reserve — All press releases",
@@ -336,14 +360,6 @@
     "summary": "Federal Reserve Board issues enforcement action with former employee of Regions Bank"
   },
   {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Cash remains most widely accepted payment method in euro area",
-    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260813~389729d6a9.en.html",
-    "date": "2026-08-13T09:00:00+00:00",
-    "summary": ""
-  },
-  {
     "source": "EIA — Today in Energy",
     "category": "energy",
     "title": "United States on track for record natural gas production in 2026",
@@ -358,14 +374,6 @@
     "link": "https://www.bankofengland.co.uk/markets/london-foreign-exchange-joint-standing-committee/results-of-the-semi-annual-fx-turnover-survey-april-2026",
     "date": "2026-08-11T13:00:00+00:00",
     "summary": "In April 2026, 25 financial institutions active in the UK foreign exchange (FX) market participated in the semi-annual turnover survey for the Foreign Exchange Joint Standing Committee (FXJSC). The survey results are summarised below. Detailed tables for the April 2026 reporting period, linked below, are available separately."
-  },
-  {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "ECB and Frankfurt Radio Symphony invite the public to Europa Open Air concert on 20 August 2026",
-    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260811~47cd3ee040.en.html",
-    "date": "2026-08-11T08:30:00+00:00",
-    "summary": ""
   },
   {
     "source": "EIA — Today in Energy",
@@ -598,14 +606,6 @@
     "link": "https://www.federalreserve.gov/newsevents/speech/bowman20260714a.htm",
     "date": "2026-07-14T18:55:00+00:00",
     "summary": "Speech At “Next-Gen Financial Inclusion,” the third annual Financial Inclusion Conference hosted by the Federal Reserve Board, Washington, D.C. (via pre-recorded video)"
-  },
-  {
-    "source": "Federal Reserve — All press releases",
-    "category": "monetary_policy_us",
-    "title": "Minutes of the Board's discount rate meetings on June 8 and June 17, 2026",
-    "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260714a.htm",
-    "date": "2026-07-14T18:00:00+00:00",
-    "summary": "Minutes of the Board's discount rate meetings on June 8 and June 17, 2026"
   },
   {
     "source": "Federal Reserve — Monetary policy",
