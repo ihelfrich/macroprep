@@ -1,5 +1,29 @@
 [
   {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Statistical Notice 2026/08 - Changes to the criteria for monthly form BT reporting",
+    "link": "https://www.bankofengland.co.uk/statistics/notice/2026/statistical-notice-2026-08",
+    "date": "2026-09-15T09:21:31+00:00",
+    "summary": "Statistical Notices update the definitions and guidance contained in the Banking Statistics Yellow Folder"
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Minutes of the Securities Lending Committee meeting – March 2026",
+    "link": "https://www.bankofengland.co.uk/minutes/2026/march/minutes-of-the-securities-lending-committee-meeting-march-2026",
+    "date": "2026-09-15T08:09:58+00:00",
+    "summary": "The Securities Lending Committee is a forum for market participants and authorities to discuss the UK securities lending market."
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "Christine Lagarde: A new age of capital: growth, sovereignty and AI",
+    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260914_2~a3f0efbee4.en.html",
+    "date": "2026-09-14T15:15:00+00:00",
+    "summary": ""
+  },
+  {
     "source": "ECB — Press releases",
     "category": "monetary_policy_eu",
     "title": "Piero Cipollone: The future of euro cash: trusted today, designed for tomorrow",
@@ -286,14 +310,6 @@
     "link": "https://www.eia.gov/todayinenergy/detail.php?id=68004",
     "date": "2026-08-24T14:00:00+00:00",
     "summary": "Seaborne petroleum product exports from Nigeria have grown seven-fold since 2023, playing an increasing role in the international market for petroleum products at a time when supplies from other areas have been constrained."
-  },
-  {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Piero Cipollone: Interview with ilsussidiario.net",
-    "link": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in260824~fa5acbddea.en.html",
-    "date": "2026-08-24T06:00:00+00:00",
-    "summary": ""
   },
   {
     "source": "Federal Reserve — All press releases",
@@ -782,21 +798,5 @@
     "link": "https://www.bea.gov/news/2026/personal-income-and-outlays-may-2026",
     "date": "2026-06-25T12:30:00+00:00",
     "summary": "Personal income increased $181.6 billion (0.7 percent at a monthly rate) in May, according to estimates released today by the U.S. Bureau of Economic Analysis (BEA). Disposable personal income (DPI)-personal income less personal current taxes-increased $164.9 billion (0.7 percent), and personal consumption expenditures (PCE) increased $156.1 billion (0.7 percent). Personal outlays-the sum of PCE,…"
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "The Retail Payments Infrastructure Board launches consultation on the next generation UK payments infrastructure",
-    "link": "https://www.bankofengland.co.uk/news/2026/june/rpib-launches-consultation-on-next-generation-uk-payments-infrastructure",
-    "date": "2026-06-25T09:00:00+00:00",
-    "summary": "Today marks a major milestone in the modernisation of the UK's payments landscape, with the Retail Payments Infrastructure Board (RPIB) launching a consultation on the future design of the UK's next-generation retail payments infrastructure."
-  },
-  {
-    "source": "Federal Reserve — Speeches",
-    "category": "speeches",
-    "title": "Cook, Welcome Remarks",
-    "link": "https://www.federalreserve.gov/newsevents/speech/cook20260624a.htm",
-    "date": "2026-06-24T18:00:00+00:00",
-    "summary": "Speech At the State of Small Business Symposium hosted by the Federal Reserve Bank of Cleveland (via pre-recorded video)"
   }
 ]
