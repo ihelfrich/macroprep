@@ -1,5 +1,21 @@
 [
   {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "ECB wage tracker at 2.7% in H1 2027, pointing to a modest uptick in negotiated wage growth",
+    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260916~7bc58ebef4.en.html",
+    "date": "2026-09-16T08:00:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "EIA — Today in Energy",
+    "category": "energy",
+    "title": "Corpus Christi LNG expansion makes facility the second-largest in the United States",
+    "link": "https://www.eia.gov/todayinenergy/detail.php?id=68144",
+    "date": "2026-09-15T14:00:00+00:00",
+    "summary": "On August 28, 2026, Cheniere Energy, Inc., completed its Corpus Christi Liquefaction Stage 3 Project (CCL Stage 3) in Texas, taking custody and control of the seventh and last liquefied natural gas (LNG) train in the project."
+  },
+  {
     "source": "Bank of England — News",
     "category": "monetary_policy_uk",
     "title": "Statistical Notice 2026/08 - Changes to the criteria for monthly form BT reporting",
@@ -278,14 +294,6 @@
     "link": "https://www.bea.gov/news/2026/personal-income-and-outlays-july-2026",
     "date": "2026-08-26T12:30:00+00:00",
     "summary": "Personal income increased $115.1 billion (0.4 percent at a monthly rate) in July, according to estimates released today by the U.S. Bureau of Economic Analysis (BEA). Disposable personal income (DPI)-personal income less personal current taxes-increased $125.9 billion (0.5 percent), and personal consumption expenditures (PCE) increased $36.3 billion (0.2 percent). Personal outlays-the sum of PCE,…"
-  },
-  {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Piero Cipollone: From vision to delivery: building Europe’s tokenised financial market",
-    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260826~3641116314.en.html",
-    "date": "2026-08-26T10:15:00+00:00",
-    "summary": ""
   },
   {
     "source": "Federal Reserve — All press releases",
@@ -790,13 +798,5 @@
     "link": "https://www.bankofengland.co.uk/statistics/notice/2026/statistical-notice-2026-06",
     "date": "2026-06-30T08:00:00+00:00",
     "summary": "Statistical Notices update the definitions and guidance contained in the Banking Statistics Yellow Folder"
-  },
-  {
-    "source": "BEA — News releases",
-    "category": "data_release_us",
-    "title": "Personal Income and Outlays, May 2026",
-    "link": "https://www.bea.gov/news/2026/personal-income-and-outlays-may-2026",
-    "date": "2026-06-25T12:30:00+00:00",
-    "summary": "Personal income increased $181.6 billion (0.7 percent at a monthly rate) in May, according to estimates released today by the U.S. Bureau of Economic Analysis (BEA). Disposable personal income (DPI)-personal income less personal current taxes-increased $164.9 billion (0.7 percent), and personal consumption expenditures (PCE) increased $156.1 billion (0.7 percent). Personal outlays-the sum of PCE,…"
   }
 ]
