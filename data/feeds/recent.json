@@ -1,5 +1,37 @@
 [
   {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Bank of England announces new office space in Leeds",
+    "link": "https://www.bankofengland.co.uk/news/2026/september/bank-of-england-announces-new-office-space-in-leeds",
+    "date": "2026-09-21T12:00:00+00:00",
+    "summary": "The Bank of England has secured a new long-term premises in Leeds, marking a major milestone in its commitment to build its presence in the region."
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Foreign Currency Reserves 2026 – Market Notice 21 September 2026",
+    "link": "https://www.bankofengland.co.uk/markets/market-notices/2026/september/foreign-currency-reserves-2026-market-notice-21-september-2026",
+    "date": "2026-09-21T11:30:00+00:00",
+    "summary": "Not for distribution, directly or indirectly, in or into the United States, Canada, Australia, Japan or any other jurisdiction where it is unlawful to distribute this announcement"
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "ECB to invest part of own funds in tokenised securities, with settlement via Pontes",
+    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260921_1~5a011ecbea.en.html",
+    "date": "2026-09-21T10:00:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "Eurosystem brings central bank money to tokenised finance",
+    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260921~e754847a7b.en.html",
+    "date": "2026-09-21T10:00:00+00:00",
+    "summary": ""
+  },
+  {
     "source": "Federal Reserve — All press releases",
     "category": "monetary_policy_us",
     "title": "Federal Reserve Board announces termination of enforcement action with SNB Bancshares and Bank of Eufaula",
@@ -320,14 +352,6 @@
     "summary": "What are crack spreads and why are they elevated? Crack spreads are indicators of the profitability of refining crude oil into petroleum products such as gasoline and diesel. One common crack spread is calculated by subtracting the spot market price of a gallon of crude oil from the wholesale price of a gallon of refined product. Since May, the gasoline crack spread in New York Harbor has average…"
   },
   {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Philip R. Lane: Diversity at the European Central Bank",
-    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260904~7b9257099b.en.pdf",
-    "date": "2026-09-04T09:10:00+00:00",
-    "summary": ""
-  },
-  {
     "source": "EIA — Today in Energy",
     "category": "energy",
     "title": "Weekly average load in ERCOT continues near record high",
@@ -350,14 +374,6 @@
     "link": "https://www.bea.gov/news/2026/us-international-trade-goods-and-services-july-2026",
     "date": "2026-09-03T12:30:00+00:00",
     "summary": "The U.S. goods and services trade deficit increased in July 2026 according to the U.S. Bureau of Economic Analysis and the U.S. Census Bureau. The deficit increased from $71.2 billion in June (revised) to $88.6 billion in July, as imports increased and exports decreased. The goods deficit increased $17.6 billion in July to $119.6 billion. The services surplus increased $0.2 billion in July to $31…"
-  },
-  {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Boris Vujčić: Listening to households: expectations, behaviour and monetary policy",
-    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260901~bb28f33f54.en.html",
-    "date": "2026-09-01T16:00:00+00:00",
-    "summary": ""
   },
   {
     "source": "EIA — Today in Energy",
@@ -782,21 +798,5 @@
     "link": "https://www.federalreserve.gov/newsevents/speech/bowman20260713a.htm",
     "date": "2026-07-13T09:25:00+00:00",
     "summary": "Speech At a Bank Policy Institute London Conference, London, United Kingdom"
-  },
-  {
-    "source": "BEA — News releases",
-    "category": "data_release_us",
-    "title": "Activities of U.S. Affiliates of Foreign Multinational Enterprises, 2024",
-    "link": "https://www.bea.gov/news/2026/activities-us-affiliates-foreign-multinational-enterprises-2024",
-    "date": "2026-07-10T12:30:00+00:00",
-    "summary": "Majority-owned U.S. affiliates of foreign multinational enterprises employed 8.57 million workers in the United States in 2024, a 0.2 percent increase from 8.56 million workers in 2023, according to statistics on U.S. affiliate operations and finances released today by the U.S. Bureau of Economic Analysis. Full Text"
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "UK financial regulators to begin overseeing Critical Third Parties announced by HM Treasury",
-    "link": "https://www.bankofengland.co.uk/news/2026/july/uk-financial-regulators-to-begin-overseeing-critical-third-parties-announced-by-hmt",
-    "date": "2026-07-10T09:15:00+00:00",
-    "summary": "The Bank of England, the Prudential Regulation Authority and the Financial Conduct Authority will start overseeing the first Critical Third Parties on Monday 13 July 2026, following designation by HM Treasury."
   }
 ]
