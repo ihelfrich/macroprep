@@ -1,5 +1,13 @@
 [
   {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "Philip R. Lane: Interview with Le Temps",
+    "link": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in260922~5f89d300ee.en.html",
+    "date": "2026-09-22T05:00:00+00:00",
+    "summary": ""
+  },
+  {
     "source": "Bank of England — News",
     "category": "monetary_policy_uk",
     "title": "Bank of England announces new office space in Leeds",
@@ -326,14 +334,6 @@
     "link": "https://www.eia.gov/todayinenergy/detail.php?id=68124",
     "date": "2026-09-09T14:00:00+00:00",
     "summary": "Low-cost Appalachian and Canadian natural gas supplies coupled with lower-than-usual regional consumption have pushed down natural gas prices at a major New England pricing hub in recent months to trade at a discount to the widely cited U.S. benchmark, Henry Hub."
-  },
-  {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Frank Elderson: Fireside chat",
-    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260908~3652aa828f.en.html",
-    "date": "2026-09-08T15:00:00+00:00",
-    "summary": ""
   },
   {
     "source": "Federal Reserve — All press releases",

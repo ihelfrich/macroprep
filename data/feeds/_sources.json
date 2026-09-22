@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T13:04:28.727768+00:00",
+  "generated_at": "2026-09-22T11:54:38.772096+00:00",
   "sources": [
     {
       "name": "Federal Reserve — All press releases",
@@ -8,7 +8,7 @@
       "ok": true,
       "item_count": 20,
       "error": null,
-      "fetched_at": "2026-09-21T13:04:00.193004+00:00"
+      "fetched_at": "2026-09-22T11:54:09.512931+00:00"
     },
     {
       "name": "Federal Reserve — Monetary policy",
@@ -17,7 +17,7 @@
       "ok": true,
       "item_count": 15,
       "error": null,
-      "fetched_at": "2026-09-21T13:04:00.758544+00:00"
+      "fetched_at": "2026-09-22T11:54:10.073449+00:00"
     },
     {
       "name": "Federal Reserve — Speeches",
@@ -26,7 +26,7 @@
       "ok": true,
       "item_count": 15,
       "error": null,
-      "fetched_at": "2026-09-21T13:04:01.303917+00:00"
+      "fetched_at": "2026-09-22T11:54:10.649335+00:00"
     },
     {
       "name": "BLS — News releases",
@@ -35,7 +35,7 @@
       "ok": false,
       "item_count": 0,
       "error": "network: HTTP Error 403: Forbidden",
-      "fetched_at": "2026-09-21T13:04:01.862771+00:00"
+      "fetched_at": "2026-09-22T11:54:11.279791+00:00"
     },
     {
       "name": "BEA — News releases",
@@ -44,7 +44,7 @@
       "ok": true,
       "item_count": 48,
       "error": null,
-      "fetched_at": "2026-09-21T13:04:02.555607+00:00"
+      "fetched_at": "2026-09-22T11:54:11.964356+00:00"
     },
     {
       "name": "U.S. Treasury — Press releases",
@@ -53,7 +53,7 @@
       "ok": false,
       "item_count": 0,
       "error": "TimeoutError: The read operation timed out",
-      "fetched_at": "2026-09-21T13:04:03.117253+00:00"
+      "fetched_at": "2026-09-22T11:54:12.670449+00:00"
     },
     {
       "name": "NY Fed — Press releases",
@@ -62,7 +62,7 @@
       "ok": false,
       "item_count": 0,
       "error": "network: HTTP Error 404: Not Found",
-      "fetched_at": "2026-09-21T13:04:23.670328+00:00"
+      "fetched_at": "2026-09-22T11:54:33.392821+00:00"
     },
     {
       "name": "ECB — Press releases",
@@ -71,7 +71,7 @@
       "ok": true,
       "item_count": 15,
       "error": null,
-      "fetched_at": "2026-09-21T13:04:24.502856+00:00"
+      "fetched_at": "2026-09-22T11:54:34.157490+00:00"
     },
     {
       "name": "Bank of England — News",
@@ -80,7 +80,7 @@
       "ok": true,
       "item_count": 50,
       "error": null,
-      "fetched_at": "2026-09-21T13:04:25.470558+00:00"
+      "fetched_at": "2026-09-22T11:54:35.243045+00:00"
     },
     {
       "name": "IMF — Press releases",
@@ -89,7 +89,7 @@
       "ok": false,
       "item_count": 0,
       "error": "network: HTTP Error 403: Forbidden",
-      "fetched_at": "2026-09-21T13:04:26.201796+00:00"
+      "fetched_at": "2026-09-22T11:54:36.291421+00:00"
     },
     {
       "name": "BIS — All press releases",
@@ -98,7 +98,7 @@
       "ok": false,
       "item_count": 0,
       "error": "network: HTTP Error 404: Not Found",
-      "fetched_at": "2026-09-21T13:04:26.752728+00:00"
+      "fetched_at": "2026-09-22T11:54:36.983186+00:00"
     },
     {
       "name": "EIA — Today in Energy",
@@ -107,7 +107,7 @@
       "ok": true,
       "item_count": 17,
       "error": null,
-      "fetched_at": "2026-09-21T13:04:28.109471+00:00"
+      "fetched_at": "2026-09-22T11:54:38.173322+00:00"
     }
   ]
 }
