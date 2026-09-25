@@ -1,5 +1,45 @@
 [
   {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Minutes of the Market Participants Group meeting – 24 September 2026",
+    "link": "https://www.bankofengland.co.uk/minutes/2026/september/market-participants-group-meeting-25-september-2026",
+    "date": "2026-09-25T06:30:00+00:00",
+    "summary": "The Market Participants Group (MPG) is a senior-level forum for financial market participants to share their views on relevant themes and narratives in financial markets with members of the Bank of England’s Monetary Policy Committee."
+  },
+  {
+    "source": "Federal Reserve — All press releases",
+    "category": "monetary_policy_us",
+    "title": "Federal Reserve Board requests public comment on two proposals related to establishing a regulatory framework for Board-supervised payment stablecoin issuers under the GENIUS Act",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260924a.htm",
+    "date": "2026-09-24T18:30:00+00:00",
+    "summary": "Federal Reserve Board requests public comment on two proposals related to establishing a regulatory framework for Board-supervised payment stablecoin issuers under the GENIUS Act"
+  },
+  {
+    "source": "Federal Reserve — All press releases",
+    "category": "monetary_policy_us",
+    "title": "Federal Reserve Board issues enforcement action with former employee of Sandy Spring Bank",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260924a.htm",
+    "date": "2026-09-24T15:00:00+00:00",
+    "summary": "Federal Reserve Board issues enforcement action with former employee of Sandy Spring Bank"
+  },
+  {
+    "source": "BEA — News releases",
+    "category": "data_release_us",
+    "title": "U.S. International Transactions and Investment Position, 2nd Quarter 2026",
+    "link": "https://bea.gov/news/2026/us-international-transactions-and-investment-position-2nd-quarter-2026",
+    "date": "2026-09-24T12:30:00+00:00",
+    "summary": "The U.S. current-account deficit resulting from international economic transactions widened by $33.4 billion, or 15.7 percent, to $246.0 billion in the second quarter of 2026, according to statistics released today by the U.S. Bureau of Economic Analysis. The revised first-quarter deficit was $212.6 billion. The second-quarter deficit was 3.0 percent of current-dollar gross domestic product, up f…"
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "ECB Executive Board member Isabel Schnabel to resign to take senior role at IMF",
+    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260924~bea1dd9824.en.html",
+    "date": "2026-09-24T12:00:00+00:00",
+    "summary": ""
+  },
+  {
     "source": "ECB — Press releases",
     "category": "monetary_policy_eu",
     "title": "Philip R. Lane: The outlook for the euro area economy",
@@ -194,22 +234,6 @@
   {
     "source": "Bank of England — News",
     "category": "monetary_policy_uk",
-    "title": "Bank rate maintained at 3.75% - September 2026 Monetary Policy Summary and Minutes",
-    "link": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
-    "date": "2026-09-17T11:00:00+00:00",
-    "summary": "The Bank of England’s Monetary Policy Committee is responsible for making decisions about Bank Rate."
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Asset Purchase Facility: Gilt Sales – Market Notice 17 September 2026",
-    "link": "https://www.bankofengland.co.uk/markets/market-notices/2026/asset-purchase-facility-gilt-sales-market-notice-17-september-2026",
-    "date": "2026-09-17T11:00:00+00:00",
-    "summary": "This Market Notice outlines the Bank Executive’s approach to implementing the Monetary Policy Committee’s (MPC) decision to unwind the gilts held for monetary policy purposes in the Asset Purchase Facility (APF). As part of this, Bank APF auctions will be paused while the Bank reviews a model of selling gilts to the Government."
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
     "title": "Exchange of letters between the Governor and the Chancellor regarding CPI Inflation - September 2026",
     "link": "https://www.bankofengland.co.uk/letter/2026/cpi-inflation-september-2026",
     "date": "2026-09-17T11:00:00+00:00",
@@ -222,6 +246,22 @@
     "link": "https://www.bankofengland.co.uk/letter/2026/exchange-of-letters-between-the-governor-and-the-chancellor-regarding-qt-and-the-apf",
     "date": "2026-09-17T11:00:00+00:00",
     "summary": "Exchange of letters between the Governor and the Chancellor"
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Asset Purchase Facility: Gilt Sales – Market Notice 17 September 2026",
+    "link": "https://www.bankofengland.co.uk/markets/market-notices/2026/asset-purchase-facility-gilt-sales-market-notice-17-september-2026",
+    "date": "2026-09-17T11:00:00+00:00",
+    "summary": "This Market Notice outlines the Bank Executive’s approach to implementing the Monetary Policy Committee’s (MPC) decision to unwind the gilts held for monetary policy purposes in the Asset Purchase Facility (APF). As part of this, Bank APF auctions will be paused while the Bank reviews a model of selling gilts to the Government."
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Bank rate maintained at 3.75% - September 2026 Monetary Policy Summary and Minutes",
+    "link": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
+    "date": "2026-09-17T11:00:00+00:00",
+    "summary": "The Bank of England’s Monetary Policy Committee is responsible for making decisions about Bank Rate."
   },
   {
     "source": "Federal Reserve — All press releases",
@@ -325,14 +365,6 @@
     "title": "Christine Lagarde: Interview with Ouest-France",
     "link": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in260912~3cc706f4d6.en.html",
     "date": "2026-09-12T20:00:00+00:00",
-    "summary": ""
-  },
-  {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Christine Lagarde: Europe seen from Normandy",
-    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260912~fafa4b35b0.en.html",
-    "date": "2026-09-12T10:15:00+00:00",
     "summary": ""
   },
   {
@@ -522,18 +554,18 @@
   {
     "source": "Federal Reserve — All press releases",
     "category": "monetary_policy_us",
-    "title": "Federal Reserve Board issues enforcement actions with former employee of Regions Bank and former employee of United Community Bank",
-    "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260820a.htm",
-    "date": "2026-08-20T15:00:00+00:00",
-    "summary": "Federal Reserve Board issues enforcement actions with former employee of Regions Bank and former employee of United Community Bank"
-  },
-  {
-    "source": "Federal Reserve — All press releases",
-    "category": "monetary_policy_us",
     "title": "Federal Reserve Board issues enforcement action with SouthPoint Bancshares, Inc. and announces termination of enforcement action with Deutsche Bank AG, DB USA Corporation, and Deutsche Bank AG New York Branch",
     "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260820b.htm",
     "date": "2026-08-20T15:00:00+00:00",
     "summary": "Federal Reserve Board issues enforcement action with SouthPoint Bancshares, Inc. and announces termination of enforcement action with Deutsche Bank AG, DB USA Corporation, and Deutsche Bank AG New York Branch"
+  },
+  {
+    "source": "Federal Reserve — All press releases",
+    "category": "monetary_policy_us",
+    "title": "Federal Reserve Board issues enforcement actions with former employee of Regions Bank and former employee of United Community Bank",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260820a.htm",
+    "date": "2026-08-20T15:00:00+00:00",
+    "summary": "Federal Reserve Board issues enforcement actions with former employee of Regions Bank and former employee of United Community Bank"
   },
   {
     "source": "Federal Reserve — All press releases",
@@ -680,22 +712,6 @@
     "summary": "Following an external recruitment process, the Bank of England (the Bank) has appointed Nicholas Segal as Chair of its Enforcement Decision Making Committee (EDMC), and Peter King as Deputy Chair, with effect from 1 August 2026."
   },
   {
-    "source": "Federal Reserve — All press releases",
-    "category": "monetary_policy_us",
-    "title": "Federal Reserve Board requests comment on a proposal to modernize rules for mutual banking organizations",
-    "link": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260731a.htm",
-    "date": "2026-07-31T14:00:00+00:00",
-    "summary": "Federal Reserve Board requests comment on a proposal to modernize rules for mutual banking organizations"
-  },
-  {
-    "source": "Federal Reserve — All press releases",
-    "category": "monetary_policy_us",
-    "title": "Federal Reserve Board requests comment on a proposal to modernize its rule governing the extension of credit to bank \"insiders\"—bank executives, board members and major shareholders who could potentially influence a bank's lending decisions",
-    "link": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260731b.htm",
-    "date": "2026-07-31T14:00:00+00:00",
-    "summary": "Federal Reserve Board requests comment on a proposal to modernize its rule governing the extension of credit to bank \"insiders\"—bank executives, board members and major shareholders who could potentially influence a bank's lending decisions"
-  },
-  {
     "source": "Bank of England — News",
     "category": "monetary_policy_uk",
     "title": "Minutes of the Meeting of the Court of Directors held on 4 June 2026",
@@ -782,21 +798,5 @@
     "link": "https://www.federalreserve.gov/newsevents/speech/bowman20260714a.htm",
     "date": "2026-07-14T18:55:00+00:00",
     "summary": "Speech At “Next-Gen Financial Inclusion,” the third annual Financial Inclusion Conference hosted by the Federal Reserve Board, Washington, D.C. (via pre-recorded video)"
-  },
-  {
-    "source": "Federal Reserve — Monetary policy",
-    "category": "fomc",
-    "title": "Minutes of the Board's discount rate meetings on June 8 and June 17, 2026",
-    "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260714a.htm",
-    "date": "2026-07-14T18:00:00+00:00",
-    "summary": "Minutes of the Board's discount rate meetings on June 8 and June 17, 2026"
-  },
-  {
-    "source": "Federal Reserve — Speeches",
-    "category": "speeches",
-    "title": "Barr, Will Artificial Intelligence Broadly Raise Living Standards or Drive Income and Wealth Inequality?",
-    "link": "https://www.federalreserve.gov/newsevents/speech/barr20260714a.htm",
-    "date": "2026-07-14T16:40:00+00:00",
-    "summary": "Speech At “Next-Gen Financial Inclusion,” the third annual Financial Inclusion Conference hosted by the Federal Reserve Board"
   }
 ]
