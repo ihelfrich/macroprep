@@ -1,5 +1,21 @@
 [
   {
+    "source": "Federal Reserve — All press releases",
+    "category": "monetary_policy_us",
+    "title": "Federal Reserve Board announces approval of application by Peoples Bancorp Inc.",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/orders20260925a.htm",
+    "date": "2026-09-25T20:30:00+00:00",
+    "summary": "Federal Reserve Board announces approval of application by Peoples Bancorp Inc."
+  },
+  {
+    "source": "EIA — Today in Energy",
+    "category": "energy",
+    "title": "Henry Hub natural gas prices this summer were 6% lower than last summer",
+    "link": "https://www.eia.gov/todayinenergy/detail.php?id=68204",
+    "date": "2026-09-25T14:00:00+00:00",
+    "summary": "The Henry Hub natural gas spot price averaged $2.93 per million British thermal units from June through August, 6% less than the same period last year. Prices were lower this summer despite exceptionally hot weather that increased electricity demand for air conditioning. Natural gas-fired power plants often help meet higher demand during such periods."
+  },
+  {
     "source": "Bank of England — News",
     "category": "monetary_policy_uk",
     "title": "Minutes of the Market Participants Group meeting – 24 September 2026",
@@ -234,18 +250,10 @@
   {
     "source": "Bank of England — News",
     "category": "monetary_policy_uk",
-    "title": "Exchange of letters between the Governor and the Chancellor regarding CPI Inflation - September 2026",
-    "link": "https://www.bankofengland.co.uk/letter/2026/cpi-inflation-september-2026",
+    "title": "Bank rate maintained at 3.75% - September 2026 Monetary Policy Summary and Minutes",
+    "link": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
     "date": "2026-09-17T11:00:00+00:00",
-    "summary": "Exchange of letters between the Governor and the Chancellor"
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Exchange of letters between the Governor and the Chancellor regarding QT and the APF - September 2026",
-    "link": "https://www.bankofengland.co.uk/letter/2026/exchange-of-letters-between-the-governor-and-the-chancellor-regarding-qt-and-the-apf",
-    "date": "2026-09-17T11:00:00+00:00",
-    "summary": "Exchange of letters between the Governor and the Chancellor"
+    "summary": "The Bank of England’s Monetary Policy Committee is responsible for making decisions about Bank Rate."
   },
   {
     "source": "Bank of England — News",
@@ -258,10 +266,18 @@
   {
     "source": "Bank of England — News",
     "category": "monetary_policy_uk",
-    "title": "Bank rate maintained at 3.75% - September 2026 Monetary Policy Summary and Minutes",
-    "link": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
+    "title": "Exchange of letters between the Governor and the Chancellor regarding CPI Inflation - September 2026",
+    "link": "https://www.bankofengland.co.uk/letter/2026/cpi-inflation-september-2026",
     "date": "2026-09-17T11:00:00+00:00",
-    "summary": "The Bank of England’s Monetary Policy Committee is responsible for making decisions about Bank Rate."
+    "summary": "Exchange of letters between the Governor and the Chancellor"
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Exchange of letters between the Governor and the Chancellor regarding QT and the APF - September 2026",
+    "link": "https://www.bankofengland.co.uk/letter/2026/exchange-of-letters-between-the-governor-and-the-chancellor-regarding-qt-and-the-apf",
+    "date": "2026-09-17T11:00:00+00:00",
+    "summary": "Exchange of letters between the Governor and the Chancellor"
   },
   {
     "source": "Federal Reserve — All press releases",
@@ -688,14 +704,6 @@
     "summary": "Federal Reserve Board announces approval of the application by FS Bancorp, Inc."
   },
   {
-    "source": "Federal Reserve — All press releases",
-    "category": "monetary_policy_us",
-    "title": "Federal Reserve Board announces approval of the application by Banco Santander, S.A. and Santander Holdings USA, Inc.",
-    "link": "https://www.federalreserve.gov/newsevents/pressreleases/orders20260804a.htm",
-    "date": "2026-08-04T20:30:00+00:00",
-    "summary": "Federal Reserve Board announces approval of the application by Banco Santander, S.A. and Santander Holdings USA, Inc."
-  },
-  {
     "source": "EIA — Today in Energy",
     "category": "energy",
     "title": "Hourly peak load in ERCOT set a new record, exceeding 91 GW on July 22",
@@ -790,13 +798,5 @@
     "link": "https://www.federalreserve.gov/newsevents/speech/cook20260715a.htm",
     "date": "2026-07-15T17:00:00+00:00",
     "summary": "Speech At The Exchequer Club of Washington D.C., Washington, D.C."
-  },
-  {
-    "source": "Federal Reserve — Speeches",
-    "category": "speeches",
-    "title": "Bowman, Responsible Innovation and Financial Inclusion",
-    "link": "https://www.federalreserve.gov/newsevents/speech/bowman20260714a.htm",
-    "date": "2026-07-14T18:55:00+00:00",
-    "summary": "Speech At “Next-Gen Financial Inclusion,” the third annual Financial Inclusion Conference hosted by the Federal Reserve Board, Washington, D.C. (via pre-recorded video)"
   }
 ]
