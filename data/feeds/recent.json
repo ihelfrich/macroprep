@@ -1,5 +1,29 @@
 [
   {
+    "source": "BEA — News releases",
+    "category": "data_release_us",
+    "title": "U.S. International Trade in Goods and Services, August 2026",
+    "link": "https://www.bea.gov/news/2026/us-international-trade-goods-and-services-august-2026",
+    "date": "2026-10-06T12:30:00+00:00",
+    "summary": "The U.S. goods and services trade deficit increased in August 2026 according to the U.S. Bureau of Economic Analysis and the U.S. Census Bureau. The deficit increased from $92.8 billion in July (revised) to $105.6 billion in August, as imports increased more than exports. The goods deficit increased $12.8 billion in August to $136.6 billion. The services surplus increased less than $0.1 billion i…"
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "Philip R. Lane: Interview with Ansa",
+    "link": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261006~bc94400297.en.html",
+    "date": "2026-10-06T07:00:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "Federal Reserve — All press releases",
+    "category": "monetary_policy_us",
+    "title": "Federal Reserve Board announces approval of application by Isabella Bank Corporation",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261005a.htm",
+    "date": "2026-10-05T20:30:00+00:00",
+    "summary": "Federal Reserve Board announces approval of application by Isabella Bank Corporation"
+  },
+  {
     "source": "EIA — Today in Energy",
     "category": "energy",
     "title": "Crude oil prices and refinery margins generally increased throughout the third quarter",
@@ -170,14 +194,6 @@
   {
     "source": "BEA — News releases",
     "category": "data_release_us",
-    "title": "Personal Income and Outlays, August 2026",
-    "link": "https://www.bea.gov/news/2026/personal-income-and-outlays-august-2026",
-    "date": "2026-09-30T12:31:00+00:00",
-    "summary": "Personal income increased $66.6 billion (0.2 percent at a monthly rate) in August, according to estimates released today by the U.S. Bureau of Economic Analysis (BEA). Disposable personal income (DPI)-personal income less personal current taxes-increased $68.6 billion (0.3 percent), and personal consumption expenditures (PCE) increased $190.8 billion (0.9 percent). Personal outlays-the sum of PCE…"
-  },
-  {
-    "source": "BEA — News releases",
-    "category": "data_release_us",
     "title": "GDP, (Third Estimate), Industries, Corporate Profits, State GDP, and State Personal Income, 2nd Quarter 2026; State PCE, 2025",
     "link": "https://www.bea.gov/news/2026/gdp-third-estimate-industries-corporate-profits-state-gdp-and-state-personal-income-2nd",
     "date": "2026-09-30T12:30:00+00:00",
@@ -344,14 +360,6 @@
     "summary": "Speech At “Housing Affordability 2026: A Community Development Summit,” hosted by the Federal Reserve Bank of Chicago, Chicago, Illinois"
   },
   {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Almost ten million people took part in ECB survey on new euro banknotes",
-    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260923~6ebddaf01e.en.html",
-    "date": "2026-09-23T09:00:00+00:00",
-    "summary": ""
-  },
-  {
     "source": "Federal Reserve — All press releases",
     "category": "monetary_policy_us",
     "title": "Federal Reserve Board announces approval of application by BancFirst Corporation",
@@ -466,6 +474,14 @@
   {
     "source": "Bank of England — News",
     "category": "monetary_policy_uk",
+    "title": "Bank rate maintained at 3.75% - September 2026 Monetary Policy Summary and Minutes",
+    "link": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
+    "date": "2026-09-17T11:00:00+00:00",
+    "summary": "The Bank of England’s Monetary Policy Committee is responsible for making decisions about Bank Rate."
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
     "title": "Exchange of letters between the Governor and the Chancellor regarding CPI Inflation - September 2026",
     "link": "https://www.bankofengland.co.uk/letter/2026/cpi-inflation-september-2026",
     "date": "2026-09-17T11:00:00+00:00",
@@ -486,14 +502,6 @@
     "link": "https://www.bankofengland.co.uk/markets/market-notices/2026/asset-purchase-facility-gilt-sales-market-notice-17-september-2026",
     "date": "2026-09-17T11:00:00+00:00",
     "summary": "This Market Notice outlines the Bank Executive’s approach to implementing the Monetary Policy Committee’s (MPC) decision to unwind the gilts held for monetary policy purposes in the Asset Purchase Facility (APF). As part of this, Bank APF auctions will be paused while the Bank reviews a model of selling gilts to the Government."
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Bank rate maintained at 3.75% - September 2026 Monetary Policy Summary and Minutes",
-    "link": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
-    "date": "2026-09-17T11:00:00+00:00",
-    "summary": "The Bank of England’s Monetary Policy Committee is responsible for making decisions about Bank Rate."
   },
   {
     "source": "Federal Reserve — All press releases",
@@ -632,14 +640,6 @@
     "summary": "Speech At Reuters NEXT Newsmaker Interview, Washington, D.C."
   },
   {
-    "source": "BEA — News releases",
-    "category": "data_release_us",
-    "title": "U.S. International Trade in Goods and Services, July 2026",
-    "link": "https://www.bea.gov/news/2026/us-international-trade-goods-and-services-july-2026",
-    "date": "2026-09-03T12:30:00+00:00",
-    "summary": "The U.S. goods and services trade deficit increased in July 2026 according to the U.S. Bureau of Economic Analysis and the U.S. Census Bureau. The deficit increased from $71.2 billion in June (revised) to $88.6 billion in July, as imports increased and exports decreased. The goods deficit increased $17.6 billion in July to $119.6 billion. The services surplus increased $0.2 billion in July to $31…"
-  },
-  {
     "source": "EIA — Today in Energy",
     "category": "energy",
     "title": "U.S. LNG exports rose 23% in the first half of 2026 because of higher capacity",
@@ -710,14 +710,6 @@
     "link": "https://www.federalreserve.gov/newsevents/pressreleases/orders20260820a.htm",
     "date": "2026-08-20T20:00:00+00:00",
     "summary": "Federal Reserve Board announces approval of application by National Westminster Bank Plc"
-  },
-  {
-    "source": "Federal Reserve — All press releases",
-    "category": "monetary_policy_us",
-    "title": "Federal Reserve Board issues enforcement action with SouthPoint Bancshares, Inc. and announces termination of enforcement action with Deutsche Bank AG, DB USA Corporation, and Deutsche Bank AG New York Branch",
-    "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260820b.htm",
-    "date": "2026-08-20T15:00:00+00:00",
-    "summary": "Federal Reserve Board issues enforcement action with SouthPoint Bancshares, Inc. and announces termination of enforcement action with Deutsche Bank AG, DB USA Corporation, and Deutsche Bank AG New York Branch"
   },
   {
     "source": "Federal Reserve — Monetary policy",
@@ -798,5 +790,13 @@
     "link": "https://www.bankofengland.co.uk/letter/2026/letter-from-the-governor-to-the-daily-mail",
     "date": "2026-07-23T16:00:00+00:00",
     "summary": "Letter from Governor Andrew Bailey to the Daily Mail on the subject of AI and cyber-attacks"
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "PRA consults on updated guidance for friendly society amalgamations and transfers",
+    "link": "https://www.bankofengland.co.uk/news/2026/july/pra-consults-on-updated-guidance-for-friendly-society-amalgamations-and-transfers",
+    "date": "2026-07-22T09:00:00+00:00",
+    "summary": "The proposals would provide more detail on the PRA’s approach to Part VIII transactions, helping firms plan amalgamations and transfers more efficiently."
   }
 ]
