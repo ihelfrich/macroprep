@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T13:27:59+00:00",
+  "generated_at": "2026-10-07T13:39:36+00:00",
   "endpoint": "https://fred.stlouisfed.org/graph/fredgraph.csv",
   "n_series": 26,
   "series": [
@@ -69,9 +69,9 @@
       "description": "Market-implied 5y inflation expectations",
       "file": "T5YIE.json",
       "status": "ok",
-      "n_observations": 5944,
+      "n_observations": 5945,
       "start": "2003-01-02",
-      "end": "2026-10-05"
+      "end": "2026-10-06"
     },
     {
       "id": "UNRATE",
@@ -154,8 +154,8 @@
       "file": "BAMLH0A0HYM2.json",
       "status": "ok",
       "n_observations": 784,
-      "start": "2023-10-06",
-      "end": "2026-10-02"
+      "start": "2023-10-09",
+      "end": "2026-10-05"
     },
     {
       "id": "GDPC1",
@@ -223,9 +223,9 @@
       "description": "Overnight policy rate",
       "file": "DFF.json",
       "status": "ok",
-      "n_observations": 9406,
+      "n_observations": 9409,
       "start": "2001-01-01",
-      "end": "2026-10-02"
+      "end": "2026-10-05"
     },
     {
       "id": "FEDFUNDS",
@@ -251,9 +251,9 @@
       "description": "Benchmark long rate",
       "file": "DGS10.json",
       "status": "ok",
-      "n_observations": 6441,
+      "n_observations": 6442,
       "start": "2001-01-02",
-      "end": "2026-10-02"
+      "end": "2026-10-05"
     },
     {
       "id": "DGS2",
@@ -265,9 +265,9 @@
       "description": "Short-end policy-sensitive yield",
       "file": "DGS2.json",
       "status": "ok",
-      "n_observations": 6441,
+      "n_observations": 6442,
       "start": "2001-01-02",
-      "end": "2026-10-02"
+      "end": "2026-10-05"
     },
     {
       "id": "T10Y2Y",
@@ -279,9 +279,9 @@
       "description": "Term spread / classic recession indicator",
       "file": "T10Y2Y.json",
       "status": "ok",
-      "n_observations": 6442,
+      "n_observations": 6443,
       "start": "2001-01-02",
-      "end": "2026-10-05"
+      "end": "2026-10-06"
     },
     {
       "id": "MORTGAGE30US",
