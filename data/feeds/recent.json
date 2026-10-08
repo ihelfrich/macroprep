@@ -1,11 +1,83 @@
 [
   {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "Meeting of 9-10 September 2026",
+    "link": "https://www.ecb.europa.eu//press/accounts/2026/html/ecb.mg261008~a10153d090.en.html",
+    "date": "2026-10-08T11:30:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "Federal Reserve — Speeches",
+    "category": "speeches",
+    "title": "Waller, The Signaling Value of the Summary of Economic Projections",
+    "link": "https://www.federalreserve.gov/newsevents/speech/waller20261008a.htm",
+    "date": "2026-10-08T08:30:00+00:00",
+    "summary": "Speech At the Istanbul Economic Forum, Central Bank of the Republic of T&uuml;rkiye, Istanbul, T&uuml;rkiye"
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "Piero Cipollone: Interview with Corriere della Sera",
+    "link": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261008~3184e7d0d0.en.html",
+    "date": "2026-10-08T06:00:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Bank of England announces the four animals that will feature on our next series of banknotes",
+    "link": "https://www.bankofengland.co.uk/news/2026/october/boe-announces-the-four-animals-that-will-feature-on-next-series-of-banknotes",
+    "date": "2026-10-07T23:01:00+00:00",
+    "summary": "The Atlantic puffin, barn owl, buff-tailed bumblebee and European hedgehog will represent UK wildlife and feature as the central images on our next series of banknotes."
+  },
+  {
+    "source": "Federal Reserve — All press releases",
+    "category": "monetary_policy_us",
+    "title": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm",
+    "date": "2026-10-07T18:00:00+00:00",
+    "summary": "Minutes of the Federal Open Market Committee, September 15-16, 2026"
+  },
+  {
+    "source": "Federal Reserve — Monetary policy",
+    "category": "fomc",
+    "title": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm",
+    "date": "2026-10-07T18:00:00+00:00",
+    "summary": "Minutes of the Federal Open Market Committee, September 15-16, 2026"
+  },
+  {
     "source": "EIA — Today in Energy",
     "category": "energy",
     "title": "Mixed outlook for energy expenditures this winter",
     "link": "https://www.eia.gov/todayinenergy/detail.php?id=68264",
     "date": "2026-10-07T14:00:00+00:00",
     "summary": "We expect energy expenditures this winter to vary because of diverging trends in energy prices among fuels and regional variation in forecast temperatures. We expect that lower prices for natural gas and propane will drive decreases in expenditures this year for the half of U.S. households heating with those fuels. Higher prices for electricity and heating oil drive increased expenditures for hou…"
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Minutes of the London FXJSC Legal Sub Committee Meeting – 16 June 2026",
+    "link": "https://www.bankofengland.co.uk/minutes/2026/june/fxjsc-legal-sub-committee-meeting-16-june-26",
+    "date": "2026-10-07T13:36:25+00:00",
+    "summary": "The Bank of England provides the Secretariat to the London Foreign Exchange Joint Standing Committee (FXJSC) Legal Sub-Committee. The FXJSC is made up of market participants, infrastructure providers and the UK financial regulators."
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Minutes of the London FXJSC Operations Sub-Committee Meeting – 16 June 2026",
+    "link": "https://www.bankofengland.co.uk/minutes/2026/june/fxjsc-operations-sub-committee-meeting-16-june-2026",
+    "date": "2026-10-07T09:49:25+00:00",
+    "summary": "The Bank of England chairs the London Foreign Exchange Joint Standing Committee (FXJSC) Operations and Legal Sub-Committees. The FXJSC is made up of market participants, infrastructure providers and the UK financial regulators."
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Minutes of the London FXJSC Main Committee Meeting – 24 June 2026",
+    "link": "https://www.bankofengland.co.uk/minutes/2026/june/fxjsc-main-committee-meeting-24-june-2026",
+    "date": "2026-10-07T09:08:40+00:00",
+    "summary": "The Bank of England chairs the London Foreign Exchange Joint Standing Committee (FXJSC), which is a forum for discussion of the wholesale foreign exchange market. The FXJSC is made up of market participants, infrastructure providers and the UK financial regulators."
   },
   {
     "source": "Bank of England — News",
@@ -320,14 +392,6 @@
     "summary": "Speech At the Oakland Tech Week Opening Keynote, cohosted by the Kapor Center, Oakland, California"
   },
   {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Christine Lagarde: Hearing of the Committee on Economic and Monetary Affairs of the European Parliament",
-    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260928~a875675544.en.html",
-    "date": "2026-09-28T13:30:00+00:00",
-    "summary": ""
-  },
-  {
     "source": "Federal Reserve — All press releases",
     "category": "monetary_policy_us",
     "title": "Federal Reserve Board announces approval of application by Peoples Bancorp Inc.",
@@ -374,14 +438,6 @@
     "link": "https://bea.gov/news/2026/us-international-transactions-and-investment-position-2nd-quarter-2026",
     "date": "2026-09-24T12:30:00+00:00",
     "summary": "The U.S. current-account deficit resulting from international economic transactions widened by $33.4 billion, or 15.7 percent, to $246.0 billion in the second quarter of 2026, according to statistics released today by the U.S. Bureau of Economic Analysis. The revised first-quarter deficit was $212.6 billion. The second-quarter deficit was 3.0 percent of current-dollar gross domestic product, up f…"
-  },
-  {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "ECB Executive Board member Isabel Schnabel to resign to take senior role at IMF",
-    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260924~bea1dd9824.en.html",
-    "date": "2026-09-24T12:00:00+00:00",
-    "summary": ""
   },
   {
     "source": "Federal Reserve — Speeches",
@@ -442,18 +498,18 @@
   {
     "source": "Federal Reserve — All press releases",
     "category": "monetary_policy_us",
-    "title": "Federal Reserve Board issues enforcement actions with former employee of Northstar Bank, former employee of American Express Travel Related Services Company, Inc., and former employee of Regions Bank",
-    "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260918a.htm",
-    "date": "2026-09-18T15:00:00+00:00",
-    "summary": "Federal Reserve Board issues enforcement actions with former employee of Northstar Bank, former employee of American Express Travel Related Services Company, Inc., and former employee of Regions Bank"
-  },
-  {
-    "source": "Federal Reserve — All press releases",
-    "category": "monetary_policy_us",
     "title": "Federal Reserve Board announces termination of enforcement action with SNB Bancshares and Bank of Eufaula",
     "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260918b.htm",
     "date": "2026-09-18T15:00:00+00:00",
     "summary": "Federal Reserve Board announces termination of enforcement action with SNB Bancshares and Bank of Eufaula"
+  },
+  {
+    "source": "Federal Reserve — All press releases",
+    "category": "monetary_policy_us",
+    "title": "Federal Reserve Board issues enforcement actions with former employee of Northstar Bank, former employee of American Express Travel Related Services Company, Inc., and former employee of Regions Bank",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260918a.htm",
+    "date": "2026-09-18T15:00:00+00:00",
+    "summary": "Federal Reserve Board issues enforcement actions with former employee of Northstar Bank, former employee of American Express Travel Related Services Company, Inc., and former employee of Regions Bank"
   },
   {
     "source": "EIA — Today in Energy",
@@ -466,16 +522,16 @@
   {
     "source": "Federal Reserve — Speeches",
     "category": "speeches",
-    "title": "Bowman, The Final Chapter on Modernizing Bank Regulatory Stress Testing",
-    "link": "https://www.federalreserve.gov/newsevents/speech/bowman20260918a.htm",
+    "title": "Bowman, Initial Findings from Independent Review of Silicon Valley Bank",
+    "link": "https://www.federalreserve.gov/newsevents/speech/bowman20260918b.htm",
     "date": "2026-09-18T13:30:00+00:00",
     "summary": "Speech At the Luncheon of the Lord Mayor City of London at Mansion House, London, United Kingdom"
   },
   {
     "source": "Federal Reserve — Speeches",
     "category": "speeches",
-    "title": "Bowman, Initial Findings from Independent Review of Silicon Valley Bank",
-    "link": "https://www.federalreserve.gov/newsevents/speech/bowman20260918b.htm",
+    "title": "Bowman, The Final Chapter on Modernizing Bank Regulatory Stress Testing",
+    "link": "https://www.federalreserve.gov/newsevents/speech/bowman20260918a.htm",
     "date": "2026-09-18T13:30:00+00:00",
     "summary": "Speech At the Luncheon of the Lord Mayor City of London at Mansion House, London, United Kingdom"
   },
@@ -506,14 +562,6 @@
   {
     "source": "Bank of England — News",
     "category": "monetary_policy_uk",
-    "title": "Bank rate maintained at 3.75% - September 2026 Monetary Policy Summary and Minutes",
-    "link": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
-    "date": "2026-09-17T11:00:00+00:00",
-    "summary": "The Bank of England’s Monetary Policy Committee is responsible for making decisions about Bank Rate."
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
     "title": "Exchange of letters between the Governor and the Chancellor regarding CPI Inflation - September 2026",
     "link": "https://www.bankofengland.co.uk/letter/2026/cpi-inflation-september-2026",
     "date": "2026-09-17T11:00:00+00:00",
@@ -534,6 +582,14 @@
     "link": "https://www.bankofengland.co.uk/markets/market-notices/2026/asset-purchase-facility-gilt-sales-market-notice-17-september-2026",
     "date": "2026-09-17T11:00:00+00:00",
     "summary": "This Market Notice outlines the Bank Executive’s approach to implementing the Monetary Policy Committee’s (MPC) decision to unwind the gilts held for monetary policy purposes in the Asset Purchase Facility (APF). As part of this, Bank APF auctions will be paused while the Bank reviews a model of selling gilts to the Government."
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Bank rate maintained at 3.75% - September 2026 Monetary Policy Summary and Minutes",
+    "link": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
+    "date": "2026-09-17T11:00:00+00:00",
+    "summary": "The Bank of England’s Monetary Policy Committee is responsible for making decisions about Bank Rate."
   },
   {
     "source": "Federal Reserve — All press releases",
@@ -680,14 +736,6 @@
     "summary": "U.S. liquefied natural gas (LNG) exports averaged 17.4 billion cubic feet per day (Bcf/d) in the first six months of the year, 23% more than the same period in 2025, according to our Natural Gas Monthly. In our latest Short-Term Energy Outlook, we estimate U.S. LNG exports will average 17.3 Bcf/d in the second half of 2026 (2H26) before rising to 18.7 Bcf/d in 1H27."
   },
   {
-    "source": "Federal Reserve — Speeches",
-    "category": "speeches",
-    "title": "Barr, Unlocking Opportunities for Workers and Entrepreneurs with a Criminal Record",
-    "link": "https://www.federalreserve.gov/newsevents/speech/barr20260901a.htm",
-    "date": "2026-09-01T13:05:00+00:00",
-    "summary": "Speech At the Second-Chance Lending Forum, Developing Evidence-Based Policy on Creditworthiness and Criminal History, Washington, D.C."
-  },
-  {
     "source": "Federal Reserve — All press releases",
     "category": "monetary_policy_us",
     "title": "Federal Reserve Board issues enforcement action with former employee of Banco Popular de Puerto Rico",
@@ -728,14 +776,6 @@
     "summary": "Minutes of the Board's discount rate meetings on July 20 and July 29, 2026"
   },
   {
-    "source": "Federal Reserve — All press releases",
-    "category": "monetary_policy_us",
-    "title": "Federal Reserve Board announces approval of application by National Westminster Bank Plc",
-    "link": "https://www.federalreserve.gov/newsevents/pressreleases/orders20260820a.htm",
-    "date": "2026-08-20T20:00:00+00:00",
-    "summary": "Federal Reserve Board announces approval of application by National Westminster Bank Plc"
-  },
-  {
     "source": "Federal Reserve — Monetary policy",
     "category": "fomc",
     "title": "Minutes of the Federal Open Market Committee, July 28–29, 2026",
@@ -758,45 +798,5 @@
     "link": "https://www.bankofengland.co.uk/statistics/notice/2026/green-notice-2026-02",
     "date": "2026-08-06T11:00:00+00:00",
     "summary": "Green notices cover significant and/or significant proposals for Bank of England reporting. If any of these proposals are finalised and are to be implemented, they will appear in a statistical notice."
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Artificial Intelligence Consortium minutes – June 2026",
-    "link": "https://www.bankofengland.co.uk/minutes/2026/june/ai-consortium-minutes-3-june-2026",
-    "date": "2026-08-05T10:51:26+00:00",
-    "summary": "The Artificial Intelligence Consortium (AIC) aims to provide a platform for public-private engagement to further dialogue on the capabilities, development, deployment, use, and potential risks of artificial intelligence (AI) in UK financial services."
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Appointment of Chair and Deputy Chair of the Enforcement Decision Making Committee (EDMC)",
-    "link": "https://www.bankofengland.co.uk/news/2026/august/appointment-of-chair-and-deputy-chair-of-the-edmc",
-    "date": "2026-08-03T09:00:00+00:00",
-    "summary": "Following an external recruitment process, the Bank of England (the Bank) has appointed Nicholas Segal as Chair of its Enforcement Decision Making Committee (EDMC), and Peter King as Deputy Chair, with effect from 1 August 2026."
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Minutes of the Meeting of the Court of Directors held on 4 June 2026",
-    "link": "https://www.bankofengland.co.uk/minutes/2026/july/court-minutes-4-june-2026",
-    "date": "2026-07-30T13:00:00+00:00",
-    "summary": "The Bank's Court of Directors acts as a unitary board, setting the organisation's strategy and budget and taking key decisions on resourcing and appointments. Required to meet a minimum seven times per year, it has five executive members from the Bank and up to nine non-executive members."
-  },
-  {
-    "source": "BEA — News releases",
-    "category": "data_release_us",
-    "title": "Personal Income and Outlays, June 2026",
-    "link": "https://www.bea.gov/news/2026/personal-income-and-outlays-june-2026",
-    "date": "2026-07-30T12:30:00+00:00",
-    "summary": "Personal income increased $54.9 billion (0.2 percent at a monthly rate) in June, according to estimates released today by the U.S. Bureau of Economic Analysis (BEA). Disposable personal income (DPI)-personal income less personal current taxes-increased $48.3 billion (0.2 percent), and personal consumption expenditures (PCE) increased $65.2 billion (0.3 percent). Personal outlays-the sum of PCE, p…"
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Bank Rate maintained at 3.75% - July 2026 Monetary Policy Summary and Minutes",
-    "link": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026",
-    "date": "2026-07-30T11:00:00+00:00",
-    "summary": "The Bank of England’s Monetary Policy Committee is responsible for making decisions about Bank Rate."
   }
 ]
