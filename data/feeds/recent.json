@@ -1,5 +1,21 @@
 [
   {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "CMORG holds sector-wide cloud outage simulation exercise",
+    "link": "https://www.bankofengland.co.uk/news/2026/october/cmorg-holds-sector-wide-cloud-outage-simulation-exercise",
+    "date": "2026-10-09T09:00:00+00:00",
+    "summary": "The Cross-Market Operational Resilience Group (CMORG) yesterday (8 October 2026) completed its biennial simulation exercise, known as SIMEX26, focused this year on a global cloud services disruption."
+  },
+  {
+    "source": "Federal Reserve — All press releases",
+    "category": "monetary_policy_us",
+    "title": "Federal Reserve Board announces enforcement action against American Express Company to address, among other things, the firm’s failure to sufficiently detect and report certain suspicious activity related to money laundering",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261008a.htm",
+    "date": "2026-10-08T20:30:00+00:00",
+    "summary": "Federal Reserve Board announces enforcement action against American Express Company to address, among other things, the firm’s failure to sufficiently detect and report certain suspicious activity related to money laundering"
+  },
+  {
     "source": "ECB — Press releases",
     "category": "monetary_policy_eu",
     "title": "Meeting of 9-10 September 2026",
@@ -562,6 +578,14 @@
   {
     "source": "Bank of England — News",
     "category": "monetary_policy_uk",
+    "title": "Bank rate maintained at 3.75% - September 2026 Monetary Policy Summary and Minutes",
+    "link": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
+    "date": "2026-09-17T11:00:00+00:00",
+    "summary": "The Bank of England’s Monetary Policy Committee is responsible for making decisions about Bank Rate."
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
     "title": "Exchange of letters between the Governor and the Chancellor regarding CPI Inflation - September 2026",
     "link": "https://www.bankofengland.co.uk/letter/2026/cpi-inflation-september-2026",
     "date": "2026-09-17T11:00:00+00:00",
@@ -582,14 +606,6 @@
     "link": "https://www.bankofengland.co.uk/markets/market-notices/2026/asset-purchase-facility-gilt-sales-market-notice-17-september-2026",
     "date": "2026-09-17T11:00:00+00:00",
     "summary": "This Market Notice outlines the Bank Executive’s approach to implementing the Monetary Policy Committee’s (MPC) decision to unwind the gilts held for monetary policy purposes in the Asset Purchase Facility (APF). As part of this, Bank APF auctions will be paused while the Bank reviews a model of selling gilts to the Government."
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Bank rate maintained at 3.75% - September 2026 Monetary Policy Summary and Minutes",
-    "link": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
-    "date": "2026-09-17T11:00:00+00:00",
-    "summary": "The Bank of England’s Monetary Policy Committee is responsible for making decisions about Bank Rate."
   },
   {
     "source": "Federal Reserve — All press releases",
@@ -760,14 +776,6 @@
     "summary": "Personal income increased $115.1 billion (0.4 percent at a monthly rate) in July, according to estimates released today by the U.S. Bureau of Economic Analysis (BEA). Disposable personal income (DPI)-personal income less personal current taxes-increased $125.9 billion (0.5 percent), and personal consumption expenditures (PCE) increased $36.3 billion (0.2 percent). Personal outlays-the sum of PCE,…"
   },
   {
-    "source": "Federal Reserve — All press releases",
-    "category": "monetary_policy_us",
-    "title": "Minutes of the Board's discount rate meetings on July 20 and July 29, 2026",
-    "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260825a.htm",
-    "date": "2026-08-25T18:00:00+00:00",
-    "summary": "Minutes of the Board's discount rate meetings on July 20 and July 29, 2026"
-  },
-  {
     "source": "Federal Reserve — Monetary policy",
     "category": "fomc",
     "title": "Minutes of the Board's discount rate meetings on July 20 and July 29, 2026",
@@ -790,13 +798,5 @@
     "link": "https://www.bankofengland.co.uk/markets/london-foreign-exchange-joint-standing-committee/results-of-the-semi-annual-fx-turnover-survey-april-2026",
     "date": "2026-08-11T13:00:00+00:00",
     "summary": "In April 2026, 25 financial institutions active in the UK foreign exchange (FX) market participated in the semi-annual turnover survey for the Foreign Exchange Joint Standing Committee (FXJSC). The survey results are summarised below. Detailed tables for the April 2026 reporting period, linked below, are available separately."
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Green notice 2026/02",
-    "link": "https://www.bankofengland.co.uk/statistics/notice/2026/green-notice-2026-02",
-    "date": "2026-08-06T11:00:00+00:00",
-    "summary": "Green notices cover significant and/or significant proposals for Bank of England reporting. If any of these proposals are finalised and are to be implemented, they will appear in a statistical notice."
   }
 ]
