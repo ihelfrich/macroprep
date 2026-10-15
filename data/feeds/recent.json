@@ -1,5 +1,29 @@
 [
   {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "David Roberts CV and questionnaire for the Treasury Select Committee",
+    "link": "https://www.bankofengland.co.uk/news/2026/october/david-roberts-tsc-reappointment",
+    "date": "2026-10-15T09:52:41+00:00",
+    "summary": "Published for the Treasury Select Committee"
+  },
+  {
+    "source": "Federal Reserve — Speeches",
+    "category": "speeches",
+    "title": "Bowman, Supervisory Modernization After Silicon Valley Bank",
+    "link": "https://www.federalreserve.gov/newsevents/speech/bowman20261014a.htm",
+    "date": "2026-10-15T02:55:00+00:00",
+    "summary": "Speech At the Bangkok Economic Festival, Reinventing Bretton Woods Committee, Bangkok, Thailand"
+  },
+  {
+    "source": "EIA — Today in Energy",
+    "category": "energy",
+    "title": "Monthly wind generation in ISO-NE is about 68% higher than last year",
+    "link": "https://www.eia.gov/todayinenergy/detail.php?id=68304",
+    "date": "2026-10-14T14:00:00+00:00",
+    "summary": "Monthly wind generation in the first nine months of 2026 was an average of 68% higher compared with the same period in 2025 in ISO New England (ISO-NE)."
+  },
+  {
     "source": "ECB — Press releases",
     "category": "monetary_policy_eu",
     "title": "Frank Elderson: Ensuring resilience in the face of uncertainty",
@@ -760,14 +784,6 @@
     "summary": "Sustained high temperatures have contributed to persistently high electricity demand in the Electric Reliability Council of Texas (ERCOT), the regional transmission organization for most of the state."
   },
   {
-    "source": "Federal Reserve — Speeches",
-    "category": "speeches",
-    "title": "Waller, The Economic Outlook and Some Comments on My Policy Communication",
-    "link": "https://www.federalreserve.gov/newsevents/speech/waller20260903a.htm",
-    "date": "2026-09-03T12:30:00+00:00",
-    "summary": "Speech At Reuters NEXT Newsmaker Interview, Washington, D.C."
-  },
-  {
     "source": "EIA — Today in Energy",
     "category": "energy",
     "title": "U.S. LNG exports rose 23% in the first half of 2026 because of higher capacity",
@@ -782,21 +798,5 @@
     "link": "https://www.bankofengland.co.uk/news/2026/august/delay-to-the-november-2026-rtgs-standards-release",
     "date": "2026-08-27T13:16:29+00:00",
     "summary": "Bank of England statement"
-  },
-  {
-    "source": "BEA — News releases",
-    "category": "data_release_us",
-    "title": "Personal Income and Outlays, July 2026",
-    "link": "https://www.bea.gov/news/2026/personal-income-and-outlays-july-2026",
-    "date": "2026-08-26T12:30:00+00:00",
-    "summary": "Personal income increased $115.1 billion (0.4 percent at a monthly rate) in July, according to estimates released today by the U.S. Bureau of Economic Analysis (BEA). Disposable personal income (DPI)-personal income less personal current taxes-increased $125.9 billion (0.5 percent), and personal consumption expenditures (PCE) increased $36.3 billion (0.2 percent). Personal outlays-the sum of PCE,…"
-  },
-  {
-    "source": "Federal Reserve — Monetary policy",
-    "category": "fomc",
-    "title": "Minutes of the Board's discount rate meetings on July 20 and July 29, 2026",
-    "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260825a.htm",
-    "date": "2026-08-25T18:00:00+00:00",
-    "summary": "Minutes of the Board's discount rate meetings on July 20 and July 29, 2026"
   }
 ]
