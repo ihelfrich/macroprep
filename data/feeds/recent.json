@@ -2,10 +2,34 @@
   {
     "source": "Bank of England — News",
     "category": "monetary_policy_uk",
+    "title": "Banknote imagery advisory group minutes – 15 July 2026",
+    "link": "https://www.bankofengland.co.uk/minutes/2026/july/banknote-advisory-minutes-15-july",
+    "date": "2026-10-16T11:00:00+00:00",
+    "summary": "Meeting held 15 July 2026"
+  },
+  {
+    "source": "EIA — Today in Energy",
+    "category": "energy",
+    "title": "PJM, ERCOT, and SWPP all set peak load records this summer",
+    "link": "https://www.eia.gov/todayinenergy/detail.php?id=68305",
+    "date": "2026-10-15T14:00:00+00:00",
+    "summary": "Three regional transmission organizations (RTOs) set records for peak hourly load this past summer, according to data reported on Form EIA-930 and presented in the Hourly Electric Grid Monitor."
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
     "title": "David Roberts CV and questionnaire for the Treasury Select Committee",
     "link": "https://www.bankofengland.co.uk/news/2026/october/david-roberts-tsc-reappointment",
     "date": "2026-10-15T09:52:41+00:00",
     "summary": "Published for the Treasury Select Committee"
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Minutes of the SONIA Stakeholder Advisory Group - 25 September 2026",
+    "link": "https://www.bankofengland.co.uk/minutes/2026/september/sonia-stakeholder-advisory-group-25-september-2026",
+    "date": "2026-10-15T08:27:59+00:00",
+    "summary": "The SONIA Stakeholder Advisory Group supports the Bank’s administration of SONIA by providing advice and technical input to the Bank and the SONIA Oversight Committee"
   },
   {
     "source": "Federal Reserve — Speeches",
@@ -634,6 +658,14 @@
   {
     "source": "Bank of England — News",
     "category": "monetary_policy_uk",
+    "title": "Bank rate maintained at 3.75% - September 2026 Monetary Policy Summary and Minutes",
+    "link": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
+    "date": "2026-09-17T11:00:00+00:00",
+    "summary": "The Bank of England’s Monetary Policy Committee is responsible for making decisions about Bank Rate."
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
     "title": "Exchange of letters between the Governor and the Chancellor regarding CPI Inflation - September 2026",
     "link": "https://www.bankofengland.co.uk/letter/2026/cpi-inflation-september-2026",
     "date": "2026-09-17T11:00:00+00:00",
@@ -654,14 +686,6 @@
     "link": "https://www.bankofengland.co.uk/markets/market-notices/2026/asset-purchase-facility-gilt-sales-market-notice-17-september-2026",
     "date": "2026-09-17T11:00:00+00:00",
     "summary": "This Market Notice outlines the Bank Executive’s approach to implementing the Monetary Policy Committee’s (MPC) decision to unwind the gilts held for monetary policy purposes in the Asset Purchase Facility (APF). As part of this, Bank APF auctions will be paused while the Bank reviews a model of selling gilts to the Government."
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Bank rate maintained at 3.75% - September 2026 Monetary Policy Summary and Minutes",
-    "link": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
-    "date": "2026-09-17T11:00:00+00:00",
-    "summary": "The Bank of England’s Monetary Policy Committee is responsible for making decisions about Bank Rate."
   },
   {
     "source": "Federal Reserve — All press releases",
@@ -774,29 +798,5 @@
     "link": "https://www.eia.gov/todayinenergy/detail.php?id=68104",
     "date": "2026-09-04T14:00:00+00:00",
     "summary": "What are crack spreads and why are they elevated? Crack spreads are indicators of the profitability of refining crude oil into petroleum products such as gasoline and diesel. One common crack spread is calculated by subtracting the spot market price of a gallon of crude oil from the wholesale price of a gallon of refined product. Since May, the gasoline crack spread in New York Harbor has average…"
-  },
-  {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "Weekly average load in ERCOT continues near record high",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=68084",
-    "date": "2026-09-03T14:00:00+00:00",
-    "summary": "Sustained high temperatures have contributed to persistently high electricity demand in the Electric Reliability Council of Texas (ERCOT), the regional transmission organization for most of the state."
-  },
-  {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "U.S. LNG exports rose 23% in the first half of 2026 because of higher capacity",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=68064",
-    "date": "2026-09-01T14:00:00+00:00",
-    "summary": "U.S. liquefied natural gas (LNG) exports averaged 17.4 billion cubic feet per day (Bcf/d) in the first six months of the year, 23% more than the same period in 2025, according to our Natural Gas Monthly. In our latest Short-Term Energy Outlook, we estimate U.S. LNG exports will average 17.3 Bcf/d in the second half of 2026 (2H26) before rising to 18.7 Bcf/d in 1H27."
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Delay to the November 2026 RTGS standards release",
-    "link": "https://www.bankofengland.co.uk/news/2026/august/delay-to-the-november-2026-rtgs-standards-release",
-    "date": "2026-08-27T13:16:29+00:00",
-    "summary": "Bank of England statement"
   }
 ]
