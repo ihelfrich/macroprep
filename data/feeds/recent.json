@@ -2,6 +2,38 @@
   {
     "source": "ECB — Press releases",
     "category": "monetary_policy_eu",
+    "title": "ECB Consumer Expectations Survey results – September 2026",
+    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261023~a3d201c97c.en.html",
+    "date": "2026-10-23T08:00:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Regulators unveil plans to simplify Senior Manager and Certification Regime",
+    "link": "https://www.bankofengland.co.uk/news/2026/october/regulators-unveil-plans-to-simplify-senior-manager-and-certification-regime",
+    "date": "2026-10-22T20:00:00+00:00",
+    "summary": "The number of financial services roles required to face enhanced checks from regulators will fall significantly under proposals that will support growth."
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Minutes of the Securities Lending Committee meeting – September 2026",
+    "link": "https://www.bankofengland.co.uk/minutes/2026/september/securities-lending-committee-meeting-september-2026",
+    "date": "2026-10-22T15:35:53+00:00",
+    "summary": "The Securities Lending Committee is a forum for market participants and authorities to discuss the UK securities lending market."
+  },
+  {
+    "source": "EIA — Today in Energy",
+    "category": "energy",
+    "title": "U.S. refineries have been running at very high rates in 2026",
+    "link": "https://www.eia.gov/todayinenergy/detail.php?id=68344",
+    "date": "2026-10-22T14:00:00+00:00",
+    "summary": "The U.S. refinery fleet has run at higher-than-normal rates this year, with refinery utilization averaging more than 95% of capacity between May and September, the highest for those months since 1998. Tight global product supplies this year have boosted margins for petroleum products, particularly for diesel, incentivizing the increased run rates."
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
     "title": "Piero Cipollone: Pontes and Appia: unlocking opportunities for banks",
     "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261021_1~d190f2c349.en.pdf",
     "date": "2026-10-21T08:00:00+00:00",
@@ -374,14 +406,6 @@
     "link": "https://www.eia.gov/todayinenergy/detail.php?id=68225",
     "date": "2026-10-02T14:00:00+00:00",
     "summary": "U.S. natural gas production hit an all-time high in July 2026, driven primarily by increased output in the Permian Basin, according to our latest Natural Gas Monthly."
-  },
-  {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates)",
-    "link": "https://www.ecb.europa.eu//press/govcdec/otherdec/2026/html/ecb.gc261002~54c6b5672b.en.html",
-    "date": "2026-10-02T13:00:00+00:00",
-    "summary": ""
   },
   {
     "source": "Bank of England — News",
@@ -774,29 +798,5 @@
     "link": "https://www.bankofengland.co.uk/minutes/2026/march/minutes-of-the-securities-lending-committee-meeting-march-2026",
     "date": "2026-09-15T08:09:58+00:00",
     "summary": "The Securities Lending Committee is a forum for market participants and authorities to discuss the UK securities lending market."
-  },
-  {
-    "source": "Federal Reserve — All press releases",
-    "category": "monetary_policy_us",
-    "title": "Agencies seek comment on proposed third-party risk management guidance and issue statement on community bank engagement with core service providers",
-    "link": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260911a.htm",
-    "date": "2026-09-11T14:00:00+00:00",
-    "summary": "Agencies seek comment on proposed third-party risk management guidance and issue statement on community bank engagement with core service providers"
-  },
-  {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "United States on track for record crude oil production in 2026",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=68125",
-    "date": "2026-09-10T14:00:00+00:00",
-    "summary": "We forecast U.S. crude oil production will average 13.8 million barrels per day (b/d) in 2026, surpassing the previous record of 13.7 million b/d set in 2025, in our latest Short-Term Energy Outlook (STEO)."
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Announcement of the publication of the Governor's interview transcript",
-    "link": "https://www.bankofengland.co.uk/news/2026/september/statement-announcing-governors-interview",
-    "date": "2026-09-10T09:00:00+00:00",
-    "summary": "Statement from the Bank of England"
   }
 ]
