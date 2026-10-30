@@ -2,6 +2,54 @@
   {
     "source": "EIA — Today in Energy",
     "category": "energy",
+    "title": "The share of solar generation with co-located battery storage is increasing",
+    "link": "https://www.eia.gov/todayinenergy/detail.php?id=68384",
+    "date": "2026-10-30T14:00:00+00:00",
+    "summary": "Utility-scale solar developers are increasingly co-locating battery storage with new solar photovoltaic capacity. As of September 2026, over 16% of new utility-scale solar capacity added this year is co-located with operable battery storage, compared with 2% in 2017, according to data reported to EIA by operators."
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "Results of the ECB Survey of Professional Forecasters for the fourth quarter of 2026",
+    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261030~e92c3c838c.en.html",
+    "date": "2026-10-30T09:00:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "Federal Reserve — All press releases",
+    "category": "monetary_policy_us",
+    "title": "Federal Reserve Board announces approval of application by The Bank of Nova Scotia",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261029a.htm",
+    "date": "2026-10-29T20:30:00+00:00",
+    "summary": "Federal Reserve Board announces approval of application by The Bank of Nova Scotia"
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "Piero Cipollone: Next-day securities settlement, tokenisation and the transformation of Europe’s financial infrastructure",
+    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261029~e9b57c3495.en.html",
+    "date": "2026-10-29T15:50:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "Christine Lagarde, Boris Vujčić: Monetary policy statement (with Q&A)",
+    "link": "https://www.ecb.europa.eu//press/press_conference/monetary-policy-statement/2026/html/ecb.is261029~5c5ffe99e5.en.html",
+    "date": "2026-10-29T14:00:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Minutes of the Meeting of the Court of Directors held on 17 September 2026",
+    "link": "https://www.bankofengland.co.uk/minutes/2026/september/court-minutes-17-september-2026",
+    "date": "2026-10-29T14:00:00+00:00",
+    "summary": "The Bank's Court of Directors acts as a unitary board, setting the organisation's strategy and budget and taking key decisions on resourcing and appointments. Required to meet a minimum seven times per year, it has five executive members from the Bank and up to nine non-executive members."
+  },
+  {
+    "source": "EIA — Today in Energy",
+    "category": "energy",
     "title": "LNG imports make up increasing share of Colombia's natural gas supply",
     "link": "https://www.eia.gov/todayinenergy/detail.php?id=68364",
     "date": "2026-10-29T14:00:00+00:00",
@@ -248,22 +296,6 @@
     "summary": "Monthly wind generation in the first nine months of 2026 was an average of 68% higher compared with the same period in 2025 in ISO New England (ISO-NE)."
   },
   {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Frank Elderson: Ensuring resilience in the face of uncertainty",
-    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261014~e4ca33588e.en.html",
-    "date": "2026-10-14T00:00:00+00:00",
-    "summary": ""
-  },
-  {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Philip R. Lane: The AI opportunity for Europe",
-    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261013~9db9bf4fd6.en.html",
-    "date": "2026-10-13T18:30:00+00:00",
-    "summary": ""
-  },
-  {
     "source": "Federal Reserve — All press releases",
     "category": "monetary_policy_us",
     "title": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026",
@@ -310,14 +342,6 @@
     "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261008a.htm",
     "date": "2026-10-08T20:30:00+00:00",
     "summary": "Federal Reserve Board announces enforcement action against American Express Company to address, among other things, the firm’s failure to sufficiently detect and report certain suspicious activity related to money laundering"
-  },
-  {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Meeting of 9-10 September 2026",
-    "link": "https://www.ecb.europa.eu//press/accounts/2026/html/ecb.mg261008~a10153d090.en.html",
-    "date": "2026-10-08T11:30:00+00:00",
-    "summary": ""
   },
   {
     "source": "Federal Reserve — Speeches",
@@ -754,18 +778,10 @@
   {
     "source": "Bank of England — News",
     "category": "monetary_policy_uk",
-    "title": "Exchange of letters between the Governor and the Chancellor regarding CPI Inflation - September 2026",
-    "link": "https://www.bankofengland.co.uk/letter/2026/cpi-inflation-september-2026",
+    "title": "Bank rate maintained at 3.75% - September 2026 Monetary Policy Summary and Minutes",
+    "link": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
     "date": "2026-09-17T11:00:00+00:00",
-    "summary": "Exchange of letters between the Governor and the Chancellor"
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Exchange of letters between the Governor and the Chancellor regarding QT and the APF - September 2026",
-    "link": "https://www.bankofengland.co.uk/letter/2026/exchange-of-letters-between-the-governor-and-the-chancellor-regarding-qt-and-the-apf",
-    "date": "2026-09-17T11:00:00+00:00",
-    "summary": "Exchange of letters between the Governor and the Chancellor"
+    "summary": "The Bank of England’s Monetary Policy Committee is responsible for making decisions about Bank Rate."
   },
   {
     "source": "Bank of England — News",
@@ -778,25 +794,9 @@
   {
     "source": "Bank of England — News",
     "category": "monetary_policy_uk",
-    "title": "Bank rate maintained at 3.75% - September 2026 Monetary Policy Summary and Minutes",
-    "link": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
+    "title": "Exchange of letters between the Governor and the Chancellor regarding CPI Inflation - September 2026",
+    "link": "https://www.bankofengland.co.uk/letter/2026/cpi-inflation-september-2026",
     "date": "2026-09-17T11:00:00+00:00",
-    "summary": "The Bank of England’s Monetary Policy Committee is responsible for making decisions about Bank Rate."
-  },
-  {
-    "source": "Federal Reserve — All press releases",
-    "category": "monetary_policy_us",
-    "title": "Federal Reserve issues FOMC statement",
-    "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
-    "date": "2026-09-16T18:00:00+00:00",
-    "summary": "Federal Reserve issues FOMC statement"
-  },
-  {
-    "source": "Federal Reserve — All press releases",
-    "category": "monetary_policy_us",
-    "title": "Federal Reserve Board and Federal Open Market Committee release economic projections from the September 15-16 FOMC meeting",
-    "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916b.htm",
-    "date": "2026-09-16T18:00:00+00:00",
-    "summary": "Federal Reserve Board and Federal Open Market Committee release economic projections from the September 15-16 FOMC meeting"
+    "summary": "Exchange of letters between the Governor and the Chancellor"
   }
 ]
