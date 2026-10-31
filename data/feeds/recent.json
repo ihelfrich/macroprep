@@ -1,5 +1,21 @@
 [
   {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "Philip R. Lane: AI adoption in Europe",
+    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261030~08d9d540f0.en.html",
+    "date": "2026-10-30T16:10:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates)",
+    "link": "https://www.ecb.europa.eu//press/govcdec/otherdec/2026/html/ecb.gc261030~e40f864093.en.html",
+    "date": "2026-10-30T14:00:00+00:00",
+    "summary": ""
+  },
+  {
     "source": "EIA — Today in Energy",
     "category": "energy",
     "title": "The share of solar generation with co-located battery storage is increasing",
@@ -214,22 +230,6 @@
     "link": "https://www.eia.gov/todayinenergy/detail.php?id=68325",
     "date": "2026-10-19T14:00:00+00:00",
     "summary": "In the third quarter of 2026 (3Q26), 23% of new light-duty vehicles sold in the United States were hybrid electric, battery electric, or plug-in hybrid electric vehicles, down slightly from 24% in 3Q25. Between 3Q25 and 3Q26, hybrid electric vehicles continued to gain market share, reaching 16% of light-duty vehicle sales. Growth of hybrid electric vehicle sales has slowed this quarter as the ave…"
-  },
-  {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Frank Elderson: From climate and nature risks to economic resilience and competitiveness",
-    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261019~f0a3e053de.en.html",
-    "date": "2026-10-19T06:00:00+00:00",
-    "summary": ""
-  },
-  {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Christine Lagarde: IMFC Statement",
-    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261017~7015ea3099.en.html",
-    "date": "2026-10-17T05:00:00+00:00",
-    "summary": ""
   },
   {
     "source": "Federal Reserve — All press releases",
@@ -778,10 +778,18 @@
   {
     "source": "Bank of England — News",
     "category": "monetary_policy_uk",
-    "title": "Bank rate maintained at 3.75% - September 2026 Monetary Policy Summary and Minutes",
-    "link": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
+    "title": "Exchange of letters between the Governor and the Chancellor regarding CPI Inflation - September 2026",
+    "link": "https://www.bankofengland.co.uk/letter/2026/cpi-inflation-september-2026",
     "date": "2026-09-17T11:00:00+00:00",
-    "summary": "The Bank of England’s Monetary Policy Committee is responsible for making decisions about Bank Rate."
+    "summary": "Exchange of letters between the Governor and the Chancellor"
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Exchange of letters between the Governor and the Chancellor regarding QT and the APF - September 2026",
+    "link": "https://www.bankofengland.co.uk/letter/2026/exchange-of-letters-between-the-governor-and-the-chancellor-regarding-qt-and-the-apf",
+    "date": "2026-09-17T11:00:00+00:00",
+    "summary": "Exchange of letters between the Governor and the Chancellor"
   },
   {
     "source": "Bank of England — News",
@@ -790,13 +798,5 @@
     "link": "https://www.bankofengland.co.uk/markets/market-notices/2026/asset-purchase-facility-gilt-sales-market-notice-17-september-2026",
     "date": "2026-09-17T11:00:00+00:00",
     "summary": "This Market Notice outlines the Bank Executive’s approach to implementing the Monetary Policy Committee’s (MPC) decision to unwind the gilts held for monetary policy purposes in the Asset Purchase Facility (APF). As part of this, Bank APF auctions will be paused while the Bank reviews a model of selling gilts to the Government."
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Exchange of letters between the Governor and the Chancellor regarding CPI Inflation - September 2026",
-    "link": "https://www.bankofengland.co.uk/letter/2026/cpi-inflation-september-2026",
-    "date": "2026-09-17T11:00:00+00:00",
-    "summary": "Exchange of letters between the Governor and the Chancellor"
   }
 ]
