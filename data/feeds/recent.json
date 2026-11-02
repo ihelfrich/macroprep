@@ -2,6 +2,14 @@
   {
     "source": "ECB — Press releases",
     "category": "monetary_policy_eu",
+    "title": "Boris Vujčić: Integrated, open and resilient: Europe’s strengths in a fragmenting world",
+    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp.261102~70003226e9.en.html",
+    "date": "2026-11-02T09:30:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
     "title": "Philip R. Lane: AI adoption in Europe",
     "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261030~08d9d540f0.en.html",
     "date": "2026-10-30T16:10:00+00:00",
@@ -213,14 +221,6 @@
     "title": "Philip R. Lane: Euro liquidity lines and the international monetary system",
     "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261021~401d6c4b70.en.html",
     "date": "2026-10-21T04:15:00+00:00",
-    "summary": ""
-  },
-  {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Frank Elderson: Interview with Die Presse",
-    "link": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261020~97e2e4bc38.en.html",
-    "date": "2026-10-20T07:00:00+00:00",
     "summary": ""
   },
   {
@@ -778,14 +778,6 @@
   {
     "source": "Bank of England — News",
     "category": "monetary_policy_uk",
-    "title": "Bank rate maintained at 3.75% - September 2026 Monetary Policy Summary and Minutes",
-    "link": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
-    "date": "2026-09-17T11:00:00+00:00",
-    "summary": "The Bank of England’s Monetary Policy Committee is responsible for making decisions about Bank Rate."
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
     "title": "Exchange of letters between the Governor and the Chancellor regarding CPI Inflation - September 2026",
     "link": "https://www.bankofengland.co.uk/letter/2026/cpi-inflation-september-2026",
     "date": "2026-09-17T11:00:00+00:00",
@@ -798,5 +790,13 @@
     "link": "https://www.bankofengland.co.uk/letter/2026/exchange-of-letters-between-the-governor-and-the-chancellor-regarding-qt-and-the-apf",
     "date": "2026-09-17T11:00:00+00:00",
     "summary": "Exchange of letters between the Governor and the Chancellor"
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Asset Purchase Facility: Gilt Sales – Market Notice 17 September 2026",
+    "link": "https://www.bankofengland.co.uk/markets/market-notices/2026/asset-purchase-facility-gilt-sales-market-notice-17-september-2026",
+    "date": "2026-09-17T11:00:00+00:00",
+    "summary": "This Market Notice outlines the Bank Executive’s approach to implementing the Monetary Policy Committee’s (MPC) decision to unwind the gilts held for monetary policy purposes in the Asset Purchase Facility (APF). As part of this, Bank APF auctions will be paused while the Bank reviews a model of selling gilts to the Government."
   }
 ]
