@@ -2,6 +2,30 @@
   {
     "source": "EIA — Today in Energy",
     "category": "energy",
+    "title": "U.S. crude oil imports from Venezuela in July were highest since 2017",
+    "link": "https://www.eia.gov/todayinenergy/detail.php?id=68425",
+    "date": "2026-11-06T14:00:00+00:00",
+    "summary": "In July 2026, U.S. imports of crude oil from Venezuela averaged 701,000 barrels per day (b/d), the most since May 2017, before decreasing to 655,000 b/d in August, according to data published in our Petroleum Supply Monthly"
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "ECB publishes consolidated banking data for end-June 2026",
+    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261106~356f2fc73a.en.html",
+    "date": "2026-11-06T09:00:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "Federal Reserve — All press releases",
+    "category": "monetary_policy_us",
+    "title": "Federal Reserve Board announces termination of enforcement action with Allegiant United Holdings, LLC, Nano Financial Holdings, Inc., and Nano Banc",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261105a.htm",
+    "date": "2026-11-05T16:00:00+00:00",
+    "summary": "Federal Reserve Board announces termination of enforcement action with Allegiant United Holdings, LLC, Nano Financial Holdings, Inc., and Nano Banc"
+  },
+  {
+    "source": "EIA — Today in Energy",
+    "category": "energy",
     "title": "Refineries have shifted production away from gasoline to middle distillates",
     "link": "https://www.eia.gov/todayinenergy/detail.php?id=68424",
     "date": "2026-11-05T14:00:00+00:00",
@@ -237,14 +261,6 @@
     "title": "Frank Elderson: Taking action for nature – investing in economic resilience and prosperity",
     "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261026~d903d7ad85.en.html",
     "date": "2026-10-26T05:00:00+00:00",
-    "summary": ""
-  },
-  {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Piero Cipollone: Interview with Milano Finanza",
-    "link": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261024~ee2ba73cf3.en.html",
-    "date": "2026-10-24T06:00:00+00:00",
     "summary": ""
   },
   {
@@ -782,21 +798,5 @@
     "link": "https://www.federalreserve.gov/newsevents/speech/bowman20260918b.htm",
     "date": "2026-09-18T13:30:00+00:00",
     "summary": "Speech At the Luncheon of the Lord Mayor City of London at Mansion House, London, United Kingdom"
-  },
-  {
-    "source": "Federal Reserve — Speeches",
-    "category": "speeches",
-    "title": "Bowman, The Final Chapter on Modernizing Bank Regulatory Stress Testing",
-    "link": "https://www.federalreserve.gov/newsevents/speech/bowman20260918a.htm",
-    "date": "2026-09-18T13:30:00+00:00",
-    "summary": "Speech At the Luncheon of the Lord Mayor City of London at Mansion House, London, United Kingdom"
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Minutes of the Transaction and Post-trade Reporting Harmonisation Taskforce - July 2026",
-    "link": "https://www.bankofengland.co.uk/minutes/2026/july/minutes-of-the-transaction-and-post-trade-reporting-harmonisation-taskforce-july-2026",
-    "date": "2026-09-18T11:00:00+00:00",
-    "summary": "The Transaction and Post-trade Reporting Harmonisation Taskforce, through its three working groups, will help inform the design of the Bank and FCA’s long-term approach to harmonising UK MiFIR, UK EMIR and UK SFTR reporting requirements"
   }
 ]
