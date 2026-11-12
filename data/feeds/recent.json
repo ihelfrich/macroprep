@@ -2,6 +2,22 @@
   {
     "source": "Federal Reserve — Speeches",
     "category": "speeches",
+    "title": "Barr, American Inequality and the Future of AI",
+    "link": "https://www.federalreserve.gov/newsevents/speech/barr20261112a.htm",
+    "date": "2026-11-12T15:00:00+00:00",
+    "summary": "Speech At Yale University, New Haven, Connecticut"
+  },
+  {
+    "source": "EIA — Today in Energy",
+    "category": "energy",
+    "title": "EIA forecasts Alaskan crude oil production to grow 13% in 2027",
+    "link": "https://www.eia.gov/todayinenergy/detail.php?id=68444",
+    "date": "2026-11-12T14:00:00+00:00",
+    "summary": "After decades of decline, crude oil production in Alaska is growing, driven by two projects on Alaska's North Slope. In our latest Short-Term Energy Outlook, we expect a 23,000 barrels per day (b/d) (6%) increase in 2026, followed by a 60,000 b/d (13%) rise in 2027. At a forecast 505,000 b/d in 2027, output would be the most since 2014."
+  },
+  {
+    "source": "Federal Reserve — Speeches",
+    "category": "speeches",
     "title": "Bowman, The U.S. Economy and Considerations for Monetary Policy",
     "link": "https://www.federalreserve.gov/newsevents/speech/bowman20261110a.htm",
     "date": "2026-11-10T20:30:00+00:00",
@@ -768,14 +784,6 @@
     "summary": "Not for distribution, directly or indirectly, in or into the United States, Canada, Australia, Japan or any other jurisdiction where it is unlawful to distribute this announcement"
   },
   {
-    "source": "Federal Reserve — Speeches",
-    "category": "speeches",
-    "title": "Jefferson, Discount Window Modernization and Treasury Market Functioning",
-    "link": "https://www.federalreserve.gov/newsevents/speech/jefferson20260922a.htm",
-    "date": "2026-09-22T14:20:00+00:00",
-    "summary": "Speech At the 2026 U.S. Treasury Market Conference, Federal Reserve Bank of New York, New York, New York"
-  },
-  {
     "source": "EIA — Today in Energy",
     "category": "energy",
     "title": "Public companies produce most U.S. crude oil and natural gas",
@@ -790,13 +798,5 @@
     "link": "https://www.bankofengland.co.uk/news/2026/september/bank-of-england-announces-new-office-space-in-leeds",
     "date": "2026-09-21T12:00:00+00:00",
     "summary": "The Bank of England has secured a new long-term premises in Leeds, marking a major milestone in its commitment to build its presence in the region."
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Foreign Currency Reserves 2026 – Market Notice 21 September 2026",
-    "link": "https://www.bankofengland.co.uk/markets/market-notices/2026/september/foreign-currency-reserves-2026-market-notice-21-september-2026",
-    "date": "2026-09-21T11:30:00+00:00",
-    "summary": "Not for distribution, directly or indirectly, in or into the United States, Canada, Australia, Japan or any other jurisdiction where it is unlawful to distribute this announcement"
   }
 ]
