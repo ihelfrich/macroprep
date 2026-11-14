@@ -1,5 +1,21 @@
 [
   {
+    "source": "Federal Reserve — Speeches",
+    "category": "speeches",
+    "title": "Jefferson, New Technology, Old Questions: Productivity Puzzles and the Macroeconomy",
+    "link": "https://www.federalreserve.gov/newsevents/speech/jefferson20261113a.htm",
+    "date": "2026-11-14T00:00:00+00:00",
+    "summary": "Speech At the University of California, San Diego Economic Roundtable, San Diego, California"
+  },
+  {
+    "source": "Federal Reserve — All press releases",
+    "category": "monetary_policy_us",
+    "title": "Agencies extend comment period for proposed third-party risk management guidance",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261113a.htm",
+    "date": "2026-11-13T21:15:00+00:00",
+    "summary": "Agencies extend comment period for proposed third-party risk management guidance"
+  },
+  {
     "source": "EIA — Today in Energy",
     "category": "energy",
     "title": "Hydropower generation in the Southwest fell to record lows this summer",
@@ -782,21 +798,5 @@
     "link": "https://www.bankofengland.co.uk/minutes/2026/september/market-participants-group-meeting-25-september-2026",
     "date": "2026-09-25T06:30:00+00:00",
     "summary": "The Market Participants Group (MPG) is a senior-level forum for financial market participants to share their views on relevant themes and narratives in financial markets with members of the Bank of England’s Monetary Policy Committee."
-  },
-  {
-    "source": "Federal Reserve — All press releases",
-    "category": "monetary_policy_us",
-    "title": "Federal Reserve Board requests public comment on two proposals related to establishing a regulatory framework for Board-supervised payment stablecoin issuers under the GENIUS Act",
-    "link": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260924a.htm",
-    "date": "2026-09-24T18:30:00+00:00",
-    "summary": "Federal Reserve Board requests public comment on two proposals related to establishing a regulatory framework for Board-supervised payment stablecoin issuers under the GENIUS Act"
-  },
-  {
-    "source": "BEA — News releases",
-    "category": "data_release_us",
-    "title": "U.S. International Transactions and Investment Position, 2nd Quarter 2026",
-    "link": "https://bea.gov/news/2026/us-international-transactions-and-investment-position-2nd-quarter-2026",
-    "date": "2026-09-24T12:30:00+00:00",
-    "summary": "The U.S. current-account deficit resulting from international economic transactions widened by $33.4 billion, or 15.7 percent, to $246.0 billion in the second quarter of 2026, according to statistics released today by the U.S. Bureau of Economic Analysis. The revised first-quarter deficit was $212.6 billion. The second-quarter deficit was 3.0 percent of current-dollar gross domestic product, up f…"
   }
 ]
