@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T14:10:36+00:00",
+  "generated_at": "2026-11-16T16:10:34+00:00",
   "endpoint": "https://fred.stlouisfed.org/graph/fredgraph.csv",
   "n_series": 26,
   "series": [
@@ -153,9 +153,9 @@
       "description": "Credit risk premium",
       "file": "BAMLH0A0HYM2.json",
       "status": "ok",
-      "n_observations": 785,
-      "start": "2023-11-14",
-      "end": "2026-11-12"
+      "n_observations": 784,
+      "start": "2023-11-17",
+      "end": "2026-11-13"
     },
     {
       "id": "GDPC1",
