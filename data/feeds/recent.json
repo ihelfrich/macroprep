@@ -1,5 +1,29 @@
 [
   {
+    "source": "Federal Reserve — Speeches",
+    "category": "speeches",
+    "title": "Waller, Considerations at the Intersection of Payments and Tokenized Markets",
+    "link": "https://www.federalreserve.gov/newsevents/speech/waller20261117a.htm",
+    "date": "2026-11-17T14:10:00+00:00",
+    "summary": "Speech At “Navigating the Future of Banking and Payments,” The Clearing House Annual Conference 2026, New York, New York"
+  },
+  {
+    "source": "EIA — Today in Energy",
+    "category": "energy",
+    "title": "How does EIA account for small differences between energy supply and demand data?",
+    "link": "https://www.eia.gov/todayinenergy/detail.php?id=68464",
+    "date": "2026-11-17T14:00:00+00:00",
+    "summary": "EIA uses over 60 surveys to collect data on the U.S. energy sector's supply and demand. In theory, supply and demand should balance. In practice, we often have small differences between our total supply and total demand figures."
+  },
+  {
+    "source": "Federal Reserve — Speeches",
+    "category": "speeches",
+    "title": "Warsh, Opening Remarks",
+    "link": "https://www.federalreserve.gov/newsevents/speech/warsh20261116a.htm",
+    "date": "2026-11-16T17:00:00+00:00",
+    "summary": "Speech At the Productivity and Jobs Task Force Conference, hosted by the Federal Reserve Board and the Federal Reserve Bank of San Francisco, San Francisco, California"
+  },
+  {
     "source": "ECB — Press releases",
     "category": "monetary_policy_eu",
     "title": "Frank Elderson: Smart supervision for small banks",
@@ -760,22 +784,6 @@
     "summary": "Speech At Sibos 2026, Miami, Florida"
   },
   {
-    "source": "Federal Reserve — Speeches",
-    "category": "speeches",
-    "title": "Barr, Economic Conditions and Monetary Policy",
-    "link": "https://www.federalreserve.gov/newsevents/speech/barr20260929a.htm",
-    "date": "2026-09-29T16:40:00+00:00",
-    "summary": "Speech At the Detroit Economic Club, Detroit, Michigan"
-  },
-  {
-    "source": "Federal Reserve — Speeches",
-    "category": "speeches",
-    "title": "Bowman, Opening Remarks",
-    "link": "https://www.federalreserve.gov/newsevents/speech/bowman20260929a.htm",
-    "date": "2026-09-29T15:00:00+00:00",
-    "summary": "Speech At the Community Bank Cyber Workshop, Denver, Colorado (via pre-recorded video)"
-  },
-  {
     "source": "Federal Reserve — All press releases",
     "category": "monetary_policy_us",
     "title": "Federal Reserve Board announces approval of application by Peoples Bancorp Inc.",
@@ -790,13 +798,5 @@
     "link": "https://www.eia.gov/todayinenergy/detail.php?id=68204",
     "date": "2026-09-25T14:00:00+00:00",
     "summary": "The Henry Hub natural gas spot price averaged $2.93 per million British thermal units from June through August, 6% less than the same period last year. Prices were lower this summer despite exceptionally hot weather that increased electricity demand for air conditioning. Natural gas-fired power plants often help meet higher demand during such periods."
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Minutes of the Market Participants Group meeting – 24 September 2026",
-    "link": "https://www.bankofengland.co.uk/minutes/2026/september/market-participants-group-meeting-25-september-2026",
-    "date": "2026-09-25T06:30:00+00:00",
-    "summary": "The Market Participants Group (MPG) is a senior-level forum for financial market participants to share their views on relevant themes and narratives in financial markets with members of the Bank of England’s Monetary Policy Committee."
   }
 ]
