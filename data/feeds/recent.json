@@ -1,5 +1,45 @@
 [
   {
+    "source": "BEA — News releases",
+    "category": "data_release_us",
+    "title": "Outdoor Recreation Economic Statistics, U.S. and States, 2025",
+    "link": "https://www.bea.gov/news/2026/outdoor-recreation-economic-statistics-us-and-states-2025",
+    "date": "2026-11-18T15:00:00+00:00",
+    "summary": "The value added of the outdoor recreation economy accounted for 2.3 percent ($704.2 billion) of current-dollar gross domestic product (GDP) for the nation in 2025. Across states and the District of Columbia, value added for outdoor recreation as a share of state GDP ranged from 6.1 percent in Hawaii to 1.0 percent in the District of Columbia."
+  },
+  {
+    "source": "EIA — Today in Energy",
+    "category": "energy",
+    "title": "U.S. natural gas inventories end injection season above normal levels",
+    "link": "https://www.eia.gov/todayinenergy/detail.php?id=68484",
+    "date": "2026-11-18T14:00:00+00:00",
+    "summary": "Working natural gas in storage in the Lower 48 states ended the natural gas injection season at 3,810 billion cubic feet (Bcf), exceeding the five-year average by almost 2%, according to estimates based on data from our Weekly Natural Gas Storage Report released on November 12. Injection season runs April 1–October 31, the months of typically lower natural gas demand."
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "Boris Vujčić: Financial Stability Review - November 2026",
+    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261118~86f1e8147e.en.pdf",
+    "date": "2026-11-18T09:00:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "Risks from AI valuations, fiscal imbalances and geoeconomic tensions weigh on financial stability outlook",
+    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261118~83c5c60158.en.html",
+    "date": "2026-11-18T09:00:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "Philip R. Lane: The practice and science of monetary policy communication: the ECB experience",
+    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261117~7f5d3b1a0e.en.pdf",
+    "date": "2026-11-17T18:30:00+00:00",
+    "summary": ""
+  },
+  {
     "source": "Federal Reserve — Speeches",
     "category": "speeches",
     "title": "Waller, Considerations at the Intersection of Payments and Tokenized Markets",
@@ -304,14 +344,6 @@
     "summary": ""
   },
   {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates)",
-    "link": "https://www.ecb.europa.eu//press/govcdec/otherdec/2026/html/ecb.gc261030~e40f864093.en.html",
-    "date": "2026-10-30T14:00:00+00:00",
-    "summary": ""
-  },
-  {
     "source": "EIA — Today in Energy",
     "category": "energy",
     "title": "The share of solar generation with co-located battery storage is increasing",
@@ -320,28 +352,12 @@
     "summary": "Utility-scale solar developers are increasingly co-locating battery storage with new solar photovoltaic capacity. As of September 2026, over 16% of new utility-scale solar capacity added this year is co-located with operable battery storage, compared with 2% in 2017, according to data reported to EIA by operators."
   },
   {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Results of the ECB Survey of Professional Forecasters for the fourth quarter of 2026",
-    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261030~e92c3c838c.en.html",
-    "date": "2026-10-30T09:00:00+00:00",
-    "summary": ""
-  },
-  {
     "source": "Federal Reserve — All press releases",
     "category": "monetary_policy_us",
     "title": "Federal Reserve Board announces approval of application by The Bank of Nova Scotia",
     "link": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261029a.htm",
     "date": "2026-10-29T20:30:00+00:00",
     "summary": "Federal Reserve Board announces approval of application by The Bank of Nova Scotia"
-  },
-  {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Piero Cipollone: Next-day securities settlement, tokenisation and the transformation of Europe’s financial infrastructure",
-    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261029~e9b57c3495.en.html",
-    "date": "2026-10-29T15:50:00+00:00",
-    "summary": ""
   },
   {
     "source": "Bank of England — News",
@@ -782,21 +798,5 @@
     "link": "https://www.federalreserve.gov/newsevents/speech/waller20260928a.htm",
     "date": "2026-09-29T19:00:00+00:00",
     "summary": "Speech At Sibos 2026, Miami, Florida"
-  },
-  {
-    "source": "Federal Reserve — All press releases",
-    "category": "monetary_policy_us",
-    "title": "Federal Reserve Board announces approval of application by Peoples Bancorp Inc.",
-    "link": "https://www.federalreserve.gov/newsevents/pressreleases/orders20260925a.htm",
-    "date": "2026-09-25T20:30:00+00:00",
-    "summary": "Federal Reserve Board announces approval of application by Peoples Bancorp Inc."
-  },
-  {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "Henry Hub natural gas prices this summer were 6% lower than last summer",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=68204",
-    "date": "2026-09-25T14:00:00+00:00",
-    "summary": "The Henry Hub natural gas spot price averaged $2.93 per million British thermal units from June through August, 6% less than the same period last year. Prices were lower this summer despite exceptionally hot weather that increased electricity demand for air conditioning. Natural gas-fired power plants often help meet higher demand during such periods."
   }
 ]
