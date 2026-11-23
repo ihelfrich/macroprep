@@ -1,5 +1,29 @@
 [
   {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "Philip R. Lane: Climate change and monetary policy",
+    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261123~b5816801a0.en.pdf",
+    "date": "2026-11-23T14:30:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "ECB expands acceptance of DLT-based assets as eligible Eurosystem collateral",
+    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261123~76b6f57b74.en.html",
+    "date": "2026-11-23T10:00:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "General insurance stress test highlights value of rehearsing crisis response and recovery",
+    "link": "https://www.bankofengland.co.uk/news/2026/november/general-insurance-stress-test-highlights-value-of-rehearsing-crisis-response-and-recovery",
+    "date": "2026-11-23T10:00:00+00:00",
+    "summary": "The Prudential Regulation Authority (PRA) has today published the results of its 2026 Dynamic General Insurance Stress Test (DyGIST)"
+  },
+  {
     "source": "Federal Reserve — All press releases",
     "category": "monetary_policy_us",
     "title": "Federal Reserve announces College Fed Challenge winners",
@@ -416,14 +440,6 @@
     "summary": "The U.S. goods and services trade deficit decreased in September 2026 according to the U.S. Bureau of Economic Analysis and the U.S. Census Bureau. The deficit decreased from $105.7 billion in August (revised) to $105.0 billion in September, as exports increased more than imports. The goods deficit decreased $0.7 billion in September to $135.9 billion. The services surplus decreased less than $0.…"
   },
   {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "ECB wage tracker suggests slightly higher wage growth in first three quarters of 2027 compared with the full year of 2026",
-    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261104~caf181d7ac.en.html",
-    "date": "2026-11-04T00:00:00+00:00",
-    "summary": ""
-  },
-  {
     "source": "EIA — Today in Energy",
     "category": "energy",
     "title": "Global refinery inputs fell sharply in the second quarter of 2026 before modest recovery",
@@ -438,14 +454,6 @@
     "link": "https://www.bankofengland.co.uk/news/2026/november/regulators-explore-credit-union-reforms-to-support-growth-innovation-and-better-outcomes-for-members",
     "date": "2026-11-03T10:00:00+00:00",
     "summary": "Credit unions could benefit from several ideas put forward today by the Prudential Regulation Authority and Financial Conduct Authority aimed at helping the sector grow, innovate and meet the changing needs of their members."
-  },
-  {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Boris Vujčić: Integrated, open and resilient: Europe’s strengths in a fragmenting world",
-    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp.261102~70003226e9.en.html",
-    "date": "2026-11-02T09:30:00+00:00",
-    "summary": ""
   },
   {
     "source": "EIA — Today in Energy",
@@ -790,13 +798,5 @@
     "link": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261002a.htm",
     "date": "2026-10-02T20:00:00+00:00",
     "summary": "Federal Reserve Board announces it will extend, until November 4, the comment period on its proposal to modernize Regulation O"
-  },
-  {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "U.S. natural gas production reached a record high in July 2026",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=68225",
-    "date": "2026-10-02T14:00:00+00:00",
-    "summary": "U.S. natural gas production hit an all-time high in July 2026, driven primarily by increased output in the Permian Basin, according to our latest Natural Gas Monthly."
   }
 ]
