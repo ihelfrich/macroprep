@@ -1,5 +1,29 @@
 [
   {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Daniel E. Pinto appointed to the Bank of England’s Financial Policy Committee",
+    "link": "https://www.bankofengland.co.uk/news/2026/november/daniel-pinto-appointment-fpc",
+    "date": "2026-11-24T16:00:00+00:00",
+    "summary": "Daniel E. Pinto has been appointed as an external member of the Financial Policy Committee."
+  },
+  {
+    "source": "EIA — Today in Energy",
+    "category": "energy",
+    "title": "How does EIA compare different types of energy?",
+    "link": "https://www.eia.gov/todayinenergy/detail.php?id=68504",
+    "date": "2026-11-24T14:00:00+00:00",
+    "summary": "To compare production and consumption across different resources, we convert to a common energy metric, British thermal units (Btu), which typically measures the heat content of the fuels such as petroleum, natural gas, and coal that are burned for energy. For energy sources such as hydropower, wind, solar, and geothermal that aren't combusted to create energy, we apply a constant conversion fact…"
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "Boris Vujčić: Resilience in an age of shocks: lessons from central and eastern Europe",
+    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261124~17928e5456.en.html",
+    "date": "2026-11-24T11:00:00+00:00",
+    "summary": ""
+  },
+  {
     "source": "ECB — Press releases",
     "category": "monetary_policy_eu",
     "title": "Philip R. Lane: Climate change and monetary policy",
@@ -416,14 +440,6 @@
     "summary": ""
   },
   {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Piero Cipollone: Shaping the future of money",
-    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261105~6495a0df6f.en.html",
-    "date": "2026-11-05T07:30:00+00:00",
-    "summary": ""
-  },
-  {
     "source": "Bank of England — News",
     "category": "monetary_policy_uk",
     "title": "Summary of the RTGS CHAPS Industry Forum - 13 October 2026",
@@ -782,21 +798,5 @@
     "link": "https://www.eia.gov/todayinenergy/detail.php?id=68245",
     "date": "2026-10-05T14:00:00+00:00",
     "summary": "Petroleum markets in the third quarter of 2026 (3Q26) were characterized by increasing prices for crude oil and petroleum products amid persistent conflict in the Middle East."
-  },
-  {
-    "source": "Federal Reserve — All press releases",
-    "category": "monetary_policy_us",
-    "title": "Federal Reserve Board announces approval of application by Fleur Capital Corporation",
-    "link": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261002a.htm",
-    "date": "2026-10-02T20:45:00+00:00",
-    "summary": "Federal Reserve Board announces approval of application by Fleur Capital Corporation"
-  },
-  {
-    "source": "Federal Reserve — All press releases",
-    "category": "monetary_policy_us",
-    "title": "Federal Reserve Board announces it will extend, until November 4, the comment period on its proposal to modernize Regulation O",
-    "link": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261002a.htm",
-    "date": "2026-10-02T20:00:00+00:00",
-    "summary": "Federal Reserve Board announces it will extend, until November 4, the comment period on its proposal to modernize Regulation O"
   }
 ]
