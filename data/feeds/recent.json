@@ -1,5 +1,69 @@
 [
   {
+    "source": "EIA — Today in Energy",
+    "category": "energy",
+    "title": "Almost 60% of primary energy used for electricity is lost to conversion and transmission",
+    "link": "https://www.eia.gov/todayinenergy/detail.php?id=68504",
+    "date": "2026-11-25T14:00:00+00:00",
+    "summary": "In 2025, the United States consumed 34 quadrillion British thermal units (quads) of primary energy to deliver 14 quads of electricity sales to end users, with nearly 60% lost. About 95% of the losses came from converting primary energy into electricity, mostly due to lost heat from burning coal and natural gas. The remaining 5% was lost in the course of delivering electricity across grid infrastr…"
+  },
+  {
+    "source": "BEA — News releases",
+    "category": "data_release_us",
+    "title": "GDP, (Second Estimate) and Corporate Profits, 3rd Quarter 2026",
+    "link": "https://www.bea.gov/news/2026/gdp-second-estimate-and-corporate-profits-3rd-quarter-2026",
+    "date": "2026-11-25T13:30:00+00:00",
+    "summary": "Real gross domestic product (GDP) increased at an annual rate of 4.3 percent in the third quarter of 2026 (July, August, and September), according to the second estimate released today by the U.S. Bureau of Economic Analysis (BEA). In the second quarter, real GDP increased 2.2 percent. The contributors to the increase in real GDP in the third quarter were increases in investment, consumer spendin…"
+  },
+  {
+    "source": "BEA — News releases",
+    "category": "data_release_us",
+    "title": "Personal Income and Outlays, October 2026",
+    "link": "https://www.bea.gov/news/2026/personal-income-and-outlays-october-2026",
+    "date": "2026-11-25T13:30:00+00:00",
+    "summary": "Personal income increased $201.8 billion (0.7 percent at a monthly rate) in October, according to estimates released today by the U.S. Bureau of Economic Analysis (BEA). Disposable personal income (DPI)&ndash;personal income less personal current taxes&ndash;increased $200.5 billion (0.8 percent), and personal consumption expenditures (PCE) increased $63.8 billion (0.3 percent). Personal outlays&…"
+  },
+  {
+    "source": "Federal Reserve — Speeches",
+    "category": "speeches",
+    "title": "Bowman, Modernizing Banking Supervision: A Shared Agenda for the Americas",
+    "link": "https://www.federalreserve.gov/newsevents/speech/bowman20261125a.htm",
+    "date": "2026-11-25T12:25:00+00:00",
+    "summary": "Speech At the ASBA–BCBS–FSI High-Level Meeting for the Americas on Banking Supervision, Bras&iacute;lia, Brazil (via pre-recorded video)"
+  },
+  {
+    "source": "ECB — Press releases",
+    "category": "monetary_policy_eu",
+    "title": "Card payments edge past cash in shops; euro area consumers want both",
+    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261125~26d1ade228.en.html",
+    "date": "2026-11-25T10:00:00+00:00",
+    "summary": ""
+  },
+  {
+    "source": "Bank of England — News",
+    "category": "monetary_policy_uk",
+    "title": "Regulators implement growth-friendly securitisation reforms",
+    "link": "https://www.bankofengland.co.uk/news/2026/november/regulators-implement-growth-friendly-securitisation-reforms",
+    "date": "2026-11-25T10:00:00+00:00",
+    "summary": "The Prudential Regulation Authority and Financial Conduct Authority have today published revised rules designed to support securitisation’s contribution to economic growth."
+  },
+  {
+    "source": "Federal Reserve — All press releases",
+    "category": "monetary_policy_us",
+    "title": "Minutes of the Board's discount rate meetings on October 19 and October 28, 2026",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261124a.htm",
+    "date": "2026-11-24T19:00:00+00:00",
+    "summary": "Minutes of the Board's discount rate meetings on October 19 and October 28, 2026"
+  },
+  {
+    "source": "Federal Reserve — Monetary policy",
+    "category": "fomc",
+    "title": "Minutes of the Board's discount rate meetings on October 19 and October 28, 2026",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261124a.htm",
+    "date": "2026-11-24T19:00:00+00:00",
+    "summary": "Minutes of the Board's discount rate meetings on October 19 and October 28, 2026"
+  },
+  {
     "source": "Bank of England — News",
     "category": "monetary_policy_uk",
     "title": "Daniel E. Pinto appointed to the Bank of England’s Financial Policy Committee",
@@ -432,14 +496,6 @@
     "summary": "The Bank of England’s Monetary Policy Committee is responsible for making decisions about Bank Rate."
   },
   {
-    "source": "ECB — Press releases",
-    "category": "monetary_policy_eu",
-    "title": "Isabel Schnabel: Navigating stormy waters: reflections on monetary policy",
-    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261105_1~5e97d9d5a0.en.html",
-    "date": "2026-11-05T08:00:00+00:00",
-    "summary": ""
-  },
-  {
     "source": "Bank of England — News",
     "category": "monetary_policy_uk",
     "title": "Summary of the RTGS CHAPS Industry Forum - 13 October 2026",
@@ -502,14 +558,6 @@
     "link": "https://www.eia.gov/todayinenergy/detail.php?id=68364",
     "date": "2026-10-29T14:00:00+00:00",
     "summary": "Colombia is importing more liquefied natural gas (LNG) as domestic production continues to fall. A potential drought this fall and winter could limit the availability of hydroelectric generation and boost the country's demand for natural gas power generation. Colombia's government has declared a national disaster in anticipation of a drought resulting from an expected strong El Niño."
-  },
-  {
-    "source": "BEA — News releases",
-    "category": "data_release_us",
-    "title": "GDP (Advance Estimate), 3rd Quarter 2026",
-    "link": "https://www.bea.gov/news/2026/gdp-advance-estimate-3rd-quarter-2026",
-    "date": "2026-10-29T12:30:00+00:00",
-    "summary": "Real gross domestic product (GDP) increased at an annual rate of 3.4 percent in the third quarter of 2026 (July, August, and September), according to the advance estimate released today by the U.S. Bureau of Economic Analysis (BEA). In the second quarter, real GDP increased 2.2 percent. The contributors to the increase in real GDP in the third quarter were increases in investment, consumer spendi…"
   },
   {
     "source": "BEA — News releases",
@@ -750,53 +798,5 @@
     "link": "https://www.bankofengland.co.uk/minutes/2026/june/fxjsc-operations-sub-committee-meeting-16-june-2026",
     "date": "2026-10-07T09:49:25+00:00",
     "summary": "The Bank of England chairs the London Foreign Exchange Joint Standing Committee (FXJSC) Operations and Legal Sub-Committees. The FXJSC is made up of market participants, infrastructure providers and the UK financial regulators."
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Minutes of the London FXJSC Main Committee Meeting – 24 June 2026",
-    "link": "https://www.bankofengland.co.uk/minutes/2026/june/fxjsc-main-committee-meeting-24-june-2026",
-    "date": "2026-10-07T09:08:40+00:00",
-    "summary": "The Bank of England chairs the London Foreign Exchange Joint Standing Committee (FXJSC), which is a forum for discussion of the wholesale foreign exchange market. The FXJSC is made up of market participants, infrastructure providers and the UK financial regulators."
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Regulatory thresholds set to shift to automatic increases",
-    "link": "https://www.bankofengland.co.uk/news/2026/october/regulatory-thresholds-set-to-shift-to-automatic-increases",
-    "date": "2026-10-07T09:00:00+00:00",
-    "summary": "Proportionality is set to be improved for firms as over 100 regulatory thresholds could be automatically increased periodically."
-  },
-  {
-    "source": "Federal Reserve — Speeches",
-    "category": "speeches",
-    "title": "Bowman, Modernizing the Regulatory and Supervisory Landscape",
-    "link": "https://www.federalreserve.gov/newsevents/speech/bowman20261006a.htm",
-    "date": "2026-10-06T14:45:00+00:00",
-    "summary": "Speech At the 2026 Community Banking Research Conference, sponsored by the Federal Reserve System, the Conference of State Bank Supervisors, and the Federal Deposit Insurance Corporation, St. Louis, Missouri"
-  },
-  {
-    "source": "Bank of England — News",
-    "category": "monetary_policy_uk",
-    "title": "Minutes of the UK Money Markets Code Sub-Committee – September 2026",
-    "link": "https://www.bankofengland.co.uk/minutes/2026/september/uk-money-markets-committee-minutes-september-2026",
-    "date": "2026-10-06T13:07:03+00:00",
-    "summary": "The Money Markets Committee is a forum for market participants and authorities to discuss the UK unsecured deposits and funding market and securities lending and repo markets."
-  },
-  {
-    "source": "Federal Reserve — All press releases",
-    "category": "monetary_policy_us",
-    "title": "Federal Reserve Board announces approval of application by Isabella Bank Corporation",
-    "link": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261005a.htm",
-    "date": "2026-10-05T20:30:00+00:00",
-    "summary": "Federal Reserve Board announces approval of application by Isabella Bank Corporation"
-  },
-  {
-    "source": "EIA — Today in Energy",
-    "category": "energy",
-    "title": "Crude oil prices and refinery margins generally increased throughout the third quarter",
-    "link": "https://www.eia.gov/todayinenergy/detail.php?id=68245",
-    "date": "2026-10-05T14:00:00+00:00",
-    "summary": "Petroleum markets in the third quarter of 2026 (3Q26) were characterized by increasing prices for crude oil and petroleum products amid persistent conflict in the Middle East."
   }
 ]
